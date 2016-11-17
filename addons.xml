@@ -130,6 +130,7 @@
         <email></email>
     </extension>
 </addon>
+<<<<<<< HEAD
 <addon id="plugin.video.finalgear" name="Final Gear" version="1.0" provider-name="Griffin_Evolve">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -151,3 +152,4 @@
   </extension>
 </addon>
 </addons>
+
