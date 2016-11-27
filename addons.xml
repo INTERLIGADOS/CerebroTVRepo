@@ -20,7 +20,7 @@
   </extension>
 </addon>
 
-<addon id="repository.MatsBuilds" name="Goliaths Add-ons repository" version="1.0.11" provider-name="Goliath">
+<addon id="repository.MatsBuilds" name="Goliaths Add-ons repository" version="1.0.12" provider-name="Goliath">
 	<extension point="xbmc.addon.repository" name="Goliaths Repository">
 	<dir>
 		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
