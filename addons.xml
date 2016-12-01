@@ -40,7 +40,7 @@
 
 <addon id="plugin.video.Evolve" name="[COLOR red]E[/COLOR][COLOR white]volve[/COLOR]" version="0.0.8" provider-name="Team Evolve">
   <requires>
-    <import addon="xbmc.python" version="0.0.1"/>
+    <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="0.0.1"/>
     <import addon="script.module.urlresolver"  version="0.0.1"/>
     <import addon="script.module.liveresolver" version="0.0.1"/>
