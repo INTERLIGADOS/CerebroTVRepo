@@ -1,4 +1,4 @@
-<addons>
+﻿<addons>
 <addon id="plugin.video.TheJukeBox" name="[COLOR red]T[/COLOR][COLOR white]he[/COLOR] [COLOR red]J[/COLOR][COLOR white]ukeBox[/COLOR]" version="2.0.0" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -46,7 +46,6 @@
     <import addon="script.module.liveresolver" version="0.0.1"/>
     <import addon="script.common.plugin.cache" version="0.0.1"/>
     <import addon="repository.metalkettle" version="0.0.1"/>
-    <import addon="script.module.nanscrapers" version="0.5.8"/>
     <import addon="script.module.metahandler" version="0.0.1"/>
     <import addon="plugin.video.youtube" optional="true" />
 
