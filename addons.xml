@@ -9,7 +9,6 @@
     <import addon="script.module.nanscrapers" version="0.5"/>
     <import addon="script.common.plugin.cache" version="0.0.1"/>
     <import addon="repository.metalkettle" version="0.0.1"/>
-    <import addon="repository.noobsandnerds" version="0.0.1"/>
     <import addon="script.module.metahandler" version="0.0.1"/>
     <import addon="plugin.video.youtube" optional="true" />
 
