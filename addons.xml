@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.Evolve" name="[COLOR red]E[/COLOR][COLOR white]volve[/COLOR]" version="2.0.5" provider-name="Team Evolve">
+<addon id="plugin.video.Evolve" name="[COLOR red]E[/COLOR][COLOR white]volve[/COLOR]" version="2.0.6" provider-name="Team Evolve">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="0.0.1"/>
@@ -9,6 +9,7 @@
     <import addon="script.module.nanscrapers" version="0.5"/>
     <import addon="script.common.plugin.cache" version="0.0.1"/>
     <import addon="repository.metalkettle" version="0.0.1"/>
+    <import addon="repository.evolverepo" version="0.0.1"/>
     <import addon="script.module.metahandler" version="0.0.1"/>
     <import addon="plugin.video.youtube" optional="true" />
 
@@ -83,6 +84,29 @@
     <description lang="en">Any problems or want to request anything please let me know on twitter @Goliath_Evolve</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="repository.evolverepo" name="Evolve Unofficial Add-ons repository" version="1.0" provider-name="Evolve">
+	<extension point="xbmc.addon.repository" name="Evolve Repository">
+	<dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+	</dir>
+		<info compressed="false">https://raw.githubusercontent.com/Evolverepo/repository.evolverepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Evolverepo/repository.evolverepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Evolverepo/repository.evolverepo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Home of the unofficial 3rd party Addon Evolve and addons by Team Evolve</summary>
+		<description>Download and install all unofficial Add-ons from Evolve Team</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.Goliath" name="Goliaths Unofficial Add-ons repository" version="1.2" provider-name="Goliath">
