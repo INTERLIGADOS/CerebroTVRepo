@@ -88,6 +88,28 @@
 </extension>
 </addon>
 
+<addon id="plugin.video.picasso" name="[B][COLOR cyan]PICASSO[/COLOR][/B]" version="1.0.0" provider-name="Goliath/Slim">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="0.0.1"/>
+    <import addon="script.module.urlresolver"  version="0.0.1"/>
+    <import addon="script.module.liveresolver" version="0.0.1"/>
+    <import addon="script.module.nanscrapers" version="0.5"/>
+    <import addon="script.common.plugin.cache" version="0.0.1"/>
+    <import addon="script.module.metahandler" version="0.0.1"/>
+    <import addon="plugin.video.youtube" optional="true" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Picaso Addon</summary>
+    <description lang="en">I would like to thank @4yoursak for art work on this work of art!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.TheJukeBox" name="[COLOR red]T[/COLOR][COLOR white]he[/COLOR] [COLOR red]J[/COLOR][COLOR white]ukeBox[/COLOR]" version="2.0.0" provider-name="Goliath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
