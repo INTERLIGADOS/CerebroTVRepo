@@ -1,5 +1,0 @@
-<favourites> 
-	<favourite name="[COLOR red]--4K Movies --------------------------[/COLOR]" thumb="special://home/addons/23.png">NOTHING</favourite>
-    <favourite name="Section 1 (Cerebro Exlusive)" thumb="special://home/addons/23.png">ActivateWindow(10025,&quot;plugin://plugin.video.dnatv4k/?genre_id=15&amp;genre_name=%23%23%23%20On%20Demand%204K%20%23%23%23&amp;mode=channels&amp;portal=%7b%22name%22%3a%20%22DNA%20TV%22%2c%20%22parental%22%3a%20%22true%22%2c%20%22url%22%3a%20%22http%3a%2f%2fmw1.iptv66.tv%22%2c%20%22mac%22%3a%20%2200%3a1A%3a78%3a27%3a27%3a27%22%2c%20%22serial%22%3a%20%7b%22custom%22%3a%20false%7d%2c%20%22password%22%3a%20%221234%22%7d&quot;,return)</favourite>
-    <favourite name="Section 2" thumb="special://home/addons/plugin.video.silenthunter\icon.png">ActivateWindow(10025,&quot;plugin://plugin.video.silenthunter/?action=directory&amp;content=0&amp;url=http%3a%2f%2fbit.ly%2f2wRV608&quot;,return)</favourite>
-</favourites>
