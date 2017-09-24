@@ -249,7 +249,7 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK" version="2.0.27" provider-name="rayw1986, bluezed">
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.28" provider-name="rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
