@@ -36,7 +36,7 @@ provider-name="Cerebro">
 </extension>
 </addon>
 
-<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] IPTV[/COLOR][/B]" version="10.1" provider-name="sClarkea and Biglad">
+<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] IPTV[/COLOR][/B]" version="10.3" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -49,6 +49,40 @@ provider-name="Cerebro">
     <summary lang="en">Live Hub - Bringing Live TV To Your Media Device</summary>
     <description lang="en">Live Hub - Bringing Live TV To Your Media Device. Kodi 17+ is Recommended.</description>
 	<disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="ZNL2017.2017.2017.07.15.NL1999999.99"
+  name="SportsDevil"
+  provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <!--<import addon="script.video.F4mProxy" />
+   <import addon="plugin.video.f4mTester" />-->
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different ad-financed sports streaming sites</summary>
+    <description>Play videos of different ad-financed sports streaming sites.
+
+SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site.
+
+For updates check the readme.
+    </description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
 </addon>
@@ -174,7 +208,7 @@ provider-name="Cerebro">
 	</extension>
 </addon>
 
-<addon id="repository.cerebro" name=".CrebroTVRepo" version="1.3" provider-name="Biglad">
+<addon id="repository.cerebro" name=".CreberoTVRepo" version="1.4" provider-name="Biglad">
 	<extension point="xbmc.addon.repository" name=".CrebroTVRepo">
 		<info compressed="false">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml.md5</checksum>
@@ -183,6 +217,40 @@ provider-name="Cerebro">
 	<extension point="xbmc.addon.metadata">
 		<summary></summary>
 		<description>Cerebro TV Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+﻿<addon id="repository.smash" name="[COLOR indigo][B]-[/B][/COLOR][COLOR gold][B]S[/B][/COLOR][COLOR indigo][B]M[/B][/COLOR][COLOR gold][B]A[/B][/COLOR][COLOR indigo][B]S[/B][/COLOR][COLOR gold][B]H[/B][/COLOR] [COLOR ghostwhite]Repo[/COLOR]" version="1.3.0" provider-name="SMASH">
+	<extension point="xbmc.addon.repository" name="SMASH Repo">
+	<dir>
+        <info compressed="false">http://mediarepos.net/Repos/smashrepo/addons.xml</info>
+        <checksum>http://mediarepos.net/Repos/smashrepo/addons.xml.md5</checksum>
+        <datadir zip="true">http://mediarepos.net/Repos/smashrepo/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Under This Repo, I Will Host Addons With No Home,Bring Life To Dead Addons That Are Fully Work, Link To Repos From Devs (This will install current version the Dev Has) </summary>
+		<description lang="en">ADDONS UNDER THIS SCRAPE THE NET, NO CONTENT IS HOSTED/DISTRIBUTED HERE, CONTACT WEBSITES IF WANT REMOVED [CR] Wanna Help With Server Cost Donate www.paypal.me/BrianSMASH [CR] [B]Smash Repo Change Log 1.3.0[/B] [CR] Added Some New Addons Time For Change People [CR] check for updates before going into vid addons</description>
+		<platform>all</platform>
+		<forum></forum>
+        <website></website>
+		<news>IF YOU DO WANNA HELP YOU CAN FOLLOW ME ON TWITTER @XSMASHX88X AND SUB TO MY CHANNEL WWW.YOUTUBE.COM/XSMASHX88X</news>
+	</extension>
+</addon>
+
+<addon 	id="repository.streamhub"
+		name="[COLOR red]StreamHub Repository[/COLOR]"
+		version="1.2"
+		provider-name="sClarke">
+	<extension point="xbmc.addon.repository" name="[COLOR red]StreamHub Repository[/COLOR]">
+		<info compressed="false">https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Repo_Files/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Repo_Files/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Repo_Files/Zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>StreamHub</summary>
+		<description>StreamHub Repository - Bringing You StreamHub</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -319,6 +387,24 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
+<addon id="script.moviesmegatvbox"
+  name="CerebroTV Movies Menu"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.mtvbb247"
   name="CerebroTV 247"
   version="1.3"
@@ -409,6 +495,24 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
+<addon id="script.mtvbtools"
+  name="CerebroTV Tools"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.mtvbukgold"
   name="CerebroTV UK Gold"
   version="1.1"
@@ -430,6 +534,24 @@ provider-name="Cerebro">
 <addon id="script.mtvbusatbs"
   name="CerebroTV USA TBS"
   version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvppv"
+  name="CerebroTV Appolo Streams"
+  version="1.2"
   provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -521,7 +643,7 @@ provider-name="Cerebro">
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.25" provider-name="rayw1986, bluezed">
+<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.26" provider-name="rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -597,7 +719,7 @@ provider-name="Cerebro">
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.29" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.31" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
