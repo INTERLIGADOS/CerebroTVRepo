@@ -231,6 +231,24 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
+<addon id="script.mtvbb247"
+  name="CerebroTV 247"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK" version="2.0.27" provider-name="rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
