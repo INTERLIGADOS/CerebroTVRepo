@@ -1,0 +1,24 @@
+version 0.0.9
+- export channels to userdata\addon_data\plugin.video.addons.ini.creator\export.ini
+
+Version 0.0.7-8
+- Channels menu
+
+Version 0.0.6
+- fix (thanks whufclee)
+
+Version 0.0.5
+- Search
+
+Version 0.0.4
+- better pvr:// links
+
+Version 0.0.3
+- direct pvr:// links
+- sorted output
+
+Version 0.0.2
+- pvr support
+
+Version 0.0.1
+- first release
