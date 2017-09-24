@@ -36,6 +36,8 @@ import time
 from shutil import copyfile
 import webbrowser
 
+dp = xbmcgui.DialogProgress()
+dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Please Wait","......")  
 
 def platform():
     if xbmc.getCondVisibility('system.platform.android'):
@@ -67,7 +69,8 @@ if not os.path.exists(destfile):
         fo = open(destfile, "w")
         fo.write(fdata);
         fo.close()
-        
+dp = xbmcgui.DialogProgress()
+dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")        
 def ClearTVCache():
 	import requests,base64
 	try:
@@ -79,8 +82,22 @@ if myplatform == 'android': # Android
     xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
 else:
     webbrowser . open('http://mtvb.co.uk/showadd/')
-xbmc.sleep(5000)        
+dp.update(90)
+xbmc.sleep(1000) 
+dp.update(92)
+xbmc.sleep(1000) 
+dp.update(94)
+xbmc.sleep(1000) 
+dp.update(96)
+xbmc.sleep(1000) 
+dp.update(98)
+xbmc.sleep(1000) 
+dp.update(100)
+reset_playing()
+xbmc.sleep(1000) 
+dp.close()      
 # After a restart the proc file should be wiped!
+
 ClearTVCache()
 reset_playing()
 try:   
