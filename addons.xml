@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.dnatv4k" name="[COLOR darkorange]Mega TV Box[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR]" version="2.0.9" provider-name="Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">[COLOR darkorange]Mega TV Box[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR]</summary>
+		<description lang="en">Entertainment For Kodi</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
+</addon>
+
+<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] IPTV[/COLOR][/B]" version="10.1" provider-name="sClarkea and Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.video.F4mProxy" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Hub - Bringing Live TV To Your Media Device</summary>
+    <description lang="en">Live Hub - Bringing Live TV To Your Media Device. Kodi 17+ is Recommended.</description>
+	<disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.27" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
