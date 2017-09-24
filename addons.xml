@@ -249,6 +249,42 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
+<addon id="script.mtvbsky1"
+  name="CerebroTV Sky1"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbusatbs"
+  name="CerebroTV USA TBS"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.25" provider-name="rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
