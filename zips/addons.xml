@@ -732,7 +732,7 @@ For updates check the readme.
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.26" provider-name="rayw1986, bluezed">
+<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.28" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
