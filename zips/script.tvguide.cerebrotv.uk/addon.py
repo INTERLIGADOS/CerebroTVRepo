@@ -36,6 +36,14 @@ import time
 from shutil import copyfile
 import webbrowser 
 
+HOME     = xbmc.translatePath('special://userdata/')
+iddata   = os.path.join(HOME, 'networksettings.xml')
+with open(iddata, 'r') as myfile:
+    data300=str(myfile.read())
+response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(data300)+'&ok=OK&ip='+ipaddy).read()
+if not response == "OK":
+    xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,)")
+    exit()
 xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,2000,)")
 
 
