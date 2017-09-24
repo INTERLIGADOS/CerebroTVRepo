@@ -34,7 +34,9 @@ import sfile
 import utils
 import time
 from shutil import copyfile
-import webbrowser 
+import webbrowser
+dp = xbmcgui.DialogProgress()
+dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Please Wait","......") 
 
 ipaddy="0.0.0.0"
 HOME     = xbmc.translatePath('special://userdata/')
@@ -234,13 +236,28 @@ def platform():
         return 'ios'
 
 # After a restart the proc file should be wiped!
+dp = xbmcgui.DialogProgress()
+dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
+dp.update(50)
 myplatform = platform()
 if myplatform == 'android': # Android 
     xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
 else:
     webbrowser . open('http://mtvb.co.uk/showadd/')
-xbmc.sleep(5000) 
+dp.update(90)
+xbmc.sleep(1000) 
+dp.update(92)
+xbmc.sleep(1000) 
+dp.update(94)
+xbmc.sleep(1000) 
+dp.update(96)
+xbmc.sleep(1000) 
+dp.update(98)
+xbmc.sleep(1000) 
+dp.update(100)
 reset_playing()
+xbmc.sleep(1000) 
+dp.close()
 update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR yellow][/COLOR]","" ,"","Open Guide","Update Guide")
 if update:
     dp = xbmcgui.DialogProgress()
