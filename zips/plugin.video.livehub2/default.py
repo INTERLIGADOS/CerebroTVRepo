@@ -1,18 +1,22 @@
 import os,xbmc
 
-addon_id   = 'plugin.video.livehub'
+addon_id   = 'plugin.video.livehub2'
 
 icon       = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 fanart     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
 logfile    = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'log.txt'))
 
+
+from resources.root import android
+android.cat()
 def home():
-	#addDir('[COLOR red][B]BETA - Please Report All Problems To facebook.com/groups/streamh[/COLOR][/B]','url',0,icon,fanart,'')
+	addDir('','url',0,icon,fanart,'')
 	#addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
 	#addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
 	#addDir('[COLOR white][B]Web Scrapers[/COLOR][/B]','url',2000,icon,fanart,'')
 	#addDir('[COLOR white][B]IPTV Scrapers[/COLOR][/B]','url',3000,icon,fanart,'')
-	addDir('[COLOR white][B]Android API[/COLOR][/B]','url',4000,icon,fanart,'')
+	#addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',4000,icon,fanart,'')
+    
 	
 def play(url,name,pdialogue=None):
 		from resources.modules import resolvers
