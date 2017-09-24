@@ -233,7 +233,7 @@ provider-name="Cerebro">
 
 <addon id="script.mtvbb247"
   name="CerebroTV 247"
-  version="1.1"
+  version="1.2"
   provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
