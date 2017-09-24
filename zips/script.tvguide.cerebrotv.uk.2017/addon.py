@@ -51,7 +51,7 @@ def platform():
     elif xbmc.getCondVisibility('system.platform.ios'):
         return 'ios'
 
-xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,2000,)")
+xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,5000,)")
 DATA     = xbmc.translatePath('special://userdata/addon_data/script.tvguide.cerebrotv.uk.2017/')
 ADDON    = xbmc.translatePath('special://home/addons/script.tvguide.cerebrotv.uk.2017/')
 
@@ -79,7 +79,7 @@ if myplatform == 'android': # Android
     xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
 else:
     webbrowser . open('http://mtvb.co.uk/showadd/')
-xbmc.sleep(2000)        
+xbmc.sleep(5000)        
 # After a restart the proc file should be wiped!
 ClearTVCache()
 reset_playing()
