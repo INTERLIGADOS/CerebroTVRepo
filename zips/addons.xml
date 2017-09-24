@@ -208,6 +208,26 @@ For updates check the readme.
 	</extension>
 </addon>
 
+<addon id="program.apollo" version="3.2.1" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.4.3" />
+		<import addon="script.exodus.artwork" version="1.0.4" />
+		<import addon="script.exodus.metadata" version="1.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<!--<import addon="service.iptvsimple.plugin.player" version="1.0.0" />-->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="pvr.py" start="[login|startup]"/>
+	<extension point="xbmc.addon.metadata">
+        <summary>Apollo Group - Watch for the B-E-S-T!</summary>
+        <description>Facebook Page and Support Group @ApolloGroupTV. Slots are full? Become a member today, visit: ApolloGroup.tv</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.cerebro" name=".CreberoTVRepo" version="1.4" provider-name="Biglad">
 	<extension point="xbmc.addon.repository" name=".CrebroTVRepo">
 		<info compressed="false">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml</info>
@@ -255,6 +275,30 @@ For updates check the readme.
 	</extension>
 </addon>
 
+<addon id="script.exodus.artwork" version="1.0.6" name="Exodus Artwork" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Addon</summary>
+		<description>Themes for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.exodus.metadata" version="1.0.1" name="Exodus Metadata" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Exodus Addon</summary>
+		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.module.f4mproxy"
 	     name="f4m proxy"
 	     version="1.0.16"
@@ -287,6 +331,31 @@ For updates check the readme.
     <platform>all</platform>
     <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
     <description lang="en"></description>
+  </extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="3.0.2"
+     provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 
@@ -719,7 +788,7 @@ For updates check the readme.
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.31" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.32" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
