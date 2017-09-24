@@ -53,7 +53,8 @@ def menuoptions():
         function9,
         function10,
         function11,
-        function12
+        function12,
+        function13
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Tools Menu[/COLOR][/B]', [
@@ -68,7 +69,8 @@ def menuoptions():
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]' , 
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
     '[B][COLOR=green]FRESH INSTALL[/COLOR][/B]',
-    '[B][COLOR=cyan]Web Browser[/COLOR][/B]'])
+    '[B][COLOR=cyan]Web Browser[/COLOR][/B]',
+    '[B][COLOR=cyan]Update Addons & Repos[/COLOR][/B] (make sure your upto date)'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -77,7 +79,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-12]
+        func = funcs[call-13]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -180,5 +182,79 @@ def function12():
     #xbmc.sleep(5000)
     xbmc.executebuiltin('StartAndroidActivity("com.android.browser")')  
 
-
+def function13():
+    #the content of function 1
+    #dp = xbmcgui.DialogProgress()
+    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
+    #xbmc.sleep(5000)
+    dp = xbmcgui.DialogProgress()
+    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating Repos","Please Wait") 
+    xbmc.executebuiltin('UpdateAddonRepos()')
+    xbmc.sleep(3000)
+    percent = 10
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 20
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 30
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 40
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 50
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 60
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 70
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 80
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 90
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 100
+    dp.update(percent)
+    xbmc.sleep(3000)
+    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating Addons","Please Wait") 
+    xbmc.executebuiltin('UpdateLocalAddons()')
+    xbmc.sleep(3000)
+    percent = 10
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 20
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 30
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 40
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 50
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 60
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 70
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 80
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 90
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 100
+    dp.update(percent)
+    xbmc.sleep(3000)
+    dp.close()
+    
+  
 menuoptions()
