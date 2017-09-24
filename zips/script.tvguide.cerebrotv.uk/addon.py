@@ -230,7 +230,7 @@ if myplatform == 'android': # Android
     xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
 else:
     webbrowser . open('http://mtvb.co.uk/showadd/')
-xbmc.sleep(2000) 
+xbmc.sleep(5000) 
 reset_playing()
 update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR yellow][/COLOR]","" ,"","Open Guide","Update Guide")
 if update:
