@@ -189,7 +189,6 @@ def function13():
     #xbmc.sleep(5000)
     dp = xbmcgui.DialogProgress()
     dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating Repos","Please Wait") 
-    xbmc.executebuiltin('RunAddon()')
     xbmc.executebuiltin('UpdateAddonRepos()')
     xbmc.sleep(3000)
     percent = 10
@@ -225,6 +224,40 @@ def function13():
     dp.close()
     dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating Addons","Please Wait") 
     xbmc.executebuiltin('UpdateLocalAddons()')
+    xbmc.sleep(3000)
+    percent = 10
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 20
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 30
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 40
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 50
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 60
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 70
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 80
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 90
+    dp.update(percent)
+    xbmc.sleep(3000)
+    percent = 100
+    dp.update(percent)
+    xbmc.sleep(3000)
+    dp.close()
+    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating System","Please Wait")
+    xbmc.executebuiltin('RunAddon()')
     xbmc.sleep(3000)
     percent = 10
     dp.update(percent)
