@@ -734,6 +734,295 @@ For updates check the readme.
   </extension>
 </addon>
 
+<addon id="script.mtvbbbc2"
+  name="CerebroTV BBC2"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbts1"
+  name="CerebroTV BT Sports 1"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbts2"
+  name="CerebroTV BT Sports 2"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbts3"
+  name="CerebroTV Sky Sports 3"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbcctv"
+  name="CerebroTV CCTV"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbcore"
+  name="MTVBCore"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <language></language>
+    <platform>all</platform>
+    <summary lang="en">Cache System</summary>
+    <description lang="en">Cache System</description>
+	<disclaimer>Cache System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbexit"
+  name="CerebroTV Exit/Reboot"
+  version="1.2"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbfitness"
+  name="CerebroTV Fitness"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbgamelauncher"
+  name="CerebroTV Play Retro Games"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv1"
+  name="CerebroTV ITV1"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv2"
+  name="CerebroTV ITV2"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv3"
+  name="CerebroTV ITV3"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv4"
+  name="CerebroTV ITV4"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitvbe"
+  name="CerebroTV ITVBe"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbmusic"
+  name="CerebroTV Music"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbsettings"
+  name="CerebroTV Settings"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.mtvbsky1"
   name="CerebroTV Sky1"
   version="1.1"
@@ -754,6 +1043,60 @@ For updates check the readme.
 
 <addon id="script.mtvbsky2"
   name="CerebroTV Sky2"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbskyatl"
+  name="CerebroTV Sky Atlantic"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbskyliv"
+  name="CerebroTV Sky Living"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbskymovies"
+  name="CerebroTV Sky Movies on Demand"
   version="1.1"
   provider-name="UNKNOWN">
   <requires>
@@ -824,8 +1167,98 @@ For updates check the readme.
   </extension>
 </addon>
 
+<addon id="script.mtvbukhor"
+  name="CerebroTV UK Horror"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbukspike"
+  name="CerebroTV UK Spike"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbuksyfy"
+  name="CerebroTV UK SYFY"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.mtvbusatbs"
   name="CerebroTV USA TBS"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbwizard"
+  name="CerebroTV Movie Search"
+  version="1.1"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbxxx"
+  name="CerebroTV XXX"
   version="1.1"
   provider-name="UNKNOWN">
   <requires>
@@ -893,6 +1326,78 @@ For updates check the readme.
     <summary lang="en">Exit</summary>
     <description lang="en">Exit</description>
 	<disclaimer>Exit</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvboxcheckversion"
+  name="CerebroTV Check My Version"
+  version="1.1"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Reboot Android</summary>
+    <description lang="en">Reboots your Android device.</description>
+	<disclaimer>Your device must already be rooted, and you will need to grant SU permissions to the script when prompted.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvhousekeeper"
+  name="CerebroTV House Keeper"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Wait</summary>
+    <description lang="en">CerebroTV Wait</description>
+	<disclaimer>CerebroTV Wait.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvhousekeeper2"
+  name="CerebroTV House Keeper"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Wait</summary>
+    <description lang="en">CerebroTV Wait</description>
+	<disclaimer>CerebroTV Wait.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvhousekeeper3"
+  name="CerebroTV House Keeper"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Wait</summary>
+    <description lang="en">CerebroTV Wait</description>
+	<disclaimer>CerebroTV Wait.</disclaimer>
   </extension>
 </addon>
 
@@ -1143,6 +1648,42 @@ For updates check the readme.
           <fanart>resources/fanart.jpg</fanart>
         </assets>
 	</extension>
+</addon>
+
+<addon id="script.tvguidemegatvbox"
+  name="CerebroTV TV Guide Helper"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.tvshowsmegatvbox"
+  name="CerebroTV TV Shows Menu"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
 </addon>
 
 <addon 	id="script.wargames.artwork"
