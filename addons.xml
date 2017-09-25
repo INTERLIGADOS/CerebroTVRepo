@@ -1113,8 +1113,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbsky1"
   name="CerebroTV Sky1"
-  version="1.1"
-  provider-name="Biglad">
+  version="1.2"
+  provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
