@@ -308,6 +308,24 @@ For updates check the readme.
   </extension>
 </addon>
 
+<addon id="script.cerebrotv"
+    name=".[COLOR=red]Cerebro TV-CORE[/COLOR]" version="1.0.8" provider-name="CerebroTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+<language></language>
+    <platform>all</platform>
+    <license>CEREBROTV 2017</license>
+    <forum>CEREBROTV 2017</forum>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="script.exodus.artwork" version="1.0.6" name="Exodus Artwork" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -330,6 +348,46 @@ For updates check the readme.
 		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.kidsmegatvbox"
+  name="CerebroTV Kids Menu"
+  version="1.1"
+  provider-name="UNKNOWN">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.megaclean"
+    name=".CerebroTV CLEAN Installer" version="1.0.7" provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.httplib2" version="0.8.0" />
+    <import addon="script.module.oauth2client" version="1.4.7" />
+    <import addon="script.module.uritemplate" version="0.6" />
+    <import addon="script.module.yaml" version="3.11"/>
+    <import addon="script.module.googleapi" version="1.4.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="service.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<language></language>
+    <platform>all</platform>
+    <license>CerebroTV 2016</license>
+    <forum>CerebroTV 2016</forum>
+    <source></source>
+  </extension>
 </addon>
 
 <addon id="script.module.addon.signals"
@@ -680,6 +738,42 @@ For updates check the readme.
     <summary lang="en">CerebroTV Menu System</summary>
     <description lang="en">CerebroTV Menu System</description>
 	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.exitkodi"
+  name="ExitKodi"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Reboot Android</summary>
+    <description lang="en">Reboots your Android device.</description>
+	<disclaimer>Your device must already be rooted, and you will need to grant SU permissions to the script when prompted.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.exitkodi2"
+  name="Exit SPMC/Kodi"
+  version="1.1"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Exit</summary>
+    <description lang="en">Exit</description>
+	<disclaimer>Exit</disclaimer>
   </extension>
 </addon>
 
