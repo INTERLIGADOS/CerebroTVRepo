@@ -1293,7 +1293,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspgolf"
   name="CerebroTV Sky Sports Golf"
-  version="1.1"
+  version="1.2"
   provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1437,7 +1437,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbukgold"
   name="CerebroTV UK Gold"
-  version="1.1"
+  version="1.2"
   provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
