@@ -36,24 +36,12 @@ def menuoptions():
 
 
 def function1():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.goodfellas/?fanart=http%3a%2f%2fwww.pixhoster.info%2ff%2f2016-09%2f1fa780e2d827b35ee5038bf8b2c8dd63.png&mode=1&name=Web%20Cams&url=http%3a%2f%2fgoo.gl%2fZqroXR",return)')
 
 def function2():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.ukturk/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ukturk%5cfanart.jpg&iconimage=http%3a%2f%2fukturk.offshorepastebin.com%2fUKTurk%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520cctv.jpg&mode=1&name=CCTV&url=http%3a%2f%2fukturk.offshorepastebin.com%2fUKTurk%2fCCTV.txt",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.ProjectCypher/?action=directory&content=addons&url=http%3a%2f%2fcypher-media.com%2fcypher%2fcctv.xml",return)')
 
 def function3():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.ProjectCypher/?fanart=http%3a%2f%2fcypher-media.com%2fcypher%2fimages%2ffanart.jpg&mode=1&name=%5bB%5d%5bCOLOR%20yellow%5d---%5b%2fCOLOR%5d%20%5bCOLOR%20red%5dNASA%5b%2fCOLOR%5d%20%5bCOLOR%20white%5d%20Live%20Streams%20%5bCOLOR%20blue%5dDirectory%5b%2fCOLOR%5d%5b%2fCOLOR%5d%20%5bCOLOR%20yellow%5d---%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fcypher-media.com%2fcypher%2fcyphernasa.xml%24%24LSProEncKey%3dcypher%24%24",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.ProjectCypher/?action=directory&content=addons&url=http%3a%2f%2fignorame",return)')
 
 menuoptions()

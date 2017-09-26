@@ -896,7 +896,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbcctv"
   name="CerebroTV CCTV"
-  version="1.2"
+  version="1.3"
   provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
