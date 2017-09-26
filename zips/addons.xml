@@ -316,7 +316,7 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="program.apollo" version="3.2.2" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group, Biglad">
+<addon id="program.apollo" version="3.2.1" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.4.3" />
@@ -325,7 +325,7 @@ Removed: Nudeflix</news>
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<!--<import addon="service.iptvsimple.plugin.player" version="1.0.0" />-->
 	</requires>
-	<extension point="xbmc.python.script" library="default.py">
+	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="pvr.py" start="[login|startup]"/>
