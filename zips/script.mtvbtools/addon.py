@@ -144,6 +144,16 @@ def function12():
 
 def function13():
     xbmc.executebuiltin('ActivateWindow(10040,"addons://outdated/",return)')
+    xbmc.sleep(2000)
+    dp = xbmcgui.DialogProgress()
+    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Checking Repos for Updates","Please Wait (aprox 30 secs)")
+    xbmc.executebuiltin('UpdateAddonRepos()')
+    xbmc.executebuiltin('UpdateLocalAddons()')
+    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Checking Repos for Updates","Please Wait (aprox 30 secs)")
+    percent = 50
+    dp.update(percent)
+    xbmc.sleep(25000)
+    dp.close()
     
     
   
