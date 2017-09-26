@@ -70,7 +70,7 @@ def menuoptions():
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
     '[B][COLOR=green]FRESH INSTALL[/COLOR][/B]',
     '[B][COLOR=cyan]Web Browser[/COLOR][/B]',
-    '[B][COLOR=cyan]Update Addons & Repos[/COLOR][/B] (make sure your upto date)'])
+    '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -107,189 +107,44 @@ def function2():
     dialog.ok("[COLOR=red][B] ## MY BOX INFO ##[/COLOR][/B]", "[COLOR=red]My ID[/COLOR]: [COLOR=green]"+str(data300)+"[/COLOR]", "[COLOR=red]Build Version[/COLOR]: [COLOR=green]"+str(data)+"[/COLOR]","[COLOR=red]IP Address (public)[/COLOR]: [COLOR=green]"+str(getPublicIp())+"[/COLOR]")
 
 def function3():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.program.megatvhousekeeper3?sf_options=desc%3DMega+TV+Box+Wait%26_options_sf",return)')
 
 def function4():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.speedtestnet?sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cscript.speedtestnet%5Cfanart.jpg%26desc%3DARNU+Box+Speed+Tester+powered+by+speedtest.net+will+give+you+accurate+Internet+speed%2Fping+test+results.+%5Cn+Brought+to+you+by+http%3A%2F%2Fwww.arnubox.com%26_options_sf",return)')
 
 def function5():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.megatvupdater",return)')
     
 def function6():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.megamove",return)')
     
 def function7():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('RunAddon("script.cerebrotv")')
 
 def function8(): # ANDROID 4
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
     xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
     xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
 
 def function9(): # ANDROID 6
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
     xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
     xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
     
 def function10(): # ANDROID 5
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
     xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
     xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
     
 def function11():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('RunAddon("script.cerebrotv")')
     
 def function12():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
     xbmc.executebuiltin('StartAndroidActivity("com.android.browser")')  
 
 def function13():
-    #the content of function 1
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
-    #xbmc.sleep(5000)
-    dp = xbmcgui.DialogProgress()
-    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating Repos","Please Wait") 
-    xbmc.executebuiltin('UpdateAddonRepos()')
-    xbmc.sleep(3000)
-    percent = 10
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 20
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 30
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 40
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 50
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 60
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 70
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 80
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 90
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 100
-    dp.update(percent)
-    xbmc.sleep(1000)
-    dp.close()
-    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating Addons","Please Wait") 
-    xbmc.executebuiltin('UpdateLocalAddons()')
-    xbmc.sleep(3000)
-    percent = 10
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 20
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 30
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 40
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 50
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 60
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 70
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 80
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 90
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 100
-    dp.update(percent)
-    xbmc.sleep(3000)
-    dp.close()
-    dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Updating System","Please Wait")
-    xbmc.executebuiltin('RunAddon()')
-    xbmc.sleep(3000)
-    percent = 10
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 20
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 30
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 40
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 50
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 60
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 70
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 80
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 90
-    dp.update(percent)
-    xbmc.sleep(3000)
-    percent = 100
-    dp.update(percent)
-    xbmc.sleep(3000)
-    dp.close()
+    xbmc.executebuiltin('ActivateWindow(10040,"addons://outdated/",return)')
+    
     
   
 menuoptions()
