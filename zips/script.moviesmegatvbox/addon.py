@@ -85,7 +85,7 @@ def function6():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2ffanart.jpg.png&mode=1&name=%5bCOLOR%20red%5dNew%20Releases%5b%2fCOLOR%5d&url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fNew%2520Releases%2fNew%2520Releases.txt",return)')
 
 def function7():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.bob/?action=directory&content=0&url=http%3a%2f%2fnorestrictions.club%2fnorestrictions.club%2fmain%2fkidsnewrelease.xml",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=httpss%3a%2f%2f185.20.99.97%2f185.20.99.97%2fnorestrictions.club%2freloaded%2fthemes%2fmovies%2fmovies7.jpg&iconimage=https%3a%2f%2f185.20.99.97%2fnorestrictions.club%2freloaded%2ficons%2fKids%2fKids-New-Releases.png&mode=get_list&name=%5bCOLORcyan%5dClick%20For%20New%20Kids%20Movies%5b%2fCOLOR%5d&url=http%3a%2f%2fnorestrictions.noobsandnerds.com%2fmain%2fkidsnewrelease.xml",return)')
        
 def function8():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.silenthunter/?action=directory&content=0&url=http%3a%2f%2fbit.ly%2f2g8sjhm",return)')
