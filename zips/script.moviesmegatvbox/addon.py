@@ -112,7 +112,7 @@ def function15():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=[COLOR black]4k[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5C4k&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf",return)')        
 
 def function16():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.bennu/?action=directory&content=0&url=https%3a%2f%2fpastebin.com%2fraw%2f6xFUv87S",return)') 
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=1&name=%5bCOLOR%20yellow%5d3%5bCOLOR%20aqua%5dD%20Movies%20By%20Nereus%5b%2fCOLOR%5d&url=https%3a%2f%2fpastebin.com%2fraw%2fyYMEWMGE",return)') 
     
 def function17():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.bennu/?action=directory&content=0&url=https%3a%2f%2fpastebin.com%2fraw%2fvdS3Cyxe",return)') 
