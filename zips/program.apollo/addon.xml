@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="program.apollo" version="3.2.1" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group">
+<addon id="program.apollo" version="3.2.3" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group, Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.4.3" />
