@@ -969,7 +969,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbfitness"
   name="CerebroTV Fitness"
-  version="1.1"
+  version="1.2"
   provider-name="UNKNOWN">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
