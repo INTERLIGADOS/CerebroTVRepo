@@ -43,7 +43,7 @@ def function1():
     #dp = xbmcgui.DialogProgress()
     #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     #xbmc.sleep(5000)
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.picasso/?description&fanart=http%3a%2f%2fi.imgur.com%2fjz9gffT.png&iconimage=http%3a%2f%2fi.imgur.com%2fyizEAcv.png&mode=1&name=%5bB%5d%5bCOLOR%20yellow%5dLive%20Music%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fmatsbuilds.uk%2fMenus%2fMusic%2fIPTVMUSIC.xml",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=49&name=%5bCOLOR%20yellow%5dM%5bCOLOR%20aqua%5dusic%20Channels%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.sdwnet.me%2fcategories%2fMUSIC-Channels%2f",return)')
 
 def function2():
     #the content of function 1
@@ -64,7 +64,7 @@ def function4():
     #dp = xbmcgui.DialogProgress()
     #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     #xbmc.sleep(5000)
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.white.devil/?action=directory&url=http%3a%2f%2fbrettusbuilds.com%2fbrettus%2520streams%2fLIVE%2520TV%2fmusic%2520live.xml",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=1&name=%5bCOLOR%20yellow%5dM%5bCOLOR%20aqua%5dusic%20Zone%5b%2fCOLOR%5d&url=https%3a%2f%2fpastebin.com%2fraw%2fgG1BCFAH",return)')
 
 def function5():
     #the content of function 1
