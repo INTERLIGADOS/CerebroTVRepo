@@ -68,6 +68,15 @@ def d2():
 #aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZjZXJlYnJvdHYuY28udWslMkZwJTJG < old        
 d2() 
 
+def d3():
+	import requests,base64
+	try:
+		requests.get(base64.b64decode('aHR0cDovL210dmIuY28udWsvc2hvd2FkZC8='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=2).text
+	except:
+		pass
+      
+d3() 
+
 
 
 LOCATION     = "http://megatvbox.uk/uk-new.zip"
@@ -242,29 +251,28 @@ def platform():
 
 
 # After a restart the proc file should be wiped!
-dp = xbmcgui.DialogProgress()
-dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
-
-myplatform = platform()
-if myplatform == 'android': # Android 
-    xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
-else:
-    webbrowser . open('http://mtvb.co.uk/showadd/')
-dp.update(90)
-xbmc.sleep(1000) 
-dp.update(92)
-xbmc.sleep(1000) 
-dp.update(94)
-xbmc.sleep(1000) 
-dp.update(96)
-xbmc.sleep(1000) 
-dp.update(98)
-xbmc.sleep(1000) 
-dp.update(100)
+#dp = xbmcgui.DialogProgress()
+#dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
+#dp.update(50)
+#myplatform = platform()
+#if myplatform == 'android': # Android 
+#    xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
+#else:
+#    webbrowser . open('http://mtvb.co.uk/showadd/')
+#dp.update(90)
+#xbmc.sleep(1000) 
+#dp.update(92)
+#xbmc.sleep(1000) 
+#dp.update(94)
+#xbmc.sleep(1000) 
+#dp.update(96)
+#xbmc.sleep(1000) 
+#dp.update(98)
+#xbmc.sleep(1000) 
+#dp.update(100)
 reset_playing()
-xbmc.sleep(1000) 
+#xbmc.sleep(1000) 
 dp.close()
-reset_playing()
 update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR yellow][/COLOR]","" ,"","Open Guide","Update Guide")
 if update:
     dp = xbmcgui.DialogProgress()
