@@ -14,6 +14,7 @@ from resources.lib.kodion.impl import Context
 from resources.lib.kodion.constants import setting
 
 context = Context()
+exit()
 
 version = context.get_system_version().get_version()
 application = context.get_system_version().get_app_name()

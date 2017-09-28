@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.megamove"
-    name="CerebroTV Build Mover" version="1.0.7" provider-name="Biglad">
+    name="CerebroTV Build Mover" version="1.0.8" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />

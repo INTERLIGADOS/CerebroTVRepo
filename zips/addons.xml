@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.megatvboxnot" version="1.0.2"
+<addon id="plugin.program.megatvboxnot" version="1.0.3"
        name="Notifications" provider-name="Biglad">
   <requires>
   	<import addon="xbmc.python" version="2.1.0"/>
@@ -26,7 +26,7 @@
 
 <addon id="plugin.video.cerebro-movies"
   name="[COLOR=gold] .CerebroTV Movie Search[/COLOR] (WiP)"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -44,7 +44,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dnatv4k" name="[COLOR darkorange]Mega TV Box[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR]" version="2.0.9" provider-name="Team DNA">
+<addon id="plugin.video.dnatv4k" name="[COLOR darkorange]CerebroTV[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR] (other sections not working)" version="2.1.0" provider-name="Biglad,Team DNA">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -62,7 +62,7 @@
 </addon>
 
 <addon id="plugin.video.echoini"
-version="1.0.1"
+version="1.0.2"
 name="Cerebro INI Creator"
 provider-name="Cerebro">
 <requires>
@@ -74,13 +74,13 @@ provider-name="Cerebro">
   <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-  <summary lang="en">INI Creator for FMG &amp; Echo TV Guide</summary>
+  <summary lang="en">INI Creator for CerebroTV</summary>
   <description lang="en"></description>
   <disclaimer lang="en">.</disclaimer>
 </extension>
 </addon>
 
-<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] IPTV[/COLOR][/B]" version="10.4" provider-name="sClarke and Biglad">
+<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] IPTV[/COLOR][/B]" version="10.5" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -221,7 +221,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name="[COLOR ghostwhite][B]Cerebro-Phoenix[/B][/COLOR]" version="99.0.3" provider-name="NONE">
+<addon id="plugin.video.wargames" name="[COLOR ghostwhite][B]Cerebro-Phoenix[/B][/COLOR]" version="99.0.4" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
@@ -434,7 +434,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.cachesystem"
   name="Cache System"
-  version="1.1"
+  version="1.2"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
@@ -453,7 +453,7 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.cerebrotv"
-    name=".[COLOR=red]Cerebro TV-CORE[/COLOR]" version="1.0.8" provider-name="CerebroTV">
+    name=".[COLOR=red]Cerebro TV-CORE[/COLOR]" version="1.0.9" provider-name="CerebroTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -496,8 +496,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.kidsmegatvbox"
   name="CerebroTV Kids Menu"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -513,7 +513,7 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.megaclean"
-    name=".CerebroTV CLEAN Installer" version="1.0.7" provider-name="Biglad">
+    name=".CerebroTV CLEAN Installer" version="1.0.8" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />
@@ -535,7 +535,7 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.megamove"
-    name="CerebroTV Build Mover" version="1.0.7" provider-name="Biglad">
+    name="CerebroTV Build Mover" version="1.0.8" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />
@@ -557,7 +557,7 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.megatvupdater"
-    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.0.8" provider-name="Biglad">
+    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.0.9" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />
@@ -752,8 +752,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.moviesmegatvbox"
   name="CerebroTV Movies Menu"
-  version="1.4"
-  provider-name="UNKNOWN">
+  version="1.5"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
