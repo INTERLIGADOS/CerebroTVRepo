@@ -33,7 +33,7 @@ with open(file98, 'r') as myfile:
     data=float(myfile.read())
 
 try:    
-    response2 = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/updater.php?show=yes&v='+ str(data))
+    response2 = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/updaternew.php?show=yes&v='+ str(data))
     data3=response2.read()
 except: pass
 
