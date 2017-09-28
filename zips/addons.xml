@@ -720,7 +720,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.module.wargames"
        name="[B][COLOR ghostwhite]Wargames Streamer[/COLOR][/B]"
-	   version="1.0.4"
+	   version="1.0.5"
 	   provider-name="[B][COLOR ghostwhite]Wargames Streamer[/COLOR][/B]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
