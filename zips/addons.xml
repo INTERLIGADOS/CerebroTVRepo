@@ -770,8 +770,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtv4more"
   name="CerebroTV 4More"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -788,8 +788,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbapkinstaller"
   name="CerebroTV APK Installer"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -806,8 +806,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbapklauncher"
   name="CerebroTV APK Launcher"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -824,8 +824,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbb247"
   name="CerebroTV 247"
-  version="1.3"
-  provider-name="UNKNOWN">
+  version="1.4"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -842,8 +842,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbbbc1"
   name="CerebroTV BBC1"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -860,8 +860,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbbbc2"
   name="CerebroTV BBC2"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
