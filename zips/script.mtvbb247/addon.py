@@ -48,4 +48,6 @@ def function1():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.snstream/?description&iconimage=micon&mode=41&name=%5bB%5d%5bCOLOR%20yellow%5d24%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=CAT%3d247Shows",return)')
        
         
-menuoptions()
+#menuoptions()
+xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/",return)')
+    
