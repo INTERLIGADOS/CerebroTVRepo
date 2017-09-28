@@ -45,7 +45,7 @@ def GETTEXT(id):
     return text
 
 
-ADDONID = 'script.program.megatvbox-refresh'
+ADDONID = 'script.cerebrotv'
 ADDON   =  xbmcaddon.Addon(ADDONID)
 HOME    =  ADDON.getAddonInfo('path')
 ROOT    =  ADDON.getSetting('FOLDER')

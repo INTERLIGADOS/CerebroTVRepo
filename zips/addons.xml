@@ -1653,7 +1653,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.program.megatvbox-refresh"
   name="Cerebro TV Clean Installer"
-  version="1.4"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
