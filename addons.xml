@@ -878,8 +878,8 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbbts1"
   name="CerebroTV BT Sports 1"
-  version="1.2"
-  provider-name="UNKNOWN">
+  version="1.4"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>

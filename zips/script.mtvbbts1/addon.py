@@ -30,16 +30,16 @@ def menuoptions():
     return 
 
     
-def function4():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.weetv/?fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.weetv%5cfanart.jpg&iconimage=http%3a%2f%2fwww.geetee.site%2fwizchannels%2fimages%2fca_us.png&mode=3333&name=BT%20SPORTS%201%20HD%0d&url=http%3a%2f%2fiptv.myeasytv.xyz%3a8000%2flive%2fnig55%2fnig55%2f14391.ts%0d",return)')
-  
 def function1():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.ProjectCypher/?url=http%3A%2F%2F62.210.141.126%3A8080%2Fbtsport1hd%2Fmpegts&mode=12")')
-
-def function2():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dBT%20SPORT%201%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2ffeb9c19124327ffd2bae3c97249ea40e.m3u8",return)')
+    xbmc.executebuiltin('PlayMedia("plugin://program.apollo/?action=apollo&imdb=9999&season=922&title=922")')
   
+def function2():
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dBT%20SPORT%201%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2ffeb9c19124327ffd2bae3c97249ea40e.m3u8")')
+
 def function3():
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.ProjectCypher/?action=play&url=http%3A%2F%2F185.53.163.205%3A2700&content=0")')
+  
+def function4():
     xbmc.executebuiltin('PlayMedia("plugin://plugin.video.DELIVERANCE/?url=plugin%3A%2F%2Fplugin.video.SportsDevil%2F%3Fmode%3D1%26amp%3Bitem%3Dcatcher%253dstreams%2526url%3Dhttp%3A%2F%2Ftv.b-c-e.us%2FBTSport12.php%2526referer%3Dhttp%3A%2F%2Ftv.b-c-e.us%2FBTSport12.php&mode=12")')
 
       
