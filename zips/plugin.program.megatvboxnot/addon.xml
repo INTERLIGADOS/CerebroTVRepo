@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.program.megatvboxnot" version="1.0.2"
+<addon id="plugin.program.megatvboxnot" version="1.0.3"
        name="Notifications" provider-name="Biglad">
   <requires>
   	<import addon="xbmc.python" version="2.1.0"/>

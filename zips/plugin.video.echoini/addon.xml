@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.echoini"
-version="1.0.1"
+version="1.0.2"
 name="Cerebro INI Creator"
 provider-name="Cerebro">
 <requires>
@@ -12,7 +12,7 @@ provider-name="Cerebro">
   <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-  <summary lang="en">INI Creator for FMG &amp; Echo TV Guide</summary>
+  <summary lang="en">INI Creator for CerebroTV</summary>
   <description lang="en"></description>
   <disclaimer lang="en">.</disclaimer>
 </extension>

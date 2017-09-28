@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.dnatv4k" name="[COLOR darkorange]Mega TV Box[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR]" version="2.0.9" provider-name="Team DNA">
+<addon id="plugin.video.dnatv4k" name="[COLOR darkorange]CerebroTV[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR] (other sections not working)" version="2.1.0" provider-name="Biglad,Team DNA">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>		
 	</requires>
