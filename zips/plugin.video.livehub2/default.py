@@ -8,7 +8,7 @@ logfile    = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id
 
 
 from resources.root import android
-android.cat()
+#android.cat()
 def home():
 	addDir('','url',0,icon,fanart,'')
 	#addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
@@ -250,7 +250,7 @@ except:
 # OpenELEQ: query & type-parameter (added 8 lines above)
 
 if mode==None or url==None or len(url)<1:
-	home()
+	android.cat()
 
 elif mode==1:
 	from resources.root import ukgeo

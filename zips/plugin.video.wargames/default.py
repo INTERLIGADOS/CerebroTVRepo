@@ -57,11 +57,12 @@ select = params.get('select')
 query = params.get('query')
 
 source = params.get('source')
-
+xbmc.executebuiltin('Container.SetViewMode(50)')
 
 if action == None:
     from resources.lib.indexers import wargames
     wargames.indexer().root()
+    xbmc.executebuiltin('Container.SetViewMode(150)')
 
 elif action == 'directory':
     from resources.lib.indexers import wargames

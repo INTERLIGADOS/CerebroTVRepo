@@ -10,6 +10,7 @@ def cat():
 	addDir('[COLOR white][B]Iptv4sat.com[/COLOR][/B]','iptv4sat',3,'https://cdn6.aptoide.com/imgs/a/7/8/a78c34966c4e443e7235d839b5856c0d_icon.png?w=256',fanart,'')
 	addDir('[COLOR white][B]Iptvfilmover.com[/COLOR][/B]','iptvfilmmover',3,'https://cdn6.aptoide.com/imgs/a/7/8/a78c34966c4e443e7235d839b5856c0d_icon.png?w=256',fanart,'')
 	addDir('[COLOR white][B]Iptvsatlinks.com[/COLOR][/B]','iptvsattlinks',3,'https://cdn6.aptoide.com/imgs/a/7/8/a78c34966c4e443e7235d839b5856c0d_icon.png?w=256',fanart,'')
+	addDir('[COLOR white][B]Panda TV[/COLOR][/B]','panda',3,'https://cdn6.aptoide.com/imgs/a/7/8/a78c34966c4e443e7235d839b5856c0d_icon.png?w=256',fanart,'')
 	addDir('[COLOR white][B]Sourcetv.info[/COLOR][/B]','sourceetv',3,'https://cdn6.aptoide.com/imgs/a/7/8/a78c34966c4e443e7235d839b5856c0d_icon.png?w=256',fanart,'')
 	
 def get(url):
@@ -31,9 +32,19 @@ def get(url):
 		iptv4sat()
 	elif url == 'freetvvip':
 		freetvip()
+	elif url == 'panda':
+		panda()
 	else:
 		listm3u(url)
 		
+		
+		
+def panda():
+	import re
+	open = OPEN_URL('http://pandasat.info/iptv/kodi')
+	regex = re.compile('#EXTINF:.+?\,(.+?)\n(.+?)\n', re.MULTILINE|re.DOTALL).findall(open)
+	for name,url in regex:
+		addDir('[B][COLOR white]%s[/COLOR][/B]'%name,url,10,icon,fanart,'')
 		
 def freetvip():
 	import re,urllib
@@ -201,7 +212,7 @@ def addDir(name,url,mode,iconimage,fanart,description):
 	liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
 	liz.setInfo( type="Video", infoLabels={"Title": name,"Plot":description})
 	liz.setProperty('fanart_image', fanart)
-	if mode==24:
+	if mode==10:
 		liz.setProperty("IsPlayable","true")
 		ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 	else:

@@ -55,18 +55,18 @@ def mamahd():
 def arconaitv():
 	url = 'https://www.arconaitv.me'
 	page = OPEN_URL(url)
-	part = regex_from_to(page,'Cable Tv','Donate')
-	all_vids=regex_get_all(part,'<li id="menu-item-','</a>')
+	part = regex_from_to(page,'id="cable">','id="donate">')
+	all_vids=regex_get_all(part,"div class='box-content'",'</a>')
 	for a in all_vids:
-		url = regex_from_to(a,'<a href="','"')
-		name = regex_from_to(a,'<span class="link_text">\n','\n').replace('#038;','')
+		url = regex_from_to(a,"href='","'")
+		name = regex_from_to(a,"title='","'").replace('#038;','')
 		if not url=='https://www.arconaitv.me/':
 			if not name == 'A-E':
 				if not name == 'F-J':
 					if not name == 'K-O':
 						if not name == 'P-T':
 							if not name == 'U-Z':
-								addDir('[B][COLOR white]%s[/COLOR][/B]'%name,url,10,icon,fanart,'')
+								addDir('[B][COLOR white]%s[/COLOR][/B]'%name,'https://www.arconaitv.me/'+url,10,icon,fanart,'')
 		
 def liveonlinetv():
 	open = OPEN_URL('http://liveonlinetv247.info/tvchannels.php')

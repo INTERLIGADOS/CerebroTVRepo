@@ -40,35 +40,34 @@ def resolve(url):
 			open = OPEN_URL(link)
 			url  = regex_from_to(open,'source src="','"') + '|User-Agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 		elif 'arconaitv' in url:
+			ref  = url
 			open = OPEN_URL(url)
-			url  = re.compile('"src":"(.*?)"',re.DOTALL).findall(open)[0]
+			url  = re.compile('source src="(.*?)"',re.DOTALL).findall(open)[0]
 			url  = (url).replace('\/','/')
-			url  = url + '|User-Agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
-		elif 'snappystreams:' in url:
-			url = (url).replace('snappystreams:','')
+			url  = url + '|User-Agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36&Referer='+ref
+		elif 'swift:' in url:
+			url = (url).replace('swift:','')
 			headers = {'Authorization': 'Basic QFN3aWZ0MTQjOkBTd2lmdDE0Iw==',
 				'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q)',
 				'Accept-Encoding': 'gzip'}
-			
-			try:
-				open = requests.session().get('http://173.212.202.101/token304.php',headers=headers).text
-			except:	
-				open = requests.session().get('http://173.212.202.101/token10304.php',headers=headers).text
-			if '404 Not Found' in open:
-				open = requests.session().get('http://173.212.202.101/token3004.php',headers=headers).text
+		
+			open = requests.session().get('http://173.212.202.101/token15004.php',headers=headers).text
 			link = url+open
-			url  = link+'|User-Agent=Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q'
-			
+			url  = link+'|User-Agent=sss'
 		elif 'iptvrestream.net'in url:
 			url  = url + '|User-Agent=FC'
 			
 		elif 'livetvindia.co.in' in url:
 			url = url+'|User-Agent=samrai945&Accept=*/*&Range=bytes=0-&Connection=close&Host=live1.livetvindia.co.in:8000&Icy-MetaData=1'
+		elif 'madotv.com' in url:
+			url = url+'|User-Agent=Lavf/56.15.102&Accept=*/*&Range=bytes=0-&Connection=close&Host=main.madotv.com:25461&Icy-MetaData=1'
 			
 		elif 'mamahd.com' in url:
 			url = mamahdresolve(url)
 		elif 'cricfree' in url:
 			url = cricfreeresolve(url)
+		elif '163.172.211.23:25461' in url:
+			url = url+'|User-Agent=alo&Accept=*/*&Range=bytes=0-&Connection=close&Host=163.172.211.23:25461&Icy-MetaData=1'
 		else:
 			url = url
 		return (url).replace('<p>','')
@@ -104,6 +103,7 @@ def mamahdresolve(url):
 	
 def ibrodresolve(url):
 	import requests
+	ref  = url
 	open = OPEN_URL(url)
 	embed = regex_from_to(open,'iframe.+?src="','"')
 	open = OPEN_URL(embed)
@@ -112,7 +112,8 @@ def ibrodresolve(url):
 	iframe  = regex_from_to(open,"iframe src='","'")
 	open = requests.session().get(iframe,headers={'Referer':embed},verify=False).text
 	link = open.encode('ascii', 'ignore')
-	url  = re.compile("source.+?'(.+?)'").findall(link)[0]
+	url  = re.compile("source: '(.+?)'").findall(link)[0]
+	url  = url+'User-Agent=|User-Agent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36&Referer='+ref
 	return url
 	
 	
