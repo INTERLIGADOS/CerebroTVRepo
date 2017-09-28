@@ -1970,7 +1970,7 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.28" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.29" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>

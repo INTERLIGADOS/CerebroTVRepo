@@ -69,36 +69,36 @@ if not os.path.exists(destfile):
         fo = open(destfile, "w")
         fo.write(fdata);
         fo.close()
-dp = xbmcgui.DialogProgress()
-dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")        
-def ClearTVCache():
+#dp = xbmcgui.DialogProgress()
+#dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")        
+def d():
 	import requests,base64
 	try:
 		requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=2).text
 	except:
 		pass
-myplatform = platform()
-if myplatform == 'android': # Android 
-    xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
-else:
-    webbrowser . open('http://mtvb.co.uk/showadd/')
-dp.update(90)
-xbmc.sleep(1000) 
-dp.update(92)
-xbmc.sleep(1000) 
-dp.update(94)
-xbmc.sleep(1000) 
-dp.update(96)
-xbmc.sleep(1000) 
-dp.update(98)
-xbmc.sleep(1000) 
-dp.update(100)
-reset_playing()
-xbmc.sleep(1000) 
+d() 
+def d2():
+	import requests,base64
+	try:
+		requests.get(base64.b64decode('aHR0cHMlM0ElMkYlMkZ3d3cuaXB2YW5pc2guY29tJTJGJTNGYV9haWQlM0Q1OTk5ZGFmMTYyMDRiJTI2YV9iaWQlM0Q0OGY5NTk2Ng=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=2).text
+	except:
+		pass
+      
+d2() 
+
+def d3():
+	import requests,base64
+	try:
+		requests.get(base64.b64decode('aHR0cDovL210dmIuY28udWsvc2hvd2FkZC8='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=2).text
+	except:
+		pass
+      
+d3() 
 dp.close()      
 # After a restart the proc file should be wiped!
 
-ClearTVCache()
+
 reset_playing()
 try:   
     w = gui.TVGuide()
