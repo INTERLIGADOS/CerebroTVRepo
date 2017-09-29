@@ -836,7 +836,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbb247"
   name="CerebroTV 247"
-  version="1.5"
+  version="1.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
