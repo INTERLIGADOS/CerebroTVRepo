@@ -24,12 +24,12 @@ def menuoptions():
     '[B]      >> [COLOR=gold]Open TV Guide[/COLOR] << [/B]' , 
     '[B]      IPTV Lists (ALL) [/B]',
     '[B]      UK Freeview (with basic EPG data)[/B]',
-    '[B]      BBC iPlayer[/B]', 
-    '[B]      ITV Player[/B]', 
+    '[B]      BBC iPlayer[/B] (has regional channels)', 
+    '[B]      >> [COLOR=pink]Cerebro IPTV + VoD <<[/COLOR][/B]', 
     '[B]      >> [COLOR=gold]24/7 TV[/COLOR] << [/B]',
-    '[B]      [COLOR=orange]Kids TV Guide [/B][/COLOR]',
+    '[B]      [COLOR=lightblue]Kids TV Guide [/B][/COLOR]',
     '[B]      Kids TV[/B] (press back multi times to exit this)',
-    '[B]      My TV Guide[/B] (make your own)'
+    '[B]      >> [COLOR=green]My TV Guide <<[/B][/COLOR] (make your own)'
     ])
     # dialog.selectreturns
     #   0 -> escape pressed
@@ -60,7 +60,7 @@ def function4():
     xbmc.executebuiltin('RunAddon(plugin.video.iplayerwww)')
 
 def function5():
-    xbmc.executebuiltin('RunAddon(plugin.video.itv)')
+    xbmc.executebuiltin('RunAddon(plugin.video.wargames)')
 
 def function6():
     xbmc.executebuiltin('RunAddon(script.mtvbb247)')
