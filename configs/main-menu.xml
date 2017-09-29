@@ -78,9 +78,16 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]4K Movies[/COLOR]</title>
+<title>[COLOR pink]Cerebro 4K Movies[/COLOR]</title>
 <link>plugin://plugin.video.dnatv4k/?genre_id=15&genre_name=%23%23%23%20On%20Demand%204K%20%23%23%23&mode=channels&portal=%7b%22name%22%3a%20%22DNA%20TV%22%2c%20%22parental%22%3a%20%22true%22%2c%20%22url%22%3a%20%22http%3a%2f%2fmw1.iptv66.tv%22%2c%20%22mac%22%3a%20%2200%3a1A%3a78%3a27%3a27%3a27%22%2c%20%22serial%22%3a%20%7b%22custom%22%3a%20false%7d%2c%20%22password%22%3a%20%221234%22%7d</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]StarTec 4K Movies[/COLOR]</title>
+<link>plugin://plugin.video.StarTec/?description=No%20information%20available&amp;fanart=http%3a%2f%2fwww.dekrisdesign.com%2fwp-content%2fuploads%2f2011%2f10%2fmodern-home-theater-Millbrae.jpg&amp;iconimage=https%3a%2f%2fwww.dropbox.com%2fs%2fuecuunvtn0krma2%2ficon26.png%3fdl%3d1&amp;mode=get_list&amp;name=%5bB%5d%5bCOLOR%20orange%5d4K%5b%2fCOLOR%5d%5bCOLOR%20white%5d%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=http%3a%2f%2fgen-tec.co%2fgentecwiz%2fPLEASE%2520SUBSCRIBE%2520TO%2520CHARLIE%2520TEC%2520YOUTUBE%2fstar%2fmovies%2f4kmovies.xml</link>
+<thumbnail>https://www.dropbox.com/s/uecuunvtn0krma2/icon26.png?dl=1</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
