@@ -101,7 +101,9 @@ reset_playing()
 xbmc.sleep(1000) 
 dp.close()    
 # After a restart the proc file should be wiped!
-
+dialog = xbmcgui.Dialog()
+dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "", "Press OK or Back to Open TV Guide",'')
+        
 
 try:   
     w = gui.TVGuide()
