@@ -25,11 +25,11 @@ def menuoptions():
     '[B]      IPTV Lists (ALL) [/B]',
     '[B]      UK Freeview (with basic EPG data)[/B]',
     '[B]      BBC iPlayer[/B] (has regional channels)', 
-    '[B]      >> [COLOR=pink]Cerebro IPTV + VoD <<[/COLOR][/B]', 
-    '[B]      >> [COLOR=gold]24/7 TV[/COLOR] << [/B]',
-    '[B]      [COLOR=lightblue]Kids TV Guide [/B][/COLOR]',
+    '[B]      >> [COLOR=pink]Cerebro IPTV + VoD[/COLOR] <<[/B]', 
+    '[B]      >> [COLOR=gold]Cerebro 24/7 TV & Movies[/COLOR] << [/B]',
+    '[B]      >> [COLOR=lightblue]Kids TV Guide[/COLOR] <<[/B]',
     '[B]      Kids TV[/B] (press back multi times to exit this)',
-    '[B]      >> [COLOR=green]My TV Guide <<[/B][/COLOR] (make your own)'
+    '[B]      >> [COLOR=green]My TV Guide [/COLOR<<[/B]] (make your own)'
     ])
     # dialog.selectreturns
     #   0 -> escape pressed
