@@ -1,0 +1,13 @@
+\#*\#
+.idea/
+_pycache__/
+*.pyo
+*.pyc
+*$py.class
+TAGS
+GPATH
+GRTAGS
+GTAGS
+todo.org
+todo.html
+todo.org_archive

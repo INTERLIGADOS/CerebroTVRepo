@@ -131,6 +131,36 @@ For updates check the readme.
   </extension>
 </addon>
 
+<addon id="plugin.video.StarTec" name="[COLOR orange]Star Tec[/COLOR]" version="1.0.1" provider-name="Thunder">
+        <requires>
+                <import addon="xbmc.python" version="2.19.0" />
+                <import addon="script.module.nanscrapers" version="0.5.5" />
+                <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+                <import addon="script.module.liveresolver" version="0.1.47" />
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.requests" version="2.9.1" />
+                <import addon="script.module.addon.common" version="2.0.0" />
+                <import addon="script.module.xmltodict" version="0.9.0"/>
+                <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+                <import addon="script.module.urlresolver" version="1.2.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+                <provides>audio video</provides>
+        </extension>
+        <extension point="xbmc.service" library="service.py" start="[login|startup]">
+              </extension>
+        <extension point="xbmc.addon.metadata">
+          <summary lang="en">The Star Tec Addon by Thunder thanks to Midraal for his Jen code Template</summary>
+          <description lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
+		  Addon has Movies Tv shows and lots more.</description>
+          <platform>all</platform>
+          <forum>http://www.noobsandnerds.com/support/forumdisplay.php?fid=253</forum>
+          <website>www.noobsandnerds.com</website>
+          <video_guide>y0w8zIH4lOY</video_guide>
+          <video_preview>WdKIzajiBBI</video_preview>
+        </extension>
+</addon>
+
 <addon id="plugin.video.streamztv" name=" [B][COLOR lime]StreamZ
 [/COLOR][COLOR white]TV[/COLOR][/B]"
        version="1.2.2"
