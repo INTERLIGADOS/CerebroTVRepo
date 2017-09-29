@@ -98,7 +98,8 @@ dp.update(98)
 xbmc.sleep(1000) 
 dp.update(100)
 reset_playing()
-xbmc.sleep(1000)     
+xbmc.sleep(1000) 
+dp.close()    
 # After a restart the proc file should be wiped!
 
 
