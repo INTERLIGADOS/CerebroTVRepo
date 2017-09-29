@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="program.apollo" version="3.2.3" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group, Biglad">
+<addon id="program.apollo" version="3.2.4" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group, Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.4.3" />
@@ -11,7 +11,6 @@
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
-	<extension point="xbmc.service" library="pvr.py" start="[login|startup]"/>
 	<extension point="xbmc.addon.metadata">
         <summary>Apollo Group - Watch for the B-E-S-T!</summary>
         <description>Facebook Page and Support Group @ApolloGroupTV. Slots are full? Become a member today, visit: ApolloGroup.tv</description>
