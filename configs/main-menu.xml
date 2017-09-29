@@ -40,14 +40,14 @@
 
 <dir>
 <name>[COLOR pink]24-7 TV Shows[/COLOR]</name>
-<link>http://mtvb.co.uk/247-2.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-2.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
 <name>[COLOR pink]24-7 Movies[/COLOR]</name>
-<link>http://mtvb.co.uk/247-movies.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-movies.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
@@ -58,7 +58,7 @@
 
 <dir>
 <name>[COLOR pink]24-7 TV Shows OnDemand[/COLOR] </name>
-<link>http://mtvb.co.uk/247.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>

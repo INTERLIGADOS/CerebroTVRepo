@@ -44,7 +44,7 @@ class indexer:
     def root(self):
         try:
             regex.clear()
-            url = 'http://mtvb.co.uk/main-menu.xml'
+            url = 'https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/main-menu.xml'
             self.list = self.wargames_list(url)
             for i in self.list: i.update({'content': 'addons'})
             self.addDirectory(self.list)
