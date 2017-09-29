@@ -1,0 +1,94 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]24-7 Movies[/COLOR][/B]</title>
+</dir>
+
+<plugin>
+<title>[COLOR pink]Star Trek vs Star Wars[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dStar%20Trek%20vs%20Star%20Wars%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f9a045dead94fad2ceb3c5c808dd964b6.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Harry Potter vs Lord Of The Rings[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dHarry%20Potter%20vs%20Lord%20Of%20The%20Rings%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fcba19b64326f3f317a6af74844d32d17.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Action Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dAction%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f90ce2364e02379b96643fe4d0f2d7c25.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Animation Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dAnimation%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f7e18e745bf13ed4e73c5e612599b4cf5.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Christmas Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dChristmas%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f17d6b59f16d493db84234ade495c6ce6.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Comedy Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dComedy%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f6fd04bc5b53697040f6f43a3c96d7658.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Documentary Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dDocumentary%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f993ce9ee723cef89c679b7a55e42472a.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Horror Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dHorror%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f377feb82d0b63676a18f18f152f6c721.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Musicals Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMusicals%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f9a7a05ed6d0e14916923fa226501bd2c.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Mystery Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMystery%20movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fcd0f46533a7ff32277171001db8ea982.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Romance Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dRomance%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f3248e60a5820cec655cb031cc2662925.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Studio Ghibli Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dStudio%20Ghibli%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f57f1a338fcf6edaa3378c10cd5beefd6.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Random Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMovies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f94d035945b3d82182669c4d3f6daa104.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
