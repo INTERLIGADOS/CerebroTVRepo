@@ -2154,7 +2154,7 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon 	id="script.wargames.artwork"
-		version="1.5.6"
+		version="1.5.7"
 		name="WarGames Artwork"
 		provider-name="Biglad">
 	<requires>
