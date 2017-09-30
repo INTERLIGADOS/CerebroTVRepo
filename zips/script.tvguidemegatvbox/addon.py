@@ -29,7 +29,7 @@ def menuoptions():
     '[B]      >> [COLOR=gold]Cerebro 24/7 TV & Movies[/COLOR] << [/B]',
     '[B]      >> [COLOR=lightblue]Kids TV Guide[/COLOR] <<[/B]',
     '[B]      Kids TV[/B] (press back multi times to exit this)',
-    '[B]      >> [COLOR=green]My TV Guide [/COLOR]<<[/B]] (make your own)'
+    '[B]      >> [COLOR=green]My TV Guide [/COLOR]<<[/B] (make your own)'
     ])
     # dialog.selectreturns
     #   0 -> escape pressed
