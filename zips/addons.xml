@@ -90,6 +90,34 @@
 
 </addon>
 
+<addon id="plugin.video.bob.unleashed" name="BoB Unleashed" version="1.0.7" provider-name="midraal">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.liveresolver" version="0.1.47" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.urlresolver" version="1.2.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Unleash Your Inner Bob</summary>
+        <description lang="en">Unleash Your Inner Bob</description>
+        <platform>all</platform>
+        <forum>http://www.noobsandnerds.com/support/forumdisplay.php?fid=253</forum>
+        <website>www.noobsandnerds.com</website>
+        <video_guide>y0w8zIH4lOY</video_guide>
+        <video_preview>WdKIzajiBBI</video_preview>
+    </extension>
+</addon>
+
 <addon id="plugin.video.cerebro-movies"
   name="[COLOR=gold] .CerebroTV Movie Search[/COLOR] (WiP)"
   version="1.4"
@@ -687,6 +715,29 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.module.addon.common"
+	     name="Common addon methods"
+	     version="2.0.1"
+	     provider-name="Eldorado (original: t0mm0)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="script.module.addon.signals"
 	name="Addon Signals"
 	version="0.0.1"
@@ -699,6 +750,43 @@ Removed: Nudeflix</news>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
 		<source>https://github.com/ruuk/script.module.addon.signals</source>
 	</extension>
+</addon>
+
+<addon id="script.module.beautifulsoup"
+       name="BeautifulSoup"
+       version="3.2.1"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup4"
+       name="BeautifulSoup4"
+       version="4.5.3"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+             version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
 </addon>
 
 <addon id="script.module.f4mproxy"
@@ -735,6 +823,25 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.module.m3u8" name="m3u8" version="0.2.10" provider-name="globocom, Timewasted">
+	<requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.iso8601" version="0.1.11"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions</summary>
+		<description lang="en">Packed for XBMC from https://github.com/globocom/m3u8</description>
+		<language>en</language>
+		<platform>all</platform>
+		<license>MIT</license>
+		<forum></forum>
+		<website>https://github.com/globocom/m3u8</website>
+		<source>https://github.com/timewasted/script.module.m3u8</source>
+		<email>ryan@timewasted.me</email>
+	</extension>
+</addon>
+
 <addon id="script.module.metahandler"
      name="metahandler"
      version="3.0.2"
@@ -760,7 +867,7 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
-<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.30" provider-name="Team NaN">
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.31" provider-name="Team NaN">
         <requires>
                 <import addon="xbmc.python" version="2.1.0"/>
                 <import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -784,6 +891,30 @@ Removed: Nudeflix</news>
                 <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
                 <website>http://noobsandnerds.com</website>
         </extension>
+</addon>
+
+<addon id="script.module.python.koding.aio"
+   name="Python Koding AIO"
+   version="0.9.8.6"
+   provider-name="Total Revolution, noobsandnerds">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.2.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Python Koding All In One</summary>
+    <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development. Although developed at totalrevolution.tv this also contains unique features which hook into the noobsandnerds.com framework so a big thanks to the team and users who keep the portals updated.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum>http://noobsandnerds.com/support/showthread.php?tid=17614</forum>
+    <website>http://totalrevolution.tv</website>
+    <news>Added new Addon_Service funtion</news>
+    <source>https://github.com/totalrevolution/totalrevolution/tree/master/script.module.python.koding.aio</source>
+  </extension>
 </addon>
 
 <addon id="script.module.requests"
@@ -874,6 +1005,23 @@ Removed: Nudeflix</news>
     <language />
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.module.xmltodict" name="xmltodict" version="0.9.0" provider-name="martinblech">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language></language>
+        <summary lang="en">Python helper module</summary>
+        <description lang="en">xmltodict is a Python module that makes working with XML feel like you are working with JSON, as in this "spec".[CR]</description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <website>https://github.com/martinblech/xmltodict</website>
+        <source>https://github.com/martinblech/xmltodict</source>
+        <forum></forum>
+    </extension>
 </addon>
 
 <addon id="script.moviesmegatvbox"

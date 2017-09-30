@@ -1,3 +1,9 @@
+v0.5.31
+- added 4kmovies
+- added mydownloadtube
+- fixed 1movies
+- fixed dizi720
+- fixed Flienx
 v0.5.30
 - fixed some broken scrapers
 - added thewatchseries
