@@ -343,6 +343,7 @@ Removed: Nudeflix</news>
 		<import addon="script.wargames.metadata" version="1.0.0"/>
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<import addon="script.module.wargames"/>
+        <import addon="script.module.streamhub"/>
         <import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
