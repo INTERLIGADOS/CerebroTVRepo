@@ -85,13 +85,6 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]StarTec 4K Movies[/COLOR]</title>
-<link>plugin://plugin.video.StarTec/?description=No%20information%20available&amp;fanart=http%3a%2f%2fwww.dekrisdesign.com%2fwp-content%2fuploads%2f2011%2f10%2fmodern-home-theater-Millbrae.jpg&amp;iconimage=https%3a%2f%2fwww.dropbox.com%2fs%2fuecuunvtn0krma2%2ficon26.png%3fdl%3d1&amp;mode=get_list&amp;name=%5bB%5d%5bCOLOR%20orange%5d4K%5b%2fCOLOR%5d%5bCOLOR%20white%5d%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=http%3a%2f%2fgen-tec.co%2fgentecwiz%2fPLEASE%2520SUBSCRIBE%2520TO%2520CHARLIE%2520TEC%2520YOUTUBE%2fstar%2fmovies%2f4kmovies.xml</link>
-<thumbnail>https://www.dropbox.com/s/uecuunvtn0krma2/icon26.png?dl=1</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]Latest HD Movies[/COLOR]</title>
 <link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.bob.unleashed%5cfanart.jpg&iconimage=https%3a%2f%2f5.135.164.106%2freloaded%2ficons%2fMain%2fMain-New-Releases.png&mode=get_list&name=New%20Releases&url=http%3a%2f%2fwww.norestrictions.club%2freloaded%2fnewreleasesmain.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
