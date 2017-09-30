@@ -39,7 +39,7 @@ def menuoptions():
     '[B]      Specto Movies[/B]' , 
     '[B]      1Channel Movies[/B]', 
     '[B]      S.A.L.T.S. Movies[/B]',
-    '[B]      Exodus[/B]',
+    '[B]      Cerebro-Movies[/B]',
     '[B]      [COLOR gold]Latest Movies[/COLOR][/B] (Some Cam Copies Lurk Here!!!!!)',
     '[B]      [COLOR green]4K Movies[/COLOR][/B] (need a fast connection!!!!)',
     '[B]      [COLOR lightblue]3D Movies[/COLOR][/B] (HD)',
@@ -103,7 +103,7 @@ def function12():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.salts/?mode=browse&section=Movies",return)')
    
 def function13():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.exodus/?action=movieNavigator",return)') 
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/?action=movieNavigator",return)') 
 
 def function14():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2ffanart.jpg.png&mode=1&name=%5bCOLOR%20aqua%5dNew%20Releases%5b%2fCOLOR%5d&url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fNew%2520Releases%2fNew%2520Releases.txt",return)')        

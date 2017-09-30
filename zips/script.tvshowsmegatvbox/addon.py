@@ -22,14 +22,14 @@ def menuoptions():
         
     call = dialog.select('[B][COLOR=yellow]TV Box Sets[/COLOR][/B]', [
     '[B]      TV Mix[/B]          [I](Good for latest episodes UK & USA)[/I] USE THIS THEN SEARCH IN [COLOR red] StreamHub[/COLOR] for the show!' , 
-    '[B]      Stream Hub[/B]  [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR] (Best Quality)', 
+    '[B]      Stream Hub[/B]  [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]', 
     '[B]      Poseidon[/B]       [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]',
     '[B]      Specto[/B]          [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]' , 
     '[B]      Elysium[/B]         [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]',
     '[B]      Covenant[/B]      [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]', 
     '[B]      1Channel[/B]      [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]', 
     '[B]      S.A.L.T.S.[/B]     [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]', 
-    '[B]      Exodus[/B]         [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]' , 
+    '[B]      CerebroTV[/B]   [I](TV Show Box sets & Latest Episodes)[/I] [COLOR red]HD[/COLOR]' , 
     '[B]      UK Soaps Catch Up[/B] [COLOR red]HD[/COLOR]' , 
     '[B]      UK / USA TV Catch Up[/B] [COLOR red]HD[/COLOR]'])
     # dialog.selectreturns
@@ -111,7 +111,7 @@ def function8():
      
 def function9():
     #the content of function 3
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.exodus/?action=tvNavigator",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/?action=tvNavigator",return)')
     #dp = xbmcgui.DialogProgress()
     #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     #xbmc.sleep(5000)  
