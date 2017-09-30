@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
-    Copyright (C) 2016 Exodus
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,92 +18,74 @@
 '''
 
 
-import re,os,urllib,urlparse,json,zipfile,StringIO,datetime
+import re,urllib,urlparse,json
 
-try:
-    from sqlite3 import dbapi2 as database
-except:
-    from pysqlite2 import dbapi2 as database
-
-from resources.lib.modules import control
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
-from resources.lib.modules import proxy
+from resources.lib.modules import directstream
+from resources.lib.modules import source_utils
 
 
 class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['movie25.ph', 'movie25.hk', 'tinklepad.is', 'tinklepad.ag']
-        self.base_link = 'http://tinklepad.ag'
-        self.search_link = 'http://tinklepad.ag/search.php?q=%s'
+        self.domains = ['movie25.ph', 'movie25.hk', 'tinklepad.is', 'tinklepad.ag', 'movie25.ag','5movies.to']
+        self.base_link = 'http://5movies.to/'
+        self.search_link = '/search.php?q=%s'
         self.search_link_2 = 'aHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vY3VzdG9tc2VhcmNoL3YxZWxlbWVudD9rZXk9QUl6YVN5Q1ZBWGlVelJZc01MMVB2NlJ3U0cxZ3VubU1pa1R6UXFZJnJzej1maWx0ZXJlZF9jc2UmbnVtPTEwJmhsPWVuJmN4PTAwODQ5Mjc2ODA5NjE4MzM5MDAwMzowdWd1c2phYm5scSZnb29nbGVob3N0PXd3dy5nb29nbGUuY29tJnE9JXM='
+        self.video_link = '/getlink.php?Action=get&lk=%s'
 
-
-    def movie(self, imdb, title, localtitle, year):
+    def matchAlias(self, title, aliases):
         try:
-            download = True
+            for alias in aliases:
+                if cleantitle.get(title) == cleantitle.get(alias['title']):
+                    return True
+        except:
+            return False
 
-            data = os.path.join(control.dataPath, 'provider.movie25.db')
-            data_link = 'http://offshoregit.com/extest/provider.movie25.zip'
-
-            try: download = abs(datetime.datetime.fromtimestamp(os.path.getmtime(data)) - (datetime.datetime.now())) > datetime.timedelta(days=7)
-            except: pass
-
-            if download == True:
-                r = client.request(data_link)
-                zip = zipfile.ZipFile(StringIO.StringIO(r))
-                zip.extractall(control.dataPath)
-                zip.close()
-
-            dbcon = database.connect(data)
-            dbcur = dbcon.cursor()
-            dbcur.execute("SELECT * FROM movies WHERE imdb = '%s'" % imdb)
-            url = dbcur.fetchone()[0]
-            dbcon.close()
-
+    def movie(self, imdb, title, localtitle, aliases, year):
+        try:
+            aliases.append({'country': 'us', 'title': title})
+            url = {'imdb': imdb, 'title': title, 'year': year, 'aliases': aliases}
+            url = urllib.urlencode(url)
             return url
         except:
-            pass
+            return
 
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
-            q = self.search_link_2.decode('base64') % urllib.quote_plus(title)
+            aliases.append({'country': 'us', 'title': tvshowtitle})
+            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year, 'aliases': aliases}
+            url = urllib.urlencode(url)
+            return url
+        except:
+            return
 
+
+    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+        try:
+            if url == None: return
+            url = urlparse.parse_qs(url)
+            url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
+            url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
+            url = urllib.urlencode(url)
+            return url
+        except:
+            return
+
+    def _search(self, title, year, aliases, headers):
+        try:
+            q = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.getsearch(title)))
             r = client.request(q)
-            if r == None: r = client.request(q)
-            if r == None: r = client.request(q)
-            if r == None: r = client.request(q)
+            r = client.parseDOM(r, 'div', attrs={'class':'ml-img'})
+            r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'img', ret='alt'))
+            url = [i for i in r if cleantitle.get(title) == cleantitle.get(i[1]) and year in i[1]][0][0]
 
-            r = json.loads(r)['results']
-            r = [(i['url'], i['titleNoFormatting']) for i in r]
-            r = [(i[0], re.findall('(?:^Watch |)(.+? \(\d{4}\))', i[1])) for i in r]
-            r = [(urlparse.urljoin(self.base_link, i[0]), i[1][0]) for i in r if i[1]]
-
-            t = cleantitle.get(title)
-            years = ['(%s)' % str(year), '(%s)' % str(int(year)+1), '(%s)' % str(int(year)-1)]
-
-            r = [i for i in r if any(x in i[1] for x in years)]
-
-            match = [i[0] for i in r if t == cleantitle.get(i[1]) and '(%s)' % str(year) in i[1]]
-
-            match2 = [i[0] for i in r]
-            match2 = [x for y,x in enumerate(match2) if x not in match2[:y]]
-            if match2 == []: return
-
-            for i in match2[:5]:
-                try:
-                    if len(match) > 0: url = match[0] ; break
-                    r = proxy.request(urlparse.urljoin(self.base_link, i), 'ovie')
-                    r = re.findall('(tt\d+)', r)
-                    if imdb in r: url = i ; break
-                except:
-                    pass
-
-            url = re.findall('(\d+)', url)[-1]
             return url
         except:
             pass
+
 
 
     def sources(self, url, hostDict, hostprDict):
@@ -113,43 +94,55 @@ class source:
 
             if url == None: return sources
 
-            if url.isdigit(): url = '/watch-%s-online-free-%s.html' % (url, url)
+            data = urlparse.parse_qs(url)
+            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
+            aliases = eval(data['aliases'])
+            headers = {}
+            title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+            year = data['year']
 
-            url = urlparse.urljoin(self.base_link, url)
+            if 'tvshowtitle' in data:    
+                episode = data['episode']
+                season = data['season']
+                url = self._search(data['tvshowtitle'], data['year'], aliases, headers)
+                url = url.replace('online-free','season-%s-episode-%s-online-free'%(season,episode))
 
-            result = proxy.request(url, 'ovie')
+            else:
+                episode = None
+                year = data['year']
+                url = self._search(data['title'], data['year'], aliases, headers)
 
-            quality = re.compile('Quality(.+?)<').findall(result.replace('\n',''))
-            quality = quality[0].strip() if quality else 'SD'
-            if quality == 'CAM' or quality == 'TS': quality = 'CAM'
-            elif quality == 'SCREENER': quality = 'SCR'
-            else: quality = 'SD'
+            
+            url = url if 'http' in url else urlparse.urljoin(self.base_link, url)
+            result = client.request(url);
 
-            dupes = []
-            links = re.findall('\'(.+?)\'', result) + re.findall('\"(.+?)\"', result)
-            links = [proxy.parse(i) for i in links]
-            links = [i for i in links if i.startswith('http')]
-            links = [x for y,x in enumerate(links) if x not in links[:y]]
-
-            for i in links:
+            result = client.parseDOM(result, 'li', attrs={'class':'link-button'})
+            links = client.parseDOM(result, 'a', ret='href')
+            i = 0
+            for l in links:
+                if i == 10: break
                 try:
-                    url = i
-                    url = urlparse.urlparse(url).query
-                    url = url.decode('base64')
-                    url = re.findall('((?:http|https)://.+?/.+?)(?:&|$)', url)[0]
-                    url = client.replaceHTMLCodes(url)
-                    url = url.encode('utf-8')
-
-                    if url in dupes: raise Exception()
-                    dupes.append(url)
-
-                    host = re.findall('([\w]+[.][\w]+)$', urlparse.urlparse(url.strip().lower()).netloc)[0]
-                    if not host in hostDict: raise Exception()
-                    host = host.encode('utf-8')
-
-                    sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': url, 'direct': False, 'debridonly': False})
+                    l = l.split('=')[1]
+                    l = urlparse.urljoin(self.base_link, self.video_link%l)
+                    result = client.request(l, post={}, headers={'Referer':url})
+                    u = result if 'http' in result else 'http:'+result 
+                    if 'google' in u:
+                        valid, hoster = source_utils.is_host_valid(u, hostDict)
+                        urls, host, direct = source_utils.check_directstreams(u, hoster)
+                        for x in urls: sources.append({'source': host, 'quality': x['quality'], 'language': 'en', 'url': x['url'], 'direct': direct, 'debridonly': False})
+             
+                    else:
+                        valid, hoster = source_utils.is_host_valid(u, hostDict)
+                        if not valid: continue
+                        try:
+                            u.decode('utf-8')
+                            sources.append({'source': hoster, 'quality': 'SD', 'language': 'en', 'url': u, 'direct': False, 'debridonly': False})
+                            i+=1
+                        except:
+                            pass
+                    
                 except:
-                    pass
+                    pass       
 
             return sources
         except:
@@ -157,6 +150,7 @@ class source:
 
 
     def resolve(self, url):
-        return url
-
-
+        if 'google' in url:
+            return directstream.googlepass(url)
+        else:
+            return url

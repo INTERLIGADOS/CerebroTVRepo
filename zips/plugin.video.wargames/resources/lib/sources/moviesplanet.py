@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
-    Copyright (C) 2016 Exodus
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -32,14 +31,14 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['moviesplanet.is']
-        self.base_link = 'http://www.moviesplanet.is'
+        self.domains = ['moviesplanet.is','moviesplanet.tv']
+        self.base_link = 'https://www.moviesplanet.tv'
         self.search_link = '/ajax/search.php'
         self.user = control.setting('moviesplanet.user')
         self.password = control.setting('moviesplanet.pass')
 
 
-    def movie(self, imdb, title, localtitle, year):
+    def movie(self, imdb, title, localtitle, aliases, year):
         try:
             if (self.user == '' or self.password == ''): raise Exception()
 
@@ -72,7 +71,7 @@ class source:
             return
 
 
-    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, year):
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
             if (self.user == '' or self.password == ''): raise Exception()
 
@@ -137,22 +136,21 @@ class source:
             if url == None: return sources
 
             if (self.user == '' or self.password == ''): raise Exception()
-
             login = urlparse.urljoin(self.base_link, '/login')
-            post = {'username': self.user, 'password': self.password, 'action': 'login'}
+            post = {'username': self.user, 'password': self.password, 'returnpath': '/'}
             post = urllib.urlencode(post)
 
-            cookie = client.request(login, post=post, XHR=True, output='cookie')
-
-
+            headers = {'User-Agent':client.randomagent()}
+            rlogin = client.request(login, headers=headers, post=post, output='extended')
+            guid = re.findall('(.*?);\s', rlogin[2]['Set-Cookie'])[0]
+            headers['Cookie'] += '; '+guid
             url = urlparse.urljoin(self.base_link, url)
 
-            result = client.request(url, cookie=cookie)
+            result = client.request(url, headers=headers)
 
             url = re.findall("embeds\[\d+\]\s*=\s*'([^']+)", result)[0]
             url = client.parseDOM(url, 'iframe', ret='src')[0]
             url = url.replace('https://', 'http://')
-
 
             links = []
 
@@ -166,7 +164,7 @@ class source:
             except:
                 pass
 
-            result = client.request(url)
+            result = client.request(url, headers=headers)
 
             try:
                 url = re.findall('src\s*=\s*(?:\'|\")(http.+?)(?:\'|\")', result)
@@ -184,8 +182,8 @@ class source:
             except:
                 pass
 
-
-            for i in links: sources.append({'source': i['source'], 'quality': i['quality'], 'language': 'en', 'url': i['url'], 'direct': True, 'debridonly': False})
+            for i in links:
+                sources.append({'source': i['source'], 'quality': i['quality'], 'language': 'en', 'url': i['url'], 'direct': True, 'debridonly': False})
 
             return sources
         except:

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-'''
-    Exodus Add-on
-    Copyright (C) 2016 Exodus
+"""
+    Covenant Add-on
+    Copyright (C) 2017 Covenant
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,20 +16,12 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
+"""
 
 
-import pkgutil
+import os.path
 
-
-def sources():
-    try:
-        sourceDict = []
-        for pkg, name, is_pkg in pkgutil.walk_packages(__path__): sourceDict.append((name, is_pkg))
-        sourceDict = [i[0] for i in sourceDict if i[1] == False]
-        sourceDict = [(i, __import__(i, globals(), locals(), [], -1).source()) for i in sourceDict]
-        return sourceDict
-    except:
-        return []
+files = os.listdir(os.path.dirname(__file__))
+__all__ = [filename[:-3] for filename in files if not filename.startswith('__') and filename.endswith('.py')]
 
 

@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
-    Copyright (C) 2016 Exodus
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,7 +23,7 @@ import re,urllib,urlparse,json
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import directstream
-from resources.lib.modules import trakt
+from resources.lib.modules import source_utils
 from resources.lib.modules import tvmaze
 
 
@@ -32,21 +31,15 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
+        self.genre_filter = ['animation', 'anime']
         self.domains = ['gogoanimemobile.com', 'gogoanimemobile.net', 'gogoanime.io']
         self.base_link = 'http://ww1.gogoanime.io'
         self.search_link = '/search.html?keyword=%s'
         self.episode_link = '/%s-episode-%s'
 
 
-    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, year):
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
-            r = 'search/tvdb/%s?type=show&extended=full' % tvdb
-            r = json.loads(trakt.getTrakt(r))
-            if not r: return '0'
-
-            d = r[0]['show']['genres']
-            if not ('anime' in d or 'animation' in d): return '0'
-
             tv_maze = tvmaze.tvMaze()
             tvshowtitle = tv_maze.showLookup('thetvdb', tvdb)
             tvshowtitle = tvshowtitle['name']

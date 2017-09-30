@@ -331,7 +331,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=".[COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.1" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=".[COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.2" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
@@ -805,6 +805,25 @@ Removed: Nudeflix</news>
     <website>http://python-requests.org</website>
     <source>https://github.com/beenje/script.module.requests</source>
     <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.module.streamhub" name="[COLOR ffff0000][B]StreamHub Scrapers[/B][/COLOR]" version="8.0" Eprovider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.module.urlresolver" />
+    <import addon="script.module.beautifulsoup4" />
+	<import addon="script.video.F4mProxy" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Dependency Addon for StreamHub</summary>
+    <description lang="en">Dependency Addon for StreamHub</description>
+	<disclaimer lang="en">Dependency Addon for StreamHub</disclaimer>
+    <platform>all</platform>
   </extension>
 </addon>
 
