@@ -78,31 +78,31 @@ def d():
 	except:
 		pass
 d() 
-dp = xbmcgui.DialogProgress()
-dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
-dp.update(50)
-myplatform = platform()
-if myplatform == 'android': # Android 
-    xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
-else:
-    webbrowser . open('http://mtvb.co.uk/showadd/')
-dp.update(90)
-xbmc.sleep(1000) 
-dp.update(92)
-xbmc.sleep(1000) 
-dp.update(94)
-xbmc.sleep(1000) 
-dp.update(96)
-xbmc.sleep(1000) 
-dp.update(98)
-xbmc.sleep(1000) 
-dp.update(100)
+#dp = xbmcgui.DialogProgress()
+#dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
+#dp.update(50)
+#myplatform = platform()
+#if myplatform == 'android': # Android 
+#    xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
+#else:
+#    webbrowser . open('http://mtvb.co.uk/showadd/')
+#dp.update(90)
+#xbmc.sleep(1000) 
+#dp.update(92)
+#xbmc.sleep(1000) 
+#dp.update(94)
+#xbmc.sleep(1000) 
+#dp.update(96)
+#xbmc.sleep(1000) 
+#dp.update(98)
+#xbmc.sleep(1000) 
+#dp.update(100)
 reset_playing()
-xbmc.sleep(1000) 
+#xbmc.sleep(1000) 
 dp.close()    
 # After a restart the proc file should be wiped!
-dialog = xbmcgui.Dialog()
-dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "", "Press OK or Back to Open TV Guide",'')
+#dialog = xbmcgui.Dialog()
+#dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "", "Press OK or Back to Open TV Guide",'')
         
 
 try:   
