@@ -95,16 +95,16 @@ def killxbmc():
     elif myplatform == 'android': # Android  
         response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(boxid)+'&die=1').read()
         print "############   try android force close  #################"
-        try: os.system('adb shell am force-stop org.xbmc.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc.xbmc')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc')
-        except: pass 
-        try: os.system("su -c 'reboot'")
-        except: pass		
+        #try: os.system('adb shell am force-stop org.xbmc.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc.xbmc')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc')
+        #except: pass 
+        #try: os.system("su -c 'reboot'")
+        #except: pass		
         #dialog.ok("[COLOR=red][B]CerebroTV Updater[/COLOR][/B]", "If you\'re seeing this message it means the updater was unable", "to close kodi or reboot your deivice. Please pull the power lead or power off your tablet [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu. [COLOR=lime]DO NOT[/COLOR] press OK",'')
         xbmc.executebuiltin('RunAddon(script.program.exitkodi)') 
     elif myplatform == 'windows': # Windows

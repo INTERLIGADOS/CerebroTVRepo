@@ -91,17 +91,17 @@ def killxbmc():
         exit()
     elif myplatform == 'android': # Android  
         print "############   try android force close  #################"
-        try: os.system('adb shell am force-stop org.xbmc.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc.xbmc')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc')
-        except: pass	
-        try: os.system('adb shell am force-stop com.semperpax.spmc16')
-        except: pass
-        dp.create("[COLOR tomato]Mega TV[/COLOR]","SPMC/Kodi is now Closing","This make take a while.")
+        #try: os.system('adb shell am force-stop org.xbmc.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc.xbmc')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc')
+        #except: pass	
+        #try: os.system('adb shell am force-stop com.semperpax.spmc16')
+        #except: pass
+        dp.create("[COLOR tomato]Cerebro[/COLOR]","SPMC/Kodi is now Closing","This make take a while.")
         #xbmc.sleep(1000)
         os.system("su -c 'reboot'")        
         #xbmc.executebuiltin('Quit')

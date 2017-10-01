@@ -349,17 +349,17 @@ def killxbmc():
         dp.create("[COLOR tomato]Cerebro TV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     elif myplatform == 'android': # Android  
         print "############   try android force close  #################"
-        try: os.system('adb shell am force-stop org.xbmc.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc.xbmc')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc')
-        except: pass 
+        #try: os.system('adb shell am force-stop org.xbmc.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc.xbmc')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc')
+        #except: pass 
         try: os.system("su -c 'reboot'")
         except: pass
-        xbmc.executebuiltin('Quit')		
+        #xbmc.executebuiltin('Quit')		
         dialog.ok("[COLOR=red][B]Cerebro TV Updater[/COLOR][/B]", "If you\'re seeing this message it means the updater was unable", "to close kodi or reboot your deivice. Please pull the power lead or power off your tablet [COLOR=red]DO NOT[/COLOR] exit cleanly via the menu. [COLOR=red]DO NOT[/COLOR] press OK",'')
         dp.create("[COLOR tomato]Cerebro TV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         

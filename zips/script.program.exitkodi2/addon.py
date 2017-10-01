@@ -23,8 +23,8 @@ xbmc.executebuiltin("Notification(CerebroTV,Closing SPMC/Kodi, Will take a few s
 xbmc.sleep(1000)
 try: os.system("su -c 'reboot'")
 except: pass
-try: os.system('adb shell am force-stop com.semperpax.spmc16')
-except: pass
+#try: os.system('adb shell am force-stop com.semperpax.spmc16')
+#except: pass
 try: os.system('TASKKILL /im SPMC.exe /f')
 except: pass
 try: os.system('TASKKILL /im XBMC.exe /f')
