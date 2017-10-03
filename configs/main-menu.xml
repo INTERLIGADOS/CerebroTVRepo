@@ -43,11 +43,19 @@
 </dir>
 
 <plugin>
+<title>[COLOR ping]CerebroTV's Repo[/COLOR]</title>
+<link>addons://repository.cerebro/</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR green]Need A New Box??[/COLOR] (Best UK, UE and USA devices)</title>
 <link>plugin://script.cerebro.buy</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
 
 
 
