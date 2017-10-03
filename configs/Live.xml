@@ -31,6 +31,20 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]BBCi Player[/COLOR]</title>
+<link>plugin://plugin.video.iplayerwww/?content_type=video</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]ITV Player[/COLOR] (AKA ITV HUB)</title>
+<link>plugin://plugin.video.itv/</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Swift Streams[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=https%3a%2f%2fimage.winudf.com%2fv2%2fimage%2fY29tLnN3aWZ0LnN0cmVhbV9zcmNqdHBicg%2ficon.png%3fw%3d170%26fakeurl%3d1%26type%3d.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dSwift%20Streams%5b%2fCOLOR%5d%5b%2fB%5d&url=snappystreams</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
