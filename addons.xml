@@ -707,6 +707,42 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.cerebro.tvguide.open2"
+  name="CerebroTV Launch TV Guide Sports"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.tvguide.open3"
+  name="CerebroTV Launch TV Guide Kids"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.cerebrotv"
     name=".[COLOR=red]Cerebro TV-CORE[/COLOR]" version="1.0.9" provider-name="CerebroTV">
   <requires>
