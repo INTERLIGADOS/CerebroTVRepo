@@ -32,6 +32,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Project Cypher Streams[/COLOR]</title>
+<link>plugin://plugin.video.ProjectCypher/?action=directory&amp;content=addons&amp;url=http%3a%2f%2fcypher-media.com%2faa%2flive.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]UK TV Freeview Basic[/COLOR]</title>
 <link>plugin://plugin.video.tvplayer</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
