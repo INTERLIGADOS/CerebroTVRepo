@@ -3,20 +3,6 @@
 </dir>
 
 <plugin>
-<title>[COLOR green]Open Pre Linked UK TV Guide[/COLOR] (Premium Only)</title>
-<link>plugin://script.cerebro.tvguide.open</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR green]Open FREE TV Guide[/COLOR] (Free Version)</title>
-<link>plugin://script.cerebro.tvguide.open.free</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]Mobdro Streams[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
