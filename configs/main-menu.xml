@@ -110,3 +110,18 @@
 <dir>
 <title> </title>
 </dir>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title> </title>
+</dir>
+
+<plugin>
+<title>COMING SOON (DONATE)</title>
+<link>plugin://</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
