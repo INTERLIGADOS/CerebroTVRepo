@@ -3,6 +3,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]Cerebro IPTV Lists[/COLOR] (Premium Only)</title>
+<link>plugin://plugin.program.super.favourites/?label=[COLOR black]iptv[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Ciptv&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Mobdro Streams[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -40,6 +47,13 @@
 <plugin>
 <title>[COLOR pink]BBCi Player[/COLOR]</title>
 <link>plugin://plugin.video.iplayerwww/?content_type=video</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]BBCi Player Regional[/COLOR] (Premium Only)</title>
+<link>plugin://plugin.program.super.favourites/?label=[COLOR black]bbc[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Cbbc&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
