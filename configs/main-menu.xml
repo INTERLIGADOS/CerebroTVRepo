@@ -4,8 +4,15 @@
 </dir>
 
 <plugin>
-<title>[COLOR green]Open UK TV Guide[/COLOR] (Premium Only)</title>
+<title>[COLOR green]Open Pre Linked UK TV Guide[/COLOR] (Premium Only)</title>
 <link>plugin://script.cerebro.tvguide.open</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR green]Open FREE TV Guide[/COLOR] (Free Version)</title>
+<link>plugin://script.cerebro.tvguide.open.free</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
