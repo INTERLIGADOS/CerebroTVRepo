@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
+
+
+
+
+<dir>
+<name>[COLOR ghostwhite][B]KIDS MOVIES[/COLOR][/B]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kidsmovies.xml</link>
+<thumbnail>http://icons.iconarchive.com/icons/softskin/series-folder/256/Folder-TV-Disney-icon.png</thumbnail>
+<fanart></fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite][B]KIDS TV SHOWS[/COLOR][/B]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kidstv.xml</link>
+<thumbnail>http://orig15.deviantart.net/849d/f/2015/119/b/9/nickelodeon_folder_icon_by_mikromike-d8rklbf.png</thumbnail>
+<fanart></fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite][B]KIDS YOUTUBE[/COLOR][/B]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kids-youtube.xml</link>
+<thumbnail>http://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/256/youtube-icon.png</thumbnail>
+<fanart></fanart>
+</dir>
