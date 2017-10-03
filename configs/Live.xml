@@ -1,0 +1,73 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Live TV[/COLOR][/B]</title>
+</dir>
+
+<plugin>
+<title>[COLOR green]Open Pre Linked UK TV Guide[/COLOR] (Premium Only)</title>
+<link>plugin://script.cerebro.tvguide.open</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR green]Open FREE TV Guide[/COLOR] (Free Version)</title>
+<link>plugin://script.cerebro.tvguide.open.free</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Mobdro Streams[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Apollo Streams[/COLOR]</title>
+<link>plugin://script.mtvppv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Project Cypher Streams[/COLOR]</title>
+<link>plugin://plugin.video.ProjectCypher/?action=directory&amp;content=addons&amp;url=http%3a%2f%2fcypher-media.com%2faa%2flive.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]UK TV Freeview Basic[/COLOR]</title>
+<link>plugin://plugin.video.tvplayer</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Swift Streams[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=https%3a%2f%2fimage.winudf.com%2fv2%2fimage%2fY29tLnN3aWZ0LnN0cmVhbV9zcmNqdHBicg%2ficon.png%3fw%3d170%26fakeurl%3d1%26type%3d.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dSwift%20Streams%5b%2fCOLOR%5d%5b%2fB%5d&url=snappystreams</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]eDoctor Streams[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=https%3a%2f%2flh3.googleusercontent.com%2fqydRpyUiySg1MuswXdbQE88PBfyPH8uJYhONBL3UO1Ij4yEHtftHFK3pKXHXppFUCmk%3dw300&mode=4&name=%5bCOLOR%20white%5d%5bB%5deDoctor%20IPTV%5b%2fCOLOR%5d%5b%2fB%5d&url=edoctor</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<dir>
+<name>[COLOR pink]24-7 TV Shows[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-2.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR pink]24-7 Movies[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-movies.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
