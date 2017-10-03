@@ -70,12 +70,12 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
-<dir>
-<name>[COLOR green]Pair Device For More HD Conent[/COLOR]</name>
+<plugin>
+<title>[COLOR green]Pair Device For More HD Conent[/COLOR]</title>
 <link>plugin://script.cerebro.pairwith.laucnher</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
+</plugin>
 
 <plugin>
 <title>[COLOR pink]TV Shows[/COLOR]</title>
