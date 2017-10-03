@@ -1567,13 +1567,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbskymovies"
   name="CerebroTV Sky Movies on Demand"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1585,13 +1585,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspaction"
   name="CerebroTV Sky Sports Action"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1603,13 +1603,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbsparena"
   name="CerebroTV Sky Sports Arena"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1621,13 +1621,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspcricket"
   name="CerebroTV Sky Sports Cricket"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1639,13 +1639,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspf1"
   name="CerebroTV Sky Sports 1"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1657,13 +1657,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspfootball"
   name="CerebroTV Sky Sports Football"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1675,13 +1675,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspgolf"
   name="CerebroTV Sky Sports Golf"
-  version="1.2"
-  provider-name="UNKNOWN">
+  version="1.3"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1693,13 +1693,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspmain"
   name="CerebroTV Sky Sports Main"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1711,13 +1711,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspmix"
   name="CerebroTV Sky Sports Mix"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1729,13 +1729,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspnews"
   name="CerebroTV Sky Sports News"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1747,13 +1747,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbsports"
   name="CerebroTV Sports Menu"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1765,13 +1765,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspprem"
   name="CerebroTV Sky Sports Prem"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1783,13 +1783,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbtools"
   name="CerebroTV Tools"
-  version="1.7"
-  provider-name="UNKNOWN">
+  version="1.8"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1801,13 +1801,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbukfox"
   name="CerebroTV UK Fox"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1819,13 +1819,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbukgold"
   name="CerebroTV UK Gold"
-  version="1.3"
-  provider-name="UNKNOWN">
+  version="1.4"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1837,13 +1837,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbukhor"
   name="CerebroTV UK Horror"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1855,13 +1855,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbukspike"
   name="CerebroTV UK Spike"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1873,13 +1873,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbuksyfy"
   name="CerebroTV UK SYFY"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1891,13 +1891,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbusatbs"
   name="CerebroTV USA TBS"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.2"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1909,13 +1909,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbwizard"
   name="CerebroTV Movie Search"
-  version="1.1"
+  version="1.2"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1927,13 +1927,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbxxx"
   name="CerebroTV XXX"
-  version="1.1"
-  provider-name="UNKNOWN">
+  version="1.3"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -1945,13 +1945,13 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvppv"
   name="CerebroTV Appolo Streams"
-  version="1.2"
-  provider-name="UNKNOWN">
+  version="1.3"
+  provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -2087,14 +2087,14 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.28" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.29" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
         <import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
-            <provides>executable</provides>
+            <provides>video executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
@@ -2163,14 +2163,14 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.30" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.31" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
         <import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
-            <provides>executable</provides>
+            <provides>video executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
@@ -2239,7 +2239,7 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.37" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.38" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -2247,7 +2247,7 @@ Removed: Nudeflix</news>
         <import addon="script.cachesystem" />
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
-            <provides>executable</provides>
+            <provides>video executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
@@ -2316,14 +2316,14 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.34" provider-name="Biglad-FREE VERSION">
+<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.35" provider-name="Biglad-FREE VERSION">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
         <import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
-            <provides>executable</provides>
+            <provides>video executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
