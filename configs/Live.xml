@@ -24,6 +24,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]StreamZ Streams[/COLOR]</title>
+<link>plugin://plugin.video.streamztv/?channelid&iconimage&mode=11&name=%5bB%5dHD%20IPTV%20400%2b%20channels%20see%20BIT.DO%2fHDIPTV%5b%2fB%5d&url=2</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]UK TV Freeview Basic[/COLOR]</title>
 <link>plugin://plugin.video.tvplayer</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
