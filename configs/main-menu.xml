@@ -1,25 +1,3 @@
-
-<dir>
-<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Live TV[/COLOR][/B]</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Live.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
-<dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies and TV Shows OnDemand [/COLOR][/B] (Pair First!!!)</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
-<dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]PPV [/COLOR][/B](Pay Pre View)</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/ppv.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
 <plugin>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]UK[/COLOR] TV Guide[/COLOR][/B] (Premium Only)</title>
 <link>plugin://script.cerebro.tvguide.open</link>
@@ -40,6 +18,31 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]IPTV[/COLOR][/B]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Live.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies and TV Shows OnDemand [/COLOR][/B] (Pair First!!!)</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]PPV [/COLOR][/B](Pay Pre View)</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/ppv.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
 
 <plugin>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open FREE TV Guide[/COLOR][/B] (Free Version)</title>
@@ -107,20 +110,3 @@
 <dir>
 <title> </title>
 </dir>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
