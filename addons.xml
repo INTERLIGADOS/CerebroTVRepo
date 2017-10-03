@@ -2389,8 +2389,8 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon 	id="script.wargames.artwork"
-		version="1.5.7"
-		name="WarGames Artwork"
+		version="1.5.8"
+		name="CerebroTV Artwork"
 		provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
