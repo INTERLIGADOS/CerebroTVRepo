@@ -58,6 +58,13 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Make Your Own InI File For FREE TV Guide[/COLOR][/B]</title>
+<link>plugin://plugin.video.echoini</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
 <dir>
 <title> </title>
 </dir>
