@@ -793,14 +793,14 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.cerebrotv"
-    name=".[COLOR=red]Cerebro TV-CORE[/COLOR]" version="1.0.9" provider-name="CerebroTV">
+    name=".[COLOR=red]Cerebro Paid Build Installer[/COLOR]" version="1.0.9" provider-name="CerebroTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-     <provides>executable</provides>
+     <provides>video executable</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.service" library="addon.py" start="startup" />
   <extension point="xbmc.addon.metadata">
 <language></language>
     <platform>all</platform>

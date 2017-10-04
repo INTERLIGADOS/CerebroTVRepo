@@ -21,14 +21,15 @@ update = xbmcgui.Dialog().yesno("[COLOR tomato]CerebroTV INSTALLER[/COLOR]","","
 if not update: #IT'S BACKWARDS
     exit()
 
-PART1  = "http://mtvb.co.uk/install1.zip"
-PART2  = "http://mtvb.co.uk/install2.zip"
-PART3  = "http://mtvb.co.uk/install3.zip"
+PART1  = "http://megatvbox.eu/install1.zip"
+PART2  = "http://megatvbox.eu/install2.zip"
+PART3  = "http://megatvbox.eu/install3.zip"
 PART4  = "http://mtvb.co.uk/install4.zip"
 
 USERDATA    = xbmc.translatePath('special://userdata/')
-HOME    = xbmc.translatePath('special://home/')
-IDPATH     = '/storage/emulated/0/Download/MTVB/' 
+HOME        = xbmc.translatePath('special://home/')
+ADDONS      = xbmc.translatePath('special://home/addons')
+IDPATH      = '/storage/emulated/0/Download/MTVB/' 
 
 file1     =  os.path.join(HOME, 'install.zip')
 file2     =  os.path.join(HOME, 'install2.zip')
@@ -48,9 +49,12 @@ if os.path.exists(iddata):
     DoStart = 1
     
 if os.path.exists(IDPATH):
-    with open(idbackup, 'r') as myfile:
-        userid=myfile.read()
-    DoStart = 1
+    try:
+        with open(idbackup, 'r') as myfile:
+            userid=myfile.read()
+        DoStart = 1
+    except: pass
+    
     
 
 def Search(name):
@@ -111,18 +115,19 @@ def killxbmc():
         dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     elif myplatform == 'android': # Android  
         print "############   try android force close  #################"
-        try: os.system('adb shell am force-stop org.xbmc.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.kodi')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc.xbmc')
-        except: pass
-        try: os.system('adb shell am force-stop org.xbmc')
-        except: pass 
-        try: os.system('adb shell am force-stop com.semperpax.spmc16')
-        except: pass
-        try: os.system("su -c 'reboot'")
-        except: pass		
+        #try: os.system('adb shell am force-stop org.xbmc.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.kodi')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc.xbmc')
+        #except: pass
+        #try: os.system('adb shell am force-stop org.xbmc')
+        #except: pass 
+        #try: os.system('adb shell am force-stop com.semperpax.spmc16')
+        #except: pass
+        #try: os.system("su -c 'reboot'")
+        #except:  dialog.ok("[COLOR=red][B]CerebroTV Updater[/COLOR][/B]", "If you\'re seeing this message it means the updater was unable", "to close kodi or reboot your deivice. Please pull the power lead or power off your tablet [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu. [COLOR=lime]DO NOT[/COLOR] press OK",'')		
+        #dialog.ok("[COLOR=red][B]CerebroTV Updater[/COLOR][/B]", "If you\'re seeing this message it means the updater was unable", "to close kodi or reboot your deivice. Please pull the power lead or power off your tablet [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu. [COLOR=lime]DO NOT[/COLOR] press OK",'')
         dialog.ok("[COLOR=red][B]CerebroTV Updater[/COLOR][/B]", "If you\'re seeing this message it means the updater was unable", "to close kodi or reboot your deivice. Please pull the power lead or power off your tablet [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu. [COLOR=lime]DO NOT[/COLOR] press OK",'')
         dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.executebuiltin('Quit')
@@ -187,51 +192,89 @@ if DoStart ==0:
     
 if DoStart ==0:
     dialog.ok("[COLOR=red][B]CerebroTV Auth System[/COLOR][/B]", "Code Not Found", "Please Try Again","www.facebook.com/cerebrotv/")
-    xbmc.executebuiltin('RunAddon(script.cerebrotv)')
+    #xbmc.executebuiltin('RunAddon(script.cerebrotv)')
     exit()
     
 
-response2 = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/updater.php?show=yes&v=1').read()
+response2 = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/updaternew.php?show=yes&v=1').read()
 UPDATE ="http://mtvb.co.uk/"+str(response2)+".zip"
 
 
 
 dp = xbmcgui.DialogProgress()
 dp.create("Preparing System for Install","",'DO NOT TURN OFF', ' ')
-try: os.unlink(os.path.join(HOME, 'addons'))
+#with open(iddata, 'r') as myfile:
+#    userid=myfile.read()
+percent = 80 
+dp.update(percent)
+try:
+    fo = open(iddata, "w")
+    fo.write(userid);
+    fo.close()
 except: pass
-try: os.unlink(os.path.join(HOME, 'userdata'))
-except: pass
-try: sfile.rmtree(os.path.join(HOME, 'addons'))
-except: pass
-try: sfile.rmtree(os.path.join(HOME, 'userdata'))
-except: pass
-try: sfile.rmtree(os.path.join(HOME, 'logos'))
-except: pass
-try: sfile.rmtree(os.path.join(HOME, 'media'))
-except: pass
-try: sfile.rmtree(os.path.join(HOME, 'temp'))
-except: pass
-with open(iddata, 'r') as myfile:
-    userid=myfile.read()
-fo = open(iddata, "w")
-fo.write(userid);
-fo.close()
+percent = 90 
+dp.update(percent)
+xbmc.sleep(5500)
 try: 
     fo = open(idbackup, "w")
     fo.write(userid);
     fo.close()
 except: pass
-xbmc.sleep(5500)
+percent = 2100 
+dp.update(percent)
+xbmc.sleep(1500)
 dp.close()
 
+def getOld(old):
+	try:
+		old = '"%s"' % old 
+		query = '{"jsonrpc":"2.0", "method":"Settings.GetSettingValue","params":{"setting":%s}, "id":1}' % (old)
+		response = xbmc.executeJSONRPC(query)
+		response = simplejson.loads(response)
+		if response.has_key('result'):
+			if response['result'].has_key('value'):
+				return response ['result']['value'] 
+	except:
+		pass
+	return None
 
-downloader . download(PART1,file1,"Downloading Part 1")
+def setNew(new, value):
+    try:
+        new = '"%s"' % new
+        value = '"%s"' % value
+        query = '{"jsonrpc":"2.0", "method":"Settings.SetSettingValue","params":{"setting":%s,"value":%s}, "id":1}' % (new, value)
+        response = xbmc.executeJSONRPC(query)
+    except:
+        pass
+    return None
+
+def swapSkins(skin):
+	old = 'lookandfeel.skin'
+	value = skin
+	current = getOld(old)
+	new = old
+	setNew(new, value)
+
+skindir = xbmc.getSkinDir()
+
+downloader . download(PART1,file1,"Downloading Installer Part 1")
 extractor . extract(file1,HOME,"Unpacking Part 1")
-downloader . download(PART2,file2,"Downloading Part 2")
+downloader . download(PART2,file2,"Downloading Installer Part 2")
 extractor . extract(file2,HOME,"Unpacking Part 2")
-downloader . download(PART3,file3,"Downloading Part 3")
+downloader . download(PART3,file3,"Downloading Installer Part 3")
 extractor . extract(file3,HOME,"Unpacking Part 3")
-downloader . download(UPDATE,file4,"Downloading Part 4")
-extractor . extract(file4,HOME,"Unpacking Part 4")
+downloader . download(UPDATE,file4,"Downloading Latest Build Info")
+extractor . extract(file4,HOME,"Unpacking Data")
+try:
+    fo = open(iddata, "w")
+    fo.write(userid);
+    fo.close()
+except: pass
+try: 
+    fo = open(idbackup, "w")
+    fo.write(userid);
+    fo.close()
+except: pass
+#swapSkins("skin.titan")
+#xbmc.sleep(22000)
 killxbmc()
