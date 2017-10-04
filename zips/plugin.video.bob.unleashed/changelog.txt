@@ -1,3 +1,6 @@
+v1.0.8
+- fix caching layer
+
 v1.0.6
 - change over to new server
 
