@@ -1,6 +1,6 @@
 <settings>
 <category label="addons.ini File">
-<setting id="addons.folder" label="Folder" type="folder" default="special://home/userdata"/>
+<setting id="addons.folder" label="Folder" type="folder" default="special://home/userdata/addon_data/script.tvguide.cerebrotv.uk.2017/"/>
 <setting id="addons.file" label="Filename" type="text" default="addons_custom.ini"/>
 </category>
 <!--<category label="Display">

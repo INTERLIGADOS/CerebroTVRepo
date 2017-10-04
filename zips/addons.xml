@@ -156,7 +156,7 @@
 </addon>
 
 <addon id="plugin.video.echoini"
-version="1.0.2"
+version="1.0.3"
 name="Cerebro INI Creator"
 provider-name="Cerebro">
 <requires>
