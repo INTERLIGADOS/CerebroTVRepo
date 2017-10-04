@@ -2,3 +2,10 @@
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports [/COLOR][/B](Coming Soon!)</title>
 </dir>
 
+<plugin>
+<title>[COLOR pink]Apollo Sports[/COLOR]</title>
+<link>plugin://program.apollo/?action=channels&name=14</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
