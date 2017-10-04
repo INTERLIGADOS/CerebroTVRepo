@@ -3,7 +3,7 @@ import requests
 import xbmc
 import urllib
 from ..scraper import Scraper
-
+from ..common import clean_title
 requests.packages.urllib3.disable_warnings()
 
 session = requests.Session()
@@ -29,7 +29,7 @@ class flenix(Scraper):
             #print '::::::::::::::::::::::::::::::::'+html
             results = re.compile('href="(.+?)".+?class="searchheading">(.+?)</span><span class="syear">(.+?)</span>',re.DOTALL).findall(html)
             for url,link_title,date in results:
-                if title.lower() in link_title.lower():
+                if clean_title(link_title).lower() == clean_title(title).lower():
                     if date in year:
                         ID = url.split('movies/')[1].split('-')[0]
                         #print ':::::::::::::'+ID

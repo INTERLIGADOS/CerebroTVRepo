@@ -2,7 +2,7 @@ import requests
 import re
 import xbmc
 from ..scraper import Scraper
-            
+from ..common import clean_title,clean_search            
 
 
 s = requests.session()
@@ -19,7 +19,8 @@ class joymovies(Scraper):
 
     def scrape_movie(self, title, year, imdb, debrid = False):
         try:
-            start_url = self.base_link + '/movie/%s-full-movie-download/' %title.lower().replace(' ','-')
+            search_id = clean_search(title.lower())
+            start_url = self.base_link + '/movie/%s-full-movie-download/' %search_id.replace(' ','-')
             #print 'STARTURL:::::::::::::::: '+start_url
             headers={'User-Agent':User_Agent}
             html = requests.get(start_url,headers=headers,timeout=5).content

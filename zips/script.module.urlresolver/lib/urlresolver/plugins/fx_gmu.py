@@ -36,7 +36,7 @@ def get_media_url(url):
         for match in re.finditer('''<script[^>]*src=["']([^'"]+)''', html):
             _html = get_js(match.group(1), headers, hostname)
             
-        match = re.search('''href=['"]([^"']+/playvid-[^"']+)''', html)
+        match = re.search('''href=['"]([^"']+/playme-[^"']+)''', html)
         if match:
             playvid_url = match.group(1)
             html = net.http_GET(playvid_url, headers=headers).content
@@ -46,7 +46,7 @@ def get_media_url(url):
                 match = re.search('''!=\s*null.*?get\(['"]([^'"]+).*?\{([^:]+)''', js, re.DOTALL)
                 if match:
                     fx_url, fx_param = match.groups()
-                    fx_url = resolve_url(urlparse.urljoin('http://www.flashx.tv', fx_url) + '?' + urllib.urlencode({fx_param: 4}))
+                    fx_url = resolve_url(urlparse.urljoin('http://www.flashx.tv', fx_url) + '?' + urllib.urlencode({fx_param: 5}))
                     common.logger.log('fxurl: %s' % (fx_url))
                     _html = net.http_GET(fx_url, headers=headers).content
                     

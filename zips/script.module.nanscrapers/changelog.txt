@@ -1,3 +1,13 @@
+v0.5.33
+- removed 4kmovies
+- removed streamdream
+v0.5.32
+- Tweaks to a number of scrapers
+- added dudmovies
+- added movies4u
+- removed 4kmovies
+- fixed 1onethousand
+- fixed CartoonHd
 v0.5.31
 - added 4kmovies
 - added mydownloadtube

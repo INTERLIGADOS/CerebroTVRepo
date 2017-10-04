@@ -2,7 +2,7 @@ import requests
 import re
 import xbmc
 from ..scraper import Scraper
-            
+from ..common import clean_title,clean_search            
 requests.packages.urllib3.disable_warnings()
 
 s = requests.session()
@@ -41,13 +41,15 @@ class Movie321(Scraper):
 
     def scrape_movie(self, title, year, imdb, debrid = False):
         try:
-            start_url = self.base_link+self.search_url+title.lower().replace(' ','+')
+            search_id = clean_search(title.lower())
+            start_url = self.base_link + '/?s=' + search_id.replace(' ','+')
             #print 'GW> '+start_url
             headers={'User-Agent':User_Agent}
             html = requests.get(start_url,headers=headers,timeout=10).content
             match = re.compile('class="thumbnail.+?href="(.+?)">.+?alt="(.+?)".+?class="year">(.+?)</span>',re.DOTALL).findall(html)
             for url,name,date in match:
-                if title.lower() in name.lower():
+                print 'CHK>>'+name
+                if search_id in name.lower():
                     if date.replace(' ','') == year.replace(' ',''):
                         xbmc.log('year:'+year,xbmc.LOGNOTICE)
                         self.get_source(url)

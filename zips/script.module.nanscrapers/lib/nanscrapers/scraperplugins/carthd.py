@@ -3,7 +3,7 @@ import requests
 import xbmc
 import urllib
 from ..scraper import Scraper
-
+from ..common import clean_title,clean_search
 
 requests.packages.urllib3.disable_warnings()
 
@@ -11,12 +11,12 @@ s = requests.session()
 User_Agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
 
 class carthd(Scraper):
-    domains = ['https://cartoonhd.tech']
+    domains = ['https://cartoonhd.in']
     name = "CartoonHD"
     sources = []
 
     def __init__(self):
-        self.base_link = 'https://cartoonhd.tech'
+        self.base_link = 'https://cartoonhd.in'
         self.sources = []
 
     def scrape_movie(self, title, year, imdb, debrid=False):
@@ -43,7 +43,8 @@ class carthd(Scraper):
             
             item_year = re.compile('class="dat">([^<>]*)</').findall(OPEN)[0]
             
-            if title.lower() in item_title.lower():
+
+            if clean_title(item_title).lower() == clean_title(title).lower():
                     if item_year in year:
                         TIME = time.time()- 3600
                         TIME = str(TIME).split('.')[0]
@@ -115,7 +116,7 @@ class carthd(Scraper):
             #print'itemurlnew>> ' +item_url
             content = requests.get(item_url,headers=headers,verify=False,timeout=5).content
             
-            if title.lower() in item_title.lower():
+            if clean_title(item_title).lower() == clean_title(title).lower():
                 if item_year in show_year:                
                     TIME = time.time()- 3600
                     TIME = str(TIME).split('.')[0]

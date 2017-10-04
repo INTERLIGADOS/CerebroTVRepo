@@ -24,6 +24,8 @@
 		<setting id="Direct Download_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="dizi720p" type="lsep"/>
 		<setting id="dizi720p_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="Dudmovies" type="lsep"/>
+		<setting id="Dudmovies_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Flenix" type="lsep"/>
 		<setting id="Flenix_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Fullmovies24" type="lsep"/>
@@ -36,6 +38,8 @@
 		<setting id="M4U_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Movie321cc" type="lsep"/>
 		<setting id="Movie321cc_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="movie4u" type="lsep"/>
+		<setting id="movie4u_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="MovieFlix" type="lsep"/>
 		<setting id="MovieFlix_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="MP3clan" type="lsep"/>
@@ -44,17 +48,17 @@
 		<setting id="MyDownloadtube_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Onemusic" type="lsep"/>
 		<setting id="Onemusic_enabled" type="bool" label="Enabled" default="true"/>
-		<setting label="onethousand" type="lsep"/>
-		<setting id="onethousand_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="Onethousand" type="lsep"/>
+		<setting id="Onethousand_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="pelispedia" type="lsep"/>
 		<setting id="pelispedia_enabled" type="bool" label="Enabled" default="true"/>
+	</category>
+	<category label="Scrapers 2">
 		<setting label="primewire" type="lsep"/>
 		<setting id="primewire_enabled" type="bool" label="Enabled" default="true"/>
 		<setting id= "primewire_baseurl" type="text" label="Base Url" default="http://www.primewire.ag"/>
 		<setting label="ProjectFree" type="lsep"/>
 		<setting id="ProjectFree_enabled" type="bool" label="Enabled" default="true"/>
-	</category>
-	<category label="Scrapers 2">
 		<setting label="Releasebb" type="lsep"/>
 		<setting id="Releasebb_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="rlshd" type="lsep"/>

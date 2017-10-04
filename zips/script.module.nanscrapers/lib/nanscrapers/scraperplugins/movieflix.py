@@ -3,7 +3,7 @@ import requests
 import xbmc
 import urllib
 from ..scraper import Scraper
-
+from ..common import clean_title
 
 requests.packages.urllib3.disable_warnings()
 
@@ -35,7 +35,7 @@ class movieflix(Scraper):
             #print 'RESULTS PAGE >> ::::::::::: '+results
             Regex = re.compile('"title":"(.+?)","year":(.+?),"permalink":"(.+?)"',re.DOTALL).findall(results)
             for mov,date,title_link in Regex:               
-                if title.lower() in mov.lower():
+                if clean_title(mov).lower() == clean_title(title).lower():
                     if year in date:
                         start_url = self.base_link + title_link
                         #print 'MOVIE URL>>> '+start_url
@@ -110,7 +110,7 @@ class movieflix(Scraper):
             #print 'RESULTS PAGE >> ::::::::::: '+results
             Regex = re.compile('"title":"(.+?)","year":(.+?),"permalink":"(.+?)"',re.DOTALL).findall(results)
             for mov,date,title_link in Regex:               
-                if title.lower() in mov.lower():
+                if clean_title(mov).lower() == clean_title(title).lower():
                     if show_year in date:
                         title_link=title_link.replace('/show/','/tv-show/')
                         start_url = self.base_link + title_link

@@ -20,7 +20,7 @@ class Dizi720(Scraper):
     def scrape_episode(self,title, show_year, year, season, episode, imdb, tvdb, debrid = False):
         try:
             start_url = self.base_link+title.replace(' ','-')+'-'+season+'-sezon-'+episode+'-bolum.html'
-            print 'SCRAPE URL:::::::::::::::::::::::'+start_url
+            #print 'SCRAPE URL:::::::::::::::::::::::'+start_url
             html = self.scraper.get(start_url).content
             # if 'Bu Sayfa' in html:
                 # start_url = start_url.replace('-izle','')
