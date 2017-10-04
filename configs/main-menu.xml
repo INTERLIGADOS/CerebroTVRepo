@@ -38,6 +38,13 @@
 </dir>
 
 <dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports [/COLOR][/B]</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/sports.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]PPV [/COLOR][/B](Pay Pre View)</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/ppv.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
