@@ -3,8 +3,15 @@
 </dir>
 
 <plugin>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]Sports[/COLOR] TV Guide[/COLOR][/B] (Premium Only)</title>
+<link>plugin://script.cerebro.tvguide.open</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Apollo Sports[/COLOR]</title>
-<link>plugin://program.apollo/?action=channels&name=14</link>
+<link>plugin://script.mtvppv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
