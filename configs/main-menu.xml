@@ -101,7 +101,7 @@
 
 <plugin>
 <title>[COLOR green]UPGRADE TO PREMIUM[/COLOR] (This Addon Works Much Better and A LOT more content!)</title>
-<link>plugin://script.cerebro.buy</link>
+<link>plugin://script.cerebro.buyprem</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
