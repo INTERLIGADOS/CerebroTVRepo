@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.15" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.16" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="repository.streamhub" />
@@ -36,6 +36,8 @@
         <import addon="program.apollo" />
         <import addon="script.cerebro.buy" />
         <import addon="script.cerebro.buyprem" />
+        <import addon="script.ProjectCypher.metadata" />
+        <import addon="script.ProjectCypher.artwork" />
         
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
