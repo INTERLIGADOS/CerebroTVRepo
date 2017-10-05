@@ -435,7 +435,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.22" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.23" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="repository.streamhub" />
@@ -478,6 +478,7 @@ Removed: Nudeflix</news>
         <import addon="plugin.video.dnatv4k" />
         <import addon="plugin.video.bob.unleashed" />
         <import addon="plugin.video.streamhub" />
+        <import addon="script.module.streamhublive" />
 
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -1268,6 +1269,23 @@ Removed: Nudeflix</news>
     <summary lang="en">Dependency Addon for StreamHub</summary>
     <description lang="en">Dependency Addon for StreamHub</description>
 	<disclaimer lang="en">Dependency Addon for StreamHub</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.streamhublive" name="[COLOR ffff0000][B]StreamHub Live[/B][/COLOR]" version="1.0.5" provider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.video.F4mProxy" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR ffff0000][B]StreamHub Live[/B][/COLOR]</summary>
+    <description lang="en">[COLOR ffff0000][B]StreamHub Live[/B][/COLOR]</description>
+	<disclaimer lang="en">The author does not host or own any content found within this Addon. The Author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
