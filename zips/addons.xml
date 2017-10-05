@@ -405,7 +405,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.14" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.15" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="repository.streamhub" />
@@ -419,6 +419,7 @@ Removed: Nudeflix</news>
 		<import addon="script.module.urlresolver" version="3.0.0"/>
 		<import addon="script.module.liveresolver" version="0.1.24"/>
 		<import addon="script.video.F4mProxy" version="2.2.3"/>
+        <import addon="plugin.video.f4mTester" />
 		<import addon="script.wargames.artwork" version="1.0.0"/>
 		<import addon="script.wargames.metadata" version="1.0.0"/>
 		<import addon="script.module.metahandler" version="1.0.0" />
@@ -437,7 +438,6 @@ Removed: Nudeflix</news>
         <import addon="plugin.video.echoini" />
         <import addon="plugin.video.ProjectCypher" />
         <import addon="plugin.video.SportsDevil" />
-        <import addon="plugin.video.youtube" />
         <import addon="plugin.video.uwc" />
         <import addon="program.apollo" />
         <import addon="script.cerebro.buy" />
@@ -2271,6 +2271,30 @@ Removed: Nudeflix</news>
     <description lang="en">CerebroTV Wait</description>
 	<disclaimer>CerebroTV Wait.</disclaimer>
   </extension>
+</addon>
+
+<addon id="script.ProjectCypher.artwork" version="1.0.0" name="Project Cypher Artwork" provider-name="Cypher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for Project Cypher</summary>
+		<description>Themes for Project Cypher are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.ProjectCypher.metadata" version="1.0.0" name="Project Cypher Metadata" provider-name="ProjectCypher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the ProjectCypher</summary>
+		<description>Metadata for ProjectCypher are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.29" provider-name="Biglad">
