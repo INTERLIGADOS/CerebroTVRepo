@@ -1,0 +1,38 @@
+v1.0.0
+Initial Release
+....
+....
+....
+v1.4.0
+Resolve fix
+v1.4.1
+Changed back original source
+v1.4.2
+fix pback
+v1.4.3
+Changed source....again
+v1.4.4
+Error edit
+v1.4.5
+Added multiple site sources in settings
+v1.5.0
+I give up
+v2.0.0
+Re-brand New Source
+v2.0.2
+Search
+
+V2.1.0
+Changed bk
+v2.1.1
+I changed back to new LOL
+v2.1.2
+Correct art error
+v2.1.3
+Resolve Fix
+v2.1.4
+Bump resolve again
+v2.2.0
+I GIVE IN
+v2.2.4
+I really have givin in 
