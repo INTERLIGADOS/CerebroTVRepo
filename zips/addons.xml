@@ -1980,7 +1980,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspaction"
   name="CerebroTV Sky Sports Action"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1998,7 +1998,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbsparena"
   name="CerebroTV Sky Sports Arena"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2016,7 +2016,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspcricket"
   name="CerebroTV Sky Sports Cricket"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2034,7 +2034,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspf1"
   name="CerebroTV Sky Sports 1"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2052,7 +2052,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspfootball"
   name="CerebroTV Sky Sports Football"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2070,7 +2070,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspgolf"
   name="CerebroTV Sky Sports Golf"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2088,7 +2088,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspmain"
   name="CerebroTV Sky Sports Main"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2106,7 +2106,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspmix"
   name="CerebroTV Sky Sports Mix"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2124,7 +2124,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspnews"
   name="CerebroTV Sky Sports News"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2160,7 +2160,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.mtvbspprem"
   name="CerebroTV Sky Sports Prem"
-  version="1.2"
+  version="1.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
