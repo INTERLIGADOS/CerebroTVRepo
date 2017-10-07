@@ -31,8 +31,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]StreamZ Streams[/COLOR]</title>
-<link>plugin://plugin.video.streamztv</link>
+<title>[COLOR pink]UK IPTV Searcher[/COLOR]</title>
+<link>plugin://plugin.video.bonanza/?mode=4&name=%5bCOLOR%20blue%5dSearch%20all%20links%20for%3a%20UK%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.m3uliste.pw%2f</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -78,17 +78,3 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
-
-<dir>
-<name>[COLOR pink]24-7 TV Shows[/COLOR]</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-2.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
-<dir>
-<name>[COLOR pink]24-7 Movies[/COLOR]</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-movies.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>

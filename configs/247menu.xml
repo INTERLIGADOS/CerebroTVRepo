@@ -1,0 +1,17 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR][/B]</title>
+</dir>
+
+<dir>
+<name>[COLOR pink]24-7 TV Shows[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-2.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR pink]24-7 Movies[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-movies.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
