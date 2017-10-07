@@ -31,6 +31,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Supremacy IPTV[/COLOR]</title>
+<link>plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&mode=1&name=%5bCOLOR%20aqua%5dSupremacy%20IPTV%5b%2fCOLOR%5d&url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fsupremacy-add-on%2520free%2520iptv%2fsupremacy%2520iptv.m3u</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]UK IPTV Searcher[/COLOR]</title>
 <link>plugin://plugin.video.bonanza/?mode=4&name=%5bCOLOR%20blue%5dSearch%20all%20links%20for%3a%20UK%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.m3uliste.pw%2f</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
