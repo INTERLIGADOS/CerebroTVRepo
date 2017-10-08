@@ -347,23 +347,23 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr ""
 
 msgctxt "#32048"
-msgid "[B]WarGames[/B] : Downloads"
+msgid "[B]CerebroTV[/B] : Downloads"
 msgstr ""
 
 msgctxt "#32049"
-msgid "[B]WarGames[/B] : Viewtypes"
+msgid "[B]CerebroTV[/B] : Viewtypes"
 msgstr ""
 
 msgctxt "#32050"
-msgid "[B]WarGames[/B] : Clear providers..."
+msgid "[B]CerebroTV[/B] : Clear providers..."
 msgstr ""
 
 msgctxt "#32051"
-msgid "[B]WarGames[/B] : Clear metadata..."
+msgid "[B]CerebroTV[/B] : Clear metadata..."
 msgstr ""
 
 msgctxt "#32052"
-msgid "[B]WarGames[/B] : Clear cache..."
+msgid "[B]CerebroTV[/B] : Clear cache..."
 msgstr ""
 
 msgctxt "#32053"
