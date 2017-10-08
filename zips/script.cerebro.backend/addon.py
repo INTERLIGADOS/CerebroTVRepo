@@ -4,6 +4,8 @@ import os
 import xbmcgui
 import urllib2
 
+xbmc.sleep(5000)
+
 def d():
 	import requests,base64
 	try:

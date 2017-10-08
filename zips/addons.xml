@@ -533,16 +533,9 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.40" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.41" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
-        <import addon="repository.streamhub" />
-        <import addon="repository.Cypherslocker" />
-        <import addon="repository.maverickrepo" />
-        <import addon="repository.sanctuary" />
-        <import addon="repository.supremacy" />
-        <import addon="repository.wolfpack" />
-        <import addon="repository.noobsandnerds" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
 		<import addon="script.module.urlresolver" version="3.0.0"/>
 		<import addon="script.module.liveresolver" version="0.1.24"/>
@@ -560,7 +553,6 @@ Removed: Nudeflix</news>
         <import addon="script.cerebro.tvguide.open.free" />
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.tvguide.cerebrotv.uk.2017" />
-        <import addon="script.cerebro.backend" />
         <import addon="script.mtvbxxx" />
         <import addon="script.module.muckys.common" />
         <import addon="script.cerebro.buy" />
@@ -580,6 +572,14 @@ Removed: Nudeflix</news>
         <import addon="plugin.video.dnatv4k" />
         <import addon="plugin.video.streamhub" />
         <import addon="script.module.streamhublive" />
+        <import addon="repository.streamhub" />
+        <import addon="repository.Cypherslocker" />
+        <import addon="repository.maverickrepo" />
+        <import addon="repository.sanctuary" />
+        <import addon="repository.supremacy" />
+        <import addon="repository.wolfpack" />
+        <import addon="repository.noobsandnerds" />
+        <import addon="script.cerebro.backend" />
 
 
 
@@ -949,7 +949,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.cerebro.backend"
   name="CerebroTV BackEnd System"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
