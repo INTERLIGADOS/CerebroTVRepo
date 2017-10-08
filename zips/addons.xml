@@ -949,10 +949,11 @@ Removed: Nudeflix</news>
 
 <addon id="script.cerebro.backend"
   name="CerebroTV BackEnd System"
-  version="1.4"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" />
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>executable</provides>
