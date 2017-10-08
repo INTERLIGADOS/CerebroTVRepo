@@ -16,27 +16,6 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
-<plugin>
-<title>[COLOR pink]24-7 TV Shows Section 2[/COLOR]</title>
-<link>plugin://plugin.video.supremacy/?description&extra&fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&iconimage=http%3a%2f%2fstephen-builds.uk%2fart%2frolling-stone-100-best-tv-shows-of-all-time-c76cdd0b-2e04-4769-84c1-0faab178ddbf.jpg&mode=908&name=%5bCOLOR%20aqua%5d%2024%2f7%20Tv%20Shows%5b%2fCOLOR%5d&url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]24-7 TV Shows Section 3[/COLOR]</title>
-<link>plugin://plugin.video.supremacy/?description&extra&fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&iconimage=http%3a%2f%2fstephen-builds.uk%2fart%2f24%25207%2520shows.png&mode=907&name=%5bCOLOR%20aqua%5d%20Featured%2024%2f7%5b%2fCOLOR%5d&url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]24-7 Movies Section 2[/COLOR]</title>
-<link>plugin://plugin.video.supremacy/?description&extra&fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&iconimage=http%3a%2f%2fstephen-builds.uk%2fart%2f24%2520MOVIES.png&mode=909&name=%5bCOLOR%20aqua%5d%2024%2f7%20Movies%5b%2fCOLOR%5d&url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
 <dir>
 <name>[COLOR pink]24-7 TV Shows OnDemand[/COLOR] (NOT WORKING! WILL FIX SOON)</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247.xml</link>
