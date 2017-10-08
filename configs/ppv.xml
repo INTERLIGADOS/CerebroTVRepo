@@ -1,10 +1,10 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]COMING SOON!!!!! [/COLOR][/B]</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Pay Per View [/COLOR][/B]</title>
 </dir>
 
 <plugin>
-<title>TEST</title>
-<link>plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=17&name=%5bCOLOR%20aqua%5dBoxing%5b%2fCOLOR%5d&url=Boxing</link>
+<title>Premium Section (COMING SOON)</title>
+<link> </link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
