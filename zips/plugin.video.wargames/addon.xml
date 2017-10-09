@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.44" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.45" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -48,7 +48,6 @@
         <import addon="repository.smash" />
         <import addon="repository.kodil" />
         <import addon="script.cerebro.backend" />
-        <import addon="plugin.video.Bucky" />
 		
 		
         
