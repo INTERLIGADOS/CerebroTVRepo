@@ -204,6 +204,25 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.dandymedia" name="DandyMedia" version="3.0.1" provider-name="DandyMedia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"  version="3.0.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.requests" />
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Enjoy the best of Dandymedia</summary>
+    <description lang="en">[B][COLOR blue]Dandymedia Movies, TV Shows, Documentaries, Childrens TV,  Playlists and more.....Enjoy[/COLOR][/B]</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.dnatv4k" name="[COLOR darkorange]CerebroTV[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR] (other sections not working)" version="2.1.0" provider-name="Biglad,Team DNA">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
