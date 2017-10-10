@@ -35,10 +35,10 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]MTV Hits[/COLOR]2</title>
+<title>[COLOR pink]TEST STREAM[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.f4mTester/?url=plugin://program.apollo/?action=apollo&imdb=1&season=548&title=MTV%20Hits</link>
+<link>plugin://plugin.video.f4mTester/?url=https://tvplayer.com/watch/clubland</link>
 </plugin>
 
 <plugin>
