@@ -1,0 +1,18 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Tools Menu[/COLOR][/B]</title>
+</dir>
+
+<plugin>
+<title>Run Connection Speed Test</title>
+<link>plugin://script.speedtestnet?sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cscript.speedtestnet%5Cfanart.jpg%26desc%3DARNU+Box+Speed+Tester+powered+by+speedtest.net+will+give+you+accurate+Internet+speed%2Fping+test+results.+%5Cn+Brought+to+you+by+http%3A%2F%2Fwww.arnubox.com%26_options_sf</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Cerebro Media Addon Tools[/COLOR]</title>
+<link>plugin://plugin.video.wargames/?action=toolNavigator</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
