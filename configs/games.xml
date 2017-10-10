@@ -1,5 +1,16 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]GAMES COMMING SOON! [/COLOR][/B]</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Retro Gaming[/COLOR][/B]</title>
+</dir>
+
+<plugin>
+<title>[COLOR pink]Open Gaming System[/COLOR] (Android Only)</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://script.mtvbgamelauncher</link>
+</plugin>
+
+<dir>
+<title>PSX,SNES,Mega Drive,M.A.M.E Over 500 Games!!!</title>
 </dir>
 
 

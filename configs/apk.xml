@@ -1,6 +1,13 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]APK INSTALLER COMMING SOON! [/COLOR][/B]</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]APK INSTALLER[/COLOR][/B]</title>
 </dir>
+
+<plugin>
+<title>[COLOR pink]Open APK Installer Menu[/COLOR] (Android Only)</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://script.mtvbapkinstaller</link>
+</plugin>
 
 
 
