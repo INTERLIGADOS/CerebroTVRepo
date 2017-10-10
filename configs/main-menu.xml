@@ -24,7 +24,7 @@
 </dir>
 
 <dir>
-<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]IPTV[/COLOR][/B]</name>
+<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Live TV[/COLOR][/B] (IPTV)</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Live.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
