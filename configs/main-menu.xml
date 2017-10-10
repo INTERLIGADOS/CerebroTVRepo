@@ -121,10 +121,6 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<dir>
-<title> </title>
-</dir>
-
 <plugin>
 <title>[COLOR green]Need A New Box??[/COLOR] (Best UK, UE and USA devices)</title>
 <link>plugin://script.cerebro.buy</link>
@@ -132,21 +128,9 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<dir>
-<title> </title>
-</dir>
-
 <plugin>
 <title>[COLOR red]INSTALL CEREBRO MEDIA AUTO STARTER[/COLOR]</title>
 <link>plugin://script.cerebro.auto.start</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-
-<plugin>
-<title>[COLOR green]UPGRADE TO PREMIUM[/COLOR] (This Addon Works Much Better and A LOT more content!)</title>
-<link>plugin://script.cerebro.buyprem</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
