@@ -22,9 +22,9 @@
 
 <plugin>
 <title>[COLOR pink]Clubland[/COLOR]</title>
+<link>plugin://plugin.video.tvplayer/?url=225&mode=200&name=%5BCOLOR+royalblue%5DClubland%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DRobin%27s+50+Dead+Catchy+Choruses%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&description=We+dare+you+not+to+hum+along+to+50+of+the+biggest+hooks+of+all+time%21+From+Strike%27s+%27U+Sure+Do%27+to+Clean+Bandit%27s+%27Symphony%27+-+Robin+Banks+has+30+years+of+top+tunes%2C+back+to+back.&genre=Music</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.tvplayer/?url=225&mode=200&name=%5BCOLOR+royalblue%5DClubland%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DRobin%27s+50+Dead+Catchy+Choruses%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&description=We+dare+you+not+to+hum+along+to+50+of+the+biggest+hooks+of+all+time%21+From+Strike%27s+%27U+Sure+Do%27+to+Clean+Bandit%27s+%27Symphony%27+-+Robin+Banks+has+30+years+of+top+tunes%2C+back+to+back.&genre=Music</link>
 </plugin>
 
 <plugin>
