@@ -21,45 +21,10 @@
 </dir>
 
 <plugin>
-<title>[COLOR pink]Clubland[/COLOR]</title>
-<link>plugin://plugin.video.tvplayer/?url=225&mode=200&name=%5BCOLOR+royalblue%5DClubland%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DRobin%27s+50+Dead+Catchy+Choruses%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&description=We+dare+you+not+to+hum+along+to+50+of+the+biggest+hooks+of+all+time%21+From+Strike%27s+%27U+Sure+Do%27+to+Clean+Bandit%27s+%27Symphony%27+-+Robin+Banks+has+30+years+of+top+tunes%2C+back+to+back.&genre=Music</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Capital[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.tvplayer/?url=157&mode=200&name=%5BCOLOR+royalblue%5DCapital+TV%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DHottest+Hits+%26+Fresh+Beats%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F157.png&description=&genre=Music</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Heart[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.tvplayer/?url=153&mode=200&name=%5BCOLOR+royalblue%5DHeart%5B%2FCOLOR%5D+-+%5BCOLOR+white%5D25+BIG+HITS+FROM+BRITS%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F153.png&description=&genre=Music</link>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]MTV Dance[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMTV%20Dance%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f2672617afdf44cdfe0bef6f41856c920.m3u8</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Chilled[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.tvplayer/?url=226&mode=200&name=%5BCOLOR+royalblue%5DChilled%5B%2FCOLOR%5D+-+%5BCOLOR+white%5D90s+Easy+Cheesy%21+Top+70%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F226.png&description=70+feelgood+faves+%26+raves+from+the+decade+of+dance%2C+britpop%2C+Cool+Brittania+%26+Kylie+Minogue.&genre=Music</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]MTV Rocks[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMTV%20Rocks%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f38b937a77d8587999c0e1d1d13d9a37c.m3u8</link>
 </plugin>
 
 <plugin>
@@ -81,13 +46,6 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dNow%20That%27s%20What%20I%20Call%20Music%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f4f2bbf7cda8028c3cc2c16723defb7d8.m3u8</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Now That's What I Call Music[/COLOR] Link 2</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.tvplayer/?url=228&mode=200&name=%5BCOLOR+royalblue%5DNow+Thats+What+I+Call+Music%5B%2FCOLOR%5D+-+%5BCOLOR+white%5D80s+School+Disco+Top+50%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F228.png&description=Slap+on+some+tight+denim%2C+fake+tan%2C+designer+stubble+and+leather+jackets+-+and+that%27s+just+for+the+girls%21+This+is+how+we+partied+in+the+disco-bopping+80s.&genre=Music</link>
 </plugin>
 
 <plugin>
