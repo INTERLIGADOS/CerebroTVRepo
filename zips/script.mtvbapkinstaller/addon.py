@@ -10,7 +10,7 @@ import sfile
 import download
 import urllib
 
-
+ipaddy="0.0.0.0"
 HOME     = xbmc.translatePath('special://userdata/')
 iddata   = os.path.join(HOME, 'networksettings.xml')
 with open(iddata, 'r') as myfile:

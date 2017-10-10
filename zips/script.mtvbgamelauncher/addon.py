@@ -12,7 +12,7 @@ import urllib
 import statvfs
 from decimal import Decimal
 
-
+ipaddy="0.0.0.0"
 HOME     = xbmc.translatePath('special://userdata/')
 iddata   = os.path.join(HOME, 'networksettings.xml')
 with open(iddata, 'r') as myfile:
