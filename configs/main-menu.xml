@@ -143,8 +143,23 @@
 </dir>
 
 <dir>
-<title>[COLOR gold]Android APKs[/COLOR]</title>
+<title> </title>
+</dir>
+
+<dir>
+<title>[COLOR royalblue]Android APKs[/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/apk.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title>[COLOR violet]Retro Games[/COLOR]</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/games.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
