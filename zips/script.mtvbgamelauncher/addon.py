@@ -21,7 +21,7 @@ response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(da
 if not response == "OK":
     xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,)")
     exit()
-xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,2000,)")
+
 
 
 HOME1     = '/storage/emulated/0/ROMs/MAME4droid/roms/'
