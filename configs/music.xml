@@ -21,6 +21,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]Clubland[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://script.module.streamhublive/?url=http://tvplayer.com/watch/clubland&mode=9999&name=%5BCOLOR+white%5D%5BB%5DWatch+Clubland%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=C%3A%5CUsers%5Cbigla%5CAppData%5CRoaming%5CKodi%5Caddons%5Cscript.module.streamhublive%5Cicon.png&description=</link>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]MTV Dance[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
