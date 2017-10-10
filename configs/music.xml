@@ -1,5 +1,5 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section [/COLOR][/B]</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section Audio[/COLOR][/B]</title>
 </dir>
 
 <plugin>
@@ -14,6 +14,24 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.audio.tuneinradio</link>
+</plugin>
+
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section TV[/COLOR][/B]</title>
+</dir>
+
+<plugin>
+<title>[COLOR pink]Now That's What I Call Music[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.livehub2/?description&amp;iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&amp;mode=10&amp;name=%5bB%5d%5bCOLOR%20white%5dNow%20That%27s%20What%20I%20Call%20Music%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=mpd%3a%2f%2f4f2bbf7cda8028c3cc2c16723defb7d8.m3u8</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]VH1 UK[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.livehub2/?description&amp;iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&amp;mode=10&amp;name=%5bB%5d%5bCOLOR%20white%5dVH1%20UK%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=mpd%3a%2f%2fb255a81385c67a839c15d92b8bad092c.m3u8</link>
 </plugin>
 
 
