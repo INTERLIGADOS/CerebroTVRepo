@@ -87,6 +87,28 @@
 </plugin>
 
 <dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]System Tools [/COLOR][/B]</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/tools.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Retro Games [/COLOR][/B]</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/games.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<plugin>
+<title>[COLOR green]UPGRADE TO PREMIUM[/COLOR] (This Addon Works Much Better and A LOT more content!)</title>
+<link>plugin://script.cerebro.buyprem</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<dir>
 <title> </title>
 </dir>
 
@@ -136,13 +158,6 @@
 </dir>
 
 <dir>
-<title>[COLOR gold]Tools Menu[/COLOR]</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/tools.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
-<dir>
 <title> </title>
 </dir>
 
@@ -157,12 +172,6 @@
 <title> </title>
 </dir>
 
-<dir>
-<title>[COLOR violet]Retro Games[/COLOR]</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/games.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
 
 <dir>
 <title> </title>
@@ -185,3 +194,10 @@
 <dir>
 <title>www.cerebrotv.co.uk</title>
 </dir>
+
+<plugin>
+<title>[COLOR green]UPGRADE TO PREMIUM[/COLOR] (This Addon Works Much Better and A LOT more content!)</title>
+<link>plugin://script.cerebro.buyprem</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
