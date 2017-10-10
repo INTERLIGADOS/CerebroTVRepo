@@ -139,10 +139,6 @@
 <title> </title>
 </dir>
 
-<dir>
-<title> </title>
-</dir>
-
 <plugin>
 <title>[COLOR ghostwhite]Tools[/COLOR]</title>
 <link>plugin://plugin.video.wargames/?action=toolNavigator</link>
@@ -156,3 +152,14 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title>Super Cheap Fast Android Boxes</title>
+</dir>
+<dir>
+<title>www.cerebrotv.co.uk</title>
+</dir>
