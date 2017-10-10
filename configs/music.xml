@@ -24,7 +24,7 @@
 <title>[COLOR pink]Clubland[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://script.module.streamhublive/?url=http://tvplayer.com/watch/clubland&mode=9999&name=%5BCOLOR+white%5D%5BB%5DWatch+Clubland%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=C%3A%5CUsers%5Cbigla%5CAppData%5CRoaming%5CKodi%5Caddons%5Cscript.module.streamhublive%5Cicon.png&description=</link>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dClubland%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2ffe87875db342914b6983c5b202624537.m3u8</link>
 </plugin>
 
 <plugin>
