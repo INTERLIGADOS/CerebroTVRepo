@@ -149,3 +149,10 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]INSTALL CEREBRO MEDIA AUTO STARTER[/COLOR]</title>
+<link>plugin://script.cerebro.auto.start</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
