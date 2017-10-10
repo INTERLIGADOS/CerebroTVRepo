@@ -73,7 +73,10 @@
 </plugin>
 
 <dir>
-<title> </title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section [/COLOR][/B]</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/music.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <plugin>

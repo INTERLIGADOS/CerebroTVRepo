@@ -1,0 +1,19 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Video on Demand [/COLOR][/B](VoD)</title>
+</dir>
+
+<plugin>
+<title>[COLOR pink]MP3 Streams[/COLOR]</title>
+<link>plugin://plugin.audio.mp3streams</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Radio[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.audio.tuneinradio</link>
+</plugin>
+
+
