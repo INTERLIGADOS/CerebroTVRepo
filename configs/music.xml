@@ -21,17 +21,38 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]MTV Dance[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMTV%20Dance%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f2672617afdf44cdfe0bef6f41856c920.m3u8</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]MTV Rocks[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dMTV%20Rocks%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f38b937a77d8587999c0e1d1d13d9a37c.m3u8</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Channel AKA[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dChannel%20AKA%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fd219be9bfb4b4adab469f2b9760e1f68.m3u8</link>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Now That's What I Call Music[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.livehub2/?description&amp;iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&amp;mode=10&amp;name=%5bB%5d%5bCOLOR%20white%5dNow%20That%27s%20What%20I%20Call%20Music%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=mpd%3a%2f%2f4f2bbf7cda8028c3cc2c16723defb7d8.m3u8</link>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dNow%20That%27s%20What%20I%20Call%20Music%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f4f2bbf7cda8028c3cc2c16723defb7d8.m3u8</link>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]VH1 UK[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.livehub2/?description&amp;iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&amp;mode=10&amp;name=%5bB%5d%5bCOLOR%20white%5dVH1%20UK%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=mpd%3a%2f%2fb255a81385c67a839c15d92b8bad092c.m3u8</link>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dVH1%20UK%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fb255a81385c67a839c15d92b8bad092c.m3u8</link>
 </plugin>
 
 
