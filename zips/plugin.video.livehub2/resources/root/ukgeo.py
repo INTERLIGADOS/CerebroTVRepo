@@ -1,6 +1,6 @@
 import xbmc,os
 
-addon_id   = 'plugin.video.livehub'
+addon_id   = 'plugin.video.livehub2'
 
 icon       = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 fanart     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))

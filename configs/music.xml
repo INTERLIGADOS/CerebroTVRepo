@@ -38,7 +38,7 @@
 <title>[COLOR pink]MTV Hits[/COLOR]2</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>PlayMedia("plugin://program.apollo/?action=apollo&imdb=9999&season=548&title=548")</link>
+<link>plugin://program.apollo/?action=apollo&imdb=9999&season=548&title=MTV%20Hits")</link>
 </plugin>
 
 <plugin>

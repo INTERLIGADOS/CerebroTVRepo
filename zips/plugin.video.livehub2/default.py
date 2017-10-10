@@ -12,8 +12,8 @@ from resources.root import android
 def home():
 	addDir('','url',0,icon,fanart,'')
 	#addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
-	#addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
-	#addDir('[COLOR white][B]Web Scrapers[/COLOR][/B]','url',2000,icon,fanart,'')
+	addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
+	addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',2000,icon,fanart,'')
 	#addDir('[COLOR white][B]IPTV Scrapers[/COLOR][/B]','url',3000,icon,fanart,'')
 	#addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',4000,icon,fanart,'')
     
@@ -250,7 +250,8 @@ except:
 # OpenELEQ: query & type-parameter (added 8 lines above)
 
 if mode==None or url==None or len(url)<1:
-	android.cat()
+	home()
+
 
 elif mode==1:
 	from resources.root import ukgeo
@@ -288,7 +289,7 @@ elif mode==1000:
 	
 elif mode==2000:
 	from resources.root import webscrapers
-	webscrapers.cat()
+	android.cat()
 
 elif mode==3000:
 	from resources.root import iptv

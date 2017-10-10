@@ -7,8 +7,7 @@ import base64
 
 
 def resolve(url):
-	import requests
-	try:
+		import requests
 		if 'tvcatchup' in url:
 			open = OPEN_URL(url)
 			url  = re.compile("file: '(.+?)'").findall(open)[0]
@@ -41,33 +40,47 @@ def resolve(url):
 			open = OPEN_URL(link)
 			url  = regex_from_to(open,'source src="','"') + '|User-Agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 		elif 'arconaitv' in url:
+			ref  = url
 			open = OPEN_URL(url)
-			url  = re.compile('"src":"(.*?)"',re.DOTALL).findall(open)[0]
+			url  = re.compile('source src="(.*?)"',re.DOTALL).findall(open)[0]
 			url  = (url).replace('\/','/')
-			url  = url + '|User-Agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
-		elif 'snappystreams:' in url:
-			url = (url).replace('snappystreams:','')
-			xbmc.Player().play(url)
+			url  = url + '|User-Agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36&Referer='+ref
+		elif 'swift:' in url:
+			import requests
+			url = (url).replace('swift:','')
+			
+			open = requests.get('http://swiftstreamz.com/SnappyStreamz/snappystreamz.php',headers={'Authorization':'Basic U25hcHB5OkBTbmFwcHlA','User-Agent':'Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q)'}).text
+			t    = regex_from_to(open,'HelloLogin":"','"')
+			
 			headers = {'Authorization': 'Basic QFN3aWZ0MTQjOkBTd2lmdDE0Iw==',
-				'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q)'}
-			
-			open = requests.session().get('http://173.212.202.101/token10304.php',headers=headers).text
+				'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q)',
+				'Accept-Encoding': 'gzip'}
+			open = requests.session().get(t,headers=headers).text
+
 			link = url+open
-			url  = link+'|User-Agent=Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q'
-			
+			url  = link+'|User-Agent=sss'
 		elif 'iptvrestream.net'in url:
-			url  = url + '|User-Agent=FC'
+			url  = url + '|User-Agent=kxVZHzy'
 			
 		elif 'livetvindia.co.in' in url:
-			url = url+ '|User-Agent=sammaadsdsss'
+			url = url+'|User-Agent=samrai945&Accept=*/*&Range=bytes=0-&Connection=close&Host=live1.livetvindia.co.in:8000&Icy-MetaData=1'
+		elif 'madotv.com' in url:
+			url = url+'|User-Agent=Lavf/56.15.102&Accept=*/*&Range=bytes=0-&Connection=close&Host=main.madotv.com:25461&Icy-MetaData=1'
 			
 		elif 'mamahd.com' in url:
 			url = mamahdresolve(url)
 		elif 'cricfree' in url:
 			url = cricfreeresolve(url)
-		return url
-	except:
-		return 'False'
+		elif '163.172.211.23:25461' in url:
+			url = url+'|User-Agent=alo&Accept=*/*&Range=bytes=0-&Connection=close&Host=163.172.211.23:25461&Icy-MetaData=1'
+		elif url.startswith('DHMAKATV:'):
+			url   = (url).replace('DHMAKATV:','') + '|User-Agent=eMeeea/1.0.0.'
+			#token = requests.get('http://aps.dynns.com/keys/android_encodes.php',headers={'User-Agent':'Dalvik/1.6.0 (Linux; U; Android 4.3.1; WT19M-FI Build/JLS36I)','Authorization':'Basic YWRtaW46QWxsYWgxQA==','Modified':'10419273242536273849','Accept':'gzip'}).text
+		elif 'http://173.212.206.199:25461' in url:
+			url = url+'|User-Agent=123098'
+		else:
+			url = url
+		return (url).replace('<p>','')
 	
 logfile    = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.livehub', 'log.txt'))
 
@@ -96,18 +109,11 @@ def mamahdresolve(url):
 			log(m3u8)
 			url  = m3u8+ '|User-Agent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36'
 			return url
-def snappystreamsresolve(url):
-	headers = {'Authorization': 'Basic U25hcHB5OkBTbmFwcHlA',
-		'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G900F Build/KTU84Q)'}
-		
-	open = requests.session().get('http://173.212.202.101/token10304.php',headers=headers).text
-	log(open)
-	link = url+open
-	return link
-	
+
 	
 def ibrodresolve(url):
-	import requests
+	import requests,urllib
+	ref  = url
 	open = OPEN_URL(url)
 	embed = regex_from_to(open,'iframe.+?src="','"')
 	open = OPEN_URL(embed)
@@ -116,8 +122,9 @@ def ibrodresolve(url):
 	iframe  = regex_from_to(open,"iframe src='","'")
 	open = requests.session().get(iframe,headers={'Referer':embed},verify=False).text
 	link = open.encode('ascii', 'ignore')
-	url  = re.compile("source.+?'(.+?)'").findall(link)[0]
-	return url
+	url  = re.compile("source: '(.+?)'").findall(link)[0]
+	u  = url+'|User-Agent='+urllib.quote_plus('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36&Referer='+ref)
+	return u
 	
 	
 	
@@ -148,16 +155,11 @@ def mobdroresolve(url):
     time_stamp = str(int(time.time()) + 14400)
     to_hash = "{0}{1}/hls/{2}".format(token,time_stamp,url)
     out_hash = b64encode(md5.new(to_hash).digest()).replace("+", "-").replace("/", "_").replace("=", "")
-    servers = ['185.152.64.236','185.102.219.72','185.102.219.67','185.102.218.56','185.59.222.232']
+    servers = ['185.102.219.72','185.102.219.67','185.102.218.56','185.59.222.232']
     server  = random.choice(servers)
     
     url = "http://{0}/p2p/{1}?st={2}&e={3}".format(server,url,out_hash,time_stamp)
     return '{url}|User-Agent={user_agent}&referer={referer}'.format(url=url,user_agent=user_agent,referer='6d6f6264726f2e6d65'.decode('hex'))
-
-
-
-
-
 
 
 
@@ -245,7 +247,7 @@ def playtvplayer(url):
         import re,urllib,json
         cj=cookielib.LWPCookieJar()
         watchHtml=getUrl(url, cookieJar=cj)
-        channelid=re.findall('data-resource="(.*?)"' ,watchHtml)[0]
+        channelid=re.findall('data-id="(.*?)"' ,watchHtml)[0]
         token=re.findall('data-token="(.*?)"' ,watchHtml)[0]
         #token='null'
         url  = "https://tvplayer.com/watch/context?resource=%s&gen=%s"%(channelid,token)
