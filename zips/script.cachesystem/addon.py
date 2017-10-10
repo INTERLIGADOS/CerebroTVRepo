@@ -75,7 +75,8 @@ def UpdateCheck():
             
     except: pass
     
-
+xbmc.executebuiltin('UpdateAddonRepos')
+xbmc.executebuiltin('UpdateLocalAddons')
 UpdateCheck()
 
 
