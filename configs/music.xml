@@ -35,13 +35,6 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]TEST STREAM[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.f4mTester/?url=https://tvplayer.com/watch/clubland</link>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]Channel AKA[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -61,5 +54,13 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dVH1%20UK%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fb255a81385c67a839c15d92b8bad092c.m3u8</link>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]SAM THIS ONE[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://program.apollo/?action=apollo&imdb=1&season=548&title=MTV%20Hits</link>
+</plugin>
+
 
 
