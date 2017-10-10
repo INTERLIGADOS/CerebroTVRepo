@@ -55,6 +55,26 @@
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dVH1%20UK%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fb255a81385c67a839c15d92b8bad092c.m3u8</link>
 </plugin>
 
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title> </title>
+</dir>
+
+<dir>
+<title>TEST SECTION!!!!</title>
+</dir>
+
 <plugin>
 <title>[COLOR pink]SAM THIS ONE[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -62,12 +82,6 @@
 <link>plugin://program.apollo/?action=apollo&imdb=9999&season=548&title=MTV%20Hits</link>
 </plugin>
 
-<plugin>
-<title>[COLOR pink]TEST2[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=35&name=DOCS&url=http%3A%2F%2Ftvplayer.com%2Fwatch%2Fclubland</link>
-</plugin>
 
 
 
