@@ -13,6 +13,17 @@ import statvfs
 from decimal import Decimal
 
 
+HOME     = xbmc.translatePath('special://userdata/')
+iddata   = os.path.join(HOME, 'networksettings.xml')
+with open(iddata, 'r') as myfile:
+    data300=str(myfile.read())
+response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(data300)+'&ok=OK&ip='+ipaddy).read()
+if not response == "OK":
+    xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,)")
+    exit()
+xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,2000,)")
+
+
 HOME1     = '/storage/emulated/0/ROMs/MAME4droid/roms/'
 HOME2     = '/storage/emulated/0/Download/'
 HOME3     = '/storage/emulated/0/#MEGADRIVE/'
