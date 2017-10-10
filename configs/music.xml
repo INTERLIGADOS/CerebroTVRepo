@@ -63,10 +63,10 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]TEST[/COLOR]</title>
+<title>[COLOR pink]TEST2[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=99&name=%5bCOLOR%20orange%5dG%5b%2fCOLOR%5d%5bCOLOR%20white%5denre%27s%5b%2fCOLOR%5d&url=http%3A%2F%2Ftvplayer.com%2Fwatch%2Fclubland</link>
+<link>>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=35&name=DOCS&url=http%3A%2F%2Ftvplayer.com%2Fwatch%2Fclubland</link>
 </plugin>
 
 
