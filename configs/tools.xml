@@ -30,3 +30,10 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR ghostwhite]Force Close Kodi / Reboot Device[/COLOR]</title>
+<link>plugin://script.mtvbexit</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
