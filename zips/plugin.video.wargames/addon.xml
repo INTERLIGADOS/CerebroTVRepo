@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.05" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.06" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -27,18 +27,13 @@
         <import addon="script.module.mutagen" />
         <import addon="plugin.audio.mp3streams" />
         <import addon="script.cypherstream" />
-        <import addon="plugin.video.tvplayer" />
-        <import addon="plugin.video.livehub2" />
         <import addon="plugin.video.SportsDevil" />
         <import addon="plugin.video.f4mTester" />
-        <import addon="plugin.video.ProjectCypher" />
         <import addon="plugin.audio.tuneinradio" />
         <import addon="script.mtvppv" />
         <import addon="plugin.video.bbciplayer" />
         <import addon="plugin.video.itv" />
         <import addon="plugin.video.dnatv4k" />
-        <import addon="plugin.video.streamhub" />
-        <import addon="script.module.streamhublive" />
         <import addon="repository.streamhub" />
         <import addon="repository.Cypherslocker" />
         <import addon="repository.sanctuary" />
