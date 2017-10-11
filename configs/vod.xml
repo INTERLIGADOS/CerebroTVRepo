@@ -39,7 +39,7 @@
 
 <plugin>
 <title>[COLOR pink]Latest Movies in HD[/COLOR] (BoB)</title>
-<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&amp;fanart=http%3a%2f%2f178.32.217.111%2freloaded%2fthemes%2fmovies%2fmovies6.jpg&amp;iconimage=http%3a%2f%2f178.32.217.111%2freloaded%2ficons%2fMain%2fMain-New-Releases.png&amp;mode=get_list&amp;name=New%20Releases&amp;url=https%3a%2f%2fpastebin.com%2fraw%2fxa8hFS9Z</link>
+<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2f178.32.217.111%2freloaded%2fthemes%2fmovies%2fmovies6.jpg&iconimage=http%3a%2f%2f178.32.217.111%2freloaded%2ficons%2fMain%2fMain-New-Releases.png&mode=get_list&name=New%20Releases&url=https%3a%2f%2fpastebin.com%2fraw%2fxa8hFS9Z</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
