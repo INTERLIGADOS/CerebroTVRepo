@@ -547,7 +547,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.03" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.04" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -597,6 +597,8 @@ Removed: Nudeflix</news>
         <import addon="repository.wolfpack" />
         <import addon="repository.noobsandnerds" />
         <import addon="repository.smash" />
+        <import addon="repository.elysium" />
+        <import addon="repository.colossus" />
 
 
 
@@ -713,6 +715,24 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
+<addon id="repository.colossus" name="[COLOR gold]Colossal Repository[/COLOR]" version="000.000.0" provider-name="Colossal">
+    <extension point="xbmc.addon.repository" name="[COLOR gold]Colossal Repository[/COLOR]">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+    </dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Home Of 3rd Party Addons</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.Cypherslocker" name="[COLOR cornflowerblue]Cyphers locker[/COLOR]" version="1.0.2" provider-name="Project Cypher">
 	<extension point="xbmc.addon.repository" name="TheMegaRepo">
 		<info compressed="false">https://github.com/CypherMediaGIT/CypherRepo/raw/master/cypherrepo/plugins/addons.xml</info>
@@ -723,6 +743,30 @@ Removed: Nudeflix</news>
 		<summary>Cypers Locker Repo - Home to Project Cypher</summary>
 		<description>Cypers Locker Repo - Home to Project Cypher.</description>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.elysium" version="2017.06.10" name="Elysium repository" provider-name="Elysium">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension point="xbmc.addon.repository" name="Elysium repository">
+		<dir minversion="14.0.0">
+			<info compressed="false">https://github.com/OpenELEQ/repository.elysium/raw/master/elysium.xml</info>
+			<checksum>https://github.com/OpenELEQ/repository.elysium/raw/master/elysium.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/OpenELEQ/repository.elysium/master/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elysium repository</summary>
+		<description lang="en">This repository contains Elysium and required dependencies.</description>
+		<disclaimer lang="en">The Author does not host or share any content, nor is he affiliated with any of the content providers.</disclaimer>
+		<platform>all</platform>
+		<news>Rebrand from Zen to Elysium / Disabled Cinemabox</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
 	</extension>
 </addon>
 
