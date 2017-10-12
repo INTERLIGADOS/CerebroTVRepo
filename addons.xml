@@ -625,7 +625,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.25" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.26" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -669,12 +669,12 @@ Removed: Nudeflix</news>
         <import addon="script.tvguide.cerebrotv.sports" />
         <import addon="plugin.video.dnatv4k" />
         <import addon="repository.streamhub" />
-        <import addon="repository.Cypherslocker" />
-        <import addon="repository.sanctuary" />
-        <import addon="repository.supremacy" />
+        <import addon="repository.Cypherslocker" optional="true"/>
+        <import addon="repository.sanctuary" optional="true"/>
+        <import addon="repository.supremacy" optional="true"/>
         <import addon="repository.smash" optional="true"/>
-        <import addon="repository.elysium" />
-        <import addon="repository.noobsandnerds"/>
+        <import addon="repository.elysium" optional="true"/>
+        <import addon="repository.noobsandnerds" optional="true"/>
         <import addon="repository.colossus" optional="true" />
 
 
