@@ -56,7 +56,7 @@
 <link>plugin://plugin.video.streamhub/?action=movieNavigator</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
+</plugin> 
 
 <plugin>
 <title>[COLOR pink]Movies[/COLOR] (Covenant)</title>
