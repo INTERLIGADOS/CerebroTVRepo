@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
 
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids Corner[/COLOR][/B]</title>
+<link></link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
 
 <plugin>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]Kids[/COLOR] TV Guide[/COLOR][/B] (Premium Only)</title>
