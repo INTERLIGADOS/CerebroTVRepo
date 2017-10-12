@@ -1,22 +1,205 @@
-[B]Version 4.0.07 (Oct 03, 2017)[/B]
-- Code Base Changes:
-    - Updated jsunpack
-- Resolvers Added:
-    - vidstreaming.io
-    - lolzor.com
-    - mycollection.net
-    - adhqmedia.com
-    - gagomatic.com
-    - funblr.com
-    - favour.me
-    - vidbaba.com
-    - likeafool.com
-- Resolvers Fixed/Updated:
-    - XvidStage
-    - Vid.me
-    - Speedvid (will now auto-update)
-    - GriftHost
-    - FlashX
-    - MyCloud
-- Languages Added
-    - Hebrew Translation
+Mit # markierte .py Dateien sind Lastship Modifiziert und nur in unserem Resolver enthalten
+
+[B]Version 4.0.07.3[/B]
+- speedvid_gmu
+- xvidstage
+
+- Create videohost2
+- Create vidics
+
+[B]Version 4.0.07.2[/B]
+- bitporno (kinow hosted nun auch darauf) #
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut (thevideo)
+
+[B]Version 4.0.07.1[/B]
+- bitvid #
+- lolzor
+- megamp4
+- mycloud
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut (thevideo)
+
+- create vidstreaming
+
+[B]Version 4.0.06.4[/B]
+- vidme
+- grifthost
+- fx_gmu
+- speedvid
+- speedvid_gmu
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut (thevideo)
+
+- remove .pyo data in urlresolver subfolder (plugin folder)
+- jsunpack.py
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut (thevideo)
+
+[B]Version 4.0.06.3[/B]
+- Remove streamcherry
+
+[B]Version 4.0.06.2[/B]
+- vidme
+- xvidstage
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut
+
+[B]Version 4.0.06.1[/B]
+- speedvid (+jsunpack.py)
+- datoporn removed
+- streamango / streamcherry
+- indavideo
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut
+
+[B]Version 4.0.05.1[/B]
+- waaw
+- streamango (Fix smu delay)
+- mailru
+- indavideo
+- Lastship Modifizierte Dateien (mit # Symbol markiert) eingebaut
+- log_utils.py
+
+[B]Version 4.0.04.1[/B]
+- indavideo 
+- thevideo (Pairing Homepage Anzeigelink geändert) #
+
+[B]Version 4.0.04[/B]
+- Anpassung der Versions Nummer an die Update Quelle (Jsergio), KEINE Technischen Änderungen
+
+[B]Version 3.0.36[/B]
+- Bugfix  3.0.35
+
+[B]Version 3.0.35[/B]
+- streamango
+- openload (Fix not possible pairing openload ; with non english Kodi language menu)
+- fx_gmu
+- smoozed
+- thevid
+- uptobox
+- vidzella
+- vshareeu
+
+- create thevid_gmu
+- create flixtor
+
+- jsunpack.py
+
+[B]Version 3.0.34[/B]
+- movdivx
+- speedvid
+- xvidstage 
+
+[B]Version 3.0.33.14[/B]
+- xvidstage 
+- add new resolver icon
+- videoraj
+- cda
+- create and update earnvideos
+- create vidbom
+
+[B]Version 3.0.33.13[/B]
+- flashx
+- fx_gmu
+- speedvid
+- remove smoozed
+
+[B]Version 3.0.33.12[/B]
+- smoozed
+- flashx
+
+[B]Version 3.0.33.11[/B]
+- Update watchers
+- Update fx_gmu
+- Update flashx
+- weshare
+- Add oneload
+- Add waaw
+
+-[B]Version 3.0.33.10[/B]
+- settings.xml
+
+- amazon
+- thevideo
+- Add ustream
+
+-[B]Version 3.0.33.09[/B]
+- kingvid
+- speedvid
+- streamplay
+- vidtodo
+- vidwatch
+- vshareeu
+- watchers
+
+- Add powvideo
+- Add tubitv
+
+- helpers.py
+
+-[B]Version 3.0.33.08[/B]
+- init_.py
+- hmf
+- all language strings.po (Remove Name: TV Addons)
+- flashx
+
+-[B]Version 3.0.33.07[/B]
+- helpers.py
+- mailru
+- realdebrid
+- speedvid
+- streamplay
+- syfy
+
+- init_.py
+- hmf
+
+-[B]Version 3.0.33.06[/B]
+- recaptcha_v2
+- helpers.py
+- resolver.py
+- zevera
+- veeHD
+- simplydebrid
+- rpnet
+- purevid
+- premiumize_me
+- megadebrid
+- debrid_link
+- alldebrid
+- _init_.py
+- Add gamovideo
+- fastplay
+
+-[B]Version 3.0.33.03[/B]
+- Add: 
+- syfy
+- dbmovies
+
+-Fix Tunepk
+ 
+-Update:
+- rapidvideocom
+- helpers.py
+- aliez
+- thevid
+- Speedvid
+- fastplay
+
+-[B]Version 3.0.33.02[/B]
+- Create:
+- h265
+- datemule
+
+-Update:
+-- kingvid
+-- streamcherry
+-- clipwatching
+-- vshareeu
+-- xvidstage
+-- watchers
+-- vidme
+-- dailymotion
+-- vidlox
+-- gorillavid
+-- vidzi
+-- fastplay
+-- watchvideo
+-- mailru
+-- Fix for real-debrid when url startswith "//"
+

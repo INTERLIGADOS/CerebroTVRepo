@@ -30,9 +30,9 @@ def get_media_url(url, media_id):
     html = net.http_GET(url, headers=headers).content
     
     if html:
-        packed = re.search("""\|href\|(\d+)\|html\|location\|(\d+)\|%s\|window\|sp""" % media_id, html)
+        packed = re.search("""\|href\|(\d+)\|html\|location\|(\d+)\|%s\|window\|sd""" % media_id, html)
         if packed:
-            location_href = "http://www.speedvid.net/sp-%s-%s-%s.html" % (media_id, packed.group(1), packed.group(2))
+            location_href = "http://www.speedvid.net/sd-%s-%s-%s.html" % (media_id, packed.group(1), packed.group(2))
         
             return helpers.get_media_url(location_href, patterns=['''file:["'](?P<url>(?!http://s(?:13|57))[^"']+)''']).replace(' ', '%20')
         
