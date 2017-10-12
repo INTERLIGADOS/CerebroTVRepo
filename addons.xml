@@ -2805,8 +2805,8 @@ level.</description>
 </addon>
 
 <addon id="script.mtvppv"
-  name="CerebroTV Appolo Streams"
-  version="1.3"
+  name="CerebroTV Apollo Streams"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
