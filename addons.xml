@@ -547,40 +547,47 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.17" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.18" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.liveresolver" version="0.1.24"/>
-		<import addon="script.video.F4mProxy" version="2.2.3"/>
-		<import addon="script.wargames.artwork" version="1.0.0"/>
+		<import addon="script.module.wargames"/>
+        <import addon="script.wargames.artwork" version="1.0.0"/>
 		<import addon="script.wargames.metadata" version="1.0.0"/>
 		<import addon="script.module.metahandler" version="1.0.0" />
-        <!--<import addon="script.tvguide.cerebrotv.kids" />-->
-		<import addon="script.module.wargames"/>
+        <import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="script.video.F4mProxy" version="2.2.3"/>
+        <import addon="plugin.video.f4mTester" />
+
         <!--<import addon="script.module.streamhub"/>-->
+
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
-        <!--<import addon="plugin.video.ProjectCypher" />-->
+        <import addon="plugin.video.ProjectCypher" />
         <import addon="script.cerebro.tvguide.open" />
         <import addon="script.cerebro.tvguide.open2" />
         <import addon="script.cerebro.tvguide.open3" />
         <import addon="script.cerebro.tvguide.open.free" />
         <import addon="script.cerebro.pairwith.laucnher" />
-        <!--<import addon="script.tvguide.cerebrotv.uk.2017" />-->
+        <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="script.mtvbxxx" />
-        <!--<import addon="program.apollo" />-->
+        <import addon="program.apollo" />
         <import addon="script.cerebro.backend" />
         <import addon="script.module.muckys.common" />
         <import addon="script.cerebro.buy" />
         <import addon="script.cerebro.buyprem" />
         <import addon="script.module.mutagen" />
         <import addon="plugin.video.SportsDevil" />
-        <import addon="plugin.video.f4mTester" />
+
+
         <import addon="script.mtvppv" />
+
         <!--<import addon="script.tvguide.cerebrotv.uk" />-->
+        <!--<import addon="script.tvguide.cerebrotv.kids" />-->
+        <!--<import addon="script.tvguide.cerebrotv.sports" />-->
         <import addon="plugin.video.dnatv4k" />
+
         <import addon="repository.streamhub" />
         <import addon="repository.Cypherslocker" />
         <import addon="repository.sanctuary" />
@@ -589,7 +596,7 @@ Removed: Nudeflix</news>
         <import addon="repository.elysium" />
         <import addon="repository.noobsandnerds" />
         <import addon="repository.colossus" />
-        <!--<import addon="script.tvguide.cerebrotv.sports" />-->
+
 
 
 
