@@ -25,7 +25,7 @@
 
 <plugin>
 <title>[COLOR pink]Covenant Add-On[/COLOR] (TV Shows and Movies)</title>
-<link>plugin://plugin.video.covenant</link>
+<link>plugin://script.covloader</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
