@@ -23,3 +23,17 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
+<plugin>
+<title>[COLOR pink]Covenant Add-On[/COLOR]</title>
+<link>plugin://plugin.video.covenant</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Elysium Add-On[/COLOR]</title>
+<link>plugin://plugin.video.elysium</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
