@@ -49,4 +49,4 @@ def function2():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin.video.covenant",return)')
      
 #menuoptions()
-xbmc.executebuiltin('ActivateWindow(10025,"plugin.video.covenant",return)')
+xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.covenant",return)')
