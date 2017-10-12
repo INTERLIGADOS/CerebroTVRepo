@@ -3,7 +3,7 @@
 </dir>
 
 <plugin>
-<title> ** [COLOR green]Pair Device For More HD Conent[/COLOR] ** </title>
+<title> ** [COLOR green]Pair Device For More 1080p (FULL HD) Conent[/COLOR] ** </title>
 <link>plugin://script.cerebro.pairwith.laucnher</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -24,14 +24,14 @@
 </dir>
 
 <plugin>
-<title>[COLOR pink]Covenant Add-On[/COLOR]</title>
+<title>[COLOR pink]Covenant Add-On[/COLOR] (TV Shows and Movies)</title>
 <link>plugin://plugin.video.covenant</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Elysium Add-On[/COLOR]</title>
+<title>[COLOR pink]Elysium Add-On[/COLOR] (TV Shows and Movies)</title>
 <link>plugin://plugin.video.elysium</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
