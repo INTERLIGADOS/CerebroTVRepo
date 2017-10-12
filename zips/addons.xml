@@ -547,7 +547,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.18" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.19" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -559,9 +559,7 @@ Removed: Nudeflix</news>
 		<import addon="script.module.liveresolver" version="0.1.24"/>
 		<import addon="script.video.F4mProxy" version="2.2.3"/>
         <import addon="plugin.video.f4mTester" />
-
-        <!--<import addon="script.module.streamhub"/>-->
-
+        <import addon="script.module.streamhub"/>
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
         <import addon="plugin.video.ProjectCypher" />
@@ -579,23 +577,19 @@ Removed: Nudeflix</news>
         <import addon="script.cerebro.buyprem" />
         <import addon="script.module.mutagen" />
         <import addon="plugin.video.SportsDevil" />
-
-
         <import addon="script.mtvppv" />
-
         <!--<import addon="script.tvguide.cerebrotv.uk" />-->
         <!--<import addon="script.tvguide.cerebrotv.kids" />-->
         <!--<import addon="script.tvguide.cerebrotv.sports" />-->
         <import addon="plugin.video.dnatv4k" />
-
         <import addon="repository.streamhub" />
-        <import addon="repository.Cypherslocker" />
-        <import addon="repository.sanctuary" />
-        <import addon="repository.supremacy" />
-        <import addon="repository.smash" />
-        <import addon="repository.elysium" />
-        <import addon="repository.noobsandnerds" />
-        <import addon="repository.colossus" />
+        <import addon="repository.Cypherslocker" optional="true"/>
+        <import addon="repository.sanctuary" optional="true"/>
+        <import addon="repository.supremacy" optional="true"/>
+        <import addon="repository.smash" optional="true"/>
+        <import addon="repository.elysium" optional="true"/>
+        <import addon="repository.noobsandnerds" optional="true"/>
+        <import addon="repository.colossus" optional="true"/>
 
 
 
