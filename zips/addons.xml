@@ -562,7 +562,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.20" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.21" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -578,6 +578,10 @@ Removed: Nudeflix</news>
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
         <import addon="plugin.video.ProjectCypher" />
+        <import addon="script.exodus.artwork" version="1.0.4" />
+		<import addon="script.exodus.metadata" version="1.0.0" />
+        <import addon="plugin.video.itv" />
+        <import addon="plugin.video.bbciplayer" />
         <!--<import addon="script.cerebro.tvguide.open" />
         <import addon="script.cerebro.tvguide.open2" />
         <import addon="script.cerebro.tvguide.open3" />
