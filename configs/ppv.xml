@@ -3,8 +3,22 @@
 </dir>
 
 <plugin>
-<title>Premium Section (COMING SOON)</title>
-<link> </link>
+<title>Open PPV Menu (Premium Only)</title>
+<link>plugin://plugin.program.super.favourites/?label=[COLOR black]ppv[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Cppv&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]SportsDevil Live Sports[/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?item=title%3dLive%2bSports%26url%3dlivesports.cfg%26definedIn%3dmainMenu.cfg%26director%3dSportsDevil%26genre%3dLive%2bSports%26type%3drss%26icon%3dC%253A%255CUsers%255Cbigla%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Clivesports.png&mode=1</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]SportsDevil Sports TV[/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?item=title%3dSports%2bTV%26url%3dtv.cfg%26definedIn%3dmainMenu.cfg%26director%3dSportsDevil%26genre%3dTV%26type%3drss%26icon%3dC%253A%255CUsers%255Cbigla%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Cstation.png&mode=1</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
