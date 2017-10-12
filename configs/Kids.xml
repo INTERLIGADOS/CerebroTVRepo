@@ -18,14 +18,14 @@
 
 <dir>
 <name>[COLOR ghostwhite][B]KIDS TV SHOWS[/COLOR][/B]</name>
-<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kidstv.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Kids2.xml</link>
 <thumbnail>http://orig15.deviantart.net/849d/f/2015/119/b/9/nickelodeon_folder_icon_by_mikromike-d8rklbf.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 <dir>
 <name>[COLOR ghostwhite][B]KIDS YOUTUBE[/COLOR][/B]</name>
-<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kids-youtube.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/KidsYouTube.xml</link>
 <thumbnail>http://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/256/youtube-icon.png</thumbnail>
 <fanart></fanart>
 </dir>
@@ -33,13 +33,6 @@
 <dir>
 <name>[COLOR pink]Kids[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Kids.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
-<dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids Corner[/COLOR][/B]</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/KidsYouTube.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
