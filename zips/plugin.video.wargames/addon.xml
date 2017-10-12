@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.19" provider-name="Biglad">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.20" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -15,11 +15,11 @@
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
         <import addon="plugin.video.ProjectCypher" />
-        <import addon="script.cerebro.tvguide.open" />
+        <!--<import addon="script.cerebro.tvguide.open" />
         <import addon="script.cerebro.tvguide.open2" />
         <import addon="script.cerebro.tvguide.open3" />
         <import addon="script.cerebro.tvguide.open.free" />
-        <import addon="script.cerebro.pairwith.laucnher" />
+        <import addon="script.cerebro.pairwith.laucnher" />-->
         <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="script.mtvbxxx" />
         <import addon="program.apollo" />
@@ -30,18 +30,19 @@
         <import addon="script.module.mutagen" />
         <import addon="plugin.video.SportsDevil" /> 
         <import addon="script.mtvppv" />
-        <!--<import addon="script.tvguide.cerebrotv.uk" />-->
-        <!--<import addon="script.tvguide.cerebrotv.kids" />-->
-        <!--<import addon="script.tvguide.cerebrotv.sports" />-->
+        <import addon="plugin.video.tvmix" />
+        <import addon="script.tvguide.cerebrotv.uk" />
+        <import addon="script.tvguide.cerebrotv.kids" />
+        <import addon="script.tvguide.cerebrotv.sports" />
         <import addon="plugin.video.dnatv4k" />
         <import addon="repository.streamhub" />
-        <import addon="repository.Cypherslocker" optional="true"/>
-        <import addon="repository.sanctuary" optional="true"/>
-        <import addon="repository.supremacy" optional="true"/>
+        <import addon="repository.Cypherslocker" />
+        <import addon="repository.sanctuary" />
+        <import addon="repository.supremacy" />
         <import addon="repository.smash" optional="true"/>
-        <import addon="repository.elysium" optional="true"/>
-        <import addon="repository.noobsandnerds" optional="true"/>
-        <import addon="repository.colossus" optional="true"/>
+        <import addon="repository.elysium" />
+        <import addon="repository.noobsandnerds" />
+        <import addon="repository.colossus" />
         
         
 		
@@ -54,7 +55,7 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">CerebroTV Media Addon</summary>
 		<description lang="en">Free IPTV, Movies, TV Shows, Kids, Sports and much more.</description>
-		<disclaimer lang="en">The author does not host or distribute any content. Credits to Phoenix and Exodus for SOME of the base code. Cloned from the Wargames version.</disclaimer>
+		<disclaimer lang="en">The author does not host or distribute any content. Credits to Phoenix and Exodus for SOME of the base code. Cloned from the Wargames version.  Thanks for Phoenix for the back end code, Sam , Tony, Colin and a few others, team work make it possible.</disclaimer>
 		<platform>all</platform>
 		<forum>https://www.facebook.com/groups/cerebrotvguide/</forum>
 		<assets>
