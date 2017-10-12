@@ -37,3 +37,10 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]Bucky's Movies[/COLOR] (HD/3D/4K)</title>
+<link>plugin://plugin.video.Bucky</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
