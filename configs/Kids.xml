@@ -29,3 +29,10 @@
 <thumbnail>http://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/256/youtube-icon.png</thumbnail>
 <fanart></fanart>
 </dir>
+
+<dir>
+<name>[COLOR pink]Kids[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Kids.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>

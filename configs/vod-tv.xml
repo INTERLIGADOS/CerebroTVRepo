@@ -1,0 +1,48 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Video on Demand [/COLOR][/B](VoD)</title>
+</dir>
+
+<plugin>
+<title> ** [COLOR green]Pair Device For More HD Conent[/COLOR] ** </title>
+<link>plugin://script.cerebro.pairwith.laucnher</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Latest TV Releases[/COLOR] (Check here then use search bellow)</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.tvmix/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.tvmix%5cresources%5cart%5clatest.png&mode=1&name=New%20Latest%20Episodes&url=http%3a%2f%2fwww.watchepisodeseries.com%2f</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Search TV Shows / Episdoes[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.streamhub/?action=tvSearch</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]TV Shows[/COLOR] (StreamHub)</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.streamhub/?action=tvNavigator</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Search[/COLOR]</title>
+<link>plugin://plugin.video.wargames/?action=searchNavigator</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<dir>
+<name>[COLOR pink]My Trakt[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/trackt.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
+
