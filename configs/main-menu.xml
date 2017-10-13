@@ -133,13 +133,6 @@
 </plugin>
 
 <plugin>
-<title>[COLOR green]Need A New Box??[/COLOR] (Best UK, UE and USA devices)</title>
-<link>plugin://script.cerebro.buy</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR red]INSTALL CEREBRO MEDIA AUTO STARTER[/COLOR]</title>
 <link>plugin://script.cerebro.auto.start</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -157,6 +150,13 @@
 <dir>
 <title>[COLOR red]°• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° [/COLOR]</title>
 </dir>
+
+<plugin>
+<title>[COLOR green]Need A New Box??[/COLOR] (Best UK, UE and USA devices)</title>
+<link>plugin://script.cerebro.buy</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
 
 <dir>
 <title>[COLOR red]°• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° [/COLOR]</title>
@@ -180,4 +180,6 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+
 
