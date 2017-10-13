@@ -625,7 +625,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.26" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.27" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -655,6 +655,8 @@ Removed: Nudeflix</news>
         <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="plugin.video.ProjectCypher" />
         <import addon="script.mtvbxxx" />
+        <import addon="script.covloader" />
+        <import addon="script.xbmc.unpausejumpback" />
         <import addon="program.apollo" />
         <import addon="script.cerebro.backend" />
         <import addon="script.module.muckys.common" />
@@ -3008,7 +3010,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.29" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.31" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -3084,7 +3086,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.31" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.32" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -3337,6 +3339,34 @@ level.</description>
 		<description></description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.xbmc.unpausejumpback" name="Unpause Jumpback" version="2.3.6" provider-name="Memphiz,Lucleonhart,schumi2004,bossanova808">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">XBMC jumpback on unpausing videos</summary>
+    <summary lang="bg">Превърта назад след пауза</summary>
+    <description lang="en">
+        This addon will jumpback the given number of seconds whenever a movie is unpaused - for finding back into the story.
+        You can set the amount of seconds to jump back and the minimum seconds the pause must take to jump back.
+        It also allows to jump back or forward after rwd or fwd a specified amount of seconds.
+    </description>
+    <description lang="bg">
+        Добавката прескача назад автоматично след като прекратите пауза, за да си припомните историята.
+        Може да определите колко време назад да ви връща скока както и след колко време в режим "На пауза" да се активира функцията.
+        Има и възможност за скок напред / назад след превъртане напред или назад за дефиниран период от време.
+    </description>
+    <platform>all</platform>
+    <website></website>
+    <source>https://github.com/Memphiz/script.xbmc.unpausejumpback/</source>
+    <forum>http://forum.xbmc.org/showthread.php?tid=134837</forum>
+    <email></email>
+    <language></language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 
 <addon id="skin.titan" version="3.7.56" name="Titan" provider-name="marcelveldt,mgonzales">
