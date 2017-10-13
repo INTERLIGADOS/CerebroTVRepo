@@ -4,7 +4,7 @@ import xbmc
 from ..scraper import Scraper
 from BeautifulSoup import BeautifulSoup
 from ..common import clean_title
-
+requests.packages.urllib3.disable_warnings()
 
 class Watchcartoons(Scraper):
     name = "watchcartoon"
@@ -19,18 +19,21 @@ class Watchcartoons(Scraper):
     def scrape_episode(self, title, show_year, year, season, episode, imdb, tvdb, debrid = False):
         try:
             cleaned_title = title.replace(' ', '').replace('amp;', '').replace('\'','').lower()
-            for link in [self.base_link_cartoons, self.dubbed_link_cartoons]:
+            for link in [self.base_link_cartoons]:
                 html = requests.get(link).text
                 match = re.compile('<a href="(.+?)" title=".+?">(.+?)</a>').findall(html)
                 for url, name in match:
                     link_title = name.replace(' ', '').replace('amp;','').replace('\'','').lower()
-                    if (str(season) in ['1', '01'] and link_title == cleaned_title) or ("season %s" % season in link_title and cleaned_title in link_title):
+                    if link_title == cleaned_title:
                         html2 = requests.get(url).text
+                        matches=html2.split('class="menu">')[1]
                         match2 = re.compile(
-                            '<li><a href="(.+?)" rel="bookmark" title=".+?" class="sonra">(.+?)</a>').findall(html2)
-                        for url2, name in match2:
-                            episode_check = 'episode-' + str(episode)
-                            season_check = 'season-' + str(season)
+                            '<li><a href="(.+?)"').findall(matches)
+                        for url2 in match2:
+                            episode_check = 'episode-%s-' %str(episode)
+                            season_check = 'season-%s-'  %str(season)
+                            #print episode_check
+                            #print season_check
                             if season_check in url2.lower():
                                 if episode_check in url2.lower():
                                     self.check_for_play(url2, title, show_year, year, season, episode)
@@ -76,6 +79,7 @@ class Watchcartoons(Scraper):
 
     def check_for_play(self, url2, title, show_year, year, season, episode):
         try:
+            print 'xxxx GW'+url2
             mobile_url = url2.replace('www', 'm')
             html3 = requests.get(mobile_url, verify=False).text
             match_playlink = re.compile('<source src="(.+?)"').findall(html3)

@@ -92,22 +92,17 @@ def replace_url(url, replace_gif=True):
     if 'norestrictions.noobsandnerds.com' in url and 'norestrictions.club/norestrictions.club' not in url:
         url = url.replace('norestrictions.noobsandnerds.com',
                           __builtin__.BOB_BASE_DOMAIN)
-        url = url.replace("http", "https")
     elif 'www.norestrictions.club' in url and 'www.norestrictions.club/norestrictions.club' not in url and 'norestrictions.club/norestrictions.club' not in url:
         url = url.replace('www.norestrictions.club',
                           __builtin__.BOB_BASE_DOMAIN)
-        url = url.replace("http", "https")
     elif 'www.norestrictions.club/norestrictions.club' in url:
         url = url.replace(
             'www.norestrictions.club/norestrictions.club', __builtin__.BOB_BASE_DOMAIN)
-        url = url.replace("http", "https")
     elif 'norestrictions.club' in url and 'norestrictions.club/norestrictions.club' not in url:
         url = url.replace('norestrictions.club', __builtin__.BOB_BASE_DOMAIN)
-        url = url.replace("http", "https")
     elif 'norestrictions.club/norestrictions.club' in url:
         url = url.replace(
             'norestrictions.club/norestrictions.club', __builtin__.BOB_BASE_DOMAIN)
-        url = url.replace("http", "https")
     enable_gifs = xbmcaddon.Addon().getSetting('enable_gifs') == "true"
     if enable_gifs and replace_gif:
         return __replace_gif(url)

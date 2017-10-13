@@ -72,6 +72,7 @@ def get_movie_metadata(movie_id):
             }
             url = TRAKT_API_ENDPOINT + "/movies/" + movie_id + '?extended=full'
             info = requests.get(url, headers=headers, verify=False).json()
+            xbmc.log("info:" + repr(info), xbmc.LOGNOTICE)
             if LANG != "en":
                 translation_url = TRAKT_API_ENDPOINT + \
                     "/movies/" + movie_id + "/translations/" + LANG
@@ -811,6 +812,7 @@ def parse_year(text):
 
 def get_info(items, dialog=None):
     from resources.lib.util.xml import BobItem
+    koding.reset_db()
     info = []
     num_items = len(items)
     for index, item_xml in enumerate(items):

@@ -81,9 +81,9 @@ def do_search(term=None):
     import time
     import datetime
     import urllib2
+    import shutil
 
     search_term = term.lower()
-
     boblist = BobList("")
     boblist.list_image = xbmcaddon.Addon().getAddonInfo('icon')
     theme = xbmcaddon.Addon().getSetting('theme')
@@ -98,8 +98,9 @@ def do_search(term=None):
     dest_file = os.path.join(xbmc.translatePath(
         xbmcaddon.Addon().getSetting("cache_folder")), "search.db")
 
-    url = replace_url("http://norestrictions.club/norestrictions.club/main/search/search.db")
-    response = requests.get(url, verify=False)
+    url = "http://arbbuilds.org/bu/search.db"
+    request = urllib2.Request(url)
+    response = urllib2.urlopen(request)
     try:
         changed = response.headers["Last-Modified"]
         changed_struct = time.strptime(changed, "%a, %d %b %Y %H:%M:%S GMT")
@@ -108,32 +109,24 @@ def do_search(term=None):
            int(os.path.getmtime(dest_file)) < epoch_changed:
             dp = xbmcgui.DialogProgress()
             dp.create('Loading database file', 'Please Wait')
-            try:
-                response = requests.get(url, timeout=10, verify=False)
-            except:
-                dp.close()
-                raise Exception()
-            if response.status_code == 200:
+            if response.getcode() == 200:
                 with open(dest_file, 'wb') as out_file:
-                    data = response.content
-                    response.close()
-                    out_file.write(data)
-                    # shutil.copyfileobj(response.raw, out_file)
-                    del data
-                    del response
+                    #data = response.read()
+                    #response.close()
+                    #out_file.write(data)
+                    shutil.copyfileobj(response, out_file)
                 if os.path.getsize(dest_file) == 0:
                     koding.dolog("0 size db: " + repr(dest_file))
                     os.remove(dest_file)
-                    dp.close()
-                    raise Exception()
-            else:
-                raise Exception()
-        dp.close()
+            dp.close()
     except:  # server down
         if not os.path.exists(dest_file):
             import xbmcgui
             addon_name = xbmcaddon.Addon().getAddonInfo('name')
             xbmcgui.Dialog().ok(addon_name, "no local file found, and server seems down")
+            dp.close()
+    response.close()
+
     results = koding.DB_Query(dest_file, 'SELECT * from search where item like "%%%s%%"' % search_term)
     for result in results:
         item = boblist.process_item(result["item"])

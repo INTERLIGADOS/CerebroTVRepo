@@ -13,7 +13,7 @@ class Watchepisodes(Scraper):
     name = "watchepisodes"
 
     def __init__(self):
-        self.base_link = 'http://www.watchepisodeseries4.com/'
+        self.base_link = 'http://www.watchepisodeseries.com'
         self.search_link = '/home/search?q=%s'
 
     def scrape_episode(self, title, show_year, year, season, episode, imdb, tvdb, debrid=False):
@@ -31,7 +31,7 @@ class Watchepisodes(Scraper):
                 r_link = item['seo_name'].encode('utf-8')
                 if cleaned_title == clean_title(r_title):
                     r_page = self.base_link + "/" + r_link
-                    # print("WATCHEPISODES r1", r_title,r_page)
+                    #print("WATCHEPISODES r1", r_title,r_page)
                     r_html = BeautifulSoup(requests.get(r_page, headers=headers, timeout=30).content)
                     r = r_html.findAll('div', attrs={'class': re.compile('\s*el-item\s*')})
                     for container in r:
@@ -39,11 +39,11 @@ class Watchepisodes(Scraper):
                             r_href = container.findAll('a')[0]['href'].encode('utf-8')
                             r_season = container.findAll('div', attrs={"class": "season"})[0].text.encode('utf-8')
                             r_episode = container.findAll('div', attrs={"class": "episode"})[0].text.encode('utf-8')
-                            # print("WATCHEPISODES r3", r_href,r_title)
+                            #print("WATCHEPISODES r3", r_href,r_title)
                             episode_check = "[sS]%02d[eE]%02d" % (int(season), int(episode))
                             match = re.search(episode_check, r_href)
                             if match:
-                                    # print("WATCHEPISODES PASSED EPISODE", r_href)
+                                    #print("WATCHEPISODES PASSED EPISODE", r_href)
                                     return self.sources(replaceHTMLCodes(r_href))
                             else:
                                 if "%02d" % int(season) in r_season and "%02d" % int(episode) in r_episode:
@@ -55,18 +55,23 @@ class Watchepisodes(Scraper):
         return []
 
     def sources(self, url):
+        #print '::::::::::::::'+url
         sources = []
         try:
             if url == None: return sources
+            count = 0
             headers = {'User-Agent': random_agent()}
-            html = BeautifulSoup(requests.get(url, headers=headers, timeout=30).content)
-            r = html.findAll('div', attrs={'class': 'site'})
-            for container in r:
-                r_url = container.findAll('a')[0]['data-actuallink'].encode('utf-8')
-                host = re.findall('([\w]+[.][\w]+)$', urlparse.urlparse(r_url.strip().lower()).netloc)[0]
-                host = replaceHTMLCodes(host)
-                host = host.encode('utf-8')
-                sources.append({'source': host, 'quality': 'SD', 'scraper': self.name, 'url': r_url, 'direct': False})
+            html = requests.get(url, headers=headers, timeout=30).content
+            r = re.compile('<div class="ll-item">.+?<a href="(.+?)"',re.DOTALL).findall(html)
+            for url in r:
+                while count<10:
+                    count +=1
+                    PAGE = requests.get(url).content
+                    host_url = re.compile('<div class="wb-main">.+?<a rel="nofollow" target="_blank" href="(.+?)"',re.DOTALL).findall(PAGE)
+                    for final_url in host_url:
+                        holster = final_url.split('//')[1].replace('www.','')
+                        holster = holster.split('/')[0].split('.')[0].title()
+                        sources.append({'source': holster, 'quality': 'SD', 'scraper': self.name, 'url': final_url, 'direct': False})
 
         except:
             pass

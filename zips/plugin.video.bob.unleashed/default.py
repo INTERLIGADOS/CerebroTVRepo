@@ -46,8 +46,8 @@ content_type = "files"
 @route("main")
 def root():
     """root menu of the addon"""
-    base = "http://norestrictions.club/norestrictions.club"
-    if not get_list(base + "/reloaded/mainreloaded.xml"):
+    base = "https://pastebin.com/raw/aRWDNYT4"
+    if not get_list(base):
         koding.Add_Dir(
             name="Message",
             url="Sorry, server is down",
@@ -226,7 +226,7 @@ def first_run_wizard():
 if xbmcaddon.Addon().getSetting("first_run") == "true":
     first_run_wizard()
 
-__builtin__.BOB_BASE_DOMAIN = "5.135.164.106"
+__builtin__.BOB_BASE_DOMAIN = "178.32.217.111"
 
 foldername = xbmc.getInfoLabel("Container.FolderName")
 if foldername in ["", "plugin.program.super.favourites"]:

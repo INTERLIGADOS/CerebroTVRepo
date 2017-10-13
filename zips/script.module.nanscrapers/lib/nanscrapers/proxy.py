@@ -59,18 +59,18 @@ def get_raw(url, headers=None, data=None):
 
 def get_proxy_url():
     return random.choice([
-        #'http://alter-ip.com/index.php?hl=3c0&q=%s',
-        #'http://buka.link/browse.php?b=20&u=%s&b=0&f=norefer',
+        'http://buka.link/browse.php?u=%s&b=2',
+        'http://protectproxy.com/browse.php?u=%s&b=20',
+        'http://proxite.net/browse.php?u=%s&b=20',
+        'http://unblockthatsite.net/browse.php?u=%s&b=0&f=norefer',
         #'http://dontfilter.us/browse.php?b=20&u=%s',
         #'http://free-proxyserver.com/browse.php?b=20&u=%s',
         #'http://www.freeopenproxy.com/browse.php?b=20&u=%s',
-        'http://www.justproxy.co.uk/index.php?hl=2e5&q=%s',
-        #'http://protectproxy.com/browse.php?b=20&u=%s',
-        #'http://proxite.net/browse.php?b=20&u=%s',
+        #'http://www.justproxy.co.uk/index.php?hl=2e5&q=%s',
+        #'http://alter-ip.com/index.php?hl=3c0&q=%s',
         #'http://www.proxythis.info/index.php?hl=2e5&q=%s',
         #'http://quickprox.com/browse.php?b=20&u=%s',
-        #'http://unblock-proxy.com/browse.php?b=20&u=%s&b=0&f=norefer',
+        #'https://unblock-proxy.com/browse.php?b=20&u=%s&b=0&f=norefer',
         #'http://www.unblockmyweb.com/browse.php?b=20&u=%s',
         #'http://unblocksite.org/view.php?b=20&u=%s',
-        #'http://unblockthatsite.net/ahora.php?b=20&u=%s',
     ])

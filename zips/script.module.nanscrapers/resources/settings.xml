@@ -5,8 +5,6 @@
 		<setting id="123Movies_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="1movies" type="lsep"/>
 		<setting id="1movies_enabled" type="bool" label="Enabled" default="true"/>
-		<setting label="4kMovies" type="lsep"/>
-		<setting id="4kMovies_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Alluc" type="lsep"/>
 		<setting id="Alluc_enabled" type="bool" label="Enabled" default="true"/>
 		<setting id="Alluc_max" type="slider" label="Max Results for Search" default="20" range="5,200" option="int"/>
@@ -32,6 +30,8 @@
 		<setting id="Fullmovies24_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="hddizi" type="lsep"/>
 		<setting id="hddizi_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="ImDark" type="lsep"/>
+		<setting id="ImDark_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Joymovies" type="lsep"/>
 		<setting id="Joymovies_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="M4U" type="lsep"/>
@@ -48,12 +48,14 @@
 		<setting id="MyDownloadtube_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Onemusic" type="lsep"/>
 		<setting id="Onemusic_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="OneOnline" type="lsep"/>
+		<setting id="OneOnline_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="Onethousand" type="lsep"/>
 		<setting id="Onethousand_enabled" type="bool" label="Enabled" default="true"/>
-		<setting label="pelispedia" type="lsep"/>
-		<setting id="pelispedia_enabled" type="bool" label="Enabled" default="true"/>
 	</category>
 	<category label="Scrapers 2">
+		<setting label="pelispedia" type="lsep"/>
+		<setting id="pelispedia_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="primewire" type="lsep"/>
 		<setting id="primewire_enabled" type="bool" label="Enabled" default="true"/>
 		<setting id= "primewire_baseurl" type="text" label="Base Url" default="http://www.primewire.ag"/>
@@ -65,10 +67,12 @@
 		<setting id="rlshd_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="sceper" type="lsep"/>
 		<setting id="sceper_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="serieswatch" type="lsep"/>
+		<setting id="serieswatch_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="SteamHD" type="lsep"/>
 		<setting id="SteamHD_enabled" type="bool" label="Enabled" default="true"/>
-		<setting label="streamdreams" type="lsep"/>
-		<setting id="streamdreams_enabled" type="bool" label="Enabled" default="true"/>
+		<setting label="streamthis" type="lsep"/>
+		<setting id="streamthis_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="thewatchseries" type="lsep"/>
 		<setting id="thewatchseries_enabled" type="bool" label="Enabled" default="true"/>
 		<setting label="toonova" type="lsep"/>

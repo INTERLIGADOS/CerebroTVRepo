@@ -1,3 +1,7 @@
+v1.0.10
+- remove live resolver dependency
+- update server
+
 v1.0.8
 - fix caching layer
 
