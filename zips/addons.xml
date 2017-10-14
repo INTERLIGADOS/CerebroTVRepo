@@ -220,7 +220,7 @@
 
 <addon id="plugin.video.Bucky"
        name="Bucky Movies"
-       version="1.0"
+       version="1.1"
        provider-name="Bucky">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

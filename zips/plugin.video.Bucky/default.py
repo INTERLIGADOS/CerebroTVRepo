@@ -2,6 +2,7 @@
 import urllib
 import urllib2
 import datetime
+import shutil
 import re
 import os
 import base64
@@ -21,7 +22,7 @@ import time
 import requests
 import _Edit
 	
-resolve_url=['180upload.com', 'allmyvideos.net', 'bestreams.net', 'clicknupload.com', 'cloudzilla.to', 'movshare.net', 'novamov.com', 'nowvideo.sx', 'videoweed.es', 'daclips.in', 'datemule.com', 'fastvideo.in', 'faststream.in', 'filehoot.com', 'filenuke.com', 'sharesix.com', 'docs.google.com', 'plus.google.com', 'picasaweb.google.com', 'gorillavid.com', 'gorillavid.in', 'grifthost.com', 'hugefiles.net', 'ipithos.to', 'ishared.eu', 'kingfiles.net', 'mail.ru', 'my.mail.ru', 'videoapi.my.mail.ru', 'mightyupload.com', 'mooshare.biz', 'movdivx.com', 'movpod.net', 'movpod.in', 'movreel.com', 'mrfile.me', 'nosvideo.com', 'openload.io', 'played.to', 'bitshare.com', 'filefactory.com', 'k2s.cc', 'oboom.com', 'rapidgator.net', 'uploaded.net', 'primeshare.tv', 'bitshare.com', 'filefactory.com', 'k2s.cc', 'oboom.com', 'rapidgator.net', 'uploaded.net', 'sharerepo.com', 'stagevu.com', 'streamcloud.eu', 'streamin.to', 'thefile.me', 'thevideo.me', 'tusfiles.net', 'uploadc.com', 'zalaa.com', 'uploadrocket.net', 'uptobox.com', 'v-vids.com', 'veehd.com', 'vidbull.com', 'videomega.tv', 'vidplay.net', 'vidspot.net', 'vidto.me', 'vidzi.tv', 'vimeo.com', 'vk.com', 'vodlocker.com', 'xfileload.com', 'xvidstage.com', 'zettahost.tv']
+resolve_url=['alldebrid.com', 'allmyvideos.net', 'estream.to',  'streamango.com','vidto.me',  '1fichier.com','allvid.ch', 'auengine.com', 'fmovies.se','beststreams.net', 'briskfile.com', 'castamp.com', 'clicknupload.com', 'clicknupload.me', 'clicknupload.link', 'cloudy.ec', 'cloudzilla.to', 'neodrive.co', 'crunchyroll.com', 'daclips.in', 'daclips.com', 'dailymotion.com', 'divxstage.eu', 'divxstage.net', 'divxstage.to', 'couldtime.to', 'ecostream.tv', 'exashare.com', 'facebook.com', 'fastplay.sx', 'filehoot.com', 'filenuke.com', 'filepup.net', 'filmshowonline.net', 'flashx.tv', 'plus.google.com', 'googlevideo.com', 'picasaweb.google.com', 'googleusercontent.com', 'googledrive.com', 'gorillavid.in', 'gorillavid.com', 'gorillavid.in', 'grifthost.com', 'hugefiles.net', 'idowatch.net', 'indavideo.hu', 'ishared.eu', 'jetload.tv', 'kingfiles.net', 'letwatch.us', 'letwatch.to', 'vidshare.us', 'mail.ru', 'my.mail.ru', 'videoapi.my.mail.ru', 'api.video.mail.ru', 'mega-debrid.eu', 'megamp4.net', 'mersalaayitten.com', 'movdivx.com', 'movpod.net', 'movpod.in', 'movshare.net', 'wholecloud.net', 'mp4engine.com', 'mp4stream.com', 'mp4upload.com', 'myvidstream.net', 'nosvideo.com', 'noslocker.com', 'auroravid.to', 'novamov.com', 'nowvideo.sx', 'nowvideo.eu', 'nowvideo.ch', 'nowvideo.sx', 'nowvideo.co', 'nowvideo.li', 'nowvideo.ec', 'nowvideo.at', 'nowvideo.fo', 'ok.ru', 'odnoklassniki.ru', 'openload.io', 'openload.co', 'play44.net', 'played.to', 'playhd.video', 'playhd.fo', 'playu.net', 'playu.me', 'playwire.com', 'Premiumize.me', 'primeshare.tv', 'promptfile.com', 'purevid.com', 'rapidvideo.ws', 'rapidvideo.com', 'api.real-debrid.com', 'premium.rpnet.biz', 'rutube.ru', 'shared2.me', 'shared.sx', 'sharerepo.com', 'sharesix.com', 'simply-debrid.com', 'speedplay.xyz', 'speedplay.us', 'speedplay3.pw', 'speedvideo.net', 'stagevu.com', 'streamcloud.eu', 'streamin.to', 'teramixer.com', 'thevideo.me', 'thevideos.tv', 'toltsd-fel.tk', 'trollvid.net', 'tune.pk', 'tusfiles.net', 'twitch.tv', 'up2stream.com', 'upload.af', 'uploadc.com', 'uploadc.ch', 'zalaa.com', 'uploadx.org', 'uptobox.com', 'uptostream.com', 'userfiles.com', 'userscloud.com', 'veehd.com', 'veoh.com', 'vid.ag', 'vidbull.com', 'vidcrazy.net', 'uploadcrazy.net', 'thevideobee.to', 'videoboxer.co', 'vidgg.to', 'vid.gg', 'videohut.to', 'videomega.tv', 'videoraj.to', 'videorev.cc', 'videosky.to', 'video.tt', 'videoweed.es', 'bitvid.sx', 'videoweed.com', 'videowood.tv', 'byzoo.org', 'playpanda.net', 'videozoo.me', 'videowing.me', 'videowing.me', 'easyvideo.me', 'play44.net', 'playbb.me', 'video44.net', 'vidio.sx', 'vid.me', 'vidspot.net', 'vidto.me', 'vidup.me', 'vidup.org', 'vidzi.tv', 'vimeo.com', 'vivo.sx', 'vk.com', 'vkpass.com', 'vodlocker.com', 'vshare.io', 'vshare.eu', 'watchers.to', 'watchonline.to', 'watchvideo.us', 'watchvideo2.us', 'watchvideo3.us', 'watchvideo4.us', 'watchvideo5.us', 'watchvideo6.us', 'watchvideo7.us', 'watchvideo8.us', 'watchvideo9.us', 'weshare.me', 'xvidstage.com', 'youlol.biz', 'shitmovie.com', 'yourupload.com', 'youtube.com', 'youtu.be', 'youwatch.org', 'api.zevera.com', 'zettahost.tv', 'zstream.to']
 g_ignoreSetResolved=['plugin.video.dramasonline','plugin.video.f4mTester','plugin.video.shahidmbcnet','plugin.video.SportsDevil','plugin.stream.vaughnlive.tv','plugin.video.ZemTV-shani']
 
 class NoRedirection(urllib2.HTTPErrorProcessor):
@@ -54,7 +55,7 @@ else: SOURCES = []
 
 def addon_log(string):
     if debug == 'true':
-        xbmc.log("[addon.live.KidsCornerJunior-%s]: %s" %(addon_version, string))
+        xbmc.log("[addon.live.Bucky-%s]: %s" %(addon_version, string))
 
 
 def makeRequest(url, headers=None):
@@ -70,16 +71,16 @@ def makeRequest(url, headers=None):
             addon_log('URL: '+url)
             if hasattr(e, 'code'):
                 addon_log('We failed with error code - %s.' % e.code)
-                xbmc.executebuiltin("XBMC.Notification(KidsCornerJunior,We failed with error code - "+str(e.code)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(Bucky,We failed with error code - "+str(e.code)+",10000,"+icon+")")
             elif hasattr(e, 'reason'):
                 addon_log('We failed to reach a server.')
                 addon_log('Reason: %s' %e.reason)
-                xbmc.executebuiltin("XBMC.Notification(KidsCornerJunior,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(Bucky,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
 
 				
 def SKindex():
     addon_log("SKindex")
-    addDir('Favorites','Favorites',4,'http://goo.gl/TyDD6w' ,  FANART,'','','','')
+    addDir('Bucky Favorites','Bucky Favorites',4,'https://dl.dropboxusercontent.com/s/yqtj3z4nkrk6sfc/buckyicon.png?dl=0' ,  FANART,'','','','')
     getData(_Edit.MainBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
@@ -207,7 +208,7 @@ def addSource(url=None):
             b.close()
         addon.setSetting('new_url_source', "")
         addon.setSetting('new_file_source', "")
-        xbmc.executebuiltin("XBMC.Notification(KidsCornerJunior,New source added.,5000,"+icon+")")
+        xbmc.executebuiltin("XBMC.Notification(Bucky,New source added.,5000,"+icon+")")
         if not url is None:
             if 'xbmcplus.xb.funpic.de' in url:
                 xbmc.executebuiltin("XBMC.Container.Update(%s?mode=14,replace)" %sys.argv[0])
@@ -506,10 +507,14 @@ def GetSublinks(name,url,iconimage,fanart):
     List=[]; ListU=[]; c=0
     all_videos = regex_get_all(url, 'sublink:', '#')
     for a in all_videos:
-        vurl = a.replace('sublink:','').replace('#','')
-        #print vurl, name,iconimage,
+        if 'LISTSOURCE:' in a:
+            vurl = regex_from_to(a, 'LISTSOURCE:', '::')
+            linename = regex_from_to(a, 'LISTNAME:', '::')
+        else:
+            vurl = a.replace('sublink:','').replace('#','')
+            linename = name
         if len(vurl) > 10:
-           c=c+1; List.append(name+ ' Source ['+str(c)+']'); ListU.append(vurl)
+            c=c+1; List.append(linename); ListU.append(vurl)
  
     if c==1:
         try:
@@ -521,17 +526,58 @@ def GetSublinks(name,url,iconimage,fanart):
             pass
     else:
          dialog=xbmcgui.Dialog()
-         rNo=dialog.select('SimpleKore Select A Source', List)
+         rNo=dialog.select('[COLOR gold]Select A Bucky Source[/COLOR]', List)
          if rNo>=0:
              rName=name
              rURL=str(ListU[rNo])
              #print 'Sublinks   Name:' + name + '   url:' + rURL
              try:
-                 liz=xbmcgui.ListItem(name, iconImage=iconimage,thumbnailImage=iconimage); liz.setInfo( type="Video", infoLabels={ "Title": name } )
-                 ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=rURL,listitem=liz)
-                 xbmc.Player().play(urlsolver(rURL), liz)
+                 xbmc.Player().play(urlsolver(rURL), xbmcgui.ListItem(rName))
              except:
-                 pass
+                 xbmc.Player().play(rURL, xbmcgui.ListItem(rName))
+
+def not_so_anon(name,url,thumbnail,fanArt,desc,genre,date):
+ if '[QT]' in url :
+  ii = '1'
+ elif '{ZZ}' in url :
+  ii = '2'
+ elif '(AA)' in url :
+  ii = '3'
+ elif '~PP~' in url :
+  ii = '4'
+ elif '@WI@' in url :
+  ii = '5'
+ if ii == '1' :
+  oOOo = url . replace ( 'Nothing to see here' , '.m3u' ) . replace ( 'Have a nice day now' , '.txt' ) . replace ( 'Hope you enjoy the view' , '.xml' ) . replace ( '[QT]' , 'http://' ) . replace ( '[PD]' , 'a' ) . replace ( '[ID]' , 'b' )
+  O0 = oOOo . replace ( '[RJ]' , 'c' ) . replace ( '[LS]' , 'd' ) . replace ( '[MW]' , 'e' ) . replace ( '[LW]' , 'f' ) . replace ( '[OI]' , 'g' ) . replace ( '[KW]' , 'h' ) . replace ( '[YO]' , 'i' ) . replace ( '[HO]' , 'j' ) . replace ( '[YY]' , 'k' ) . replace ( '[JJ]' , 'l' )
+  o0O = O0 . replace ( '[BU]' , 'm' ) . replace ( '[QZ]' , 'n' ) . replace ( '[XU]' , 'o' ) . replace ( '[FU]' , 'p' ) . replace ( '[WA]' , 'q' ) . replace ( '[SS]' , 'r' ) . replace ( '[UP]' , 's' ) . replace ( '[WI]' , 't' ) . replace ( '[UR]' , 'u' ) . replace ( '[FA]' , 'v' )
+  iI11I1II1I1I = o0O . replace ( '[MO]' , 'w' ) . replace ( '[FO]' , 'x' ) . replace ( '[DE]' , 'y' ) . replace ( '[AL]' , 'z' ) . replace ( '[TH]' , '0' ) . replace ( '[IT]' , '1' ) . replace ( '[XX]' , '2' ) . replace ( '[XQ]' , '3' ) . replace ( '[XW]' , '4' ) . replace ( '[XY]' , '5' )
+  oooo = iI11I1II1I1I . replace ( '[XA]' , '6' ) . replace ( '[XB]' , '7' ) . replace ( '[XC]' , '8' ) . replace ( '[XZ]' , '9' ) . replace ( '[WX]' , '.' ) . replace ( '[YZ]' , '/' )
+ elif ii == '2' :
+  oOOo = url . replace ( 'Nothing to see here' , '.m3u' ) . replace ( 'Have a nice day now' , '.txt' ) . replace ( 'Hope you enjoy the view' , '.xml' ) . replace ( '{ZZ}' , 'http://' ) . replace ( '{LP}' , 'a' ) . replace ( '{MW}' , 'b' )
+  O0 = oOOo . replace ( '{EO}' , 'c' ) . replace ( '{XW}' , 'd' ) . replace ( '{MS}' , 'e' ) . replace ( '{LE}' , 'f' ) . replace ( '{GO}' , 'g' ) . replace ( '{WO}' , 'h' ) . replace ( '{RL}' , 'i' ) . replace ( '{DI}' , 'j' ) . replace ( '{SA}' , 'k' ) . replace ( '{WE}' , 'l' )
+  o0O = O0 . replace ( '{SO}' , 'm' ) . replace ( '{ME}' , 'n' ) . replace ( '{ID}' , 'o' ) . replace ( '{ON}' , 'p' ) . replace ( '{TC}' , 'q' ) . replace ( '{AR}' , 'r' ) . replace ( '{EI}' , 's' ) . replace ( '{FI}' , 't' ) . replace ( '{VE}' , 'u' ) . replace ( '{NE}' , 'v' )
+  iI11I1II1I1I = o0O . replace ( '{VE}' , 'w' ) . replace ( '{RB}' , 'x' ) . replace ( '{EE}' , 'y' ) . replace ( '{HA}' , 'z' ) . replace ( '{AB}' , '0' ) . replace ( '{CD}' , '1' ) . replace ( '{EF}' , '2' ) . replace ( '{GH}' , '3' ) . replace ( '{IJ}' , '4' ) . replace ( '{KL}' , '5' )
+  oooo = iI11I1II1I1I . replace ( '{MN}' , '6' ) . replace ( '{OP}' , '7' ) . replace ( '{QR}' , '8' ) . replace ( '{ST}' , '9' ) . replace ( '{UV}' , '.' ) . replace ( '{WX}' , '/' )
+ elif ii == '3' :
+  oOOo = url . replace ( 'Nothing to see here' , '.m3u' ) . replace ( 'Have a nice day now' , '.txt' ) . replace ( 'Hope you enjoy the view' , '.xml' ) . replace ( '(AA)' , 'http://' ) . replace ( '(ZZ)' , 'a' ) . replace ( '(QR)' , 'b' )
+  O0 = oOOo . replace ( '(PM)' , 'c' ) . replace ( '(ML)' , 'd' ) . replace ( '(PZ)' , 'e' ) . replace ( '(AA)' , 'f' ) . replace ( '(YO)' , 'g' ) . replace ( '(UW)' , 'h' ) . replace ( '(HA)' , 'i' ) . replace ( '(TC)' , 'j' ) . replace ( '(AL)' , 'k' ) . replace ( '(MD)' , 'l' )
+  o0O = O0 . replace ( '(OW)' , 'm' ) . replace ( '(NM)' , 'n' ) . replace ( '(AN)' , 'o' ) . replace ( '(HO)' , 'p' ) . replace ( '(TH)' , 'q' ) . replace ( '(TE)' , 'r' ) . replace ( '(EF)' , 's' ) . replace ( '(UC)' , 't' ) . replace ( '(KD)' , 'u' ) . replace ( '(OY)' , 'v' )
+  iI11I1II1I1I = o0O . replace ( '(OU)' , 'w' ) . replace ( '(IN)' , 'x' ) . replace ( '(TE)' , 'y' ) . replace ( '(ND)' , 'z' ) . replace ( '(ON)' , '0' ) . replace ( '(RI)' , '1' ) . replace ( '(PP)' , '2' ) . replace ( '(IN)' , '3' ) . replace ( '(GT)' , '4' ) . replace ( '(HI)' , '5' )
+  oooo = iI11I1II1I1I . replace ( '(SO)' , '6' ) . replace ( '(FF)' , '7' ) . replace ( '(MO)' , '8' ) . replace ( '(FO)' , '9' ) . replace ( '(CY)' , '.' ) . replace ( '(AZ)' , '/' )
+ elif ii == '4' :
+  oOOo = url . replace ( 'Nothing to see here' , '.m3u' ) . replace ( 'Have a nice day now' , '.txt' ) . replace ( 'Hope you enjoy the view' , '.xml' ) . replace ( '~PP~' , 'http://' ) . replace ( '~EZ~' , 'a' ) . replace ( '~PZ~' , 'b' )
+  O0 = oOOo . replace ( '~LE~' , 'c' ) . replace ( '~MO~' , 'd' ) . replace ( '~NS~' , 'e' ) . replace ( '~QU~' , 'f' ) . replace ( '~EE~' , 'g' ) . replace ( '~MD~' , 'h' ) . replace ( '~TH~' , 'i' ) . replace ( '~EQ~' , 'j' ) . replace ( '~UI~' , 'k' ) . replace ( '~CK~' , 'l' )
+  o0O = O0 . replace ( '~BR~' , 'm' ) . replace ( '~OW~' , 'n' ) . replace ( '~NF~' , 'o' ) . replace ( '~OX~' , 'p' ) . replace ( '~JU~' , 'q' ) . replace ( '~MP~' , 'r' ) . replace ( '~SO~' , 's' ) . replace ( '~VE~' , 't' ) . replace ( '~RT~' , 'u' ) . replace ( '~HE~' , 'v' )
+  iI11I1II1I1I = o0O . replace ( '~LA~' , 'w' ) . replace ( '~ZY~' , 'x' ) . replace ( '~DO~' , 'y' ) . replace ( '~GT~' , 'z' ) . replace ( '~HE~' , '0' ) . replace ( '~ID~' , '1' ) . replace ( '~LE~' , '2' ) . replace ( '~BA~' , '3' ) . replace ( '~ST~' , '4' ) . replace ( '~AR~' , '5' )
+  oooo = iI11I1II1I1I . replace ( '~DH~' , '6' ) . replace ( '~IM~' , '7' ) . replace ( '~FK~' , '8' ) . replace ( '~IN~' , '9' ) . replace ( '~YA~' , '.' ) . replace ( '~NK~' , '/' )
+ elif ii == '5' :
+  oOOo = url . replace ( 'Nothing to see here' , '.m3u' ) . replace ( 'Have a nice day now' , '.txt' ) . replace ( 'Hope you enjoy the view' , '.xml' ) . replace ( '@WI@' , 'http://' ) . replace ( '@SE@' , 'a' ) . replace ( '@ME@' , 'b' )
+  O0 = oOOo . replace ( '@NS@' , 'c' ) . replace ( '@AY@' , 'd' ) . replace ( '@ON@' , 'e' ) . replace ( '@NL@' , 'f' ) . replace ( '@YF@' , 'g' ) . replace ( '@OO@' , 'h' ) . replace ( '@LS@' , 'i' ) . replace ( '@RI@' , 'j' ) . replace ( '@PE@' , 'k' ) . replace ( '@OP@' , 'l' )
+  o0O = O0 . replace ( '@LE@' , 'm' ) . replace ( '@OF@' , 'n' ) . replace ( '@FS@' , 'o' ) . replace ( '@OG@' , 'p' ) . replace ( '@OF@' , 'q' ) . replace ( '@UQ@' , 'r' ) . replace ( '@KY@' , 's' ) . replace ( '@OU@' , 't' ) . replace ( '@RS@' , 'u' ) . replace ( '@EL@' , 'v' )
+  iI11I1II1I1I = o0O . replace ( '@FO@' , 'w' ) . replace ( '@KM@' , 'x' ) . replace ( '@OT@' , 'y' ) . replace ( '@HE@' , 'z' ) . replace ( '@RF@' , '0' ) . replace ( '@UC@' , '1' ) . replace ( '@KE@' , '2' ) . replace ( '@RH' , '3' ) . replace ( '@AV@' , '4' ) . replace ( '@EA@' , '5' )
+  oooo = iI11I1II1I1I . replace ( '@NI@' , '6' ) . replace ( '@CE@' , '7' ) . replace ( '@DA@' , '8' ) . replace ( '@YN@' , '9' ) . replace ( '@OW@' , '.' ) . replace ( '@PC@' , '/' )
+ addDir ( name . encode ( 'utf-8' ) , oooo . encode ( 'utf-8' ) , 1 , thumbnail , fanArt , desc , genre , date , None , 'source' )
 
 				
 def SearchChannels():
@@ -554,7 +600,7 @@ def SearchChannels():
     ReadChannel = 0
     FoundMatch = 0
     progress = xbmcgui.DialogProgress()
-    progress.create('SimpleKore Searching Please wait',' ')
+    progress.create('Bucky Searching Please wait',' ')
 	
     while FoundChannel <> ReadChannel:
         BaseSearch = List[ReadChannel].strip()
@@ -1932,12 +1978,12 @@ def urlsolver(url):
     try:
         import genesisresolvers
     except Exception:
-        xbmc.executebuiltin("XBMC.Notification(SimpleKore,Please enable Update Commonresolvers to Play in Settings. - ,10000)")
+        xbmc.executebuiltin("XBMC.Notification(Bucky,Please enable Update Commonresolvers to Play in Settings. - ,10000)")
 
     resolved=genesisresolvers.get(url).result
     if url == resolved or resolved is None:
         #import
-        xbmc.executebuiltin("XBMC.Notification(Bucky is Looking For Your Link.. - ,5000)")
+        xbmc.executebuiltin("XBMC.Notification(Bucky is Looking For Your Link ,5000)")
         import urlresolver
         host = urlresolver.HostedMediaFile(url)
         if host:
@@ -1995,12 +2041,12 @@ def play_playlist(name, mu_playlist):
 
 def download_file(name, url):
         if addon.getSetting('save_location') == "":
-            xbmc.executebuiltin("XBMC.Notification('SimpleKore','Choose a location to save files.',15000,"+icon+")")
+            xbmc.executebuiltin("XBMC.Notification('Bucky','Choose a location to save files.',15000,"+icon+")")
             addon.openSettings()
         params = {'url': url, 'download_path': addon.getSetting('save_location')}
         downloader.download(name, params)
         dialog = xbmcgui.Dialog()
-        ret = dialog.yesno('SimpleKore', 'Do you want to add this file as a source?')
+        ret = dialog.yesno('Bucky', 'Do you want to add this file as a source?')
         if ret:
             addSource(os.path.join(addon.getSetting('save_location'), name))
 
@@ -2531,7 +2577,7 @@ elif mode==18:
     try:
         import youtubedl
     except Exception:
-        xbmc.executebuiltin("XBMC.Notification(SimpleKore,Please [COLOR yellow]install the Youtube Addon[/COLOR] module ,10000,"")")
+        xbmc.executebuiltin("XBMC.Notification(Bucky,Please [COLOR yellow]install the Youtube Addon[/COLOR] module ,10000,"")")
     stream_url=youtubedl.single_YD(url)
     playsetresolved(stream_url,name,iconimage)
 elif mode==19:
