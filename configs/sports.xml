@@ -65,3 +65,10 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]BoB Sports[/COLOR]</title>
+<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2f178.32.217.111%2freloaded%2fthemes%2fmovies%2fmovies1.jpg&iconimage=http%3a%2f%2f178.32.217.111%2freloaded%2ficons%2fMain%2fMain-Sports.png&mode=get_list&name=Bob%20Sports&url=http%3a%2f%2fwww.norestrictions.club%2fsports%2fbobsports.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
