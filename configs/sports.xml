@@ -10,8 +10,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]PPV[/COLOR] ( Premium Only! )</title>
-<link>plugin://plugin.program.super.favourites/?label=[COLOR gold]ppv[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Cppv&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
+<title>Open PPV Menu (Premium Only)</title>
+<link>plugin://plugin.program.super.favourites/?label=[COLOR black]ppv[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Cppv&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
