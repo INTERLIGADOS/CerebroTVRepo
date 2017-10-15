@@ -39,7 +39,7 @@
 
 <plugin>
 <title>[COLOR pink]Poseidon Movies[/COLOR]</title>
-<link>plugin://plugin.video.poseidon/?action=movieNavigator</link>
+<link>plugin://plugin.video.poseidon/</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -53,28 +53,28 @@
 
 <plugin>
 <title>[COLOR pink]Covenant Movies[/COLOR]</title>
-<link>plugin://plugin.video.covenant/?action=movieNavigator</link>
+<link>plugin://script.covloader</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Elysium Movies[/COLOR]</title>
-<link>plugin://plugin.video.elysium/?action=movieNavigator</link>
+<link>plugin://plugin.video.elysium/</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Exodus Movies[/COLOR]</title>
-<link>plugin://plugin.video.exodus/?action=movieNavigator</link>
+<link>plugin://plugin.video.exodus/</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]1channel Movies[/COLOR]</title>
-<link>plugin://plugin.video.1channel/?mode=BrowseListMenu&section=movie</link>
+<link>plugin://plugin.video.1channel/</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
