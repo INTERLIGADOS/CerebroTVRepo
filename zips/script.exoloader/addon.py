@@ -4,4 +4,4 @@ import os
 import xbmcgui
 import urllib2
 
-xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.covenant/?action=movieNavigator",return)')
+xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.exodus/?action=movieNavigator")')
