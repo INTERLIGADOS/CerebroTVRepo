@@ -1467,6 +1467,24 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.eloloader"
+  name="CerebroTV EL"
+  version="1.8"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.elysium.artwork" version="2017.08.18" name="Elysium Artwork" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -1507,8 +1525,8 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.exoloader"
-  name="CerebroTV EL"
-  version="1.7"
+  name="CerebroTV EX"
+  version="1.8"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -3403,7 +3421,7 @@ level.</description>
 
 <addon id="script.tvguidemegatvbox"
   name="CerebroTV TV Live TV"
-  version="1.7"
+  version="1.8"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

@@ -60,7 +60,7 @@
 
 <plugin>
 <title>[COLOR pink]Elysium Movies[/COLOR]</title>
-<link>plugin://plugin.video.elysium/</link>
+<link>plugin://script.eloloader</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
