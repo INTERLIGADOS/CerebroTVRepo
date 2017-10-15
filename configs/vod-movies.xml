@@ -65,12 +65,12 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<dir>
+<plugin>
 <title>[COLOR pink]Exodus Movies[/COLOR]</title>
-<link>plugin://plugin.video.exodus</link>
+<link>plugin://script.exoloader</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
+</plugin>
 
 <plugin>
 <title>[COLOR pink]1channel Movies[/COLOR]</title>
