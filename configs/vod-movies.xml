@@ -67,14 +67,14 @@
 
 <plugin>
 <title>[COLOR pink]Exodus Movies[/COLOR]</title>
-<link>plugin://plugin.video.exodus/</link>
+<link>plugin://plugin.video.exodus</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]1channel Movies[/COLOR]</title>
-<link>plugin://plugin.video.1channel/</link>
+<link>plugin://plugin.video.1channel</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
