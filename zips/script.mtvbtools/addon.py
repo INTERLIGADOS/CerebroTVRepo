@@ -49,12 +49,7 @@ def menuoptions():
         function5,
         function6,
         function7,
-        function8,
-        function9,
-        function10,
-        function11,
-        function12,
-        function13
+        function8
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Tools Menu[/COLOR][/B]', [
@@ -63,12 +58,7 @@ def menuoptions():
     '[B][I][COLOR=yellow]CerebroTV House Keeper[/COLOR][/B][/I] (clean up system and reboot)', 
     '[B][COLOR=green]Test My Connection Speed[/COLOR][/B]', 
     '[B][COLOR=lightblue]Re-Download the last update[/COLOR][/B]', 
-    '[B][COLOR=pink]Move Build to SPMC/KODI[/COLOR][/B]', 
-    '[B][COLOR=orange]Fresh Install of Build[/COLOR][/B]', 
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
-    '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]' , 
-    '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
-    '[B][COLOR=green]FRESH INSTALL[/COLOR][/B]',
     '[B][COLOR=cyan]Web Browser[/COLOR][/B]',
     '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)'])
     # dialog.selectreturns
@@ -79,7 +69,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-13]
+        func = funcs[call-8]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -114,35 +104,17 @@ def function4():
 
 def function5():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.megatvupdater",return)')
-    
+
+
 def function6():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.megamove",return)')
-    
+    xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
+    xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
+    xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
+        
 def function7():
-    xbmc.executebuiltin('RunAddon("script.cerebrotv")')
-
-def function8(): # ANDROID 4
-    xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
-    xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
-    xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
-
-def function9(): # ANDROID 6
-    xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
-    xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
-    xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
-    
-def function10(): # ANDROID 5
-    xbmc.executebuiltin('StartAndroidActivity("com.mbx.settingsmbox")')
-    xbmc.executebuiltin('StartAndroidActivity("com.android.tv.settings")')
-    xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
-    
-def function11():
-    xbmc.executebuiltin('RunAddon("script.cerebrotv")')
-    
-def function12():
     xbmc.executebuiltin('StartAndroidActivity("com.android.browser")')  
 
-def function13():
+def function8():
     xbmc.executebuiltin('ActivateWindow(10040,"addons://outdated/",return)')
     xbmc.sleep(2000)
     dp = xbmcgui.DialogProgress()

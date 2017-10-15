@@ -24,6 +24,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR ghostwhite]Cerebro BOX Tools[/COLOR] (Premium Only)</title>
+<link>plugin://script.mtvbtools</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR ghostwhite]Open Kodi Setting / View Video Add-ons[/COLOR]</title>
 <link>plugin://script.mtvbsettings</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
