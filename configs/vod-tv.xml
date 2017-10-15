@@ -31,15 +31,15 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]TV Shows[/COLOR] (StreamHub)</title>
+<title>[COLOR pink]StreamHub TV Shows[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.streamhub/?action=tvNavigator</link>
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Covenant Add-On[/COLOR]</title>
-<link>plugin://script.covloader</link>
+<title>[COLOR pink]Covenant TV Shows[/COLOR]</title>
+<link>plugin://script.covloader2</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>

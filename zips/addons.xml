@@ -1429,6 +1429,24 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.covloader2"
+  name="CerebroTV CL2"
+  version="1.7"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.cypherstream" name="Cypher Live" version="0.0.2" provider-name="Cypher">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
