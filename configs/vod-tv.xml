@@ -31,7 +31,7 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Covenant Movies[/COLOR]</title>
+<title>[COLOR pink]Covenant Add-On[/COLOR]</title>
 <link>plugin://script.covloader</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -40,6 +40,13 @@
 <plugin>
 <title>[COLOR pink]Elysium Add-On[/COLOR]</title>
 <link>plugin://plugin.video.elysium</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]1channel Add-On[/COLOR]</title>
+<link>plugin://plugin.video.1channel</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
