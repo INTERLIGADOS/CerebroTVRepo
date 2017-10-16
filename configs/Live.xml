@@ -100,9 +100,3 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<plugin>
-<title>[COLOR pink]TEST2[/COLOR]</title>
-<link>plugin://plugin.video.tvplayer/?url=225&mode=200&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&genre=Music</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
