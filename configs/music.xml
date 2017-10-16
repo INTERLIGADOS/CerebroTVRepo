@@ -10,7 +10,7 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Radio[/COLOR]</title>
+<title>[COLOR pink]UK Radio[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.audio.tuneinradio</link>
@@ -28,6 +28,20 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Clubland[/COLOR] Link 2</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.tvplayer/?url=225&mode=200&name=%5BCOLOR+royalblue%5DClubland%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DUplifting+90s+Party+with+DJ+Ewen%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&description=The+happy+happy+sound+of+the+90s+-+brought+to+you+by+DJ+Ali-Keith.+Confused%3F+You+will+be.+Booyakasha.&genre=Music</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Heart[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>PlayMedia(&quot;plugin://plugin.video.tvplayer/?url=153&mode=200&name=%5BCOLOR+royalblue%5DHeart%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DWhy+Wasn%27t+This+No+1%3F%21+Top+50%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F153.png&description=&genre=Music</link>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]MTV Dance[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -42,10 +56,24 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Channel AKA[/COLOR] Link 2</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.tvplayer/?url=227&mode=200&name=%5BCOLOR+royalblue%5DChannel+AKA%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DAKA+Hotlist%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F227.png&description=The+biggest+in+RnB%2C+Grime+and+Rap+right+now+-+nothing+but+fire+videos.&genre=Music</link>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Now That's What I Call Music[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dNow%20That%27s%20What%20I%20Call%20Music%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f4f2bbf7cda8028c3cc2c16723defb7d8.m3u8</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Now That's What I Call Music[/COLOR] Link 2</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.tvplayer/?url=228&mode=200&name=%5BCOLOR+royalblue%5DNow+Thats+What+I+Call+Music%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DWe+Are+Family%21+Top+20%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F228.png&description=Brothers%2C+Sisters%2C+Husbands%2C+Wives+-+they+made+it+a+family+business+back+in+the+80s%21+From+The+Bee+Gees+%26+The+Nolans+to+Bros%2C+Sister+Sledge%2C+Spandau+%26+UB40.&genre=Music</link>
 </plugin>
 
 <plugin>
