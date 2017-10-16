@@ -417,14 +417,15 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
-<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] Streamer[/COLOR][/B]" version="10.9" provider-name="sClarke and Biglad">
+<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] Streamer[/COLOR][/B]" version="10.11" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
 	<import addon="script.video.F4mProxy" />
+    <import addon="plugin.video.wargames" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+        <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Live Hub - Bringing Live TV To Your Media Device</summary>
@@ -711,7 +712,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.33" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.34" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -724,6 +725,7 @@ Removed: Nudeflix</news>
 		<import addon="script.video.F4mProxy" version="2.2.3"/>
         <import addon="plugin.video.f4mTester" />
         <import addon="script.module.streamhub"/>
+        <import addon="plugin.video.livehub2"/>
         <!--<import addon="visualization.milkdrop2"/>-->
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
@@ -759,13 +761,13 @@ Removed: Nudeflix</news>
         <import addon="script.tvguide.cerebrotv.sports" />
         <!--<import addon="plugin.video.dnatv4k" />-->
         <import addon="repository.streamhub" />
-        <import addon="repository.Cypherslocker" optional="true"/>
-        <import addon="repository.sanctuary" optional="true"/>
-        <import addon="repository.supremacy" optional="true"/>
-        <import addon="repository.smash" optional="true"/>
-        <import addon="repository.elysium" optional="true"/>
-        <import addon="repository.noobsandnerds" optional="true"/>
-        <import addon="repository.colossus" optional="true" />
+        <import addon="repository.Cypherslocker" />
+        <import addon="repository.sanctuary" />
+        <import addon="repository.supremacy" />
+        <import addon="repository.smash" />
+        <import addon="repository.elysium" />
+        <import addon="repository.noobsandnerds" />
+        <import addon="repository.colossus" />
 
 
 
@@ -3526,6 +3528,25 @@ level.</description>
     <email></email>
     <language></language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="service.autosubs"
+    name="AutoSubs" version="9.0.0" provider-name="amet,schumi2004">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Auto Search for Subtitles on Play</summary>
+    <description lang="en">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL</license>
+    <website></website>
+    <source>https://github.com/amet/service.autosubs</source>
+    <forum>http://forum.xbmc.org/showthread.php?tid=198973</forum>
+    <email>schumi2004@gmail.com</email>
   </extension>
 </addon>
 
