@@ -128,3 +128,10 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[B][COLOR gold]Main Menu[/COLOR][/B]</title>
+<link>plugin://plugin.video.wargames/?content_type=video</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
