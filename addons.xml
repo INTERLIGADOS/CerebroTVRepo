@@ -712,7 +712,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.37" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.38" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -740,7 +740,7 @@ Removed: Nudeflix</news>
         <import addon="script.cerebro.tvguide.open3" />
         <import addon="script.cerebro.tvguide.open.free" />
         <import addon="script.cerebro.pairwith.laucnher" />
-        <import addon="script.tvguide.cerebrotv.uk.2017" />
+        <!--<import addon="script.tvguide.cerebrotv.uk.2017" />-->
         <!--<import addon="plugin.video.ProjectCypher" />-->
         <!--<import addon="script.mtvbxxx" />-->
         <!--<import addon="script.covloader" />-->
@@ -769,6 +769,7 @@ Removed: Nudeflix</news>
         <import addon="repository.noobsandnerds" />
         <import addon="repository.colossus" />
         <import addon="repository.aresproject" />
+        <import addon="repository.soulless" />
 
 
 
@@ -1114,6 +1115,24 @@ Removed: Nudeflix</news>
 		<forum></forum>
         <website></website>
 		<news>sometimes people hate when someone ask for donations but if imma host so called addons and they not and other repos for devs which i am i made two for two guys with addons then donations help with hosting and vps cost which will be settings up</news>
+	</extension>
+</addon>
+
+<addon id="repository.soulless" name="Soulless Repo" version="1.0.2" provider-name="Soulless">
+	<extension point="xbmc.addon.repository" name="Soulless Repo">
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+    </dir>
+		<info compressed="false">http://soullessbuilds.com/add-ons/addons.xml</info>
+		<checksum>http://soullessbuilds.com/add-ons/addons.xml.md5</checksum>
+		<datadir zip="true">http://soullessbuilds.com/add-ons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Soulless Repo</summary>
+		<description>Download and install All Things Soulless</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
