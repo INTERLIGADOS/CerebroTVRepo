@@ -3,7 +3,10 @@
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Aarons Picks[/COLOR][/B] (Coming Soon)</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Aarons Picks[/COLOR][/B]</title>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/aaronut.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
