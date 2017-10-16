@@ -712,7 +712,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.36" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.37" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -768,6 +768,7 @@ Removed: Nudeflix</news>
         <import addon="repository.elysium" />
         <import addon="repository.noobsandnerds" />
         <import addon="repository.colossus" />
+        <import addon="repository.aresproject" />
 
 
 
@@ -896,6 +897,26 @@ Removed: Nudeflix</news>
 	<extension point="xbmc.addon.metadata">
         <summary>Apollo Group - Watch for the B-E-S-T!</summary>
         <description>Facebook Page and Support Group @ApolloGroupTV. Slots are full? Become a member today, visit: ApolloGroup.tv</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.aresproject" name="[COLOR blue]A[/COLOR][COLOR white]res Project[/COLOR]" version="0.1.0" provider-name="Ares Team">
+	<extension point="xbmc.addon.repository" name="AresRepo">
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+	</dir>
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/ares-fortress/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ares-fortress/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/ares-fortress/repo/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>AresProject.</summary>
+		<description>Ares-Project Addons Source. Visit Us At https://ares-project.uk</description>
 		<platform>all</platform>
 	</extension>
 </addon>
