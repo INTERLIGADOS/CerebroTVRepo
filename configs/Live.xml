@@ -10,6 +10,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Cerebro IPTV[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&amp;iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&amp;mode=2000&amp;name=%5bCOLOR%20white%5d%5bB%5dIPTV%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=url</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Mobdro Streams[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -82,6 +89,13 @@
 <plugin>
 <title>[COLOR pink]eDoctor Streams[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=https%3a%2f%2flh3.googleusercontent.com%2fqydRpyUiySg1MuswXdbQE88PBfyPH8uJYhONBL3UO1Ij4yEHtftHFK3pKXHXppFUCmk%3dw300&mode=4&name=%5bCOLOR%20white%5d%5bB%5deDoctor%20IPTV%5b%2fCOLOR%5d%5b%2fB%5d&url=edoctor</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]WeeTV Streams[/COLOR]</title>
+<link>plugin://plugin.video.weetv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
