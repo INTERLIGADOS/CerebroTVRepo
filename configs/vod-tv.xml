@@ -81,3 +81,10 @@
 <fanart></fanart>
 </dir>
 
+<dir>
+<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR][/B]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247menu.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
