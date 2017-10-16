@@ -22,6 +22,7 @@ def home():
     addDir('[COLOR white][B]Poseidon TV[/COLOR][/B]','url',5003,icon,fanart,'')
     addDir('[COLOR white][B]Exodus Movies[/COLOR][/B]','url',5004,icon,fanart,'')
     addDir('[COLOR white][B]Exodus TV[/COLOR][/B]','url',5005,icon,fanart,'')
+    addDir('[COLOR white][B]TV Player[/COLOR][/B]','url',5006,icon,fanart,'')
 	
 def play(url,name,pdialogue=None):
 		from resources.modules import resolvers
@@ -335,6 +336,11 @@ elif mode==5005:
 	#from resources.root import android
 	#android.cat()
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.exodus/?action=tvNavigator",return)')
+    
+elif mode==5006:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.module.streamhublive/?description&iconimage=http%3a%2f%2fwww.broadbandtvnews.com%2fwp-content%2fuploads%2f2017%2f04%2fTVPlayer.png&mode=1&name=%5bCOLOR%20white%5d%5bB%5dTv%20Player%5b%2fCOLOR%5d%5b%2fB%5d&url=tvplayer",return)')
 	
 elif mode==9999:
 	import xbmcgui,xbmcplugin

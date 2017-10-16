@@ -72,7 +72,7 @@ def resolve(url):
 			url = url
 		return (url).replace('<p>','')
 	
-logfile    = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.livehub', 'log.txt'))
+logfile    = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.livehub2', 'log.txt'))
 
 def log(text):
 	file = open(logfile,"w+")
