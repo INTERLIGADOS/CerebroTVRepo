@@ -101,8 +101,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]TEST[/COLOR]</title>
-<link>plugin://plugin.video.tvplayer/?url=225&mode=200&name=%5BCOLOR+royalblue%5DClubland%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DUplifting+90s+Party+with+DJ+Ewen%21%5B%2FCOLOR%5D&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&description=The+happy+happy+sound+of+the+90s+-+brought+to+you+by+DJ+Ali-Keith.+Confused%3F+You+will+be.+Booyakasha.&genre=Music</link>
+<title>[COLOR pink]TEST2[/COLOR]</title>
+<link>plugin://plugin.video.tvplayer/?url=225&mode=200&iconimage=https%3A%2F%2Fassets.tvplayer.com%2Fcommon%2Flogos%2F256%2FColour%2F225.png&genre=Music</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
