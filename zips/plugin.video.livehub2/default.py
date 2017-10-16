@@ -10,13 +10,18 @@ logfile    = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id
 from resources.root import android
 #android.cat()
 def home():
-	addDir('','url',0,icon,fanart,'')
+	#addDir('','url',0,icon,fanart,'')
 	#addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
-	addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
-	addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',2000,icon,fanart,'')
-	#addDir('[COLOR white][B]IPTV Scrapers[/COLOR][/B]','url',3000,icon,fanart,'')
-	#addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',4000,icon,fanart,'')
-    
+    addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
+    addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',2000,icon,fanart,'')
+    addDir('[COLOR white][B]Elysium Movies[/COLOR][/B]','url',3000,icon,fanart,'')
+    addDir('[COLOR white][B]Elysium TV[/COLOR][/B]','url',4000,icon,fanart,'')
+    addDir('[COLOR white][B]Covenant Movies[/COLOR][/B]','url',5000,icon,fanart,'')
+    addDir('[COLOR white][B]Covenant TV[/COLOR][/B]','url',5001,icon,fanart,'')    
+    addDir('[COLOR white][B]Poseidon Movies[/COLOR][/B]','url',5002,icon,fanart,'')
+    addDir('[COLOR white][B]Poseidon TV[/COLOR][/B]','url',5003,icon,fanart,'')
+    addDir('[COLOR white][B]Exodus Movies[/COLOR][/B]','url',5004,icon,fanart,'')
+    addDir('[COLOR white][B]Exodus TV[/COLOR][/B]','url',5005,icon,fanart,'')
 	
 def play(url,name,pdialogue=None):
 		from resources.modules import resolvers
@@ -292,12 +297,44 @@ elif mode==2000:
 	android.cat()
 
 elif mode==3000:
-	from resources.root import iptv
-	iptv.cat()
+	#from resources.root import iptv
+	#iptv.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.elysium/?action=movieNavigator",return)')
 	
 elif mode==4000:
-	from resources.root import android
-	android.cat()
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.elysium/?action=tvNavigator",return)')
+    
+elif mode==5000:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.covenant/?action=movieNavigator",return)')
+    
+elif mode==5001:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.covenant/?action=tvNavigator",return)')
+    
+elif mode==5002:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.poseidon/?action=movieNavigator",return)')
+    
+elif mode==5003:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.poseidon/?action=tvNavigator",return)')
+
+elif mode==5004:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.exodus/?action=movieNavigator",return)')
+
+elif mode==5005:
+	#from resources.root import android
+	#android.cat()
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.exodus/?action=tvNavigator",return)')
 	
 elif mode==9999:
 	import xbmcgui,xbmcplugin
