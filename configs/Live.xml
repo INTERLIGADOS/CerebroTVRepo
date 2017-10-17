@@ -30,15 +30,8 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<!--<plugin>
-<title>[COLOR pink]Cerebro IPTV[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=2000&name=%5bCOLOR%20white%5d%5bB%5dIPTV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>-->
-
 <plugin>
-<title>[COLOR pink]Mobdro Streams[/COLOR]</title>
+<title>[COLOR pink]Cerebro Mobdro Streams[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -61,13 +54,6 @@
 <plugin>
 <title>[COLOR pink]Supremacy IPTV[/COLOR]</title>
 <link>plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&mode=1&name=%5bCOLOR%20aqua%5dSupremacy%20IPTV%5b%2fCOLOR%5d&url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fsupremacy-add-on%2520free%2520iptv%2fsupremacy%2520iptv.m3u</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]UK IPTV Searcher[/COLOR]</title>
-<link>plugin://plugin.video.bonanza/?mode=4&name=%5bCOLOR%20blue%5dSearch%20all%20links%20for%3a%20UK%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.m3uliste.pw%2f</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
