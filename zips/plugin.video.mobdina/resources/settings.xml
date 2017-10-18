@@ -1,0 +1,6 @@
+<settings>
+	<category label="Misc. Settings">
+		<setting id="ssl_enabled" type="bool" label="SSL Host" default="true"/>
+        <setting id="swamp_token" type="text" visible="false" default=""/>
+	</category>
+</settings>

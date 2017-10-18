@@ -466,6 +466,28 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
+<addon id="plugin.video.mobdina" name="Mobdina" version="10.17.2017" provider-name="Sweetwork">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="script.module.pyxbmct" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver" />
+		<import addon="repository.sweetwork" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Movies, Sports, Live TV</summary>
+		<description lang="en">Sweetwork.net Presents Streaming content from the Mobdro android API</description>
+		<platform>all</platform>
+		<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.gif</fanart>
+        </assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.nemesis" name="[COLOR aqua][B]Nemesis[/B][/COLOR]" version="1.0.45" provider-name="[COLOR aqua]Nemzzy[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1076,6 +1098,19 @@ Removed: Nudeflix</news>
         </extension>
 </addon>
 
+<addon id="repository.playonmonkey" name="Playonmonkey" version="1.8" provider-name="Playonmonkey">
+	<extension point="xbmc.addon.repository" name="Playonmonkey">
+		<info compressed="false">https://raw.githubusercontent.com/playonmonkey/Gorilla/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/playonmonkey/Gorilla/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/playonmonkey/Gorilla/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Playonmonkeys Repository</summary>
+		<description>Stored add ons by Playonmonkey</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
     <addon id="repository.sanctuary" name="Sanctuary" version="1.0.1" provider-name="Sanctuary">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -1168,6 +1203,20 @@ Removed: Nudeflix</news>
 		<description>Latest Addon Updates For Supremacy Repository</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.sweetwork" name="Sweetwork Repository" version="1.0.03" provider-name="Sweetwork">
+    <extension point="xbmc.addon.repository" name="Sweetwork Repository">
+        <info compressed="false">https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install software from the Sweetwork Repository</summary>
+        <description>Download and install plugins, addons, scripts and dependencies for Kodi.</description>
+        <disclaimer>The Sweetwork Repo indexes and aggregates packages from multiple sources. Therefor Sweetwork accepts no responsibility for included 3rd party software.</disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.wolfpack" name="[B][COLOR ghostwhite]W[/COLOR][COLOR red]OLFPAC[/COLOR][COLOR ghostwhite]K[/COLOR][/B]" version="1.2" provider-name="Wolfpack">
