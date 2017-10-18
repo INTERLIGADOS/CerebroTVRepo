@@ -31,15 +31,15 @@ def menuoptions():
 
     
 def function1():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dBT%20SPORT%203%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fba7c7bb9f1f2be48a9041f6a308eaa92.m3u8")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?url=http%3A%2F%2F95.154.237.88%3A8080%2FMatH33RaaaBeeT3yy-U%2FStrm%2Findex.m3u8%7CUser-Agent%3DAppleCoreMedia%2F1.0.0.13A452+%28iPhone%3B+U%3B+CPU+OS+9_0_2+like+Mac+OS+X%3B+en_gb%29&mode=9999&name=BT+Sports+3&iconimage=http%253A%252F%252Fsmarterlogix.com%252FiosSecureApps%252FPakIndiaTVHD%252FV1-2%252FImages%252Fbt_sports.jpg&description=")')
   
 def function2():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.ProjectCypher/?action=play&url=http%3A%2F%2F185.53.163.205%3A2701&content=0")')
-
-def function3():
     xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dBT%20SPORT%203%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fba7c7bb9f1f2be48a9041f6a308eaa92.m3u8")')
 
+def function3():
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.mobdina?action=play&url=mpd%3A%2F%2Fba7c7bb9f1f2be48a9041f6a308eaa92.m3u8")')
+
 def function4():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.DELIVERANCE/?url=plugin%3A%2F%2Fplugin.video.SportsDevil%2F%3Fmode%3D1%26amp%3Bitem%3Dcatcher%253dstreams%2526url%3Dhttp%3A%2F%2Fsstream.net%2Fbt3.html%2526referer%3Dhttp%3A%2F%2Fsstream.net%2Fbt3.html&mode=12")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.mangTV/?url=plugin%3A%2F%2Fplugin.video.f4mTester%2F%3Furl%3Dhttp%3A%2F%2Fclient-proiptv.com%3A8080%2Flive%2FAmersfoort%2FAmersfoort%2F2513.ts%26streamtype%3DTSDOWNLOADER%26name%3D&mode=12")')
    
 menuoptions()
