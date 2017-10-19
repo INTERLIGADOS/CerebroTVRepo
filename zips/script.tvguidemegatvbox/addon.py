@@ -27,7 +27,7 @@ def menuoptions():
     '[B]      UK Freeview (with basic EPG data)[/B]',
     '[B]      BBC iPlayer[/B] (has regional channels)', 
     '[B]      >> [COLOR=gold]Cerebro 24/7 TV & Movies[/COLOR] << [/B]',
-    '[B]      >> [COLOR=lightblue]Kids TV Guide[/COLOR] <<[/B]',
+    '[B]      >> [COLOR=lightblue]Kids Corner[/COLOR] <<[/B]',
     '[B]      Kids TV[/B] (press back multi times to exit this)',
     '[B]      >> [COLOR=green]My TV Guide [/COLOR]<<[/B] (make your own)'
     ])
@@ -66,7 +66,7 @@ def function6():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2f247menu.xml",return)')
     
 def function7():
-    xbmc.executebuiltin('RunAddon(script.tvguide.cerebrotv.kids)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2fKids.xml",return)')
     
 def function8():
     xbmc.executebuiltin('RunAddon(plugin.video.KongKidz)')
