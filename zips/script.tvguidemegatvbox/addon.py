@@ -16,12 +16,12 @@ def menuoptions():
         function5
         )
         
-    call = dialog.select('[B][COLOR=yellow]Live TV Menu[/COLOR][/B]', [
-    '[B]      >> [COLOR=pink]Cerebro Media[/COLOR] <<[/B]', 
+    call = dialog.select('[B][COLOR=yellow]Live TV Menu[/COLOR][/B]', [ 
     '[B]      >> [COLOR=gold]Open TV Guide[/COLOR] << [/B]' , 
     '[B]      >> [COLOR=gold]Cerebro 24/7 TV & Movies[/COLOR] << [/B]',
     '[B]      >> [COLOR=lightblue]Kids Corner[/COLOR] <<[/B]',
-    '[B]      >> [COLOR=green]My TV Guide [/COLOR]<<[/B] (make your own)'
+    '[B]      >> [COLOR=green]My TV Guide [/COLOR]<<[/B] (make your own)',
+    '[B]      >> [COLOR=pink]Cerebro Media[/COLOR] <<[/B]'
     ])
     # dialog.selectreturns
     #   0 -> escape pressed
