@@ -2824,7 +2824,7 @@ level.</description>
 
 <addon id="script.mtvbspmix"
   name="CerebroTV Sky Sports Mix"
-  version="1.4"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2842,7 +2842,7 @@ level.</description>
 
 <addon id="script.mtvbspnews"
   name="CerebroTV Sky Sports News"
-  version="1.4"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2878,7 +2878,7 @@ level.</description>
 
 <addon id="script.mtvbspprem"
   name="CerebroTV Sky Sports Prem"
-  version="1.4"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
