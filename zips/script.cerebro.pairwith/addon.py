@@ -63,8 +63,8 @@ def function2():
         
 def function3():
     if myplatform == 'android': # Android 
-        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=2' ) )
+        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=3' ) )
     else:
-        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=2')
+        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=3')
      
 menuoptions()
