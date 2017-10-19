@@ -10,7 +10,7 @@
 
 <plugin>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]Kids[/COLOR] TV Guide[/COLOR][/B] (Premium Only)</title>
-<link>plugin://script.cerebro.tvguide.open</link>
+<link>plugin://script.cerebro.tvguide.open3</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
