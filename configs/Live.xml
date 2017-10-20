@@ -73,6 +73,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]UK TV Freeview Basic[/COLOR] BackUp</title>
+<link>plugin://plugin.video.freeview/?mode=5&name=Live%20TV&url=url</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]BBCi Player[/COLOR]</title>
 <link>plugin://plugin.video.bbciplayer/?IPID&description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.bbciplayer%5cimg%5ciplay.jpg&mode=2&name=Live&url=url</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
