@@ -34,7 +34,7 @@ def menuoptions():
     return 
 
 def function1():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.mangTV/?url=plugin%3A%2F%2Fplugin.video.f4mTester%2F%3Furl%3Dhttp%3A%2F%2Fclient-proiptv.com%3A8080%2Flive%2FAmersfoort%2FAmersfoort%2F935.ts%26streamtype%3DTSDOWNLOADER%26name%3DHorror+Channel-+Horror+Channel&mode=12")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.playlistLoader/?logos=&move=0&mode=32&index=1&url=http%3A%2F%2Fweekendpass.ddns.net%3A8080%2Flive%2FStewart_pitt%2Frdqot3iXvC%2F3772.ts&iconimage=&cache=0&name=Horror+Channel+2")')
 
 def function2():
     xbmc.executebuiltin('PlayMedia("plugin://plugin.video.playlistLoader/?logos=&move=0&mode=32&index=0&url=http%3A%2F%2Fweekendpass.ddns.net%3A8080%2Flive%2FRon_red%2FDISYh1Adi5%2F3772.ts&iconimage=&cache=0&name=Horror")')

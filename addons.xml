@@ -2955,7 +2955,7 @@ level.</description>
 
 <addon id="script.mtvbukhor"
   name="CerebroTV UK Horror"
-  version="1.4"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
