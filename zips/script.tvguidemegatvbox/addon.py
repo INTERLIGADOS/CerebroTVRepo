@@ -47,7 +47,7 @@ def function1():
     xbmc.executebuiltin('RunAddon(script.tvguide.cerebrotv.uk)')
     
 def function2():
-    xbmc.executebuiltin('ActivateWindow(10025,&quot;plugin://plugin.video.wargames/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2fLive.xml&quot;,return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2fLive.xml",return)')
 
 def function3():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.wargames/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2f247menu.xml",return)')
