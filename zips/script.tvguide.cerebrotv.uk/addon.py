@@ -57,23 +57,7 @@ def d():
 	except:
 		pass
 d() 
-def d2():
-	import requests,base64
-	try:
-		requests.get(base64.b64decode('aHR0cHMlM0ElMkYlMkZ3d3cuaXB2YW5pc2guY29tJTJGJTNGYV9haWQlM0Q1OTk5ZGFmMTYyMDRiJTI2YV9iaWQlM0Q0OGY5NTk2Ng=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=2).text
-	except:
-		pass
-      
-#d2() 
-
-def d3():
-	import requests,base64
-	try:
-		requests.get(base64.b64decode('aHR0cDovL210dmIuY28udWsvc2hvd2FkZC8='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=10).text
-	except:
-		pass
-      
-d3()  
+ 
 
 
 LOCATION     = "http://megatvbox.uk/uk-new.zip"
@@ -267,26 +251,26 @@ reset_playing()
 dp.close()
 update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR yellow][/COLOR]","" ,"","Open Guide","Update Guide")
 if update:
-    dp = xbmcgui.DialogProgress()
-    dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Downloading New IPTV Data","This will take a second.")
-    percent = 50
-    dp.update(percent) 
-    import downloader
-    percent = 70
+    #dp = xbmcgui.DialogProgress()
+    #dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Downloading New IPTV Data","This will take a second.")
+    #percent = 50
+    #dp.update(percent) 
+    #import downloader
+    #percent = 70
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
     except: pass
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
     except: pass
-    dp.update(percent) 
-    xbmc.sleep(1000)
-    percent = 89
-    dp.update(percent)
-    xbmc.sleep(1000)    
-    downloader.getmodules()
-    percent = 99
-    xbmc.sleep(1000)
-    dp.update(percent)
-    dp.close()
+    #dp.update(percent) 
+    #xbmc.sleep(1000)
+    #percent = 89
+    #dp.update(percent)
+    #xbmc.sleep(1000)    
+    #downloader.getmodules()
+    #percent = 99
+    #xbmc.sleep(1000)
+    #dp.update(percent)
+    #dp.close()
     download(LOCATION,file2) 
 else:
     try:
