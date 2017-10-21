@@ -28,10 +28,10 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Clubland[/COLOR]</title>
+<title>[COLOR pink]Clubland[/COLOR] TEST</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.freeview/?url=225&mode=2&name=Clubland</link>
+<link>PlayMedia("plugin://plugin.video.freeview/?url=225&mode=2&name=Clubland")</link>
 </plugin>
 
 <plugin>
