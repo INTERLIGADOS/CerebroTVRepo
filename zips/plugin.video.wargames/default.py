@@ -30,7 +30,7 @@ def d():
 #aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZjZXJlYnJvdHYuY28udWslMkZwJTJG < old        
 d()  
 
-xbmc.sleep(2000)
+#xbmc.sleep(2000)
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))
 
