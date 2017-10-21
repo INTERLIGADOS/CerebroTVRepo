@@ -227,50 +227,16 @@ def platform():
         return 'ios'
 
 # After a restart the proc file should be wiped!
-#dp = xbmcgui.DialogProgress()
-#dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
-#dp.update(50)
-#myplatform = platform()
-#if myplatform == 'android': # Android 
-#    xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/showadd/' ) )
-#else:
-#    webbrowser . open('http://mtvb.co.uk/showadd/')
-#dp.update(90)
-#xbmc.sleep(1000) 
-#dp.update(92)
-#xbmc.sleep(1000) 
-#dp.update(94)
-#xbmc.sleep(1000) 
-#dp.update(96)
-#xbmc.sleep(1000) 
-#dp.update(98)
-#xbmc.sleep(1000) 
-#dp.update(100)
 reset_playing()
-#xbmc.sleep(1000) 
 dp.close()
 update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR yellow][/COLOR]","" ,"","Open Guide","Update Guide")
 if update:
-    #dp = xbmcgui.DialogProgress()
-    #dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Downloading New IPTV Data","This will take a second.")
-    #percent = 50
-    #dp.update(percent) 
-    #import downloader
-    #percent = 70
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
     except: pass
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
     except: pass
-    #dp.update(percent) 
-    #xbmc.sleep(1000)
-    #percent = 89
-    #dp.update(percent)
-    #xbmc.sleep(1000)    
-    #downloader.getmodules()
-    #percent = 99
-    #xbmc.sleep(1000)
-    #dp.update(percent)
-    #dp.close()
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.streamhub")')
+    xbmc.sleep(1000)
     download(LOCATION,file2) 
 else:
     try:
