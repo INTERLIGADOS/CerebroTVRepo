@@ -720,7 +720,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.40" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.41" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -732,7 +732,8 @@ Removed: Nudeflix</news>
 		<import addon="script.module.liveresolver" version="0.1.24"/>
 		<import addon="script.video.F4mProxy" version="2.2.3"/>
         <import addon="plugin.video.f4mTester" />
-        <import addon="script.module.streamhub"/>
+        <import addon="script.module.streamhub" />
+        <import addon="script.module.streamhublive />
         <!--<import addon="visualization.milkdrop2"/>-->
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
@@ -3375,7 +3376,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.41" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.42" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>

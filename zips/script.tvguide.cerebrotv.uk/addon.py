@@ -235,8 +235,8 @@ if update:
     except: pass
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
     except: pass
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.streamhub")')
-    xbmc.sleep(1000)
+    #xbmc.executebuiltin('PlayMedia("plugin://plugin.video.streamhub")')
+    #xbmc.sleep(1000)
     download(LOCATION,file2) 
 else:
     try:
