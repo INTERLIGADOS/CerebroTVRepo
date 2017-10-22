@@ -931,7 +931,7 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="repository.cerebro" name=".CrebroTVRepo" version="1.5" provider-name="Biglad">
+<addon id="repository.cerebro" name=".CrebroTVRepo" version="1.6" provider-name="Biglad">
 	<extension point="xbmc.addon.repository" name=".CrebroTVRepo">
 		<info compressed="false">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml.md5</checksum>
