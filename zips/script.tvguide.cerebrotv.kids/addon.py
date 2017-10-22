@@ -278,20 +278,22 @@ if update:
     dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Downloading New IPTV Data","This will take a second.")
     percent = 50
     dp.update(percent) 
-    import downloader#
+    #import downloader
     percent = 70
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.kids/source.db"))
     except: pass
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.kids/cerebrouk.xml"))
     except: pass
+    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.kids/source.db"))
+    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.kids/cerebrouk.xml"))
     dp.update(percent) 
-    xbmc.sleep(1000)
+    #xbmc.sleep(1000)
     percent = 89
     dp.update(percent)
-    xbmc.sleep(1000)    
-    downloader.getmodules()
+    #xbmc.sleep(1000)    
+    ##downloader.getmodules()
     percent = 99
-    xbmc.sleep(1000)
+    #xbmc.sleep(1000)
     dp.update(percent)
     dp.close()
     download(LOCATION,file2) 
