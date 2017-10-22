@@ -28,8 +28,8 @@ FX_PATH = os.path.join(common.plugins_path, 'fx_gmu.py')
 
 class FlashxResolver(UrlResolver):
     name = "flashx"
-    domains = ["flashx.tv"]
-    pattern = '(?://|\.)(flashx\.tv)/(?:embed-|dl\?|embed.php\?c=)?([0-9a-zA-Z]+)'
+    domains = ["flashx.tv", "flashx.to"]
+    pattern = '(?://|\.)(flashx\.(?:tv|to))/(?:embed-|dl\?|embed.php\?c=)?([0-9a-zA-Z]+)'
 
     def __init__(self):
         self.net = common.Net()

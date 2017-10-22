@@ -176,3 +176,6 @@ msgctxt "#33039"
 msgid "OK"
 msgstr "OK"
 
+msgctxt "#33043"
+msgid "Vshare.eu Stream Authorization"
+msgstr "Vshare.eu Stream autorizáció"

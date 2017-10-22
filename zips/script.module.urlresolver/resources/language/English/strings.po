@@ -184,3 +184,7 @@ msgstr ""
 msgctxt "#33042"
 msgid "Client ID"
 msgstr ""
+
+msgctxt "#33043"
+msgid "Vshare.eu Stream Authorization"
+msgstr "Vshare.eu Stream Authorization"

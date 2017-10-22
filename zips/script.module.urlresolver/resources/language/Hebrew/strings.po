@@ -1,6 +1,6 @@
 # Addon Name: URLResolver
 # Addon id: script.module.urlresolver
-# Addon Provider: TV Addons
+# Addon Provider: 
 msgid ""
 msgstr ""
 "Project-Id-Version: script.module.urlresolver\n"
@@ -186,3 +186,7 @@ msgstr "אין הרשאת הזרמה"
 msgctxt "#33042"
 msgid "Client ID"
 msgstr "זיהוי לקוח"
+
+msgctxt "#33043"
+msgid "Vshare.eu Stream Authorization"
+msgstr "הרשאה להזרמה מ-Vshare.eu"

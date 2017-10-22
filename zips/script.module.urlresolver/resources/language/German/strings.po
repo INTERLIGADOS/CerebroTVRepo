@@ -184,3 +184,6 @@ msgctxt "#33041"
 msgid "No IP Authorization"
 msgstr "Keine IP Autorisierung"
 
+msgctxt "#33043"
+msgid "Vshare.eu Stream Authorization"
+msgstr "Vshare.eu Stream Autorisierung"
