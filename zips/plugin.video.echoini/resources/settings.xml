@@ -1,9 +1,0 @@
-<settings>
-<category label="addons.ini File">
-<setting id="addons.folder" label="Folder" type="folder" default="special://home/userdata/addon_data/script.tvguide.cerebrotv.uk.2017/"/>
-<setting id="addons.file" label="Filename" type="text" default="addons.ini"/>
-</category>
-<!--<category label="Display">
-<setting id="view_mode" label="View Mode" type="number" default="51" />
-</category>-->
-</settings>
