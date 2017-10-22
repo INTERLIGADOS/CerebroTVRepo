@@ -1,0 +1,16 @@
+[B]3.2.1[/B]
++ Add: Add buffer setting in advancedsettings.xml
+
+[B]3.1.9[/B]
++ Fix: Init member setting
++ Change: Clear cache text
+
+[B]3.1.8[/B]
++ Add: Init member email & password input
+- Fix: "Full slots" msg for members
+
+[B]3.1.7[/B]
+- Fix: RU channels lists
+
+[B]3.1.6[/B]
+- Fix: Tv guide no playing channels

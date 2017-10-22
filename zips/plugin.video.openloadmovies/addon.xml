@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.openloadmovies" name="Openload Movies" version="2.2.5" provider-name="DandyMedia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+    <import addon="script.module.muckys.common" version="1.3.5" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">Movies and TV</summary>
+	<description lang="en">[B][COLOR cornflowerblue]One click Googlelinks for Movies and TV shows[/COLOR][/B][CR][CR][B][COLOR red]N.B.[/COLOR][/B] This addon requires the use of modules maintained by Mucky Duck[CR][CR][B][I][COLOR red]A special thanks to Mucky Duck for allowing the use of these modules, and his continued help and guidance.[/I][/B][/COLOR]</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>

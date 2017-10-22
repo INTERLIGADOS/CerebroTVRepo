@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Apollo">
+		<setting type="lsep" label="Login" />
+        <setting id="apollo.email" type="text" label="Email" default=""/>
+        <setting id="apollo.password" type="text" option = "hidden" label="Password" default=""/>
+		<setting id="apollo.paid" type="bool" default="false" visible="0"/>
+        <setting type="action" visible="eq(-1,false)" label="Login" action="RunScript(program.apollo, 1,action=loginApollo)" option="close"/>
+		<setting type="action" visible="!eq(-2,false)" label="Logout" action="RunScript(program.apollo, 1,action=logoutApollo)" option="close"/>
+		<setting type="lsep" label="Account Info" />
+		<setting id="apollo.account" label="Account Status" type="text" default="Free Account" enable="0" />
+		<setting id="device.streams" visible="!eq(0,0)" label="Allowed Streams" type="text" default="0" enable="0" />
+		<setting id="device.networks" visible="!eq(0,0)" label="Allowed Networks (IP)" type="text" default="0" enable="0" />
+        <setting type="lsep" label="Addon Info" />
+		<setting id="apollo.version" label="Apollo Version" type="text" default="3.1.5/3.1.5" enable="0" />
+		<setting id="apollo.pvr" type="bool" default="true" label="Use Apollo TV Guide" />
+		<setting id="apollo.first" type="bool" default="false" visible="0"/>
+		<setting id="apollo.token" type="text" default="" visible="0"/>
+		<setting id="bookmarks" type="bool" label="32344" default="true" />
+		<setting type="action" label="Reset all Apollo setting" action="RunScript(program.apollo, 1,action=cleanApollo)"/>
+		<setting type="action" label="Set advance buffer setting" action="RunScript(program.apollo, 1,action=bufferApollo)"/>
+	</category>
+	<category label="32310">
+		<setting id="appearance.alt" type="action" label="32311" default="-" option="close" action="RunPlugin(plugin://program.apollo/?action=artwork)" visible="!System.HasAddon(script.exodus.artwork)" />
+		<setting id="appearance.1" type="select" label="32311" values="-|Exuary|Exodus|Genesis" default="Exodus" visible="System.HasAddon(script.exodus.artwork)" />
+		<setting id="scrapers.timeout.1" type="slider" label="32312" default="30" range="10,60" option="int" />
+		<setting id="trakt.user" type="text" default="" visible="false" />
+		<setting id="indicators.alt" type="enum" label="32313" lvalues="32314|32315" default="1" visible="!eq(-1,)" />
+		<setting id="indicators" type="enum" label="32313" lvalues="32314" default="0" visible="eq(-2,)" />
+		<setting id="api.language" type="select" label="32316" values="AUTO|Bulgarian|Chinese|Croatian|Czech|Danish|Dutch|English|Finnish|French|German|Greek|Hebrew|Hungarian|Italian|Japanese|Korean|Norwegian|Polish|Portuguese|Romanian|Russian|Serbian|Slovak|Slovenian|Spanish|Swedish|Thai|Turkish|Ukrainian" default="AUTO" />
+		<setting id="providers.language" type="select" label="32360" values="English|German|All" default="English" />
+		<setting id="flatten.tvshows" type="bool" label="32317" default="false" />
+		<setting id="fanart" type="bool" label="32318" default="true" />
+		<setting type="lsep" label="32319" />
+		<setting id="movie.widget" type="enum" label="32320" lvalues="32302|32321|32322|32323|32324" default="0" />
+		<setting id="tv.widget.alt" type="enum" label="32325" lvalues="32302|32326|32327|32328" default="2" visible="!eq(-9,)+eq(-8,1)" />
+		<setting id="tv.widget" type="enum" label="32325" lvalues="32302|32326" default="1" visible="eq(-10,)|eq(-9,0)" />
+		<setting id="lists.widget" type="enum" label="32329" lvalues="32302|32301" default="1" />
+	</category>
+	<category label="32346">
+		<setting type="sep" />
+		<setting type="lsep" label="TMDb" />
+		<setting id="tm.user" type="text" option="hidden" label="32309" default="" />
+		<setting type="sep" />
+		<setting type="lsep" label="Trakt" />
+		<setting id="trakt.user" type="action" label="32306" option="close" action="RunPlugin(plugin://program.apollo/?action=authTrakt)" />
+		<setting id="trakt.token" type="text" option="hidden" visible="false" label="" default="" />
+		<setting id="trakt.refresh" type="text" option="hidden" visible="false" label="" default="" />
+		<setting type="sep" />
+		<setting type="lsep" label="IMDb" />
+		<setting id="imdb.user" type="text" label="32303" default="" />
+	</category>
+	<category label="32353">
+		<setting id="subtitles" type="bool" label="32354" default="false" />
+		<setting type="sep" />
+		<setting id="subtitles.utf" type="bool" label="32355" enable="!eq(-2,false)" default="false" />
+		<setting type="sep" />
+		<setting id="subtitles.lang.1" type="select" label="32356" values="Afrikaans|Albanian|Arabic|Armenian|Basque|Bengali|Bosnian|Breton|Bulgarian|Burmese|Catalan|Chinese|Croatian|Czech|Danish|Dutch|English|Esperanto|Estonian|Finnish|French|Galician|Georgian|German|Greek|Hebrew|Hindi|Hungarian|Icelandic|Indonesian|Italian|Japanese|Kazakh|Khmer|Korean|Latvian|Lithuanian|Luxembourgish|Macedonian|Malay|Malayalam|Manipuri|Mongolian|Montenegrin|Norwegian|Occitan|Persian|Polish|Portuguese|Portuguese(Brazil)|Romanian|Russian|Serbian|Sinhalese|Slovak|Slovenian|Spanish|Swahili|Swedish|Syriac|Tagalog|Tamil|Telugu|Thai|Turkish|Ukrainian|Urdu" enable="!eq(-4,false)" default="English" />
+		<setting id="subtitles.lang.2" type="select" label="32357" values="Afrikaans|Albanian|Arabic|Armenian|Basque|Bengali|Bosnian|Breton|Bulgarian|Burmese|Catalan|Chinese|Croatian|Czech|Danish|Dutch|English|Esperanto|Estonian|Finnish|French|Galician|Georgian|German|Greek|Hebrew|Hindi|Hungarian|Icelandic|Indonesian|Italian|Japanese|Kazakh|Khmer|Korean|Latvian|Lithuanian|Luxembourgish|Macedonian|Malay|Malayalam|Manipuri|Mongolian|Montenegrin|Norwegian|Occitan|Persian|Polish|Portuguese|Portuguese(Brazil)|Romanian|Russian|Serbian|Sinhalese|Slovak|Slovenian|Spanish|Swahili|Swedish|Syriac|Tagalog|Tamil|Telugu|Thai|Turkish|Ukrainian|Urdu" enable="!eq(-5,false)" default="English" />
+		<setting type="lsep" label="[CR]" />
+		<setting type="lsep" label="32358" />
+		<setting type="lsep" label="32359" />
+	</category>
+</settings>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.sweetwork" name="Sweetwork Repository" version="1.0.03" provider-name="Sweetwork">
+    <extension point="xbmc.addon.repository" name="Sweetwork Repository">
+        <info compressed="false">https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install software from the Sweetwork Repository</summary>
+        <description>Download and install plugins, addons, scripts and dependencies for Kodi.</description>
+        <disclaimer>The Sweetwork Repo indexes and aggregates packages from multiple sources. Therefor Sweetwork accepts no responsibility for included 3rd party software.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>

@@ -1,0 +1,43 @@
+v1.0.0
+Initial Release
+
+v2.8.0
+Added extra code for both css scrape
+v2.8.1
+Replaced debrid tv source
+v2.8.2
+Edited source code - removed debrid tv
+v2.8.4
+re-added debrid tv , removed anime
+v2.8.5 
+site changes
+v2.8.6
+Cloudflare bypass
+v2.8.7
+New debrid TV source
+v2.8.8
+Fixed hd tv
+v2.8.9
+Hdtv again
+v2.9.1
+Site changes
+v.2.9.2
+Art Fix
+v2.9.3
+code changes
+v2.9.4
+Edits in code
+v2.9.5
+edit code
+v2.9.6
+Removed hdtv
+v2.9.7
+fix hdtv
+v2.9.8
+Fixed UK Soaps
+v2.9.9
+Url changes
+3.0.0
+Fix TV
+v3.0.1
+fix soaps

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.cerebro" name=".CrebroTVRepo" version="1.6" provider-name="Biglad">
+	<extension point="xbmc.addon.repository" name=".CrebroTVRepo">
+		<info compressed="false">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/zips/</datadir>  
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description>Cerebro TV Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+

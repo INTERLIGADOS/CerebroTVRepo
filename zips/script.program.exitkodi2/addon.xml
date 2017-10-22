@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.program.exitkodi2"
+  name="Exit SPMC/Kodi"
+  version="1.2" 
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Exit</summary>
+    <description lang="en">Exit</description>
+	<disclaimer>Exit</disclaimer>
+  </extension>
+</addon>

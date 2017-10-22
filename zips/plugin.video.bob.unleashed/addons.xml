@@ -1,0 +1,2555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.program.megatvboxnot" version="1.0.3"
+       name="Notifications" provider-name="Biglad">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.addon.common" optional="true" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <!--<extension point="xbmc.service" library="service.py" start="startup">
+  </extension>-->
+  <extension point="xbmc.addon.metadata">
+  	<summary>TMEGATVBOX</summary>
+  	<description>TMEGATVBOX.</description>
+  	<disclaimer>TMEGATVBOX.</disclaimer>
+  	<language>en</language>
+  	<platform>all</platform>
+  	<forum>http://www.megatvbox.co.uk/</forum>
+  	<website>http://www.megatvbox.co.uk/</website>
+  	<source></source>
+  	<email></email>
+  </extension>
+</addon>
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.56.rus" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="ru">Ваша мультимедийная библиотека.</summary>
+    <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="ru">Super Favorites - лучший способ управления вашим Избранным в Kodi.[CR][CR]Фактически любой пункт меню в Kodi может быть добавлен в Super Favorites, даже из аддонов, которые обычно не предоставляют эту функцию.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website></website>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+
+    <news>
+1.0.56: 19th February 2017
+    - added optional initial path, and include play folder parameters to quicklaunch script
+        usage: xbmc.runscript(special://home/addons/plugin.program.super.favourites/quicklaunch.py,folder1/folder2,True)
+    - fixed playlist parsing
+    - fixed quicklaunch in Krypton
+    - fixed launching ExecuteBuiltin types from the quick launch dialog
+    - fixed launching playable items added from FileManager
+    - fixed launching playable items from widgets
+    - various other fixes due to changes in Krypton
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
+<addon id="plugin.video.bob.unleashed" name="BoB Unleashed" version="1.0.7" provider-name="midraal">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.liveresolver" version="0.1.47" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.urlresolver" version="1.2.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Unleash Your Inner Bob</summary>
+        <description lang="en">Unleash Your Inner Bob</description>
+        <platform>all</platform>
+        <forum>http://www.noobsandnerds.com/support/forumdisplay.php?fid=253</forum>
+        <website>www.noobsandnerds.com</website>
+        <video_guide>y0w8zIH4lOY</video_guide>
+        <video_preview>WdKIzajiBBI</video_preview>
+    </extension>
+</addon>
+
+<addon id="plugin.video.cerebro-movies"
+  name="[COLOR=gold] .CerebroTV Movie Search[/COLOR] (WiP)"
+  version="1.5"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+    <import addon="script.module.urlresolver" />
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.dnatv4k" name="[COLOR darkorange]CerebroTV[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR] (other sections not working)" version="2.1.0" provider-name="Biglad,Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">[COLOR darkorange]Mega TV Box[/COLOR] [COLOR lightblue]4K[/COLOR][COLOR crimson]Movies[/COLOR]</summary>
+		<description lang="en">Entertainment For Kodi</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
+</addon>
+
+<addon id="plugin.video.echoini"
+version="1.0.4"
+name="Cerebro INI Creator"
+provider-name="Cerebro">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">INI Creator for CerebroTV</summary>
+  <description lang="en"></description>
+  <disclaimer lang="en">.</disclaimer>
+</extension>
+</addon>
+
+<addon id="plugin.video.livehub2" name="[B][COLOR ghostwhite]Cerebro[/COLOR][COLOR red] IPTV[/COLOR][/B]" version="10.6" provider-name="sClarke and Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.video.F4mProxy" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Hub - Bringing Live TV To Your Media Device</summary>
+    <description lang="en">Live Hub - Bringing Live TV To Your Media Device. Kodi 17+ is Recommended.</description>
+	<disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="ZNL2017.2017.2017.07.15.NL1999999.99"
+  name="SportsDevil"
+  provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <!--<import addon="script.video.F4mProxy" />
+   <import addon="plugin.video.f4mTester" />-->
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different ad-financed sports streaming sites</summary>
+    <description>Play videos of different ad-financed sports streaming sites.
+
+SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site.
+
+For updates check the readme.
+    </description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.StarTec" name="[COLOR orange]Star Tec[/COLOR]" version="1.0.1" provider-name="Thunder">
+        <requires>
+                <import addon="xbmc.python" version="2.19.0" />
+                <import addon="script.module.nanscrapers" version="0.5.5" />
+                <import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+                <import addon="script.module.liveresolver" version="0.1.47" />
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.requests" version="2.9.1" />
+                <import addon="script.module.addon.common" version="2.0.0" />
+                <import addon="script.module.xmltodict" version="0.9.0"/>
+                <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+                <import addon="script.module.urlresolver" version="1.2.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+                <provides>audio video</provides>
+        </extension>
+        <extension point="xbmc.service" library="service.py" start="[login|startup]">
+              </extension>
+        <extension point="xbmc.addon.metadata">
+          <summary lang="en">The Star Tec Addon by Thunder thanks to Midraal for his Jen code Template</summary>
+          <description lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
+		  Addon has Movies Tv shows and lots more.</description>
+          <platform>all</platform>
+          <forum>http://www.noobsandnerds.com/support/forumdisplay.php?fid=253</forum>
+          <website>www.noobsandnerds.com</website>
+          <video_guide>y0w8zIH4lOY</video_guide>
+          <video_preview>WdKIzajiBBI</video_preview>
+        </extension>
+</addon>
+
+<addon id="plugin.video.streamztv" name=" [B][COLOR lime]StreamZ
+[/COLOR][COLOR white]TV[/COLOR][/B]"
+       version="1.2.2"
+       provider-name="Optimus">
+  <requires>
+    <import addon="script.module.requests" version="2.9.1"/>
+	<import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.0.0"/>
+    <import addon="plugin.video.youtube" version="5.3.6"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.module.liveresolver" version="0.1.24"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description></description>
+<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with any website owners</disclaimer>
+    <platform>all</platform>
+	<forum lang="en"></forum>
+    <website lang="en"></website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.supremacy"
+       name="supremacy"
+       version="1.3.4"
+       provider-name="supremacy">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">video addon for supremacy</summary>
+    <description lang="en">supremacy</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvplayer" name="Tv Player" version="0.2.9" provider-name="catchup4kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream Most Uk Live tv</summary>
+    <description lang="en">Stream Most Uk Live tv</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.uwc"
+       name="Ultimate Whitecream"
+       version="1.1.55"
+       provider-name="Whitecream">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver"  version="3.0.12" />
+        <import addon="script.video.F4mProxy" version="2.5.7" />
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
+        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+        <news>Fixed: Porntrex listing - next page categories (private videos are hidden)
+Fixed: Porn00
+Fixed: Czechhd
+Fixed: HDZog
+Fixed: ParadiseHill
+Fixed: Other stuff I forgot
+Removed: Nudeflix</news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.0.9" provider-name="Biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="repository.streamhub" />
+        <import addon="plugin.video.youtube" version="5.2.1" optional="true" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="script.video.F4mProxy" version="2.2.3"/>
+		<import addon="script.wargames.artwork" version="1.0.0"/>
+		<import addon="script.wargames.metadata" version="1.0.0"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.wargames"/>
+        <import addon="script.module.streamhub"/>
+        <import addon="script.module.requests" />
+        <import addon="script.cerebro.pairwith" />
+        <import addon="script.cerebro.tvguide.open" />
+        <import addon="script.cerebro.tvguide.open2" />
+        <import addon="script.cerebro.tvguide.open3" />
+        <import addon="script.cerebro.tvguide.open.free" />
+        <import addon="script.cerebro.pairwith.laucnher" />
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">CerebroTV Media Addon</summary>
+		<description lang="en">Free IPTV, Movies, TV Shows, Kids, Sports and much more.</description>
+		<disclaimer lang="en">The author does not host or distribute any content. Credits to Phoenix and Exodus for SOME of the base code. Cloned from the Wargames version.</disclaimer>
+		<platform>all</platform>
+		<forum>https://www.facebook.com/groups/cerebrotvguide/</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>NOTHING TO REPORT</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.youtube" name="YouTube" version="5.4.14Bump" provider-name="jdf76, bromix">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+        <news>
+[add] MPEG-DASH support for Kodi 17 w/ inputstream.adaptive add-on or SPMC 16 w/ builtin-in
+[add] optional History and Watch Later custom playlist to Settings -> Folders, or (My)Playlists context menu to set/remove
+[add] Maintenance section to Settings
+[add] 'Subtitle language(s) to download' selection to Settings -> General
+[add] 'Force SSL Certificate verification' to Settings -> Advanced
+[upd] API key set switching from Settings -> API (this will log you out)
+[upd] Dual login only required if My Subscriptions folder is enabled at sign-in
+[upd] setting content type from episodes, now videos
+[del] override view options
+[upd] Norwegian strings [torstehu]
+[upd] Greek strings [twilight0]
+[upd] Portuguese strings [Wanilton]
+[upd] Dutch strings [flemlion]
+[fix/upd] API tweaking and various other updates
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <summary lang="en">Plugin for YouTube</summary>
+        <description lang="en">YouTube is one of the biggest video-sharing websites of the world.</description>
+		<summary lang="de">Plugin für YouTube</summary>
+        <description lang="de">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
+        <summary lang="pl">Wtyczka YouTube</summary>
+        <description lang="pl">YouTube jest jednym z najwiekszych na swiecie serwisów udostepniania wideo.</description>
+		<summary lang="hu">Kiegészíto  a YouTube-hoz</summary>
+        <description lang="hu">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+        <summary lang="es">Plugin para YouTube</summary>
+        <description lang="es">YouTube es un uno de los mayores sitios web de intercambio de vídeos del mundo.</description>
+        <summary lang="ru">??????????????? YouTube</summary>
+        <description lang="ru">?????? ?????????? ????????? ???????? ? ???????? ????? ?? ????? ??????? ?????.</description>
+        <summary lang="fr">Plugin pour YouTube</summary>
+        <description lang="fr">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+        <summary lang="zh">YouTube????</summary>
+        <description lang="zh">?Youtube??????????????</description>
+        <summary lang="bg">??????? ?? YouTube</summary>
+        <description lang="bg">YouTube ? ???? ?? ???-???????? ??? ??????? ?? ????????? ?? ????? ? ????? ????.</description>
+		<summary lang="el">???s?et? YouTube</summary>
+        <description lang="el">?? YouTube e??a? µ?a ap? t?? µe?a??te?e? ?st?se??de? d?aµ???asµ?? ß??te? st?? ??sµ?.</description>
+        <summary lang="no">Tillegg for YouTube</summary>
+        <description lang="no">YouTube er en av verdens største nettsider for videodeling.</description>
+        <disclaimer lang="en"></disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=267160</forum>
+		<website>http://www.youtube.com</website>
+		<email>ytplugin at datanet dot ws</email>
+		<source>https://github.com/Kolifanes/plugin.video.youtube</source>
+	</extension>
+</addon>
+
+<addon id="program.apollo" version="3.2.4" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group, Biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.4.3" />
+		<import addon="script.exodus.artwork" version="1.0.4" />
+		<import addon="script.exodus.metadata" version="1.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<!--<import addon="service.iptvsimple.plugin.player" version="1.0.0" />-->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <summary>Apollo Group - Watch for the B-E-S-T!</summary>
+        <description>Facebook Page and Support Group @ApolloGroupTV. Slots are full? Become a member today, visit: ApolloGroup.tv</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.cerebro" name=".CreberoTVRepo" version="1.4" provider-name="Biglad">
+	<extension point="xbmc.addon.repository" name=".CrebroTVRepo">
+		<info compressed="false">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description>Cerebro TV Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.maverickrepo" name="[COLOR lime]MaverickTV Repo[/COLOR]" version="1.7" provider-name="Maverick TV">
+<extension point="xbmc.addon.repository" name="[COLOR lime]MaverickTV Repo[/COLOR]">
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+    </dir>
+		<info compressed="false">http://mavericktv.net/mavrepo/plugins/addons.xml</info>
+		<checksum>http://mavericktv.net/mavrepo/plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://mavericktv.net/mavrepo/plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The MaverickTV Repository v1.7</summary>
+		<description>The MaverickTV Repository for add-on and dependencies</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+﻿<addon id="repository.smash" name="Smash repository" version="1.3.0" provider-name="SMASH">
+	<extension point="xbmc.addon.repository" name="Smash repository">
+	<dir>
+        <info compressed="false">http://mediarepos.org/Repos/smashrepo/addons.xml</info>
+        <checksum>http://mediarepos.org/Repos/smashrepo/addons.xml.md5</checksum>
+        <datadir zip="true">http://mediarepos.org/Repos/smashrepo/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Under This Repo, I Will Host Addons With No Home,Bring Life To Dead Addons That Fully Work, Link To Repos From Devs (This will install current version the Dev Has) </summary>
+		<description lang="en">The People Under Some of the Kodi Groups made a big deal about me getting donations if you want to hep no matter what ppl say you can donate here paypal.me/BrianSMASH</description>
+		<platform>all</platform>
+		<forum></forum>
+        <website></website>
+		<news>sometimes people hate when someone ask for donations but if imma host so called addons and they not and other repos for devs which i am i made two for two guys with addons then donations help with hosting and vps cost which will be settings up</news>
+	</extension>
+</addon>
+
+<addon 	id="repository.streamhub"
+		name="[COLOR red]StreamHub Repository[/COLOR]"
+		version="1.2"
+		provider-name="sClarke">
+	<extension point="xbmc.addon.repository" name="[COLOR red]StreamHub Repository[/COLOR]">
+		<info compressed="false">https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Repo_Files/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Repo_Files/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Repo_Files/Zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>StreamHub</summary>
+		<description>StreamHub Repository - Bringing You StreamHub</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.supremacy" name="supremacy" version="1.2" provider-name="supremacy">
+<extension point="xbmc.addon.repository" name="supremacy">
+	<dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+    </dir>
+		<info compressed="false">http://supremacy.org.uk/zip/plugin/addon.xml</info>
+		<checksum>http://supremacy.org.uk/zip/plugin/addons.xml.md5</checksum>
+		<datadir zip="true">http://supremacy.org.uk/zip/plugin/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>video addon for supremacy</summary>
+		<description>Latest Addon Updates For Supremacy Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.wolfpack" name="[B][COLOR ghostwhite]W[/COLOR][COLOR red]OLFPAC[/COLOR][COLOR ghostwhite]K[/COLOR][/B]" version="1.2" provider-name="Wolfpack">
+	<extension point="xbmc.addon.repository" name="[B][COLOR ghostwhite]W[/COLOR][COLOR red]OLFPAC[/COLOR][COLOR ghostwhite]K[/COLOR][/B]">
+		<info compressed="false">http://wolfpackcrew.co.uk/seeddata/wolfpackrepo/files/addons.xml</info>
+		<checksum>http://wolfpackcrew.co.uk/seeddata/wolfpackrepo/files/addons.xml.md5</checksum>
+		<datadir zip="true">http://wolfpackcrew.co.uk/seeddata/wolfpackrepo/files/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description>This is the wolfpack repo, where you can get access to the wolfpack addon</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.uisounds.androidtv" version="1.0.0" name="Android TV UI Sounds" provider-name="takoi">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Android TV GUI sounds</summary>
+    <description lang="en">GUI sounds from the Android TV Launcer.</description>
+    <platform>all</platform>
+    <license>Apache License, Version 2.0</license>
+  </extension>
+</addon>
+
+<addon id="resource.uisounds.titan.modern" version="1.0.0" name="Titan UI Sounds (Modern)" provider-name="marcelveldt,mgonzales">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Titan UI Sounds (Modern)</summary>
+    <description lang="en">Titan UI Sounds (Modern)</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.cachesystem"
+  name="Cache System"
+  version="1.4"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <language></language>
+    <platform>all</platform>
+    <summary lang="en">Cache System</summary>
+    <description lang="en">Cache System</description>
+	<disclaimer>Cache System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.buy"
+  name="CerebroTV Buy 2017"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.pairwith"
+  name="CerebroTV Pair With"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.pairwith.laucnher"
+  name="Pair ME UP"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.tvguide.open"
+  name="CerebroTV Launch TV Guide"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.tvguide.open.free"
+  name="CerebroTV Launch TV Guide FREE"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.tvguide.open2"
+  name="CerebroTV Launch TV Guide Sports"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.tvguide.open3"
+  name="CerebroTV Launch TV Guide Kids"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebrotv"
+    name=".[COLOR=red]Cerebro TV-CORE[/COLOR]" version="1.0.9" provider-name="CerebroTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+<language></language>
+    <platform>all</platform>
+    <license>CEREBROTV 2017</license>
+    <forum>CEREBROTV 2017</forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.exodus.artwork" version="1.0.6" name="Exodus Artwork" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Addon</summary>
+		<description>Themes for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.exodus.metadata" version="1.0.1" name="Exodus Metadata" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Exodus Addon</summary>
+		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.kidsmegatvbox"
+  name="CerebroTV Kids Menu"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.megaclean"
+    name=".CerebroTV CLEAN Installer" version="1.0.8" provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.httplib2" version="0.8.0" />
+    <import addon="script.module.oauth2client" version="1.4.7" />
+    <import addon="script.module.uritemplate" version="0.6" />
+    <import addon="script.module.yaml" version="3.11"/>
+    <import addon="script.module.googleapi" version="1.4.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="service.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<language></language>
+    <platform>all</platform>
+    <license>CerebroTV 2016</license>
+    <forum>CerebroTV 2016</forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.megamove"
+    name="CerebroTV Build Mover" version="1.0.8" provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.httplib2" version="0.8.0" />
+    <import addon="script.module.oauth2client" version="1.4.7" />
+    <import addon="script.module.uritemplate" version="0.6" />
+    <import addon="script.module.yaml" version="3.11"/>
+    <import addon="script.module.googleapi" version="1.4.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<language></language>
+    <platform>all</platform>
+    <license>CerebroTV 2016</license>
+    <forum>CerebroTV 2016</forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.megatvupdater"
+    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.1" provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.httplib2" version="0.8.0" />
+    <import addon="script.module.oauth2client" version="1.4.7" />
+    <import addon="script.module.uritemplate" version="0.6" />
+    <import addon="script.module.yaml" version="3.11"/>
+    <import addon="script.module.googleapi" version="1.4.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+<language></language>
+    <platform>all</platform>
+    <license>CerebroTV 2016</license>
+    <forum>CerebroTV 2016</forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.addon.common"
+	     name="Common addon methods"
+	     version="2.0.1"
+	     provider-name="Eldorado (original: t0mm0)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.addon.signals"
+	name="Addon Signals"
+	version="0.0.1"
+	provider-name="Rick Phillips (ruuk)">
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Inter-addon signalling</summary>
+		<description lang="en">Provides signal/slot mechanism for inter-addon communication</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/ruuk/script.module.addon.signals</source>
+	</extension>
+</addon>
+
+<addon id="script.module.beautifulsoup"
+       name="BeautifulSoup"
+       version="3.2.1"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup4"
+       name="BeautifulSoup4"
+       version="4.5.3"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+             version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
+</addon>
+
+<addon id="script.module.f4mproxy"
+	     name="f4m proxy"
+	     version="1.0.16"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.49"
+     provider-name="natko1412">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>
+  </extension>
+</addon>
+
+<addon id="script.module.m3u8" name="m3u8" version="0.2.10" provider-name="globocom, Timewasted">
+	<requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.iso8601" version="0.1.11"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions</summary>
+		<description lang="en">Packed for XBMC from https://github.com/globocom/m3u8</description>
+		<language>en</language>
+		<platform>all</platform>
+		<license>MIT</license>
+		<forum></forum>
+		<website>https://github.com/globocom/m3u8</website>
+		<source>https://github.com/timewasted/script.module.m3u8</source>
+		<email>ryan@timewasted.me</email>
+	</extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="3.0.2"
+     provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.31" provider-name="Team NaN">
+        <requires>
+                <import addon="xbmc.python" version="2.1.0"/>
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.futures" version="2.2.0"/>
+                <import addon="script.module.requests"/>
+                <import addon="script.module.six"/>
+                <!--<import addon="script.module.urlresolver" version="3.0.0" optional="true"/>-->
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+        </requires>
+        <extension point="xbmc.python.module" library="lib"/>
+        <extension point="xbmc.python.pluginsource" library="lib/default.py">
+                <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+                <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+                <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+                </description>
+                <license>GPL v3</license>
+                <source>https://github.com/noobsandnerds/noobsandnerds/tree/master/script.module.nanscrapers</source>
+                <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
+                <website>http://noobsandnerds.com</website>
+        </extension>
+</addon>
+
+<addon id="script.module.python.koding.aio"
+   name="Python Koding AIO"
+   version="0.9.8.6"
+   provider-name="Total Revolution, noobsandnerds">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.2.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Python Koding All In One</summary>
+    <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development. Although developed at totalrevolution.tv this also contains unique features which hook into the noobsandnerds.com framework so a big thanks to the team and users who keep the portals updated.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum>http://noobsandnerds.com/support/showthread.php?tid=17614</forum>
+    <website>http://totalrevolution.tv</website>
+    <news>Added new Addon_Service funtion</news>
+    <source>https://github.com/totalrevolution/totalrevolution/tree/master/script.module.python.koding.aio</source>
+  </extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.12.4"
+       provider-name="kennethreitz, beenje">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python HTTP for Humans</summary>
+    <description>Packed for KODI from https://github.com/kennethreitz/requests</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/beenje/script.module.requests</source>
+    <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.module.streamhub" name="[COLOR ffff0000][B]StreamHub Scrapers[/B][/COLOR]" version="8.0" Eprovider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.module.urlresolver" />
+    <import addon="script.module.beautifulsoup4" />
+	<import addon="script.video.F4mProxy" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Dependency Addon for StreamHub</summary>
+    <description lang="en">Dependency Addon for StreamHub</description>
+	<disclaimer lang="en">Dependency Addon for StreamHub</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="4.0.06" provider-name="Eldorado, tknorris, jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <source>https://github.com/jsergio123/script.module.urlresolver</source>
+	</extension>
+</addon>
+
+<addon id="script.module.wargames"
+       name="[B][COLOR ghostwhite]CerebroTV Streamer[/COLOR][/B]"
+	   version="1.0.6"
+	   provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.requests" />
+	<import addon="script.module.urlresolver" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Dependency Addon for CTV</summary>
+    <description lang="en">Dependency Addon for CTV</description>
+	<disclaimer lang="en">Dependency Addon for CTV</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.xmltodict" name="xmltodict" version="0.9.0" provider-name="martinblech">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language></language>
+        <summary lang="en">Python helper module</summary>
+        <description lang="en">xmltodict is a Python module that makes working with XML feel like you are working with JSON, as in this "spec".[CR]</description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <website>https://github.com/martinblech/xmltodict</website>
+        <source>https://github.com/martinblech/xmltodict</source>
+        <forum></forum>
+    </extension>
+</addon>
+
+<addon id="script.moviesmegatvbox"
+  name="CerebroTV Movies Menu"
+  version="1.6"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtv4more"
+  name="CerebroTV 4More"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbapkinstaller"
+  name="CerebroTV APK Installer"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbapklauncher"
+  name="CerebroTV APK Launcher"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbb247"
+  name="CerebroTV 247"
+  version="1.6"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbbc1"
+  name="CerebroTV BBC1"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbbc2"
+  name="CerebroTV BBC2"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbts1"
+  name="CerebroTV BT Sports 1"
+  version="1.5"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbts2"
+  name="CerebroTV BT Sports 2"
+  version="1.6"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbbts3"
+  name="CerebroTV Sky Sports 3"
+  version="1.4"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbcctv"
+  name="CerebroTV CCTV"
+  version="1.4"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbcore"
+  name="MTVBCore"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <language></language>
+    <platform>all</platform>
+    <summary lang="en">Cache System</summary>
+    <description lang="en">Cache System</description>
+	<disclaimer>Cache System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbexit"
+  name="CerebroTV Exit/Reboot"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbfitness"
+  name="CerebroTV Fitness"
+  version="1.3"
+  provider-name="biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbgamelauncher"
+  name="CerebroTV Play Retro Games"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv1"
+  name="CerebroTV ITV1"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv2"
+  name="CerebroTV ITV2"
+  version="1.2"
+  provider-name="biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv3"
+  name="CerebroTV ITV3"
+  version="1.2"
+  provider-name="biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitv4"
+  name="CerebroTV ITV4"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbitvbe"
+  name="CerebroTV ITVBe"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbmusic"
+  name="CerebroTV Music"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbsettings"
+  name="CerebroTV Settings"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbsky1"
+  name="CerebroTV Sky1"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbsky2"
+  name="CerebroTV Sky2"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbskyatl"
+  name="CerebroTV Sky Atlantic"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbskyliv"
+  name="CerebroTV Sky Living"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbskymovies"
+  name="CerebroTV Sky Movies on Demand"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspaction"
+  name="CerebroTV Sky Sports Action"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbsparena"
+  name="CerebroTV Sky Sports Arena"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspcricket"
+  name="CerebroTV Sky Sports Cricket"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspf1"
+  name="CerebroTV Sky Sports 1"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspfootball"
+  name="CerebroTV Sky Sports Football"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspgolf"
+  name="CerebroTV Sky Sports Golf"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspmain"
+  name="CerebroTV Sky Sports Main"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspmix"
+  name="CerebroTV Sky Sports Mix"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspnews"
+  name="CerebroTV Sky Sports News"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbsports"
+  name="CerebroTV Sports Menu"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbspprem"
+  name="CerebroTV Sky Sports Prem"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbtools"
+  name="CerebroTV Tools"
+  version="1.8"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbukfox"
+  name="CerebroTV UK Fox"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbukgold"
+  name="CerebroTV UK Gold"
+  version="1.4"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbukhor"
+  name="CerebroTV UK Horror"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbukspike"
+  name="CerebroTV UK Spike"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbuksyfy"
+  name="CerebroTV UK SYFY"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbusatbs"
+  name="CerebroTV USA TBS"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbwizard"
+  name="CerebroTV Movie Search"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvbxxx"
+  name="CerebroTV XXX"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.mtvppv"
+  name="CerebroTV Appolo Streams"
+  version="1.3"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.exitkodi"
+  name="ExitKodi"
+  version="1.1"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Reboot Android</summary>
+    <description lang="en">Reboots your Android device.</description>
+	<disclaimer>Your device must already be rooted, and you will need to grant SU permissions to the script when prompted.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.exitkodi2"
+  name="Exit SPMC/Kodi"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Exit</summary>
+    <description lang="en">Exit</description>
+	<disclaimer>Exit</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvbox-refresh"
+  name="Cerebro TV Clean Installer"
+  version="1.5"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Cerebro TV Wait</summary>
+    <description lang="en">Cerebro TV Wait</description>
+	<disclaimer>Cerebro TV Wait.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvboxcheckversion"
+  name="CerebroTV Check My Version"
+  version="1.1"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Reboot Android</summary>
+    <description lang="en">Reboots your Android device.</description>
+	<disclaimer>Your device must already be rooted, and you will need to grant SU permissions to the script when prompted.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvhousekeeper"
+  name="CerebroTV House Keeper"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Wait</summary>
+    <description lang="en">CerebroTV Wait</description>
+	<disclaimer>CerebroTV Wait.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvhousekeeper2"
+  name="CerebroTV House Keeper"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Wait</summary>
+    <description lang="en">CerebroTV Wait</description>
+	<disclaimer>CerebroTV Wait.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.megatvhousekeeper3"
+  name="CerebroTV House Keeper"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Wait</summary>
+    <description lang="en">CerebroTV Wait</description>
+	<disclaimer>CerebroTV Wait.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.29" provider-name="Biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="be">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="ca">Guia de TV amb suport de XMLTV i flux de dades</summary>
+		<summary lang="da">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="de">FTV Guide erlaubt es Ihre Live TV Plugins mit einem TV Guide zu kombinieren</summary>
+		<summary lang="el">Οδηγός Τηλεόρασης με XMLTV και υποστήριξη ροών</summary>
+		<summary lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="en_US">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
+		<summary lang="fr">Guide TV avec support du XMLTV et du streaming</summary>
+		<summary lang="fr_CA">Guide télé avec prise en charge de XMLTV et de la lecture en transit</summary>
+		<summary lang="gl">Guía de TV con soporte XMLTV e transmisións</summary>
+		<summary lang="he">מדריך תכניות עם תמיכה ב-XMLTV והזרמה</summary>
+		<summary lang="hr">TV vodič sa XMLTV podrškom i podrškom streamanja</summary>
+		<summary lang="id">Panduan Siaran TV dengan dukungan XMLTV dan streaming</summary>
+		<summary lang="it">Guida TV con supporto XMLTV e streaming</summary>
+		<summary lang="ko">XMLTV와 스트리밍을 지원하는 TV Guide</summary>
+		<summary lang="nl">TVgids met XMLTV en streaming ondersteuning</summary>
+		<summary lang="pl">TV Guide obsługujący XMLTV oraz transmisję strumieniową</summary>
+		<summary lang="pt">Guia TV com suporte XMLTV e transmissões</summary>
+		<summary lang="pt_BR">Guia de TV com XMLTV e suporte para transmissão online</summary>
+		<summary lang="sk">TV Program s podporou XMLTV a streamovania</summary>
+		<summary lang="sv">TV-guide med XML-TV och strömningsstöd</summary>
+		<summary lang="zh">支持XMLTV和流的电视指南</summary>
+		<description lang="be">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="ca">Guia de TV amb suport de XMLTV i flux de dades</description>
+		<description lang="da">TV Guide med XMLTV og streaming support</description>
+		<description lang="de">FTV Guide erlaubt es Ihre Live TV Plugins mit einem TV Guide zu kombinieren</description>
+		<description lang="el">Οδηγός Τηλεόρασης με XMLTV και υποστήριξη ροών</description>
+		<description lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="en_US">TFTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="es">TV Guide con XMLTV y soporte para streaming</description>
+		<description lang="fr">Guide TV avec support du XMLTV et du streaming</description>
+		<description lang="fr_CA">Guide télé avec prise en charge de XMLTV et de la lecture en transit</description>
+		<description lang="gl">Guía de TV con soporte XMLTV e transmisións</description>
+		<description lang="he">מדריך תכניות עם תמיכה ב-XMLTV והזרמה</description>
+		<description lang="hr">TV vodič sa XMLTV podrškom i podrškom streamanja</description>
+		<description lang="id">Panduan Siaran TV dengan dukungan XMLTV dan streaming</description>
+		<description lang="it">Guida TV con supporto XMLTV e streaming</description>
+		<description lang="ko">XMLTV와 스트리밍을 지원하는 TV Guide</description>
+		<description lang="nl">TVgids met XMLTV en streaming ondersteuning</description>
+		<description lang="pl">TV Guide obsługujący XMLTV oraz transmisję strumieniową</description>
+		<description lang="pt">Guia TV com suporte XMLTV e transmissões</description>
+		<description lang="pt_BR">Guia de TV com XMLTV e suporte para transmissão online</description>
+		<description lang="sk">TV Program s podporou XMLTV a streamovania</description>
+		<description lang="sv">TV-guide med XML-TV och strömningsstöd</description>
+		<description lang="zh">支持XMLTV和流的电视指南</description>
+		<disclaimer lang="en">FTV Guide is based on the original TV Guide addon by twinther.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<forum>https://forums.tvaddons.ag/ftv-guide-for-kodi</forum>
+		<source>https://github.com/bluezed/FTV-Guide-Repo</source>
+        <website></website>
+		<email></email>
+		<news>v2.0.25 Added workaround for DST issue on Android... hopefully</news>
+		<assets>
+          <icon>resources/icon.png</icon>
+          <fanart>resources/fanart.jpg</fanart>
+          <screenshot>resources/screenshot001.png</screenshot>
+          <screenshot>resources/screenshot002.png</screenshot>
+          <screenshot>resources/screenshot003.png</screenshot>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.tvguide.cerebrotv.sports" name="Cerebro TV Guide SPORTS" version="2.0.31" provider-name="Biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="be">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="ca">Guia de TV amb suport de XMLTV i flux de dades</summary>
+		<summary lang="da">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="de">FTV Guide erlaubt es Ihre Live TV Plugins mit einem TV Guide zu kombinieren</summary>
+		<summary lang="el">Οδηγός Τηλεόρασης με XMLTV και υποστήριξη ροών</summary>
+		<summary lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="en_US">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
+		<summary lang="fr">Guide TV avec support du XMLTV et du streaming</summary>
+		<summary lang="fr_CA">Guide télé avec prise en charge de XMLTV et de la lecture en transit</summary>
+		<summary lang="gl">Guía de TV con soporte XMLTV e transmisións</summary>
+		<summary lang="he">מדריך תכניות עם תמיכה ב-XMLTV והזרמה</summary>
+		<summary lang="hr">TV vodič sa XMLTV podrškom i podrškom streamanja</summary>
+		<summary lang="id">Panduan Siaran TV dengan dukungan XMLTV dan streaming</summary>
+		<summary lang="it">Guida TV con supporto XMLTV e streaming</summary>
+		<summary lang="ko">XMLTV와 스트리밍을 지원하는 TV Guide</summary>
+		<summary lang="nl">TVgids met XMLTV en streaming ondersteuning</summary>
+		<summary lang="pl">TV Guide obsługujący XMLTV oraz transmisję strumieniową</summary>
+		<summary lang="pt">Guia TV com suporte XMLTV e transmissões</summary>
+		<summary lang="pt_BR">Guia de TV com XMLTV e suporte para transmissão online</summary>
+		<summary lang="sk">TV Program s podporou XMLTV a streamovania</summary>
+		<summary lang="sv">TV-guide med XML-TV och strömningsstöd</summary>
+		<summary lang="zh">支持XMLTV和流的电视指南</summary>
+		<description lang="be">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="ca">Guia de TV amb suport de XMLTV i flux de dades</description>
+		<description lang="da">TV Guide med XMLTV og streaming support</description>
+		<description lang="de">FTV Guide erlaubt es Ihre Live TV Plugins mit einem TV Guide zu kombinieren</description>
+		<description lang="el">Οδηγός Τηλεόρασης με XMLTV και υποστήριξη ροών</description>
+		<description lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="en_US">TFTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="es">TV Guide con XMLTV y soporte para streaming</description>
+		<description lang="fr">Guide TV avec support du XMLTV et du streaming</description>
+		<description lang="fr_CA">Guide télé avec prise en charge de XMLTV et de la lecture en transit</description>
+		<description lang="gl">Guía de TV con soporte XMLTV e transmisións</description>
+		<description lang="he">מדריך תכניות עם תמיכה ב-XMLTV והזרמה</description>
+		<description lang="hr">TV vodič sa XMLTV podrškom i podrškom streamanja</description>
+		<description lang="id">Panduan Siaran TV dengan dukungan XMLTV dan streaming</description>
+		<description lang="it">Guida TV con supporto XMLTV e streaming</description>
+		<description lang="ko">XMLTV와 스트리밍을 지원하는 TV Guide</description>
+		<description lang="nl">TVgids met XMLTV en streaming ondersteuning</description>
+		<description lang="pl">TV Guide obsługujący XMLTV oraz transmisję strumieniową</description>
+		<description lang="pt">Guia TV com suporte XMLTV e transmissões</description>
+		<description lang="pt_BR">Guia de TV com XMLTV e suporte para transmissão online</description>
+		<description lang="sk">TV Program s podporou XMLTV a streamovania</description>
+		<description lang="sv">TV-guide med XML-TV och strömningsstöd</description>
+		<description lang="zh">支持XMLTV和流的电视指南</description>
+		<disclaimer lang="en">FTV Guide is based on the original TV Guide addon by twinther.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<forum>https://forums.tvaddons.ag/ftv-guide-for-kodi</forum>
+		<source>https://github.com/bluezed/FTV-Guide-Repo</source>
+        <website></website>
+		<email></email>
+		<news>v2.0.25 Added workaround for DST issue on Android... hopefully</news>
+		<assets>
+          <icon>resources/icon.png</icon>
+          <fanart>resources/fanart.jpg</fanart>
+          <screenshot>resources/screenshot001.png</screenshot>
+          <screenshot>resources/screenshot002.png</screenshot>
+          <screenshot>resources/screenshot003.png</screenshot>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.38" provider-name="Biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.cachesystem" />
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="be">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="ca">Guia de TV amb suport de XMLTV i flux de dades</summary>
+		<summary lang="da">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="de">FTV Guide erlaubt es Ihre Live TV Plugins mit einem TV Guide zu kombinieren</summary>
+		<summary lang="el">Οδηγός Τηλεόρασης με XMLTV και υποστήριξη ροών</summary>
+		<summary lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="en_US">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
+		<summary lang="fr">Guide TV avec support du XMLTV et du streaming</summary>
+		<summary lang="fr_CA">Guide télé avec prise en charge de XMLTV et de la lecture en transit</summary>
+		<summary lang="gl">Guía de TV con soporte XMLTV e transmisións</summary>
+		<summary lang="he">מדריך תכניות עם תמיכה ב-XMLTV והזרמה</summary>
+		<summary lang="hr">TV vodič sa XMLTV podrškom i podrškom streamanja</summary>
+		<summary lang="id">Panduan Siaran TV dengan dukungan XMLTV dan streaming</summary>
+		<summary lang="it">Guida TV con supporto XMLTV e streaming</summary>
+		<summary lang="ko">XMLTV와 스트리밍을 지원하는 TV Guide</summary>
+		<summary lang="nl">TVgids met XMLTV en streaming ondersteuning</summary>
+		<summary lang="pl">TV Guide obsługujący XMLTV oraz transmisję strumieniową</summary>
+		<summary lang="pt">Guia TV com suporte XMLTV e transmissões</summary>
+		<summary lang="pt_BR">Guia de TV com XMLTV e suporte para transmissão online</summary>
+		<summary lang="sk">TV Program s podporou XMLTV a streamovania</summary>
+		<summary lang="sv">TV-guide med XML-TV och strömningsstöd</summary>
+		<summary lang="zh">支持XMLTV和流的电视指南</summary>
+		<description lang="be">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="ca">Guia de TV amb suport de XMLTV i flux de dades</description>
+		<description lang="da">TV Guide med XMLTV og streaming support</description>
+		<description lang="de">FTV Guide erlaubt es Ihre Live TV Plugins mit einem TV Guide zu kombinieren</description>
+		<description lang="el">Οδηγός Τηλεόρασης με XMLTV και υποστήριξη ροών</description>
+		<description lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="en_US">TFTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="es">TV Guide con XMLTV y soporte para streaming</description>
+		<description lang="fr">Guide TV avec support du XMLTV et du streaming</description>
+		<description lang="fr_CA">Guide télé avec prise en charge de XMLTV et de la lecture en transit</description>
+		<description lang="gl">Guía de TV con soporte XMLTV e transmisións</description>
+		<description lang="he">מדריך תכניות עם תמיכה ב-XMLTV והזרמה</description>
+		<description lang="hr">TV vodič sa XMLTV podrškom i podrškom streamanja</description>
+		<description lang="id">Panduan Siaran TV dengan dukungan XMLTV dan streaming</description>
+		<description lang="it">Guida TV con supporto XMLTV e streaming</description>
+		<description lang="ko">XMLTV와 스트리밍을 지원하는 TV Guide</description>
+		<description lang="nl">TVgids met XMLTV en streaming ondersteuning</description>
+		<description lang="pl">TV Guide obsługujący XMLTV oraz transmisję strumieniową</description>
+		<description lang="pt">Guia TV com suporte XMLTV e transmissões</description>
+		<description lang="pt_BR">Guia de TV com XMLTV e suporte para transmissão online</description>
+		<description lang="sk">TV Program s podporou XMLTV a streamovania</description>
+		<description lang="sv">TV-guide med XML-TV och strömningsstöd</description>
+		<description lang="zh">支持XMLTV和流的电视指南</description>
+		<disclaimer lang="en">FTV Guide is based on the original TV Guide addon by twinther.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<forum>https://forums.tvaddons.ag/ftv-guide-for-kodi</forum>
+		<source>https://github.com/bluezed/FTV-Guide-Repo</source>
+        <website></website>
+		<email></email>
+		<news>v2.0.25 Added workaround for DST issue on Android... hopefully</news>
+		<assets>
+          <icon>resources/icon.png</icon>
+          <fanart>resources/fanart.jpg</fanart>
+          <screenshot>resources/screenshot001.png</screenshot>
+          <screenshot>resources/screenshot002.png</screenshot>
+          <screenshot>resources/screenshot003.png</screenshot>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="2.0.36" provider-name="Biglad-FREE VERSION">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Cerebro TV Guide UK allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<disclaimer lang="en">Cerebro TV Guide UK is based on the original TV Guide addon FTV Guide.</disclaimer>
+		<assets>
+          <icon>resources/icon.png</icon>
+          <fanart>resources/fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.tvguidemegatvbox"
+  name="CerebroTV TV Live TV"
+  version="1.5"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.tvshowsmegatvbox"
+  name="CerebroTV TV Shows Menu"
+  version="1.2"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
+</addon>
+
+<addon 	id="script.wargames.artwork"
+		version="1.5.8"
+		name="CerebroTV Artwork"
+		provider-name="Biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the WarGames Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon 	id="script.wargames.metadata"
+		version="1.5.2"
+		name="WarGames Metadata"
+		provider-name="ANONYMOUS">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the WarGames Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="skin.titan" version="3.7.56" name="Titan" provider-name="marcelveldt,mgonzales">
+	<requires>
+		<import version="5.12.0" addon="xbmc.gui"/>
+		<import addon="script.skinshortcuts" version="0.6.5"/>
+		<import addon="script.skin.helper.service" version="1.0.0"/>
+        <import addon="script.skin.helper.widgets" version="1.0.0"/>
+        <import addon="script.skin.helper.backgrounds" version="1.0.0"/>
+        <import addon="resource.uisounds.titan.modern" version="1.0.0"/>
+        <import addon="resource.images.skinbackgrounds.titanium" version="1.0.0"/>
+        <import addon="resource.images.skinicons.wide" version="1.0.0"/>
+        <import addon="resource.images.backgroundoverlays.basic" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="1080i" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">MediaPortal's Titan Skin portiert für Kodi mit jeder Menge Funktionen.</summary>
+		<summary lang="en">MediaPortal's Titan skin ported to Kodi enriched with lot's of features.</summary>
+		<summary lang="nl">De Titanskin van MediaPortal is geconverteerd naar Kodi en verrijkt met talloze functionaliteiten</summary>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.kodi.tv/forumdisplay.php?fid=212</forum>
+		<website>http://forum.kodi.tv/forumdisplay.php?fid=212</website>
+		<email></email>
+		<source></source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>_screenshots/screenshot000.jpg</screenshot>
+            <screenshot>_screenshots/screenshot001.jpg</screenshot>
+            <screenshot>_screenshots/screenshot002.jpg</screenshot>
+            <screenshot>_screenshots/screenshot003.jpg</screenshot>
+            <screenshot>_screenshots/screenshot004.jpg</screenshot>
+            <screenshot>_screenshots/screenshot005.jpg</screenshot>
+            <screenshot>_screenshots/screenshot006.jpg</screenshot>
+            <screenshot>_screenshots/screenshot007.jpg</screenshot>
+            <screenshot>_screenshots/screenshot008.jpg</screenshot>
+            <screenshot>_screenshots/screenshot009.jpg</screenshot>
+        </assets>
+        <news>
+            Follow the forum thread about the latest news for the skin.
+            Also have a look at the Trello board to be informed about the skin development:
+            https://trello.com/b/VPlkyvMp/titan-skin
+        </news>
+	</extension>
+</addon>
+</addons>
