@@ -208,7 +208,8 @@ def _pbhook(numblocks, blocksize, filesize, dp, start_time):
 def noconnection():
     dialog = xbmcgui.Dialog()
     dialog.ok("[COLOR=red][B] ## CONNECTION ERROR ##[/COLOR][/B]", "Unable to download needed data....", "Will Try Again.","Press OK or Back to Continue")
-    xbmc.sleep(1000)
+    #xbmc.sleep(1000)
+    exit()
 
 
 
@@ -233,8 +234,10 @@ update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR 
 if update:
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
     except: pass
+    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
     try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
     except: pass
+    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
     #xbmc.executebuiltin('PlayMedia("plugin://plugin.video.streamhub")')
     #xbmc.sleep(1000)
     download(LOCATION,file2) 
