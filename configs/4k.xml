@@ -9,3 +9,10 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>Finding Nemo 4K</title>
+<link>plugin://plugin.video.playlistLoader/?logos=&move=0&mode=32&index=7&url=https%3A%2F%2Fonedrive.live.com%2Fdownload%3Fresid%3DE7D720E3559C4E44%21109%26authkey%3D%21ADBPh7SmoHb-uGM%26ithint%3Dvideo%252cmp4&iconimage=&cache=0&name=Finding+Nemo+4K+%28CerebroTV+4K%29</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
