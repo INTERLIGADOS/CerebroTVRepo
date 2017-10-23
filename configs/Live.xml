@@ -80,22 +80,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Swift Streams[/COLOR]</title>
-<link>plugin://script.module.streamhublive/?description&iconimage=http%3a%2f%2fwww.swiftstreamz.com%2fimages%2fmbl-app.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dSwift%20Streamz%5b%2fCOLOR%5d%5b%2fB%5d&url=swiftstreams</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Snappy Streams[/COLOR]</title>
-<link>plugin://script.module.streamhublive/?description&iconimage=https%3a%2f%2fwww.apkdld.com%2fwp-content%2fuploads%2f2017%2f06%2fsnappy-streamz-apk-300x293.jpg&mode=4&name=%5bCOLOR%20white%5d%5bB%5dSnappy%20Streamz%5b%2fCOLOR%5d%5b%2fB%5d&url=snappystreams</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]eDoctor Streams[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=https%3a%2f%2flh3.googleusercontent.com%2fqydRpyUiySg1MuswXdbQE88PBfyPH8uJYhONBL3UO1Ij4yEHtftHFK3pKXHXppFUCmk%3dw300&mode=4&name=%5bCOLOR%20white%5d%5bB%5deDoctor%20IPTV%5b%2fCOLOR%5d%5b%2fB%5d&url=edoctor</link>
+<title>[COLOR pink]Swift Streams[/COLOR] (UK)</title>
+<link>plugin://script.module.streamhublive/?description&iconimage=http%3a%2f%2fswiftstreamz.com%2fSwiftStream%2fimages%2fthumbs22488_UK.jpg&mode=4&name=%5bB%5d%5bCOLOR%20white%5dUK%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fswiftstreamz.com%2fSnappyStreamz%2fapi.php%3fcat_id%3d42</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
