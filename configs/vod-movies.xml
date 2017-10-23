@@ -31,6 +31,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]4K Section[/COLOR] (Bucky)</title>
+<link>plugin://plugin.video.Bucky/?fanart=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fg2kzpozf21nlwn3%2faddonfanart.jpg%3fdl%3d0&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20gold%5dBUCKYS%204K%20MOVIES%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fqgqyru8rcyn0i20%2f4k.txt%3fdl%3d0</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Movies[/COLOR] (StreamHub)</title>
 <link>plugin://plugin.video.streamhub/?action=movieNavigator</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
