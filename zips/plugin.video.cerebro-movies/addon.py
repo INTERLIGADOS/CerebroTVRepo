@@ -23,7 +23,8 @@ moviename=Search('[B][COLOR=white]Enter Movie Name[/COLOR][/B]')
 dp = xbmcgui.DialogProgress()
 dp.create("[COLOR tomato]CerebroTV[/COLOR]","If asked to pair please do so.","We are Searching...........")
 
-request = urllib2.Request('http://vodlocker.to/embed?t=' + moviename + '&chromecast=0&trailer=0&referrer=link&server=alternate')
+#request = urllib2.Request('http://vodlocker.to/embed?t=' + moviename + '&chromecast=0&trailer=0&referrer=link&server=alternate')
+request = urllib2.Request("http://vodlocker.to/embed?t=" + moviename + "&chromecast=0&trailer=0&referrer=link&server=alternate")
 
 
 request.add_header('User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.882')
@@ -37,12 +38,12 @@ response = urllib2.urlopen(request).read()
 
 getmurl = response
 
-try:
-	getit = re.compile('serverActive"><a href="(.+?)"').findall(getmurl)[0]
-except:
-	getit = re.compile("hostname.+?<a href='(.+?)'").findall(getmurl)[0]
+#try:
+#	getit = re.compile('serverActive"><a href="(.+?)"').findall(getmurl)[0]
+#except:
+#	getit = re.compile("hostname.+?<a href='(.+?)'").findall(getmurl)[0]
 
-
+getit = re.compile("hostname.+?<a href='(.+?)'").findall(getmurl)[0]
 
 if 'https://docs.google.com' in getit:
     getit = (getit).replace('https://docs.google.com','https://drive.google.com').replace('preview','view')

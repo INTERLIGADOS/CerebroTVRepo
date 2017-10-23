@@ -250,8 +250,8 @@
 </addon>
 
 <addon id="plugin.video.cerebro-movies"
-  name="[COLOR=gold] .CerebroTV Movie Search[/COLOR] (WiP)"
-  version="1.5"
+  name="[COLOR=gold] .CerebroTV Movie Search[/COLOR] (STILL IN BETA)"
+  version="1.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
