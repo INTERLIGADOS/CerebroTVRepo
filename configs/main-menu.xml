@@ -189,5 +189,20 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<dir>
+<title>[COLOR red]°• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° [/COLOR]</title>
+</dir>
+
+<dir>
+<title>[COLOR red]°• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° [/COLOR]</title>
+</dir>
+
+<dir>
+<name>TESTING ONLY</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/test-section.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
 
 
