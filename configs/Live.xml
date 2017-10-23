@@ -94,6 +94,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Swift Streams[/COLOR] (USA)</title>
+<link>plugin://script.module.streamhublive/?description&iconimage=http%3a%2f%2fswiftstreamz.com%2fSwiftStream%2fimages%2fthumbs74909_USA.jpg&mode=4&name=%5bB%5d%5bCOLOR%20white%5dUSA%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fswiftstreamz.com%2fSnappyStreamz%2fapi.php%3fcat_id%3d41</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]WeeTV Streams[/COLOR]</title>
 <link>plugin://plugin.video.weetv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
