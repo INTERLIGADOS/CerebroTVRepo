@@ -1682,7 +1682,7 @@ Removed: Nudeflix</news>
 </addon>
 
 <addon id="script.megatvupdater"
-    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.1" provider-name="Biglad">
+    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.2" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />
@@ -2218,7 +2218,7 @@ level.</description>
 
 <addon id="script.mtvbapkinstaller"
   name="CerebroTV APK Installer"
-  version="1.5"
+  version="1.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

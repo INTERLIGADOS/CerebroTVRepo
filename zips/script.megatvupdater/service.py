@@ -92,12 +92,12 @@ settings = context.get_settings()
 
 
 appversion = 0
-if version >= (17, 4):
+if version >= (17, 5):
     appversion = "KODI"
 elif version >= (16, 2) and application == 'FTMC':
     appversion = "KODI"
 elif version >= (16, 7) and application == 'SPMC':
-    appversion = "SPMC"
+    appversion = "SPMC-OUTDATED"
 elif version >= (16, 0) and application == 'SPMC':
     appversion = "SPMC-OUTDATED"
 else:
