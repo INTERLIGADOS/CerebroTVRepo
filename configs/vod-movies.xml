@@ -88,13 +88,13 @@
 
 <plugin>
 <title>[COLOR pink]1channel Movies[/COLOR]</title>
-<link>plugin://plugin.video.1channel</link>
+<link>plugin://plugin.video.1channel/?mode=BrowseListMenu&section=movie</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[COLOR pink]S.A.L.T.S[/COLOR] </title>
+<title>[COLOR pink]S.A.L.T.S Movies[/COLOR] </title>
 <link>plugin://plugin.video.salts/?mode=browse&section=Movies</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
