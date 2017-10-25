@@ -3,6 +3,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]Samurai Jack 24/7[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSamurai%20Jack%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fb5bf27b2555de44e3df2230080db5a1d.m3u8</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Ren and Stimpy[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dRen%20%26%20Stimpy%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f3a2d7564baee79182ebc7b65084aabd1.m3u8</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
