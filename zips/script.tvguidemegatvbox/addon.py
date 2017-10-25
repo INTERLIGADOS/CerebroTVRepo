@@ -35,7 +35,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-6]
+        func = funcs[call-7]
         return func()
     else:
         func = funcs[call]
