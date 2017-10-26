@@ -110,7 +110,7 @@ def menuoptions():
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] APP Installer[/COLOR][/B]', [
     '[B][COLOR=green]      Download[/COLOR] SPMC 16.7.1[/B] For Android 5+',
-    '[B][COLOR=green]      Download[/COLOR] Kodi 17.5[/B] For Android 5+',
+    '[B][COLOR=green]      Download[/COLOR] Kodi 17.5.1[/B] For Android 5+',
     '[B][COLOR=green]      Download[/COLOR] FTMC 16.2[/B] For Android 4.x', 
     '[B][COLOR=green]      Download[/COLOR] CerebroTV Launcher[/B] For All Android', 
     '[B][COLOR=green]      Download[/COLOR] Box Rebooter[/B] For All Android (Needs Root/SU)', 
