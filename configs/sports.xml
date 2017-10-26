@@ -31,6 +31,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]MMA/UFC/ETC.[/COLOR]</title>
+<link>plugin://plugin.video.ufc-finest</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]SportsDevil Live Sports[/COLOR]</title>
 <link>plugin://plugin.video.SportsDevil/?item=title%3dLive%2bSports%26url%3dlivesports.cfg%26definedIn%3dmainMenu.cfg%26director%3dSportsDevil%26genre%3dLive%2bSports%26type%3drss%26icon%3dC%253A%255CUsers%255Cbigla%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Clivesports.png&mode=1</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
