@@ -105,7 +105,8 @@ def menuoptions():
         function18,
         function19,
         function20,
-        function21
+        function21,
+        function22
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] APP Installer[/COLOR][/B]', [
@@ -129,7 +130,8 @@ def menuoptions():
     '[B][COLOR=green]      Download[/COLOR] SENS Emulator[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] YouTube App[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] GooglePlay Update[/B]  - ([I]Android [/I])',
-    '[B][COLOR=green]      Download[/COLOR] Connection Speed Tester[/B]  - ([I]Android [/I])'])
+    '[B][COLOR=green]      Download[/COLOR] Connection Speed Tester[/B]  - ([I]Android [/I])',
+    '[B][COLOR=green]      Download[/COLOR] M.A.M.E[/B] For All Android (Retro Game Player) (Version 2)'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -138,7 +140,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-21]
+        func = funcs[call-22]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -312,6 +314,13 @@ def function20():
     
 def function21():
     DownloaderClass("http://mtvb.co.uk/apks/speedtest.exe",file)
+    xbmc.sleep(1000)
+    xbmc.executebuiltin('StartAndroidActivity("com.droidlogic.appinstall")')
+    xbmc.executebuiltin('StartAndroidActivity("com.gsoft.appinstall")')
+    xbmc.executebuiltin('StartAndroidActivity("com.estrongs.android.pop")') 
+    
+def function22():
+    DownloaderClass("http://mtvb.co.uk/apks/MAME2.exe",file)
     xbmc.sleep(1000)
     xbmc.executebuiltin('StartAndroidActivity("com.droidlogic.appinstall")')
     xbmc.executebuiltin('StartAndroidActivity("com.gsoft.appinstall")')
