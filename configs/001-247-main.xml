@@ -1,3 +1,27 @@
+<dir>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 On Demand[/COLOR][/B]</title>
+</dir>
+
+<plugin>
+<title>[COLOR green]Pair Device For More HD Conent[/COLOR] (Do this once every 4 hours)</title>
+<link>plugin://script.cerebro.pairwith.laucnher</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<item>
+<title>American Dad</title>
+<meta>
+<content>tvtuner</content>
+<imdb>tt0397306</imdb>
+<tvdb>73141</tvdb>
+<tvshowtitle>American Dad</tvshowtitle>
+<year>2005</year>
+</meta>
+<link>http://opentuner.is/american-dad-2005/</link>
+<thumbnail>https://fanart.tv/fanart/tv/73141/clearart/A_73141%20(1).png</thumbnail>
+</item>
+
 <item>
 <title>2 Broke Girls</title>
 <meta>
@@ -48,19 +72,6 @@
 </meta>
 <link>http://opentuner.is/adventure-time-with-finn-jake-2010/</link>
 <thumbnail>https://fanart.tv/fanart/tv/152831/clearart/adventure-time-with-finn-and-jake-4dc5ab6659929.png</thumbnail>
-</item>
-
-<item>
-<title>American Dad</title>
-<meta>
-<content>tvtuner</content>
-<imdb>tt0397306</imdb>
-<tvdb>73141</tvdb>
-<tvshowtitle>American Dad</tvshowtitle>
-<year>2005</year>
-</meta>
-<link>http://opentuner.is/american-dad-2005/</link>
-<thumbnail>https://fanart.tv/fanart/tv/73141/clearart/A_73141%20(1).png</thumbnail>
 </item>
 
 <item>
