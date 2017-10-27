@@ -1,0 +1,88 @@
+
+<plugin>
+<title>[COLOR ghostwhite]Movies[/COLOR]</title>
+<link>plugin://plugin.video.wargames/?action=movieNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/movies.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/movies.png</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]TV Shows[/COLOR]</title>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tvshows.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tvshows.png</fanart>
+<link>plugin://plugin.video.wargames/?action=tvNavigator</link>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Search[/COLOR]</title>
+<link>plugin://plugin.video.wargames/?action=searchNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/search.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/search.png</fanart>
+</plugin>
+
+<dir>
+<name>[COLOR ghostwhite]My Trakt[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/traktmenu.xml</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/trakt.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/trakt.png</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite]Kids[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-kidsdirectory.xml</link>
+<thumbnail>https://d2x3bkdslnxkuj.cloudfront.net/1220132_300.jpg</thumbnail>
+<fanart>https://superrepo.org/static/images/fanart/original/plugin.video.kmER.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite]Colt[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-colt-main.xml</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>
+</dir>
+
+<plugin>
+<name>[COLOR ghostwhite]Docs[/COLOR]</name>
+<link>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=35&name=DOCS&url=http%3a%2f%2fdocumentaryheaven.com%2fwatch-online%2f</link>
+<thumbnail>https://i1.ytimg.com/sh/XAeydoAo2jA/showposter.jpg?v=526e50e1</thumbnail>
+<fanart>http://tiledwallpaper.com/wallpapers/2013/6/107840372651b3909f05aa44.43089223.jpg</fanart>
+</plugin>
+
+
+
+<dir>
+<name>[COLOR ghostwhite]24-7[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-247-main.xml</link>
+<thumbnail>http://thyblackman.com/wp-content/uploads/2011/12/24-7.jpg</thumbnail>
+<fanart>http://orig04.deviantart.net/11b9/f/2009/055/b/b/24_7_by_sokka06.jpg</fanart>
+</dir>
+
+<plugin>
+<title>[COLOR ghostwhite]Giggity[/COLOR]</title>
+<link>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=99&name=%5bCOLOR%20orange%5dG%5b%2fCOLOR%5d%5bCOLOR%20white%5denre%27s%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.xvideos.com%2fa</link>
+<thumbnail>https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/16711950_412198069117261_3303557260695062617_n.jpg?oh=b8f8a991d42f3f5dbae65e111ce2b105&oe=59082D11</thumbnail>
+<fanart>http://i.imgur.com/RmkUk.png</fanart>
+</plugin>
+
+
+
+<plugin>
+<title>[COLOR ghostwhite]Tools[/COLOR]</title>
+<link>plugin://plugin.video.wargames/?action=toolNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tools.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tools.png</fanart>
+</plugin>
+
+
+
+
+
+
+
+
+
+
+
+

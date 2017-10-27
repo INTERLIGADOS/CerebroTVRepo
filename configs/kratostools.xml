@@ -1,0 +1,20 @@
+<plugin>
+<title>[COLOR ghostwhite][B]Settings[/COLOR][/B]</title>
+<link>plugin://plugin.video.kratos/?action=openSettings</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tools.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/userlists.png</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite][B]Authorize Trakt[/COLOR][/B]</title>
+<link>plugin://plugin.video.kraots/?action=authTrakt</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/trakt.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mymovies.png</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite][B]Clear Sources[/COLOR][/B]</title>
+<link>plugin://plugin.video.kratos/?action=clearSources</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mytvshows.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tools.png</fanart>
+</plugin>

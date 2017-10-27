@@ -1,0 +1,48 @@
+<plugin>
+<title>[COLOR ghostwhite][B]Crime Films[/COLOR][/B]</title>
+<link>
+plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=19&name=%5bB%5d%5bCOLOR%20white%5dafdah%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fafdah.org%2frecent_movies
+</link>
+<thumbnail>http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/Crime-icon.png</thumbnail>
+</plugin>
+
+<plugin>
+<name>[COLOR ghostwhite][B]Kids Films[/COLOR][/B]</name>
+<link>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=19&name=KIDS%20MOVIES&url=http%3a%2f%2fafdah.org%2ffamily_movies</link>
+<thumbnail>http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/Animated-icon.png</thumbnail>
+</plugin>
+
+<plugin>
+<name>[COLOR ghostwhite][B]Cartoons[/COLOR][/B]</name>
+<link>plugin://script.module.wargames?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md123movies%5cicon.png&mode=16&name=%5bB%5d%5bCOLOR%20white%5dtoons%5b%2fCOLOR%5d%5b%2fB%5d&url=https://raw.githubusercontent.com/sClarkeIsBack/StreamHub/master/Links/Kids/kidscorner.xml</link>
+<thumbnail>mkodi.co.uk/streamhub/icons/2/kids.png</thumbnail>
+</plugin>
+
+<plugin>
+<name>[COLOR ghostwhite][B]Romance Films[B][/COLOR][/B]</name>
+<link>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=19&name=ROMANCE%20MOVIES&url=http%3a%2f%2fafdah.org%2fromance_movies</link>
+<thumbnail>http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/Romantic-icon.png</thumbnail>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite][B]Sports Films[/COLOR][/B]</title>
+<link>
+plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=19&name=SPORT%20MOVIES&url=http%3a%2f%2fafdah.org%2fsport_movies
+</link>
+<thumbnail>http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/Sports-icon.png</thumbnail>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite][B]War Films[/COLOR][/B]</title>
+<link>
+plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=19&name=WAR%20MOVIES&url=http%3a%2f%2fafdah.org%2fwar_movies
+</link>
+<thumbnail>http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/War-icon.png</thumbnail>
+</plugin>
+
+<plugin>
+<name>[COLOR ghostwhite][B]DOCUMENTARIES[/COLOR][/B]</name>
+<link>plugin://script.module.wargames/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.wargames%5cicon.png&mode=35&name=DOCS&url=http%3a%2f%2fdocumentaryheaven.com%2fwatch-online%2f</link>
+<thumbnail>http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/Documentaries-icon.png</thumbnail>
+</plugin>
+

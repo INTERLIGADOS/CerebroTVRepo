@@ -1,0 +1,140 @@
+<addons>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon        id="plugin.program.anonymouswizard" 
+              name="[COLOR ghostwhite][B]ANONYMOUS WIZARD[/COLOR][/B]" 
+              version="1.5.2" 
+              provider-name="[COLOR ghostwhite][B]ANONYMOUS[/COLOR][/B]">
+  <requires>
+    <import   addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension  point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension  point="xbmc.service" library="startup.py" start="startup" />
+  <extension  point="xbmc.addon.metadata">
+    <summary  lang="en">[COLOR ghostwhite][B]ANONYMOUS WIZARD[/COLOR][/B]</summary>
+    <description lang="en">This Anonymous Wizard allows you to get access to the latest Anonymous Custom Builds and Addons. Contact us on Facebook at: https://www.facebook.com/groups/anonymouskodi/</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+
+<addon 	id="plugin.video.wargames" 
+		name="[COLOR ghostwhite][B]WarGames[/B][/COLOR]" 
+		version="14.0.0" 
+		provider-name="[COLOR ghostwhite][B]KISAKUL[/B][/COLOR]">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="script.video.F4mProxy" version="2.2.3"/>
+        <import addon="script.wargames.artwork" version="1.0.0"/>
+        <import addon="script.wargames.metadata" version="1.0.0"/>
+        <import addon="script.module.wargames" versio="1.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Is this real or is it a game?</summary>
+		<description lang="en">All Content feautured in this Addon can be found freely on the World Wide Web.  This add-on is open source.  Use it as you like.  Learn from it.  Make your own.  Share it. PEACE OUT.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.anonymous"
+       name="Anonymous Stolen Streams"
+       version="14.0.1"
+       provider-name="Modified by Anonymous/ Origional Author Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+   <import addon="repository.anonymousgroup" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Anonymous Without Shame Gives You Free TV links</summary>
+    <description>
+    Streams we have JACKED, these internet links are from other addons
+    and other sources found pubically on the internet.
+    Thank you to who we JACKED them from... Much Love! 
+    We don not HOST any content, we only provied the URLS that were 
+    Attained through google and other internet sources pubically searchable.
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon 	id="script.wargames.metadata" 
+		version="1.5.2" 
+		name="WarGames Metadata" 
+		provider-name="ANONYMOUS">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the WarGames Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon 	id="script.wargames.artwork" 
+		version="1.5.3" 
+		name="WarGames Artwork" 
+		provider-name="ANONYMOUS">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the WarGames Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.wargames" 
+       name="[B][COLOR ghostwhite]Wargames Streamer[/COLOR][/B]" 
+	   version="1.0.3" 
+	   provider-name="[B][COLOR ghostwhite]Wargames Streamer[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.requests" />
+	<import addon="script.module.urlresolver" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Dependency Addon for WarGames</summary>
+    <description lang="en">Dependency Addon for WarGames</description>
+	<disclaimer lang="en">Dependency Addon for WarGames</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+
+</addons>

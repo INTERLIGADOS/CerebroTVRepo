@@ -1,0 +1,20 @@
+<plugin>
+<title>[COLOR ghostwhite][B]My Lists (Trakt)[/COLOR][/B]</title>
+<link>plugin://plugin.video.kratos/?action=tvUserlists</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/userlists.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite][B]My Movies (Trakt)[/COLOR][/B]</title>
+<link>plugin://plugin.video.kratos/?action=mymovieNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mymovies.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite][B]My TV Shows (Trakt)[/COLOR][/B]</title>
+<link>plugin://plugin.video.kratos/?action=mytvNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mytvshows.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>

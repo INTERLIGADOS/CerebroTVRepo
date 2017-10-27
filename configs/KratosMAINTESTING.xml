@@ -1,0 +1,77 @@
+<plugin>
+<title>[COLOR ghostwhite]Search[/COLOR]</title>
+<link>plugin://plugin.video.kratos/?action=searchNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/search.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Movies[/COLOR]</title>
+<link>plugin://plugin.video.kratos/?action=movieNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/movies.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]TV Shows[/COLOR]</title>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tvshows.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+<link>plugin://plugin.video.kratos/?action=tvNavigator</link>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]My TV Show Lists (Trakt)[/COLOR]</title>
+<link>plugin://plugin.video.kratos/?action=tvUserlists</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/userlists.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
+<dir>
+<name>[COLOR ghostwhite]Kids TV & Movies[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-kidsdirectory.xml</link>
+<thumbnail>https://d2x3bkdslnxkuj.cloudfront.net/1220132_300.jpg</thumbnail>
+<fanart>https://superrepo.org/static/images/fanart/original/plugin.video.kmER.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite]Vintage Easter Films[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-oldschooljesus.xml</link>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/736x/55/83/64/558364ce15c00c3a9c996abf634f9f94.jpg</thumbnail>
+<fanart>http://www.bestmoviesbyfarr.com/static-assets/images/articles/background/2014/03/2-94ryc4.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite]Colt Requests[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-colt-main.xml</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR ghostwhite]24-7 TV Shows[/COLOR]</name>
+<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-247-main.xml</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/247.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</dir>
+
+<plugin>
+<name>[COLOR ghostwhite]Docs[/COLOR]</name>
+<link>plugin://script.module.kratos/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.kratos%5cicon.png&mode=35&name=DOCS&url=http%3a%2f%2fdocumentaryheaven.com%2fwatch-online%2f</link>
+<thumbnail>https://i1.ytimg.com/sh/XAeydoAo2jA/showposter.jpg?v=526e50e1</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Giggity[/COLOR]</title>
+<link>plugin://script.module.kratos/?description&iconimage=C%3a%5cUsers%5cpc%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.module.kratos%5cicon.png&mode=99&name=%5bCOLOR%20orange%5dG%5b%2fCOLOR%5d%5bCOLOR%20white%5denre%27s%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.xvideos.com%2fa</link>
+<thumbnail>https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/16711950_412198069117261_3303557260695062617_n.jpg?oh=b8f8a991d42f3f5dbae65e111ce2b105&oe=59082D11</thumbnail>
+<fanart>http://i.imgur.com/RmkUk.png</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Tools[/COLOR]</title>
+<link>plugin://plugin.video.kratos/?action=toolNavigator</link>
+<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/tools.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+</plugin>
+
