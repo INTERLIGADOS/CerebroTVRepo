@@ -5,6 +5,10 @@
 <dir>
 <name>[COLOR ghostwhite]24-7 TV Shows[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/001-247-main.xml</link>
-<thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/247.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<title>More VoD Coming Soon, Sports & More</title>
 </dir>
