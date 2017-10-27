@@ -434,7 +434,7 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
-<addon id="plugin.video.kratosfucksducky" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro VOD Player[/B][/COLOR]" version="2018.2" provider-name="Biglad">
+<addon id="plugin.video.kratosfucksducky" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro VOD Player[/B][/COLOR]" version="2018.3" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />

@@ -44,7 +44,7 @@ class indexer:
     def root(self):
         try:
             regex.clear()
-            url = 'https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/kratosfucksducky.xml'
+            url = 'https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/index2.xml'
             self.list = self.kratos_list(url)
             for i in self.list: i.update({'content': 'addons'})
             self.addDirectory(self.list)
