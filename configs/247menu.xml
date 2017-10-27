@@ -17,8 +17,8 @@
 </dir>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]24/7 On Deamnd [/COLOR][/B] (Premium Only)</title>
-<link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fkisakuldlanor%2fsuomynona%2fmaster%2fzipss%2f001-247-main.xml</link>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]24/7 On Deamnd [/COLOR][/B]</title>
+<link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2f001-247-main.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
