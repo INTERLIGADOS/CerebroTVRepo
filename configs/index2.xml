@@ -32,14 +32,14 @@
 
 <dir>
 <name>[COLOR ghostwhite]Kids TV & Movies[/COLOR]</name>
-<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-kidsdirectory.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/001-kidsdirectory.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kids.png</thumbnail>
 <fanart>https://superrepo.org/static/images/fanart/original/plugin.video.kmER.jpg</fanart>
 </dir>
 
 <dir>
 <name>[COLOR ghostwhite]24-7 TV Shows[/COLOR]</name>
-<link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/001-247-main.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/001-247-main.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/247.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/kratosfanart.jpg</fanart>
 </dir>
