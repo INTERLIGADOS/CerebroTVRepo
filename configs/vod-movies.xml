@@ -80,6 +80,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Boncrusher Movies[/COLOR]</title>
+<link>plugin://plugin.video.bonecrusher/?action=movieNavigator</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Exodus Movies[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5004&name=%5bCOLOR%20white%5d%5bB%5dExodus%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
