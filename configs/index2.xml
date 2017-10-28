@@ -1,5 +1,5 @@
 <dir>
-<title>[COLOR gold]**[/COLOR][COLOR organge]Press Back For Full Skin Menu[/COLOR][COLOR gold]**[/COLOR]</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Replays / VoD[/COLOR][/B]</title>
 </dir>
 
 <dir>
@@ -10,19 +10,18 @@
 </dir>
 
 <plugin>
-<title>[COLOR ghostwhite]UFC VoD[/COLOR]</title>
+<title>[COLOR ghostwhite]Boxing / UFC / WWE / ETC. Replays[/COLOR]</title>
+<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&amp;fanart=http%3a%2f%2fwallpapercave.com%2fwp%2frmPbFOC.jpg&amp;iconimage=http%3a%2f%2f178.32.217.111%2fsports%2ficons%2fSports-Replays.png&amp;mode=get_list&amp;name=Sports%20Replays&amp;url=http%3a%2f%2fwww.norestrictions.club%2fsports%2freplays.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]UFC Replays[/COLOR]</title>
 <link>plugin://plugin.video.falconproject/?action=directory&content=0&url=http%3a%2f%2fajbuilds.uk%2ffalcon_project%2fppv_ufc.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<dir>
-<title>More VoD Coming Soon, Sports & More</title>
-</dir>
 
-<dir>
-<title>[COLOR pink]Search for a Movie[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.covenant/?action=movieSearch</link>
-</dir>
+
