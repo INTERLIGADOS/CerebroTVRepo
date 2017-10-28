@@ -74,7 +74,7 @@
 
 <plugin>
 <title>[COLOR pink]Sports Replays[/COLOR]</title>
-<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2fwallpapercave.com%2fwp%2frmPbFOC.jpg&iconimage=http%3a%2f%2f178.32.217.111%2fsports%2ficons%2fSports-Replays.png&mode=get_list&name=Sports%20Replays&url=http%3a%2f%2fwww.norestrictions.club%2fsports%2freplays.xml</link>
+<link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2freplays.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
