@@ -1615,7 +1615,7 @@ Removed: Nudeflix</news>
 
 <addon id="script.cerebro.pairwith"
   name="CerebroTV Pair With"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

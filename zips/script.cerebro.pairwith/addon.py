@@ -11,13 +11,15 @@ def menuoptions():
     funcs = (
         function1,
         function2,
-        function3
+        function3,
+        function4
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Pair-ing System[/COLOR][/B]', [
     '[B][COLOR=white]      Open Load[/COLOR][/B]', 
     '[B][COLOR=white]      The Video Me[/COLOR][/B]',
-    '[B][COLOR=white]      Vid Up Me[/COLOR][/B]'])
+    '[B][COLOR=white]      Vid Up Me[/COLOR][/B]',
+    '[B][COLOR=white]      VShare[/COLOR][/B]'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -66,5 +68,11 @@ def function3():
         opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=3' ) )
     else:
         opensite = webbrowser . open('http://mtvb.co.uk/p/?site=3')
+        
+def function4():
+    if myplatform == 'android': # Android 
+        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=4' ) )
+    else:
+        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=4')
      
 menuoptions()
