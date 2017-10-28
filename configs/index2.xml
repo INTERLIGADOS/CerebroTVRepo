@@ -20,9 +20,9 @@
 <title>More VoD Coming Soon, Sports & More</title>
 </dir>
 
-<plugin>
+<dir>
 <title>[COLOR pink]Search for a Movie[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.covenant/?action=movieSearch</link>
-</plugin>
+</dir>
