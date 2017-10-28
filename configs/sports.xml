@@ -38,6 +38,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]WWE[/COLOR]</title>
+<link>plugin://plugin.video.wwe-on-demand</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]MMA/UFC/ETC.[/COLOR]</title>
 <link>plugin://plugin.video.ufc-finest</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
