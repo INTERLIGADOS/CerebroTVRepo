@@ -3,6 +3,9 @@
 import urllib2, urllib, xbmcgui, xbmcplugin, xbmc, re, sys, os, xbmcaddon, json, time, process, requests
 from threading import Thread
 
+import xbmcaddon
+
+ADDON = xbmcaddon.Addon(id='plugin.video.weetv')
 ADDON_PATH = xbmc.translatePath('special://home/addons/plugin.video.weetv/')
 ICON = ADDON_PATH + 'icon.png'
 FANART = ADDON_PATH + 'fanart.jpg'
@@ -10,19 +13,15 @@ addon_handle = int(sys.argv[1])
 List = []
 IMDB = 'http://www.imdb.com'
 
+
 def multiv_Main_Menu(url):
     process.Menu('TV Schedule','http://www.tvmaze.com/calendar',6,ICON,FANART,'','')
-    #process.Menu('TV Networks','http://www.tvmaze.com/networks',4,ICON,FANART,'','') 																						
-    process.Menu('weeTV Shows','http://www.imdb.com/list/ls025776108/',16,'','','','')   										
-    #process.Menu('IMDB Top 100 Programs','http://www.imdb.com/chart/tvmeter?ref_=m_nv_ch_tvm',301,ICON,FANART,'','')
-    #process.Menu('IMDB Top Rated Shows','http://www.imdb.com/chart/toptv?pf_rd_m',301,ICON,FANART,'','')    
-    process.Menu('####################','',300,'','','','')          
+    process.Menu('IMDB Top 100 Programs','http://www.imdb.com/chart/tvmeter?ref_=m_nv_ch_tvm',301,ICON,FANART,'','')
+    process.Menu('weeTV Shows','http://www.imdb.com/list/ls025776108/',16,'','','','')	
+    #process.Menu('Genres','',303,ICON,FANART,'','')
     process.Menu('My Watched Shows','',18,'','','','')
-    #process.Menu('ukonnow','',403,'','','','')
-    #process.Menu('Watched Shows item','',21,'','','','')	
-    process.Menu('weeTV Favourites','',10,'','','','')						
-    process.Menu('Search TV','',308,ICON,FANART,'','')
-	
+    process.Menu('weeTV Favourites','',10,'','','','')	
+    process.Menu('Search TV Shows','',308,ICON,FANART,'','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))	
 
 def IMDB_TOP_100_EPS(url):	
@@ -36,16 +35,6 @@ def IMDB_TOP_100_EPS(url):
 		except:
 			pass
 		
-def IMDB_TOP_RATED(url):  
-    html = requests.get(url).text
-    show = re.compile('<td class="posterColumn">.+?<a href="(.+?)".+?<img src="(.+?)".+?title=".+?" >(.+?)</a>.+?<span class="secondaryInfo">(.+?)</span>',re.DOTALL).findall(html)
-    for url,img,title,year in show:
-        try:
-            url = 'http://www.imdb.com'+url
-            img = img.replace('45,67','174,256').replace('UY67','UY256').replace('UX45','UX175')
-            process.Menu(title+' '+year,url,309,img,'','',title+year)
-        except:
-            pass            
 def IMDB_Get_Season_info(url,image,title):
     html = process.OPEN_URL(url)
     highest_season = re.compile('<br class="clear" />.+?<a href="(.+?)"',re.DOTALL).findall(html)
@@ -97,8 +86,12 @@ def IMDB_Get_Episode_info(url,title):
 			search_split = search_split.replace(' >','>')
 			final_name = 'Episode '+episode+' - '+name
 			try:
-				process.PLAY(str(final_name),'',307,str(image),'','[COLORred]AIR DATE[/COLOR] == '+str(date).replace('  ','').replace('\n','')+'\n'+str(desc.encode('utf-8').strip()),search_split)
-				process.setView('movies', 'INFO')
+				if ADDON.getSetting('autoplay')=='true':
+					process.PLAY(str(final_name),'',307,str(image),'','[COLORred]AIR DATE[/COLOR] == '+str(date).replace('  ','').replace('\n','')+'\n'+str(desc.encode('utf-8').strip()),search_split)
+					process.setView('movies', 'INFO')
+				else:
+					process.Menu(str(final_name),'',307,str(image),'','[COLORred]AIR DATE[/COLOR] == '+str(date).replace('  ','').replace('\n','')+'\n'+str(desc.encode('utf-8').strip()),search_split)
+					process.setView('movies', 'INFO')
 			except:
 				pass
 		except:

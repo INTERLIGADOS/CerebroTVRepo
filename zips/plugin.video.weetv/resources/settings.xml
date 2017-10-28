@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="Personalise">
-        <setting id="Data" type="bool" label="Settings" default="true" visible="false"/>
+	<category label="Results">
+        <setting id="low_return" type="select" label="Lowest Quality (p)" values="None|360|480|720|1080" default="None" />
+        <setting id="high_return" type="select" label="Highest Quality (p)" values="None|360|480|720|1080" default="1080" />
+        <setting id="autoplay" type="bool" label="Auto Play" default="false" />
     </category>	
-	<category label="Auto-View">
-		<setting id="auto-view" type="bool" label="Enable Auto View" default="true"visible="true"/>
-		<setting id="MAIN" type="number" label="MAIN" default="500" enable="!eq(-1,false)"visible="true"/>
-		<setting id="INFO" type="number" label="INFO" default="515" enable="!eq(-1,false)"visible="true"/>
-        <setting id="message" type="bool" label="for messages" default="false" visible="false"/>
-        <setting id="pop_time" type="text" label="For POP UP" default="2000-01-01 00:00:00" visible="false"/>
-   	</category>
+	<category label="Reliable Hosts">
+        <setting id="vidzi" type="bool" label="Vidzi" default="true" />
+        <setting id="thevideo" type="bool" label="Thevideo" default="true" />
+        <setting id="gvid" type="bool" label="Gvideo" default="true" />
+        <setting id="direct" type="bool" label="Direct" default="true" />
+    </category>	
+	<category label="Maintenance">
+        <setting label="NaN Scraper Settings(not working yet)" type="action" option="close"
+                 action="RunPlugin(plugin://script.module.nanscrapers/?action=openSettings)"/>
+					 
+	<setting id="debug" type="bool" label="Debugging" default="false"/>	
+    </category>		
 </settings>

@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 import requests, xbmcgui, xbmcplugin, xbmc, re, sys, os, xbmcaddon, json, urllib
 from lib import process
-from lib import tvresolvers                                                
+from lib import tvresolvers
 from threading import Thread
 ADDON_PATH = xbmc.translatePath('special://home/addons/plugin.video.weetv/')
-ICON = ADDON_PATH + 'icon.png'                             
-FANART = ADDON_PATH + 'fanart.jpg'                                 
+ADDON = xbmcaddon.Addon(id='plugin.video.weetv')
+ICON = ADDON_PATH + 'icon.png'
+FANART = ADDON_PATH + 'fanart.jpg'
 USERDATA_PATH = xbmc.translatePath('special://home/userdata/addon_data')
 ADDON_DATA = os.path.join(USERDATA_PATH,'plugin.video.weetv')
 favourites = os.path.join(ADDON_DATA,'favourites')
 watched = os.path.join(ADDON_DATA,'watched')
 imdb = os.path.join(ADDON_DATA,'imdb')
 Dialog = xbmcgui.Dialog()
-                                                        
+
 base_icons = 'http://www.geetee.site/wizchannels/images/'
 ca_us_icon = base_icons + 'ca_us.png'
 ca_icon = base_icons + 'ca.png'
@@ -25,17 +26,16 @@ ca_fan = base_icons + 'beaver.jpg'
 uk_fan = base_icons + 'derwentwater.jpg'
 us_fan = base_icons + 'usflag.jpg'
 sport_fan = base_icons + 'sport.jpg'
-cbc = 'http://www.geetee.site/wizchannels/images/cbc.png'        
+cbc = 'http://www.geetee.site/wizchannels/images/cbc.png'  
 
 def Main_Menu():
     process.Menu('[B]Canada/US Live TV[/B]','ca3u',22,ca_us_icon,ca_fan,'','')
     process.Menu('[B]UK Live TV[/B]','us_basic',23,uk_icon,us_fan,'','')
     process.Menu('[B]News TV[/B]','news',24,news_icon,news_fan,'','')
-    process.Menu('#############','test_Main_Menu',310,'','','','') 	
+    process.Menu('#############','test_Main_Menu',310,'','','','')  
     process.Menu('[B]TV Shows[/B]','',300,'','','','')
     process.Menu('[B]Movies[/B]','',200,'','','','')
 
-    #process.Menu('Favourites','',10,'','','','')
     process.setView('movies', 'INFO')
 
 def CAUS_Menu():
@@ -47,23 +47,23 @@ def CAUS_Menu():
 
 def UK_Menu():
     process.Menu('[B]weeIPTV UK[/B]','weeuk',407,uk_icon,uk_fan,'','') 
+    process.Menu('[B]A ipTV UK[/B]','aiptvuk',404,uk_icon,uk_fan,'','')   	
     process.Menu('[B]UK onNow[/B]','ukonnow',403,uk_icon,uk_fan,'','')
     process.Menu('[B]UK onNext[/B]','ukonnext',412,uk_icon,uk_fan,'','')
-    process.Menu('[B]A ipTV UK[/B]','aiptvuk',404,uk_icon,uk_fan,'','') 	
-
+  
 def news_Menu():
     process.Menu('[B]Live News Channels[/B]','news',409,news_icon,news_fan,'','')
     process.Menu('[B]CBC Regional Newsfeeds[/B]','newscbc',410,'http://www.geetee.site/wizchannels/images/cbc.png',news_fan,'','')  
-    
+        
 def Watched_Menu():
-    process.Menu('Recently Watched TV Shows','',21,'','','','')
     process.Menu('Latest Episodes','',19,'','','','')
-   
+    process.Menu('Watched Shows','',21,'','','','')
+    
 def Latest_Shows():
     single_list = []
     Type = ''
     Choices = ['Watch now','Upcoming Episodes']
-    decide = Dialog.select('Select',Choices)
+    decide = Dialog.select('Select Choice',Choices)
     if decide == 0:
         Choice = 'Watch now'
     elif decide == 1:
@@ -75,7 +75,7 @@ def Latest_Shows():
     todays_number = (int(this_year)*100)+(int(this_month)*31)+(int(today))
     if not os.path.exists(watched):
         watchedList = []
-        watchedList.append(('weeTV Watched Section', '', '', '', '', ''))
+        watchedList.append(('weetv Watched Section', '', '', '', '', ''))
         a = open(watched, "w")
         a.write(json.dumps(watched))
         a.close()
@@ -117,15 +117,15 @@ def Latest_Shows():
                             if Choice == 'Watch now':
                                 if Aired == 'Watch now':
                                     if prog+'season:'+season+';episode:'+episode not in single_list:
-                                        process.PLAY(prog+' - Season '+ep.replace('x',' Episode '),'',8,'','','','year = '+item[2])
+                                        process.Menu(prog+' - Season '+ep.replace('x',' Episode '),'',8,'','','','year = '+item[2])
                                         single_list.append(prog+'season:'+season+';episode:'+episode)
                             elif Choice == 'Upcoming':
                                 if Aired == 'Airs:':
                                     if prog+'season:'+season+';episode:'+episode not in single_list:
-                                        process.PLAY('[COLORwhite]'+Aired+' '+Date+' '+items+'[/COLOR] '+prog+' - Season '+ep.replace('x',' Episode '),'',8,'','','','year = '+str(item[2]))
+                                        process.Menu('[COLORwhite]'+Aired+' '+Date+' '+items+'[/COLOR] '+prog+' - Season '+ep.replace('x',' Episode '),'',8,'','','','year = '+str(item[2]))
                                         single_list.append(prog+'season:'+season+';episode:'+episode)
                             else:
-                                pass                               
+                                pass    
 
 def Watched_Shows():
     watched_list = []
@@ -152,22 +152,22 @@ def get_list_movie(url):
         name = re.findall('<div class="info">.+?href=.+?>(.+?)</a>',str(blocky),re.DOTALL)[0]
         year = re.findall('<span class="year_type">(.+?)</span>',str(blocky))[0]
         desc,length = re.findall('"item_description">(.+?)<span>(.+?)</span>',str(blocky))[0]
-        process.PLAY(name+' '+year,'Movies',1501,image,'',length+' '+desc,'>'+name+'>'+year+'>')
+        process.Menu(name+' '+year,'Movies',1501,image,'',length+' '+desc,'>'+name+'>'+year+'>')
     
 def get_list_tv(url):
-    html = requests.get(url).content	
-    #block = re.findall('<div class="list_item(.+?)<div class="button_strip">',html,re.DOTALL)	
-    block = re.findall('<div class="list_item(.+?)<div class="clear"',html,re.DOTALL)
+    html = requests.get(url).content    
+    block = re.findall('<div class="list_item(.+?)<div class="button_strip">',html,re.DOTALL)  
+    #block = re.findall('<div class="list_item(.+?)<div class="clear"',html,re.DOTALL)
     for blocky in block:
         url = re.findall('href="(.+?)"',str(blocky))[0]
         image = re.findall('img src="(.+?)"',str(blocky))[0]
         name = re.findall('<div class="info">.+?href=.+?>(.+?)</a>',str(blocky),re.DOTALL)[0]
         year = re.findall('<span class="year_type">(.+?)</span>',str(blocky))[0]
-        #desc,length = re.findall('"item_description">(.+?)<span>(.+?)</span>',str(blocky))[0]		
+        #desc,length = re.findall('"item_description">(.+?)<span>(.+?)</span>',str(blocky))[0]      
         desc = re.findall('"item_description">(.+?)</div>',str(blocky))[0]                      
         year = re.sub("[^()0123456789\.]","",year)
         process.Menu(name+' '+year,'http://imdb.com'+url,305,image,'',desc,name.encode('utf-8')+year.encode('utf-8'))
-    
+
 def TV_Calender_Day(url):
     from datetime import datetime
     today = datetime.now().strftime("%d")
@@ -188,14 +188,14 @@ def TV_Calender_Day(url):
         show_day = Date.replace('st','').replace('th','').replace('nd','').replace('rd','')
         shows_number = (int(this_year)*100)+(int(month)*31)+(int(show_day))
         if shows_number>= todays_number:
-            process.Menu('[COLORred]*'+'[COLORwhite]'+Final_Name+'[/COLOR]','',7,'','','',Block)
+            process.Menu('[COLORred]*'+''+Final_Name+'[/COLOR]','',7,'','','',Block)
         else:
             process.Menu('[COLORgreen]*'+'[COLORwhite]'+Final_Name+'[/COLOR]','',7,'','','',Block)
 
 def TV_Calender_Prog(extra):
     match = re.compile('<span class="show">.+?<a href=".+?">(.+?)</a>:.+?</span>.+?<a href=".+?" title=".+?">(.+?)</a>',re.DOTALL).findall(str(extra))
     for prog, ep in match:
-        process.PLAY(prog+' - Season '+ep.replace('x',' Episode '),'',8,'','','',prog)
+        process.Menu(prog+' - Season '+ep.replace('x',' Episode '),'',8,'','','',prog)
 
 def send_to_search(name,extra):
     year = ''
@@ -215,7 +215,7 @@ def send_to_search(name,extra):
 def movie_search(extra):
     title,year = re.findall('>(.+?)>(.+?)>',str(extra))[0]
     from lib import Scrape_Nan
-    Scrape_Nan.scrape_movie(title,year,'')
+    Scrape_Nan.scrape_movie(title,year,'')   
     
 def get_params():
         param=[]
@@ -283,11 +283,8 @@ except:
         
 if mode == None: Main_Menu()
 elif mode == 1 : process.queueItem()
-elif mode == 2 : Search()                                                     
+elif mode == 2 : Search()
 elif mode == 3 : tvresolvers.PlayLive(name,url,iconimage)
-elif mode == 4 : TV_Networks(url)
-elif mode == 10: tvresolvers.Big_Resolve(name,url)                                
-                                     
 elif mode == 6 : TV_Calender_Day(url)
 elif mode == 7 : TV_Calender_Prog(extra)
 elif mode == 8 : send_to_search(name,extra)
@@ -312,8 +309,6 @@ elif mode==12:
     except:
         pass
     process.rmFavorite(name)
-elif mode == 13: comedy(url)
-
 elif mode == 15: get_list_movie(url)
 elif mode == 16: get_list_tv(url)
 elif mode == 17:     
@@ -327,49 +322,12 @@ elif mode == 17:
         pass
     process.rmWatched(name)
 elif mode == 18: Watched_Menu()
-elif mode == 19: Latest_Shows()
+elif mode == 19: Latest_Shows()								
 elif mode == 20: from lib import process;process.Big_Resolve(name,url)
 elif mode == 21: Watched_Shows()
 elif mode == 22: CAUS_Menu()
 elif mode == 23: UK_Menu()
 elif mode == 24: news_Menu()
-
-elif mode == 200 : from lib import Movies;Movies.Movie_Main(url)
-elif mode == 202 : from lib import Movies;Movies.Movie_Genre(url)
-elif mode == 203 : from lib import Movies;Movies.IMDB_Grab(url)
-elif mode == 204 : from lib import Movies;Movies.Check_Link(name,url,image)
-elif mode == 205 : from lib import Movies;Movies.Get_playlink(url)
-elif mode == 206 : from lib import Movies;Movies.IMDB_Top250(url)
-elif mode == 207 : from lib import Movies;Movies.search_movies()
-elif mode == 208 : from lib import Movies;Movies.movie_channels()
-elif mode == 300 : from lib import multitv;multitv.multiv_Main_Menu(url)
-elif mode == 301 : from lib import multitv;multitv.IMDB_TOP_100_EPS(url)
-elif mode == 302 : from lib import multitv;multitv.Popular(url)
-elif mode == 303 : from lib import multitv;multitv.Genres()
-elif mode == 304 : from lib import multitv;multitv.Genres_Page(url)
-elif mode == 305 : from lib import multitv;multitv.IMDB_Get_Season_info(url,iconimage,extra)
-elif mode == 306 : from lib import multitv;multitv.IMDB_Get_Episode_info(url,extra)
-elif mode == 307 : from lib import multitv;multitv.SPLIT(extra)
-elif mode == 308 : from lib import multitv;multitv.Search_TV()
-elif mode == 309 : from lib import multitv;multitv.IMDB_TOP_RATED(url)
-
-elif mode == 310 : from lib import test;test.test_Main_Menu(url)
-#####
-elif mode == 400 : from lib import livetv;livetv.livetv_Main_Menu(url)
-#elif mode == 401 : from lib import livetv;livetv.IMDB_TOP_100_EPS(url)
-#elif mode == 402 : from lib import livetv;livetv.Popular(url)
-elif mode == 401 : from lib import livetv;livetv.ca3u()
-elif mode == 402 : from lib import livetv;livetv.usbasic()
-elif mode == 403 : from lib import livetv;livetv.ukonnow()
-elif mode == 404 : from lib import livetv;livetv.aiptvuk()
-elif mode == 405 : from lib import livetv;livetv.aiptvus()
-elif mode == 406 : from lib import livetv;livetv.weeus()
-elif mode == 407 : from lib import livetv;livetv.weeuk()
-elif mode == 408 : from lib import livetv;livetv.fluxus()
-elif mode == 409 : from lib import livetv;livetv.news()
-elif mode == 410 : from lib import livetv;livetv.newscbc()
-elif mode == 411 : from lib import test;test.GetMenuX()
-elif mode == 412 : from lib import livetv;livetv.ukonnext()
 
 elif mode==51:from lib import test;test.GetContentX(name,url,iconimage,fanart)
 elif mode==52:from lib import test;test.PLAYLINK(name,url,iconimage)
@@ -384,8 +342,44 @@ elif mode==543:from lib import test;test.YOUTUBE_PLAYLIST_PLAY(url)
 elif mode==571:from lib import test;test.YOUTUBE_CHANNEL(url)
 elif mode==572:from lib import test;test.YOUTUBE_CHANNEL_PART2(url)
 
-#########################
 
+
+elif mode == 100 : ADDON.openSettings(sys.argv[0])
+elif mode == 200 : from lib import Movies;Movies.Movie_Main(url)
+elif mode == 202 : from lib import Movies;Movies.Movie_Genre(url)
+elif mode == 203 : from lib import Movies;Movies.IMDB_Grab(url)
+elif mode == 204 : from lib import Movies;Movies.Check_Link(name,url,image)
+elif mode == 205 : from lib import Movies;Movies.Get_Menulink(url)
+elif mode == 206 : from lib import Movies;Movies.IMDB_Top250(url)
+elif mode == 207 : from lib import Movies;Movies.search_movies()
+elif mode == 208 : from lib import Movies;Movies.movie_channels()
+elif mode == 300 : from lib import multitv;multitv.multiv_Main_Menu(url)
+elif mode == 301 : from lib import multitv;multitv.IMDB_TOP_100_EPS(url)
+elif mode == 302 : from lib import multitv;multitv.Popular(url)
+elif mode == 303 : from lib import multitv;multitv.Genres()
+elif mode == 304 : from lib import multitv;multitv.Genres_Page(url)
+elif mode == 305 : from lib import multitv;multitv.IMDB_Get_Season_info(url,iconimage,extra)
+elif mode == 306 : from lib import multitv;multitv.IMDB_Get_Episode_info(url,extra)
+elif mode == 307 : from lib import multitv;multitv.SPLIT(extra)
+elif mode == 308 : from lib import multitv;multitv.Search_TV()
+
+elif mode == 310 : from lib import test;test.test_Main_Menu(url)
+#####
+elif mode == 400 : from lib import livetv;livetv.livetv_Main_Menu(url)
+elif mode == 401 : from lib import livetv;livetv.ca3u()
+elif mode == 402 : from lib import livetv;livetv.usbasic()
+elif mode == 403 : from lib import livetv;livetv.ukonnow()
+elif mode == 404 : from lib import livetv;livetv.aiptvuk()
+elif mode == 405 : from lib import livetv;livetv.aiptvus()
+elif mode == 406 : from lib import livetv;livetv.weeus()
+elif mode == 407 : from lib import livetv;livetv.weeuk()
+elif mode == 408 : from lib import livetv;livetv.fluxus()
+elif mode == 409 : from lib import livetv;livetv.news()
+elif mode == 410 : from lib import livetv;livetv.newscbc()
+elif mode == 411 : from lib import test;test.GetMenuX()
+elif mode == 412 : from lib import livetv;livetv.ukonnext()
+
+elif mode == 1501: movie_search(extra)
 #########################
 elif mode==9999:
     url = tvresolvers.resolve(url)
@@ -393,8 +387,6 @@ elif mode==9999:
     liz.setInfo(type='Video', infoLabels='')
     liz.setProperty("IsPlayable","true")
     liz.setPath(url)
-    xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, liz)                                                                    
-                    
-                                                               
-elif mode == 1501: movie_search(extra)
+    xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, liz)
+
 xbmcplugin.endOfDirectory(int(sys.argv[1]))

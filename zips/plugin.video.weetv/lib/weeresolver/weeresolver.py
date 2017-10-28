@@ -8,14 +8,14 @@ playlist = ['.mp4','.mkv','.m3u8','=m22','=m18','=m37']
 
 def weeresolver(name,url):
 	try:
-		xbmc.log('weeee..resolving link:'+url,xbmc.LOGNOTICE)
+		xbmc.log('resolving link:'+url,xbmc.LOGNOTICE)
 		xbmcgui.Dialog().notification("wee Resolvers", "weeeeeeeee........loading", sound=False)
 		if not url.startswith('http'):
 			url = 'http:'+url
 		if '.mp4' in url or '.mkv' in url or 'm3u8' in url or '=m22' in url or '=m18' in url or '=m37' in url:
-			#if 'openload' in url:
-				#resolve(name,url)
-			if 'embed' in url:
+			if 'openload' in url:
+				resolve(name,url)
+			elif 'embed' in url:
 				resolve(name,url)
 			elif '.html' in url:
 				resolve(name,url)
@@ -26,12 +26,12 @@ def weeresolver(name,url):
 				url = re.findall('v=(.+?)>',str(url+'>'))[0]
 			except:
 				url = url
-			xbmc.log('weeee..resolving YT link:'+url,xbmc.LOGNOTICE)
+			xbmc.log('resolving YT link:'+url,xbmc.LOGNOTICE)
 			from sources.resources import yt
 			yt.PlayVideo(url)
 		else:
 			resolve(name,url)
-			xbmc.log('weeee..resolving link:'+url,xbmc.LOGNOTICE)
+			xbmc.log('resolving link:'+url,xbmc.LOGNOTICE)
 			
 	except Exception as e:
 		xbmc.log(repr(e),xbmc.LOGNOTICE)

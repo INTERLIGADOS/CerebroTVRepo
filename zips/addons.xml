@@ -842,7 +842,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.43" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.45" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -901,7 +901,7 @@ Removed: Nudeflix</news>
         <import addon="repository.aresproject" />
         <import addon="repository.soulless" />
         <import addon="repository.CruCialminds" />
-
+        <import addon="repository.geetee.kodi" />
 
 
 
@@ -923,12 +923,12 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.weetv" name="WeeTV" version="4.0.3" provider-name="@geeteetv">
+<addon id="plugin.video.weetv" name="WeeTV" version="4.1.1" provider-name="@geeteetv">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
     <import addon="script.module.nanscrapers"/>
-    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.urlresolver" optional="true"/>
 	<import addon="script.module.requests" />
 	<import addon="script.module.beautifulsoup4" />
 	<import addon="script.module.simplejson" version="3.3.0"/>
@@ -937,16 +937,14 @@ Removed: Nudeflix</news>
     <import addon="script.module.metahandler" version="2.5.1"/>
 	<import addon="script.video.F4mProxy" />
     <import addon="plugin.video.f4mTester" />
-    <import addon="plugin.video.SportsDevil" optional="true"/>
-	<import addon="plugin.video.youtube" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">WeeTV</summary>
-    <description lang="en"> Live Canadian, US, UK Channels.</description>
-	<disclaimer lang="en">The original author neither hosts or stores any content, the original author has no affiliation with content hosts, it is the sole responsibility of the user to ensure they have permission to view any streams provided</disclaimer>
+    <description lang="en">  Canadian, US, UK Channels and TV shows.</description>
+	<disclaimer lang="en">The original author neither hosts or stores any content, has no affiliation with content hosts. It is the sole responsibility of the user to ensure they have permission to view any streams provided</disclaimer>
 	<platform>all</platform>
   </extension>
 </addon>
@@ -1143,6 +1141,20 @@ Removed: Nudeflix</news>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.geetee.kodi" name="geetee repository" version="1.0.2" provider-name="@geeteetv">
+	<extension point="xbmc.addon.repository" name="GeeTee Repository">
+		<info compressed="false">http://geetee.site/repo/addons.xml</info>
+		<checksum>http://geetee.site/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://geetee.site/repo/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>GeeTeeTV Repo</summary>
+		<description>GeeTeeTV repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
 	</extension>
 </addon>
 

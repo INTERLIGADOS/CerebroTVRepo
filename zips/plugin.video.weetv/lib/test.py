@@ -43,9 +43,9 @@ def test_Main_Menu(url):
     #process.Menu('IMDB Top 100 Programs','http://www.imdb.com/chart/tvmeter?ref_=m_nv_ch_tvm',301,ICON,FANART,'','')
     #process.Menu('IMDB Top Rated Shows','http://www.imdb.com/chart/toptv?pf_rd_m',301,ICON,FANART,'','')    
     #process.Menu('####################','','','','','','')          
-    #process.Menu('My Watched Shows','',18,'','','','')
+    process.Menu('My Watched Shows','',18,'','','','')
     #process.Menu('Latest Episodes','',19,'','','','')
-    #process.Menu('Watched Shows item','',21,'','','','')   
+    process.Menu('Watched Shows item','',21,'','','','')   
     process.Menu('Favourites','',10,'','','','')                        
     process.Menu('Search','',308,ICON,FANART,'','')
     

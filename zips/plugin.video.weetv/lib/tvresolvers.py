@@ -41,8 +41,7 @@ def ustreamixresolve(url):
     phtml = ''
     for oht in ohtm:
         phtml += chr(int(re.findall('\D*(\d*)',oht.decode('base64'))[0]) - oval)
-        
-        
+                
     strurl = re.findall("var stream = '(.*?)'",phtml)[0]
     tokurl = re.findall('src="(.*?)"',phtml)[0]
     hdr = {}
@@ -83,7 +82,7 @@ def OPEN_URL(url):
     link = link.encode('ascii', 'ignore')
     return link
     
-def getUrl(url, cookieJar=None,post=None, timeout=20, headers=None,jsonpost=False):
+def getUrl(url, cookieJar=None,post=None, timeout=10, headers=None,jsonpost=False):
 
     cookie_handler = urllib2.HTTPCookieProcessor(cookieJar)
     opener = urllib2.build_opener(cookie_handler, urllib2.HTTPBasicAuthHandler(), urllib2.HTTPHandler())
@@ -134,7 +133,6 @@ def regex_from_to(text, from_string, to_string, excluding=True):
         except: r = ''
     return r
 
-
 def regex_get_all(text, start_with, end_with):
     import re
     r = re.findall("(?i)(" + start_with + "[\S\s]+?" + end_with + ")", text)
@@ -164,6 +162,5 @@ def PlayLive(name,url,iconimage):
     #dp.close()
     xbmc.Player().play(url,liz,False)
     quit()  
-        
-    
+   
     

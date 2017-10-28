@@ -25,9 +25,6 @@ us_fan = base_icons + 'usflag.jpg'
 sport_fan = base_icons + 'sport.jpg'
 cbc = 'http://www.geetee.site/wizchannels/images/cbc.png'
 
-
-####
-
 def ukonnow():
     open = OPEN_URL('http://tvcatchup.com')
     all  = regex_get_all(open,'<div class="channelsHolder','</div>')
@@ -38,9 +35,8 @@ def ukonnow():
         url  = re.compile('href="(.+?)"').findall(a)[0]
         epg  = re.compile('title="(.+?)"').findall(a)[0]
         epg  = (epg).replace('&#039;','')
-        addDir('%s - %s'%(name,epg),'http://tvcatchup.com'+url,9999,uk_icon,uk_fan,'') 
-        
-               
+        addDir('%s - %s'%(name,epg),'http://tvcatchup.com'+url,9999,icon,uk_fan,'') 
+                      
 def ukonnext():
     open = OPEN_URL('http://tvcatchup.com/next')
     all  = regex_get_all(open,'<div class="channelsHolder','</div>')
@@ -54,7 +50,6 @@ def ukonnext():
         epg  = (epg).replace('&#039;','')
         addDir('%s - %s'%(name,epg),'http://tvcatchup.com'+url,9999,icon,uk_fan,'')         
         
-
 def aiptvuk():
     open = OPEN_URL('http://autoiptv.net/playlist.php')
     regex = re.compile('#EXTINF:.+?DOM",(.+?)\n(.+?)\n', re.MULTILINE|re.DOTALL).findall(open)
@@ -96,8 +91,7 @@ def weeuk():
     regex = re.compile ('#EXTINF:.+\,(.+)\n(.+)\n', re.MULTILINE|re.IGNORECASE).findall(open)
     for name,url in sorted(regex):
         addDir(name,url,3,uk_icon,uk_fan,'')        
-        
-        
+               
 def newscbc():
     open = OPEN_URL('https://pastebin.com/raw/k4Q6Hkxc')
     all  = regex_get_all(open,'<item>','</item>')
