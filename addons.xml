@@ -51,6 +51,25 @@
 	</extension>
 </addon>
 
+<addon id="plugin.program.Crucialminds.favourites"
+version="0.0.1"
+name="Crucial Minds Favourites"
+provider-name="Crucialminds">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>executable</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Crucial Minds Favourites</summary>
+  <description lang="en"></description>
+  <disclaimer lang="en">.</disclaimer>
+</extension>
+</addon>
+
 <addon id="plugin.program.GenieWiz" name="GENIE WIZ" version="0.0.2" provider-name="GenieTv">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -216,6 +235,39 @@
         <summary lang="en">IPTV BONANZA</summary>
         <description lang="en">Find and play daily IPTV lists in blogs and websites.</description>
     </extension>
+</addon>
+
+<addon id="plugin.video.bonecrusher" version="1.0.6" name=" bonecrusher" provider-name="bonecrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.bonecrusher.artwork" version="1.0.0"/>
+		<import addon="script.module.urlresolver" version="4.0.06"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup" />
+		<import addon="script.module.bc.common" version="1.0.0" />
+		<import addon="script.module.futures" version="2.2.0"/>
+		<import addon="plugin.program.Crucialminds.favourites" version="0.0.1"/>
+        <import addon="script.crucialminds.pair" version="1.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="bonecrusher.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">bonecrusher Movies/TV Shows</summary>
+		<description lang="en">Watch Movies and TV Shows in High quality! Please note that this addon is not an official part of the Kodi media player , and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The Author does not host or share any content, nor is affiliated with the content providers.</disclaimer>
+		<platform>all</platform>
+
+		<news>Update Providers</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="plugin.video.Bucky"
@@ -1353,6 +1405,18 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.bonecrusher.artwork" version="1.0.6" name="bone crusher Artwork" provider-name="bonecrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the bonecrusher Addon</summary>
+		<description>Themes for bonecrusher are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.cachesystem"
   name="Cache System"
   version="1.6"
@@ -1878,6 +1942,22 @@ Removed: Nudeflix</news>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
 		<source>https://github.com/ruuk/script.module.addon.signals</source>
+	</extension>
+</addon>
+
+<addon id="script.module.bc.common" name="Bone Crusher Common Libraries" version="1.0.0" provider-name="Bone Crusher">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.six" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.beautifulsoup" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	</extension>
 </addon>
 
