@@ -10,10 +10,17 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Covenant Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5000&name=%5bCOLOR%20white%5d%5bB%5dCovenant%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Search for a Movie[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.covenant/?action=movieSearch</link>
+<link>plugin://plugin.video.streamhub/?action=movieSearch</link>
 </plugin>
 
 <plugin>
@@ -68,13 +75,6 @@
 <plugin>
 <title>[COLOR pink]Nemesis Movies[/COLOR]</title>
 <link>plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=1&name=%5bCOLOR%20yellow%5dM%5bCOLOR%20aqua%5dovie%20Zone%5b%2fCOLOR%5d&url=https%3a%2f%2fpastebin.com%2fraw%2fUUMb0y72</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Covenant Movies[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5000&name=%5bCOLOR%20white%5d%5bB%5dCovenant%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
