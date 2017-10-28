@@ -3,6 +3,13 @@
 </dir>
 
 <plugin>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]UK[/COLOR] TV Guide[/COLOR][/B] (Premium Only)</title>
+<link>plugin://script.cerebro.tvguide.open</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR pink]Cerebro IPTV Lists[/COLOR][/B] (Premium Only)</title>
 <link>plugin://plugin.program.super.favourites/?label=[COLOR black]iptv[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Ciptv&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
