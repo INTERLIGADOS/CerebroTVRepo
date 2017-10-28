@@ -31,6 +31,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Sky & BT Sports[/COLOR]</title>
+<link>plugin://plugin.video.falconproject/?action=directory&amp;content=0&amp;url=http%3a%2f%2fajbuilds.uk%2ffalcon_project%2fsky_bt.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]MMA/UFC/ETC.[/COLOR]</title>
 <link>plugin://plugin.video.ufc-finest</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
