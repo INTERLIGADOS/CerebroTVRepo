@@ -38,6 +38,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Sky & BT Sports[/COLOR] Version 2</title>
+<link>plugin://plugin.video.SchemeStreams/?fanart=http%3a%2f%2fe2.365dm.com%2f17%2f07%2f16-9%2f20%2fskysports-all-new-rebrand-f1-premier-league-golf-cricket_4001810.jpg&mode=1&name=%5bCOLOR%20limegreen%5dLive%20Sports%20Channels%5b%2fCOLOR%5d&url=http%3a%2f%2fbit.ly%2f2wGwTay</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]WWE[/COLOR]</title>
 <link>plugin://plugin.video.wwe-on-demand</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>

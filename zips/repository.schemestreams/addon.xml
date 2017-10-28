@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.schemestreams" name="Scheme Streams Repo" version="0.0.1" provider-name="Scheme Steams">
+	<extension point="xbmc.addon.repository" name="Scheme Streams Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/deltacharlie1888/repository.schemestreams/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/deltacharlie1888/repository.schemestreams/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/deltacharlie1888/repository.schemestreams/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Scheme Streams Repo</summary>
+		<description lang="en">Repo For Scheme Stream Addons And Builds</description>
+		<genre>livetv,sports,uk</genre>
+	</extension>
+</addon>

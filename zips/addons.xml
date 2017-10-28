@@ -622,6 +622,37 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
+<addon id="plugin.video.SchemeStreams"
+       name="Scheme Streams"
+       version="1.0.1"
+       provider-name="Scheme Streams">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Sports Addon</summary>
+    <description lang="en">Live Sports Addon</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.sportie"
          name="Sportie"
          version="2.00.008"
@@ -1294,6 +1325,23 @@ Removed: Nudeflix</news>
 	</extension>
 </addon>
 
+<addon id="repository.pulse" name="Pulse Repo" version="1.0.1" provider-name="Pulse">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+		<extension point="xbmc.addon.repository" name="Pulse Repository">
+			<info compressed="false">http://pulsewizard.co.uk/data/repo/addons.xml</info>
+			<checksum>http://pulsewizard.co.uk/data/repo/addons.xml.md5</checksum>
+			<datadir zip="true">http://pulsewizard.co.uk/data/addons/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>Pulse Repository!</summary>
+			<description>Pulse Builds Repository!</description>
+			<disclaimer>All Add-Ons Within This Repo Are Supplied/Created And/Or Modified By 3rd Party Developers</disclaimer>
+			<platform>all</platform>
+		</extension>
+</addon>
+
     <addon id="repository.sanctuary" name="Sanctuary" version="1.0.1" provider-name="Sanctuary">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -1316,6 +1364,24 @@ Removed: Nudeflix</news>
             <description>Sanctuary Repo</description>
             <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.schemestreams" name="Scheme Streams Repo" version="0.0.1" provider-name="Scheme Steams">
+	<extension point="xbmc.addon.repository" name="Scheme Streams Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/deltacharlie1888/repository.schemestreams/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/deltacharlie1888/repository.schemestreams/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/deltacharlie1888/repository.schemestreams/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Scheme Streams Repo</summary>
+		<description lang="en">Repo For Scheme Stream Addons And Builds</description>
+		<genre>livetv,sports,uk</genre>
+	</extension>
 </addon>
 
 ﻿<addon id="repository.smash" name="Smash repository" version="1.0.1" provider-name="SMASH">
