@@ -145,5 +145,5 @@ def noconnection():
     xbmc.sleep(1000)
 
 
-dp.close()
+#dp.close()
 download(LOCATION,file2) 
