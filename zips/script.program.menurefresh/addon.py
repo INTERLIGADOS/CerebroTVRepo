@@ -9,7 +9,7 @@ import sfile
 import utils
 import time 
 
-LOCATION     = "http://megatvbox.uk/new-uk.zip"
+LOCATION     = "http://megatvbox.uk/uk-new.zip"
 HOME     = xbmc.translatePath('special://home')
 ROOT     = xbmc.translatePath('special://home')
 file2     = os.path.join(ROOT, 'uk.zip')
