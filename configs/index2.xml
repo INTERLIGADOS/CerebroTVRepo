@@ -23,6 +23,13 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
+<dir>
+<name>[COLOR ghostwhite]Kids On Demand[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/index2-vod-kids.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
 <plugin>
 <title>[COLOR pink]4K Section[/COLOR] (Premium Only)</title>
 <link>plugin://plugin.program.super.favourites/?content_type=video&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.program.super.favourites%5cfanart.jpg&image=special%3a%2f%2fhome%2faddons%2f23.png&label=%5bCOLOR%20black%5d4k%5b%2fCOLOR%5d&mode=400&path=special%3a%2f%2fprofile%2faddon_data%2fplugin.program.super.favourites%2fSuper%20Favourites%5c4k</link>
