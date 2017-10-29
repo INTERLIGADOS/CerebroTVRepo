@@ -22,3 +22,10 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Liv and Maddie[/COLOR]</title>
+<link>plugin://plugin.video.elysium/?action=seasons&imdb=tt2794380&tmdb=59375&tvdb=270423&tvshowtitle=Liv%20and%20Maddie&year=2013</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
