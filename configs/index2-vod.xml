@@ -51,5 +51,12 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]Only Fools and Horses[/COLOR]</title>
+<link>plugin://plugin.video.elysium/?action=seasons&imdb=tt0081912&tmdb=72&tvdb=75628&tvshowtitle=Only%20Fools%20and%20Horses&year=1981</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
 
 
