@@ -25,4 +25,4 @@ def Search(name):
 xxxpass=Search('[B][COLOR=gold]Adult Section Password[/COLOR][/B]')
 
 if passxxx == xxxpass:
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.uwc/",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=[COLOR black]xxx[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Cxxx&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf",return)')
