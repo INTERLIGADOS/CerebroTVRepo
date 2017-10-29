@@ -3,7 +3,7 @@ import pyDes
 import urllib
 import re
 from regexUtils import parseTextToGroups
-from javascriptUtils import JsFunctions, JsUnpacker, JsUnpackerV2, JsUnpacker95High, JsUnwiser, JsUnIonCube, JsUnFunc, JsUnPP, JsUnPush
+from javascriptUtils import JsFunctions, JsUnpacker, JsUnpackerV2, JsUnpacker95High, JsUnwiser, JsUnIonCube, JsUnFunc, JsUnPP, JsUnPush, JSUnfuck
 from hivelogic import hivelogic
 try: import json
 except ImportError: import simplejson as json
@@ -64,21 +64,45 @@ def zadd(data):
 
     return data
 
+# def zadd2(data):
+#     if re.search(".*\w+\s*=\s*eval\(\"\(\"\s*\+\s*\w+",data):
+#         #jsvar = re.findall(".*\w+\s*=\s*eval\(\"\(\"\+(\w+)\+", data)[0]
+#         matches = re.findall('\w+\s*=\s*\w+\s*\+\s*(\w+)',data)
+#         jsall = ''
+#         try:
+#             firstword = matches[0]
+#             for match in matches:
+#                 tmp = re.findall(match+'\s*=\s*[\'\"](.*?)[\"\'];',data)
+#                 if len(tmp)>0:
+#                     jsall += tmp[0]
+#             if re.compile(r"jwplayer\(\'\w+.*eval\(\"\(\"\s*\+\s*\w+\s*\+\s*\"\)\"\);", flags=re.DOTALL).findall(data):
+#                  tmp_ = re.sub(r"jwplayer\(\'\w+.*eval\(\"\(\"\s*\+\s*\w+\s*\+\s*\"\)\"\);", jsall, data, count=1, flags=re.DOTALL)
+#             if re.compile(r"\w+\.\w+\({.*}\s+</script>(.*)</script>", flags=re.DOTALL).findall(data):
+#                 tmp_ = re.sub(r"\w+.\w+\({.*}\s+</script>(.*)</script>", jsall, data, count=1, flags=re.DOTALL)
+#             data = tmp_
+#         except:
+#             data = data
+#             pass
+
+#     return data
+
 def zadd2(data):
-    if re.search(".*\w+\s*=\s*eval\(\"\(\"\+\w+\+", data):
+    if re.search(".*\w+\s*=\s*eval\(\"\(\"\s*\+\s*\w+",data):
         #jsvar = re.findall(".*\w+\s*=\s*eval\(\"\(\"\+(\w+)\+", data)[0]
-        matches = re.findall('\w+\s*=\s*\w+\s*\+\s*(\w+)',data)
+        matches = re.findall('\w+\s*=.*?\+\s*(\w+)',data)
         jsall = ''
         try:
             firstword = matches[0]
             for match in matches:
-                tmp = re.findall(match+'\s*=\s*[\'\"](.*?)[\"\'];',data)
+                tmp = re.findall(r";\s*(\w+)\s*=\s*'(.*?)';\s*%s\s*=\s*(\1)"%match,data)
                 if len(tmp)>0:
-                    jsall += tmp[0]
-            if re.compile(r"jwplayer\(\'\w+.*eval\(\"\(\"\+\w+\+\"\)\"\);", flags=re.DOTALL).findall(data):
-                 tmp_ = re.sub(r"jwplayer\(\'\w+.*eval\(\"\(\"\+\w+\+\"\)\"\);", jsall, data, count=1, flags=re.DOTALL)
+                    jsall += tmp[0][1]
+            if re.compile(r"jwplayer\(\'\w+.*eval\(\"\(\"\s*\+\s*\w+\s*\+\s*\"\)\"\);", flags=re.DOTALL).findall(data):
+                    tmp_ = re.sub(r"jwplayer\(\'\w+.*eval\(\"\(\"\s*\+\s*\w+\s*\+\s*\"\)\"\);", jsall, data, count=1, flags=re.DOTALL)
             if re.compile(r"\w+\.\w+\({.*}\s+</script>(.*)</script>", flags=re.DOTALL).findall(data):
                 tmp_ = re.sub(r"\w+.\w+\({.*}\s+</script>(.*)</script>", jsall, data, count=1, flags=re.DOTALL)
+            if re.search(r'player.attach.*?<\/script>', data, re.DOTALL) != None:
+                tmp_ = re.sub(r'player.attach.*?<\/script>', jsall, data, count=1, flags=re.DOTALL)
             data = tmp_
         except:
             data = data
@@ -221,10 +245,29 @@ def decryptSaurus(data):
 
     return data
 
+def unFuckFirst(data):
+    try:
+        #lib.common.log("JairoDemyst: " + data)
+        p = 186
+        hiro = re.findall(r'"hiro":"(.*?)"', data)[0]
+        parts = re.findall('([^;]+)', hiro)
+        for part in parts:
+            if '(' in part:
+                f = re.findall('(.*?)\((.+)\)',part)[0]
+                exec(f[0] + JSUnfuck(f[1]).decode())
+            else:
+                exec(part)
+        if isinstance(n, long):
+            data = re.sub(r'"hiro":"(.*?)"', '"hiro":%s'%str(n), data, count=1)
+
+        return data
+    except:
+        return data
+
 def doDemystify(data):
     from base64 import b64decode
     escape_again=False
-    
+    #lib.common.log("JairoDemyst:" + data)
     #init jsFunctions and jsUnpacker
     jsF = JsFunctions()
     jsU = JsUnpacker()
@@ -298,9 +341,7 @@ def doDemystify(data):
                 
     #jairox: ustreamix -- Obfuscator HTML : https://github.com/BlueEyesHF/Obfuscator-HTML
     r = re.compile(r"var\s*(\w+)\s*=\s*\[([A-Za-z0-9+=\/\",\s]+)\];\s*\1\.forEach.*-\s*(\d+)")
-    #lib.common.log("JairoX_Decrypt:" + data)
     if r.findall(data):
-        #lib.common.log("JairoX_Decrypt1:" + data)
         try:
             matches = re.compile(r"var\s*(\w+)\s*=\s*\[([A-Za-z0-9+=\/\",\s]+)\];\s*\1\.forEach.*-\s*(\d+)").findall(data)
             chunks = matches[0][1].split(',')
@@ -335,16 +376,17 @@ def doDemystify(data):
                 data = data.replace(g, urllib.unquote(base64_data.decode('base-64')))
                 escape_again=True
     
-    r = re.compile('\?i=([^&]+)&r=([^&\'"]+)')
-    for g in r.findall(data):
-        print g
-        try:
-            _a, _b =  g[0].split('%2F')
-            _res = (_a+'=').decode('base-64')+'?'+_b.decode('base-64')
-            data = data.replace(g[0], _res)
-            data = data.replace(g[1], urllib.unquote(g[1]).decode('base-64'))
-        except:
-            pass
+    if not 'sawlive' in data:
+        r = re.compile('\?i=([^&]+)&r=([^&\'"]+)')
+        for g in r.findall(data):
+            print g
+            try:
+                _a, _b =  g[0].split('%2F')
+                _res = (_a+'=').decode('base-64')+'?'+_b.decode('base-64')
+                data = data.replace(g[0], _res)
+                data = data.replace(g[1], urllib.unquote(g[1]).decode('base-64'))
+            except:
+                pass
 
     if 'var enkripsi' in data:
         r = re.compile(r"""enkripsi="([^"]+)""")
@@ -418,7 +460,11 @@ def doDemystify(data):
     if JsHive.contains_hivelogic(data):
         data = JsHive.unpack_hivelogic(data)
     
-    if "zoomtv" in data:
+    if re.search(r'hiro":".*?[\(\)\[\]\!\+]+', data) != None:
+        data = unFuckFirst(data)
+        #lib.common.log("JairoDemyst: " + data)
+    
+    if re.search(r"zoomtv", data, re.IGNORECASE) != None:
         #lib.common.log("JairoZoom:" + data)
         data = zadd(data)
         data = zadd2(data)

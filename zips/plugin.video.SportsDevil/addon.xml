@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="plugin.video.SportsDevil"
-  version="ZNL2017.2017.2017.07.15.NL1999999.99"
+  version="2017.10.25"
   name="SportsDevil"
-  provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
+  provider-name="SportsDevil">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.dateutil" />
@@ -11,8 +11,8 @@
    <import addon="script.module.six" />
    <import addon="script.module.requests" />
    <import addon="script.module.livestreamer" />
-   <!--<import addon="script.video.F4mProxy" />
-   <import addon="plugin.video.f4mTester" />-->
+   <!-- <import addon="script.video.F4mProxy" /> -->
+   <!-- <import addon="plugin.video.f4mTester" /> -->
   </requires>
   <extension 
     point="xbmc.python.pluginsource"

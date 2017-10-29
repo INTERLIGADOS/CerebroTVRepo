@@ -26,7 +26,7 @@ from utils import rowbalance as rb
 
 from utils.fileUtils import findInSubdirectory, getFileContent, getFileExtension
 from utils.scrapingUtils import findVideoFrameLink, findContentRefreshLink, findRTMP, findJS, findPHP, getHostName, findEmbedPHPLink
-from common import getHTML
+from common import getHTML, getLocation
 
 
 class ParsingResult(object):
@@ -179,7 +179,7 @@ class Parser(object):
             startUrl = inputList.curr_url
             while count == 0 and i <= maxits:
                 if i > 1:
-                    ignoreCache = False if postData == '' else True
+                    ignoreCache = True
                     demystify =  True
 
                 # Trivial: url is from known streamer
@@ -273,6 +273,7 @@ class Parser(object):
                     if startUrl == red:
                         common.log('    -> No redirect found')
                     else:
+                        #red = getLocation(red) #for tinyurl etc redirects
                         common.log('    -> Redirect: ' + red)
                         if back == red:
                             break
@@ -327,7 +328,8 @@ class Parser(object):
             return findVideoFrameLink(page, data)
         elif findEmbedPHPLink(data):
             return findEmbedPHPLink(data)
-            
+
+                  
         if not demystify:
             return self.__findRedirect(page, referer, True)
 
@@ -651,7 +653,7 @@ class Parser(object):
                 src = cc.replace(item, params, src)
 
             elif command == 'replaceRegex':
-                src = cc.replaceRegex(params, src)
+                src = cc.replaceRegex(item, params, src)
 
             elif command == 'ifEmpty':
                 src = cc.ifEmpty(item, params, src)

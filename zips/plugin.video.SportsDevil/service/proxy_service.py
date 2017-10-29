@@ -90,6 +90,9 @@ def create_decryptor(self, key, sequence):
             elif 'nlsk.neulion' in key.uri:
                 _tmp = key.uri.split('?')
                 uri = urljoin(saw_key,'/m/stream?'+_tmp[-1])
+            elif 'nlsk' in key.uri:
+                _tmp = key.uri.split('?')
+                uri = 'http://bile.level303.club/m/stream?'+_tmp[-1]
             elif 'nhl.com' in key.uri:
                 _tmp = key.uri.split('/')
                 uri = urljoin(saw_key,'/m/streams?ci='+_tmp[-3]+'&k='+_tmp[-1])
@@ -188,8 +191,11 @@ class MyHandler(BaseHTTPRequestHandler):
     """
     Sends the requested file and add additional headers.
     """
-    def serveFile(self, fURL, sendData):
+    def serveFile(self, fURL, sendData):        
+
         session = livestreamer.session.Livestreamer()
+        #session.set_loglevel("debug")
+
         if _dec:
             livestreamer.stream.hls.HLSStreamWriter.create_decryptor = create_decryptor
             livestreamer.stream.hls.HLSStreamWorker.process_sequences = process_sequences
