@@ -11,7 +11,7 @@
 
 <plugin>
 <title>[COLOR pink]Rick & Morty[/COLOR]</title>
-<link>plugin://plugin.video.cartoonson/?description&amp;iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f25%2fimage%2f555x418%2frick-and-morty.jpg&amp;mode=2&amp;name=%5bB%5d%5bCOLOR%20white%5dRick%20and%20Morty%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2frick-and-morty-tv-series</link>
+<link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f25%2fimage%2f555x418%2frick-and-morty.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dRick%20and%20Morty%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2frick-and-morty-tv-series</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
