@@ -4,13 +4,6 @@
 
 <plugin>
 <title>[COLOR ghostwhite]Boxing / UFC / WWE Replays[/COLOR]</title>
-<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2fwallpapercave.com%2fwp%2frmPbFOC.jpg&iconimage=http%3a%2f%2f178.32.217.111%2fsports%2ficons%2fSports-Replays.png&mode=get_list&name=Sports%20Replays&url=http%3a%2f%2fwww.norestrictions.club%2fsports%2freplays.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR ghostwhite]Boxing / UFC / WWE Replays[/COLOR] Version 2</title>
 <link>plugin://plugin.video.Bucky/?fanart=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fg2kzpozf21nlwn3%2faddonfanart.jpg%3fdl%3d0&mode=1&name=%5bB%5d%5bCOLOR%20gold%5dBUCKYS%20FIGHT%20REPLAYS%5b%2fCOLOR%5d%5b%2fB%5d&url=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2f53usr24ff759a9p%2fUFC.txt%3fdl%3d0</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -22,3 +15,11 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Boxing / UFC / WWE Replays[/COLOR] (BackUp)</title>
+<link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2fwallpapercave.com%2fwp%2frmPbFOC.jpg&iconimage=http%3a%2f%2f178.32.217.111%2fsports%2ficons%2fSports-Replays.png&mode=get_list&name=Sports%20Replays&url=http%3a%2f%2fwww.norestrictions.club%2fsports%2freplays.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
