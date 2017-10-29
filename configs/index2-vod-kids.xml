@@ -18,7 +18,7 @@
 
 <plugin>
 <title>[COLOR pink]More Kids TV on Demand[/COLOR] (Premium Only)</title>
-<link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f84%2fimage%2f555x418%2fAquaman.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dAquaman%20(1968%20TV%20Series)%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2faquaman-1968-episodes</link>
+<link>plugin://plugin.program.super.favourites/?label=[COLOR black]kids[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Ckids&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
