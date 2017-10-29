@@ -1,5 +1,5 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]TV Shows On Demand[/COLOR][/B]</title>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]TV Shows On Demand Kids Section[/COLOR][/B]</title>
 </dir>
 
 <plugin>
@@ -10,11 +10,23 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Rick & Morty[/COLOR]</title>
-<link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f25%2fimage%2f555x418%2frick-and-morty.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dRick%20and%20Morty%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2frick-and-morty-tv-series</link>
+<title>[COLOR pink]Wile E. Coyote and The Road Runner[/COLOR]</title>
+<link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f39%2fimage%2f555x418%2fWile_E._Coyote_and_The_Road_Runner.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dWile%20E.%20Coyote%20and%20The%20Road%20Runner%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2fwile-e-coyote-and-the-road-runner</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]Aquaman (1968 TV Series)[/COLOR]</title>
+<link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f84%2fimage%2f555x418%2fAquaman.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dAquaman%20(1968%20TV%20Series)%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2faquaman-1968-episodes</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
 
+<plugin>
+<title>[COLOR pink]The Buzz on Maggie[/COLOR]</title>
+<link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f83%2fimage%2f555x418%2fmaggie-the-fly.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dThe%20Buzz%20on%20Maggie%20(2005-2006)%20Episodes%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2fthe-buzz-on-maggie</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
 
