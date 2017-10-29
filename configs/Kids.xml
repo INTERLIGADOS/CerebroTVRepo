@@ -25,8 +25,15 @@
 <dir>
 <name>[COLOR pink]Kids Youtube Channels[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/KidsYouTube.xml</link>
-<thumbnail>http://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/256/youtube-icon.png</thumbnail>
-<fanart></fanart>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR pink]Kids TV On Demand[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/index2-vod-kids.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <plugin>
@@ -71,19 +78,6 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<plugin>
-<title>[COLOR pink]The Boondocks 24/7[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dThe%20Boondocks%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fe7093d33e3f0f52bcb7284e45581a3e8.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]The Legend of Korra 24/7[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dThe%20Legend%20of%20Korra%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2ffcea6bfa2ba6ec8e6278b9003da42b0c.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
 
 <plugin>
 <title>[COLOR pink]Dragoon Ball 24/7[/COLOR]</title>
