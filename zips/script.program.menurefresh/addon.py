@@ -19,14 +19,14 @@ file2     = os.path.join(ROOT, 'uk.zip')
 def download(url, dest, dp = None):
     if not dp:
         dp = xbmcgui.DialogProgress()
-        dp.create("[COLOR tomato]Cerebro TV Menu Updater[/COLOR]","Downloading New TV Guide Data","This will take a few seconds.")
+        dp.create("[COLOR tomato]Cerebro TV Menu Updater[/COLOR]","Downloading New Menu Data","This will take a few seconds.")
         dp.update(0)
     start_time=time.time()
     try:
         urllib.URLopener.version = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36'
         urllib.urlretrieve(url, dest, lambda nb, bs, fs: _pbhook(nb, bs, fs, dp, start_time))
         dp.close()
-        dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Installing New TV Guide Data","Please Wait. [COLOR red]www.cerebrotv.co.uk[/COLOR]")
+        dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Installing New Menu Data","Please Wait. [COLOR red]www.cerebrotv.co.uk[/COLOR]")
         if os.path.exists(file2):
             zfile = zipfile.ZipFile(file2, 'r')	
             nItem = float(len(zfile.infolist()))
@@ -77,13 +77,13 @@ def dlProgress(count, blockSize, totalSize):
 
 def DownloaderClass(url,dest, dp = None):
     dp = xbmcgui.DialogProgress()
-    dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Downloading New TV Guide Data","This will take a few seconds.")
+    dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Downloading New Menu Data","This will take a few seconds.")
     try:
         start_time=time.time()
         urllib.URLopener.version = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36'
         urllib.urlretrieve(url, dest, lambda nb, bs, fs: _pbhook(nb, bs, fs, dp, start_time))
         dp.close()
-        dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Installing New TV Guide Data","Please Wait. [COLOR red]www.cerebrotv.co.uk[/COLOR]")
+        dp.create("[COLOR tomato]TV Guide Auto Update[/COLOR]","Installing New Menu Data","Please Wait. [COLOR red]www.cerebrotv.co.uk[/COLOR]")
         if os.path.exists(file2):
             #file3 = os.path.join(HOME, 'mchangelog.xml')
             #open(file3, 'w+')
@@ -109,7 +109,7 @@ def DownloaderClass(url,dest, dp = None):
 
         dp.close()
         dialog = xbmcgui.Dialog()
-        dialog.ok("[COLOR tomato]Cerebro TV Menu Updated[/COLOR]", " ", " ","Press OK or Back to Continue")
+        dialog.ok("[COLOR tomato]Cerebro TV Menus Updated[/COLOR]", " ", " ","Press OK or Back to Continue")
 
 
 
