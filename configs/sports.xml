@@ -24,6 +24,13 @@
 </plugin>
 
 <plugin>
+<title>[B][COLOR gold]CerebroTV: [/COLOR]Sports Replays[/B]</title>
+<link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2freplays.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Modbro Sports[/COLOR]</title>
 <link>plugin://plugin.video.mobdina/?action=index&query=category%2fsports</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -72,12 +79,6 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<plugin>
-<title>[COLOR pink]Sports Replays[/COLOR]</title>
-<link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2freplays.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
 
 
 
