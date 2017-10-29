@@ -94,8 +94,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Search[/COLOR]</title>
-<link>plugin://plugin.video.wargames/?action=searchNavigator</link>
+<title>[COLOR pink]ShowBox[/COLOR]</title>
+<link>plugin://plugin.video.Showbox</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
