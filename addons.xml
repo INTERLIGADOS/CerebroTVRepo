@@ -323,6 +323,24 @@ provider-name="Crucialminds">
   </extension>
 </addon>
 
+<addon id="plugin.video.cartoonson" name="CartoonsOn" version="1.1.3" provider-name="Dandymedia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"  version="3.0.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">Wide Collection Of Cartoons</summary>
+	<description lang="en">One click play from cartoonson.com</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.cerebro-movies"
   name="[COLOR=gold] .CerebroTV Movie Search[/COLOR] (STILL IN BETA)"
   version="1.6"
@@ -493,6 +511,24 @@ provider-name="Cerebro">
 
 </addon>
 
+<addon id="plugin.video.freshstart" name="Fresh Start"
+	version="1.0.6" provider-name="tvaddons.ag">
+  <requires>
+   <import addon="plugin.program.indigo" version="1.0.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Factory Restore Functionality for Kodi</summary>
+    <description lang="en">Easily Factory Restore your Kodi Configuration in One Simple Click! This tool will bring your Kodi back to its original installation state, deleting all customizations and add-ons you may have previously enabled, giving you a fresh start!</description>
+    <platform>all</platform>
+    <forum>http://forums.tvaddons.ag/forums/141-FRESH-START</forum>
+    <website>http://www.tvaddons.ag/</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.itv" name="ITV" version="2.4.0" provider-name="catchup4kodi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -533,6 +569,23 @@ provider-name="Cerebro">
 
 		</assets>
 		<news></news>
+	</extension>
+</addon>
+
+<!--suppress ALL -->
+<addon id="plugin.video.link__tester" version="0.0.1" name="URLResolver Link Tester" provider-name="Echo Coder">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.echo"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>URLResolver Link Tester Addon - Forked from TK Norris</summary>
+        <description></description>
+        <platform>all</platform>
 	</extension>
 </addon>
 
@@ -1003,6 +1056,34 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="plugin.video.youporn"
+	     name="YouPorn"
+	     version="3.00.001"
+	     provider-name="Echo Coder">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.urlresolver.xxx"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">OVER 18 ONLY - Support is available https://github.com/Colossal1/plugin.video.youporn/issues</summary>
+    <description lang="en">YouPorn Scraping by Echo Coder
+
+Skin and code for skin by Demonstratorz</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>https://github.com/Colossal1/plugin.video.youporn</forum>
+    <website>https://github.com/Colossal1/plugin.video.youporn</website>
+    <email>echocoderxbmc@protonmail.com</email>
+  </extension>
+</addon>
+
 <addon id="plugin.video.youtube" name="YouTube" version="5.4.14Bump" provider-name="jdf76, bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1231,6 +1312,19 @@ Removed: Nudeflix</news>
 		<summary>GeeTeeTV Repo</summary>
 		<description>GeeTeeTV repository</description>
 		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.jesusboxtv" name="Jesusbox Repository" version="1.0.3" provider-name="Playonmonkey">
+	<extension point="xbmc.addon.repository" name="Jesusbox Repository">
+		<info compressed="false">https://raw.githubusercontent.com/jesusboxrepo/repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jesusboxrepo/repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jesusboxrepo/repository/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Welcome to the Jesusbox Repository where you will find all Jesusbox produced Addon-ons and wizards</summary>
+		<description>The Best Media Center Box Available</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2148,6 +2242,29 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+<addon id="script.module.html5lib"
+       name="html5lib-python"
+       version="0.999.0"
+       provider-name="html5lib">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+    <import addon="script.module.six"
+                      version="1.4.1"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Standards-compliant library for parsing and serializing HTML documents and fragments in Python.</summary>
+    <description>html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/html5lib/html5lib-python.git</source>
+    <website>https://github.com/html5lib/html5lib-python</website>
+  </extension>
+</addon>
+
 <addon id="script.module.httplib2" name="httplib2" provider-name=" Joe Gregorio" version="0.8.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -2472,6 +2589,19 @@ level.</description>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
         <source>https://github.com/jsergio123/script.module.urlresolver</source>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver.xxx" version="1.0.09" name="Adult Resolver SMU Extension" provider-name="jsergio, Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        	<import addon="script.module.urlresolver" version="3.0.38" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
