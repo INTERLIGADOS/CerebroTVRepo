@@ -13,8 +13,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]BT Sports 1 HD[/COLOR] (Limited Stream Slots)</title>
-<link>plugin://program.apollo/?action=apollo&imdb=9999&season=922&title=922&sf_options=winID%3D10025%26_options_sf</link>
+<title>[COLOR pink]BT Sports 12 HD[/COLOR] (Limited Stream Slots)</title>
+<link>plugin://program.apollo/?action=apollo&imdb=9999&season=922&title=922&sf_options=winID%3D10025%26_options_sf,return</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
