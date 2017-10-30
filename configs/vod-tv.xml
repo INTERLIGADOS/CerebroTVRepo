@@ -94,7 +94,7 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]ShowBox[/COLOR]</title>
+<title>[COLOR pink]ShowBox Add-On[/COLOR]</title>
 <link>plugin://plugin.video.Showbox</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
