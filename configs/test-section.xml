@@ -4,3 +4,10 @@
 <dir>
 <title>[COLOR red]°• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° [/COLOR]</title>
 </dir>
+
+<plugin>
+<title>[COLOR pink]BT Sports 1[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?url=http%3A%2F%2F95.154.237.88%3A8080%2FMatH33RaaabB3eETtiyiy-1%2FStrm%2Findex.m3u8%7CUser-Agent%3DAppleCoreMedia%2F1.0.0.13A452+%28iPhone%3B+U%3B+CPU+OS+9_0_2+like+Mac+OS+X%3B+en_gb%29&mode=9999&name=Channel+1&iconimage=http%253A%252F%252Fsmarterlogix.com%252FiosSecureApps%252FPakIndiaTVHD%252FV1-2%252FImages%252Fsouth_american_football.jpg&description=&sf_options=winID%3D10025%26_options_sf</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
