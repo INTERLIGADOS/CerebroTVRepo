@@ -155,7 +155,7 @@
 </dir>
 
 <plugin>
-<title>[COLOR pink]Adult XXX Section[/COLOR] [I](Passworded See http://goo.gl/SbNpGr for info)[/I]</title>
+<title>[COLOR pink]Adult XXX Section[/COLOR] [I](Premium Only)[/I]</title>
 <link>plugin://script.mtvbxxx/</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -169,12 +169,6 @@
 <title>[COLOR red]°• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° °• •° [/COLOR]</title>
 </dir>
 
-<dir>
-<name>TESTING ONLY</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/test-section.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
 
 
 
