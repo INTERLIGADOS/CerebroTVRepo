@@ -20,7 +20,14 @@
 <title>[COLOR pink]Search for a Movie[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.streamhub/?action=movieSearch</link>
+<link>plugin://plugin.video.Showbox/?mode=9&name=Search%20Movies&url=search</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Search TV Shows / Episdoes[/COLOR] Option 2</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.bonecrusher/?action=movieSearch</link>
 </plugin>
 
 <plugin>
