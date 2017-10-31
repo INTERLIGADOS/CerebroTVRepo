@@ -24,149 +24,150 @@ datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
 strdomain ="http://vidics.unblocked.pro"
 AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
-playablehost=['daclips',
-'happystreams',
-'filehoot',
-'cloudyvideos',
-'realvid',
-'letwatch',
-'2gb-hostin..',
-'playhd',
-'dailymotion',
-'divxstage',
-'donevideo',
-'ecostream',
-'entroupload',
-'exashare',
-'facebook',
-'filebox',
-'filenuke',
-'flashx',
-'gorillavid',
-'hostingbulk',
-'hostingcup',
-'hugefiles',
-'jumbofiles',
-'lemuploads',
-'limevideo',
-'megarelease',
-'megavids',
-'mightyupload',
-'mooshare_biz',
-'movdivx',
+playablehost=[
+'daclips',
+'watchtvseries.unblckd.cam',
+#'filehoot',
+#'cloudyvideos',
+#'realvid',
+#'letwatch',
+#'2gb-hostin..',
+#'playhd',
+#'dailymotion',
+#'divxstage',
+#'donevideo',
+#'ecostream',
+#'entroupload',
+#'exashare',
+#'facebook',
+#'filebox',
+#'filenuke',
+#'flashx',
+#'gorillavid',
+#'hostingbulk',
+#'hostingcup',
+#'hugefiles',
+#'jumbofiles',
+#'lemuploads',
+#'limevideo',
+#'megarelease',
+#'megavids',
+#'mightyupload',
+#'mooshare_biz',
+#'movdivx',
 'movpod',
-'movreel',
-'movshare',
-'movzap',
-'mp4stream',
-'mp4upload',
-'mrfile',
-'muchshare',
-'nolimitvideo',
-'nosvideo',
+#'movreel',
+#'movshare',
+#'movzap',
+#'mp4stream',
+#'mp4upload',
+#'mrfile',
+#'muchshare',
+#'nolimitvideo',
+#'nosvideo',
 'novamov',
-'nowvideo',
-'ovfile',
-'play44_net',
-'played',
-'playwire',
-'premiumize_me',
-'primeshare',
-'promptfile',
-'purevid',
-'putlocker',
-'rapidvideo',
-'realdebrid',
-'rpnet',
-'seeon',
-'sharedsx',
-'sharefiles',
-'sharerepo',
-'sharesix',
-'sharevid',
-'skyload',
-'slickvid',
-'sockshare',
-'stagevu',
-'stream2k',
-'streamcloud',
-'teramixer',
-'thefile',
+#'nowvideo',
+#'ovfile',
+#'play44_net',
+#'played',
+#'playwire',
+#'premiumize_me',
+#'primeshare',
+#'promptfile',
+#'purevid',
+'putlocker.ac',
+'watchepisodes.unblocked.pro',
+#'realdebrid',
+#'rpnet',
+#'seeon',
+#'sharedsx',
+#'sharefiles',
+#'sharerepo',
+#'sharesix',
+#'sharevid',
+#'skyload',
+#'slickvid',
+#'sockshare',
+#'stagevu',
+#'stream2k',
+#'streamcloud',
+#'teramixer',
+#'thefile',
 'thevideo',
 'trollvid',
-'tubeplus',
-'tunepk',
-'ufliq',
-'uploadc',
-'uploadcrazynet',
-'veeHD',
-'veoh',
+#'tubeplus',
+#'tunepk',
+#'ufliq',
+#'uploadc',
+#'uploadcrazynet',
+#'veeHD',
+#'veoh',
 #'vidbull',
-'vidcrazynet',
-'video44',
-'videobb',
-'videoboxone',
-'videofun',
-'videomega',
-'videoraj',
-'videotanker',
-'videovalley',
-'videoweed',
-'videozed',
-'videozer',
-'vidhog',
-'vidpe',
-'vidplay',
-'vidspot',
-'vidstream',
-'vidto',
-'vidup',
-'vidxden',
+#'vidcrazynet',
+#'video44',
+#'videobb',
+#'videoboxone',
+#'videofun',
+#'videomega',
+#'videoraj',
+#'videotanker',
+#'videovalley',
+#'videoweed',
+#'videozed',
+#'videozer',
+#'vidhog',
+#'vidpe',
+#'vidplay',
+#'vidspot',
+#'vidstream',
+#'vidto',
+#'vidup',
+#'vidxden',
 'vidzi',
-'vidzur',
-'vimeo',
+#'vidzur',
+#'vimeo',
 'vk',
 'vodlocker',
-'vureel',
-'watchfreeinhd',
-'watchfreei..',
-'xvidstage',
-'yourupload',
-'youtube',
-'youwatch',
-'zalaa',
-'zooupload',
-'zshare',
-'videobug'
+#'vureel',
+#'watchfreeinhd',
+'watchfree.unblocked',
+#'xvidstage',
+#'yourupload',
+#'youtube',
+#'youwatch',
+#'zalaa',
+#'zooupload',
+#'zshare',
+#'videobug'
 'video.google.com',
-'bestreams',
+#'bestreams',
 'vidx',
-'streamin',
-'vidpaid',
-'uploadnetwork',
-'divxpress',
-'videopremium',
-'faststream',
-'v-vids',
-'topvideo',
-'gamovideo',
-'bonanzashare',
-'clicktoview',
+#'streamin',
+#'vidpaid',
+#'uploadnetwork',
+#'divxpress',
+#'videopremium',
+#'faststream',
+#'v-vids',
+#'topvideo',
+#'gamovideo',
+#'bonanzashare',
+#'clicktoview',
 'flashx.tv',
-'speedvid',
-'vreer',
-'allmyvideos',
-'cyberlocker',
-'veervid',
-'nowdownloa..',
-'videoslasher',
-'videoslash..',
-'billionuploads',
-'glumbouploads',
-'sharebees',
-'uploadorb',
-'speedyshare',
-'180upload',
+#'speedvid',
+#'vreer',
+#'allmyvideos',
+#'cyberlocker',
+#'veervid',
+#'nowdownloa..',
+#'videoslasher',
+#'videoslash..',
+#'billionuploads',
+#'glumbouploads',
+#'sharebees',
+#'uploadorb',
+#'speedyshare',
+#'180upload',
 'putlocker']
 
 net = Net()
@@ -186,9 +187,10 @@ class InputWindow(xbmcgui.WindowDialog):# Cheers to Bastardsmkr code already don
             return text
         self.close()
         return False
-		
+        
 def GetContent(url):
     try:
+       url=url.replace("putlocker.com","putlocker.ac")
        net = Net()
        second_response = net.http_GET(url)
        rcontent=second_response.content
@@ -196,15 +198,15 @@ def GetContent(url):
             rcontent =rcontent.encode("UTF-8")
        except: pass
        return rcontent
-    except:	
+    except: 
        d = xbmcgui.Dialog()
        d.ok(url,"Can't Connect to site",'Try again in a moment')
 
 try:
 
-    DB_NAME = 	 ADDON.getSetting('db_name')
-    DB_USER = 	 ADDON.getSetting('db_user')
-    DB_PASS = 	 ADDON.getSetting('db_pass')
+    DB_NAME =    ADDON.getSetting('db_name')
+    DB_USER =    ADDON.getSetting('db_user')
+    DB_PASS =    ADDON.getSetting('db_pass')
     DB_ADDRESS = ADDON.getSetting('db_address')
 
     if  ADDON.getSetting('use_remote_db')=='true' and DB_ADDRESS is not None and DB_USER is not None and DB_PASS is not None and DB_NAME is not None:
@@ -238,7 +240,7 @@ def initDatabase():
         db.execute('CREATE TABLE IF NOT EXISTS favorites (type, name, url, imgurl)')
     db.commit()
     db.close()
-	
+    
 def SaveData(SQLStatement): #8888
     if DB == 'mysql':
         db = database.connect(DB_NAME, DB_USER, DB_PASS, DB_ADDRESS, buffered=True)
@@ -250,23 +252,23 @@ def SaveData(SQLStatement): #8888
     db.close()
 
 def HostResolver(url):
-		print "in HostResolver"
-		parsed_uri = urlparse.urlparse(url)
-		server=str(parsed_uri.netloc)
-		server=server.split(".")
-		if(len(server)>2):
-			server=server[1]
-		else:
-			server=server[0]
-		server=server.replace("180upload","one80upload")
-		exec "from servers import "+server+" as server_connector"
-		rtnstatus,msg = server_connector.test_video_exists( page_url=url )
-		if(rtnstatus):
-			video_urls = server_connector.get_video_url( page_url=url , video_password="" )
-			return video_urls[0][1]
-		else:
-			return ""
-		
+        print "in HostResolver"
+        parsed_uri = urlparse.urlparse(url)
+        server=str(parsed_uri.netloc)
+        server=server.split(".")
+        if(len(server)>2):
+            server=server[1]
+        else:
+            server=server[0]
+        server=server.replace("180upload","one80upload")
+        exec "from servers import "+server+" as server_connector"
+        rtnstatus,msg = server_connector.test_video_exists( page_url=url )
+        if(rtnstatus):
+            video_urls = server_connector.get_video_url( page_url=url , video_password="" )
+            return video_urls[0][1]
+        else:
+            return ""
+        
 def SaveFav(fav_type, name, url, img):
         if fav_type == '': fav_type = getVideotype(url)
         statement  = 'INSERT INTO favorites (type, name, url, imgurl) VALUES (%s,%s,%s,%s)'
@@ -285,7 +287,7 @@ def SaveFav(fav_type, name, url, img):
             xbmc.executebuiltin(builtin)
         db.commit()
         db.close()
-		
+        
 def AddFavContext(vidtype, vidurl, vidname, vidimg):
         runstring = 'RunScript(plugin.video.vidics,%s,?mode=22&vidtype=%s&name=%s&imageurl=%s&url=%s)' %(sys.argv[1],vidtype,vidname,vidimg,vidurl)
         #runstring = 'RunPlugin(%s)' % addon.build_plugin_url({'mode':22, 'vidtype':vidtype, 'name':vidname, 'url':vidurl, 'imageurl':vidimg})
@@ -332,26 +334,27 @@ def DeleteFav(name,url):
     cursor.execute(sql_del, (name, url))
     db.commit()
     db.close()
-		
+        
 def HOME():
+        addDir('Pair For HD Content','Link',9898,'')
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'')
         addDir('Search Actors','search',15,'')
         addDir('Recently Added Movies','http://vidics.unblocked.pro/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
         addDir('Recently Added TV Shows','http://vidics.unblocked.pro/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
-        addDir('Favorites','Category-Movies',24,'')
+        #addDir('Favorites','Category-Movies',24,'')
         addDir('Movies A-Z','Category-Movies',16,'')
         addDir('TV Shows A-Z','Category-TvShows',17,'')
         addDir('Movies Genres','Category-Movies',18,'')
         addDir('TV Shows Genres','Category-TvShows',19,'')
-        addDir('7 Day TV Schedule','TV Schedule',20,'')
-        addDir('Top Movies','http://vidics.unblocked.pro/top/films.html',5,'')
+        #addDir('7 Day TV Schedule','TV Schedule',20,'')
+        #addDir('Top Movies','http://vidics.unblocked.pro/top/films.html',5,'')
         addDir('Top TV Shows','http://vidics.unblocked.pro/top/tvshows.html',6,'')
-        addDir('Movies/TV Show by Actor','http://vidics.unblocked.pro/Category-People/Genre-Any/Letter-Any/ByPopularity/1.htm',12,'')
+        #addDir('Movies/TV Show by Actor','http://vidics.unblocked.pro/Category-People/Genre-Any/Letter-Any/ByPopularity/1.htm',12,'')
 def LangOption():
         addDir('Show Top Languages','Top',10,'')
         addDir('Show All Languages','All',10,'')
-		
+        
 def CheckRedirect(url):
     try:
        net = Net()
@@ -396,17 +399,17 @@ def List4Days():
         sched_date=str(datetime.date.today()-datetime.timedelta(days=6))
         date_name=time.strftime("%A", time.strptime(sched_date, "%Y-%m-%d"))
         addDir(date_name+"'s("+sched_date+") TV Schedule",sched_date,21,"episode")
-		
+        
 def Mirrors(url,name):
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
   for item in listcontent:
-			vname=item.contents[0]
-			vurl=item["href"]
-			if(str(vname).split('.')[0].lower() in playablehost):
-				addLink(vname,strdomain+vurl,3,"",name)
+            vname=item.contents[0]
+            vurl=item["href"]
+            if(str(vname).split('.')[0].lower() in playablehost):
+                addLink(vname,strdomain+vurl,3,"",name)
 
 
 def add_contextsearchmenu(title, video_type):
@@ -419,7 +422,7 @@ def add_contextsearchmenu(title, video_type):
     if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.icefilms'):
         contextmenuitems.append(('Search Icefilms',
                                  'XBMC.Container.Update(%s?mode=555&url=%s&search=%s&nextPage=%s)' % (
-                                     'plugin://plugin.video.icefilms/', 'http://www.icefilms.info/', title, '1')))
+                                     'plugin://plugin.video.icefilms/', 'http://icefilms.unblocked.pro/', title, '1')))
     if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.movie25'):
         contextmenuitems.append(('Search Mash Up',
                                  'XBMC.Container.Update(%s?mode=%s&url=%s)' % (
@@ -449,7 +452,7 @@ def add_contextsearchmenu(title, video_type):
     return contextmenuitems
 
 
-		
+        
 def GetParts(vicontent,vidname):
         dialog = xbmcgui.Dialog()
         titles = []
@@ -460,11 +463,11 @@ def GetParts(vicontent,vidname):
             url=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>').findall(ucontent)[0]
             titles.append(titletext)
             urllist.append(url)
-        index = dialog.select('Choose your stream', titles)
-        win = xbmcgui.Window(10000)
-        win.setProperty('1ch.playing.episode', str(index))
-        return CheckRedirect(urllist[index])
-		
+        #index = dialog.select('Choose your stream', titles)
+        #win = xbmcgui.Window(10000)
+        #win.setProperty('1ch.playing.episode', str(index))
+        return CheckRedirect(urllist[0])
+        
 def ParseVideoLink(url,name,movieinfo):
     dialog = xbmcgui.DialogProgress()
     dialog.create('Resolving', 'Resolving video Link...')       
@@ -472,6 +475,7 @@ def ParseVideoLink(url,name,movieinfo):
     (respon,cj) = CheckRedirect(url)
     link=respon.content
     tmpcontent=link
+    tmpcontent=tmpcontent.replace("putlocker.com","putlocker.ac")
     redirlink = respon.get_url().lower()
     link = ''.join(link.splitlines()).replace('\'','"')
     # borrow from 1channel requires you to have 1channel
@@ -834,6 +838,7 @@ def ParseVideoLink(url,name,movieinfo):
                 pcontent=''.join(pcontent.splitlines()).replace('\'','"')
                 vidlink = ""
                 vidlink2 = re.compile('file:\s*"(.+?)",').findall(pcontent)
+                vidlink2 = vidlink2.replace("vodlocker.com","vodlocker.ac")
                 if(len(vidlink2) > 0):
                         vidlink = vidlink2[0] #vidlink2[0][1]+"/mp4:"+vidlink2[0][0]+" swfUrl=http://vodlocker.com/player/player.swf playPath=mp4:"+vidlink2[0][0]
         elif (redirlink.find("exashare") > -1):
@@ -1204,7 +1209,7 @@ def ParseVideoLink(url,name,movieinfo):
                         unpacked = unpackjs3(packed,tipoclaves=2)
                 unpacked=unpacked.replace("\\","")
                 vidlink = re.compile('addVariable\("file",\s*"(.+?)"\)').findall(unpacked)[0]
-				
+                
         else:
                 if(redirlink.find("putlocker.com") > -1 or redirlink.find("sockshare.com") > -1):
                         redir = redirlink.split("/file/")
@@ -1250,7 +1255,7 @@ def DetermineVideotype(url):
                 Seasons(url)
         else:
                 Mirrors(url,"Movie")
-				
+                
 def SEARCHMOV():
         keyb = xbmc.Keyboard('', 'Enter search text')
         keyb.doModal()
@@ -1258,7 +1263,7 @@ def SEARCHMOV():
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
         SearchResult("movie",searchText)
-		
+        
 def SEARCHTV():
         keyb = xbmc.Keyboard('', 'Enter search text')
         keyb.doModal()
@@ -1266,7 +1271,7 @@ def SEARCHTV():
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
         SearchResult("tv",searchText)
-		
+        
 def SEARCHactor():
         keyb = xbmc.Keyboard('', 'Enter search text')
         keyb.doModal()
@@ -1276,14 +1281,14 @@ def SEARCHactor():
         SearchResult("actor",searchText)
 
 def SearchResult(searchType,Searchtext):
-	Searchtext=urllib.quote_plus(Searchtext)
-	if searchType=="movie":
-			INDEX("https://vidics.unblocked.pro/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie")
-	elif searchType=="actor":
-			INDEX("https://vidics.unblocked.pro/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"")
-	else:
-			INDEX("https://vidics.unblocked.pro/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv")
-			
+    Searchtext=urllib.quote_plus(Searchtext)
+    if searchType=="movie":
+            INDEX("https://vidics.unblocked.pro/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie")
+    elif searchType=="actor":
+            INDEX("https://vidics.unblocked.pro/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"")
+    else:
+            INDEX("https://vidics.unblocked.pro/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv")
+            
 def getstatic():
         f = open(langfile, "r")
         langs = f.read()
@@ -1308,7 +1313,7 @@ def postContent(url,data,referr):
         response = usock.read()
     usock.close()
     return response
-	
+    
 def GenreList(catname,mode):
         url="https://vidics.unblocked.pro/"+catname+"/Genre-Any/Letter-Any/LatestFirst/1.htm"
         link = GetContent(url)
@@ -1318,7 +1323,7 @@ def GenreList(catname,mode):
                 glist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(listcontent[0])
                 for vurl,vname in glist:
                     addDir(vname.strip(),strdomain+vurl,mode,"")
-					
+                    
 def ProfileMovie(url,typename):
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
@@ -1329,14 +1334,14 @@ def ProfileMovie(url,typename):
                 for vurl,vname in movielist:
                     vname=html_re.sub('', vname)
                     addDirContext(vname.strip(),strdomain+vurl,13,"",plot="",vidtype="")
-					
+                    
 def ActorProfile(url):
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<h3 class="career_type_title" id="(.+?)" ?[^>]*>(.+?)</h3>').findall(newlink)
         for profid,vtype in listcontent:
             addDir(vtype,url,14,"")
-			
+            
 def postContent2(url,data,referr):
     req = urllib2.Request(url,data)
     req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
@@ -1344,7 +1349,7 @@ def postContent2(url,data,referr):
     data=response.read()
     response.close()
     return data
-		
+        
 def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
@@ -1357,7 +1362,7 @@ def SearchChannelresults(url,searchtext):
                 navlist=re.compile('<a[^>]* href="(.+?)">(.+?)</a>').findall(pagelist[0])
                 for purl,pname in navlist:
                     addDir("page " + pname.decode("utf-8"),strdomain+purl,13,"")
-					
+                    
 
 def Episodes(url,name):
     #try:
@@ -1375,7 +1380,7 @@ def Episodes(url,name):
                 break 
 
     #except: pass
-	
+    
 def Seasons(url):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
@@ -1409,7 +1414,7 @@ def INDEX(url,modenum,curmode,vidtype):
                 pagelist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(paginacontent[0])
                 for vurl,vname in pagelist:
                     addDir("page: " + vname.replace("&rsaquo;",">").replace("&lsaquo;","<"),strdomain+vurl.replace(" ","%20"),curmode,"")
-					
+                    
 def INDEXList(url,modenum,curmode,vidtype):
     #try:
         xbmc.executebuiltin("Container.SetViewMode(52)")
@@ -1446,7 +1451,7 @@ def INDEXList(url,modenum,curmode,vidtype):
     #except: pass
 
 
-	
+    
 #borrowed from pelisalacarta
 def get_match(data,patron,index=0):
     matches = re.findall( patron , data , flags=re.DOTALL )
@@ -1504,7 +1509,7 @@ def unpackjs(texto):
 
 
     return descifrado
-	
+    
 def unpackjs5(texto):
 
     # Extrae el cuerpo de la funcion
@@ -1558,7 +1563,7 @@ def unpackjs5(texto):
     descifrado = compiled.sub(lookup, cifrado)
 
     return descifrado
-	
+    
 def unpackjs4(texto):
 
     matches = texto.split("return p}")
@@ -1662,7 +1667,7 @@ def unpackjs3(texto,tipoclaves=1):
 
 
     return descifrado
-	
+    
 #borrowed from icefilms
 def do_wait(source, account, wait_time):
      # do the necessary wait, with  a nice notice and pre-set waiting time. I have found the below waiting times to never fail.
@@ -2269,15 +2274,16 @@ def resolve_movreel(url,inhtml=None):
     except Exception, e:
         print '**** Movreel Error occured: %s' % e
         raise
-		
+        
 if os.path.isfile(db_dir)==False:
      initDatabase()
-	 
+     
 def playVideo(url,name,movieinfo):
         vidurl=ParseVideoLink(url,name,movieinfo);
         xbmcPlayer = xbmc.Player()
-        xbmcPlayer.play(vidurl)
-		
+        try: xbmcPlayer.play(vidurl)
+        except: XBMC.Notification("CerebroTV,Link not playable try another",2000)
+        
 def RemoveHTML(strhtml):
             html_re = re.compile(r'<[^>]+>')
             strhtml=html_re.sub('', strhtml)
@@ -2295,7 +2301,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         liz.addContextMenuItems(contextMenuItems, replaceItems=False)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
-    	
+        
 def addLink(name,url,mode,iconimage,movieinfo=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo="+urllib.quote_plus(movieinfo)
         ok=True
@@ -2305,7 +2311,7 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
         liz.addContextMenuItems(contextMenuItems, replaceItems=True)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
         return ok
-		
+        
 def addNext(formvar,url,mode,iconimage):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&formvar="+str(formvar)+"&name="+urllib.quote_plus('Next >')
         ok=True
@@ -2313,7 +2319,7 @@ def addNext(formvar,url,mode,iconimage):
         liz.setInfo( type="Video", infoLabels={ "Title": 'Next >' } )
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
-		
+        
 def addDir(name,url,mode,iconimage,plot=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
@@ -2363,7 +2369,7 @@ except:
 try:
         formvar=int(params["formvar"])
 except:
-        pass		
+        pass        
 try:
         subtitleurl=urllib.unquote_plus(params["suburl"])
 except:
@@ -2380,7 +2386,7 @@ try:
         movieinfo=urllib.unquote_plus(params["movieinfo"])
 except:
         pass
-		
+        
 sysarg=str(sys.argv[1]) 
 
 print "currentmode" + str(mode)
@@ -2441,5 +2447,7 @@ elif mode==27:
         INDEX(url,7,27,"tv")
 elif mode==28:
         SearchResult(url,name)
+elif mode==9898:
+        xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')
 
 xbmcplugin.endOfDirectory(int(sysarg))
