@@ -1346,7 +1346,7 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="1.5"
+  version="1.6"
   name="CerebroTV Vidics Player"
   provider-name="Biglad">
   <requires>
@@ -1357,8 +1357,8 @@ Initial release.
 		<import addon="script.module.t0mm0.common" version="1.1.0"/>
         <import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
-        <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="plugin.video.1channel" />
+
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -1591,7 +1591,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.47" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.48" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -1640,6 +1640,7 @@ Removed: Nudeflix</news>
         <!--<import addon="script.tvguide.cerebrotv.sports" />-->
         <!--<import addon="plugin.video.dnatv4k" />-->
         <import addon="plugin.video.livehub2"/>
+        <import addon="plugin.video.Showbox"/>
         <import addon="repository.streamhub" />
         <import addon="repository.Cypherslocker" />
         <import addon="repository.sanctuary" />
@@ -1653,6 +1654,7 @@ Removed: Nudeflix</news>
         <import addon="repository.CruCialminds" />
         <import addon="repository.geetee.kodi" />
 		<import addon="repository.schemestreams" />
+        <import addon="repository.xbmchub" version="3.0.0" />
 
 
 	</requires>
