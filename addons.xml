@@ -1346,8 +1346,8 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="1.6"
-  name="CerebroTV Vidics Player"
+  version="1.8"
+  name=".CerebroTV Vidics Player"
   provider-name="Biglad">
   <requires>
         <import addon="xbmc.python" version="2.1.0" optional="true" />
@@ -1357,6 +1357,7 @@ Initial release.
 		<import addon="script.module.t0mm0.common" version="1.1.0"/>
         <import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
+        <import addon="script.module.requests" />
         <import addon="plugin.video.1channel" />
 
   </requires>
