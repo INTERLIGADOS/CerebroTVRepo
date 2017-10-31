@@ -4070,7 +4070,7 @@ level.</description>
 
 <addon id="script.mtvbtools"
   name="CerebroTV Tools"
-  version="2.0"
+  version="2.1"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

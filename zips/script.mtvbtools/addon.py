@@ -59,7 +59,7 @@ def menuoptions():
     '[B][COLOR=green]Test My Connection Speed[/COLOR][/B]', 
     '[B][COLOR=lightblue]Re-Download the last update[/COLOR][/B]', 
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
-    '[B][COLOR=cyan]Web Browser[/COLOR][/B]',
+    '[B][COLOR=cyan]Change My System Sounds[/COLOR][/B]',
     '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)'])
     # dialog.selectreturns
     #   0 -> escape pressed
@@ -112,7 +112,7 @@ def function6():
     xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
         
 def function7():
-    xbmc.executebuiltin('StartAndroidActivity("com.android.browser")')  
+    xbmc.executebuiltin('ActivateWindow(10040,"addons://repository.xbmc.org/kodi.resource.uisounds",return)')  
 
 def function8():
     xbmc.executebuiltin('ActivateWindow(10040,"addons://outdated/",return)')
