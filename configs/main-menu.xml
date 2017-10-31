@@ -42,8 +42,15 @@
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies and TV Shows OnDemand [/COLOR][/B] (Pair First!!!)</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod.xml</link>
+<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]TV Shows OnDemand [/COLOR][/B] (Pair First!!!)</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod-tv.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
+<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies OnDemand [/COLOR][/B] (Pair First!!!)</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod-movies.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
