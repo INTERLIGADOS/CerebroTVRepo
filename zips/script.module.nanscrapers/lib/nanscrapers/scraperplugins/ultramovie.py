@@ -40,8 +40,8 @@ class ultramovie(Scraper):
                             self.sources.append({'source': source_base, 'quality': qual, 'scraper': self.name, 'url': 'http:'+url,'direct': True})
                     elif 'streamango.com' in link:
                         holder = requests.get(link).content
-                        qual = re.compile('type:"video/mp4".+?height:(.+?),',re.DOTALL).findall(holder)
-                        self.sources.append({'source': source_base, 'quality': qual, 'scraper': self.name, 'url': link,'direct': True})
+                        qual = re.compile('type:"video/mp4".+?height:(.+?),',re.DOTALL).findall(holder)[0]
+                        self.sources.append({'source': source_base, 'quality': qual, 'scraper': self.name, 'url': link,'direct': False})
                     elif 'thevideo.me' in link:
                         self.sources.append({'source': source_base,'quality': 'DVD','scraper': self.name,'url': link,'direct': False})
                     elif 'openload' in link:

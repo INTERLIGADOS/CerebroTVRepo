@@ -82,13 +82,13 @@ class thewatchseries(Scraper):
                 if 'vidnode.net' in link:
                     link = 'http:'+link
                     page = requests.get(link).content
-                    vids = re.compile("source src='(.+?)'.+?label='(.+?)'",re.DOTALL).findall(page)
+                    vids = re.compile("file: '(.+?)'.+?label: '(.+?)'",re.DOTALL).findall(page)  ###file: 
                     for vid_url,res in vids:
                         if not 'auto' in res:                    
                             self.sources.append({'source': 'GoogleLink','quality': res,'scraper': self.name,'url': vid_url,'direct': True})
                 elif 'openload' in link:
                     try:
-                        chk = requests.get(fin_link).content
+                        chk = requests.get(link).content
                         rez = re.compile('"description" content="(.+?)"',re.DOTALL).findall(chk)[0]
                         if '1080' in rez:
                             res='1080p'

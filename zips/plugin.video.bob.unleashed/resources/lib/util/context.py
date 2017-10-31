@@ -43,7 +43,11 @@ def get_context_items(item):
     """
     context = []
     content = item["content"]
-
+    # cache
+    if content == "":
+        context.append(("Try Uncached",
+                        "Container.Update({0})".format(
+                            get_addon_url("get_list_uncached", item["link"]))))
     # information
     context.append((xbmcaddon.Addon().getLocalizedString(30708),
                     "XBMC.Action(Info)"))

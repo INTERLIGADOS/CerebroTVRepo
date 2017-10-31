@@ -74,6 +74,23 @@ def root():
             content_type="")
 
 
+@route(mode='get_list_uncached', args=["url"])
+def get_list_uncached(url):
+    """display bob list uncached"""
+    global content_type
+    bob_list = BobList(url, cached=False)
+    if not bob_list:
+        koding.dolog("returned empty for " + url)
+    items = bob_list.get_list()
+    content = bob_list.get_content_type()
+    if items == []:
+        return False
+    if content:
+        content_type = content
+    display_list(items, content_type)
+    return True
+
+
 @route(mode="get_list", args=["url"])
 def get_list(url):
     """display bob list"""

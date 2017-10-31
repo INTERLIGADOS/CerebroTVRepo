@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.bob.unleashed" name="BoB Unleashed" version="1.0.10" provider-name="midraal">
+<addon id="plugin.video.bob.unleashed" name="BoB Unleashed" version="1.0.11" provider-name="midraal">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.nanscrapers" version="0.5.5" />

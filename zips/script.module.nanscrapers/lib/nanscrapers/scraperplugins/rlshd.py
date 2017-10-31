@@ -32,8 +32,8 @@ class Rlshd(Scraper):
     name = "rlshd"
 
     def __init__(self):
-        self.domains = ['rlshd.net']
-        self.base_link = 'rlshd.net'
+        self.domains = ['rlshd..net']
+        self.base_link = 'rlshd..net'
         self.search_link = 'http://www.rlshd.net/?s='
 
     def scrape_movie(self, title, year, imdb, debrid=False):
@@ -72,14 +72,14 @@ class Rlshd(Scraper):
             titlecheck = cleanmovie+year
             link = requests.get(query, timeout=10).content
 
-            match = re.compile('<h2 class="entry-title"><a href="(.+?)" rel="bookmark">(.+?)</a></h2>').findall(link)
+            match = re.compile('<h1 class="entry-title"><a href="(.+?)" rel="bookmark">(.+?)</a></h1>').findall(link)
             for movielink, title in match:
-                # print "RLSHD MOVIELINKS %s %s" % (movielink,title)
+                #print "RLSHD MOVIELINKS %s %s" % (movielink,title)
                 c_title = clean_title(title)
 
                 if titlecheck in c_title:
 
-                            # print "RLSHD MOVIES PASSED %s %s" % (movielink,title)
+                            print "RLSHD MOVIES PASSED %s %s" % (movielink,title)
                             self.elysium_url.append([movielink, c_title])
             return self.elysium_url
         except:
@@ -111,8 +111,9 @@ class Rlshd(Scraper):
                                        int(data['season']),
                                        int(data['episode']))
             movielink = self.search_link + query
+            print 'gechk '+movielink
             link = requests.get(movielink, timeout=10).content
-            match = re.compile('<h2 class="entry-title"><a href="(.+?)" rel="bookmark">(.+?)</a></h2>').findall(link)
+            match = re.compile('<h1 class="entry-title"><a href="(.+?)" rel="bookmark">(.+?)</a></h1>').findall(link)
             for movielink,title2 in match:
                 c_title = clean_title(title2)
                 if titlecheck in c_title:
@@ -126,11 +127,13 @@ class Rlshd(Scraper):
             sources = []
 
             for movielink, title in self.elysium_url:
+                #print 'title chek'+title
+                #print 'movielink '+movielink
                 mylink = requests.get(movielink, timeout=5).content
-                if "1080" in title:
+                if "1080" in movielink:
                     quality = "1080p"
-                elif "720" in title:
-                    quality = "HD"
+                elif "720" in movielink:
+                    quality = "720p"
                 else:
                     quality = "SD"
                 # posts = client.parseDOM(mylink, 'p', attrs = {'class': 'sociallocker'})
@@ -139,7 +142,7 @@ class Rlshd(Scraper):
                     for item in posts:
                         match = re.compile('href="([^"]+)').findall(item)
                         for url in match:
-                            # print "RLSHD NEW URL PASSED %s" % url
+                            print "RLSHD NEW URL PASSED %s" % url
                             url = str(url)
                             if not any(value in url for value in ['imagebam','imgserve','histat','crazy4tv','facebook','.rar', 'subscene','.jpg','.RAR',  'postimage', 'safelinking','linx.2ddl.ag','upload.so','.zip', 'go4up','imdb']):
                                 loc = urlparse.urlparse(url).netloc # get base host (ex. www.google.com)
@@ -158,7 +161,7 @@ class Rlshd(Scraper):
                     match = re.compile('<a href="(.+?)" target="_blank">').findall(mylink)
 
                     for url in match:
-                            # print "RLSHD NEW URL PASSED %s" % url
+                            #print "RLSHD NEW URL PASSED %s" % url
                             url = str(url)
                             if not any(value in url for value in ['imagebam','imgserve','histat','crazy4tv','facebook','.rar', 'subscene','.jpg','.RAR',  'postimage', 'safelinking','linx.2ddl.ag','upload.so','.zip', 'go4up','imdb']):
                                 if any(value in url for value in hostprDict):

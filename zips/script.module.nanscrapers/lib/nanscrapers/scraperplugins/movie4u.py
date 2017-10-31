@@ -10,12 +10,12 @@ s = requests.session()
 User_Agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
                                            
 class movie4u(Scraper):
-    domains = ['https://movie4u.cc']
+    domains = ['https://movie4u.ch']
     name = "movie4u"
     sources = []
 
     def __init__(self):
-        self.base_link = 'https://movie4u.cc'
+        self.base_link = 'https://movie4u.ch'
         self.search_url = '/?s='
 
     def scrape_movie(self, title, year, imdb, debrid = False):

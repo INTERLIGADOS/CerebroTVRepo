@@ -21,17 +21,20 @@ class Dizi720(Scraper):
         try:
             start_url = self.base_link+title.replace(' ','-')+'-'+season+'-sezon-'+episode+'-bolum.html'
             #print 'SCRAPE URL:::::::::::::::::::::::'+start_url
-            html = self.scraper.get(start_url).content
+            headers = {'User-Agent':User_Agent}
+            html = requests.get(start_url,headers=headers,allow_redirects=True).content  #removed for now to 'allow redirects' ask MID via cfscrape ?
+            #print 'chk page'+html
             # if 'Bu Sayfa' in html:
                 # start_url = start_url.replace('-izle','')
                 # print '::::::::::::GW:::::::'+start_url
                 # html = self.scraper.get(start_url).content
-            block = re.compile('<ul class="dropdown-menu" role="menu">(.+?)</ul></div><div class="pull-right">',re.DOTALL).findall(html)
+            block = re.compile('<ul class="dropdown-menu" role="menu">(.+?)</ul>',re.DOTALL).findall(html)
             menu = re.compile('<a href="(.+?)"',re.DOTALL).findall(str(block)) 
             for page in menu:
                 headers = {'User_Agent':User_Agent}
                 links = self.scraper.get(page,headers=headers).content   
                 frame = re.compile('<[iI][fF][rR][aA][mM][eE].+?[sS][rR][cC]="(.+?)"').findall(links)[0]
+                #print '::::::::::::::'+ frame
                 self.get_source(frame,page)
              
             return self.sources

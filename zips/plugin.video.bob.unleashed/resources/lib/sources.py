@@ -478,6 +478,8 @@ class Sources(object):
             quality = "SDb"
         elif quality.startswith("SD"):
             quality = "SDc"
+        else:
+            quality = "Z"
         return quality
 
     @staticmethod

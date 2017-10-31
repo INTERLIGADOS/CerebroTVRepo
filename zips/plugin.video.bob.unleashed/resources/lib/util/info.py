@@ -837,7 +837,8 @@ def get_info(items, dialog=None):
             elif content == "episode":
                 item_info = get_episode_metadata(item["imdb"], item["season"],
                                                  item["episode"])
-
+            if type(item_info) == list:
+                item_info = {}
             if not item_info.get("plotoutline", None):
                 item_info["plotoutline"] = item_info.get("plot", "")
         except Exception as e:

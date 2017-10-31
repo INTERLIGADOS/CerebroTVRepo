@@ -1,3 +1,8 @@
+v1.0.11
+- add context item to fetch list uncached
+- tweak sorting function
+- tweak caching a bit
+
 v1.0.10
 - remove live resolver dependency
 - update server

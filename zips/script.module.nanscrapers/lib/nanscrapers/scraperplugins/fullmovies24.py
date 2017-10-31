@@ -41,7 +41,11 @@ class fullmovies24(Scraper):
                     holder = requests.get(link).content
                     #print 'holder>'+holder
                     qual = re.compile('type:"video/mp4".+?height:(.+?),',re.DOTALL).findall(holder)[0]
-                    self.sources.append({'source': 'Streamango', 'quality': qual, 'scraper': self.name, 'url': link,'direct': False})                   
+                    self.sources.append({'source': 'Streamango', 'quality': qual, 'scraper': self.name, 'url': link,'direct': False})
+                    
+                    link2 = re.compile('<source src="(.+?)"',re.DOTALL).findall(content)[0]
+                    #print 'holder>'+holder
+                    self.sources.append({'source': 'DirectLink', 'quality': '720P', 'scraper': self.name, 'url': link2,'direct': True})                    
             return self.sources
         except Exception, argument:
             return self.sources
