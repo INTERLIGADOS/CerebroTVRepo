@@ -10,6 +10,20 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]The Simpsons[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Simpsons%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe-simpsons&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]American Dad[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20American%20Dad!%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2famerican_dad&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Rick & Morty[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f25%2fimage%2f555x418%2frick-and-morty.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dRick%20and%20Morty%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2frick-and-morty-tv-series</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -57,6 +71,8 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+
 
 
 

@@ -38,7 +38,7 @@ with open(file99, 'r') as myfile:
 timer = 10
 xbmc.executebuiltin('RunAddon(script.program.megatvhousekeeper)') 
 def UpdateCheck():
-    xbmc.executebuiltin("XBMC.AlarmClock('MTVBCS',XBMC.RunAddon(script.cachesystem),10,silent)")
+    xbmc.executebuiltin("XBMC.AlarmClock('MTVBCS',XBMC.RunAddon(script.cachesystem),30,silent)")
     try:
         response = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/auth2.php?id='+str(boxid)+'&tt=yes')
         xbmc.log("CerebroTV Auth System Updating Data for "+str(boxid))

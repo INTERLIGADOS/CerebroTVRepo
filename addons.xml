@@ -2471,7 +2471,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.cachesystem"
   name="Cache System"
-  version="1.7"
+  version="1.8"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
