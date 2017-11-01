@@ -44,3 +44,16 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR ghostwhite]Open Advanced Network Settings[/COLOR]</title>
+<link>plugin://plugin.program.advancedsettings/?description=Network%20client%20settings&iconimage&list=blank&mode=302&name=Network&url=url</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR ghostwhite]Save Network Settings[/COLOR]</title>
+<link>plugin://plugin://plugin.program.advancedsettings/?url=url&mode=500&name=Write+XML+File&iconimage=C%3A%5CUsers%5Cbigla%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.advancedsettings%5Cicon.png&description=Feeling brave? Write your advanced settings directly to your userdata directory. You may need to reboot for settings to take effect&list=special://userdata//advancedsettings.xml&options=</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
