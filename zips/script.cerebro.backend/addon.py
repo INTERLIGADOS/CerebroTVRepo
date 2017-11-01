@@ -14,7 +14,7 @@ def d():
 	except:
 		pass
         
-xbmc.executebuiltin('UpdateAddonRepos')
-xbmc.executebuiltin('UpdateLocalAddons')
+#xbmc.executebuiltin('UpdateAddonRepos')
+#xbmc.executebuiltin('UpdateLocalAddons')
 d()  
 xbmc.executebuiltin("XBMC.AlarmClock('MTVBCS',XBMC.RunAddon(script.cerebro.backend),120,silent)")
