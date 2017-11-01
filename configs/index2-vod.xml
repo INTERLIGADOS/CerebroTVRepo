@@ -106,3 +106,31 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]The Walking Dead[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_walking_dead&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Fear the Walking Dead[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Fear%20the%20Walking%20Dead%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fFear-the-Walking-Dead&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Walking Dead Webisodes[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20Webisodes%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_walking_dead_webisodes&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Orville[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Orville%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fThe-Orville&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
