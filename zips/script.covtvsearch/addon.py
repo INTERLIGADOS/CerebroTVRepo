@@ -5,4 +5,4 @@ import xbmcgui
 import urllib2
 
 
-xbmc.executebuiltin('plugin://plugin.video.covenant/?action=tvSearch')
+xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.covenant/?action=tvSearch",return)')
