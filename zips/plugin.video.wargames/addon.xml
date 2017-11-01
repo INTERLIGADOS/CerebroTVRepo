@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.48" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.49" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -33,6 +33,8 @@
         <!--<import addon="script.mtvbxxx" />-->
         <!--<import addon="script.covloader" />-->
         <import addon="script.xbmc.unpausejumpback" />
+        <import addon="script.covtvsearch" />
+        <import addon="script.covtvsearch2" />
         <!--<import addon="program.apollo" />-->
         <import addon="script.cerebro.backend" />
         <import addon="script.module.muckys.common" />
