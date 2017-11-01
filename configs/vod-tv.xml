@@ -41,7 +41,7 @@
 <title>[COLOR pink]Search TV Shows / Episdoes[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.covenant/?action=tvSearch</link>
+<link>plugin://script.covtvsearch</link>
 </plugin>
 
 <plugin>
