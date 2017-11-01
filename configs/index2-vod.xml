@@ -79,7 +79,30 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]Supergirl[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Supergirl%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fSupergirl-1&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
 
+<plugin>
+<title>[COLOR pink]Arrow[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Arrow%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2farrow&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
 
+<plugin>
+<title>[COLOR pink]Airwolf[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Airwolf%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fairwolf&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
 
-
+<plugin>
+<title>[COLOR pink]The A-Team[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20A-Team%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_a-team&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
