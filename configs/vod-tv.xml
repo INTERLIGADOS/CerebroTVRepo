@@ -10,7 +10,7 @@
 </plugin>
 
 <dir>
-<name>[COLOR pink]TV On Demand[/COLOR]</name>
+<name>[COLOR gold]Cerebro's TV On Demand[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/index2-vod.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
