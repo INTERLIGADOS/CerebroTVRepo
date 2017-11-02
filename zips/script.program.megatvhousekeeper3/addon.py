@@ -3,7 +3,12 @@ import xbmc,xbmcaddon,subprocess
 import urlparse
 import xbmcgui
 import sfile
-
+dp = xbmcgui.DialogProgress()
+dialog = xbmcgui.Dialog()
+dp.create("[COLOR tomato]CerebroTV House Keeper[/COLOR]","Removing temp /old files","Please Wait...")
+xbmc.playSFX('special://home/media/Working.wav')
+xbmc.sleep(2000)
+dp.update(10)
 #FOLDERS
 ZEUS     = xbmc.translatePath('special://home/addons/repository.zeus/')
 ZEUS2    = xbmc.translatePath('special://home/addons/plugin.video.zeus/')
@@ -73,17 +78,25 @@ try: sfile.rmtree(CACHE)
 except: pass
 try: sfile.rmtree(thumbs)
 except: pass
-
+xbmc.playSFX('special://home/media/Working.wav')
 
 #TV GUIDE DATA
-try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.mtvbtvguide/uktvguide.xml"))
+try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
 except: pass
-try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.mtvbtvguideusa/usatvguide.xml"))
+try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.sports/cerebrouk.xml"))
 except: pass
-try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.mtvbtvguidefv/uktvguidefv.xml"))
+try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.kids/cerebrouk.xml"))
 except: pass
-try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.mtvbtvguidekids/kidstvguide.xml"))
+xbmc.sleep(4000)
+dp.update(40)
+try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
 except: pass
+try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.sports/source.db"))
+except: pass
+try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.kids/source.db"))
+except: pass
+xbmc.playSFX('special://home/media/Working.wav')
+
 try: os.remove(MZip)
 except: pass
 try: os.remove(MZip2)
@@ -103,12 +116,20 @@ except: pass
 try: os.remove('/storage/emulated/0/Download/downloaded.apk')
 except: pass
 
-update = xbmcgui.Dialog().yesno("[COLOR tomato]CerebroTV House Keeper[/COLOR]","[COLOR yellow]All none needed files have been removed[/COLOR]","[COLOR turquoise]This will speed up your box[/COLOR]" ,"[COLOR turquoise]A ReStart is now needed[/COLOR]")
-if update:
-    xbmc.executebuiltin('RunAddon(script.program.exitkodi)')
-else:
-    xbmc.executebuiltin('RunAddon(script.program.exitkodi)')
-
+#update = xbmcgui.Dialog().yesno("[COLOR tomato]CerebroTV House Keeper[/COLOR]","[COLOR yellow]All none needed files have been removed[/COLOR]","[COLOR turquoise]This will speed up your box[/COLOR]" ,"[COLOR turquoise]A ReStart is now needed[/COLOR]")
+#if update:
+#    xbmc.executebuiltin('RunAddon(script.program.exitkodi)')
+#else:
+#    xbmc.executebuiltin('RunAddon(script.program.exitkodi)')
+dp.update(80)
+xbmc.sleep(3000)
+xbmc.playSFX('special://home/media/closings.wav')
+dp.update(100)
+xbmc.sleep(1000)
+dp.close()
+dp.create("[COLOR tomato]CerebroTV House Keeper[/COLOR]","Rebooting Device Or Closing Kodi","Please Wait...")
+xbmc.sleep(3000)
+xbmc.executebuiltin('RunAddon(script.program.exitkodi)')
 
 
 
