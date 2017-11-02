@@ -51,7 +51,12 @@ def function2():
     #dp = xbmcgui.DialogProgress()
     #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     #xbmc.sleep(5000)
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://script.program.exitkodi?sf_options=desc%3DReboots+your+Android+device.%26_options_sf",return)')
+    f os.path.exists(iddata):
+        with open(iddata, 'r') as mymega:
+            userid=mymega.read()
+        try: response = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/auth2.php?id='+str(userid)+'&die=1').read()
+        except: pass
+    xbmc.executebuiltin('script.program.tvguiderefresh3)')
 
 def function3():
     xbmc.executebuiltin("Notification(CerebroTV,Closing SPMC/Kodi, Will take a few seconds,7000,)")
@@ -61,6 +66,6 @@ def function3():
             userid=mymega.read()
         try: response = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/auth2.php?id='+str(userid)+'&die=1').read()
         except: pass
-    xbmc.executebuiltin('Quit')
+    xbmc.executebuiltin('script.program.tvguiderefresh3)')
 
 menuoptions()

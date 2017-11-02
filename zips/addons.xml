@@ -3790,7 +3790,7 @@ level.</description>
 
 <addon id="script.mtvbexit"
   name="CerebroTV Exit/Reboot"
-  version="1.3"
+  version="1.5"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -4457,7 +4457,7 @@ level.</description>
 
 <addon id="script.program.exitkodi"
   name="ExitKodi"
-  version="1.1"
+  version="1.2"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -4596,6 +4596,24 @@ level.</description>
     <summary lang="en"></summary>
     <description lang="en"></description>
 	<disclaimer></disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.tvguiderefresh3"
+  name="Cerebro House Keeper"
+  version="1.1"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Cerebro House Keeper</summary>
+    <description lang="en">Cerebro House Keeper</description>
+	<disclaimer>Cerebro House Keeper.</disclaimer>
   </extension>
 </addon>
 
