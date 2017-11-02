@@ -3591,7 +3591,7 @@ level.</description>
 
 <addon id="script.mtvbapkinstaller"
   name="CerebroTV APK Installer"
-  version="1.8"
+  version="1.9"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

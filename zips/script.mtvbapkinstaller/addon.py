@@ -126,12 +126,13 @@ def menuoptions():
     '[B][COLOR=green]      Download[/COLOR] ES File Explorer[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] TeamViewer Quick Support[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] CCleaner[/B]  - ([I]Android [/I]) (SYSTEM CLEANER)',  
-    '[B][COLOR=green]      Download[/COLOR] VPN[/B]  - ([I]Android [/I])',  
+    '[B][COLOR=green]      Download[/COLOR] Hola VPN[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] SENS Emulator[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] YouTube App[/B]  - ([I]Android [/I])',  
     '[B][COLOR=green]      Download[/COLOR] GooglePlay Update[/B]  - ([I]Android [/I])',
     '[B][COLOR=green]      Download[/COLOR] Connection Speed Tester[/B]  - ([I]Android [/I])',
-    '[B][COLOR=green]      Download[/COLOR] M.A.M.E[/B] For All Android (Retro Game Player) (Version 2)'])
+    '[B][COLOR=green]      Download[/COLOR] M.A.M.E[/B] For All Android (Retro Game Player) (Version 2)',
+    '[B][COLOR=green]      Download[/COLOR] Google Chrome Web Browser[/B] For Android 5+'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -140,7 +141,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-22]
+        func = funcs[call-23]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -321,6 +322,13 @@ def function21():
     
 def function22():
     DownloaderClass("http://mtvb.co.uk/apks/MAME2.exe",file)
+    xbmc.sleep(1000)
+    xbmc.executebuiltin('StartAndroidActivity("com.droidlogic.appinstall")')
+    xbmc.executebuiltin('StartAndroidActivity("com.gsoft.appinstall")')
+    xbmc.executebuiltin('StartAndroidActivity("com.estrongs.android.pop")') 
+    
+def function23():
+    DownloaderClass("http://mtvb.co.uk/apks/googlechrome.exe",file)
     xbmc.sleep(1000)
     xbmc.executebuiltin('StartAndroidActivity("com.droidlogic.appinstall")')
     xbmc.executebuiltin('StartAndroidActivity("com.gsoft.appinstall")')
