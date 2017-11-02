@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.megatvupdater"
-    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.2" provider-name="Biglad">
+    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.3" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />

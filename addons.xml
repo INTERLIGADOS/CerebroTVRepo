@@ -2485,7 +2485,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.cachesystem"
   name="Cache System"
-  version="1.8"
+  version="1.9"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
@@ -2988,7 +2988,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <addon id="script.megatvupdater"
-    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.2" provider-name="Biglad">
+    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.3" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />
@@ -4277,7 +4277,7 @@ level.</description>
 
 <addon id="script.mtvbtools"
   name="CerebroTV Tools"
-  version="2.1"
+  version="2.2"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
