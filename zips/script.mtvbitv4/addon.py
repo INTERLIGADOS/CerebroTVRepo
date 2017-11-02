@@ -41,15 +41,15 @@ def menuoptions():
 
 
 def function1():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dITV4%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f2a2714a7d955d8810a21bb3f195cc0d9.m3u8")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.itv/?url=https%3A%2F%2Fitv4liveios-i.akamaihd.net%2Fhls%2Flive%2F207266%2Fitvlive%2FITV4MN%2Fmaster.m3u8&mode=7&name=ITV4&iconimage=C%3A%5CUsers%5Cbigla%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.itv%5Cart%2F4.png")')
 
 def function2():
-    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.217.33:9091/routernew/ITV4/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5DITV+4%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F62701_itv41.jpg&description=ITV+4+ITV+4+ITV+4+ITV+4+ITV+4+ITV+4+ITV+4+ITV+4")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dITV4%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f2a2714a7d955d8810a21bb3f195cc0d9.m3u8")')
 
 def function3():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.weetv/?fanart=http%3a%2f%2fwww.geetee.site%2fwizchannels%2fimages%2fderwentwater.jpg&iconimage=http%3a%2f%2fwww.geetee.site%2fwizchannels%2fimages%2fgb.png&mode=2&name=ITV%20HD%204%0d&url=http%3a%2f%2fmidnightiptvstreams.ddns.net%3a5050%2flive%2fjames2%2fjames2%2f57308.ts%0d")')
+    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.216.192:7071/routernew/ITV4/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5DITV+4%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F62701_itv41.jpg&description=ITV+4+ITV+4+ITV+4+ITV+4+ITV+4+ITV+4+ITV+4+ITV+4")')
 
 def function4():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.weetv/?fanart=http%3a%2f%2fwww.geetee.site%2fwizchannels%2fimages%2fderwentwater.jpg&iconimage=http%3a%2f%2fwww.geetee.site%2fwizchannels%2fimages%2fgb.png&mode=2&name=ITV4%0d&url=http%3a%2f%2fmidnightiptvstreams.ddns.net%3a5050%2flive%2fjames2%2fjames2%2f57189.ts%0d")')
+    xbmc.executebuiltin('PlayMedia("plugin://program.apollo/?action=apollo&imdb=9999&season=1605&title=1605")')
 
 menuoptions()

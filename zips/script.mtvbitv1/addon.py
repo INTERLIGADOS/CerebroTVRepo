@@ -42,15 +42,15 @@ def menuoptions():
 
     
 def function1():
-    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=http://tvcatchup.com/watch/itv&mode=9999&name=%5BB%5D%5BCOLOR+white%5D+ITV+One%5B%2FCOLOR%5D%5B%2FB%5D+-++Midsomer+Murders+&iconimage=https%3A%2F%2Fwww.tvcatchup.com%2Fchannel-images%2Fitv.png&description=&sf_options=winID%3D10025%26_options_sf")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.itv/?url=https%3A%2F%2Fitv1liveios-i.akamaihd.net%2Fhls%2Flive%2F203437%2Fitvlive%2FITV1MN%2Fmaster.m3u8&mode=7&name=ITV1&iconimage=C%3A%5CUsers%5Cbigla%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.itv%5Cart%2F1.png")')
 
 def function2():
     xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dITV1%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fcc0b763f7c5ce91a396c0ef4fa529df9.m3u8")')
 
 def function3():
-    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.217.33:9091/routernew/ITV1/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5DITV+1%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F89915_itv11.jpg&description=ITV+1+ITV+1+ITV+1+ITV+1+ITV+1ITV+1ITV+1")')
+    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.216.192:7071/routernew/ITV1/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5DITV+1%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F89915_itv11.jpg&description=ITV+1+ITV+1+ITV+1+ITV+1+ITV+1ITV+1ITV+1")')
 
 def function4():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.weetv/?url=http%3A%2F%2Ftvcatchup.com%2Fwatch%2Fitv&mode=9999&name=+ITV+One+-+++ITV+Evening+News+++++++++++++++++++++++++++++++++&iconimage=https%3A%2F%2Fwww.tvcatchup.com%2Fchannel-images%2Fitv.png&fanart=http%3A%2F%2Fwww.geetee.site%2Fwizchannels%2Fimages%2Fderwentwater.jpg")')
+    xbmc.executebuiltin('PlayMedia("plugin://program.apollo/?action=apollo&imdb=9999&season=1608&title=1608")')
 
 menuoptions()
