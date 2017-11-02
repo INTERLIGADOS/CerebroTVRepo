@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.zt" name="[COLORred]Z[/COLOR]ero [COLORwhite]T[/COLOR]olerance Repository" version="1.0.1" provider-name="Team ZT">
+		<extension point="xbmc.addon.repository" name="Bla Bla Repository">
+			<info compressed="false">http://zt.r3trozt.tk/repo/addons.xml</info>
+			<checksum>http://zt.r3trozt.tk/repo/addonsmd5.txt</checksum>
+			<datadir zip="true">http://zt.r3trozt.tk/repo/addons/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary></summary>
+			<description></description>
+			<platform>all</platform>
+		</extension>
+</addon>
