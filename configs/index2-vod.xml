@@ -268,3 +268,24 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Modern Family[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Modern%20Family%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fmodern_family&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Impractical Jokers[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Impractical%20Jokers%20&url=http%3a%2f%2fvidics.unblocked.pro%2fTV-Show%2fimpractical_jokers&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Impractical Jokers (UK)[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Impractical%20Jokers%20(UK)%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fImpractical_Jokers_UK&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
