@@ -221,14 +221,14 @@ provider-name="Crucialminds">
 
 </addon>
 
-<addon id="plugin.video.1channel" version="4.0.02" name="PrimeWire" provider-name="k3l3vra">
+<addon id="plugin.video.1channel" version="4.0.03" name="PrimeWire" provider-name="k3l3vra, Biglad">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0"/>
         <import addon="script.module.addon.common" version="2.0.0" />
         <import addon="script.module.metahandler" version="2.6.0" />
         <import addon="script.module.myconnpy" version="1.1.6" />
-        <import addon="plugin.program.indigo" version="3.0.2" />
+        <import addon="plugin.program.indigo" version="3.0.2" optional="true" />
         <import addon="repository.xbmchub" version="3.0.0" />
         <import addon="script.module.axel.downloader" version="0.2.0" optional="true"/>
     </requires>
@@ -1405,7 +1405,7 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="1.9"
+  version="2.0"
   name=".CerebroTV Vidics Player"
   provider-name="Biglad">
   <requires>
@@ -1417,7 +1417,7 @@ Initial release.
         <import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.module.requests" />
-        <import addon="plugin.video.1channel" />
+        <import addon="plugin.video.1channel" optional="true"/>
         <import addon="script.xbmc.unpausejumpback" />
 
   </requires>

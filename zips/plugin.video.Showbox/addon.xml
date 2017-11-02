@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon
   id="plugin.video.Showbox"
-  version="1.9"
+  version="2.0"
   name=".CerebroTV Vidics Player"
   provider-name="Biglad">
   <requires>
@@ -13,7 +13,7 @@
         <import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.module.requests" />
-        <import addon="plugin.video.1channel" />
+        <import addon="plugin.video.1channel" optional="true"/>
         <import addon="script.xbmc.unpausejumpback" />
 
   </requires>
