@@ -54,7 +54,7 @@ def function2():
     #dp = xbmcgui.DialogProgress()
     #dp.create("[COLOR tomato]CerebroTV[/COLOR]","PLEASE EXIT KODI OR PULL THE POWER LEAD","PLEASE EXIT KODI OR PULL THE POWER LEAD")
     #xbmc.sleep(5000)
-    f os.path.exists(iddata):
+    if os.path.exists(iddata):
         with open(iddata, 'r') as mymega:
             userid=mymega.read()
         try: response = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/auth2.php?id='+str(userid)+'&die=1').read()
