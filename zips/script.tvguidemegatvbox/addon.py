@@ -11,7 +11,8 @@ def menuoptions():
     funcs = (
         function1,
         function2,
-        function3
+        function3,
+        function4
         )
         
     call = dialog.select('[B][COLOR=yellow]Live TV Menu[/COLOR][/B]', [ 
