@@ -11,7 +11,9 @@ def menuoptions():
         function2
         )
         
-    call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Settings[/COLOR][/B]', ['[B][COLOR=green]      SPMC/Kodi Settings[/COLOR][/B]' , '[B][COLOR=green]      All Video Add-On`s[/COLOR][/B]'])
+    call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Settings[/COLOR][/B]', [
+    '[B][COLOR=green]      Main Kodi Settings[/COLOR][/B]' ,
+    '[B][COLOR=green]      All Video Add-On`s[/COLOR][/B]'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -42,5 +44,3 @@ def function2():
 
 
 menuoptions()
-#xbmc.executebuiltin("Notification(CerebroTV,MAY TAKE 2-3 CLICKS, ....,5000,)")
-#xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?item=catcher%3dstreams%26title%3dLifetime%2bUK%26url%3dmpd%253A%252F%252Ff31ff373857e6b6e0bc44ae55da2e208.m3u8%26cfg%3dtvone1.tv.cfg%2540Streams%2540Channels%26videoTitle%3dLifetime%2bUK%26director%3dtvone1.tv%26genre%3dLive%2bTV%26referer%3dmpd%253A%252F%252Ff31ff373857e6b6e0bc44ae55da2e208.m3u8%26definedIn%3dtvone1.tv.cfg%26type%3drss&mode=1",return)')

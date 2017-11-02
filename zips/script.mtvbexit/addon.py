@@ -15,7 +15,10 @@ def menuoptions():
         function3
         )
         
-    call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Exit / Reboot[/COLOR][/B]', ['[B][COLOR=green]Reboot Box[/COLOR][/B] (Needs Reboot.apk)', '[B][COLOR=green]Exit / Reboot[/COLOR][/B] (Need Admin/ADB Shell/Root/SU Access)', '[B][COLOR=green]Exit SPMC / Kodi[/COLOR][/B] (All Devices, will take some time!!)'])
+    call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Exit / Reboot[/COLOR][/B]', [
+    '[B][COLOR=green]Reboot Box[/COLOR][/B] (Needs Reboot.apk)',
+    '[B][COLOR=green]Exit / Reboot[/COLOR][/B] (Need Admin/ADB Shell/Root/SU Access)',
+    '[B][COLOR=green]Exit Kodi[/COLOR][/B] (All Devices, will take some time!!)'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
