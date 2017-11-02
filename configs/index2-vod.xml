@@ -218,3 +218,24 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Spender[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Spender%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fSpender&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Grand Tour[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Grand%20Tour%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pro%2fTV-Show%2fThe-Grand-Tour-&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Dream Team[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Dream%20Team%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fdream_team&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
