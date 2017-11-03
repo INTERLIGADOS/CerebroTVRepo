@@ -289,3 +289,10 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Red Dwarf[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Red%20Dwarf%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fred_dwarf&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
