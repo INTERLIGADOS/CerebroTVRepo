@@ -59,7 +59,7 @@ def function2():
             userid=mymega.read()
         try: response = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/auth2.php?id='+str(userid)+'&die=1').read()
         except: pass
-    xbmc.executebuiltin('RunAddon(script.program.tvguiderefresh3)')
+    xbmc.executebuiltin('RunAddon(script.program.megatvhousekeeper3)')
 
 def function3():
     xbmc.executebuiltin("Notification(CerebroTV,Closing SPMC/Kodi, Will take a few seconds,7000,)")
@@ -69,6 +69,6 @@ def function3():
             userid=mymega.read()
         try: response = urllib2.urlopen('http://megatvbox.co.uk/TV-DATA/auth2.php?id='+str(userid)+'&die=1').read()
         except: pass
-    xbmc.executebuiltin('RunAddon(script.program.tvguiderefresh3)')
+    xbmc.executebuiltin('RunAddon(script.program.megatvhousekeeper3)')
 
 menuoptions()
