@@ -106,7 +106,8 @@ def menuoptions():
         function19,
         function20,
         function21,
-        function22
+        function22,
+        function23
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] APP Installer[/COLOR][/B]', [
