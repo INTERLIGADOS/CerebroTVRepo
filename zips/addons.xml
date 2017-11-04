@@ -3681,7 +3681,7 @@ level.</description>
 
 <addon id="script.mtvbbts1"
   name="CerebroTV BT Sports 1"
-  version="1.7"
+  version="1.8"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
