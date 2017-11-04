@@ -3717,7 +3717,7 @@ level.</description>
 
 <addon id="script.mtvbbts3"
   name="CerebroTV Sky Sports 3"
-  version="1.6"
+  version="1.7"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
