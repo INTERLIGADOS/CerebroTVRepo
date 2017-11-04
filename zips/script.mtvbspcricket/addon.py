@@ -14,10 +14,10 @@ def menuoptions():
         )
         
     call = dialog.select('[B][COLOR=yellow]Cerebro TV[/COLOR][COLOR=red] Sky Sports Cricket Links[/COLOR][/B]', [
-    '[B][COLOR=white]      Sky Sports 4 Link Cricket[/COLOR][/B]', 
-    '[B][COLOR=white]      Sky Sports 4 Link Cricket[/COLOR][/B]', 
-    '[B][COLOR=white]      Sky Sports 4 Link Cricket[/COLOR][/B]', 
-    '[B][COLOR=white]      Sky Sports 4 Link Cricket[/COLOR][/B]'])
+    '[B][COLOR=white]      Sky Sports Cricket Link 1[/COLOR][/B]', 
+    '[B][COLOR=white]      Sky Sports Cricket Link 2[/COLOR][/B]', 
+    '[B][COLOR=white]      Sky Sports Cricket Link 3[/COLOR][/B]', 
+    '[B][COLOR=white]      Sky Sports Cricket Link 4[/COLOR][/B]'])
     if call:
         # esc is not pressed
         if call < 0:
@@ -34,10 +34,10 @@ def function1():
     xbmc.executebuiltin('PlayMedia("plugin://program.apollo/?action=apollo&imdb=9999&season=1130&title=1130")')
   
 def function2():
-    xbmc.executebuiltin('PlayMedia("plugin://script.cypherstream/?description&iconimage=http%3a%2f%2fwww.apkmirror.com%2fwp-content%2fuploads%2f2016%2f07%2f579a975ed024a.png&mode=8&name=%5bCOLOR%20yellow%5dSky%20Sports%20Cricket%5b%2fCOLOR%5d&url=mpd%3a%2f%2f914f7a4613e5d940ada57e8d33d8ee48.m3u8")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?url=http%3A%2F%2F95.154.237.88%3A8080%2FMatH33Raaa%2Fsiyyekksp1%2Findex.m3u8%7CUser-Agent%3DAppleCoreMedia%2F1.0.0.13A452+%28iPhone%3B+U%3B+CPU+OS+9_0_2+like+Mac+OS+X%3B+en_gb%29&mode=9999&name=Channel+1&iconimage=http%253A%252F%252Fsmarterlogix.com%252FiosSecureApps%252FPakIndiaTVHD%252FV1-2%252FImages%252Feuropean_u21_champ.jpg&description=")')
 
 def function3():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&mode=30&name=%5bCOLOR%20aqua%5dSky%20Sport%20Cricket%5b%2fCOLOR%5d&url=%0d%0asublink%3aplugin%3a%2f%2fplugin.video.f4mTester%2f%3furl%3dhttp%3a%2f%2fmagportal.ddns.net%3a25461%2flive%2fultra123%2fultra123%2f291.ts%26streamtype%3dTSDOWNLOADER%26name%3dFHD%20SUPREMACY-ADD-ON%23%0d%0a")')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?url=http%3A%2F%2F95.154.237.88%3A8080%2FMatH33Raaa%2Fsiyyekksp1%2Findex.m3u8%7CUser-Agent%3DAppleCoreMedia%2F1.0.0.13A452+%28iPhone%3B+U%3B+CPU+OS+9_0_2+like+Mac+OS+X%3B+en_gb%29&mode=9999&name=Channel+3&iconimage=http%253A%252F%252Fsmarterlogix.com%252FiosSecureApps%252FPakIndiaTVHD%252FV1-2%252FImages%252Famerican_mls_league.png&description=")')
   
 def function4():
     xbmc.executebuiltin('PlayMedia("plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&mode=30&name=%5bCOLOR%20aqua%5dSky%20Sport%20Cricket%5b%2fCOLOR%5d&url=%0d%0asublink%3aplugin%3a%2f%2fplugin.video.SportsDevil%2f%3fmode%3d1%26item%3dcatcher%253dstreams%2526url%3dhttp%3a%2f%2fcricfree.sc%2fsky-sports-cricket-live-stream%23%0d%0asublink%3aplugin%3a%2f%2fplugin.video.SportsDevil%2f%3fmode%3d1%26item%3dcatcher%253dstreams%2526url%3dhttp%3a%2f%2fsstream.net%2fsky3.html%23%0d%0asublink%3aplugin%3a%2f%2fplugin.video.SportsDevil%2f%3fmode%3d1%26item%3dcatcher%253dstreams%2526url%3dhttp%3a%2f%2fustreamyx.com%2fstream.php%3fid%3dsky-sports-2-b%23%0d%0asublink%3aplugin%3a%2f%2fplugin.video.SportsDevil%2f%3fmode%3d1%26item%3dcatcher%253dstreams%2526url%3dhttp%3a%2f%2fmamahd.in%2fp%2fmama.php%3fid%3d17807%23%0d%0asublink%3aplugin%3a%2f%2fplugin.video.SportsDevil%2f%3fmode%3d1%26item%3dcatcher%253dstreams%2526url%3dhttp%3a%2f%2fwww.jokerstream.com%2fp%2fsky-sports-2-hd.html%23%0d%0asublink%3aplugin%3a%2f%2fplugin.video.SportsDevil%2f%3fmode%3d1%26item%3dcatcher%253dstreams%2526url%3dhttp%3a%2f%2fabcast.me%2fskysports-cricket.html%23%0d%0a")')
