@@ -52,8 +52,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Only Fools And Horses[/COLOR]</title>
-<link>plugin://plugin.video.playlistLoader/?logos=&move=0&mode=3&index=-1&url=http%3A%2F%2F185.73.239.36%3A25461%2Flive%2Fplexpersonal%2Fmainplex%2F942.ts&iconimage=&cache=0&name=24%2F7+Only+Fools+And+Horses</link>
+<title>[COLOR pink]Only Fools And Horses[/COLOR] (TEST STREAM)</title>
+<link>plugin://plugin.video.playlistLoader/?logos=&move=0&mode=3&index=-1&url=http%3A%2F%2F185.73.239.36%3A25461%2Flive%2Fplexpersonal%2Fmainplex%2F942.ts</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
