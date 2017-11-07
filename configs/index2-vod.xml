@@ -10,7 +10,7 @@
 </plugin>
 
 <dir>
-<name>[COLOR green]T24/7 TV Live[/COLOR]</name>
+<name>[COLOR green]24/7 TV Live[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-2.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
