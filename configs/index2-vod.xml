@@ -10,6 +10,13 @@
 </plugin>
 
 <dir>
+<name>[COLOR green]T24/7 TV Live[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247-2.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</dir>
+
+<dir>
 <name>[COLOR pink]The Real Housewives (All Version)[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/housewives.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
