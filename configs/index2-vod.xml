@@ -296,3 +296,17 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Doctor Who 2005[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Doctor%20Who%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fdoctor_who&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Doctor Who 1963[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Doctor%20Who%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fDoctor_Who_(1963)&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
