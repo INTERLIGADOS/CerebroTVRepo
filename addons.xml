@@ -5207,7 +5207,7 @@ level.</description>
 </addon>
 
 <addon id="service.autosubs-cere"
-    name="AutoSubs" version="9.0.1" provider-name="amet,schumi2004">
+    name="Cerebro AutoSubs" version="9.0.2" provider-name="amet,schumi2004">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
