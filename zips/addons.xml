@@ -1569,10 +1569,13 @@ For updates check the readme.
   </extension>
 </addon>
 
-<addon id="plugin.video.tvmix" name="TV Mix" version="1.0.6" provider-name="MetalKettle">
+<addon id="plugin.video.tvmix" name="TV Mix" version="1.0.7" provider-name="MetalKettle, Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.urlresolver"  version="2.1.2"/>
+		<import addon="script.cerebro.pairwith" />
+        <import addon="script.cerebro.pairwith.laucnher" />
+        <import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
