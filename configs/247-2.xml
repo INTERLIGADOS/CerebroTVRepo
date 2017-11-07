@@ -52,6 +52,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Only Fools And Horses/COLOR]</title>
+<link>;plugin://plugin.video.playlistLoader/?logos=&move=0&mode=3&index=-1&url=http%3A%2F%2F185.73.239.36%3A25461%2Flive%2Fplexpersonal%2Fmainplex%2F942.ts&iconimage=&cache=0&name=24%2F7+Only+Fools+And+Horses</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]South Park[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSouth%20Park%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f1952a01898073d1e561b9b4f2e42cbd7.m3u8</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
