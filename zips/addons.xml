@@ -1655,7 +1655,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.53" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.54" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -1698,6 +1698,7 @@ Removed: Nudeflix</news>
 		<import addon="script.module.chardet" version="3.0.4"/>
 		<import addon="script.module.idna" version="2.6"/>
 		<import addon="script.module.certifi" version="2017.07.27.1"/>
+		<import addon="script.module.arrow" />
         <!--<import addon="script.cerebro.buy" />-->
         <!--<import addon="script.cerebro.buyprem" />-->
         <import addon="script.module.mutagen" />
