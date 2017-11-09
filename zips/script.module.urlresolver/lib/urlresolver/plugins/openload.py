@@ -34,8 +34,8 @@ OL_PATH = os.path.join(common.plugins_path, 'ol_gmu.py')
 
 class OpenLoadResolver(UrlResolver):
     name = "openload"
-    domains = ["openload.io", "openload.co", "oload.tv"]
-    pattern = '(?://|\.)(o(?:pen)??load\.(?:io|co|tv))/(?:embed|f)/([0-9a-zA-Z-_]+)'
+    domains = ["openload.io", "openload.co", "oload.tv", "oload.stream"]
+    pattern = '(?://|\.)(o(?:pen)??load\.(?:io|co|tv|stream))/(?:embed|f)/([0-9a-zA-Z-_]+)'
 
     def __init__(self):
         self.net = common.Net()

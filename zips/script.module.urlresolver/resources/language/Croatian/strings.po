@@ -193,3 +193,7 @@ msgstr "ID klijenta"
 msgctxt "#33043"
 msgid "Vshare.eu Stream Authorization"
 msgstr "Vshare.eu ovjera strujanja"
+
+msgctxt "#33044"
+msgid "Flashx Stream Authorization"
+msgstr "Flashx ovjera strujanja"

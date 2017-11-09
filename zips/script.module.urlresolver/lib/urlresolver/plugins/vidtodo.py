@@ -16,7 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import re
-from lib import helpers, jsunpack
+from lib import helpers
 from urlresolver import common
 from urlresolver.resolver import UrlResolver, ResolverError
 
@@ -35,17 +35,20 @@ class VidToDoResolver(UrlResolver):
         
         if html:
             try:
-                packed = jsunpack.unpack(html)
-                smil = re.search("""file:\s*["'](.+?\.smil.*?)["']""", packed).groups()[0]
+                data = helpers.get_hidden(html)
                 headers.update({'Referer': web_url})
-                smil = self.net.http_GET(smil, headers=headers).content
-                sources = helpers.parse_smil_source_list(smil)
-                
-                if sources: return helpers.pick_source(sources) + helpers.append_headers(headers)
-            except:
-                raise ResolverError('Unable to locate video')
+                common.kodi.sleep(2000)
+                _html = self.net.http_POST(web_url, headers=headers, form_data=data).content
+                if _html:
+                    sources = helpers.scrape_sources(_html)
+                    if sources:
+                        if len(sources) > 1:
+                            sources = [source for source in sources if len(re.sub("\D", "", source[0])) <= 4]
+                        return helpers.pick_source(sources) + helpers.append_headers(headers)
+            except Exception as e:
+                raise ResolverError(e)
             
         raise ResolverError('Unable to locate video')
         
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id)
+        return self._default_get_url(host, media_id, template='https://vidtodo.com/{media_id}')

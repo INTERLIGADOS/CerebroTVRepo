@@ -64,12 +64,36 @@ class GoogleResolver(UrlResolver):
 
         if not video:
             if ('redirector.' in web_url) or ('googleusercontent' in web_url):
-                video = urllib2.urlopen(web_url).geturl()
+                class NoRedirection(urllib2.HTTPErrorProcessor):
+                    def http_response(self, request, response):
+                        return response
+                    https_response = http_response
+                opener = urllib2.build_opener(NoRedirection)
+                opener = urllib2.install_opener(opener)
+                request = urllib2.Request(web_url, headers=headers)
+                response = urllib2.urlopen(request)
+                response_headers = dict([(item[0].title(), item[1]) for item in response.info().items()])
+                cookie = response_headers.get('Set-Cookie', None)
+                if cookie:
+                    headers.update({'Cookie': cookie})
+                video = response.geturl()
             elif 'googlevideo.' in web_url:
                 video = web_url + helpers.append_headers(headers)
         else:
             if ('redirector.' in video) or ('googleusercontent' in video):
-                video = urllib2.urlopen(video).geturl()
+                class NoRedirection(urllib2.HTTPErrorProcessor):
+                    def http_response(self, request, response):
+                        return response
+                    https_response = http_response
+                opener = urllib2.build_opener(NoRedirection)
+                opener = urllib2.install_opener(opener)
+                request = urllib2.Request(video, headers=headers)
+                response = urllib2.urlopen(request)
+                response_headers = dict([(item[0].title(), item[1]) for item in response.info().items()])
+                cookie = response_headers.get('Set-Cookie', None)
+                if cookie:
+                    headers.update({'Cookie': cookie})
+                video = response.geturl()
 
         if video:
             if 'plugin://' in video:  # google plus embedded videos may result in this

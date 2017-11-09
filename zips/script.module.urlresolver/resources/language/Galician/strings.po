@@ -187,3 +187,7 @@ msgstr "Sen Autorización IP"
 msgctxt "#33043"
 msgid "Vshare.eu Stream Authorization"
 msgstr "Autorización Vshare.eu Stream"
+
+msgctxt "#33044"
+msgid "Flashx Stream Authorization"
+msgstr "Flashx Vshare.eu Stream"

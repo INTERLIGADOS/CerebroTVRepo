@@ -188,3 +188,7 @@ msgstr ""
 msgctxt "#33043"
 msgid "Vshare.eu Stream Authorization"
 msgstr "Vshare.eu Stream Authorization"
+
+msgctxt "#33044"
+msgid "Flashx Stream Authorization"
+msgstr "Flashx Stream Authorization"
