@@ -317,3 +317,24 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Dexter[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Dexter%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fdexter&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]NCIS: Los Angeles[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20NCIS%3a%20Los%20Angeles%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fncis%3a_los_angeles&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]NCIS: New Orleans[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20NCIS%3a%20New%20Orleans%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fNCIS%3a_New_Orleans&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
