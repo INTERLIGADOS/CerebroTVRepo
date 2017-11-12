@@ -57,10 +57,3 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
-
-<plugin>
-<title>[COLOR ghostwhite]GUI Sounds[/COLOR]</title>
-<link>ActivateWindow(10040,"addons://user/kodi.resource.uisounds",return)</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>

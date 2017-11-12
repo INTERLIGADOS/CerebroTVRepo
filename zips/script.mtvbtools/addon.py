@@ -49,7 +49,8 @@ def menuoptions():
         function5,
         function6,
         function7,
-        function8
+        function8,
+		function9
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Tools Menu[/COLOR][/B]', [
@@ -60,7 +61,8 @@ def menuoptions():
     '[B][COLOR=lightblue]Re-Download the last update[/COLOR][/B]', 
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
     '[B][COLOR=cyan]Change My System Sounds[/COLOR][/B]',
-    '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)'])
+    '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)',
+	'[B][COLOR=gold]Change GUI Sounds[/COLOR][/B]'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -69,7 +71,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-8]
+        func = funcs[call-9]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -129,6 +131,8 @@ def function8():
     
     dp.close()
     
+def function9():
+    xbmc.executebuiltin('ActivateWindow(10040,"addons://user/kodi.resource.uisounds",return)')  
     
   
 menuoptions()
