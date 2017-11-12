@@ -52,6 +52,20 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Outsiders[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Outsiders%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fOutsiders&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Stranger Things[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Stranger%20Things%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fStranger-Things-&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Red Dwarf[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Red%20Dwarf%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fred_dwarf&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
