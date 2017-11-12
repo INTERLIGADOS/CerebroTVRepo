@@ -108,26 +108,11 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]The Simpsons[/COLOR] Single Click Random Episode</title>
-<link>plugin://plugin.video.kratosfucksducky/?action=tvtuner&url=%3Cpreset%3Etvtuner%3C%2Fpreset%3E%3Curl%3Ehttp%3A%2F%2Fopentuner.is%2Fthe-simpsons-1989%2F%3C%2Furl%3E%3Cthumbnail%3Ehttps%3A%2F%2Ffanart.tv%2Ffanart%2Ftv%2F71663%2Fclearart%2FS_71663%2520%280%29.png%3C%2Fthumbnail%3E%3Cfanart%3E0%3C%2Ffanart%3E%3Ccontent%3Etvtuner%3C%2Fcontent%3E%3Cimdb%3Ett0096697%3C%2Fimdb%3E%3Ctvdb%3E71663%3C%2Ftvdb%3E%3Ctvshowtitle%3EThe+Simpsons%3C%2Ftvshowtitle%3E%3Cyear%3E1989%3C%2Fyear%3E&content=tvtuners&quot;)</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]American Dad[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20American%20Dad!%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2famerican_dad&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
-
-<plugin>
-<title>[COLOR pink]American Dad[/COLOR] Single Click Random Episode</title>
-<link>plugin://plugin.video.kratosfucksducky/?action=tvtuner&url=%3Cpreset%3Etvtuner%3C%2Fpreset%3E%3Curl%3Ehttp%3A%2F%2Fopentuner.is%2Famerican-dad-2005%2F%3C%2Furl%3E%3Cthumbnail%3Ehttps%3A%2F%2Ffanart.tv%2Ffanart%2Ftv%2F73141%2Fclearart%2FA_73141%2520%281%29.png%3C%2Fthumbnail%3E%3Cfanart%3E0%3C%2Ffanart%3E%3Ccontent%3Etvtuner%3C%2Fcontent%3E%3Cimdb%3Ett0397306%3C%2Fimdb%3E%3Ctvdb%3E73141%3C%2Ftvdb%3E%3Ctvshowtitle%3EAmerican+Dad%3C%2Ftvshowtitle%3E%3Cyear%3E2005%3C%2Fyear%3E&content=tvtuners</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
 
 <plugin>
 <title>[COLOR pink]Rick & Morty[/COLOR]</title>
@@ -139,13 +124,6 @@
 <plugin>
 <title>[COLOR pink]Family Guy[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f18%2fimage%2f555x418%2ffamily-guy.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dFamily%20Guy%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2ffamily-guy-tv-series</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Family Guy[/COLOR] Single Click Random Episode</title>
-<link>PlayMedia(&quot;plugin://plugin.video.kratosfucksducky/?action=tvtuner&url=%3Cpreset%3Etvtuner%3C%2Fpreset%3E%3Curl%3Ehttp%3A%2F%2Fopentuner.is%2Ffamily-guy-1999%2F%3C%2Furl%3E%3Cthumbnail%3Ehttps%3A%2F%2Ffanart.tv%2Ffanart%2Ftv%2F75978%2Fclearart%2Ffamily-guy-4fb39fd024b28.png%3C%2Fthumbnail%3E%3Cfanart%3E0%3C%2Ffanart%3E%3Ccontent%3Etvtuner%3C%2Fcontent%3E%3Cimdb%3Ett0182576%3C%2Fimdb%3E%3Ctvdb%3E75978%3C%2Ftvdb%3E%3Ctvshowtitle%3EFamily+Guy%3C%2Ftvshowtitle%3E%3Cyear%3E1999%3C%2Fyear%3E&content=tvtuners&quot;)</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -265,13 +243,6 @@
 <plugin>
 <title>[COLOR pink]The X Files[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20X%20Files%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fx_files&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]The X Files[/COLOR] Single Click Random Episode</title>
-<link>plugin://plugin.video.kratosfucksducky/?action=tvtuner&url=%3Cpreset%3Etvtuner%3C%2Fpreset%3E%3Curl%3Ehttp%3A%2F%2Fopentuner.is%2Fthe-x-files-1993%2F%3C%2Furl%3E%3Cthumbnail%3Ehttps%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FM%2FMV5BODc5MDA0MzgyOF5BMl5BanBnXkFtZTgwNjc5NjY3NzE%40._V1_UY268_CR12%2C0%2C182%2C268_AL_.jpg%3C%2Fthumbnail%3E%3Cfanart%3E0%3C%2Ffanart%3E%3Ccontent%3Etvtuner%3C%2Fcontent%3E%3Cimdb%3Ett0106179%3C%2Fimdb%3E%3Ctvdb%3E77398%3C%2Ftvdb%3E%3Ctvshowtitle%3EThe+X-Files%3C%2Ftvshowtitle%3E%3Cyear%3E1993%3C%2Fyear%3E&content=tvtuners</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
