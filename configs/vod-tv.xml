@@ -66,6 +66,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Fantastic TV Shows[/COLOR]</title>
+<link>plugin://plugin.video.fantastic/?action=tvNavigator</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Cerebro TV Shows A-Z[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=17&name=TV%20Shows%20A-Z&url=Category-TvShows</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
