@@ -16,6 +16,83 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
+<plugin>
+<title>[COLOR pink]The Shannara Chronicles[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Shannara%20Chronicles%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fThe-Shannara-Chronicles&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Shannara Chronicles[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Inhumans%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fInhumans&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Star Trek: Discovery[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%3a%20Discovery%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fStar-Trek%3a-Discovery&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Red Dwarf[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Red%20Dwarf%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fred_dwarf&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Walking Dead[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_walking_dead&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Fear the Walking Dead[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Fear%20the%20Walking%20Dead%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fFear-the-Walking-Dead&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Walking Dead Webisodes[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20Webisodes%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_walking_dead_webisodes&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Orville[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Orville%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fThe-Orville&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Supergirl[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Supergirl%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fSupergirl-1&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Game of Thrones[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Game%20of%20Thrones%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fgame_of_thrones&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Arrow[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Arrow%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2farrow&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
 <dir>
 <name>[COLOR pink]The Real Housewives (All Version)[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/housewives.xml</link>
@@ -109,27 +186,6 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Game of Thrones[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Game%20of%20Thrones%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fgame_of_thrones&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Supergirl[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Supergirl%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fSupergirl-1&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Arrow[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Arrow%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2farrow&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]Airwolf[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Airwolf%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fairwolf&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -139,34 +195,6 @@
 <plugin>
 <title>[COLOR pink]The A-Team[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20A-Team%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_a-team&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]The Walking Dead[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_walking_dead&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Fear the Walking Dead[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Fear%20the%20Walking%20Dead%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fFear-the-Walking-Dead&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]The Walking Dead Webisodes[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20Webisodes%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_walking_dead_webisodes&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]The Orville[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Orville%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fThe-Orville&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -235,13 +263,6 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Star Trek: Discovery[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%3a%20Discovery%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fStar-Trek%3a-Discovery&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]The X Files[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20X%20Files%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fx_files&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -293,13 +314,6 @@
 <plugin>
 <title>[COLOR pink]Impractical Jokers (UK)[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Impractical%20Jokers%20(UK)%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fImpractical_Jokers_UK&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Red Dwarf[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Red%20Dwarf%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fred_dwarf&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
