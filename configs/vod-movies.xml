@@ -73,8 +73,8 @@
 </plugin> 
 
 <plugin>
-<title>[COLOR pink]Bucky's Movies[/COLOR] (HD/3D/4K)</title>
-<link>plugin://plugin.video.Bucky</link>
+<title>[COLOR pink]Bucky's 3D Movies[/COLOR] (Need 3D TV)</title>
+<link>plugin://plugin.video.Bucky/?fanart=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fg2kzpozf21nlwn3%2faddonfanart.jpg%3fdl%3d0&mode=1&name=%5bB%5d%5bCOLOR%20gold%5dBUCKYS%203D%20MOVIES%5b%2fCOLOR%5d%5b%2fB%5d&url=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2f9424aselh2hm6lo%2f3D.txt%3fdl%3d0</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
