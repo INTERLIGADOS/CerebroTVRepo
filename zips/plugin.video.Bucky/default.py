@@ -1983,7 +1983,7 @@ def urlsolver(url):
     resolved=genesisresolvers.get(url).result
     if url == resolved or resolved is None:
         #import
-        xbmc.executebuiltin("XBMC.Notification(Bucky is Looking For Your Link ,5000)")
+        xbmc.executebuiltin("XBMC.Notification(Bucky is Looking For Your Link ,,5000)")
         import urlresolver
         host = urlresolver.HostedMediaFile(url)
         if host:
