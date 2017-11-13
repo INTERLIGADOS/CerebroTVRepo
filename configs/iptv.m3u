@@ -1,4 +1,829 @@
-﻿#EXTINF:-1,N/A HD
+﻿#EXTINF:-1,Only Fools & Horses
+http://titan-servers.sytes.net:8000/live/dean/dean/108327.ts
+#EXTINF:-1,Red Dwarf
+http://titan-servers.sytes.net:8000/live/dean/dean/125004.ts
+#EXTINF:-1,The Simpsons
+http://titan-servers.sytes.net:8000/live/dean/dean/82933.ts
+#EXTINF:-1,Friends
+http://titan-servers.sytes.net:8000/live/dean/dean/82931.ts
+#EXTINF:-1,Family Guy
+http://titan-servers.sytes.net:8000/live/dean/dean/82934.ts
+#EXTINF:-1,South Park
+http://titan-servers.sytes.net:8000/live/dean/dean/82932.ts
+#EXTINF:-1,Futurrama
+http://titan-servers.sytes.net:8000/live/dean/dean/125010.ts
+#EXTINF:-1,BBC1 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/1.ts
+#EXTINF:-1,BBC1
+http://titan-servers.sytes.net:8000/live/dean/dean/2.ts
+#EXTINF:-1,BBC2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/3.ts
+#EXTINF:-1,BBC2
+http://titan-servers.sytes.net:8000/live/dean/dean/4.ts
+#EXTINF:-1,ITV HD
+http://titan-servers.sytes.net:8000/live/dean/dean/5.ts
+#EXTINF:-1,ITV London
+http://titan-servers.sytes.net:8000/live/dean/dean/6.ts
+#EXTINF:-1,Channel 4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/590.ts
+#EXTINF:-1,Channel 4
+http://titan-servers.sytes.net:8000/live/dean/dean/8.ts
+#EXTINF:-1,Channel 5 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/589.ts
+#EXTINF:-1,Channel 5
+http://titan-servers.sytes.net:8000/live/dean/dean/588.ts
+#EXTINF:-1,Sky1 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/603.ts
+#EXTINF:-1,Sky 1
+http://titan-servers.sytes.net:8000/live/dean/dean/12.ts
+#EXTINF:-1,Sky 2
+http://titan-servers.sytes.net:8000/live/dean/dean/13.ts
+#EXTINF:-1,Sky Atlantic
+http://titan-servers.sytes.net:8000/live/dean/dean/14.ts
+#EXTINF:-1,Sky Living HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15.ts
+#EXTINF:-1,Sky Living
+http://titan-servers.sytes.net:8000/live/dean/dean/16.ts
+#EXTINF:-1,BBC4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/17.ts
+#EXTINF:-1,BBC4
+http://titan-servers.sytes.net:8000/live/dean/dean/18.ts
+#EXTINF:-1,ITV2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/19.ts
+#EXTINF:-1,ITV2
+http://titan-servers.sytes.net:8000/live/dean/dean/20.ts
+#EXTINF:-1,ITV3 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/21.ts
+#EXTINF:-1,ITV3
+http://titan-servers.sytes.net:8000/live/dean/dean/22.ts
+#EXTINF:-1,ITV4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/23.ts
+#EXTINF:-1,ITV4
+http://titan-servers.sytes.net:8000/live/dean/dean/24.ts
+#EXTINF:-1,ITVBe HD
+http://titan-servers.sytes.net:8000/live/dean/dean/492.ts
+#EXTINF:-1,ITVBe
+http://titan-servers.sytes.net:8000/live/dean/dean/25.ts
+#EXTINF:-1,ITV Encore HD
+http://titan-servers.sytes.net:8000/live/dean/dean/26.ts
+#EXTINF:-1,E4
+http://titan-servers.sytes.net:8000/live/dean/dean/28.ts
+#EXTINF:-1,E4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/27.ts
+#EXTINF:-1,More4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/29.ts
+#EXTINF:-1,More4
+http://titan-servers.sytes.net:8000/live/dean/dean/30.ts
+#EXTINF:-1,4seven
+http://titan-servers.sytes.net:8000/live/dean/dean/31.ts
+#EXTINF:-1,5 USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125065.ts
+#EXTINF:-1,5STAR
+http://titan-servers.sytes.net:8000/live/dean/dean/32.ts
+#EXTINF:-1,GOLD
+http://titan-servers.sytes.net:8000/live/dean/dean/33.ts
+#EXTINF:-1,FOX HD
+http://titan-servers.sytes.net:8000/live/dean/dean/42.ts
+#EXTINF:-1,FOX
+http://titan-servers.sytes.net:8000/live/dean/dean/43.ts
+#EXTINF:-1,Dave HD
+http://titan-servers.sytes.net:8000/live/dean/dean/34.ts
+#EXTINF:-1,Dave
+http://titan-servers.sytes.net:8000/live/dean/dean/35.ts
+#EXTINF:-1,Comedy Central HD
+http://titan-servers.sytes.net:8000/live/dean/dean/44.ts
+#EXTINF:-1,Comedy Central
+http://titan-servers.sytes.net:8000/live/dean/dean/45.ts
+#EXTINF:-1,Comedy Central Extra
+http://titan-servers.sytes.net:8000/live/dean/dean/46.ts
+#EXTINF:-1,Syfy HD
+http://titan-servers.sytes.net:8000/live/dean/dean/38.ts
+#EXTINF:-1,Syfy
+http://titan-servers.sytes.net:8000/live/dean/dean/39.ts
+#EXTINF:-1,Spike
+http://titan-servers.sytes.net:8000/live/dean/dean/41.ts
+#EXTINF:-1,W
+http://titan-servers.sytes.net:8000/live/dean/dean/37.ts
+#EXTINF:-1,W HD
+http://titan-servers.sytes.net:8000/live/dean/dean/36.ts
+#EXTINF:-1,AMC
+http://titan-servers.sytes.net:8000/live/dean/dean/40.ts
+#EXTINF:-1,Alibi HD
+http://titan-servers.sytes.net:8000/live/dean/dean/47.ts
+#EXTINF:-1,Alibi
+http://titan-servers.sytes.net:8000/live/dean/dean/48.ts
+#EXTINF:-1,E!
+http://titan-servers.sytes.net:8000/live/dean/dean/25821.ts
+#EXTINF:-1,Challenge
+http://titan-servers.sytes.net:8000/live/dean/dean/59.ts
+#EXTINF:-1,CBS Action
+http://titan-servers.sytes.net:8000/live/dean/dean/64.ts
+#EXTINF:-1,CBS Reality
+http://titan-servers.sytes.net:8000/live/dean/dean/62.ts
+#EXTINF:-1,CBS Drama
+http://titan-servers.sytes.net:8000/live/dean/dean/63.ts
+#EXTINF:-1,Universal Channel HD
+http://titan-servers.sytes.net:8000/live/dean/dean/483.ts
+#EXTINF:-1,Universal Channel
+http://titan-servers.sytes.net:8000/live/dean/dean/57.ts
+#EXTINF:-1,TLC HD
+http://titan-servers.sytes.net:8000/live/dean/dean/82915.ts
+#EXTINF:-1,TLC
+http://titan-servers.sytes.net:8000/live/dean/dean/50.ts
+#EXTINF:-1,TrueEntertainment
+http://titan-servers.sytes.net:8000/live/dean/dean/65.ts
+#EXTINF:-1,truTV
+http://titan-servers.sytes.net:8000/live/dean/dean/67.ts
+#EXTINF:-1,Baby TV
+http://titan-servers.sytes.net:8000/live/dean/dean/68.ts
+#EXTINF:-1,Sky Arts HD
+http://titan-servers.sytes.net:8000/live/dean/dean/60.ts
+#EXTINF:-1,Sky Arts
+http://titan-servers.sytes.net:8000/live/dean/dean/61.ts
+#EXTINF:-1,Horror Channel
+http://titan-servers.sytes.net:8000/live/dean/dean/52.ts
+#EXTINF:-1,Really
+http://titan-servers.sytes.net:8000/live/dean/dean/77.ts
+#EXTINF:-1,Quest
+http://titan-servers.sytes.net:8000/live/dean/dean/56.ts
+#EXTINF:-1,Pick
+http://titan-servers.sytes.net:8000/live/dean/dean/55.ts
+#EXTINF:-1,PBS America
+http://titan-servers.sytes.net:8000/live/dean/dean/69.ts
+#EXTINF:-1,Drama
+http://titan-servers.sytes.net:8000/live/dean/dean/53.ts
+#EXTINF:-1,DMAX
+http://titan-servers.sytes.net:8000/live/dean/dean/58.ts
+#EXTINF:-1,Real Lives
+http://titan-servers.sytes.net:8000/live/dean/dean/54.ts
+#EXTINF:-1,RTE One HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15450.ts
+#EXTINF:-1,RTE One
+http://titan-servers.sytes.net:8000/live/dean/dean/71.ts
+#EXTINF:-1,RTE Two  HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15449.ts
+#EXTINF:-1,RTE Two
+http://titan-servers.sytes.net:8000/live/dean/dean/72.ts
+#EXTINF:-1,RTE Jr
+http://titan-servers.sytes.net:8000/live/dean/dean/76.ts
+#EXTINF:-1,be3 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/23816.ts
+#EXTINF:-1,be3
+http://titan-servers.sytes.net:8000/live/dean/dean/73.ts
+#EXTINF:-1,TV3
+http://titan-servers.sytes.net:8000/live/dean/dean/74.ts
+#EXTINF:-1,TG 4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15448.ts
+#EXTINF:-1,TG4
+http://titan-servers.sytes.net:8000/live/dean/dean/75.ts
+#EXTINF:-1,UTV HD
+http://titan-servers.sytes.net:8000/live/dean/dean/70.ts
+#EXTINF:-1,Eden HD
+http://titan-servers.sytes.net:8000/live/dean/dean/88.ts
+#EXTINF:-1,Eden
+http://titan-servers.sytes.net:8000/live/dean/dean/89.ts
+#EXTINF:-1,Lifetime HD
+http://titan-servers.sytes.net:8000/live/dean/dean/78.ts
+#EXTINF:-1,Lifetime
+http://titan-servers.sytes.net:8000/live/dean/dean/79.ts
+#EXTINF:-1,YESTERDAY
+http://titan-servers.sytes.net:8000/live/dean/dean/81.ts
+#EXTINF:-1,Food Network
+http://titan-servers.sytes.net:8000/live/dean/dean/87.ts
+#EXTINF:-1,Good Food HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15455.ts
+#EXTINF:-1,Good Food
+http://titan-servers.sytes.net:8000/live/dean/dean/86.ts
+#EXTINF:-1,H2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/84.ts
+#EXTINF:-1,H2
+http://titan-servers.sytes.net:8000/live/dean/dean/85.ts
+#EXTINF:-1,HISTORY HD
+http://titan-servers.sytes.net:8000/live/dean/dean/83.ts
+#EXTINF:-1,Home
+http://titan-servers.sytes.net:8000/live/dean/dean/82.ts
+#EXTINF:-1,Travel Channel
+http://titan-servers.sytes.net:8000/live/dean/dean/80.ts
+#EXTINF:-1,Discovery HD
+http://titan-servers.sytes.net:8000/live/dean/dean/90.ts
+#EXTINF:-1,Discovery
+http://titan-servers.sytes.net:8000/live/dean/dean/91.ts
+#EXTINF:-1,Discovery Turbo
+http://titan-servers.sytes.net:8000/live/dean/dean/92.ts
+#EXTINF:-1,Discovery Shed
+http://titan-servers.sytes.net:8000/live/dean/dean/93.ts
+#EXTINF:-1,Discovery Science
+http://titan-servers.sytes.net:8000/live/dean/dean/94.ts
+#EXTINF:-1,Discovery Home & Health
+http://titan-servers.sytes.net:8000/live/dean/dean/95.ts
+#EXTINF:-1,Discovery History
+http://titan-servers.sytes.net:8000/live/dean/dean/96.ts
+#EXTINF:-1,Investigation Discovery
+http://titan-servers.sytes.net:8000/live/dean/dean/98.ts
+#EXTINF:-1,CI HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15463.ts
+#EXTINF:-1,CI
+http://titan-servers.sytes.net:8000/live/dean/dean/97.ts
+#EXTINF:-1,National Geographic HD
+http://titan-servers.sytes.net:8000/live/dean/dean/99.ts
+#EXTINF:-1,National Geographic
+http://titan-servers.sytes.net:8000/live/dean/dean/100.ts
+#EXTINF:-1,Nat Geo Wild HD
+http://titan-servers.sytes.net:8000/live/dean/dean/101.ts
+#EXTINF:-1,Nat Geo Wild
+http://titan-servers.sytes.net:8000/live/dean/dean/102.ts
+#EXTINF:-1,Animal Planet HD
+http://titan-servers.sytes.net:8000/live/dean/dean/103.ts
+#EXTINF:-1,Animal Planet
+http://titan-servers.sytes.net:8000/live/dean/dean/104.ts
+#EXTINF:-1,Sky Cinema Premiere HD
+http://titan-servers.sytes.net:8000/live/dean/dean/105.ts
+#EXTINF:-1,Sky Cinema Premiere
+http://titan-servers.sytes.net:8000/live/dean/dean/106.ts
+#EXTINF:-1,Sky Cinema Star Wars HD
+http://titan-servers.sytes.net:8000/live/dean/dean/114.ts
+#EXTINF:-1,Sky Movies Star Wars
+http://titan-servers.sytes.net:8000/live/dean/dean/115.ts
+#EXTINF:-1,Sky Cinema Family HD
+http://titan-servers.sytes.net:8000/live/dean/dean/116.ts
+#EXTINF:-1,Sky Cinema Family
+http://titan-servers.sytes.net:8000/live/dean/dean/117.ts
+#EXTINF:-1,Sky Cinema Drama & Romance HD
+http://titan-servers.sytes.net:8000/live/dean/dean/118.ts
+#EXTINF:-1,Sky Cinema Drama & Romance
+http://titan-servers.sytes.net:8000/live/dean/dean/119.ts
+#EXTINF:-1,Sky Cinema Disney HD
+http://titan-servers.sytes.net:8000/live/dean/dean/120.ts
+#EXTINF:-1,Sky Cinema Disney
+http://titan-servers.sytes.net:8000/live/dean/dean/121.ts
+#EXTINF:-1,Sky Cinema Comedy HD
+http://titan-servers.sytes.net:8000/live/dean/dean/125.ts
+#EXTINF:-1,Sky Cinema Comedy
+http://titan-servers.sytes.net:8000/live/dean/dean/124.ts
+#EXTINF:-1,Sky Cinema Action & Adventure HD
+http://titan-servers.sytes.net:8000/live/dean/dean/122.ts
+#EXTINF:-1,Sky Cinema Action & Adventure
+http://titan-servers.sytes.net:8000/live/dean/dean/123.ts
+#EXTINF:-1,Sky Cinema Crime & Thriller HD
+http://titan-servers.sytes.net:8000/live/dean/dean/107.ts
+#EXTINF:-1,Sky Cinema Crime & Thriller
+http://titan-servers.sytes.net:8000/live/dean/dean/108.ts
+#EXTINF:-1,Sky Cinema Hits HD
+http://titan-servers.sytes.net:8000/live/dean/dean/109.ts
+#EXTINF:-1,Sky Cinema Hits
+http://titan-servers.sytes.net:8000/live/dean/dean/110.ts
+#EXTINF:-1,Sky Cinema Select HD
+http://titan-servers.sytes.net:8000/live/dean/dean/111.ts
+#EXTINF:-1,Sky Cinema Select
+http://titan-servers.sytes.net:8000/live/dean/dean/112.ts
+#EXTINF:-1,Sky Cinema Sci-Fi & Horror HD
+http://titan-servers.sytes.net:8000/live/dean/dean/113.ts
+#EXTINF:-1,Film4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/126.ts
+#EXTINF:-1,Film4
+http://titan-servers.sytes.net:8000/live/dean/dean/127.ts
+#EXTINF:-1,TCM HD
+http://titan-servers.sytes.net:8000/live/dean/dean/128.ts
+#EXTINF:-1,TCM
+http://titan-servers.sytes.net:8000/live/dean/dean/129.ts
+#EXTINF:-1,True Movies
+http://titan-servers.sytes.net:8000/live/dean/dean/132.ts
+#EXTINF:-1,True Movies 2
+http://titan-servers.sytes.net:8000/live/dean/dean/133.ts
+#EXTINF:-1,Movies4Men
+http://titan-servers.sytes.net:8000/live/dean/dean/130.ts
+#EXTINF:-1,Movies 24
+http://titan-servers.sytes.net:8000/live/dean/dean/131.ts
+#EXTINF:-1,Sky Sports Box Office 1 (Joshua vs Takam)
+http://titan-servers.sytes.net:8000/live/dean/dean/176.ts
+#EXTINF:-1,Sky Sports Main Event HD
+http://titan-servers.sytes.net:8000/live/dean/dean/136.ts
+#EXTINF:-1,Sky Sports Main Event
+http://titan-servers.sytes.net:8000/live/dean/dean/137.ts
+#EXTINF:-1,Sky Sports Premier League HD
+http://titan-servers.sytes.net:8000/live/dean/dean/144.ts
+#EXTINF:-1,Sky Sports Premier League
+http://titan-servers.sytes.net:8000/live/dean/dean/145.ts
+#EXTINF:-1,Sky Sports Football HD
+http://titan-servers.sytes.net:8000/live/dean/dean/82901.ts
+#EXTINF:-1,Sky Sports Football
+http://titan-servers.sytes.net:8000/live/dean/dean/82903.ts
+#EXTINF:-1,Sky Sports Cricket HD
+http://titan-servers.sytes.net:8000/live/dean/dean/138.ts
+#EXTINF:-1,Sky Sports Cricket
+http://titan-servers.sytes.net:8000/live/dean/dean/139.ts
+#EXTINF:-1,Sky Sports The Golf HD
+http://titan-servers.sytes.net:8000/live/dean/dean/142.ts
+#EXTINF:-1,Sky Sports The Golf
+http://titan-servers.sytes.net:8000/live/dean/dean/143.ts
+#EXTINF:-1,Sky Sports F1 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/146.ts
+#EXTINF:-1,Sky Sports F1
+http://titan-servers.sytes.net:8000/live/dean/dean/147.ts
+#EXTINF:-1,Sky Sports Action HD
+http://titan-servers.sytes.net:8000/live/dean/dean/140.ts
+#EXTINF:-1,Sky Sports Action
+http://titan-servers.sytes.net:8000/live/dean/dean/141.ts
+#EXTINF:-1,Sky Sports Arena HD
+http://titan-servers.sytes.net:8000/live/dean/dean/82900.ts
+#EXTINF:-1,Sky Sports Arena
+http://titan-servers.sytes.net:8000/live/dean/dean/82902.ts
+#EXTINF:-1,Sky Sports News HD
+http://titan-servers.sytes.net:8000/live/dean/dean/134.ts
+#EXTINF:-1,Sky Sports News
+http://titan-servers.sytes.net:8000/live/dean/dean/135.ts
+#EXTINF:-1,Sky Sports Mix HD
+http://titan-servers.sytes.net:8000/live/dean/dean/493.ts
+#EXTINF:-1,Sky Sports Mix
+http://titan-servers.sytes.net:8000/live/dean/dean/82916.ts
+#EXTINF:-1,BT Sport 1 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/148.ts
+#EXTINF:-1,BT Sport 1
+http://titan-servers.sytes.net:8000/live/dean/dean/149.ts
+#EXTINF:-1,BT Sport 2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/150.ts
+#EXTINF:-1,BT Sport 2
+http://titan-servers.sytes.net:8000/live/dean/dean/151.ts
+#EXTINF:-1,BT Sport 3 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/264.ts
+#EXTINF:-1,BT Sport 3
+http://titan-servers.sytes.net:8000/live/dean/dean/263.ts
+#EXTINF:-1,BT Sport//ESPN HD
+http://titan-servers.sytes.net:8000/live/dean/dean/154.ts
+#EXTINF:-1,BT Sport//ESPN
+http://titan-servers.sytes.net:8000/live/dean/dean/155.ts
+#EXTINF:-1,Eurosport 1 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/163.ts
+#EXTINF:-1,Eurosport 2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/165.ts
+#EXTINF:-1,Eurosport 1
+http://titan-servers.sytes.net:8000/live/dean/dean/164.ts
+#EXTINF:-1,Eurosport 2
+http://titan-servers.sytes.net:8000/live/dean/dean/166.ts
+#EXTINF:-1,Boxnation HD
+http://titan-servers.sytes.net:8000/live/dean/dean/82930.ts
+#EXTINF:-1,Boxnation
+http://titan-servers.sytes.net:8000/live/dean/dean/162.ts
+#EXTINF:-1,Eir Sport 1
+http://titan-servers.sytes.net:8000/live/dean/dean/158.ts
+#EXTINF:-1,Eir Sport 2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/490.ts
+#EXTINF:-1,Eir Sport 2
+http://titan-servers.sytes.net:8000/live/dean/dean/159.ts
+#EXTINF:-1,Premier Sports HD
+http://titan-servers.sytes.net:8000/live/dean/dean/160.ts
+#EXTINF:-1,Premier Sports
+http://titan-servers.sytes.net:8000/live/dean/dean/161.ts
+#EXTINF:-1,MUTV HD
+http://titan-servers.sytes.net:8000/live/dean/dean/167.ts
+#EXTINF:-1,MUTV
+http://titan-servers.sytes.net:8000/live/dean/dean/168.ts
+#EXTINF:-1,Liverpool FC TV HD
+http://titan-servers.sytes.net:8000/live/dean/dean/489.ts
+#EXTINF:-1,Liverpool FC TV
+http://titan-servers.sytes.net:8000/live/dean/dean/170.ts
+#EXTINF:-1,Chelsea TV HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15454.ts
+#EXTINF:-1,Chelsea TV
+http://titan-servers.sytes.net:8000/live/dean/dean/169.ts
+#EXTINF:-1,CELTIC FC TV ( LIVE ON MATCHES )
+http://titan-servers.sytes.net:8000/live/dean/dean/261.ts
+#EXTINF:-1,RANGERS FV TV ( LIVE ON MATCHES )
+http://titan-servers.sytes.net:8000/live/dean/dean/262.ts
+#EXTINF:-1,Racing UK HD
+http://titan-servers.sytes.net:8000/live/dean/dean/491.ts
+#EXTINF:-1,Racing UK
+http://titan-servers.sytes.net:8000/live/dean/dean/171.ts
+#EXTINF:-1,at the races
+http://titan-servers.sytes.net:8000/live/dean/dean/172.ts
+#EXTINF:-1,Motors TV
+http://titan-servers.sytes.net:8000/live/dean/dean/173.ts
+#EXTINF:-1,BT Sports X1
+http://titan-servers.sytes.net:8000/live/dean/dean/488.ts
+#EXTINF:-1,BT Sports X2
+http://titan-servers.sytes.net:8000/live/dean/dean/487.ts
+#EXTINF:-1,BT Sports X3
+http://titan-servers.sytes.net:8000/live/dean/dean/486.ts
+#EXTINF:-1,BT Sports X4
+http://titan-servers.sytes.net:8000/live/dean/dean/485.ts
+#EXTINF:-1,BT Sports X5
+http://titan-servers.sytes.net:8000/live/dean/dean/484.ts
+#EXTINF:-1,MTV HD
+http://titan-servers.sytes.net:8000/live/dean/dean/182.ts
+#EXTINF:-1,MTV Live HD
+http://titan-servers.sytes.net:8000/live/dean/dean/186.ts
+#EXTINF:-1,MTV
+http://titan-servers.sytes.net:8000/live/dean/dean/183.ts
+#EXTINF:-1,MTV Rocks
+http://titan-servers.sytes.net:8000/live/dean/dean/184.ts
+#EXTINF:-1,MTV Music
+http://titan-servers.sytes.net:8000/live/dean/dean/185.ts
+#EXTINF:-1,MTV Hits
+http://titan-servers.sytes.net:8000/live/dean/dean/187.ts
+#EXTINF:-1,MTV Dance
+http://titan-servers.sytes.net:8000/live/dean/dean/188.ts
+#EXTINF:-1,MTV Classic
+http://titan-servers.sytes.net:8000/live/dean/dean/189.ts
+#EXTINF:-1,MTV Base
+http://titan-servers.sytes.net:8000/live/dean/dean/190.ts
+#EXTINF:-1,VH1
+http://titan-servers.sytes.net:8000/live/dean/dean/196.ts
+#EXTINF:-1,The Vault
+http://titan-servers.sytes.net:8000/live/dean/dean/195.ts
+#EXTINF:-1,Starz TV
+http://titan-servers.sytes.net:8000/live/dean/dean/194.ts
+#EXTINF:-1,Skuzz
+http://titan-servers.sytes.net:8000/live/dean/dean/197.ts
+#EXTINF:-1,Flava
+http://titan-servers.sytes.net:8000/live/dean/dean/192.ts
+#EXTINF:-1,Chart Show Dance
+http://titan-servers.sytes.net:8000/live/dean/dean/193.ts
+#EXTINF:-1,CBBC HD
+http://titan-servers.sytes.net:8000/live/dean/dean/25823.ts
+#EXTINF:-1,Cbeebies HD
+http://titan-servers.sytes.net:8000/live/dean/dean/25822.ts
+#EXTINF:-1,CITV
+http://titan-servers.sytes.net:8000/live/dean/dean/82917.ts
+#EXTINF:-1,Disney Channel HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15462.ts
+#EXTINF:-1,Disney Channel
+http://titan-servers.sytes.net:8000/live/dean/dean/203.ts
+#EXTINF:-1,Disney XD
+http://titan-servers.sytes.net:8000/live/dean/dean/204.ts
+#EXTINF:-1,Disney Junior
+http://titan-servers.sytes.net:8000/live/dean/dean/205.ts
+#EXTINF:-1,Nickelodeon
+http://titan-servers.sytes.net:8000/live/dean/dean/202.ts
+#EXTINF:-1,Nickelodeon HD
+http://titan-servers.sytes.net:8000/live/dean/dean/198.ts
+#EXTINF:-1,Nicktoons
+http://titan-servers.sytes.net:8000/live/dean/dean/199.ts
+#EXTINF:-1,Nick Jr
+http://titan-servers.sytes.net:8000/live/dean/dean/200.ts
+#EXTINF:-1,Nick Jr Too
+http://titan-servers.sytes.net:8000/live/dean/dean/201.ts
+#EXTINF:-1,Cartoon Network HD
+http://titan-servers.sytes.net:8000/live/dean/dean/206.ts
+#EXTINF:-1,Cartoon Network
+http://titan-servers.sytes.net:8000/live/dean/dean/207.ts
+#EXTINF:-1,Cartoonito
+http://titan-servers.sytes.net:8000/live/dean/dean/208.ts
+#EXTINF:-1,Kix
+http://titan-servers.sytes.net:8000/live/dean/dean/210.ts
+#EXTINF:-1,Boomerang
+http://titan-servers.sytes.net:8000/live/dean/dean/209.ts
+#EXTINF:-1,Pop
+http://titan-servers.sytes.net:8000/live/dean/dean/211.ts
+#EXTINF:-1,Tiny Pop
+http://titan-servers.sytes.net:8000/live/dean/dean/212.ts
+#EXTINF:-1,Sky News HD
+http://titan-servers.sytes.net:8000/live/dean/dean/179.ts
+#EXTINF:-1,Sky News
+http://titan-servers.sytes.net:8000/live/dean/dean/180.ts
+#EXTINF:-1,BBC News HD
+http://titan-servers.sytes.net:8000/live/dean/dean/177.ts
+#EXTINF:-1,BBC News
+http://titan-servers.sytes.net:8000/live/dean/dean/178.ts
+#EXTINF:-1,Fox News
+http://titan-servers.sytes.net:8000/live/dean/dean/25820.ts
+#EXTINF:-1,RTE News
+http://titan-servers.sytes.net:8000/live/dean/dean/25819.ts
+#EXTINF:-1,Bloomberg HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15456.ts
+#EXTINF:-1,Bloomberg
+http://titan-servers.sytes.net:8000/live/dean/dean/181.ts
+#EXTINF:-1,CNN HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15457.ts
+#EXTINF:-1,B4U Movies
+http://titan-servers.sytes.net:8000/live/dean/dean/25825.ts
+#EXTINF:-1,B4U Music
+http://titan-servers.sytes.net:8000/live/dean/dean/25824.ts
+#EXTINF:-1,ZEE TV
+http://titan-servers.sytes.net:8000/live/dean/dean/213.ts
+#EXTINF:-1,Zee Punjabi
+http://titan-servers.sytes.net:8000/live/dean/dean/214.ts
+#EXTINF:-1,Zee Cinema
+http://titan-servers.sytes.net:8000/live/dean/dean/215.ts
+#EXTINF:-1,Zing
+http://titan-servers.sytes.net:8000/live/dean/dean/223.ts
+#EXTINF:-1,COLORS HD
+http://titan-servers.sytes.net:8000/live/dean/dean/15453.ts
+#EXTINF:-1,COLORS
+http://titan-servers.sytes.net:8000/live/dean/dean/15452.ts
+#EXTINF:-1,Star Plus
+http://titan-servers.sytes.net:8000/live/dean/dean/216.ts
+#EXTINF:-1,Star Like OK
+http://titan-servers.sytes.net:8000/live/dean/dean/217.ts
+#EXTINF:-1,Star Gold
+http://titan-servers.sytes.net:8000/live/dean/dean/219.ts
+#EXTINF:-1,Sony Sab
+http://titan-servers.sytes.net:8000/live/dean/dean/221.ts
+#EXTINF:-1,Sony Movie Channel
+http://titan-servers.sytes.net:8000/live/dean/dean/222.ts
+#EXTINF:-1,TSN 1 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/241.ts
+#EXTINF:-1,TSN 2 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/242.ts
+#EXTINF:-1,TSN 3 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/243.ts
+#EXTINF:-1,TSN 4 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/244.ts
+#EXTINF:-1,TSN 5 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/245.ts
+#EXTINF:-1,SPORTS NET WORLD HD
+http://titan-servers.sytes.net:8000/live/dean/dean/266.ts
+#EXTINF:-1,SPORTS NET ONE HD
+http://titan-servers.sytes.net:8000/live/dean/dean/267.ts
+#EXTINF:-1,SPORTS NET ONTARIO HD
+http://titan-servers.sytes.net:8000/live/dean/dean/268.ts
+#EXTINF:-1,SPORTS NET 360 HD
+http://titan-servers.sytes.net:8000/live/dean/dean/269.ts
+#EXTINF:-1,WWE HD
+http://titan-servers.sytes.net:8000/live/dean/dean/249.ts
+#EXTINF:-1,ABC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137175.ts
+#EXTINF:-1,CBS HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137174.ts
+#EXTINF:-1,FOX HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137173.ts
+#EXTINF:-1,NBC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137172.ts
+#EXTINF:-1,CW HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137171.ts
+#EXTINF:-1,PBS HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137170.ts
+#EXTINF:-1,A&E HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137169.ts
+#EXTINF:-1,AMC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137168.ts
+#EXTINF:-1,BBC America HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137167.ts
+#EXTINF:-1,BET HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137166.ts
+#EXTINF:-1,Chiller HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137165.ts
+#EXTINF:-1,El Rey Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137164.ts
+#EXTINF:-1,CMT HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137163.ts
+#EXTINF:-1,Comedy Central HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137162.ts
+#EXTINF:-1,Discovery Channel HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137161.ts
+#EXTINF:-1,FX HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137160.ts
+#EXTINF:-1,FXX HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137159.ts
+#EXTINF:-1,History HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137158.ts
+#EXTINF:-1,H2 USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125194.ts
+#EXTINF:-1,ID HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137157.ts
+#EXTINF:-1,IFC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137156.ts
+#EXTINF:-1,MTV HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137155.ts
+#EXTINF:-1,Nat Geo HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137154.ts
+#EXTINF:-1,Nat Geo Wild HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137133.ts
+#EXTINF:-1,Reelz HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137153.ts
+#EXTINF:-1,Spike HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137151.ts
+#EXTINF:-1,Sundance HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137150.ts
+#EXTINF:-1,SYFY HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137152.ts
+#EXTINF:-1,Lifetime HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137134.ts
+#EXTINF:-1,TBS HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137149.ts
+#EXTINF:-1,TNT HD` USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137148.ts
+#EXTINF:-1,Tru TV HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137147.ts
+#EXTINF:-1,USA Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137146.ts
+#EXTINF:-1,VH1 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137145.ts
+#EXTINF:-1,GSN HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137081.ts
+#EXTINF:-1,Fuse HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137092.ts
+#EXTINF:-1,Revolt HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137091.ts
+#EXTINF:-1,Animal Planet HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137144.ts
+#EXTINF:-1,Bravo HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137143.ts
+#EXTINF:-1,Cooking Channel HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137142.ts
+#EXTINF:-1,Destination America HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137141.ts
+#EXTINF:-1,Discovery Life HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137140.ts
+#EXTINF:-1,Discovery Science HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137139.ts
+#EXTINF:-1,DIY Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137138.ts
+#EXTINF:-1,E! HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137137.ts
+#EXTINF:-1,Food Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137136.ts
+#EXTINF:-1,FYI HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137135.ts
+#EXTINF:-1,HGTV HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125161.ts
+#EXTINF:-1,OWN HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137132.ts
+#EXTINF:-1,Oxygen HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137131.ts
+#EXTINF:-1,POP HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137130.ts
+#EXTINF:-1,TLC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137129.ts
+#EXTINF:-1,Travel Channel HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137128.ts
+#EXTINF:-1,Viceland HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137127.ts
+#EXTINF:-1,WE TV HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137126.ts
+#EXTINF:-1,Cartoon Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137125.ts
+#EXTINF:-1,Discovery Family HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137124.ts
+#EXTINF:-1,Disney Channel HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137123.ts
+#EXTINF:-1,Disney Jr HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137122.ts
+#EXTINF:-1,Disney XD HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137121.ts
+#EXTINF:-1,FreeForm HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137120.ts
+#EXTINF:-1,Hallmark Channel HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137119.ts
+#EXTINF:-1,Nick HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137118.ts
+#EXTINF:-1,Nicktoons HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125167.ts
+#EXTINF:-1,Nick Jr HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137117.ts
+#EXTINF:-1,TVLand HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137116.ts
+#EXTINF:-1,Universal Kids HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137115.ts
+#EXTINF:-1,Cinemax 5 Star USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137111.ts
+#EXTINF:-1,Cinemax Actionmax USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137113.ts
+#EXTINF:-1,Cinemax Moremax USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137112.ts
+#EXTINF:-1,Cinemax USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137114.ts
+#EXTINF:-1,Epix 2 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137109.ts
+#EXTINF:-1,Epix HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137110.ts
+#EXTINF:-1,Epix Hits HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137108.ts
+#EXTINF:-1,FXM RETRO HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137095.ts
+#EXTINF:-1,HBO USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137107.ts
+#EXTINF:-1,HBO Comedy HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137106.ts
+#EXTINF:-1,HBO Family HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137105.ts
+#EXTINF:-1,HBO Signature HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137104.ts
+#EXTINF:-1,HBO Zone HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137103.ts
+#EXTINF:-1,Showtime HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137102.ts
+#EXTINF:-1,Showtime 2 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137101.ts
+#EXTINF:-1,Starz HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137100.ts
+#EXTINF:-1,Starz Comedy USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137099.ts
+#EXTINF:-1,Starz Edge USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137098.ts
+#EXTINF:-1,Starz Encore USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137097.ts
+#EXTINF:-1,Starz Kids & Family USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137096.ts
+#EXTINF:-1,Lifetime Movies HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137093.ts
+#EXTINF:-1,Hallmark Movies & Mysteries HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137094.ts
+#EXTINF:-1,MGM HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125176.ts
+#EXTINF:-1,ABC News HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125166.ts
+#EXTINF:-1,CBS News HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125165.ts
+#EXTINF:-1,FOX Business Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125163.ts
+#EXTINF:-1,WGN HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125162.ts
+#EXTINF:-1,Fusion HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125160.ts
+#EXTINF:-1,C-SPAN 1 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125159.ts
+#EXTINF:-1,C-SPAN 2 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125158.ts
+#EXTINF:-1,C-SPAN 3 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125157.ts
+#EXTINF:-1,CNBC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137090.ts
+#EXTINF:-1,CNN News HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137089.ts
+#EXTINF:-1,Fox Business HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137088.ts
+#EXTINF:-1,Fox News HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137087.ts
+#EXTINF:-1,MSNBC HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137086.ts
+#EXTINF:-1,Weather Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137085.ts
+#EXTINF:-1,NFL Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125155.ts
+#EXTINF:-1,NFL Network USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125154.ts
+#EXTINF:-1,NFL NOW HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125153.ts
+#EXTINF:-1,NFL Redzone HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125152.ts
+#EXTINF:-1,NHL Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125151.ts
+#EXTINF:-1,MLB NETWORK HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125150.ts
+#EXTINF:-1,NBA TV HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125149.ts
+#EXTINF:-1,NBC Sports Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125148.ts
+#EXTINF:-1,CBS Sports Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125147.ts
+#EXTINF:-1,ESPN News HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125144.ts
+#EXTINF:-1,ESPN HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125146.ts
+#EXTINF:-1,ESPN U HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125143.ts
+#EXTINF:-1,ESPN2 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125145.ts
+#EXTINF:-1,Fox Sports 1 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125140.ts
+#EXTINF:-1,Fox Sports 2 HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125139.ts
+#EXTINF:-1,NESN HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125141.ts
+#EXTINF:-1,Big Ten Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125138.ts
+#EXTINF:-1,BEIN SPORTS HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125136.ts
+#EXTINF:-1,GOLF HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125133.ts
+#EXTINF:-1,Tennis HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125134.ts
+#EXTINF:-1,Outside HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125135.ts
+#EXTINF:-1,Fight Tyme USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137082.ts
+#EXTINF:-1,Outdoor Channel HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137084.ts
+#EXTINF:-1,Velocity HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/137083.ts
+#EXTINF:-1,SEC Network USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125142.ts
+#EXTINF:-1,WILLOW Cricket HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125132.ts
+#EXTINF:-1,WWE Network HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125131.ts
+#EXTINF:-1,UFC Fight Pass HD USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125130.ts
+#EXTINF:-1,NFL 1 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125129.ts
+#EXTINF:-1,NFL 2 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125128.ts
+#EXTINF:-1,NFL 3 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125127.ts
+#EXTINF:-1,NFL 4 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125126.ts
+#EXTINF:-1,NFL 5 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125125.ts
+#EXTINF:-1,NFL 6 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125124.ts
+#EXTINF:-1,NFL 7 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125123.ts
+#EXTINF:-1,NFL 8 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125122.ts
+#EXTINF:-1,NFL 9 HD (GAME TIME) USA
+http://titan-servers.sytes.net:8000/live/dean/dean/125121.ts
+ 
+#EXTINF:-1,N/A HD
 http://91.149.172.100:80/channel?id=1&u=demo&p=demo
 #EXTINF:-1,MTV Live HD
 http://91.149.172.100:80/channel?id=4&u=demo&p=demo
