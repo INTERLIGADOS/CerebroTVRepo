@@ -344,7 +344,7 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'')
         #addDir('Search Actors','search',15,'')
@@ -413,7 +413,7 @@ def Mirrors(url,name):
   link=''.join(link.splitlines()).replace('\'','"')
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
-  addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
+  addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
   for item in listcontent:
             vname=item.contents[0]
             vurl=item["href"]
@@ -1397,7 +1397,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
-        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,vimg)
@@ -1413,7 +1413,7 @@ def Episodes(url,name):
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
-        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
@@ -1430,7 +1430,7 @@ def Seasons(url):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
-        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1],url,8,"")
@@ -1454,7 +1454,7 @@ def INDEX(url,modenum,curmode,vidtype):
             exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
-        addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)

@@ -1567,7 +1567,7 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="2.0"
+  version="2.1"
   name=".CerebroTV Vidics Player"
   provider-name="Biglad">
   <requires>
