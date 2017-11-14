@@ -393,3 +393,17 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Ghost Adventures[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Ghost%20Adventures%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fghost_adventures&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Ghost Adventures: Aftershocks[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Ghost%20Adventures%3a%20Aftershocks%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pro%2fTV-Show%2fGhost-Adventures%3a-Aftershocks&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
