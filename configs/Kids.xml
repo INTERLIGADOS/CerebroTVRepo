@@ -37,6 +37,20 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]She-Ra: Princess of Power[/COLOR]</title>
+<link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126171&tvdb=73015&tvshowtitle=She-Ra%3a%20Princess%20of%20Power&year=1985</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]He-Man and the Masters of the Universe[/COLOR]</title>
+<link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126158&tvdb=73014&tvshowtitle=He-Man%20and%20the%20Masters%20of%20the%20Universe&year=1983</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Animation Movies 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dAnimation%20Movies%2024%2f7%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f7e18e745bf13ed4e73c5e612599b4cf5.m3u8</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
