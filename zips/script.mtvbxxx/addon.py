@@ -5,7 +5,7 @@ import xbmcgui
 import urllib2
 
 
-passxxx = "yesiam"
+passxxx = "imblind"
 
 def Search(name):
         search_entered = ''
