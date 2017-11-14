@@ -108,6 +108,27 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]The First 48[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20First%2048%20&url=http%3a%2f%2fvidics.unblocked.pro%2fTV-Show%2fthe_first_48&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The First 48 - Missing Persons[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20First%2048%20-%20Missing%20Persons%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fthe_first_48%3a_missing_persons&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]After The First 48[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20After%20The%20First%2048%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fAfter_The_First_48&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Game of Thrones[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Game%20of%20Thrones%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fgame_of_thrones&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
