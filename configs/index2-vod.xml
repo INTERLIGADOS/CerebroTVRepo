@@ -372,3 +372,24 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Power 2014[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Power%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fPower-1&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]She-Ra: Princess of Power[/COLOR]</title>
+<link>plugin://plugin.video.covenant/?action=seasons&imdb=tt0126171&tvdb=73015&tvshowtitle=She-Ra%3a%20Princess%20of%20Power&year=1985</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]He-Man and the Masters of the Universe[/COLOR]</title>
+<link>plugin://plugin.video.covenant/?action=seasons&imdb=tt0126158&tvdb=73014&tvshowtitle=He-Man%20and%20the%20Masters%20of%20the%20Universe&year=1983</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
