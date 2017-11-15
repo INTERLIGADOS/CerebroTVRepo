@@ -92,7 +92,7 @@ settings = context.get_settings()
 
 
 appversion = 0
-if version >= (17, 5):
+if version >= (17, 6):
     appversion = "KODI"
 elif version >= (16, 2) and application == 'FTMC':
     appversion = "KODI"

@@ -3200,7 +3200,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <addon id="script.megatvupdater"
-    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.3" provider-name="Biglad">
+    name="[COLOR mediumseagreen]## CerebroTV Updater ##[/COLOR]" version="1.10.4" provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.httplib2" version="0.8.0" />
@@ -3974,7 +3974,7 @@ level.</description>
 
 <addon id="script.mtvbapkinstaller"
   name="CerebroTV APK Installer"
-  version="2.0"
+  version="2.1"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
