@@ -232,12 +232,12 @@ reset_playing()
 dp.close()
 update = xbmcgui.Dialog().yesno("[COLOR tomato]TV Guide Helper[/COLOR]","[COLOR yellow][/COLOR]","" ,"","Open Guide","Update Guide")
 if update:
-    try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
+    try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.usa/source.db"))
     except: pass
-    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/source.db"))
-    try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
+    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.usa/source.db"))
+    try: os.remove(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.usa/cerebrousa.xml"))
     except: pass
-    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.uk/cerebrouk.xml"))
+    utils.DeleteFile(xbmc.translatePath("special://userdata/addon_data/script.tvguide.cerebrotv.usa/cerebrousa.xml"))
     #xbmc.executebuiltin('PlayMedia("plugin://plugin.video.streamhub")')
     #xbmc.sleep(1000)
     download(LOCATION,file2) 
