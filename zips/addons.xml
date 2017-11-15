@@ -1784,6 +1784,49 @@ For updates check the readme.
   </extension>
 </addon>
 
+
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="4.0.15" provider-name="UKTurk">
+
+  <requires>
+
+    <import addon="script.module.simplejson" version="3.3.0"/>
+
+    <import addon="xbmc.python" version="2.1.0"/>
+
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+    <import addon="script.video.F4mProxy" version="2.5.3"/>
+
+    <import addon="script.module.liveresolver" version="0.1.24"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+
+        <provides>video</provides>
+
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+
+    <summary lang="en">Free Playlists courtesy of @uk_turk</summary>
+
+    <description lang="en">Free Playlists courtesy of @uk_turk</description>
+
+    <platform>all</platform>
+
+  </extension>
+
+</addon>
+
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
        version="1.1.55"
@@ -5457,7 +5500,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.usa" name="Cerebro TV Guide USA FULL" version="2.0.45" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.usa" name="Cerebro TV Guide USA FULL" version="2.0.46" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
