@@ -31,7 +31,7 @@ from fileFetcher import *
 from strings import *
 from operator import itemgetter
 
-ADDON = xbmcaddon.Addon(id='script.tvguide.cerebrotv.uk')
+ADDON = xbmcaddon.Addon(id='script.tvguide.cerebrotv.usa')
 
 
 class GuideTypes(object):
@@ -45,7 +45,7 @@ class GuideTypes(object):
 
     guideTypes = []
     guideParser = ConfigParser.ConfigParser()
-    filePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.uk', 'guides.ini'))
+    filePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.usa', 'guides.ini'))
 
     def __init__(self):
         try:
@@ -67,7 +67,7 @@ class GuideTypes(object):
                     defaultGuideId = id
                 guideTypes.append((id, sortOrder, section, fName, default))
             self.guideTypes = sorted(guideTypes, key=itemgetter(self.GUIDE_SORT))
-            xbmc.log('[script.tvguide.cerebrotv.uk] GuideTypes collected: %s' % str(self.guideTypes), xbmc.LOGDEBUG)
+            xbmc.log('[script.tvguide.cerebrotv.usa] GuideTypes collected: %s' % str(self.guideTypes), xbmc.LOGDEBUG)
 
             if str(ADDON.getSetting('xmltv.type')) == '':
                 ADDON.setSetting('xmltv.type', str(defaultGuideId))
@@ -81,7 +81,7 @@ class GuideTypes(object):
             try:
                 dict1[option] = self.guideParser.get(section, option)
                 if dict1[option] == -1:
-                    xbmc.log('[script.tvguide.cerebrotv.uk] skip: %s' % option, xbmc.LOGDEBUG)
+                    xbmc.log('[script.tvguide.cerebrotv.usa] skip: %s' % option, xbmc.LOGDEBUG)
             except:
                 print("exception on %s!" % option)
                 dict1[option] = None
@@ -94,17 +94,17 @@ class GuideTypes(object):
         try:
             value = guide[item]
         except IndexError:
-            xbmc.log('[script.tvguide.cerebrotv.uk] DataItem with index %s not found' % item, xbmc.LOGDEBUG)
+            xbmc.log('[script.tvguide.cerebrotv.usa] DataItem with index %s not found' % item, xbmc.LOGDEBUG)
         return value
 
 
     def getGuideById(self, id):
-        xbmc.log('[script.tvguide.cerebrotv.uk] Finding Guide with ID: %s' % id, xbmc.LOGDEBUG)
+        xbmc.log('[script.tvguide.cerebrotv.usa] Finding Guide with ID: %s' % id, xbmc.LOGDEBUG)
         ret = []
         for guide in self.guideTypes:
             if guide[self.GUIDE_ID] == int(id):
                 ret = guide
-                xbmc.log('[script.tvguide.cerebrotv.uk] Found Guide with data: %s' % str(guide), xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] Found Guide with data: %s' % str(guide), xbmc.LOGDEBUG)
         return ret
 
 
@@ -135,8 +135,8 @@ if __name__ == '__main__':
             # This workaround is needed due to a Bug in the Kodi Android implementation
             # where setSetting() does not have any effect:
             #  #13913 - [android/python] addons can not save settings  [http://trac.kodi.tv/ticket/13913]
-            xbmc.log('[script.tvguide.cerebrotv.uk] Running on ANDROID with Kodi v%s --> using workaround!' % str(ver), xbmc.LOGDEBUG)
-            filePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.uk', 'settings.xml'))
+            xbmc.log('[script.tvguide.cerebrotv.usa] Running on ANDROID with Kodi v%s --> using workaround!' % str(ver), xbmc.LOGDEBUG)
+            filePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.usa', 'settings.xml'))
             tree = ET.parse(filePath)
             root = tree.getroot()
             updated = False

@@ -359,7 +359,7 @@ class TVGuide(xbmcgui.WindowXML):
             if program is not None:
                 self._showContextMenu(program)
         else:
-            xbmc.log('[script.tvguide.cerebrotv.uk] Unhandled ActionId: ' + str(action.getId()), xbmc.LOGDEBUG)
+            xbmc.log('[script.tvguide.cerebrotv.usa] Unhandled ActionId: ' + str(action.getId()), xbmc.LOGDEBUG)
 
     def onClick(self, controlId):
         if controlId in [self.C_MAIN_LOADING_CANCEL, self.C_MAIN_MOUSE_EXIT]:

@@ -106,7 +106,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide.cerebrotv.uk 30304]</label>
+            <label>$ADDON[script.tvguide.cerebrotv.usa 30304]</label>
         </control>
         <control type="label"><!-- Choose Stream Text -->
             <posx>20</posx>
@@ -115,7 +115,7 @@ For any more help please visit TVAddons.ag</label>
             <height>200</height>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide.cerebrotv.uk 30305]</label>
+            <label>$ADDON[script.tvguide.cerebrotv.usa 30305]</label>
             <wrapmultiline>true</wrapmultiline>
 			<visible>false</visible>
         </control>
@@ -158,7 +158,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide.cerebrotv.uk 30307]</label>
+            <label>$ADDON[script.tvguide.cerebrotv.usa 30307]</label>
         </control>
 
         <control type="button" id="4005"><!-- watch from beginning -->
@@ -190,7 +190,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-			<label>$ADDON[script.tvguide.cerebrotv.uk 80000]</label>
+			<label>$ADDON[script.tvguide.cerebrotv.usa 80000]</label>
         </control>
 
         <control type="button" id="80001"><!-- MY TV SHOWS -->
@@ -206,7 +206,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-			<label>$ADDON[script.tvguide.cerebrotv.uk 80001]</label>
+			<label>$ADDON[script.tvguide.cerebrotv.usa 80001]</label>
         </control>
 		
 		<control type="button" id="80002"><!-- VIDEO ADDONS -->
@@ -222,7 +222,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-			<label>$ADDON[script.tvguide.cerebrotv.uk 80002]</label>
+			<label>$ADDON[script.tvguide.cerebrotv.usa 80002]</label>
         </control>
         <control type="button" id="4004"><!-- QUIT -->
             <posx>20</posx>
@@ -237,7 +237,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide.cerebrotv.uk 30308]</label>
+            <label>$ADDON[script.tvguide.cerebrotv.usa 30308]</label>
 			<visible>false</visible>
         </control>
 		

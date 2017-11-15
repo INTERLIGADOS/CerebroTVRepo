@@ -213,15 +213,15 @@ class Database(object):
 
             except sqlite3.OperationalError:
                 if cancel_requested_callback is None:
-                    xbmc.log('[script.tvguide.cerebrotv.uk] Database is locked, bailing out...', xbmc.LOGDEBUG)
+                    xbmc.log('[script.tvguide.cerebrotv.usa] Database is locked, bailing out...', xbmc.LOGDEBUG)
                     break
                 else:  # ignore 'database is locked'
-                    xbmc.log('[script.tvguide.cerebrotv.uk] Database is locked, retrying...', xbmc.LOGDEBUG)
+                    xbmc.log('[script.tvguide.cerebrotv.usa] Database is locked, retrying...', xbmc.LOGDEBUG)
 
             except sqlite3.DatabaseError:
                 self.conn = None
                 if self.alreadyTriedUnlinking:
-                    xbmc.log('[script.tvguide.cerebrotv.uk] Database is broken and unlink() failed', xbmc.LOGDEBUG)
+                    xbmc.log('[script.tvguide.cerebrotv.usa] Database is broken and unlink() failed', xbmc.LOGDEBUG)
                     break
                 else:
                     try:
@@ -340,7 +340,7 @@ class Database(object):
         dateStr = date.strftime('%Y-%m-%d')
         c = self.conn.cursor()
         try:
-            xbmc.log('[script.tvguide.cerebrotv.uk] Updating caches...', xbmc.LOGDEBUG)
+            xbmc.log('[script.tvguide.cerebrotv.usa] Updating caches...', xbmc.LOGDEBUG)
             if progress_callback:
                 progress_callback(0)
 
@@ -844,7 +844,7 @@ class Source(object):
 
 
 class XMLTVSource(Source):
-    PLUGIN_DATA = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.uk'))
+    PLUGIN_DATA = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.usa'))
     KEY = 'xmltv'
     INI_TYPE_FTV = 0
     INI_TYPE_CUSTOM = 1
@@ -875,11 +875,11 @@ class XMLTVSource(Source):
             customFile = str(addon.getSetting('xmltv.file'))
             if os.path.exists(customFile):
                 # uses local file provided by user!
-                xbmc.log('[script.tvguide.cerebrotv.uk] Use local file: %s' % customFile, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] Use local file: %s' % customFile, xbmc.LOGDEBUG)
                 self.xmltvFile = customFile
             else:
                 # Probably a remote file
-                xbmc.log('[script.tvguide.cerebrotv.uk] Use remote file: %s' % customFile, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] Use remote file: %s' % customFile, xbmc.LOGDEBUG)
                 self.updateLocalFile(customFile, addon)
                 self.xmltvFile = os.path.join(XMLTVSource.PLUGIN_DATA, customFile.split('/')[-1])
         else:
@@ -892,10 +892,10 @@ class XMLTVSource(Source):
             customFile = str(addon.getSetting('addons.ini.file'))
             if os.path.exists(customFile):
                 # uses local file provided by user!
-                xbmc.log('[script.tvguide.cerebrotv.uk] Use local file: %s' % customFile, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] Use local file: %s' % customFile, xbmc.LOGDEBUG)
             else:
                 # Probably a remote file
-                xbmc.log('[script.tvguide.cerebrotv.uk] Use remote file: %s' % customFile, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] Use remote file: %s' % customFile, xbmc.LOGDEBUG)
                 self.updateLocalFile(customFile, addon, True)
 
         if not self.xmltvFile or not xbmcvfs.exists(self.xmltvFile):
@@ -952,7 +952,7 @@ class XMLTVSource(Source):
             try:
                 t_tmp = datetime.datetime.strptime(dateString, '%Y%m%d%H%M%S')
             except TypeError:
-                xbmc.log('[script.tvguide.cerebrotv.uk] strptime error with this date: %s' % dateString, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] strptime error with this date: %s' % dateString, xbmc.LOGDEBUG)
                 t_tmp = datetime.datetime.fromtimestamp(time.mktime(time.strptime(dateString, '%Y%m%d%H%M%S')))
             if offSign == '+':
                 t = t_tmp - td

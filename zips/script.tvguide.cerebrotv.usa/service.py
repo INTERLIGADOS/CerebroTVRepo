@@ -53,13 +53,13 @@ if __name__ == '__main__':
     reset_playing()
 
     try:
-        ADDON = xbmcaddon.Addon('script.tvguide.cerebrotv.uk')
+        ADDON = xbmcaddon.Addon('script.tvguide.cerebrotv.usa')
         if ADDON.getSetting('autostart') == "true":
-            xbmc.executebuiltin("RunAddon(script.tvguide.cerebrotv.uk)")
+            xbmc.executebuiltin("RunAddon(script.tvguide.cerebrotv.usa)")
         
         if ADDON.getSetting('background.service') == 'true':
             monitor = xbmc.Monitor()
-            xbmc.log("[script.tvguide.cerebrotv.uk] Background service started...", xbmc.LOGDEBUG)
+            xbmc.log("[script.tvguide.cerebrotv.usa] Background service started...", xbmc.LOGDEBUG)
             Service()
             interval = int(ADDON.getSetting('service.interval'))
             waitTime = 21600  # Default 6hrs
@@ -73,14 +73,14 @@ if __name__ == '__main__':
                 waitTime = 86400  # 24hrs
             while not monitor.abortRequested():
                 # Sleep/wait for specified time
-                xbmc.log("[script.tvguide.cerebrotv.uk] Service waiting for interval %s" % waitTime, xbmc.LOGDEBUG)
+                xbmc.log("[script.tvguide.cerebrotv.usa] Service waiting for interval %s" % waitTime, xbmc.LOGDEBUG)
                 if monitor.waitForAbort(waitTime):
                     # Abort was requested while waiting. We should exit
                     break
-                xbmc.log("[script.tvguide.cerebrotv.uk] Service now triggered...", xbmc.LOGDEBUG)
+                xbmc.log("[script.tvguide.cerebrotv.usa] Service now triggered...", xbmc.LOGDEBUG)
                 Service()
                 
     except source.SourceNotConfiguredException:
         pass  # ignore
     except Exception, ex:
-        xbmc.log('[script.tvguide.cerebrotv.uk] Uncaught exception in service.py: %s' % str(ex), xbmc.LOGDEBUG)
+        xbmc.log('[script.tvguide.cerebrotv.usa] Uncaught exception in service.py: %s' % str(ex), xbmc.LOGDEBUG)

@@ -1,6 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: FTV Guide
-# Addon id: script.tvguide.cerebrotv.uk
+# Addon id: script.tvguide.cerebrotv.usa
 # Addon Provider: rayw1986, bluezed
 msgid ""
 msgstr ""

@@ -43,7 +43,7 @@ class Notification(object):
         return 'tvguide-%s-%s' % (programTitle, startTime)
 
     def scheduleNotifications(self):
-        xbmc.log("[script.tvguide.cerebrotv.uk] Scheduling notifications")
+        xbmc.log("[script.tvguide.cerebrotv.usa] Scheduling notifications")
         for channelTitle, programTitle, startTime in self.database.getNotifications():
             self._scheduleNotification(channelTitle, programTitle, startTime)
 

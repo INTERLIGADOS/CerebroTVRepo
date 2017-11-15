@@ -513,7 +513,7 @@
                     <posy>0</posy>
                     <width>600</width>
                     <height>55</height>
-                    <label>$ADDON[script.tvguide.cerebrotv.uk.2017 30001]</label>
+                    <label>$ADDON[script.tvguide.cerebrotv.usa.2017 30001]</label>
                     <textcolor>ffffffff</textcolor>
                     <font>font30</font>
                     <aligny>center</aligny>
@@ -544,7 +544,7 @@
                     <posy>100</posy>
                     <width>150</width>
                     <height>50</height>
-                    <label>$ADDON[script.tvguide.cerebrotv.uk.2017 30008]</label>
+                    <label>$ADDON[script.tvguide.cerebrotv.usa.2017 30008]</label>
                     <textcolor>ffffffff</textcolor>
                     <font>font13</font>
                     <aligny>center</aligny>
@@ -589,7 +589,7 @@
                     <posy>10</posy>
                     <width>300</width>
                     <height>50</height>
-                    <label>$ADDON[script.tvguide.cerebrotv.uk.2017 30005]</label>
+                    <label>$ADDON[script.tvguide.cerebrotv.usa.2017 30005]</label>
                     <textcolor>ffffffff</textcolor>
                     <font>font13</font>
                     <aligny>center</aligny>
@@ -599,7 +599,7 @@
                     <posy>10</posy>
                     <width>400</width>
                     <height>50</height>
-                    <label>$ADDON[script.tvguide.cerebrotv.uk.2017 30007]</label>
+                    <label>$ADDON[script.tvguide.cerebrotv.usa.2017 30007]</label>
                     <textcolor>ffffffff</textcolor>
                     <font>font13</font>
                     <aligny>center</aligny>
@@ -611,7 +611,7 @@
                     <posy>10</posy>
                     <width>100</width>
                     <height>50</height>
-                    <label>$ADDON[script.tvguide.cerebrotv.uk.2017 30006]</label>
+                    <label>$ADDON[script.tvguide.cerebrotv.usa.2017 30006]</label>
                     <textcolor>ffffffff</textcolor>
                     <font>font13</font>
                     <aligny>center</aligny>

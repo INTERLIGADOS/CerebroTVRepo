@@ -42,7 +42,7 @@ class FileFetcher(object):
     TYPE_DEFAULT = 1
     TYPE_REMOTE = 2
 
-    basePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.uk'))
+    basePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.tvguide.cerebrotv.usa'))
     filePath = ''
     fileUrl = ''
     addon = None
@@ -88,12 +88,12 @@ class FileFetcher(object):
         if fetch:
             tmpFile = os.path.join(self.basePath, 'tmp')
             if self.fileType == self.TYPE_REMOTE:
-                xbmc.log('[script.tvguide.cerebrotv.uk] file is in remote location: %s' % self.fileUrl, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] file is in remote location: %s' % self.fileUrl, xbmc.LOGDEBUG)
                 if not xbmcvfs.copy(self.fileUrl, tmpFile):
-                    xbmc.log('[script.tvguide.cerebrotv.uk] Remote file couldn\'t be copied: %s' % self.fileUrl, xbmc.LOGERROR)
+                    xbmc.log('[script.tvguide.cerebrotv.usa] Remote file couldn\'t be copied: %s' % self.fileUrl, xbmc.LOGERROR)
             else:
                 f = open(tmpFile, 'wb')
-                xbmc.log('[script.tvguide.cerebrotv.uk] file is on the internet: %s' % self.fileUrl, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] file is on the internet: %s' % self.fileUrl, xbmc.LOGDEBUG)
                 tmpData = urllib2.urlopen(self.fileUrl)
                 data = tmpData.read()
                 if tmpData.info().get('content-encoding') == 'gzip':
@@ -105,7 +105,7 @@ class FileFetcher(object):
                     os.remove(self.filePath)
                 os.rename(tmpFile, self.filePath)
                 retVal = self.FETCH_OK
-                xbmc.log('[script.tvguide.cerebrotv.uk] file %s was downloaded' % self.filePath, xbmc.LOGDEBUG)
+                xbmc.log('[script.tvguide.cerebrotv.usa] file %s was downloaded' % self.filePath, xbmc.LOGDEBUG)
             else:
                 retVal = self.FETCH_ERROR
         return retVal

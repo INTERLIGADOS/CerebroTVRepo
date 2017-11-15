@@ -23,7 +23,7 @@
 #
 import xbmcaddon
 
-ADDON = xbmcaddon.Addon(id = 'script.tvguide.cerebrotv.uk')
+ADDON = xbmcaddon.Addon(id = 'script.tvguide.cerebrotv.usa')
 
 NO_DESCRIPTION = 30000
 CALCULATING_REMAINING_TIME = 30002
