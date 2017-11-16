@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.xxx-o-dus" 
 	     name="XXX-O-DUS" 
-	     version="3.00.033" 
+	     version="3.00.034" 
 	     provider-name="Echo Coder">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
@@ -11,7 +11,8 @@
     <import addon="script.module.urlresolver"/>
     <import addon="script.module.urlresolver.xxx"/>
     <import addon="script.module.pyxbmct"/>
-    <import addon="repository.colossus"/>
+	<import addon="script.module.requests" />
+    <!--<import addon="repository.colossus"/>-->
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
