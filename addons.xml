@@ -1551,6 +1551,49 @@ Initial release.
   </extension>
 </addon>
 
+<addon id="plugin.video.meta" name="Meta" version="1.1.8" provider-name="MetaTeam">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.futures" version="2.2.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="[login|startup]">
+  </extension>
+
+  <extension point="kodi.context.item" library="context_playable.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 30602]</label>
+        <visible>!System.HasAddon(context.meta) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)] + SubString(ListItem.FileNameAndPath, plugin.video.meta)</visible>
+      </item>
+  </extension>
+
+  <extension point="kodi.context.item" library="context_tvshow.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 30622]</label>
+        <visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.meta)</visible>
+      </item>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>TMDB and TVDB media listing</summary>
+    <description>Browse TMDB and TVDB media</description>
+    <supportedcontent>
+      <content>movies</content>
+      <content>tvshows</content>
+      <content>episodes</content>
+    </supportedcontent>
+  </extension>
+</addon>
+
 <addon id="plugin.video.mobdina" name="Mobdina" version="10.17.2017" provider-name="Sweetwork">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
@@ -1675,7 +1718,7 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="2.1"
+  version="2.2"
   name=".CerebroTV Vidics Player"
   provider-name="Biglad">
   <requires>
@@ -1687,6 +1730,8 @@ Initial release.
         <import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.module.requests" />
+		<import addon="script.module.futures" />
+		<import addon="plugin.video.meta" />
         <import addon="plugin.video.1channel" optional="true"/>
         <import addon="script.xbmc.unpausejumpback" />
 
@@ -1968,7 +2013,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.58" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.59" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -1986,12 +2031,14 @@ Removed: Nudeflix</news>
         <import addon="script.cerebro.pairwith" />
         <import addon="script.exodus.artwork" version="1.0.4" />
 		<import addon="script.exodus.metadata" version="1.0.0" />
-        <!--<import addon="plugin.video.itv" />-->
-        <!--<import addon="plugin.video.bbciplayer" />-->
+        <import addon="plugin.video.itv" />
+        <import addon="plugin.video.bbciplayer" />
         <!--<import addon="plugin.video.tvplayer" />-->
         <!--<import addon="plugin.audio.tuneinradio" />-->
         <!--<import addon="plugin.audio.mp3streams" />-->
-        <import addon="script.cerebro.tvguide.open" />
+        <import addon="script.module.futures" />
+		<import addon="plugin.video.meta" />
+		<import addon="script.cerebro.tvguide.open" />
         <import addon="script.cerebro.tvguide.open2" />
         <import addon="script.cerebro.tvguide.open3" />
         <import addon="script.cerebro.tvguide.open.free" />
@@ -3727,6 +3774,25 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<platform>all</platform>
 		<summary lang="en">fantastic</summary>
 	</extension>
+</addon>
+
+<addon id="script.module.futures"
+       name="futures"
+       version="2.2.0"
+       provider-name="Brian Quinlan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>A futures implementation for Python</summary>
+    <description>Backport of the concurrent.futures package from Python 3.2</description>
+    <platform>all</platform>
+    <license>BSD</license>
+    <source>https://code.google.com/p/pythonfutures/source/browse</source>
+    <website>https://code.google.com/p/pythonfutures</website>
+  </extension>
 </addon>
 
 <addon id="script.module.html5lib"
