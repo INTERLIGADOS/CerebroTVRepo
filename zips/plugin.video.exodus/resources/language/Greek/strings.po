@@ -501,7 +501,7 @@ msgstr "Όταν αρχίζει η αναπαραγωγή..."
 
 msgctxt "#32344"
 msgid "Resume Playback"
-msgstr "Επανεκκίνηση αναπαραγωγής"
+msgstr "Συνέχεια αναπαραγωγής"
 
 msgctxt "#32345"
 msgid "Providers"
@@ -605,11 +605,11 @@ msgstr "Εκκίνηση από την αρχή"
 
 msgctxt "#32502"
 msgid "Resume from %s"
-msgstr "Επανεκκίνηση από %s"
+msgstr "Συνέχεια από %s"
 
 msgctxt "#32503"
 msgid "Resume"
-msgstr "Επανεκκίνηση"
+msgstr "Συνέχεια"
 
 msgctxt "#32511"
 msgid "An account already exists."

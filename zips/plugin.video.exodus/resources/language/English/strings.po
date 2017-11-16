@@ -914,3 +914,23 @@ msgstr ""
 msgctxt "#32602"
 msgid "Waiting for"
 msgstr ""
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr ""
+
+msgctxt "#32604"
+msgid "[B]EXODUS[/B] : Clear search history..."
+msgstr ""
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr ""
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr ""
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr ""

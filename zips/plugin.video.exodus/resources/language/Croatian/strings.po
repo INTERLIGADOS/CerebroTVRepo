@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Exodus\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-10-19 12:54+0200\n"
+"PO-Revision-Date: 2017-10-31 22:27+0100\n"
 "Last-Translator: gogo\n"
 "Language-Team: Croatian (http://www.transifex.com/)\n"
 "MIME-Version: 1.0\n"
@@ -832,7 +832,7 @@ msgstr "Postanite VIP član kako bi ostvarili mnoge pogodnosti na: https://fanar
 
 msgctxt "#32584"
 msgid "Sort order for Trakt Watched Progress"
-msgstr "Razvrstaj poredak za Trakt napredak gledanja."
+msgstr "Razvrstaj poredak za Trakt napredak gledanja"
 
 msgctxt "#32585"
 msgid "Recently aired"
@@ -905,3 +905,23 @@ msgstr "Ukupno"
 msgctxt "#32602"
 msgid "Waiting for"
 msgstr "Čekam"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "Nova pretraga..."
+
+msgctxt "#32604"
+msgid "[B]EXODUS[/B] : Clear search history..."
+msgstr "[B]EXODUS[/B] : Obriši povijest pretrage..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Klikni za brisanje povijesti pretrage"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Prem"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normalno"

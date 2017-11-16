@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Exodus\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-05-30 09:11+0000\n"
+"PO-Revision-Date: 2017-10-30 17:40+0000\n"
 "Last-Translator: Viper2k4\n"
 "Language-Team: French (http://www.transifex.com/)\n"
 "MIME-Version: 1.0\n"
@@ -906,3 +906,39 @@ msgstr "Vert jaunâtre"
 msgctxt "#32598"
 msgid "No Color"
 msgstr "Sans couleur"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Obtenir des informations sur le genre auprès de Trakt"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Préparation des sources"
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "En attente de"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "Nouvelle recherche..."
+
+msgctxt "#32604"
+msgid "[B]EXODUS[/B] : Clear search history..."
+msgstr "[B]EXODUS[/B] : Effacer l'historique de recherche..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Cliquez pour effacer l'historique de recherche"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Premium"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normal"

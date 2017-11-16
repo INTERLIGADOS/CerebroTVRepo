@@ -13,15 +13,16 @@
 # lambda81, 2015
 # lambda81, 2016
 # lidor malich, 2015
-# Noam Guterman, 2017
 # SagaMi, 2016
 # Yaron Shahrabani, 2016
 # ‫לידור מליח‬‎, 2016י
+# Noam Guterman, 2017
+# A. Dambledore, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Exodus\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-10-24 08:50+0300\n"
+"PO-Revision-Date: 2017-10-29 07:49+0200\n"
 "Last-Translator: A. Dambledore\n"
 "Language-Team: Eng2Heb\n"
 "MIME-Version: 1.0\n"
@@ -109,7 +110,7 @@ msgstr "הוצבע הכי הרבה"
 
 msgctxt "#32020"
 msgid "Box Office"
-msgstr "קוּפָּה"
+msgstr "שוברי קופות"
 
 msgctxt "#32021"
 msgid "Oscar Winners"
@@ -157,7 +158,7 @@ msgstr "גלה"
 
 msgctxt "#32032"
 msgid "Collection"
-msgstr "קולקציה"
+msgstr "אוסף"
 
 msgctxt "#32033"
 msgid "Watchlist"
@@ -253,7 +254,7 @@ msgstr "עונה"
 
 msgctxt "#32056"
 msgid "Are you sure?"
-msgstr "האם להחיל את השינויים?"
+msgstr "האם אתה בטוח?"
 
 msgctxt "#32057"
 msgid "Process Complete"
@@ -321,7 +322,7 @@ msgstr "רענן"
 
 msgctxt "#32073"
 msgid "[B]TRAKT[/B] : Authorize"
-msgstr "B]טראקט[/B] : הזדהות"
+msgstr "[B]טראקט[/B] : הזדהות"
 
 msgctxt "#32074"
 msgid "[B]HELP[/B]"
@@ -385,7 +386,7 @@ msgstr "מקומי"
 
 msgctxt "#32315"
 msgid "Trakt"
-msgstr "Trakt"
+msgstr "טראקט"
 
 msgctxt "#32316"
 msgid "Info Language"
@@ -753,11 +754,11 @@ msgstr "בדוק פרק ראשון של עונה לפני הוספה"
 
 msgctxt "#32551"
 msgid "Add to Library"
-msgstr "הוסף לספריה"
+msgstr "הוסף לספרייה"
 
 msgctxt "#32552"
 msgid "Adding to library..."
-msgstr "מוסיף לספריה..."
+msgstr "מוסיף לספרייה..."
 
 msgctxt "#32553"
 msgid "Updating TV shows..."
@@ -909,8 +910,28 @@ msgstr "מכין מקורות"
 
 msgctxt "#32601"
 msgid "Total"
-msgstr "סה\"כ"
+msgstr "סך הכל"
 
 msgctxt "#32602"
 msgid "Waiting for"
 msgstr "ממתין ל-"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "חיפוש חדש..."
+
+msgctxt "#32604"
+msgid "[B]EXODUS[/B] : Clear search history..."
+msgstr "[B]קובננט[/B] : ניקוי היסטוריית חיפוש..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "לחץ כדי לנקות את היסטוריית החיפוש"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "פרמיום"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "נורמלי"
