@@ -1,0 +1,380 @@
+# Addon Name: bennu
+# Addon id: plugin.video.bennu
+# Addon Provider: bennu
+msgid ""
+msgstr ""
+"Project-Id-Version: bennu\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-10-14 15:44+0200\n"
+"Language-Team: Croatian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: hr\n"
+"Last-Translator: gogo\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+msgctxt "#30701"
+msgid "Settings"
+msgstr "Postavke"
+
+msgctxt "#30702"
+msgid "Search"
+msgstr "Pretraga"
+
+msgctxt "#30703"
+msgid "Clear History"
+msgstr "Obriši povijest"
+
+msgctxt "#30704"
+msgid "Link"
+msgstr "Poveznica"
+
+msgctxt "#30705"
+msgid "Unplayable stream"
+msgstr "Nedostupno strujanje"
+
+msgctxt "#30706"
+msgid "Discover Great Streaming Playlists!"
+msgstr "Otkrij veliki popis izvođenja strujanja!"
+
+msgctxt "#30707"
+msgid "Trailer"
+msgstr "Najava"
+
+msgctxt "#30708"
+msgid "Information"
+msgstr "Informacije"
+
+msgctxt "#30709"
+msgid "Developer"
+msgstr "Razvijatelj"
+
+msgctxt "#30710"
+msgid "Enable Logging"
+msgstr "Omogući zapisivanje"
+
+msgctxt "#30711"
+msgid "Set Movies view"
+msgstr "Postavi prikaz filmova"
+
+msgctxt "#30712"
+msgid "Set TV Shows view"
+msgstr "Postavi prikaz TV serija"
+
+msgctxt "#30713"
+msgid "Set Seasons view"
+msgstr "Postavi prikaz sezona"
+
+msgctxt "#30714"
+msgid "Set Episodes view"
+msgstr "Postavi prikaz epizoda"
+
+msgctxt "#30715"
+msgid "General"
+msgstr "Općenito"
+
+msgctxt "#30716"
+msgid "MetaData"
+msgstr "Metapodaci"
+
+msgctxt "#30717"
+msgid "Enable MetaData"
+msgstr "Omogući metapodatke"
+
+msgctxt "#30718"
+msgid "Cache"
+msgstr "Predmemorija"
+
+msgctxt "#30719"
+msgid "Clear cache..."
+msgstr "Obriši predmemoriju..."
+
+msgctxt "#30720"
+msgid "Path"
+msgstr "Putanja"
+
+msgctxt "#30721"
+msgid "Downloads"
+msgstr "Preuzimanja"
+
+msgctxt "#30722"
+msgid "Download item"
+msgstr "Preuzmi stavku"
+
+msgctxt "#30723"
+msgid "Queue item"
+msgstr "Dodaj u red čekanja"
+
+msgctxt "#30725"
+msgid "Add-on settings"
+msgstr "Postavke dodatka"
+
+msgctxt "#30726"
+msgid "Opening stream"
+msgstr "Otvaranje strujanja"
+
+msgctxt "#30727"
+msgid "Accounts"
+msgstr "Računi"
+
+msgctxt "#30728"
+msgid "User"
+msgstr "Korisnik"
+
+msgctxt "#30729"
+msgid "Email"
+msgstr "E-pošta"
+
+msgctxt "#30730"
+msgid "Password"
+msgstr "Lozinka:"
+
+msgctxt "#30731"
+msgid "Please wait..."
+msgstr "Malo pričekajte..."
+
+msgctxt "#30733"
+msgid "Clear meta..."
+msgstr "Obriši metapodatke"
+
+msgctxt "#30734"
+msgid "Clear providers..."
+msgstr "Obriši izvore..."
+
+msgctxt "#30735"
+msgid "Clear all..."
+msgstr "Obriši sve"
+
+msgctxt "#30736"
+msgid "Notification on launch"
+msgstr "Obavijesti i pokretanje"
+
+msgctxt "#30401"
+msgid "Are you sure?"
+msgstr "Jeste li sigurni?"
+
+msgctxt "#30402"
+msgid "Process Complete"
+msgstr "Proces završen"
+
+msgctxt "#30500"
+msgid "[I]Next Page[/I]"
+msgstr "[I]Sljedeća stranica[/I]"
+
+msgctxt "#32056"
+msgid "Are you sure?"
+msgstr "Jeste li sigurni?"
+
+msgctxt "#32057"
+msgid "Process Complete"
+msgstr "Proces završen"
+
+msgctxt "#32301"
+msgid "Enabled"
+msgstr "Omogućeno"
+
+msgctxt "#32302"
+msgid "Disabled"
+msgstr "Onemogućeno"
+
+msgctxt "#32303"
+msgid "User"
+msgstr "Korisnik"
+
+msgctxt "#32304"
+msgid "Email"
+msgstr "E-pošta"
+
+msgctxt "#32305"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "#32306"
+msgid "Authorization..."
+msgstr "Ovjera..."
+
+msgctxt "#32307"
+msgid "Password"
+msgstr "Lozinka"
+
+msgctxt "#32308"
+msgid "PIN"
+msgstr "PIN"
+
+msgctxt "#32309"
+msgid "API"
+msgstr "API"
+
+msgctxt "#32312"
+msgid "Providers Timeout"
+msgstr "Vrijeme isteka izvora"
+
+msgctxt "#32335"
+msgid "Progress Dialog"
+msgstr "Prozor napretka"
+
+msgctxt "#32336"
+msgid "Foreground"
+msgstr "Prednja strana"
+
+msgctxt "#32337"
+msgid "Background"
+msgstr "Pozadina"
+
+msgctxt "#32341"
+msgid "Hosters with captchas"
+msgstr "Pružatelji sadržaja sa captcha provjerom"
+
+msgctxt "#32342"
+msgid "Sort by Provider"
+msgstr "Razvrstaj po izvoru"
+
+msgctxt "#32345"
+msgid "Providers"
+msgstr "Izvori"
+
+msgctxt "#32346"
+msgid "Accounts"
+msgstr "Računi"
+
+msgctxt "#32359"
+msgid "Scraper Settings"
+msgstr "Postavke izvora"
+
+msgctxt "#32360"
+msgid "Providers Language"
+msgstr "Jezik izvora"
+
+msgctxt "#32363"
+msgid "Show HEVC Sources"
+msgstr "Prikaži HEVC izvore"
+
+msgctxt "#32404"
+msgid "Time elapsed: %s seconds"
+msgstr "Proteklo vrijeme: %s sekundi"
+
+msgctxt "#32405"
+msgid "%s seconds"
+msgstr "%s sekundi"
+
+msgctxt "#32406"
+msgid "Remaining providers: %s"
+msgstr "Preostalo izvora: %s"
+
+msgctxt "#32501"
+msgid "Start from beginning"
+msgstr "Pokreni od početka"
+
+msgctxt "#32502"
+msgid "Resume from %s"
+msgstr "Nastavi od %s"
+
+msgctxt "#32503"
+msgid "Resume"
+msgstr "Nastavi"
+
+msgctxt "#32504"
+msgid "URLResolver"
+msgstr "URL razrješitelj"
+
+msgctxt "#32505"
+msgid "Settings"
+msgstr "Postavke"
+
+msgctxt "#32506"
+msgid "Adult Section"
+msgstr "Odjeljak za odrasle"
+
+msgctxt "#32507"
+msgid "Show Adult option on Main Menu"
+msgstr "Prikaži sadržaj za odrasle u glavnom izborniku"
+
+msgctxt "#32508"
+msgid "Private Section"
+msgstr "Privatni odjeljak"
+
+msgctxt "#32509"
+msgid "Password"
+msgstr "Lozinka"
+
+msgctxt "#32581"
+msgid "Results Limit"
+msgstr "Ograničenje rezultata"
+
+msgctxt "#32582"
+msgid "Enable service notification"
+msgstr "Omogući obavijesti usluga"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Prikaži dodatne informacije izvora"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Boja identifikatora Premium izvora"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Plava"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Crvena"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Žuta"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Ružičasta"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Modra"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Zelena"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Zlatna"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Ljubičasta"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Žuto zelena"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Bez boje"
+
+msgctxt "#32599"
+msgid "Getting genre informtaion from trakt."
+msgstr "Dobivanje informacija žanra sa trakta."
+
+msgctxt "#32600"
+msgid "Preparing sources."
+msgstr "Pripremanje izvora."
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "Ukupno"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "Čekam"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Prem"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normalno"

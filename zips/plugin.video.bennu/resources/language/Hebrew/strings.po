@@ -1,0 +1,379 @@
+# Addon Name: bennu
+# Addon id: plugin.video.bennu
+# Addon Provider: bennu
+msgid ""
+msgstr ""
+"Project-Id-Version: Bennu\n"
+"POT-Creation-Date: 2017-10-09 20:15+ZONE\n"
+"PO-Revision-Date: 2017-10-22 12:34+0300\n"
+"Last-Translator: A. Dambledore\n"
+"Language-Team: Eng2Heb\n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30701"
+msgid "Settings"
+msgstr "הגדרות"
+
+msgctxt "#30702"
+msgid "Search"
+msgstr "חיפוש"
+
+msgctxt "#30703"
+msgid "Clear History"
+msgstr "נקה היסטוריה"
+
+msgctxt "#30704"
+msgid "Link"
+msgstr "קישור"
+
+msgctxt "#30705"
+msgid "Unplayable stream"
+msgstr "ההזרמה לא ניתנת לניגון"
+
+msgctxt "#30706"
+msgid "Discover Great Streaming Playlists!"
+msgstr "גלה הזרמת רשימות ניגון מעולות!"
+
+msgctxt "#30707"
+msgid "Trailer"
+msgstr "קדימון"
+
+msgctxt "#30708"
+msgid "Information"
+msgstr "מידע"
+
+msgctxt "#30709"
+msgid "Developer"
+msgstr "מפתח"
+
+msgctxt "#30710"
+msgid "Enable Logging"
+msgstr "אפשר רישום"
+
+msgctxt "#30711"
+msgid "Set Movies view"
+msgstr "הגדר תצוגת סרטים"
+
+msgctxt "#30712"
+msgid "Set TV Shows view"
+msgstr "הגדר תצוגת סדרות"
+
+msgctxt "#30713"
+msgid "Set Seasons view"
+msgstr "הגדר תצוגת עונות"
+
+msgctxt "#30714"
+msgid "Set Episodes view"
+msgstr "הגדר תצוגת פרקים"
+
+msgctxt "#30715"
+msgid "General"
+msgstr "כללי"
+
+msgctxt "#30716"
+msgid "MetaData"
+msgstr "מידע-מטא"
+
+msgctxt "#30717"
+msgid "Enable MetaData"
+msgstr "אפשר מידע-מטא"
+
+msgctxt "#30718"
+msgid "Cache"
+msgstr "מטמון"
+
+msgctxt "#30719"
+msgid "Clear cache..."
+msgstr "ניקוי מטמון..."
+
+msgctxt "#30720"
+msgid "Path"
+msgstr "נתיב"
+
+msgctxt "#30721"
+msgid "Downloads"
+msgstr "הורדות"
+
+msgctxt "#30722"
+msgid "Download item"
+msgstr "הורד פריט"
+
+msgctxt "#30723"
+msgid "Queue item"
+msgstr "הכנס פריט לתור"
+
+msgctxt "#30725"
+msgid "Add-on settings"
+msgstr "הגדרות ההרחבה"
+
+msgctxt "#30726"
+msgid "Opening stream"
+msgstr "פותח הזרמה"
+
+msgctxt "#30727"
+msgid "Accounts"
+msgstr "חשבונות"
+
+msgctxt "#30728"
+msgid "User"
+msgstr "משתמש"
+
+msgctxt "#30729"
+msgid "Email"
+msgstr "אי-מייל"
+
+msgctxt "#30730"
+msgid "Password"
+msgstr "סיסמה"
+
+msgctxt "#30731"
+msgid "Please wait..."
+msgstr "נא להמתין..."
+
+msgctxt "#30733"
+msgid "Clear meta..."
+msgstr "ניקוי מידע-מטא..."
+
+msgctxt "#30734"
+msgid "Clear providers..."
+msgstr "ניקוי ספקים..."
+
+msgctxt "#30735"
+msgid "Clear all..."
+msgstr "ניקוי הכול..."
+
+msgctxt "#30736"
+msgid "Notification on launch"
+msgstr "הודעה כשההרחבה עולה"
+
+msgctxt "#30401"
+msgid "Are you sure?"
+msgstr "האם לבצע זאת?"
+
+msgctxt "#30402"
+msgid "Process Complete"
+msgstr "הפעולה הושלמה"
+
+msgctxt "#30500"
+msgid "[I]Next Page[/I]"
+msgstr "[I]לדף הבא[/I]"
+
+msgctxt "#32056"
+msgid "Are you sure?"
+msgstr "האם אתה בטוח?"
+
+msgctxt "#32057"
+msgid "Process Complete"
+msgstr "הפעולה הושלמה"
+
+msgctxt "#32301"
+msgid "Enabled"
+msgstr "מאופשר"
+
+msgctxt "#32302"
+msgid "Disabled"
+msgstr "לא מאופשר"
+
+msgctxt "#32303"
+msgid "User"
+msgstr "משתמש"
+
+msgctxt "#32304"
+msgid "Email"
+msgstr "אי-מייל"
+
+msgctxt "#32305"
+msgid "ID"
+msgstr "אסמכתא"
+
+msgctxt "#32306"
+msgid "Authorization..."
+msgstr "הזדהות..."
+
+msgctxt "#32307"
+msgid "Password"
+msgstr "סיסמה"
+
+msgctxt "#32308"
+msgid "PIN"
+msgstr "קוד PIN"
+
+msgctxt "#32309"
+msgid "TMDb API"
+msgstr "מפתח TVDB ל-API"
+
+msgctxt "#32312"
+msgid "Providers Timeout"
+msgstr "זמן קצוב לספקים"
+
+msgctxt "#32335"
+msgid "Progress Dialog"
+msgstr "חלונית התקדמות"
+
+msgctxt "#32336"
+msgid "Foreground"
+msgstr "בחזית"
+
+msgctxt "#32337"
+msgid "Background"
+msgstr "ברקע"
+
+msgctxt "#32341"
+msgid "Hosters with captchas"
+msgstr "שרתים עם אימות captcha"
+
+msgctxt "#32342"
+msgid "Sort by Provider"
+msgstr "מיין לפי ספק"
+
+msgctxt "#32345"
+msgid "Providers"
+msgstr "שרתים"
+
+msgctxt "#32346"
+msgid "Accounts"
+msgstr "חשבונות"
+
+msgctxt "#32359"
+msgid "Scraper Settings"
+msgstr "הגדרות סקראפר"
+
+msgctxt "#32360"
+msgid "Providers Language"
+msgstr "שפת ספקים"
+
+msgctxt "#32363"
+msgid "Show HEVC Sources"
+msgstr "הצג מקורות HEVC"
+
+msgctxt "#32404"
+msgid "Time elapsed: %s seconds"
+msgstr "הזמן שחלף: %s שניות"
+
+msgctxt "#32405"
+msgid "%s seconds"
+msgstr "%s שניות"
+
+msgctxt "#32406"
+msgid "Remaining providers: %s"
+msgstr "ספקים שנותרו: %s"
+
+msgctxt "#32501"
+msgid "Start from beginning"
+msgstr "התחל מההתחלה"
+
+msgctxt "#32502"
+msgid "Resume from %s"
+msgstr "חדש ניגון מ- %s"
+
+msgctxt "#32503"
+msgid "Resume"
+msgstr "חדש ניגון"
+
+msgctxt "#32504"
+msgid "URLResolver"
+msgstr "URLResolver"
+
+msgctxt "#32505"
+msgid "Settings"
+msgstr "הגדרות"
+
+msgctxt "#32506"
+msgid "Adult Section"
+msgstr "מדור למבוגרים בלבד"
+
+msgctxt "#32507"
+msgid "Show Adult option on Main Menu"
+msgstr "הצג אפשרות למבוגרים בלבד בתפריט הראשי"
+
+msgctxt "#32508"
+msgid "Private Section"
+msgstr "מדור פרטי"
+
+msgctxt "#32509"
+msgid "Password"
+msgstr "סיסמה"
+
+msgctxt "#32581"
+msgid "Results Limit"
+msgstr "מגבלת תוצאות"
+
+msgctxt "#32582"
+msgid "Enable service notification"
+msgstr "אפשר התראת שירות"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "הצג פרטי מקור נוסף"
+
+msgctxt "#32588"
+msgid "Getting genre informtaion from trakt."
+msgstr "מקבל מידע על הסגנון מטראקט."
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "כחול"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "אדום"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "צהוב"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "ורוד עמוק"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "ציאן"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "ירוק דשא"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "זהב"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "מג\'נטה"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "צהוב ירוק"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "ללא צבע"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "מקבל מידע על סגנון מטראקט"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "מכין מקורות"
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "סה\"כ"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "ממתין ל
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "פרמיום"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "נורמלי"
