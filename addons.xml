@@ -5934,7 +5934,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.xxxodus.artwork" version="1.00.018" name="XXXODUS Artwork" provider-name="Echo Coder">
+<addon id="script.xxxodus.artwork" version="1.00.019" name="XXXODUS Artwork" provider-name="Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 	</requires>
@@ -5946,7 +5946,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.xxxodus.scrapers" name="XXXODUS Scrapers" version="1.00.025" provider-name="Echo Coder">
+<addon id="script.xxxodus.scrapers" name="XXXODUS Scrapers" version="1.00.026" provider-name="Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
 	</requires>
