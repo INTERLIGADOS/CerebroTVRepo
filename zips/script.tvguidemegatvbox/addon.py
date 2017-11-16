@@ -18,7 +18,7 @@ def menuoptions():
         
     call = dialog.select('[B][COLOR=yellow]Live TV Menu[/COLOR][/B]', [ 
     '[B]      >> [COLOR=gold]Open Cerebro[/COLOR] [COLOR=red]UK[/COLOR] [COLOR=gold]TV Guide[/COLOR] << [/B]' ,
-	'[B]      >> [COLOR=yellow]Open Cerebro[/COLOR] [COLOR=red]USA[/COLOR] [COLOR=gold]TV Guide[/COLOR] << [/B] (IN BETA)' , 	
+	'[B]      >> [COLOR=yellow]Open Cerebro[/COLOR] [COLOR=red]USA[/COLOR] [COLOR=gold]TV Guide[/COLOR] << [/B]' , 	
     '[B]      >> [COLOR=gold]My TV Guide [/COLOR]<<[/B] (make your own)',
     '[B]      >> [COLOR=yellow]Cerebro IPTV[/COLOR] << Live TV (Many Options)[/B]',
     '[B]      >> [COLOR=gold]Cerebro Media[/COLOR] <<[/B] (Access All Options)'
