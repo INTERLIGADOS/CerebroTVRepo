@@ -1396,6 +1396,51 @@ Initial release.
 	</extension>
 </addon>
 
+<addon id="plugin.video.live.streamspro"
+       name="LiveStreamsPro"
+       version="2.8.1"
+       provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreamspro- shamelessly forked from livestreams but added many thinks</summary>
+    <description>
+        In addition to what livestreams allowed you to do, you can now,
+        1. call regex in regex,
+        2. multiple regex in page, regex in session, also htmlunescape responses
+        3. create session from one regex and pass onto next in line
+        4. save sessions to a file and open again later
+        5. write python code in .py file, put in the profile directory and then call from your regex.
+        6. use epoctime, guid and unpack as functions already defined.
+        7. Use it to post values to the pages to get the proper responses
+        8. support many headers, like origin, X-Requested-With
+        9. you can now append cookies in response and then read in regex using includeheaders
+        10. You can now link to another web url via your xml using externallink
+        11. support for google captcha, now you can show and then post the text
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.livehub2" name="Cerbro Video Player" version="10.14" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1487,18 +1532,17 @@ Initial release.
   </extension>
 </addon>
 
-<addon id="plugin.video.openloadmovies" name="Openload Movies" version="2.2.5" provider-name="DandyMedia">
+<addon id="plugin.video.openloadmovies" name="Openload Movies" version="2.3.0" provider-name="Dandymedia">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
-    <import addon="script.module.muckys.common" version="1.3.5" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+		<provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-	<summary lang="en">Movies and TV</summary>
-	<description lang="en">[B][COLOR cornflowerblue]One click Googlelinks for Movies and TV shows[/COLOR][/B][CR][CR][B][COLOR red]N.B.[/COLOR][/B] This addon requires the use of modules maintained by Mucky Duck[CR][CR][B][I][COLOR red]A special thanks to Mucky Duck for allowing the use of these modules, and his continued help and guidance.[/I][/B][/COLOR]</description>
+	<summary lang="en"></summary>
+	<description lang="en"></description>
 	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
 	<platform>all</platform>
   </extension>
@@ -1863,7 +1907,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.57" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.58" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -1894,8 +1938,9 @@ Removed: Nudeflix</news>
         <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="script.program.menurefresh" />
 		<import addon="plugin.video.Showbox" />
+		<import addon="script.tvguide.cerebrotv.usa" />
         <!--<import addon="plugin.video.ProjectCypher" />-->
-        <!--<import addon="script.mtvbxxx" />-->
+        <import addon="script.mtvbxxx" />
         <!--<import addon="script.covloader" />-->
         <import addon="script.xbmc.unpausejumpback" />
         <import addon="script.covtvsearch" />
@@ -2435,6 +2480,21 @@ Skin and code for skin by Demonstratorz</description>
 		</extension>
 </addon>
 
+<addon id="repository.Rockcrusher" name="Rockcrusher Repository" version="1.6" provider-name="Rockcrusher">
+	<extension point="xbmc.addon.repository" name="Rockcrusher Repository">
+        <info compressed="false">http://Rockodi.com/addons.xml</info>
+        <checksum>http://Rockodi.com/addons.xml.md5</checksum>
+        <datadir zip="true">http://Rockodi.com/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install Rockcrusher Addons</summary>
+        <description>Rockcrusher Repository</description>
+        <disclaimer lang="en">Author does not host or distribute any of the content displayed by this addon. Author does not have any affiliation with the content provider.
+        </disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
     <addon id="repository.sanctuary" name="Sanctuary" version="1.0.1" provider-name="Sanctuary">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -2474,6 +2534,24 @@ Skin and code for skin by Demonstratorz</description>
 		<summary lang="en">Scheme Streams Repo</summary>
 		<description lang="en">Repo For Scheme Stream Addons And Builds</description>
 		<genre>livetv,sports,uk</genre>
+	</extension>
+</addon>
+
+<addon id="repository.simplycaz" name="Simply Caz Repo" version="1.0.2" provider-name="Simply Caz | CazWall.com">
+	<extension point="xbmc.addon.repository" name="Simply Caz Repo">
+		<info compressed="false">http://repo.cazwall.com/repolist/Plugins/addons.xml</info>
+		<checksum>http://repo.cazwall.com/repolist/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://repo.cazwall.com/repolist/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Simply Caz YouTube</summary>
+		<description>
+
+		 CazWall.com | Kodi, Tech and More! This Repo is not an Official Repo for any of the add-ons in it. It's simply an easy spot for my followers. "Peace in Caribbean, Peace in the Middle East, to God be the Glory!"
+
+		</description>
+
+		<platform>all</platform>
 	</extension>
 </addon>
 

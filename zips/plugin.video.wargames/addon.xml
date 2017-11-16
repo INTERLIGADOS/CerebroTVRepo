@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.57" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.58" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -30,8 +30,9 @@
         <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="script.program.menurefresh" />
 		<import addon="plugin.video.Showbox" />
+		<import addon="script.tvguide.cerebrotv.usa" />
         <!--<import addon="plugin.video.ProjectCypher" />-->
-        <!--<import addon="script.mtvbxxx" />-->
+        <import addon="script.mtvbxxx" />
         <!--<import addon="script.covloader" />-->
         <import addon="script.xbmc.unpausejumpback" />
         <import addon="script.covtvsearch" />
