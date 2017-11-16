@@ -3361,6 +3361,21 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
+<addon id="script.module.autocompletion" name="AutoCompletion library" version="1.1.2" provider-name="Philipp Temminghoff (phil65)">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Module providing some AutoCompletion functions</summary>
+        <description lang="en">Module providing some AutoCompletion functions</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+        <source>https://github.com/phil65/script.module.autocompletion</source>
+    </extension>
+</addon>
+
 <addon id="script.module.bc.common" name="Bone Crusher Common Libraries" version="1.0.0" provider-name="Bone Crusher">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -3411,6 +3426,20 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <license>BSD</license>
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
+</addon>
+
+<addon id="script.module.bottle" name="Bottle" version="0.12.8" provider-name="Team Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="kodi.addon.metadata">
+    <summary>Bottle module</summary>
+    <description>Fast and simple WSGI-framework for small web-applications</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>http://bottlepy.org</website>
   </extension>
 </addon>
 
