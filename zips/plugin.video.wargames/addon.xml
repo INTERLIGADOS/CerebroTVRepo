@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.61" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.62" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -20,11 +20,11 @@
         <import addon="script.cerebro.pairwith" />
         <import addon="script.exodus.artwork" version="1.0.4" />
 		<import addon="script.exodus.metadata" version="1.0.0" />
-        <import addon="plugin.video.itv" />
+        <!--<import addon="plugin.video.itv" />
         <import addon="plugin.video.bbciplayer" />
-        <!--<import addon="plugin.video.tvplayer" />-->
-        <!--<import addon="plugin.audio.tuneinradio" />-->
-        <!--<import addon="plugin.audio.mp3streams" />-->
+        <import addon="plugin.video.tvplayer" />
+        <import addon="plugin.audio.tuneinradio" />
+        <import addon="plugin.audio.mp3streams" />-->
         <import addon="script.module.futures" />
 		<import addon="plugin.video.meta" />
 		<import addon="script.cerebro.tvguide.open" />
@@ -35,7 +35,7 @@
         <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="script.program.menurefresh" />
 		<import addon="plugin.video.Showbox" />
-		<import addon="script.tvguide.cerebrotv.usa" />
+		<!--<import addon="script.tvguide.cerebrotv.usa" />-->
         <!--<import addon="plugin.video.ProjectCypher" />-->
         <import addon="script.mtvbxxx" />
         <!--<import addon="script.covloader" />-->
@@ -52,7 +52,7 @@
 		<import addon="script.module.arrow" />
         <!--<import addon="script.cerebro.buy" />-->
         <!--<import addon="script.cerebro.buyprem" />-->
-        <import addon="script.module.mutagen" />
+        <!--<import addon="script.module.mutagen" />-->
         <!--<import addon="plugin.video.SportsDevil" /> -->
         <import addon="script.mtvppv" />
         <!--<import addon="plugin.video.tvmix" />-->
