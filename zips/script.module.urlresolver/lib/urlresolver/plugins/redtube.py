@@ -1,6 +1,6 @@
 '''
     urlresolver XBMC Addon
-    Copyright (C) 2017
+    Copyright (C) 2016 Gujal
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -15,16 +15,20 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
-from urlresolver.plugins.__generic_resolver__ import GenericResolver
+from urlresolver.plugins.lib import helpers
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class BitPornoResolver(GenericResolver):
-    name = 'BitPorno'
-    domains = ['bitporno.com']
-    pattern = '(?://|\.)(bitporno\.com)/(?:\?v=|embed/)([a-zA-Z0-9]+)'
+class RedTubeResolver(UrlResolver):
+    name = 'redtube'
+    domains = ['redtube.com']
+    pattern = '(?://|\.)(redtube\.com)(?:\/|\/\?id=)(\d+)'
+    
+    def get_media_url(self, host, media_id):
+        return helpers.get_media_url(self.get_url(host, media_id), patterns=['''["']?quality\s*["']?\s*[:=]\s*["']?(?P<label>[^"',]+)["']?(?:[^}\]]+)["']?\s*videoUrl\s*["']?\s*[:=,]?\s*["'](?P<url>[^"']+)''']).replace(' ', '%20')
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id, template='http://{host}/embed/{media_id}')
-
+        return self._default_get_url(host, media_id, template='http://embed.{host}/?id={media_id}')
+        
     @classmethod
     def _is_enabled(cls):
         return True

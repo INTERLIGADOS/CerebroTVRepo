@@ -27,11 +27,13 @@ import urllib2
 class GoogleResolver(UrlResolver):
     name = "googlevideo"
     domains = ["googlevideo.com", "googleusercontent.com", "get.google.com",
-               "plus.google.com", "googledrive.com", "drive.google.com", "docs.google.com", "youtube.googleapis.com"]
-    pattern = 'https?://(.*?(?:\.googlevideo|(?:plus|drive|get|docs)\.google|google(?:usercontent|drive|apis))\.com)/(.*?(?:videoplayback\?|[\?&]authkey|host/)*.+)'
+               "plus.google.com", "googledrive.com", "drive.google.com", "docs.google.com", "youtube.googleapis.com", "bp.blogspot.com"]
+    pattern = 'https?://(.*?(?:\.googlevideo|\.bp\.blogspot|(?:plus|drive|get|docs)\.google|google(?:usercontent|drive|apis))\.com)/(.*?(?:videoplayback\?|[\?&]authkey|host/)*.+)'
 
     def __init__(self):
         self.net = common.Net()
+        self.headers = {'User-Agent': common.FF_USER_AGENT}
+        self.url_matches = ['redirector.', 'googleusercontent', '.bp.blogspot.com']
         self.itag_map = {'5': '240', '6': '270', '17': '144', '18': '360', '22': '720', '34': '360', '35': '480',
                          '36': '240', '37': '1080', '38': '3072', '43': '360', '44': '480', '45': '720', '46': '1080',
                          '82': '360 [3D]', '83': '480 [3D]', '84': '720 [3D]', '85': '1080p [3D]', '100': '360 [3D]',
@@ -56,55 +58,45 @@ class GoogleResolver(UrlResolver):
         else:
             video = None
 
-        headers = {'User-Agent': common.FF_USER_AGENT}
         if response is not None:
             res_headers = response.get_headers(as_dict=True)
             if 'Set-Cookie' in res_headers:
-                headers['Cookie'] = res_headers['Set-Cookie']
+                self.headers['Cookie'] = res_headers['Set-Cookie']
 
         if not video:
-            if ('redirector.' in web_url) or ('googleusercontent' in web_url):
-                class NoRedirection(urllib2.HTTPErrorProcessor):
-                    def http_response(self, request, response):
-                        return response
-                    https_response = http_response
-                opener = urllib2.build_opener(NoRedirection)
-                opener = urllib2.install_opener(opener)
-                request = urllib2.Request(web_url, headers=headers)
-                response = urllib2.urlopen(request)
-                response_headers = dict([(item[0].title(), item[1]) for item in response.info().items()])
-                cookie = response_headers.get('Set-Cookie', None)
-                if cookie:
-                    headers.update({'Cookie': cookie})
-                video = response.geturl()
+            if any(url_match in web_url for url_match in self.url_matches):
+                video = self._parse_redirect(web_url, hdrs=self.headers)
             elif 'googlevideo.' in web_url:
-                video = web_url + helpers.append_headers(headers)
+                video = web_url + helpers.append_headers(self.headers)
         else:
-            if ('redirector.' in video) or ('googleusercontent' in video):
-                class NoRedirection(urllib2.HTTPErrorProcessor):
-                    def http_response(self, request, response):
-                        return response
-                    https_response = http_response
-                opener = urllib2.build_opener(NoRedirection)
-                opener = urllib2.install_opener(opener)
-                request = urllib2.Request(video, headers=headers)
-                response = urllib2.urlopen(request)
-                response_headers = dict([(item[0].title(), item[1]) for item in response.info().items()])
-                cookie = response_headers.get('Set-Cookie', None)
-                if cookie:
-                    headers.update({'Cookie': cookie})
-                video = response.geturl()
+            if any(url_match in video for url_match in self.url_matches):
+                video = self._parse_redirect(video, hdrs=self.headers)
 
         if video:
             if 'plugin://' in video:  # google plus embedded videos may result in this
                 return video
             else:
-                return video + helpers.append_headers(headers)
+                return video + helpers.append_headers(self.headers)
 
         raise ResolverError('File not found')
 
     def get_url(self, host, media_id):
         return 'https://%s/%s' % (host, media_id)
+    
+    def _parse_redirect(self, url, hdrs={}):
+        class NoRedirection(urllib2.HTTPErrorProcessor):
+            def http_response(self, request, response):
+                return response
+            https_response = http_response
+        opener = urllib2.build_opener(NoRedirection)
+        opener = urllib2.install_opener(opener)
+        request = urllib2.Request(url, headers=hdrs)
+        response = urllib2.urlopen(request)
+        response_headers = dict([(item[0].title(), item[1]) for item in response.info().items()])
+        cookie = response_headers.get('Set-Cookie', None)
+        if cookie:
+            self.headers.update({'Cookie': cookie})
+        return response.geturl()
 
     def _parse_google(self, link):
         sources = []

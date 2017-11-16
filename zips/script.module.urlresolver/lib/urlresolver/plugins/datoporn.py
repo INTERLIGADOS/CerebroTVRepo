@@ -1,9 +1,5 @@
 """
-    OVERALL CREDIT TO:
-        t0mm0, Eldorado, VOINAGE, BSTRDMKR, tknorris, smokdpi, TheHighway
-
-    urlresolver XBMC Addon
-    Copyright (C) 2011 t0mm0
+    urlresolver Kodi Addon
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
