@@ -3469,6 +3469,20 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
+<addon id="script.module.elementtree"
+       name="Elementtree XML parser"
+       version="1.2.8"
+       provider-name="http://effbot.org/zone/element-index.htm">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.module.f4mproxy"
 	     name="f4m proxy"
 	     version="1.0.16"
