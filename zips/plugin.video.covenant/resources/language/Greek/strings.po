@@ -501,7 +501,7 @@ msgstr "Όταν αρχίζει η αναπαραγωγή..."
 
 msgctxt "#32344"
 msgid "Resume Playback"
-msgstr "Επανεκκίνηση αναπαραγωγής"
+msgstr "Συνέχεια αναπαραγωγής"
 
 msgctxt "#32345"
 msgid "Providers"
@@ -605,11 +605,11 @@ msgstr "Εκκίνηση από την αρχή"
 
 msgctxt "#32502"
 msgid "Resume from %s"
-msgstr "Επανεκκίνηση από %s"
+msgstr "Συνέχεια από %s"
 
 msgctxt "#32503"
 msgid "Resume"
-msgstr "Επανεκκίνηση"
+msgstr "Συνέχεια"
 
 msgctxt "#32511"
 msgid "An account already exists."
@@ -796,3 +796,80 @@ msgstr "[B]TRAKT[/B] : Εισαγωγή λίστας παρακολούθηση�
 msgctxt "#32565"
 msgid "Include episodes with unknown air dates"
 msgstr "Συμπερίλαβε επεισόδια με άγνωστη ημερομηνία προβολής"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Προβολή Πρόσθετων Στοιχείων Πηγής"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Επιλογή Xρώματος Προβολής Premium"
+
+msgctxt "#32580"
+msgid "Films/TV Movies"
+msgstr "Φιλμς/ΤV Ταινίες"
+
+msgctxt "#32581"
+msgid "Results Limit"
+msgstr "Όριο Αποτελεσμάτων"
+
+msgctxt "#32582"
+msgid "Personal API keys provide quicker API responses."
+msgstr "Τα Προσωπικά Κλειδιά API παρέχουν πιο γρήγορα API αποτελέσματα"
+
+msgctxt "#32583"
+msgid "Become a VIP member for many benefits at: https://fanart.tv/vip"
+msgstr "Γίνε VIP μέλος για πολλά πλεονεκτήματα στο: https://fanart.tv/vip"
+
+msgctxt "#32584"
+msgid "Sort order for Trakt Watched Progress"
+msgstr "Σειρά Ταξινόμησης για Trakt Watched Progress"
+
+msgctxt "#32585"
+msgid "Recently aired"
+msgstr "Πρόσφατη Προβολή "
+
+msgctxt "#32586"
+msgid "Recently watched"
+msgstr "Πρόσφατη Παρακολούθηση"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Μπλε"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Κόκκινο"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Κίτρινο"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Σκούρο Ροζ"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Κυανό"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Πράσινο"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Χρυσό"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Πορφυρό"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Κιτρινοπράσινο"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Χωρίς Χρώμα" 
+

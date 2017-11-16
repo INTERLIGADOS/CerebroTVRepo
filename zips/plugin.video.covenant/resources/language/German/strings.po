@@ -855,3 +855,59 @@ msgstr "kürzlich gesendet"
 msgctxt "#32586"
 msgid "Recently watched"
 msgstr "kürzlich gesehen"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Zusatzinfo für Quellen anzeigen"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Textfarbe für Premium-Links"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Blau"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Rot"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Gelb"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Altrosa"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Cyan"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Grasgrün"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Gold"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Magenta"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Gelbgrün"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Ohne Farbe"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Hole Genre-Info von Trakt"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Quellen werden vorbereitet"

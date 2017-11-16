@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Covenant\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-09-15 15:04+0200\n"
+"PO-Revision-Date: 2017-10-31 22:27+0100\n"
 "Last-Translator: gogo\n"
 "Language-Team: Croatian (http://www.transifex.com/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hr\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 msgctxt "#32001"
 msgid "Movies"
@@ -696,11 +696,11 @@ msgstr "DEBRID-USLUGA"
 
 msgctxt "#32539"
 msgid "Configure Debrid Services in URLResolver Settings."
-msgstr "Podesi Debrid usluge u URLResolver postavkama."
+msgstr "Podesi Debrid usluge u postavkama URL razrješitelja."
 
 msgctxt "#32540"
 msgid "URLResolver Settings"
-msgstr "URLResolver postavke"
+msgstr "Postavke URL razrješitelja"
 
 msgctxt "#32541"
 msgid "Library"
@@ -832,7 +832,7 @@ msgstr "Postanite VIP član kako bi ostvarili mnoge pogodnosti na: https://fanar
 
 msgctxt "#32584"
 msgid "Sort order for Trakt Watched Progress"
-msgstr "Razvrstaj poredak za Trakt napredak gledanja."
+msgstr "Razvrstaj poredak za Trakt napredak gledanja"
 
 msgctxt "#32585"
 msgid "Recently aired"
@@ -841,3 +841,87 @@ msgstr "Nedavno emitirano"
 msgctxt "#32586"
 msgid "Recently watched"
 msgstr "Nedavno gledano"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Prikaži dodatne informacije izvora"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Boja identifikatora Premium izvora"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Plava"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Crvena"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Žuta"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Ružičasta"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Modra"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Zelena"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Zlatna"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Ljubičasta"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Žuto zelena"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Bez boje"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Dobivanje informacija žanra sa trakta"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Pripremanje izvora"
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "Ukupno"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "Čekam"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "Nova pretraga..."
+
+msgctxt "#32604"
+msgid "[B]COVENANT[/B] : Clear search history..."
+msgstr "[B]COVENANT[/B] : Obriši povijest pretrage..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Klikni za brisanje povijesti pretrage"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Prem"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normalno"

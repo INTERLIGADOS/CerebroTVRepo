@@ -21,6 +21,7 @@
 # lambda81, 2016
 # lambda81, 2016
 # Tomek Kondrat, 2017
+# Xulek, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Covenant\n"
@@ -691,3 +692,238 @@ msgctxt "#32537"
 msgid "Nothing found to play"
 msgstr "Nie znaleziono niczego do odtworzenia"
 
+msgctxt "#32538"
+msgid "DEBRID-SERVICE"
+msgstr "SERWIS-DEBRID"
+
+msgctxt "#32539"
+msgid "Configure Debrid Services in URLResolver Settings."
+msgstr "Skonfiguruj usługi Debrid w Ustawieniach URLResolver."
+
+msgctxt "#32540"
+msgid "URLResolver Settings"
+msgstr "Ustawienia URLResolver"
+
+msgctxt "#32541"
+msgid "Library"
+msgstr "Biblioteka"
+
+msgctxt "#32542"
+msgid "Covenant folders will be imported to library if they are added to media sources."
+msgstr "Foldery Covenant zostaną zaimportowane do biblioteki, jeśli zostaną dodane do źródeł multimedialnych."
+
+msgctxt "#32543"
+msgid "Movies"
+msgstr "Filmy"
+
+msgctxt "#32544"
+msgid "TV"
+msgstr "TV"
+
+msgctxt "#32545"
+msgid "Auto update TV Shows"
+msgstr "Automatyczna aktualizacja programów TV"
+
+msgctxt "#32546"
+msgid "Show notifications during update"
+msgstr "Pokazuj powiadomienia podczas aktualizacji"
+
+msgctxt "#32547"
+msgid "Update library after adding content"
+msgstr "Aktualizuj bibliotekę po dodaniu zawartości"
+
+msgctxt "#32548"
+msgid "Avoid creating duplicate content"
+msgstr "Unikaj tworzenia zdublikowanej zawartości"
+
+msgctxt "#32549"
+msgid "Check movie before adding it"
+msgstr "Sprawdź film przed jego dodaniem"
+
+msgctxt "#32550"
+msgid "Check first episode of season before adding it"
+msgstr "Sprawdź pierwszy odcinek sezonu przed jego dodaniem"
+
+msgctxt "#32551"
+msgid "Add to Library"
+msgstr "Dodaj do Biblioteki"
+
+msgctxt "#32552"
+msgid "Adding to library..."
+msgstr "Dodawanie do biblioteki..."
+
+msgctxt "#32553"
+msgid "Updating TV shows..."
+msgstr "Aktualizowanie programów TV..."
+
+msgctxt "#32554"
+msgid "Process Complete"
+msgstr "Proces Ukończony"
+
+msgctxt "#32555"
+msgid "Are you sure?"
+msgstr "Jesteś pewien?"
+
+msgctxt "#32556"
+msgid "[B]COVENANT[/B] : Library"
+msgstr "[B]COVENANT[/B] : Biblioteka"
+
+msgctxt "#32557"
+msgid "[B]LIBRARY[/B] : Settings"
+msgstr "[B]BIBLIOTEKA[/B] : Ustawienia"
+
+msgctxt "#32558"
+msgid "[B]COVENANT[/B] : Update library..."
+msgstr "[B]COVENANT[/B] : Aktualizowanie biblioteki..."
+
+msgctxt "#32559"
+msgid "[B]COVENANT[/B] : Movie folder..."
+msgstr "[B]COVENANT[/B] : Folder filmów..."
+
+msgctxt "#32560"
+msgid "[B]COVENANT[/B] : TV folder..."
+msgstr "[B]COVENANT[/B] : Folder telewizji..."
+
+msgctxt "#32561"
+msgid "[B]TRAKT[/B] : Import Collection..."
+msgstr "[B]TRAKT[/B] : Importuj Kolekcję..."
+
+msgctxt "#32562"
+msgid "[B]TRAKT[/B] : Import Watchlist..."
+msgstr "[B]TRAKT[/B] : Importuj Listę Obserwowanych..."
+
+msgctxt "#32563"
+msgid "[B]TRAKT[/B] : Import TV Collection..."
+msgstr "[B]TRAKT[/B] : Importuj Kolekcję TV..."
+
+msgctxt "#32564"
+msgid "[B]TRAKT[/B] : Import TV Watchlist..."
+msgstr "[B]TRAKT[/B] : Importuj Listę Obserwowanych Trakt..."
+
+msgctxt "#32565"
+msgid "Include episodes with unknown air dates"
+msgstr "Zawiera odcinki z nieznaną datą emisji"
+
+msgctxt "#32570"
+msgid "Show unaired seasons/episodes"
+msgstr "Pokaż nieemitowane sezony/odcinki"
+
+msgctxt "#32571"
+msgid "Hide movies in cinema"
+msgstr "Ukryj filmy w kinie"
+
+msgctxt "#32572"
+msgid "Protected Link. Please enter account credentials in the settings."
+msgstr "Link chroniony. Proszę wprowadzić dane konta w ustawieniach."
+
+msgctxt "#32580"
+msgid "Films/TV Movies"
+msgstr "Filmy/Filmy TV"
+
+msgctxt "#32581"
+msgid "Results Limit"
+msgstr "Limit Rezultatów"
+
+msgctxt "#32582"
+msgid "Personal API keys provide quicker API responses."
+msgstr "Osobiste klucze API zapewniają szybsze odpowiedzi API."
+
+msgctxt "#32583"
+msgid "Become a VIP member for many benefits at: https://fanart.tv/vip"
+msgstr "Zostań członkiem VIP dla większych korzyści na: https://fanart.tv/vip"
+
+msgctxt "#32584"
+msgid "Sort order for Trakt Watched Progress"
+msgstr "Sortuj wynik po Stanie Obejrzenia Trakt"
+
+msgctxt "#32585"
+msgid "Recently aired"
+msgstr "Ostatnio wyemitowane"
+
+msgctxt "#32586"
+msgid "Recently watched"
+msgstr "Ostatnio oglądane"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Pokaż Ekstra Informacje Źródła"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Kolor Identyfikujący Źródło Premium"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Niebieski"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Czerwony"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Żółty"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Mocny Róż"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Cyan"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Zielony"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Złoty"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Fuksja"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Żółto-Zielony"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Brak Koloru"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Uzyskiwanie informacji o gatunkach z Trakt"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Przygotowywanie źródeł"
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "Wszystkie"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "Oczekiwanie na"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "Nowe szukanie..."
+
+msgctxt "#32604"
+msgid "[B]COVENANT[/B] : Clear search history..."
+msgstr "[B]COVENANT[/B] : Wyczyść historię wyszukiwania..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Naciśnij aby wyczyścić historię"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Prem"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normalny"

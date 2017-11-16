@@ -846,3 +846,87 @@ msgstr "Trasmessi di recente"
 msgctxt "#32586"
 msgid "Recently watched"
 msgstr "Visti di recente"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Mostra informazioni da fonti aggiuntive"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Colore identificativo fonti Premium"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Blu"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Rosso"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Giallo"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Rosa scuro"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Ciano"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Verde prato"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Oro"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Magenta"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Gialloverde"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Nessun colore"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Acquisisco informazioni sul genere da Trakt"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Preparo fonti"
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "Totale"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "In attesa di"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "Nuova ricerca..."
+
+msgctxt "#32604"
+msgid "[B]COVENANT[/B] : Clear search history..."
+msgstr "[B]COVENANT[/B] : Elimina cronologia ricerche..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Clicca per eliminare la cronologia ricerche"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Premium"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normale"

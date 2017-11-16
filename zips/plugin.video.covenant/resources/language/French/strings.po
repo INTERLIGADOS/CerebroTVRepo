@@ -24,11 +24,12 @@
 # lambda81, 2016
 # Pierre Guerin, 2017
 # power grid, 2017
+# bubuleur, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Covenant\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-05-30 09:11+0000\n"
+"PO-Revision-Date: 2017-10-30 17:40+0000\n"
 "Last-Translator: Viper2k4\n"
 "Language-Team: French (http://www.transifex.com/)\n"
 "MIME-Version: 1.0\n"
@@ -300,11 +301,11 @@ msgstr "Mettre en file d'attente"
 
 msgctxt "#32066"
 msgid "Watched in Covenant"
-msgstr "Visionné avec CovenantFR"
+msgstr "Visionné avec Covenant"
 
 msgctxt "#32067"
 msgid "Unwatched in Covenant"
-msgstr "Non Visionné avec CovenantFR"
+msgstr "Non Visionné avec Covenant"
 
 msgctxt "#32068"
 msgid "Watched in Trakt"
@@ -440,7 +441,7 @@ msgstr "Épisodes"
 
 msgctxt "#32327"
 msgid "Trakt Progress"
-msgstr "ProgressionTrakT"
+msgstr "Progression TrakT"
 
 msgctxt "#32328"
 msgid "Trakt Episodes"
@@ -573,6 +574,7 @@ msgstr "Dans ce Cas Utilisez vos Propre Sous-Titres"
 msgctxt "#32360"
 msgid "Providers Language"
 msgstr "Langue de la sources"
+
 msgctxt "#32363"
 msgid "HEVC"
 msgstr "HEVC"
@@ -591,7 +593,7 @@ msgstr "Aucun Flux Disponible"
 
 msgctxt "#32402"
 msgid "Playback outside Covenant is not allowed"
-msgstr "La lecture Hors de CovenantFR N'est Pas Permise"
+msgstr "La lecture hors Covenant n'est pas permise"
 
 msgctxt "#32403"
 msgid "Download"
@@ -691,7 +693,7 @@ msgstr "1) Visite : [COLOR skyblue]%s[/COLOR]"
 
 msgctxt "#32534"
 msgid "2) When prompted enter : [COLOR skyblue]%s[/COLOR]"
-msgstr "\"2) Lorsque Demandé Veuillez Entrer : [COLOR skyblue]%s[/COLOR]\""
+msgstr ""2) Lorsque Demandé Veuillez Entrer : [COLOR skyblue]%s[/COLOR]""
 
 msgctxt "#32535"
 msgid "Play Random"
@@ -829,3 +831,114 @@ msgctxt "#32572"
 msgid "Protected Link. Please enter account credentials in the settings."
 msgstr "Lien protégé. Entrez les données du compte dans les paramètres svp."
 
+msgctxt "#32580"
+msgid "Films/TV Movies"
+msgstr "Films/Series Tv"
+
+msgctxt "#32581"
+msgid "Results Limit"
+msgstr "Résultats Limité"
+
+msgctxt "#32582"
+msgid "Personal API keys provide quicker API responses."
+msgstr "Les clés API personnelles fournissent des réponses plus rapides"
+
+msgctxt "#32583"
+msgid "Become a VIP member for many benefits at: https://fanart.tv/vip"
+msgstr "Devenez membre VIP pour avoir de nombreux avantages : https://fanart.TV/VIP"
+
+msgctxt "#32584"
+msgid "Sort order for Trakt Watched Progress"
+msgstr "Ordre de tri surveillée pour Trakt"
+
+msgctxt "#32585"
+msgid "Recently aired"
+msgstr "Récemment diffusé"
+
+msgctxt "#32586"
+msgid "Recently watched"
+msgstr "Récemment regardé"
+
+msgctxt "#32587"
+msgid "Show Extra Source Info"
+msgstr "Afficher les informations supplémentaires sur les sources"
+
+msgctxt "#32588"
+msgid "Premium Source Identifier Color"
+msgstr "Couleur de l'identificateur de source Premium"
+
+msgctxt "#32589"
+msgid "Blue"
+msgstr "Bleu"
+
+msgctxt "#32590"
+msgid "Red"
+msgstr "Rouge"
+
+msgctxt "#32591"
+msgid "Yellow"
+msgstr "Jaune"
+
+msgctxt "#32592"
+msgid "Deep Pink"
+msgstr "Rose foncé"
+
+msgctxt "#32593"
+msgid "Cyan"
+msgstr "Cyan"
+
+msgctxt "#32594"
+msgid "Lawn Green"
+msgstr "Vert Pelouse"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Or"
+
+msgctxt "#32596"
+msgid "Magenta"
+msgstr "Magenta"
+
+msgctxt "#32597"
+msgid "Yellow Green"
+msgstr "Vert jaunâtre"
+
+msgctxt "#32598"
+msgid "No Color"
+msgstr "Sans couleur"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Obtenir des informations sur le genre auprès de Trakt"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Préparation des sources"
+
+msgctxt "#32601"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "#32602"
+msgid "Waiting for"
+msgstr "En attente de"
+
+msgctxt "#32603"
+msgid "New search..."
+msgstr "Nouvelle recherche..."
+
+msgctxt "#32604"
+msgid "[B]COVENANT[/B] : Clear search history..."
+msgstr "[B]COVENANT[/B] : Effacer l'historique de recherche..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Cliquez pour effacer l'historique de recherche"
+
+msgctxt "#32606"
+msgid "Prem"
+msgstr "Premium"
+
+msgctxt "#32607"
+msgid "Normal"
+msgstr "Normal"
