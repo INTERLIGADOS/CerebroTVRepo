@@ -347,12 +347,12 @@ elif mode==5006:
 elif mode==5007:
     #from resources.root import android
     #android.cat()
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.showboxarize/?action=movieSearch",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.showboxarize/?action=movieNavigator",return)')
     
 elif mode==5008:
     #from resources.root import android
     #android.cat()
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.showboxarize/?action=tvSearch",return)')
+    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.showboxarize/?action=tvNavigator",return)')
     
 elif mode==9999:
     import xbmcgui,xbmcplugin
