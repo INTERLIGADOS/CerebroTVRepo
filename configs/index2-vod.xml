@@ -31,6 +31,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]The Big Bang Theory[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Big%20Bang%20Theory%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fbig-bang-theory&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Marvels Inhumans[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Inhumans%20&url=http%3a%2f%2fvidics.unblocked.pro%2fSerie%2fInhumans&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
