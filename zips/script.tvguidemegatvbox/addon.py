@@ -45,7 +45,7 @@ def function1():
     xbmc.executebuiltin('RunAddon(script.tvguide.cerebrotv.uk)')
 	
 def function2():
-    xbmc.executebuiltin('RunAddon(script.tvguide.cerebrotv.usa)')
+    xbmc.executebuiltin('RunAddon(script.cerebro.tvguide.open4)')
     
 def function3():
     xbmc.executebuiltin('RunAddon(script.tvguide.cerebrotv.uk.2017)')

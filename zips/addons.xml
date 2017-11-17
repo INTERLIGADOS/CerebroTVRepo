@@ -1976,7 +1976,7 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
-<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.63" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR]" version="100.1.64" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -2007,6 +2007,7 @@ Removed: Nudeflix</news>
 		<import addon="script.cerebro.tvguide.open" />
         <import addon="script.cerebro.tvguide.open2" />
         <import addon="script.cerebro.tvguide.open3" />
+		<import addon="script.cerebro.tvguide.open4" />
         <import addon="script.cerebro.tvguide.open.free" />
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.tvguide.cerebrotv.uk.2017" />
@@ -3057,6 +3058,24 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <addon id="script.cerebro.tvguide.open3"
   name="CerebroTV Launch TV Guide Kids"
   version="1.4"
+  provider-name="Biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CerebroTV Menu System</summary>
+    <description lang="en">CerebroTV Menu System</description>
+	<disclaimer>CerebroTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.cerebro.tvguide.open4"
+  name="CerebroTV Launch TV Guide USA"
+  version="1.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -5808,7 +5827,7 @@ level.</description>
 
 <addon id="script.tvguidemegatvbox"
   name="CerebroTV TV Live TV"
-  version="3.3"
+  version="3.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
