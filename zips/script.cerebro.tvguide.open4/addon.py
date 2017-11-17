@@ -2,6 +2,5 @@ import time
 import xbmc
 import os
 import xbmcgui
-import urllib2
-     
-xbmc.executebuiltin('RunAddon(script.tvguide.cerebrotv.usa)')
+import urllib2    
+xbmc.executebuiltin('plugin://script.tvguide.cerebrotv.usa')
