@@ -1465,7 +1465,7 @@ Initial release.
   </extension>
 </addon>
 
-<addon id="plugin.video.livehub2" name="Cerbro Video Player" version="10.14" provider-name="sClarke and Biglad">
+<addon id="plugin.video.livehub2" name="Cerbro Video Player" version="10.15" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
