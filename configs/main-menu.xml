@@ -21,6 +21,20 @@
 </plugin>
 
 <plugin>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]UK TV GUIDE[/COLOR][/B] (Premium Only)</title>
+<link>plugin://script.tvguide.cerebrotv.uk</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]USA TV GUIDE[/COLOR][/B] (Premium Only)</title>
+<link>plugin://script.tvguide.cerebrotv.usa</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open FREE TV Guide[/COLOR][/B] (Free Version)</title>
 <link>plugin://script.cerebro.tvguide.open.free</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
