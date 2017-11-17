@@ -1465,7 +1465,7 @@ Initial release.
   </extension>
 </addon>
 
-<addon id="plugin.video.livehub2" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro IPTV+[/B][/COLOR]" version="10.23" provider-name="sClarke and Biglad">
+<addon id="plugin.video.livehub2" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro IPTV+[/B][/COLOR]" version="10.24" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />

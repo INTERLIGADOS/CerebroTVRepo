@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 import xbmc
+import xbmcaddon
 
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
 
 class MyXBMCPlayer(xbmc.Player):
-    xbmc.executebuiltin("Notification([COLOR=gold]Cerebro TV[/COLOR],This Channel May Take A Few Clicks Checking 5 Servers,7000)")
+    xbmc.executebuiltin("Notification([COLOR=gold]Cerebro TV[/COLOR],This Channel May Take A Few Clicks Checking 5 Servers,7000,"+__icon__+")")
     def __init__( self, *args, **kwargs ):
         self.is_active = True
         self.urlplayed = False
