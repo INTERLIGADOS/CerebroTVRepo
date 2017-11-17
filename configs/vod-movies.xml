@@ -10,8 +10,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Covenant Movies[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5000&name=%5bCOLOR%20white%5d%5bB%5dCovenant%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
+<title>[COLOR pink]ShowBox Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5007&name=%5bCOLOR%20white%5d%5bB%5dShowBox%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -61,6 +61,13 @@
 <plugin>
 <title>[COLOR pink]4K Section[/COLOR] (Bucky)</title>
 <link>plugin://plugin.video.Bucky/?fanart=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fg2kzpozf21nlwn3%2faddonfanart.jpg%3fdl%3d0&mode=1&name=%5bB%5d%5bCOLOR%20gold%5dBUCKYS%204K%20MOVIES%5b%2fCOLOR%5d%5b%2fB%5d&url=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fqgqyru8rcyn0i20%2f4k.txt%3fdl%3d0</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Covenant Movies[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5000&name=%5bCOLOR%20white%5d%5bB%5dCovenant%20Movies%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>

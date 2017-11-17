@@ -38,8 +38,15 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Covenant TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5001&name=%5bCOLOR%20white%5d%5bB%5dCovenant%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
+<title>[COLOR pink]Search TV Shows / Episdoes[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://script.covtvsearch</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]ShowBox TV Shows[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5008&name=%5bCOLOR%20white%5d%5bB%5dShowBox%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
