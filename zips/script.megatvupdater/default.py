@@ -256,11 +256,6 @@ if ping("www.google.co.uk"):
     mac = ':'.join(re.findall('..', '%012x' % uuid.getnode()))
     if os.path.exists(file4):
         pass
-    else:
-        fo = open(iddata, "w")
-        fo.write('install01');
-        fo.close()
-        xbmc.sleep(1000)
     with open(file4, 'r') as myfile:
         boxid=myfile.read()
     response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(boxid)+'&ok=OK&mac='+str(mac))

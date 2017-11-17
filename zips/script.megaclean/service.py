@@ -786,11 +786,12 @@ def menuoptions():
     dialog = xbmcgui.Dialog()
     funcs = (
         function1,
-        function2,
-        function3
+        function2
         )
         
-    call = dialog.select('[B][COLOR=red]CerebroTV[/COLOR][COLOR=red] Wizard[/COLOR][/B]', ['[B][COLOR=red]      Install Build for Kodi 17[/COLOR][/B]', '[B][COLOR=green]      Install Buld for SPMC/Kodi 16.1[/COLOR][/B]', '[B][COLOR=blue]      Exit[/COLOR][/B]'])
+    call = dialog.select('[B][COLOR=red]CerebroTV[/COLOR][COLOR=red] Wizard[/COLOR][/B]', [
+	'[B][COLOR=red]      Install Build for Kodi 17[/COLOR][/B]',
+	'[B][COLOR=blue]      Exit[/COLOR][/B]'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -799,7 +800,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-3]
+        func = funcs[call-2]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -813,19 +814,13 @@ def menuoptions():
     return 
 
 def function1():
-    dialog = xbmcgui.Dialog()
-    dialog.ok("[COLOR=red][B] ## KODI 17 NOT SUPPORTED ##[/COLOR][/B]", "USE SPMC ITS BETTER!!!!!!!!!", "Kodi Will now exit","Press OK to Continue")
-    killxbmc()
-    exit()
-    
-def function2():
     isfv = '0'
     fo = open(file200, "w")
     fo.write(isfv);
     fo.close()
     GetCode()
     
-def function3():
+def function2():
     killxbmc()
     exit()
     
@@ -855,10 +850,16 @@ temp     = xbmc.translatePath('special://temp/')
 try: os.remove(thumbs)
 except: pass
 
+try: os.rmdir(addons)
+except: pass
+
 try: os.remove(addons)
 except: pass
 
 try: os.remove(userdata)
+except: pass
+
+try: os.rmdir(userdata)
 except: pass
 
 try: sfile.rmtree(thumbs)

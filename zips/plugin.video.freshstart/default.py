@@ -25,7 +25,7 @@ def main_list(params): # Main menu
                 for name in files:
                     try: os.remove(os.path.join(root,name))
                     except:
-                        if name not in ["Addons15.db","MyVideos75.db","Textures13.db","xbmc.log"]: failed=True
+                        if name not in ["Addons27.db","Addons15.db","MyVideos75.db","Textures13.db","xbmc.log"]: failed=True
                         plugintools.log("Error removing "+root+" "+name)
                 for name in dirs:
                     try: os.rmdir(os.path.join(root,name))
@@ -37,4 +37,5 @@ def main_list(params): # Main menu
         except: plugintools.message(AddonTitle,"Problem found","Your settings has not been changed"); import traceback; plugintools.log(traceback.format_exc()); plugintools.log("freshstart.main_list NOT removed")
         plugintools.add_item(action="",title="Done",folder=False)
     else: plugintools.message(AddonTitle,"Your settings","has not been changed"); plugintools.add_item(action="",title="Done",folder=False)
+	      
 run()
