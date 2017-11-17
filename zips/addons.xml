@@ -3131,10 +3131,11 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.cerebro.tvguide.open4"
   name="CerebroTV Launch TV Guide USA"
-  version="1.8"
+  version="2.0"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.tvguide.cerebrotv.usa" />
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>executable</provides>
