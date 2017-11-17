@@ -21,8 +21,14 @@ import urllib
 import urllib2
 import time
 import re
+import xbmcaddon
 from resources.lib.kodion.impl import Context
 from resources.lib.kodion.constants import setting
+
+
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
    
 HOME     = xbmc.translatePath('special://userdata/')
 HOME2    = xbmc.translatePath('special://home/')
@@ -562,7 +568,7 @@ def DownloaderClass(url,dest):
     #xbmc.executebuiltin('ShowPicture('+intro+')')
     #dialog.ok("[COLOR=yellow][B]Cerebro TV[/COLOR][/B]", "System Start up Complete", "Cerebro TV Build Version [COLOR red]" + str(data) + "[/COLOR] | You Auth ID = [COLOR green]"+str(data300)+"[/COLOR]","[COLOR=white]Running : [/COLOR][COLOR=green]"+str(appversion)+" [/COLOR]version[COLOR=green] "+str(version)+"[/COLOR] - [COLOR=lightblue][B]Press Back To Continue[/B][/COLOR].....",)
     xbmc.playSFX('special://home/media/computer_systems.wav')
-    xbmc.executebuiltin("Notification(START UP COMPLETE, [B][COLOR=gold]BUILD VERSION: " + str(data) + "[/COLOR] -- [COLOR green]Auth ID: "+str(data300)+"[/COLOR][/B] -- [B][COLOR=white]Running : [/COLOR][COLOR=green]"+str(appversion)+" [/COLOR]version[COLOR=green] "+str(version)+"[/COLOR][/B],35000,)")
+    xbmc.executebuiltin("Notification(START UP COMPLETE, [B][COLOR=gold]BUILD VERSION: " + str(data) + "[/COLOR] -- [COLOR green]Auth ID: "+str(data300)+"[/COLOR][/B] -- [B][COLOR=white]Running : [/COLOR][COLOR=green]"+str(appversion)+" [/COLOR]version[COLOR=green] "+str(version)+"[/COLOR][/B],35000,"+__icon__+")")
     
  
 
