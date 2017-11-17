@@ -51,7 +51,7 @@ with open(iddata, 'r') as myfile:
     data300=str(myfile.read())
 response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(data300)+'&ok=OK&ip='+ipaddy).read()
 if not response == "OK":
-    xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,'str(addonicon)')")
+    xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,"+__icon__+")")
     exit()
 xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide,2000,"+__icon__+")")
 
@@ -102,7 +102,7 @@ def download(url, dest, dp = None):
                         
         dp.close()
         try:
-            xbmc.executebuiltin("Notification(CerebroTV,Some Channels May Take a Few Tries, ..,3000,'special://home/addons/plugin.video.wargames/icon.png')")
+            xbmc.executebuiltin("Notification(CerebroTV,Some Channels May Take a Few Tries, ..,3000,"+__icon__+")")
             w = gui.TVGuide()
             w.doModal()
             del w
