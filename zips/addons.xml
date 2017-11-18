@@ -5591,7 +5591,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.33" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.kids" name="Cerebro TV Guide KIDS" version="2.0.34" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -5743,7 +5743,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.46" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.uk" name="Cerebro TV Guide UK FULL" version="2.0.47" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -5820,7 +5820,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="100.2" provider-name="Biglad-FREE VERSION">
+<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="100.3" provider-name="Biglad-FREE VERSION">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -5840,7 +5840,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.usa" name="Cerebro TV Guide USA FULL" version="2.0.47" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.usa" name="Cerebro TV Guide USA FULL" version="2.0.48" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>

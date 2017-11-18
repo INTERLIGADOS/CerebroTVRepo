@@ -39,6 +39,11 @@ import webbrowser
 dp = xbmcgui.DialogProgress()
 dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Please Wait","......")  
 
+import xbmcaddon
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')  
+
 def platform():
     if xbmc.getCondVisibility('system.platform.android'):
         return 'android'
@@ -53,7 +58,7 @@ def platform():
     elif xbmc.getCondVisibility('system.platform.ios'):
         return 'ios'
 
-xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,5000,)")
+xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide,2000,"+__icon__+")") 
 DATA     = xbmc.translatePath('special://userdata/addon_data/script.tvguide.cerebrotv.uk.2017/')
 ADDON    = xbmc.translatePath('special://home/addons/script.tvguide.cerebrotv.uk.2017/')
 
@@ -70,13 +75,13 @@ if not os.path.exists(destfile):
         fo.write(fdata);
         fo.close()
 #dp = xbmcgui.DialogProgress()
-#dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")        
+      
 def d():
-	import requests,base64
-	try:
-		requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=4).text
-	except:
-		pass
+    import requests,base64
+    try:
+        requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=4).text
+    except:
+        pass
 d() 
 #dp = xbmcgui.DialogProgress()
 #dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Showing Advert","Please Wait")
@@ -106,6 +111,7 @@ dp.close()
         
 
 try:   
+    #xbmc.executebuiltin("Notification(CerebroTV,Some Channels May Take a Few Tries,3000,"+__icon__+")")
     w = gui.TVGuide()
     w.doModal()
     del w

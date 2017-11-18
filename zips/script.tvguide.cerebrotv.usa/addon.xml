@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.tvguide.cerebrotv.usa" name="Cerebro TV Guide USA FULL" version="2.0.47" provider-name="Biglad">
+<addon id="script.tvguide.cerebrotv.usa" name="Cerebro TV Guide USA FULL" version="2.0.48" provider-name="Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>

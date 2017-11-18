@@ -38,6 +38,11 @@ import webbrowser
 dp = xbmcgui.DialogProgress()
 dp.create("[COLOR tomato]Cerebero TV[/COLOR]","Please Wait","......") 
 
+import xbmcaddon
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
+
 ipaddy="0.0.0.0"
 HOME     = xbmc.translatePath('special://userdata/')
 iddata   = os.path.join(HOME, 'networksettings.xml')
@@ -45,9 +50,9 @@ with open(iddata, 'r') as myfile:
     data300=str(myfile.read())
 response = urllib2.urlopen('http://cerebrotv.co.uk/TV-DATA/auth2.php?id='+str(data300)+'&ok=OK&ip='+ipaddy).read()
 if not response == "OK":
-    xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,)")
+    xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],NO CODE FOUND, ..,4000,"+__icon__+")")
     exit()
-xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide, ..,2000,)")
+xbmc.executebuiltin("Notification([COLOR=gold]CerebroTV[/COLOR],Opening TV Guide,2000,"+__icon__+")")
 
 
 def d():
@@ -96,7 +101,7 @@ def download(url, dest, dp = None):
                         
         dp.close()
         try:
-            xbmc.executebuiltin("Notification(CerebroTV,Some Channels May Take a Few Tries, ..,3000,)")
+            xbmc.executebuiltin("Notification(CerebroTV,Some Channels May Take a Few Tries,3000,"+__icon__+")")
             w = gui.TVGuide()
             w.doModal()
             del w
