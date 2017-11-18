@@ -68,7 +68,7 @@ class navigator:
 				thumb = os.path.join(artPath, "highly-rated.png")
 				item.setArt({'icon': thumb, 'thumb': thumb})
 				control.addItem(handle=syshandle, url='', listitem=item, isFolder=False)
-				item = control.item(label="[COLOR red]Free slots are full? Follow the announcement on our Facebook page.[/COLOR]")
+				item = control.item(label="[COLOR red]Please Try Again[/COLOR]")
 				thumb = os.path.join(artPath, "highly-rated.png")
 				item.setArt({'icon': thumb, 'thumb': thumb})
 				control.addItem(handle=syshandle, url='', listitem=item, isFolder=False)

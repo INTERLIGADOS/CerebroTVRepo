@@ -212,7 +212,7 @@ class apollo(xbmc.Player):
 		try:
 			if control.addon().getSetting('apollo.account')<>"Free Account":
 				control.addon().setSetting('apollo.paid', "true")
-			xbmc.executebuiltin('Notification(Apollo Group,"Please wait, connecting...", {0}, {1})'.format(3000,os.path.join( control.addonPath ,"icon.png")))
+			xbmc.executebuiltin('Notification(CerebroTV,"Please wait, connecting...", {0}, {1})'.format(3000,os.path.join( control.addonPath ,"icon.png")))
 
 			if imdb=="9999": # Play Channel
 				url = self.GetMedia(imdb,season,episode)
