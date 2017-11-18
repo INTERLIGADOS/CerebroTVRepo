@@ -26,7 +26,7 @@ __icon__ = __addon__.getAddonInfo('icon')
 
 __settings__ = xbmcaddon.Addon(id='plugin.video.Showbox')
 home = __settings__.getAddonInfo('path')
-addon = Addon('plugin.video.1channel', sys.argv)
+#addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
 strdomain ="http://vidics.unblocked.pl"
