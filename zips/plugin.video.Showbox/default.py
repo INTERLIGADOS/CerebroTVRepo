@@ -16,166 +16,50 @@ from xml.dom.minidom import Document
 from t0mm0.common.addon import Addon
 import commands
 import jsunpack
+import xbmc
+
+
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
+
 
 __settings__ = xbmcaddon.Addon(id='plugin.video.Showbox')
 home = __settings__.getAddonInfo('path')
-#addon = Addon('plugin.video.1channel', sys.argv)
+addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
 strdomain ="http://vidics.unblocked.pl"
 AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
 playablehost=[
 'daclips',
-'watchtvseries.unblckd.cam',
-#'filehoot',
-#'cloudyvideos',
-#'realvid',
-#'letwatch',
-#'2gb-hostin..',
-#'playhd',
-#'dailymotion',
-#'divxstage',
-#'donevideo',
-#'ecostream',
-#'entroupload',
-#'exashare',
-#'facebook',
-#'filebox',
-#'filenuke',
-#'flashx',
-#'gorillavid',
-#'hostingbulk',
-#'hostingcup',
-#'hugefiles',
-#'jumbofiles',
-#'lemuploads',
-#'limevideo',
-#'megarelease',
-#'megavids',
-#'mightyupload',
-#'mooshare_biz',
-#'movdivx',
+'watchseries',
 'movpod',
-#'movreel',
-#'movshare',
-#'movzap',
-#'mp4stream',
-#'mp4upload',
-#'mrfile',
-#'muchshare',
-#'nolimitvideo',
-#'nosvideo',
 'novamov',
-#'nowvideo',
-#'ovfile',
-#'play44_net',
-#'played',
-#'playwire',
-#'premiumize_me',
-#'primeshare',
-#'promptfile',
-#'purevid',
-'putlocker.ac',
-'watchepisodes.unblocked.pro',
-#'realdebrid',
-#'rpnet',
-#'seeon',
-#'sharedsx',
-#'sharefiles',
-#'sharerepo',
-#'sharesix',
-#'sharevid',
-#'skyload',
-#'slickvid',
-#'sockshare',
-#'stagevu',
-#'stream2k',
-#'streamcloud',
-#'teramixer',
-#'thefile',
+'watchepisodes',
 'thevideo',
 'trollvid',
-#'tubeplus',
-#'tunepk',
-#'ufliq',
-#'uploadc',
-#'uploadcrazynet',
-#'veeHD',
-#'veoh',
-#'vidbull',
-#'vidcrazynet',
-#'video44',
-#'videobb',
-#'videoboxone',
-#'videofun',
-#'videomega',
-#'videoraj',
-#'videotanker',
-#'videovalley',
-#'videoweed',
-#'videozed',
-#'videozer',
-#'vidhog',
-#'vidpe',
-#'vidplay',
-#'vidspot',
-#'vidstream',
-#'vidto',
-#'vidup',
-#'vidxden',
 'vidzi',
-#'vidzur',
-#'vimeo',
 'vk',
 'vodlocker',
-#'vureel',
-#'watchfreeinhd',
-'watchfree.unblocked',
-#'xvidstage',
-#'yourupload',
-#'youtube',
-#'youwatch',
-#'zalaa',
-#'zooupload',
-#'zshare',
-#'videobug'
+'watchfree',
 'video.google.com',
-#'bestreams',
 'vidx',
-#'streamin',
-#'vidpaid',
-#'uploadnetwork',
-#'divxpress',
-#'videopremium',
-#'faststream',
-#'v-vids',
-#'topvideo',
-#'gamovideo',
-#'bonanzashare',
-#'clicktoview',
-'flashx.tv',
-#'speedvid',
-#'vreer',
-#'allmyvideos',
-#'cyberlocker',
-#'veervid',
-#'nowdownloa..',
-#'videoslasher',
-#'videoslash..',
-#'billionuploads',
-#'glumbouploads',
-#'sharebees',
-#'uploadorb',
-#'speedyshare',
-#'180upload',
-'putlocker']
+#'openload', ## not working?????
+'putlocker',
+#'watchers', ## not working?????
+'grifthost',
+'bitvid',
+'vidgg',
+'vidzella'
+]
 
 def d():
-	import requests,base64
-	try:
-		requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=4).text
-	except:
-		pass
+    import requests,base64
+    try:
+        requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=4).text
+    except:
+        pass
 d() 
 
 net = Net()
@@ -288,10 +172,10 @@ def SaveFav(fav_type, name, url, img):
         cursor = db.cursor()
         try: 
             cursor.execute(statement, (fav_type, urllib.unquote_plus(unicode(name,'latin1')), url, img))
-            builtin = 'XBMC.Notification(Save Favorite,Added to Favorites,2000)'
+            builtin = 'XBMC.Notification(Save Favorite,Added to Favorites,2000,'+__icon__+')'
             xbmc.executebuiltin(builtin)
         except database.IntegrityError: 
-            builtin = 'XBMC.Notification(Save Favorite,Item already in Favorites,2000)'
+            builtin = 'XBMC.Notification(Save Favorite,Item already in Favorites,2000,'+__icon__+')'
             xbmc.executebuiltin(builtin)
         db.commit()
         db.close()
@@ -330,7 +214,7 @@ def BrowseFavorites(section):
     db.close()
 
 def DeleteFav(name,url): 
-    builtin = 'XBMC.Notification(Remove Favorite,Removed '+name+' from Favorites,2000)'
+    builtin = 'XBMC.Notification(Remove Favorite,Removed '+name+' from Favorites,2000,'+__icon__+')'
     xbmc.executebuiltin(builtin)
     sql_del = 'DELETE FROM favorites WHERE name=%s AND url=%s'
     if DB == 'mysql':
@@ -418,7 +302,14 @@ def Mirrors(url,name):
             vname=item.contents[0]
             vurl=item["href"]
             if(str(vname).split('.')[0].lower() in playablehost):
-                addLink(vname,strdomain+vurl,3,"",name)
+                vname = vname.split('.')[0].lower()
+                if vname == "thevideo":
+                    vname = vname+" [I](Needs to be pair-ed [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                if vname == "openload":
+                    vname = vname+" [I](Needs to be pair-ed [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                if vname == "vshare":
+                    vname = vname+" [I](Needs to be pair-ed) [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                addLink("[COLOR gold]Cerebro Vidics:[/COLOR] [B]"+vname+"[/B]",strdomain+vurl,3,__icon__,name)
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
 def add_contextsearchmenu(title, video_type):
@@ -485,7 +376,7 @@ def ParseVideoLink(url,name,movieinfo):
     (respon,cj) = CheckRedirect(url)
     link=respon.content
     tmpcontent=link
-    tmpcontent=tmpcontent.replace("putlocker.com","putlocker.ac")
+    tmpcontent=tmpcontent.replace("putlocker.com","putlockerseries.unblocked.pl")
     redirlink = respon.get_url().lower()
     link = ''.join(link.splitlines()).replace('\'','"')
     # borrow from 1channel requires you to have 1channel
@@ -848,7 +739,7 @@ def ParseVideoLink(url,name,movieinfo):
                 pcontent=''.join(pcontent.splitlines()).replace('\'','"')
                 vidlink = ""
                 vidlink2 = re.compile('file:\s*"(.+?)",').findall(pcontent)
-                vidlink2 = vidlink2.replace("vodlocker.com","vodlocker.ac")
+                vidlink2 = vidlink2.replace("vodlocker.co","vodlocker.li")
                 if(len(vidlink2) > 0):
                         vidlink = vidlink2[0] #vidlink2[0][1]+"/mp4:"+vidlink2[0][0]+" swfUrl=http://vodlocker.com/player/player.swf playPath=mp4:"+vidlink2[0][0]
         elif (redirlink.find("exashare") > -1):
@@ -1221,7 +1112,7 @@ def ParseVideoLink(url,name,movieinfo):
                 vidlink = re.compile('addVariable\("file",\s*"(.+?)"\)').findall(unpacked)[0]
                 
         else:
-                if(redirlink.find("putlocker.com") > -1 or redirlink.find("sockshare.com") > -1):
+                if(redirlink.find("putlocker.unblocked.pl") > -1 or redirlink.find("sockshare.com") > -1):
                         redir = redirlink.split("/file/")
                         redirlink = redir[0] +"/file/" + redir[1].upper()
                 sources = []
@@ -1233,7 +1124,7 @@ def ParseVideoLink(url,name,movieinfo):
                 if source:
                         vidlink = source.resolve()
     #except:
-                if(redirlink.find("putlocker.com") > -1 or redirlink.find("sockshare.com") > -1):
+                if(redirlink.find("putlocker.unblocked.pl") > -1 or redirlink.find("sockshare.com") > -1):
                         redir = redirlink.split("/file/")
                         redirlink = redir[0] +"/file/" + redir[1].upper()
                 sources = []
@@ -1273,7 +1164,9 @@ def SEARCHMOV():
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
         
-        searchText = string.capwords(searchText) 
+        searchText = string.capwords(searchText)
+        if searchText == "":
+            exit()
         dialog = xbmcgui.DialogProgress()
         dialog.create('CerebroTV Vidics Searcher','Searching For Movie: ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
         dialog.update(0)
@@ -1290,7 +1183,9 @@ def SEARCHTV():
         searchText = ''
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
-        searchText = string.capwords(searchText) 
+        searchText = string.capwords(searchText)
+        if searchText == "":
+            exit()
         dialog = xbmcgui.DialogProgress()
         dialog.create('CerebroTV Vidics Searcher','Searching For TV Show: ','[COLOR red]'+str(searchText)+'[/COLOR]')       
         dialog.update(0)
@@ -1307,7 +1202,9 @@ def SEARCHactor():
         searchText = ''
         if (keyb.isConfirmed()):
                 searchText = keyb.getText()
-        searchText = string.capwords(searchText) 
+        searchText = string.capwords(searchText)
+        if searchText == "":
+            exit()
         dialog = xbmcgui.DialogProgress()
         dialog.create('CerebroTV Vidics Searcher','Searching By Actor Name: ','[COLOR red]'+str(searchText)+'[/COLOR]')       
         dialog.update(0)
@@ -1321,11 +1218,11 @@ def SEARCHactor():
 def SearchResult(searchType,Searchtext):
     Searchtext=urllib.quote_plus(Searchtext)
     if searchType=="movie":
-            INDEX("https://vidics.unblocked.pl/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie")
+            INDEX("https://vidics.unblocked.pl/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
     elif searchType=="actor":
-            INDEX("https://vidics.unblocked.pl/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"")
+            INDEX("https://vidics.unblocked.pl/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
     else:
-            INDEX("https://vidics.unblocked.pl/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv")
+            INDEX("https://vidics.unblocked.pl/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
     
             
 def getstatic():
@@ -1368,7 +1265,7 @@ def ProfileMovie(url,typename):
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<h3 class="career_type_title" ?[^>]*>'+typename+'(.+?)<tr>').findall(newlink)
         if(len(listcontent) < 0):
-            XBMC.Notification("CerebroTV,Link not playable try another",2000)
+            XBMC.Notification("CerebroTV,Link not playable try another",2000,""+__icon__+"")
             xbmc.sleep(1000)
             exit()
         html_re = re.compile(r'<[^>]+>')
@@ -1435,9 +1332,11 @@ def Seasons(url):
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1],url,8,"")
 
-def INDEX(url,modenum,curmode,vidtype):
+def INDEX(url,modenum,curmode,vidtype,ctitle):
     #try:
-        xbmc.executebuiltin("Container.SetViewMode(52)")
+        ctitle = ctitle.replace("%20"," ")
+        ctitle = ctitle.replace("+"," ")
+        xbmc.executebuiltin("Container.SetViewMode(50)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
@@ -1448,9 +1347,19 @@ def INDEX(url,modenum,curmode,vidtype):
         if len(vcontent) == 0:
             #xbmc.notification("CerebroTV,Link not playable try another",2000)
             #builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000)'
-            dialog = xbmcgui.Dialog()
-            dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
+            #dialog = xbmcgui.Dialog()
+            update = xbmcgui.Dialog().yesno("[COLOR=red][B]CerebroTV Vidics Searcher[/COLOR][/B]","  No Results Found For: [COLOR=red]"+ctitle+"[/COLOR]","                [I]Site maybe busy[/I]" ,"                [I]Check For Typo's[/I]","Fix Typo","Search Again")
+            #dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
             #xbmc.executebuiltin(builtin)
+            builtin = 'XBMC.Notification(Cerebro Vidics,Press Back Or Escape to exit search,5000,'+__icon__+')'
+            if update:
+                SearchResult(vidtype,ctitle)
+            if vidtype == "tv":
+                xbmc.executebuiltin(builtin)
+                SEARCHTV()
+            if vidtype == "movie":
+                xbmc.executebuiltin(builtin)
+                SEARCHMOV()
             exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
@@ -1473,7 +1382,7 @@ def INDEX(url,modenum,curmode,vidtype):
                     
 def INDEXList(url,modenum,curmode,vidtype):
     #try:
-        xbmc.executebuiltin("Container.SetViewMode(52)")
+        xbmc.executebuiltin("Container.SetViewMode(50)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
@@ -2335,10 +2244,12 @@ if os.path.isfile(db_dir)==False:
      initDatabase()
      
 def playVideo(url,name,movieinfo):
-        vidurl=ParseVideoLink(url,name,movieinfo);
+        builtin = 'XBMC.Notification(CerebroTV,Link not playable try another,2000,'+__icon__+')'    
+        try: vidurl=ParseVideoLink(url,name,movieinfo)
+        except: xbmc.executebuiltin(builtin)
         xbmcPlayer = xbmc.Player()
         try: xbmcPlayer.play(vidurl)
-        except: XBMC.Notification("CerebroTV,Link not playable try another",2000)
+        except: xbmc.executebuiltin(builtin)
         
 def RemoveHTML(strhtml):
             html_re = re.compile(r'<[^>]+>')
