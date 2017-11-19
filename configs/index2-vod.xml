@@ -59,6 +59,27 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Salvation[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Salvation%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fSalvation-1&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Dimension 404[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Dimension%20404%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fDimension-404&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Future Man[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Future%20Man%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fFuture-Man&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Gotham[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Gotham%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fGotham-2014&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -474,6 +495,34 @@
 <plugin>
 <title>[COLOR pink]Peaky Blinders[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Peaky%20Blinders%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fPeaky_Blinders&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Stargate SG-1[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Stargate%20SG-1%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstargate_sg-1&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Farscape[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Peaky%20Blinders%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fPeaky_Blinders&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Stargate: Atlantis[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Stargate%3a%20Atlantis%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstargate_atlantis&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Stargate Universe[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20SGU%20Stargate%20Universe%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstargate_universe&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
