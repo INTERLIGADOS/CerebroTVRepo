@@ -56,8 +56,8 @@ playablehost=[
 'vidto',
 'vshare',
 #'cloudtime',
-#'auroravid',
-#'nowvideo'
+#'picstream',
+'videoweed'
 ]
 
 def d():
