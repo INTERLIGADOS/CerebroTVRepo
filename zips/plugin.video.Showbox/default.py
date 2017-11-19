@@ -43,7 +43,7 @@ playablehost=[
 'vk',
 'vodlocker',
 'watchfree',
-'video.google.com',
+'google',
 'vidx',
 #'openload', ## not working?????
 'putlocker',
@@ -51,7 +51,13 @@ playablehost=[
 'grifthost',
 'bitvid',
 'vidgg',
-'vidzella'
+'vidzella',
+#'streamin',
+'vidto',
+'vshare',
+#'cloudtime',
+#'auroravid',
+#'nowvideo'
 ]
 
 def d():
@@ -2409,9 +2415,9 @@ elif mode==24:
 elif mode==25:
         BrowseFavorites(url)
 elif mode==26:
-        INDEX(url,4,26,"movie")
+        INDEX(url,4,26,"movie","")
 elif mode==27:
-        INDEX(url,7,27,"tv")
+        INDEX(url,7,27,"tv","")
 elif mode==28:
         SearchResult(url,name)
 elif mode==9898:
