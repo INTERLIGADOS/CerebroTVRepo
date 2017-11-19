@@ -547,3 +547,10 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Dad's Army[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Dad%27s%20Army%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fdads_army&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
