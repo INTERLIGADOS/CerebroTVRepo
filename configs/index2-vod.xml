@@ -549,6 +549,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]V 2009[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20V%20-%20Die%20Besucher%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fv_(2009)&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Dad's Army[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Dad%27s%20Army%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fdads_army&vidtype=tv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
