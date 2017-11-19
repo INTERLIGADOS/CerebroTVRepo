@@ -554,3 +554,10 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Birds of a Feather[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Birds%20of%20a%20Feather%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fbirds_of_a_feather&vidtype=tv</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
