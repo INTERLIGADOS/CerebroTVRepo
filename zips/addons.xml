@@ -4909,7 +4909,7 @@ level.</description>
 
 <addon id="script.mtvbspmain"
   name="CerebroTV Sky Sports Main"
-  version="1.5"
+  version="1.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
