@@ -299,49 +299,56 @@
 <plugin>
 <title>[COLOR pink]Star Trek: The Next Generation[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%3a%20The%20Next%20Generation%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstar_trek%3a_the_next_generation&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Star_Trek_The_Next_Generation-33687.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Star Trek: Deep Space Nine[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%3a%20Deep%20Space%20Nine%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstar_trek%3a_deep_space_nine&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Star_Trek_Deep_Space_Nine-33980.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Star Trek: Voyager[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%3a%20Voyager%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstar_trek%3a_voyager&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Star_Trek_Voyager-19090.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Star Trek: Enterprise[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%3a%20Enterprise%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstar_trek%3a_enterprise&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Star_Trek_Enterprise-19264.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The X Files[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20X%20Files%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fx_files&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_X_Files-19891.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Spender[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Spender%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fSpender&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Spender-38251.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Grand Tour[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Grand%20Tour%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pl%2fTV-Show%2fThe-Grand-Tour-&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/83/The_Grand_Tour_-1645748.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Top Gear[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Top%20Gear%20&url=http%3a%2f%2fvidics.unblocked.pl%2fTV-Show%2ftop_gear&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Top_Gear-35797.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
