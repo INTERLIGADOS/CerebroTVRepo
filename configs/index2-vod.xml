@@ -610,3 +610,10 @@
 <thumbnail>https://vidics.unblocked.pl/static/150/1/Heroes-19120.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]National Geographic: Brain Games[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20National%20Geographic%3a%20Brain%20Games%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fbrain_games&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/3/National_Geographic_Brain_Games-41856.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
