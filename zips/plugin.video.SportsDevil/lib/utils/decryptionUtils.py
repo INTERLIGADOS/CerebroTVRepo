@@ -87,16 +87,22 @@ def zadd(data):
 #     return data
 
 def zadd2(data):
-    if re.search(".*\w+\s*=\s*eval\(\"\(\"\s*\+\s*\w+",data):
+    #lib.common.log("JairoXZADD:" + data)
+    if re.search(r".*\w+\s*=\s*eval\(\"\(\"\s*\+\s*\w+",data):
         #jsvar = re.findall(".*\w+\s*=\s*eval\(\"\(\"\+(\w+)\+", data)[0]
-        matches = re.findall('\w+\s*=.*?\+\s*(\w+)',data)
+        matches = re.findall(r'\w+\s*=\s*\w+\s*\+\s*(\w+)',data)
+        if len(matches)==0:
+            matches = re.findall(r'\w+\s*=\s*\w+\s*\+\s*\'\'\s*\+\s*(\w+);',data)
         jsall = ''
         try:
             firstword = matches[0]
             for match in matches:
-                tmp = re.findall(r";\s*(\w+)\s*=\s*'(.*?)';\s*%s\s*=\s*(\1)"%match,data)
+                tmp = re.findall(r"[;,]\s*(\w+)\s*=\s*'(.*?)'\s*[;,]\s*%s\s*=\s*(\1)"%match,data)
+                if len(tmp)==0:
+                    tmp = re.findall(r";(%s)\s*=\s*'(.*?)';"%match,data)
                 if len(tmp)>0:
                     jsall += tmp[0][1]
+            #lib.common.log("JairoXZADD:" + jsall)
             if re.compile(r"jwplayer\(\'\w+.*eval\(\"\(\"\s*\+\s*\w+\s*\+\s*\"\)\"\);", flags=re.DOTALL).findall(data):
                     tmp_ = re.sub(r"jwplayer\(\'\w+.*eval\(\"\(\"\s*\+\s*\w+\s*\+\s*\"\)\"\);", jsall, data, count=1, flags=re.DOTALL)
             if re.compile(r"\w+\.\w+\({.*}\s+</script>(.*)</script>", flags=re.DOTALL).findall(data):
@@ -109,6 +115,7 @@ def zadd2(data):
             pass
 
     return data
+
 
 def zdecode(data):
     import csv

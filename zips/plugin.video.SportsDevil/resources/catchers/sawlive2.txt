@@ -42,7 +42,7 @@ item_info_name=p2.tmp
 item_info_from=tmpUrl1
 item_info_convert=getInfo('%s','(.*)','@REFERER@')
 item_info_convert=unicode_escape
-item_info_convert=parseText('%s','.*id="\w+">(\d{5}).*param\s+name='movie'\s+value='([^']+).*file=.*(\?[^&]+)&streamer=.*?:\/\/([^&]+)','f1|swf1|f2|rtmp1')
+item_info_convert=parseText('%s','.*id="\w+">(\d{5}).*param\s+name='movie'\s+value='([^']+).*file=.*(\?[^&]+)&streamer=.*?:\/\/([^&]+)','f1|swf1_|f2|rtmp1_')
 item_info_build=%s
 
 item_info_name=file1
@@ -50,6 +50,15 @@ item_info_from=f1+f2+'
 #item_info_convert=debug
 item_info_build=%s
 
+item_info_name=rtmp1
+item_info_from=rtmp1_+'
+#item_info_convert=debug
+item_info_build=%s
+
+item_info_name=swf1
+item_info_from=swf1_+'
+#item_info_convert=debug
+item_info_build=%s
 
 item_info_name=p3.tmp
 item_info_from=@PARAM1@

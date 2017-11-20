@@ -575,7 +575,10 @@ class Parser(object):
                     continue
 
             elif command == 'unicode_escape':
-                src = src.decode('unicode-escape')
+                try:
+                    src = src.decode('unicode-escape')
+                except:
+                    src = src
 
             elif command == 'replaceFromDict':
                 dictName = str(params.strip('\''))

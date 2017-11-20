@@ -44,7 +44,7 @@ item_info_from=p1__
 item_info_convert=unicode_escape
 item_info_convert=unquote('%s')
 item_info_convert=parseText('%s','.*src="(.*)')
-item_info_convert=debug
+#item_info_convert=debug
 item_info_build=%s
 
 item_info_name=tmpUrl1_
