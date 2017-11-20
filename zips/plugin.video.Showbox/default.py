@@ -1355,7 +1355,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
         #if not vcontent[0]:
         if len(vcontent) == 0:
             #xbmc.notification("CerebroTV,Link not playable try another",2000)
-            builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000)'
+            builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000,'+__icon__+')'
             #dialog = xbmcgui.Dialog()
             #update = xbmcgui.Dialog().yesno("[COLOR=red][B]CerebroTV Vidics Searcher[/COLOR][/B]","  No Results Found For: [COLOR=red]"+ctitle+"[/COLOR]","                [I]Site maybe busy[/I]" ,"                [I]Check For Typo's[/I]","Fix Typo","Search Again")
             #dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
