@@ -57,7 +57,7 @@ playablehost=[
 'veoh',
 'videoweed',
 'youtube',
-#'streamin'
+'dailymotion'
 ]
 
 def d():
