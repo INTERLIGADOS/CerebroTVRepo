@@ -285,14 +285,14 @@
 <plugin>
 <title>[COLOR pink]Star Trek: The Original Series[/COLOR] Link 1</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fStar_Trek_(1973)&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Star_Trek-18868.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Star Trek: The Original Series[/COLOR] Link 2</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Star%20Trek%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fstar_trek&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Star_Trek-18868.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
