@@ -1303,7 +1303,7 @@ def SearchChannelresults(url,searchtext):
         addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
-            addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,vimg)
+            addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://vidics.unblocked.pl/"+vimg)
         pagelist=re.compile('<div class="pagination">(.+?)</li>').findall(link)
         if(len(pagelist) > 0):
                 navlist=re.compile('<a[^>]* href="(.+?)">(.+?)</a>').findall(pagelist[0])
@@ -1377,9 +1377,9 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             vpot=re.compile('"description":"(.+?)"').findall(moveieinfo)[0] 
             vpot=urllib.unquote_plus(vpot)
             if(vidtype==""):
-                 addDir(vtitle,strdomain+vurl,modenum,vimg,vpot)
+                 addDir(vtitle,strdomain+vurl,modenum,"https://vidics.unblocked.pl/"+vimg,vpot)
             else:
-                 addDirContext(vtitle,strdomain+vurl,modenum,vimg,vpot,vidtype)
+                 addDirContext(vtitle,strdomain+vurl,modenum,"https://vidics.unblocked.pl/"+vimg,vpot,vidtype)
         paginacontent=re.compile('<table class="pagination" ?[^>]*>(.+?)</table>').findall(newlink)
         
         if(len(paginacontent)>0):
@@ -1411,9 +1411,9 @@ def INDEXList(url,modenum,curmode,vidtype):
             vtitle=RemoveHTML(vtitle)
             if(vidtype==""):
                  
-                 addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,vimg,vpot)
+                 addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://vidics.unblocked.pl/"+vimg,vpot)
             else:
-                 addDirContext(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,vimg,vpot,vidtype)
+                 addDirContext(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://vidics.unblocked.pl/"+vimg,vpot,vidtype)
         paginacontent=re.compile('<table class="pagination" ?[^>]*>(.+?)</table>').findall(newlink)
         
         if(len(paginacontent)>0):
