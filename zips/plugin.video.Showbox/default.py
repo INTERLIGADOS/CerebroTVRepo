@@ -45,19 +45,22 @@ playablehost=[
 'watchfree',
 'google',
 'vidx',
-#'openload', ## not working?????
+'estream',
 'putlocker',
-#'watchers', ## not working?????
 'grifthost',
 'bitvid',
 'vidgg',
 'vidzella',
 'vidto',
-'vshare',
+'clipwatching',
 'veoh',
 'videoweed',
 'youtube',
-'dailymotion'
+'dailymotion',
+'cloudtime',
+'novamov',
+'flashx',
+'streamcloud'
 ]
 
 def d():
