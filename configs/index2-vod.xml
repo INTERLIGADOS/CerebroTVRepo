@@ -575,3 +575,17 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Firefly[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Firefly%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2ffirefly&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl/static/150/1/Firefly-18677.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Heroes[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Dallas%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fdallas&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl/static/150/1/Heroes-19120.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
