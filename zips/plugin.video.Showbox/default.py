@@ -162,6 +162,7 @@ def HostResolver(url):
         else:
             server=server[0]
         server=server.replace("180upload","one80upload")
+        server=server.replace("openload.co","api.openload.co")
         exec "from servers import "+server+" as server_connector"
         rtnstatus,msg = server_connector.test_video_exists( page_url=url )
         if(rtnstatus):
@@ -237,7 +238,7 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'')
         #addDir('Search Actors','search',15,'')
@@ -307,10 +308,11 @@ def List4Days():
 def Mirrors(url,name):
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
-  vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+  vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
-  addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
+  addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+  #listcontent.sort() 
   for item in listcontent:
             vname=item.contents[0]
             vurl=item["href"]
@@ -387,14 +389,16 @@ def GetParts(vicontent,vidname):
         
 def ParseVideoLink(url,name,movieinfo):
     dialog = xbmcgui.DialogProgress()
-    dialog.create('Resolving', 'Resolving video Link..........')       
+    dialog.create('Resolving', 'Resolving video Link..........')    
     dialog.update(0)
     (respon,cj) = CheckRedirect(url)
     link=respon.content
     tmpcontent=link
     tmpcontent=tmpcontent.replace("putlocker.com","putlockerseries.unblocked.pl")
+    tmpcontent=tmpcontent.replace("openload.co","api.openload.co")
     redirlink = respon.get_url().lower()
     link = ''.join(link.splitlines()).replace('\'','"')
+    dialog.update(10)
     # borrow from 1channel requires you to have 1channel
     #win = xbmcgui.Window(10000)
     #win.setProperty('1ch.playing.title', movieinfo)
@@ -409,6 +413,7 @@ def ParseVideoLink(url,name,movieinfo):
     # end 1channel code
     print redirlink
     #try:
+    dialog.update(20)
     if True:
 
         if (redirlink.find("youtube") > -1):
@@ -1087,7 +1092,8 @@ def ParseVideoLink(url,name,movieinfo):
                 if source:
                         vidlink = source.resolve()
     #except:
-                
+    dialog.update(90)
+    xbmc.sleep(1000)    
     dialog.close()
     return vidlink
                
@@ -1247,7 +1253,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://vidics.unblocked.pl/"+vimg)
@@ -1264,7 +1270,7 @@ def Episodes(url,name):
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
@@ -1283,7 +1289,7 @@ def Seasons(url):
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1],url,8,"https://vidics.unblocked.pl/"+str(vimg))
@@ -1321,7 +1327,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             #exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
+        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)
@@ -2204,10 +2210,14 @@ if os.path.isfile(db_dir)==False:
 def playVideo(url,name,movieinfo):
         builtin = 'XBMC.Notification(CerebroTV,Link not playable try another,2000,'+__icon__+')'    
         try: vidurl=ParseVideoLink(url,name,movieinfo)
-        except: xbmc.executebuiltin(builtin)
+        except: pass
         xbmcPlayer = xbmc.Player()
         try: xbmcPlayer.play(vidurl)
-        except: xbmc.executebuiltin(builtin)
+        except:
+			#xbmc.executebuiltin("SendClick(SkipNext)")
+			#xbmc.executebuiltin('xbmc.ActivateWindow(10025)')
+			#xbmc.executebuiltin('SendClick(10025,Down)')
+			xbmc.executebuiltin(builtin)
         
 def RemoveHTML(strhtml):
             html_re = re.compile(r'<[^>]+>')
