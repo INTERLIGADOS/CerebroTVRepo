@@ -187,77 +187,77 @@
 <plugin>
 <title>[COLOR pink]The Simpsons[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Simpsons%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fthe-simpsons&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_Simpsons-19237.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]American Dad[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20American%20Dad!%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2famerican_dad&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/American_Dad_-21430.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Rick & Morty[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f25%2fimage%2f555x418%2frick-and-morty.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dRick%20and%20Morty%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2frick-and-morty-tv-series</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/29/Rick_and_Morty-577210.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Family Guy[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f18%2fimage%2f555x418%2ffamily-guy.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dFamily%20Guy%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2ffamily-guy-tv-series</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Family_Guy-21309.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Cleveland Show (2009–2013)[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f22%2fimage%2f555x418%2fThe_Cleveland_Show_.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dThe%20Cleveland%20Show%20(2009%e2%80%932013)%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2fthe-cleveland-show-2009-2013-tv-series</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_Cleveland_Show-18442.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Boondocks (2005)[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f23%2fimage%2f555x418%2fthe-boondocks.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dThe%20Boondocks%20(2005)%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2fthe-boondocks-tv-series-2005</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_Boondocks-19271.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Archer[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f21%2fimage%2f555x418%2farcher-18817.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dArcher%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2farcher-tv-series</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Archer-21431.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Legend of Korra[/COLOR]</title>
 <link>plugin://plugin.video.cartoonson/?description&iconimage=http%3a%2f%2fwww.cartoonson.com%2f_resources%2fCartoons%2fshow%2f27%2fimage%2f555x418%2fthe-legend-of-korra.jpg&mode=2&name=%5bB%5d%5bCOLOR%20white%5dThe%20Legend%20of%20Korra%5b%2fCOLOR%5d%5b%2fB%5d&url=http%3a%2f%2fwww.cartoonson.com%2fcartoons%2fview%2fid%2fthe-legend-of-korra</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/3/The_Last_Airbender_The_Legend_of_Korra-45404.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Only Fools and Horses[/COLOR]</title>
-<link>plugin://plugin.video.elysium/?action=seasons&imdb=tt0081912&tmdb=72&tvdb=75628&tvshowtitle=Only%20Fools%20and%20Horses&year=1981</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Only%20Fools%20and%20Horses....%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fonly_fools_and_horses&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Only_Fools_and_Horses_-18433.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Airwolf[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Airwolf%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fairwolf&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Airwolf-18608.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The A-Team[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20A-Team%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fthe_a-team&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_A_Team-19485.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
