@@ -323,6 +323,8 @@ def Mirrors(url,name):
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "vshare":
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                if vname == "flashx":
+                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 addLink("[COLOR white][B]"+name+"[/B][/COLOR] [B][COLOR gold]"+vname+"[/COLOR][/B] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
