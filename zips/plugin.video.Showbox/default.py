@@ -302,6 +302,7 @@ def List4Days():
 def Mirrors(url,name):
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
+  vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
   addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
@@ -316,7 +317,7 @@ def Mirrors(url,name):
                     vname = vname+" [I](Needs to be pair-ed [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "vshare":
                     vname = vname+" [I](Needs to be pair-ed) [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
-                addLink("[COLOR gold]Cerebro Vidics:[/COLOR] [B]"+vname+"[/B]",strdomain+vurl,3,__icon__,name)
+                addLink("[COLOR gold]Cerebro Vidics:[/COLOR] [COLOR green][B]"+name+"[/B][/COLOR] [B]"+vname+"[/B] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
 def add_contextsearchmenu(title, video_type):
