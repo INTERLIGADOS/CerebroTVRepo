@@ -397,21 +397,28 @@
 <plugin>
 <title>[COLOR pink]Dexter[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Dexter%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fdexter&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Dexter-1290.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]NCIS: Naval Criminal Investigative Service[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20NCIS%3a%20Naval%20Criminal%20Investigative%20Service%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fncis&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/NCIS-19040.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]NCIS: Los Angeles[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20NCIS%3a%20Los%20Angeles%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fncis%3a_los_angeles&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/56/NCIS_Los_Angeles-1117277.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]NCIS: New Orleans[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20NCIS%3a%20New%20Orleans%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fNCIS%3a_New_Orleans&vidtype=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://vidics.unblocked.pl//static/150/56/NCIS_New_Orleans-1117249.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
