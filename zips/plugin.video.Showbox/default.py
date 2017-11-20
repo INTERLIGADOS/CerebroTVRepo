@@ -52,13 +52,12 @@ playablehost=[
 'bitvid',
 'vidgg',
 'vidzella',
-#'streamin',
 'vidto',
 'vshare',
-#'zstream',
 'veoh',
 'videoweed',
-'youtube'
+'youtube',
+#'streamin'
 ]
 
 def d():
@@ -312,12 +311,12 @@ def Mirrors(url,name):
             if(str(vname).split('.')[0].lower() in playablehost):
                 vname = vname.split('.')[0].lower()
                 if vname == "thevideo":
-                    vname = vname+" [I](Needs to be pair-ed [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "openload":
-                    vname = vname+" [I](Needs to be pair-ed [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "vshare":
-                    vname = vname+" [I](Needs to be pair-ed) [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
-                addLink("[COLOR gold]Cerebro Vidics:[/COLOR] [COLOR green][B]"+name+"[/B][/COLOR] [B]"+vname+"[/B] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
+                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                addLink("[COLOR white][B]"+name+"[/B][/COLOR] [B][COLOR gold]"+vname+"[/COLOR][/B] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
 def add_contextsearchmenu(title, video_type):
@@ -379,7 +378,7 @@ def GetParts(vicontent,vidname):
         
 def ParseVideoLink(url,name,movieinfo):
     dialog = xbmcgui.DialogProgress()
-    dialog.create('Resolving', 'Resolving video Link...')       
+    dialog.create('Resolving', 'Resolving video Link..........')       
     dialog.update(0)
     (respon,cj) = CheckRedirect(url)
     link=respon.content
@@ -388,10 +387,10 @@ def ParseVideoLink(url,name,movieinfo):
     redirlink = respon.get_url().lower()
     link = ''.join(link.splitlines()).replace('\'','"')
     # borrow from 1channel requires you to have 1channel
-    win = xbmcgui.Window(10000)
-    win.setProperty('1ch.playing.title', movieinfo)
-    win.setProperty('1ch.playing.season', str(3))
-    win.setProperty('1ch.playing.episode', str(4))
+    #win = xbmcgui.Window(10000)
+    #win.setProperty('1ch.playing.title', movieinfo)
+    #win.setProperty('1ch.playing.season', str(3))
+    #win.setProperty('1ch.playing.episode', str(4))
     if(redirlink.find("vidics") >-1):
             (respon,cj) = GetParts(link,name)
             link=respon.content
@@ -520,23 +519,7 @@ def ParseVideoLink(url,name,movieinfo):
                 if(len(paccked) > 0):
                       pcontent=jsunpack.unpack(paccked[0].replace('"','\''))
                 vidlink = re.compile("file:\s*'(.+?)'").findall(pcontent)[0]
-        elif (redirlink.find("streamin") > -1):
-                idkey = re.compile('<input type="hidden" name="id" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                op = re.compile('<input type="hidden" name="op" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                hash = re.compile('<input type="hidden" name="hash" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                fname = re.compile('<input type="hidden" name="fname" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                posdata=urllib.urlencode({"op":op,"usr_login":"","id":idkey,"fname":fname,"referer":"","hash":hash})
-                dialog.close()
-                do_wait('Waiting on link to activate', '', 5)
-                dialog.create('Resolving', 'Resolving streamin Link...') 
-                dialog.update(50)
-                pcontent=postContent(redirlink,posdata+"&imhuman=Proceed+to+video",url)
-                pcontent=''.join(pcontent.splitlines()).replace('\'','"')
-                tmplink = re.compile('setup\(\{\s*file:\s*"(.+?)",\s*streamer:\s*"(.+?)"').findall(pcontent)
-                vidlink = tmplink[0][1]+"/"+tmplink[0][0] + " playPath="+tmplink[0][0]
-                if(tmplink[0][0].find("http:") > -1):
-                        #vidlink = re.compile('setup\(\{\s*file:\s*"(.+?)",\s*').findall(pcontent)
-                        vidlink = tmplink[0][0]
+
         elif (redirlink.find("playhd") > -1):
                 idkey = re.compile('<input type="hidden" name="id" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
                 op = re.compile('<input type="hidden" name="op" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
@@ -733,23 +716,7 @@ def ParseVideoLink(url,name,movieinfo):
                 sUnpacked = unpackjs4(packed)
                 unpacked = sUnpacked.replace("\\","")
                 vidlink = re.compile('file:"(.+?)",').findall(unpacked)[0]
-        elif (redirlink.find("vodlocker") > -1):
-                idkey = re.compile('<input type="hidden" name="id" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                op = re.compile('<input type="hidden" name="op" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                hash = re.compile('<input type="hidden" name="hash" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                fname = re.compile('<input type="hidden" name="fname" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                posdata=urllib.urlencode({"op":"download1","usr_login":"","id":idkey,"fname":fname,"referer":url,"hash":hash})
-                dialog.close()
-                do_wait('Waiting on link to activate', '', 3)
-                dialog.create('Resolving', 'Resolving bestreams Link...') 
-                dialog.update(50)
-                pcontent=postContent(redirlink,posdata+"&imhuman=Proceed+to+video",url)
-                pcontent=''.join(pcontent.splitlines()).replace('\'','"')
-                vidlink = ""
-                vidlink2 = re.compile('file:\s*"(.+?)",').findall(pcontent)
-                vidlink2 = vidlink2.replace("vodlocker.co","vodlocker.li")
-                if(len(vidlink2) > 0):
-                        vidlink = vidlink2[0] #vidlink2[0][1]+"/mp4:"+vidlink2[0][0]+" swfUrl=http://vodlocker.com/player/player.swf playPath=mp4:"+vidlink2[0][0]
+
         elif (redirlink.find("exashare") > -1):
                 packed = re.compile('/jwplayer.js"></script>\s*<script type="text/javascript">(.+?)</script>').findall(link)[0]
                 sUnpacked = unpackjs4(packed)
@@ -944,27 +911,6 @@ def ParseVideoLink(url,name,movieinfo):
                 dmlink=re.compile('<meta [^>]*base=["\']?([^>^"^\']+)["\']?[^>]*>').findall(finalcontent)
                 fillink=re.compile('<video [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(finalcontent)
                 vidlink=dmlink[0]+fillink[0]+" app="+dmlink[0].split("/")[-2]+"/ swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf playPath="+fillink[0] +" pageUrl=" + redirlink + " tcUrl="+dmlink[0]
-        elif (redirlink.find("flashx.tv") > -1):
-                idkey = re.compile('<input type="hidden" name="id" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                op = re.compile('<input type="hidden" name="op" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                hash = re.compile('<input type="hidden" name="hash" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                fname = re.compile('<input type="hidden" name="fname" [^>]*value=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[0]
-                posdata=urllib.urlencode({"op":op,"usr_login":"","id":idkey,"fname":fname,"referer":"","hash":hash})
-                dialog.close()
-                do_wait('Waiting on link to activate', '', 5)
-                dialog.create('Resolving', 'Resolving flashx Link...') 
-                dialog.update(50)
-                pcontent=postContent(redirlink,posdata+"&imhuman=Proceed%20to%20video",url)
-                pcontent=''.join(pcontent.splitlines()).replace('\'','"')
-                paccked= re.compile('<script type=(?:"|\')text/javascript(?:"|\')>(eval\(function\(p,a,c,k,e,d\).*?)</script>').findall(pcontent)
-                if(len(paccked) > 0):
-                      pcontent=jsunpack.unpack(paccked[0].replace('"','\''))
-                media_url = re.compile('sources:\s*\[\{file:\s*"(.+?)"\}\]').findall(pcontent)[0]
-                finalcontent=GetContent(media_url)
-                finalcontent=''.join(finalcontent.splitlines()).replace('\'','"')
-                dmlink=re.compile('<meta [^>]*base=["\']?([^>^"^\']+)["\']?[^>]*>').findall(finalcontent)
-                fillink=re.compile('<video [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(finalcontent)
-                vidlink=dmlink[0]+fillink[0]+" app="+dmlink[0].split("/")[-2]+"/ swfUrl=http://static.flashx.tv/player6/jwplayer.flash.swf playPath="+fillink[0] +" pageUrl=" + redirlink + " tcUrl="+dmlink[0]
         elif (redirlink.find("speedvid") > -1):
                 keycode=re.compile('\|image\|(.+?)\|(.+?)\|file\|').findall(link)
                 domainurl=re.compile('\[IMG\](.+?)\[/IMG\]').findall(link)[0]
@@ -1120,7 +1066,7 @@ def ParseVideoLink(url,name,movieinfo):
                 vidlink = re.compile('addVariable\("file",\s*"(.+?)"\)').findall(unpacked)[0]
                 
         else:
-                if(redirlink.find("putlocker.unblocked.pl") > -1 or redirlink.find("sockshare.com") > -1):
+                if(redirlink.find("putlocker") > -1 or redirlink.find("sockshare.com") > -1):
                         redir = redirlink.split("/file/")
                         redirlink = redir[0] +"/file/" + redir[1].upper()
                 sources = []
@@ -1132,17 +1078,7 @@ def ParseVideoLink(url,name,movieinfo):
                 if source:
                         vidlink = source.resolve()
     #except:
-                if(redirlink.find("putlocker.unblocked.pl") > -1 or redirlink.find("sockshare.com") > -1):
-                        redir = redirlink.split("/file/")
-                        redirlink = redir[0] +"/file/" + redir[1].upper()
-                sources = []
-                label=name
-                hosted_media = urlresolver.HostedMediaFile(url=redirlink, title=label)
-                sources.append(hosted_media)
-                source = urlresolver.choose_source(sources)
-                print "inresolver=" + redirlink
-                if source:
-                        vidlink = source.resolve()
+                
     dialog.close()
     return vidlink
                
