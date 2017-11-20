@@ -1360,6 +1360,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             #update = xbmcgui.Dialog().yesno("[COLOR=red][B]CerebroTV Vidics Searcher[/COLOR][/B]","  No Results Found For: [COLOR=red]"+ctitle+"[/COLOR]","                [I]Site maybe busy[/I]" ,"                [I]Check For Typo's[/I]","Fix Typo","Search Again")
             #dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
             xbmc.executebuiltin(builtin)
+            exit()
             #builtin = 'XBMC.Notification(Cerebro Vidics,Press Back Or Escape to exit search,5000,'+__icon__+')'
             #if update:
             #    SearchResult(vidtype,ctitle)
