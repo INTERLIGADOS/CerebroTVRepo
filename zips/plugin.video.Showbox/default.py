@@ -310,6 +310,7 @@ def Mirrors(url,name):
             vurl=item["href"]
             if(str(vname).split('.')[0].lower() in playablehost):
                 vname = vname.split('.')[0].lower()
+                name = name.replace("unknown","[/B][I][COLOR grey]No Show Info[/COLOR][/I][B]")
                 if vname == "thevideo":
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "openload":
@@ -1263,6 +1264,7 @@ def Episodes(url,name):
                 for (vurl,vname) in episodelist:
                      html_re = re.compile(r'<[^>]+>')
                      vname=html_re.sub('', vname)
+                     vname = vname.replace("unknown","[I][COLOR grey]No Show Info[/COLOR][/I]")
                      addDir(vname,strdomain+vurl,4,"https://vidics.unblocked.pl/"+str(vimg))
                 break 
         
