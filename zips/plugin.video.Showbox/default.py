@@ -246,7 +246,7 @@ def HOME():
         addDir('Movies Genres','Category-Movies',18,'')
         addDir('TV Shows Genres','Category-TvShows',19,'')
         addDir('7 Day TV Schedule','TV Schedule',20,'')
-        #addDir('Top Movies','http://vidics.unblocked.pl/top/films.html',5,'')
+        addDir('Top Movies','http://vidics.unblocked.pl/top/films.html',5,'')
         addDir('Top TV Shows','http://vidics.unblocked.pl/top/tvshows.html',6,'')
         #addDir('Movies/TV Show by Actor','http://vidics.unblocked.pl/Category-People/Genre-Any/Letter-Any/ByPopularity/1.htm',12,'')
 def LangOption():
