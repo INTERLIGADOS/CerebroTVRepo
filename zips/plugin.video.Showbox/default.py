@@ -1316,6 +1316,7 @@ def Episodes(url,name):
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
+        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
         addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
@@ -1324,7 +1325,7 @@ def Episodes(url,name):
                 for (vurl,vname) in episodelist:
                      html_re = re.compile(r'<[^>]+>')
                      vname=html_re.sub('', vname)
-                     addDir(vname,strdomain+vurl,4,"")
+                     addDir(vname,strdomain+vurl,4,"https://vidics.unblocked.pl/"+str(vimg))
                 break 
         
     #except: pass
@@ -1333,10 +1334,11 @@ def Seasons(url):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
+        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
-                addDir(epsodlist[1],url,8,"")
+                addDir(epsodlist[1],url,8,"https://vidics.unblocked.pl/"+str(vimg))
 
 def INDEX(url,modenum,curmode,vidtype,ctitle):
     #try:
@@ -1353,21 +1355,21 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
         #if not vcontent[0]:
         if len(vcontent) == 0:
             #xbmc.notification("CerebroTV,Link not playable try another",2000)
-            #builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000)'
+            builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000)'
             #dialog = xbmcgui.Dialog()
-            update = xbmcgui.Dialog().yesno("[COLOR=red][B]CerebroTV Vidics Searcher[/COLOR][/B]","  No Results Found For: [COLOR=red]"+ctitle+"[/COLOR]","                [I]Site maybe busy[/I]" ,"                [I]Check For Typo's[/I]","Fix Typo","Search Again")
+            #update = xbmcgui.Dialog().yesno("[COLOR=red][B]CerebroTV Vidics Searcher[/COLOR][/B]","  No Results Found For: [COLOR=red]"+ctitle+"[/COLOR]","                [I]Site maybe busy[/I]" ,"                [I]Check For Typo's[/I]","Fix Typo","Search Again")
             #dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
-            #xbmc.executebuiltin(builtin)
-            builtin = 'XBMC.Notification(Cerebro Vidics,Press Back Or Escape to exit search,5000,'+__icon__+')'
-            if update:
-                SearchResult(vidtype,ctitle)
-            if vidtype == "tv":
-                xbmc.executebuiltin(builtin)
-                SEARCHTV()
-            if vidtype == "movie":
-                xbmc.executebuiltin(builtin)
-                SEARCHMOV()
-            exit()
+            xbmc.executebuiltin(builtin)
+            #builtin = 'XBMC.Notification(Cerebro Vidics,Press Back Or Escape to exit search,5000,'+__icon__+')'
+            #if update:
+            #    SearchResult(vidtype,ctitle)
+            #if vidtype == "tv":
+            #    xbmc.executebuiltin(builtin)
+            #    SEARCHTV()
+            #if vidtype == "movie":
+            #    xbmc.executebuiltin(builtin)
+            #    SEARCHMOV()
+            #exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
         addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,'')
