@@ -55,8 +55,8 @@ playablehost=[
 #'streamin',
 'vidto',
 'vshare',
-#'cloudtime',
-#'picstream',
+#'hulu',
+#'gorillavid',
 'videoweed'
 ]
 
@@ -1341,7 +1341,8 @@ def Seasons(url):
 def INDEX(url,modenum,curmode,vidtype,ctitle):
     #try:
         ctitle = ctitle.replace("%20"," ")
-        ctitle = ctitle.replace("+"," ")
+        #ctitle = ctitle.replace("+"," ")
+        ctitle = ctitle.replace("%25","+")
         xbmc.executebuiltin("Container.SetViewMode(50)")
         link = GetContent(url)
         try:
