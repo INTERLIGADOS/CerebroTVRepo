@@ -31,6 +31,20 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Vidics Movies 2010-2017[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.Showbox/?mode=26&name=Movies%202010-2017&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-Movies%2fGenre-Any%2f2010-2017%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Vidics Movies 2000-2010[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.Showbox/?mode=26&name=Movies%202000-2010&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-Movies%2fGenre-Any%2f2000-2010%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Latest Movies in HD[/COLOR] (BoB)</title>
 <link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2f178.32.217.111%2freloaded%2fthemes%2fmovies%2fmovies6.jpg&iconimage=http%3a%2f%2f178.32.217.111%2freloaded%2ficons%2fMain%2fMain-New-Releases.png&mode=get_list&name=New%20Releases&url=https%3a%2f%2fpastebin.com%2fraw%2fxa8hFS9Z</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>

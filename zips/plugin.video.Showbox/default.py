@@ -248,7 +248,10 @@ def HOME():
         addDir('7 Day TV Schedule','TV Schedule',20,'')
         addDir('Top Movies','http://vidics.unblocked.pl/top/films.html',5,'')
         addDir('Top TV Shows','http://vidics.unblocked.pl/top/tvshows.html',6,'')
-        #addDir('Movies/TV Show by Actor','http://vidics.unblocked.pl/Category-People/Genre-Any/Letter-Any/ByPopularity/1.htm',12,'')
+        addDir('Movies 2010-2017','http://vidics.unblocked.pl/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('Movies 2000-2010','http://vidics.unblocked.pl/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('TV Shows 2010-2017','http://vidics.unblocked.pl/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('TV Shows 2000-2010','http://vidics.unblocked.pl/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,'')
 def LangOption():
         addDir('Show Top Languages','Top',10,'')
         addDir('Show All Languages','All',10,'')
