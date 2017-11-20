@@ -55,9 +55,10 @@ playablehost=[
 #'streamin',
 'vidto',
 'vshare',
-#'hulu',
-#'gorillavid',
-'videoweed'
+#'zstream',
+'veoh',
+'videoweed',
+'youtube'
 ]
 
 def d():

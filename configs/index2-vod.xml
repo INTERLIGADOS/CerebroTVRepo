@@ -431,7 +431,7 @@
 
 <plugin>
 <title>[COLOR pink]She-Ra: Princess of Power[/COLOR]</title>
-<link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126171&tvdb=73015&tvshowtitle=She-Ra%3a%20Princess%20of%20Power&year=1985</link>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20She-Ra%3a%20Princess%20of%20Power%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fshe-ra%3a_princess_of_power&vidtype=tv</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/1/She_Ra_Princess_of_Power-18702.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
