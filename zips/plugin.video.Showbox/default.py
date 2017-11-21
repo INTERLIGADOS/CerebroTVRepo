@@ -1332,7 +1332,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
                     
 def INDEXList(url,modenum,curmode,vidtype):
     #try:
-        xbmc.executebuiltin("Container.SetViewMode(50)")
+        xbmc.executebuiltin("Container.SetViewMode(516)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
