@@ -1681,7 +1681,7 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="4.8"
+  version="4.9"
   name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]CerebroTV Vidics Player[/B][/COLOR]"
   provider-name="Biglad">
   <requires>
@@ -1697,6 +1697,7 @@ Initial release.
 		<!--<import addon="plugin.video.meta" />-->
         <import addon="plugin.video.1channel" optional="true"/>
         <import addon="script.xbmc.unpausejumpback" />
+		<import addon="script.module.thetvdb" version="0.0.1" />
 
   </requires>
   <extension point="xbmc.python.pluginsource"

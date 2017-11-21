@@ -315,9 +315,9 @@ def List4Days():
 def Mirrors(url,name):
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
-  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
-  except: pass
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+  except: pass
+  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
   except: pass
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
@@ -1209,7 +1209,7 @@ def ProfileMovie(url,typename):
                 movielist=re.compile('<a class="green" [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(listcontent[0])
                 for vurl,vname in movielist:
                     vname=html_re.sub('', vname)
-                    addDirContext(vname.strip(),strdomain+vurl,13,"",plot="",vidtype="")
+                    addDirContext(vname.strip(),strdomain+vurl,13,"",plot="",vidtype="movie")
                     
 def ActorProfile(url):
         link = GetContent(url)
@@ -1244,6 +1244,11 @@ def SearchChannelresults(url,searchtext):
 def Episodes(url,name):
     #try:
         link = GetContent(url)
+        metaname=url.split('Serie/', 1)[1]
+        metaname = metaname.replace("-","%20")
+        xbmc.log("Show Name?? "+metaname,2)
+        xbmc.log("Show Season?? "+name,2)
+        epcunter=1
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
@@ -1253,8 +1258,10 @@ def Episodes(url,name):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
                 episodelist=re.compile('<a class="episode" [^s][^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(listcontent2)
                 for (vurl,vname) in episodelist:
+                     xbmc.log("Episode?? "+str(epcunter),2)
+                     epcunter = epcunter+1
                      html_re = re.compile(r'<[^>]+>')
-                     vname=html_re.sub('', vname)
+                     vname=html_re.sub('', vname) 
                      vname = vname.replace("unknown","[I][COLOR grey]No Show Info[/COLOR][/I]")
                      addDir(vname,strdomain+vurl,4,"https://vidics.unblocked.pl/"+str(vimg))
                 break 
@@ -1269,14 +1276,14 @@ def Seasons(url):
         addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
-                addDir(epsodlist[1],url,8,"https://vidics.unblocked.pl/"+str(vimg))
+                addDir(epsodlist[1]+"",url,8,"https://vidics.unblocked.pl/"+str(vimg))
 
 def INDEX(url,modenum,curmode,vidtype,ctitle):
     #try:
         ctitle = ctitle.replace("%20"," ")
         #ctitle = ctitle.replace("+"," ")
         ctitle = ctitle.replace("%25","+")
-        xbmc.executebuiltin("Container.SetViewMode(50)")
+        xbmc.executebuiltin("Container.SetViewMode(55)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
@@ -1309,6 +1316,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)
             vpot=re.compile('"description":"(.+?)"').findall(moveieinfo)[0] 
+            #vpot ="plot??"
             vpot=urllib.unquote_plus(vpot)
             if(vidtype==""):
                  addDir(vtitle,strdomain+vurl,modenum,"https://vidics.unblocked.pl/"+vimg,vpot)
@@ -2186,7 +2194,7 @@ if os.path.isfile(db_dir)==False:
      
 def playVideo(url,name,movieinfo):
         builtin = 'XBMC.Notification(CerebroTV,Link not playable try another,2000,'+__icon__+')' 
-        #url=url.replace("openload.co","oload.stream")	
+        #url=url.replace("openload.co","oload.stream")  
         #url=url.replace(":","&")
         #url=url.replace("https&","https:")
         #url=url.replace("http&","http:")
@@ -2195,10 +2203,10 @@ def playVideo(url,name,movieinfo):
         xbmcPlayer = xbmc.Player()
         try: xbmcPlayer.play(vidurl)
         except:
-			#xbmc.executebuiltin("SendClick(SkipNext)")
-			#xbmc.executebuiltin('xbmc.ActivateWindow(10025)')
-			#xbmc.executebuiltin('SendClick(10025,Down)')
-			xbmc.executebuiltin(builtin)
+            #xbmc.executebuiltin("SendClick(SkipNext)")
+            #xbmc.executebuiltin('xbmc.ActivateWindow(10025)')
+            #xbmc.executebuiltin('SendClick(10025,Down)')
+            xbmc.executebuiltin(builtin)
         
 def RemoveHTML(strhtml):
             html_re = re.compile(r'<[^>]+>')
@@ -2206,6 +2214,30 @@ def RemoveHTML(strhtml):
             return strhtml
 
 def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
+        from xml.etree import ElementTree as ET
+        
+        response="INFO FOR ITEM WILL GO HERE"
+        if vidtype=="movie":
+            try: 
+                ctitle = name.replace(" ","+")
+                response = urllib2.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(ctitle)).read()
+                response=response.split('"overview":"', 1)[1]
+                response=response.split('","release_date"', 1)[0]
+                #response = urllib.quote_plus(response)
+                response=response.decode('string_escape')
+            except: response="Unable to Get Any Data!!!!"
+            
+
+        else:
+            try: 
+                ctitle = name.replace(" ","%20")
+                response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+                response=response.split('<Overview>', 1)[1]
+                response=response.split('</Overview>', 1)[0]
+            except: response="Unable to Get Any Data!!!!"
+
+
+        plot = str(response)
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&vidtype="+vidtype
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
@@ -2219,7 +2251,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         return ok
         
 def addLink(name,url,mode,iconimage,movieinfo=""):
-        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo="+urllib.quote_plus(movieinfo)
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name } )
@@ -2237,6 +2269,7 @@ def addNext(formvar,url,mode,iconimage):
         return ok
         
 def addDir(name,url,mode,iconimage,plot=""):
+        plot="Pair now for best results!!"
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
