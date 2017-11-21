@@ -25,6 +25,7 @@ __icon__ = __addon__.getAddonInfo('icon')
 
 
 __settings__ = xbmcaddon.Addon(id='plugin.video.Showbox')
+xbmc.executebuiltin("Container.SetViewMode(516)")
 home = __settings__.getAddonInfo('path')
 #addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
@@ -245,7 +246,7 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'')
         #addDir('Search Actors','search',15,'')
@@ -321,14 +322,14 @@ def Mirrors(url,name):
   except: pass
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
-  addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+  addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
   #listcontent.sort() 
   for item in listcontent:
             vname=item.contents[0]
             vurl=item["href"]
             if(str(vname).split('.')[0].lower() in playablehost):
                 vname = vname.split('.')[0].lower()
-                name = name.replace("unknown","[/B][I][COLOR grey]No Show Info[/COLOR][/I][B]")
+                name = name.replace("unknown","[I][COLOR grey]No Show Info[/COLOR][/I]")
                 if vname == "thevideo":
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "openload":
@@ -339,7 +340,7 @@ def Mirrors(url,name):
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 if vname == "vidup":
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
-                addLink("[COLOR white][B]"+name+"[/B][/COLOR] [B][COLOR gold]"+vname+"[/COLOR][/B] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
+                addLink("[COLOR white]"+name+"[/COLOR] [COLOR gold]"+vname+"[/COLOR] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
 def add_contextsearchmenu(title, video_type):
@@ -1230,7 +1231,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://vidics.unblocked.pl/"+vimg)
@@ -1252,7 +1253,7 @@ def Episodes(url,name):
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
@@ -1273,7 +1274,7 @@ def Seasons(url):
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1]+"",url,8,"https://vidics.unblocked.pl/"+str(vimg))
@@ -1283,7 +1284,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
         ctitle = ctitle.replace("%20"," ")
         #ctitle = ctitle.replace("+"," ")
         ctitle = ctitle.replace("%25","+")
-        xbmc.executebuiltin("Container.SetViewMode(55)")
+        xbmc.executebuiltin("Container.SetViewMode(516)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
@@ -1311,7 +1312,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             #exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
-        addDir('[COLOR green][B]Pair For Best Results[/B][/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)
@@ -2398,5 +2399,5 @@ elif mode==28:
         SearchResult(url,name)
 elif mode==9898:
         xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')
-
+xbmc.executebuiltin("Container.SetViewMode(516)")
 xbmcplugin.endOfDirectory(int(sysarg))
