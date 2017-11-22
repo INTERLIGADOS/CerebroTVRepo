@@ -19,6 +19,14 @@ import jsunpack
 import xbmc
 
 
+#from thetvdb import TheTvDb
+#self.tvdb_key.decode('base64')
+#tvdb_key = 'MUQ2MkYyRjkwMDMwQzQ0NA=='
+#tvdb = TheTvDb(tvdb_key.decode('base64'))
+
+
+
+
 __addon__ = xbmcaddon.Addon()
 __addonname__ = __addon__.getAddonInfo('name')
 __icon__ = __addon__.getAddonInfo('icon')
@@ -246,7 +254,7 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'')
         #addDir('Search Actors','search',15,'')
@@ -322,7 +330,7 @@ def Mirrors(url,name):
   except: pass
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
-  addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
+  addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
   #listcontent.sort() 
   for item in listcontent:
             vname=item.contents[0]
@@ -331,13 +339,13 @@ def Mirrors(url,name):
                 vname = vname.split('.')[0].lower()
                 name = name.replace("unknown","[I][COLOR grey]No Show Info[/COLOR][/I]")
                 if vname == "thevideo":
-                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                    vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "openload":
-                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                    vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "vshare":
-                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                    vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "flashx":
-                    vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
+                    vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "vidup":
                     vname = vname+" [COLOR lightblue][I](Needs to be pair-ed)[/COLOR] [COLOR red]ZERO BUFFERING![/COLOR][/I] )"
                 addLink("[COLOR white]"+name+"[/COLOR] [COLOR gold]"+vname+"[/COLOR] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
@@ -1231,7 +1239,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://vidics.unblocked.pl/"+vimg)
@@ -1247,37 +1255,67 @@ def Episodes(url,name):
         link = GetContent(url)
         metaname=url.split('Serie/', 1)[1]
         metaname = metaname.replace("-","%20")
-        xbmc.log("Show Name?? "+metaname,2)
-        xbmc.log("Show Season?? "+name,2)
+        #xbmc.log("Show Name?? "+metaname,2)
+        #xbmc.log("Show Season?? "+name,2)
         epcunter=1
+        ctitle = metaname.replace(" ","%20")
+        try:
+            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+            #getid=response.split('<seriesid>', 1)[1]
+            #getid=getid.split('</seriesid>', 1)[0]
+            getmeta=response.split('<Overview>', 1)[1]
+            getmeta=getmeta.split('</Overview>', 1)[0]
+            #getdate=response.split('<FirstAired>', 1)[1]
+            #getdate=getdate.split('</FirstAired>', 1)[0]
+            getimg=response.split('<banner>', 1)[1]
+            getimg=getimg.split('</banner>', 1)[0]
+            #xbmc.log("TITLE?? "+ctitle,2)
+            #getimg=getimg.split('graphical/', 1)[1]
+            #response2 = urllib2.urlopen('http://thetvdb.com/api/GetEpisodeByAirDate.php?apikey=D8EFCAEC3807E882&seriesid='+getid+'&airdate='+getdate.read())
+            #xbmc.log("http://www.thetvdb.com/banners/_cache/"+getimg,2)
+        except :pass
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
-        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
+        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
+        vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
+        addDir('[COLOR gold]'+metaname.replace("%20"," ")+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
                 episodelist=re.compile('<a class="episode" [^s][^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(listcontent2)
                 for (vurl,vname) in episodelist:
-                     xbmc.log("Episode?? "+str(epcunter),2)
+                     #xbmc.log("Episode?? "+str(epcunter),2)
                      epcunter = epcunter+1
                      html_re = re.compile(r'<[^>]+>')
                      vname=html_re.sub('', vname) 
                      vname = vname.replace("unknown","[I][COLOR grey]No Show Info[/COLOR][/I]")
-                     addDir(vname,strdomain+vurl,4,"https://vidics.unblocked.pl/"+str(vimg))
+                     addDir(vname,strdomain+vurl,4,str(vimg),"TEST")
                 break 
         
     #except: pass
     
 def Seasons(url):
+        metaname=url.split('Serie/', 1)[1]
+        name = metaname.replace("-"," ")
+        ctitle = metaname.replace(" ","%20")
+        ctitle = metaname.replace("-","%20")
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
-        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
+        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+        try:
+            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+            getimg=response.split('<banner>', 1)[1]
+            getimg=getimg.split('</banner>', 1)[0]
+            getimg=getimg.split('</banner>', 1)[0]
+            vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
+            #xbmc.log("Show Image "+vimg,2)
+        except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]        
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
-                addDir(epsodlist[1]+"",url,8,"https://vidics.unblocked.pl/"+str(vimg))
+                addDir(epsodlist[1]+"",url,8,str(vimg))
 
 def INDEX(url,modenum,curmode,vidtype,ctitle):
     #try:
@@ -1295,24 +1333,11 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
         if len(vcontent) == 0:
             #xbmc.notification("CerebroTV,Link not playable try another",2000)
             builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000,'+__icon__+')'
-            #dialog = xbmcgui.Dialog()
-            #update = xbmcgui.Dialog().yesno("[COLOR=red][B]CerebroTV Vidics Searcher[/COLOR][/B]","  No Results Found For: [COLOR=red]"+ctitle+"[/COLOR]","                [I]Site maybe busy[/I]" ,"                [I]Check For Typo's[/I]","Fix Typo","Search Again")
-            #dialog.ok("[COLOR=red][B]CerebroTV[/COLOR][/B]", "No Answer From Vidics", "OR",'No Results Found, Try Again..')
             xbmc.executebuiltin(builtin)
             exit()
-            #builtin = 'XBMC.Notification(Cerebro Vidics,Press Back Or Escape to exit search,5000,'+__icon__+')'
-            #if update:
-            #    SearchResult(vidtype,ctitle)
-            #if vidtype == "tv":
-            #    xbmc.executebuiltin(builtin)
-            #    SEARCHTV()
-            #if vidtype == "movie":
-            #    xbmc.executebuiltin(builtin)
-            #    SEARCHMOV()
-            #exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Link',9898,__icon__)
+        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)
@@ -2232,6 +2257,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         else:
             try: 
                 ctitle = name.replace(" ","%20")
+                ctitle = name.replace("-","%20")
                 response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
                 response=response.split('<Overview>', 1)[1]
                 response=response.split('</Overview>', 1)[0]
@@ -2254,8 +2280,11 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
 def addLink(name,url,mode,iconimage,movieinfo=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
         ok=True
+        #TheTvDb().search_series("The20%Punisher")
+        plot = "TEST "+str(name)
+        #xbmc.log("Show Icon? "+iconimage,2)
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
-        liz.setInfo( type="Video", infoLabels={ "Title": name } )
+        liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
         contextMenuItems = []
         liz.addContextMenuItems(contextMenuItems, replaceItems=True)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
@@ -2270,11 +2299,36 @@ def addNext(formvar,url,mode,iconimage):
         return ok
         
 def addDir(name,url,mode,iconimage,plot=""):
-        plot="Pair now for best results!!"
+        metaname="empty"
+        response="empty"
+        #metaname2="empty"
+        if url == "Cerebro":
+            url ="Cerebro/Serie/Cerebro"
+        #plot="Pair now for best results!!"
+        metaname=str(url).split('Serie/', 1)[1]
+        metaname=metaname.replace("-"," ")
+        metaname=str(metaname).split(' Season', 1)[0]
+        if "Cerebro" in url:
+            #xbmc.log("URL "+url,2)
+            metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
+            response=""
+        else:
+            
+            metaname2 = metaname+" "+name
+            try:
+                
+                response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname.replace(" ","%20"))).read()
+                response=response.split('<Overview>', 1)[1]
+                response=response.split('</Overview>', 1)[0]
+                response=" | "+response
+            except: 
+                pass
+        #xbmc.log("NEW DATA THIS ONE "+metaname2,2)
+
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
-        liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
+        liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname2+"[/COLOR]"+response} )
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
 
