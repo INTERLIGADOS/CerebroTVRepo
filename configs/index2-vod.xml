@@ -17,6 +17,34 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]Supergirl[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Supergirl%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fSupergirl-1&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/61/Supergirl-1211053.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Arrow[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Arrow%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2farrow&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/18/Arrow-355267.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]D.C. Legends of Tomorrow[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Legends%20of%20Tomorrow%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fLegends-of-Tomorrow&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/77/Legends_of_Tomorrow-1539336.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Flash 2014[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Flash%c2%a0%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fThe_Flash_(2014)&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/34/The_Flash-679002.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]The Punisher[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Punisher%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fThe-Punisher&vidtype=tv</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/1/No_Poster-1.JPEG</thumbnail>
@@ -150,13 +178,6 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Supergirl[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Supergirl%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fSupergirl-1&vidtype=tv</link>
-<thumbnail>https://vidics.unblocked.pl//static/150/61/Supergirl-1211053.JPEG</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]The First 48[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20First%2048%20&url=http%3a%2f%2fvidics.unblocked.pl%2fTV-Show%2fthe_first_48&vidtype=tv</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/1/The_First_48-18319.JPEG</thumbnail>
@@ -181,13 +202,6 @@
 <title>[COLOR pink]Game of Thrones[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Game%20of%20Thrones%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fgame_of_thrones&vidtype=tv</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/2/Game_of_Thrones-22818.PNG</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Arrow[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Arrow%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2farrow&vidtype=tv</link>
-<thumbnail>https://vidics.unblocked.pl//static/150/18/Arrow-355267.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
@@ -622,5 +636,12 @@
 <title>[COLOR pink]National Geographic: Brain Games[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20National%20Geographic%3a%20Brain%20Games%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fbrain_games&vidtype=tv</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/3/National_Geographic_Brain_Games-41856.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]The Flash[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Flash%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fthe_flash&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_Flash-19720.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
