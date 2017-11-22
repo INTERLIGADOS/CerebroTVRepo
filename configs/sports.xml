@@ -1,37 +1,37 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports [/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports [/COLOR]</title>
 </dir>
  
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]Sports[/COLOR] TV Guide[/COLOR][/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR green]Open Pre Linked [COLOR red]Sports[/COLOR] TV Guide[/COLOR] (Premium Only)</title>
 <link>plugin://script.cerebro.tvguide.open2</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR pink]Sports Channels[/B] (ALL)[/COLOR] ( Premium Only! )</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR pink]Sports Channels (ALL)[/COLOR] ( Premium Only! )</title>
 <link>plugin://plugin.program.super.favourites/?label=[COLOR black]sports[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Csports&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR]Open 3pm KO / PPV Menu[/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR]Open 3pm KO / PPV Menu (Premium Only)</title>
 <link>plugin://plugin.program.super.favourites/?label=[COLOR black]ppv[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Cppv&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR orange]Mega Streams (TODAYS EVENTS)[/B][/COLOR] (Premium Only) - (65 random channels with all the latest sports today)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR orange]Mega Streams (TODAYS EVENTS)[/COLOR] (Premium Only) - (65 random channels with all the latest sports today)</title>
 <link>plugin://plugin.program.super.favourites/?label=[COLOR black]randomstreams[/COLOR]&mode=400&path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5Crandomstreams&sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR]Sports Replays[/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR]Sports Replays</title>
 <link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2freplays.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>

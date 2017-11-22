@@ -21,112 +21,112 @@
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]UK TV GUIDE[/COLOR][/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]UK TV GUIDE[/COLOR] (Premium Only)</title>
 <link>plugin://script.tvguide.cerebrotv.uk</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]USA TV GUIDE[/COLOR][/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]USA TV GUIDE[/COLOR] (Premium Only)</title>
 <link>plugin://script.tvguide.cerebrotv.usa</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports GUIDE[/COLOR][/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports GUIDE[/COLOR] (Premium Only)</title>
 <link>plugin://script.tvguide.cerebrotv.sports</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Open FREE TV Guide[/COLOR][/B] (Free Version)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR green]Open FREE TV Guide[/COLOR] (Free Version)</title>
 <link>plugin://script.cerebro.tvguide.open.free</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR green]Make Your Own InI File For FREE TV Guide[/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR green]Make Your Own InI File For FREE TV Guide[/COLOR]</title>
 <link>plugin://plugin.video.echoini</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <dir>
-<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Live TV[/COLOR][/B] (IPTV)</name>
+<name>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Live TV[/COLOR] (IPTV)</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Live.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]TV Shows OnDemand [/COLOR][/B] (Pair First!!!)</name>
+<name>[COLOR gold]CerebroTV: [/COLOR][COLOR red]TV Shows OnDemand [/COLOR] (Pair First!!!)</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod-tv.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies OnDemand [/COLOR][/B] (Pair First!!!)</name>
+<name>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies OnDemand [/COLOR] (Pair First!!!)</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/vod-movies.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports [/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Sports [/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/sports.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]PPV [/COLOR][/B](Pay Per View)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]PPV [/COLOR](Pay Per View)</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/ppv.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR][/B]</name>
+<name>[COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247menu.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section [/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section [/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/music.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids Corner[/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids Corner[/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Kids.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Retro Games [/COLOR][/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Retro Games [/COLOR] (Premium Only)</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/games.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Andoind APKs [/COLOR][/B] (Premium Only)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Andoind APKs [/COLOR] (Premium Only)</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/apk.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]System Tools [/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]System Tools [/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/tools.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>

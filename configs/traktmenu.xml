@@ -1,19 +1,19 @@
 <plugin>
-<title>[COLOR ghostwhite][B]My Lists (Trakt)[/COLOR][/B]</title>
+<title>[COLOR ghostwhite]My Lists (Trakt)[/COLOR]</title>
 <link>plugin://plugin.video.wargames/?action=tvUserlists</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/userlists.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/userlists.png</fanart>
 </plugin>
 
 <plugin>
-<title>[COLOR ghostwhite][B]My Movies (Trakt)[/COLOR][/B]</title>
+<title>[COLOR ghostwhite]My Movies (Trakt)[/COLOR]</title>
 <link>plugin://plugin.video.wargames/?action=mymovieNavigator</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mymovies.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mymovies.png</fanart>
 </plugin>
 
 <plugin>
-<title>[COLOR ghostwhite][B]My TV Shows (Trakt)[/COLOR][/B]</title>
+<title>[COLOR ghostwhite]My TV Shows (Trakt)[/COLOR]</title>
 <link>plugin://plugin.video.wargames/?action=mytvNavigator</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mytvshows.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/mytvshows.png</fanart>

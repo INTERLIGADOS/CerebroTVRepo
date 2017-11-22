@@ -1,40 +1,40 @@
 <dir>
-<name>[COLOR ghostwhite][B]NEW MOVIES[/COLOR][/B]</name>
+<name>[COLOR ghostwhite]NEW MOVIES[/COLOR]</name>
 <link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-newmovies.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[COLOR ghostwhite][B]MOVIE FAVORITES - REQUESTS[/COLOR][/B]</name>
+<name>[COLOR ghostwhite]MOVIE FAVORITES - REQUESTS[/COLOR]</name>
 <link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-movierequests.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[COLOR ghostwhite][B]TV SHOW FAVORITES - REQUESTS[/COLOR][/B]</name>
+<name>[COLOR ghostwhite]TV SHOW FAVORITES - REQUESTS[/COLOR]</name>
 <link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-favoritetvshows.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[COLOR ghostwhite][B]KIDS MOVIES[/COLOR][/B]</name>
+<name>[COLOR ghostwhite]KIDS MOVIES[/COLOR]</name>
 <link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kidsmovies.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[COLOR ghostwhite][B]KIDS TV SHOWS[/COLOR][/B]</name>
+<name>[COLOR ghostwhite]KIDS TV SHOWS[/COLOR]</name>
 <link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kidstv.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>
 </dir>
 
 <dir>
-<name>[COLOR ghostwhite][B]KIDS YOUTUBE SHOWS[/COLOR][/B]</name>
+<name>[COLOR ghostwhite]KIDS YOUTUBE SHOWS[/COLOR]</name>
 <link>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/zipss/colt-kids-youtube.xml</link>
 <thumbnail>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/deadphoenix.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/kisakuldlanor/suomynona/master/newart/coltgunfanart.jpg</fanart>

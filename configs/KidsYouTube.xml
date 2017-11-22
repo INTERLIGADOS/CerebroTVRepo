@@ -1,20 +1,20 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids YouTube[/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids YouTube[/COLOR]</title>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Aarons Picks[/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Aarons Picks[/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/aaronut.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Kiras Picks[/COLOR][/B] (Coming Soon)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Kiras Picks[/COLOR] (Coming Soon)</title>
 </dir>
 
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]Sams Picks[/COLOR][/B] (Coming Soon)</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Sams Picks[/COLOR] (Coming Soon)</title>
 </dir>
 
 

@@ -1,5 +1,5 @@
 <dir>
-<title>[B][COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR][/B]</title>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR]</title>
 </dir>
 
 <dir>
@@ -17,7 +17,7 @@
 </dir>
 
 <plugin>
-<title>[B][COLOR pink]CerebroTV: 24/7 On Deamnd [/COLOR][/B]</title>
+<title>[COLOR pink]CerebroTV: 24/7 On Deamnd [/COLOR]</title>
 <link>plugin://plugin.video.kratosfucksducky/?action=directory&content=addons&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2f001-247-main.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
