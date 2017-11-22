@@ -256,7 +256,7 @@ def DeleteFav(name,url):
 def HOME():
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         addDir('Search Movies','search',9,'')
-        addDir('Search TV Shows','search',10,'')
+        addDir('Search TV Shows','search',10,'','')
         #addDir('Search Actors','search',15,'')
         addDir('Recently Added Movies','http://vidics.unblocked.pl/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
         addDir('Recently Added TV Shows','http://vidics.unblocked.pl/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
@@ -2299,16 +2299,27 @@ def addNext(formvar,url,mode,iconimage):
         return ok
         
 def addDir(name,url,mode,iconimage,plot=""):
+        xbmc.log("Show Icon? "+url,2)
         metaname="empty"
         response="empty"
         #metaname2="empty"
+        if url == "search":
+            url ="Cerebro/Serie/Cerebro"
         if url == "Cerebro":
             url ="Cerebro/Serie/Cerebro"
+        if  url == " ":
+            url ="Cerebro/Serie/Cerebro"
         #plot="Pair now for best results!!"
-        metaname=str(url).split('Serie/', 1)[1]
+        try:
+            metaname=str(url).split('Serie/', 1)[1]
+        except: metaname = "DONT SHOW"
         metaname=metaname.replace("-"," ")
         metaname=str(metaname).split(' Season', 1)[0]
         if "Cerebro" in url:
+            #xbmc.log("URL "+url,2)
+            metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
+            response=""
+        elif "DONT SHOW" in metaname:
             #xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
