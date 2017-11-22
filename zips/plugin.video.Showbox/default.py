@@ -2258,9 +2258,11 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
             try: 
                 ctitle = name.replace(" ","%20")
                 ctitle = name.replace("-","%20")
-                response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
-                response=response.split('<Overview>', 1)[1]
-                response=response.split('</Overview>', 1)[0]
+                #xbmc.log("Show Icon? "+ctitle,2)
+                if ("vidics.unblocked.pl" not in ctitle) or ("Cerebro" not in ctitle):
+                    response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+                    response=response.split('<Overview>', 1)[1]
+                    response=response.split('</Overview>', 1)[0]
             except: response="Unable to Get Any Data!!!!"
 
 
@@ -2281,7 +2283,7 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
         ok=True
         #TheTvDb().search_series("The20%Punisher")
-        plot = "TEST "+str(name)
+        plot = str(name)
         #xbmc.log("Show Icon? "+iconimage,2)
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
@@ -2299,7 +2301,7 @@ def addNext(formvar,url,mode,iconimage):
         return ok
         
 def addDir(name,url,mode,iconimage,plot=""):
-        xbmc.log("Show Icon? "+url,2)
+        #xbmc.log("Show Icon? "+url,2)
         metaname="empty"
         response="empty"
         #metaname2="empty"
