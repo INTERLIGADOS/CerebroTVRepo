@@ -1914,7 +1914,7 @@ Initial release.
   </extension>
 </addon>
 
-<addon id="plugin.video.ufc-finest" name="Planet MMA" version="3.4" provider-name="DK">
+<addon id="plugin.video.ufc-finest" name="Planet MMA" version="3.5" provider-name="DK">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="3.3.0"/>
@@ -2134,6 +2134,27 @@ Removed: Nudeflix</news>
   </extension>
 </addon>
 
+
+<addon id="plugin.video.wwe-on-demand" name="Wrestling On Demand" version="5.02" provider-name="Bear and Jay">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.urlresolver"  version="4.0.06"/>
+    <import addon="script.module.liveresolver" version="0.1.24"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="plugin.video.youtube" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Home Of Wrestling On Demand</summary>
+    <description lang="en">Home Of Wrestling On Demand </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.xxx-o-dus"
 	     name="XXX-O-DUS"
 	     version="3.00.034"
@@ -2298,6 +2319,20 @@ Skin and code for skin by Demonstratorz</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>AresProject.</summary>
 		<description>Ares-Project Addons Source. Visit Us At https://ares-project.uk</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+
+<addon id="repository.bear" name="PBear Repository" version="1.00" provider-name="PBear">
+	<extension point="xbmc.addon.repository" name="The Community Repository">
+		<info compressed="false">http://repo.pbear.srve.io/addons.xml</info>
+		<checksum>http://repo.pbear.srve.io/addons.xml.md5</checksum>
+		<datadir zip="true">http://repo.pbear.srve.io/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>PBear Repo</summary>
+		<description>Repo</description>
 		<platform>all</platform>
 	</extension>
 </addon>

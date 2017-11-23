@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.ufc-finest" name="Planet MMA" version="3.5" provider-name="DK">
+
+<addon id="plugin.video.wwe-on-demand" name="Wrestling On Demand" version="5.02" provider-name="Bear and Jay">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.urlresolver"  version="3.0.32"/>
+    <import addon="script.module.urlresolver"  version="4.0.06"/>
     <import addon="script.module.liveresolver" version="0.1.24"/>
     <import addon="script.common.plugin.cache" version="2.5.2"/>
-
     <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="plugin.video.youtube" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Planet MMA</summary>
-    <description lang="en">Planet MMA - All your MMA needs.</description>
+    <summary lang="en">Home Of Wrestling On Demand</summary>
+    <description lang="en">Home Of Wrestling On Demand </description>
     <platform>all</platform>
   </extension>
 </addon>
+

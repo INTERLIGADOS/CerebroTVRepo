@@ -4,43 +4,53 @@ import base64
 from metahandler import metahandlers
 from resources.libs import dom_parser
 
-addon_id        = 'plugin.video.ufc-finest'
+addon_id        = 'plugin.video.wwe-on-demand'
 addon           = Addon(addon_id, sys.argv)
-AddonTitle          = '[COLOR red]Planet[/COLOR] [COLOR white]MMA[/COLOR]'
+AddonTitle          = '[COLOR gold]Wrestling On Demand[/COLOR]'
 selfAddon       = xbmcaddon.Addon(id=addon_id)
-PLEXUS_PATH         = xbmc.translatePath('special://home/addons/program.plexus')
 fanart          = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
 fanarts         = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
 icon            = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 DATA_FOLDER         = xbmc.translatePath(os.path.join('special://profile/addon_data/' , addon_id))
-searchicon      = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'search.jpg'))
-newicon         = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'whatsnew.jpg'))
-nextpage        = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'next.png'))
-realdebrid      = xbmc.translatePath(os.path.join('http://i.imgur.com/uSSYjMb.png'))
+searchicon      = xbmc.translatePath(os.path.join('http://i.imgur.com/IjZVdx4.jpg'))
+newicon         = xbmc.translatePath(os.path.join('http://i.imgur.com/MTQaMAw.jpg'))
+schedule        = xbmc.translatePath(os.path.join('http://i.imgur.com/0kCVgKe.jpg'))
+nextpage        = xbmc.translatePath(os.path.join('http://i.imgur.com/sln65bN.jpg'))
+realdebrid      = xbmc.translatePath(os.path.join('http://i.imgur.com/4L4wFpm.jpg'))
 sd_path         = xbmc.translatePath(os.path.join('special://home/addons/', 'plugin.video.sportsdevil'))
 dp                  = xbmcgui.DialogProgress()
 REDDIT_FILE         = xbmc.translatePath(os.path.join(DATA_FOLDER, 'reddit.xml'))
 PLEXUS_PATH         = xbmc.translatePath('special://home/addons/program.plexus')
-baseurl         = 'http://www.lookingglass.rocks/detectivekodi/mma/ufcmain.xml'
+baseurl         = 'http://wod.pbear.seedr.io/base.xml'
 ytpl            = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId='
 ytpl2           = '&maxResults=50&key=AIzaSyAd-YEOqZz9nXVzGtn3KWzYLbLaajhqIDA'
 ytplpg1         = 'https://www.googleapis.com/youtube/v3/playlistItems?pageToken='
 ytplpg2         = '&part=snippet&playlistId='
 ytplpg3         = '&maxResults=50&key=AIzaSyAd-YEOqZz9nXVzGtn3KWzYLbLaajhqIDA'
+search_show     = selfAddon.getSetting('search')
 adultpass       = selfAddon.getSetting('password')
 metaset         = selfAddon.getSetting('enable_meta')
-messagetext     = 'http://www.lookingglass.rocks/detectivekodi/mma/info.xml'
-startinfo       = 'http://www.lookingglass.rocks/detectivekodi/mma/startinfo.xml'
-SEARCH_LIST      = 'http://www.lookingglass.rocks/detectivekodi/mma/search.xml'
+news     = 'http://wod.pbear.seedr.io/news.txt'
+news2     = 'http://wod.pbear.seedr.io/news2.txt'
+messagetext     = 'http://wod.pbear.seedr.io/info.xml'
+startinfo       = 'http://wod.pbear.seedr.io/startinfo.xml'
+wweschedule      = 'http://wod.pbear.seedr.io/schedule.xml'
+requests    = 'http://wod.pbear.seedr.io/requests.xml'
+SEARCH_LIST      = 'http://wod.pbear.seedr.io/search.xml'
+list = urllib2.urlopen(news).read().splitlines()
+results = urllib2.urlopen(news2).read()
 dialog          = xbmcgui.Dialog()
                                                                
 def GetMenu():
     popup()
-    xbmc.executebuiltin('Container.SetViewMode(500)')
+    xbmc.executebuiltin('Container.SetViewMode(55)')
     url = baseurl
-    addDir('[B][COLOR white]Whats[/COLOR][/B] [B][COLOR red]New[/COLOR][/B]',url,10,newicon,fanarts)
-    addDir('[B][COLOR red]S[/COLOR][/B][B][COLOR white]earch[/COLOR][/B]',url,5,searchicon,fanarts)        
-    addItem('[B][COLOR white]'+'Real Debrid Login'+'[/COLOR]''[/B]','url',16,realdebrid,fanarts)
+    addDir('[B][COLORsnow] --- Whats New --- [/COLOR][/B]',url,10,newicon,fanarts)
+    addDir('[B][COLORsnow] --- Requests & Issues --- [/COLOR][/B]',url,17,icon,fanarts)    
+    addDir('[B][COLORsnow] --- PPV Schedule --- [/COLOR][/B]',url,11,schedule,fanarts)
+    addDir('[B][COLORsnow] --- Search ---[/COLOR][/B]',url,5,searchicon,fanarts)        
+    addItem('[B][COLORsnow]'+' --- URLResolver Settings ---'+'[/COLOR]''[/B]','url',16,realdebrid,fanarts)
+    addLink('[B][COLOR gold] ------ WELCOME TO WRESTLING ON DEMAND ------ [/COLOR][/B]',url,999,icon,fanarts)
     link=open_url(baseurl)
     match= re.compile('<item>(.+?)</item>').findall(link)
     for item in match:
@@ -57,12 +67,6 @@ def GetMenu():
                     fanart=re.compile('<fanart>(.+?)</fanart>').findall(item)[0]
                     url=re.compile('<playlist>(.+?)</playlist>').findall(item)[0]
                     addDir(name,url,43,iconimage,fanart)
-            elif '<mma_openload>' in item:
-                    name=re.compile('<title>(.+?)</title>').findall(item)[0]
-                    iconimage=re.compile('<thumbnail>(.+?)</thumbnail>').findall(item)[0]            
-                    fanart=re.compile('<fanart>(.+?)</fanart>').findall(item)[0]
-                    url=re.compile('<mma_openload>(.+?)</mma_openload>').findall(item)[0]
-                    addDir(name,url,13,iconimage,fanart)
             elif "<reddit>" in item:
                     name=re.compile('<title>(.+?)</title>').findall(item)[0]
                     url=re.compile('<reddit>(.+?)</reddit>').findall(item)[0]
@@ -87,6 +91,12 @@ def GetMenu():
                     iconimage=re.compile('<thumbnail>(.+?)</thumbnail>').findall(item)[0]
                     fanart=re.compile('<fanart>(.+?)</fanart>').findall(item)[0]
                     addDir(name,url,322,iconimage,fanart,'')                     
+            elif '<dxtv>' in item:
+                        name=re.compile('<title>(.+?)</title>').findall(item)[0]
+                        iconimage=re.compile('<thumbnail>(.+?)</thumbnail>').findall(item)[0]            
+                        fanart=re.compile('<fanart>(.+?)</fanart>').findall(item)[0]
+                        url=re.compile('<dxtv>(.+?)</dxtv>').findall(item)[0]
+                        addDir(name,url,13,iconimage,fanart)
             if '<sportsdevil>' in item:
                     links=re.compile('<sportsdevil>(.+?)</sportsdevil>').findall(item)
                     if len(links)==1:
@@ -129,10 +139,7 @@ def GetMenu():
                                     addLink(name,url2,3,iconimage,fanart)
         except:pass
         view(link)
-
-
-		
-        
+    addLink('[B][COLOR mediumseagreen] ----------------     Version 5.00     ---------------- [/COLOR][/B]',url,999,icon,fanarts)      
         
     #view(link)
 def CLEANUP(text):
@@ -167,7 +174,7 @@ def popup():
                 compfile = r.read()       
                 if compfile == message:pass
                 else:
-                        showText('[B][COLOR white]IMPORTANT[/COLOR] [COLOR red]NEWS[/COLOR] [COLOR white]AND[/COLOR] [COLOR red]INFO[/COLOR][/B]', message)
+                        showText('[B][COLOR gold]IMPORTANT NEWS AND INFO[/COLOR][/B]', message)
                         text_file = open(comparefile, "w")
                         text_file.write(message)
                         text_file.close()
@@ -325,8 +332,22 @@ def NEW():
         message=open_url2(messagetext)
         if len(message)>1:
                 path = xbmcaddon.Addon().getAddonInfo('path')
-                showText('[B][COLOR white]Whats[/COLOR] [COLOR red]New[/COLOR][/B]', message)
+                showText('[B][COLOR gold]Whats New[/COLOR][/B]', message)
                 quit()
+
+def WWESCHEDULE():
+        message=open_url2(wweschedule)
+        if len(message)>1:
+                path = xbmcaddon.Addon().getAddonInfo('path')
+                showText('[B][COLORsnow]WWE SCHEDULE[/COLOR][/B]', message)
+                quit()
+
+def REQUESTS():
+        message=open_url2(requests)
+        if len(message)>1:
+                path = xbmcaddon.Addon().getAddonInfo('path')
+                showText('[B][COLORsnow]REQUESTS & ISSUES[/COLOR][/B]', message)
+                quit()            
 
 def DXTV_CATS(url):
 
@@ -369,38 +390,6 @@ def DXTV_LINKS(name,url):
             else:
                 PLAYLINK(name,streamurl[select],icon)
 
-def CALANDER():
-
-    items = json.loads(open_url('http://calendar.ufc.com/unitedkingdom/EventsList?eventIds=&externalEventIds='))
-
-    if items: 
-        for entry in items['DataBag']:
-                if "Name" in entry:
-                    name = entry['Name'].encode('utf-8')
-                else:
-                    name = "No Name Found"
-                if "StartDateTime" in entry:
-                    time = entry['StartDateTime'].encode('utf-8')
-                else:
-                    time = "No Name Found"
-
-                a,b = time.split('T')
-                f = a.split('-')
-                a = ''
-                for i in reversed(f):
-                    a = a + i + '-'    
-                a = a.rstrip('-')
-                f = b.split(':')
-                b = ''
-                for i in f[:-1]:
-                    b = b + i + ':'    
-                b = b.rstrip(':')                               
-                time = ('%s GMT - %s' % (b,a))
-                name = name.replace('\xf0\x9f\x91\x8a  ','')
-                display =  ('[B][COLOR white]%s[/COLOR] | [COLOR red]%s[/COLOR][/B]' % (name,time)) 
-                addLink(display,'url',999,cal_icon,fanarts)
-                
-
 def REDDIT_MAIN():
 
     xbmc.executebuiltin("ActivateWindow(busydialog)")
@@ -420,7 +409,7 @@ def REDDIT_MAIN():
                 url=re.compile('<url>(.+?)</url>').findall(item)[0]
                 cm=[]
                 cm.append(('Remove from list','XBMC.RunPlugin(%s?mode=323&name=%s&url=%s)'% (sys.argv[0],name,url)))
-                addDir('[COLOR white]' + name.encode('utf-8') + '[/COLOR]',url.encode('utf-8'),319,iconimage,fanart,'',cm)
+                addDir('[COLOR snow]' + name.encode('utf-8') + '[/COLOR]',url.encode('utf-8'),319,iconimage,fanart,'',cm)
         else: addLink('No user added Reddits detected.','url',999,iconimage,fanart)
     xbmc.executebuiltin("Dialog.Close(busydialog)")
 
@@ -467,7 +456,7 @@ def REDDIT_ADD():
 
 def REDDIT_SUGGESTED():
 
-    r = open_url('http://www.lookingglass.rocks/detectivekodi/mma/suggested.xml')
+    r = open_url('http://wod.pbear.seedr.io/suggested.xml')
     
     r = re.compile('<link>(.+?)</link>').findall(r)
 
@@ -489,7 +478,7 @@ def REDDIT_GET(url):
         namelist = []; urllist = []; scorelist = []; commentlist = []; combinedlist = []
         try:
             sitename = re.compile('<h1 class="hover redditname">.+?>(.+?)<\/a>').findall(r)[0]
-            addLink('[COLORwhite][B]Welcome to the ' + sitename.title() + ' Reddit![/B][/COLOR]','url',999,icon,fanart)
+            addLink('[COLORsnow][B]Welcome to the ' + sitename.title() + ' Reddit![/B][/COLOR]','url',999,icon,fanart)
         except: pass
         
         r = dom_parser.parse_dom(r, 'div', {'class': re.compile('\sthing\sid')})
@@ -516,7 +505,7 @@ def REDDIT_GET(url):
             #tup = sorted(combinedlist, key=lambda x: int(x[0]),reverse=True)
             for score,title,url,comments in combinedlist:
                 title = title.replace('&amp;','&')
-                addDir('[COLORwhite][B]' + score + '[/B][/COLOR] - [COLOR white]' + title + '[/COLOR] - ' + comments + ' Comments',url,319,icon,fanarts)
+                addDir('[COLORsnow][B]' + score + '[/B][/COLOR] - [COLOR white]' + title + '[/COLOR] - ' + comments + ' Comments',url,319,icon,fanarts)
         else: addLink('No Sub Reddits Found','url',999,icon,fanart)
 
     else:
@@ -547,14 +536,14 @@ def REDDIT_GET(url):
                     if not 'reddit' in i:
                         if not 'http' in i:
                             if os.path.exists(PLEXUS_PATH): 
-                                name = '[COLORwhite][B]Link ' + str(s) + '[/B][/COLOR] - Acestream: ' + i
+                                name = '[COLORsnow][B]Link ' + str(s) + '[/B][/COLOR] - Acestream: ' + i
                                 namelist.append(name)
                                 if not i in urllist: urllist.append('acestream://'+i)
                                 countlist.append('0')
                                 combined = list(zip(countlist,namelist,urllist))
                                 s += 1
                         else: 
-                            name = '[COLORwhite][B]Link ' + str(s) + '[/B][/COLOR] - ' + i
+                            name = '[COLORsnow][B]Link ' + str(s) + '[/B][/COLOR] - ' + i
                             namelist.append(name)
                             if not i in urllist: urllist.append(i)
                             countlist.append('1')
@@ -570,13 +559,13 @@ def REDDIT_GET(url):
             for count,name,url in tup:
                 if count == '0': 
                     if ace_got == 0:
-                        addLink('[COLOR white][B]| Acestream Links | [I]Most Recent At Bottom[/I] |[/B][/COLOR]','url',999,icon,fanart)
+                        addLink('[COLOR yellow][B]-===| Acestream Links | [I]Most Recent At Bottom[/I] |===-[/B][/COLOR]','url',999,icon,fanart)
                         ace_got = 1
                     addLink(name.encode('utf-8'),url,318,icon,fanart)
                 else:
                     if http_got == 0:
 
-                        addLink('[COLOR white][B]| Web Links | [I]Most Recent At Bottom[/I] |[/B][/COLOR]','url',999,icon,fanart)
+                        addLink('[COLOR yellow][B]-===| Web Links | [I]Most Recent At Bottom[/I] |===-[/B][/COLOR]','url',999,icon,fanart)
                         
                         http_got = 1
                     addLink(name.encode('utf-8'),url,318,icon,fanart)
@@ -584,7 +573,7 @@ def REDDIT_GET(url):
 def REDDIT_REMOVE(name,url):
 
     try:
-        name = name.replace('[COLORwhite]','').replace('[/COLOR]','')
+        name = name.replace('[COLORsnow]','').replace('[/COLOR]','')
         a=open(REDDIT_FILE).read()
         b=a.replace('<item>\n<name>'+str(name)+'</name>\n<url>'+str(url)+'</url>\n</item>','')
         f=open(REDDIT_FILE, mode='w')
@@ -596,7 +585,7 @@ def REDDIT_REMOVE(name,url):
         
 def EVENT_REDDIT():
 
-    r = open_url('https://pastebin.com/raw/6w0TPFBx')
+    r = open_url('http://wod.pbear.seedr.io/redditevent.xml')
     r = re.compile('<link>(.+?)</link>').findall(r)
     
     checks = ['acestream','href']
@@ -630,14 +619,14 @@ def EVENT_REDDIT():
                     if not 'reddit' in i:
                         if not 'http' in i:
                             if os.path.exists(PLEXUS_PATH): 
-                                name = '[COLORwhite][B]Link ' + str(s) + '[/B][/COLOR] - Acestream: ' + i
+                                name = '[COLORsnow][B]Link ' + str(s) + '[/B][/COLOR] - Acestream: ' + i
                                 namelist.append(name)
                                 urllist.append('acestream://'+i)
                                 countlist.append('0')
                                 combined = list(zip(countlist,namelist,urllist))
                                 s += 1
                         else: 
-                            name = '[COLORwhite][B]Link ' + str(s) + '[/B][/COLOR] - ' + i
+                            name = '[COLORsnow][B]Link ' + str(s) + '[/B][/COLOR] - ' + i
                             namelist.append(name)
                             urllist.append(i)
                             countlist.append('1')
@@ -654,21 +643,21 @@ def EVENT_REDDIT():
                 if count == '0': 
                     if ace_got == 0:
 
-                        addLink('[COLORwhite][B]| Acestream Links | [I]Most Recent At Bottom[/I] |[/B][/COLOR]','url',999,icon,fanart)
+                        addLink('[COLORyellow][B]-===| Acestream Links | [I]Most Recent At Bottom[/I] |===-[/B][/COLOR]','url',999,icon,fanart)
                         
                         ace_got = 1
                     addLink(name.encode('utf-8'),url,318,icon,fanart)
                 else:
                     if http_got == 0:
                         
-                        addLink('[COLORwhite][B]| Web Links | [I]Most Recent At Bottom[/I] |[/B][/COLOR]','url',999,icon,fanart)
+                        addLink('[COLORyellow][B]-===| Web Links | [I]Most Recent At Bottom[/I] |===-[/B][/COLOR]','url',999,icon,fanart)
                         
                         http_got = 1
                     addLink(name.encode('utf-8'),url,318,icon,fanart)
 
 def REDDIT_PLAYER(name,url,iconimage):
 
-    dp.create(AddonTitle,"[COLORred]Opening link...[/COLOR]",'[COLOR white]Please wait...[/COLOR]','')   
+    dp.create(AddonTitle,"[COLORsnow]Loading Content... [/COLOR]",'[COLOR aqua]Enjoy Your Show.. [/COLOR]','')   
     dp.update(0)
     import urlresolver
     import liveresolver
@@ -695,7 +684,7 @@ def REDDIT_PLAYER(name,url,iconimage):
     liz.setPath(url)
     dp.close()
     xbmc.Player ().play(url, liz, False)
-
+    quit()
 def open_url_m3u(url):
 
     try:
@@ -714,7 +703,7 @@ def open_url_m3u(url):
             quit()
 
 def SEARCH():
-	keyb = xbmc.Keyboard('', '[B][COLOR white]Search[/COLOR] [COLOR red]Planet[/COLOR] [COLOR white]MMA[/COLOR][/B]')
+	keyb = xbmc.Keyboard('', '[COLOR gold]Search[/COLOR]')
 	keyb.doModal()
 	if (keyb.isConfirmed()):
 		searchterm=keyb.getText()
@@ -766,9 +755,6 @@ def SEARCH():
 		
 def GETMULTI(name,url,iconimage):
     
-	dp.create(AddonTitle,"[COLORred]Opening Link...[/COLOR]",'[COLORwhite][/COLOR]','')           
-	dp.update(0)
-    
 	streamurl=[]
 	streamname=[]
 	streamicon=[]
@@ -791,6 +777,8 @@ def GETMULTI(name,url,iconimage):
 	name='[COLOR red]'+name+'[/COLOR]'
 	dialog = xbmcgui.Dialog()
 	select = dialog.select(name,streamname)
+	dp.create(AddonTitle,"[COLORsnow]Loading Content... [/COLOR]",'[COLOR aqua]Enjoy Your Show.. [/COLOR]','')        
+	dp.update(0)
 	if select < 0:
 		quit()
 	else:
@@ -832,6 +820,8 @@ def GETMULTI_SD(name,url,iconimage):
     name='[COLOR red]'+name+'[/COLOR]'
     dialog = xbmcgui.Dialog()
     select = dialog.select(name,streamname)
+    dp.create(AddonTitle,"[COLORsnow]Loading Content... [/COLOR]",'[COLOR aqua]Enjoy Your Show.. [/COLOR]','')        
+    dp.update(0)    
     if select < 0:
         quit()
     else:
@@ -847,7 +837,10 @@ def GETMULTI_SD(name,url,iconimage):
         xbmc.Player().play(url)
 
 def PLAYSD(name,url,iconimage):
-    
+        
+        dp.create(AddonTitle,"[COLORsnow]Loading Content... [/COLOR]",'[COLOR aqua]Enjoy Your Show.. [/COLOR]','')        
+        dp.update(0)
+	
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage); liz.setInfo( type="Video", infoLabels={ "Title": name } )
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
@@ -855,7 +848,7 @@ def PLAYSD(name,url,iconimage):
         
 def PLAYLINK(name,url,iconimage):
 	
-    dp.create(AddonTitle,"[COLORred]Opening Link...[/COLOR]",'[COLORwhite][/COLOR]','')   
+    dp.create(AddonTitle,"[COLORsnow]Loading Content... [/COLOR]",'[COLOR aqua]Enjoy Your Show.. [/COLOR]','')        
     dp.update(0)
     
     if 'youtube.com/playlist' in url:
@@ -991,6 +984,9 @@ def addLinkMeta(name,url,mode,iconimage,itemcount,isFolder=False):
 	else: liz.setProperty('fanart_image', fanart)
 	ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isFolder,totalItems=itemcount)
 	return ok
+
+
+
 	
 def addDir(name,url,mode,iconimage,fanart,description=''):
     u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&description="+str(description)+"&fanart="+urllib.quote_plus(fanart)
@@ -1044,7 +1040,7 @@ def YOUTUBE_PLAYLIST_PLAY(url):
         if not 'http' in url:
             if not 'Deleted video' in title:
                 url1 = 'https://www.youtube.com' + url
-                addLink("[COLORyellow][B]" + title + "[/B][/COLOR]",url1,2,icon,fanart)
+                addLink("[COLOR yellow][B]" + title + "[/B][/COLOR]",url1,2,icon,fanart)
                 
 # def YOUTUBE_CHANNEL(url):
 
@@ -1072,23 +1068,7 @@ def YOUTUBE_PLAYLIST_PLAY(url):
         # icon = re.compile ('data-thumb="(.+?)"').findall(links)[0].replace('&amp;', '&')
         # addLink(title,url,2,icon,fanart)
         
-def TEAMNEWS():
 
-    url = 'http://www.worldfootball.net/teams/liverpool-fc/'
-    link = open_url(url).replace('\n', '').replace('\r','').replace('\t','')
-    match = re.compile('<div class="wfb-news-medium">(.+?)<script type="text/javascript">').findall(link)[0]
-    grab = re.compile ('<img src="(.+?)".+?<a href="(.+?)" title="(.+?)"').findall(match)
-    for icon,url,title in grab:
-        if not 'http' in url:
-            url = 'http://www.worldfootball.net' + url
-            addLink("[COLORyellow][B]" + title + "[/B][/COLOR]",url,19,icon,fanarts)
-
-def READNEWS(url):
-
-    link = open_url(url)
-    match = re.compile('<div class="wfb-news-content">(.+?)</div>').findall(link)[0].replace('<p>', '').replace('</p>', '').replace('"', '')
-    heading = AddonTitle
-    showText(heading,match)
     
 def showText(heading, text):
 
@@ -1170,7 +1150,12 @@ except: pass
 try: fanart=urllib.unquote_plus(params["fanart"])
 except: pass
  
-if mode==None or url==None or len(url)<1: GetMenu()
+if mode==None or url==None or len(url)<1:	
+    if not search_show == '' and search_show in list: 
+        GetMenu()			
+    else:
+        dialog.ok('WRESTLING ON DEMAND', results, '')
+
 elif mode==1:GetContent(name,url,iconimage,fanart)
 elif mode==2:PLAYLINK(name,url,iconimage)
 elif mode==3:GETMULTI(name,url,iconimage)
@@ -1181,13 +1166,13 @@ elif mode==7:PLAYVIDEO(url)
 elif mode==8:GETMULTI_SD(name,url,iconimage)
 elif mode==9:SHOW_PICTURE(url)
 elif mode==10:NEW()
-
+elif mode==11:WWESCHEDULE()
 elif mode==12:GET_REGEX(name,url,iconimage)
 elif mode==13:DXTV_CATS(url)
 elif mode==15:DXTV_LINKS(name,url)
 
 elif mode==16:resolver_settings()
-elif mode==17:CALANDER()
+elif mode==17:REQUESTS()
 elif mode==42:YOUTUBE_PLAYLIST(url)
 elif mode==43:YOUTUBE_PLAYLIST_PLAY(url)
 elif mode==71:YOUTUBE_CHANNEL(url)
