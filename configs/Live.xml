@@ -16,13 +16,6 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<plugin>
-<title>[COLOR gold]CerebroTV: [/COLOR][COLOR pink]UK,USA Direct IPTV[/COLOR] (Premium Only)</title>
-<link>plugin://plugin.video.playlistLoader/?cache=1&iconimage&index=1&logos&mode=2&move=0&name=%5bCOLOR%20blue%5d%5bCerebro%20IPTV%20Lists%5d%5b%2fCOLOR%5d&url=https%3a%2f%2fraw.githubusercontent.com%2fbiglad%2fCerebroTVRepo%2fmaster%2fconfigs%2fiptv.m3u</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
 <dir>
 <title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Kids Corner[/COLOR]</title>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/Kids.xml</link>
