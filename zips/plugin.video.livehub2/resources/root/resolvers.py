@@ -146,7 +146,7 @@ def mobdroresolve(url):
     to_hash = "{0}{1}/hls/{2}".format(token,time_stamp,url)
     out_hash = b64encode(md5.new(to_hash).digest()).replace("+", "-").replace("/", "_").replace("=", "")
     #servers = ['185.152.64.236','185.102.219.72','185.102.219.67','185.102.218.56','185.59.222.232']
-    servers = ['185.102.219.72','185.102.219.67','185.102.218.56','185.59.222.232']
+    servers = ['185.102.219.67','185.102.218.56','185.59.222.232']
     server  = random.choice(servers)
     xbmc.log("Mod Server: "+server,2)
     
