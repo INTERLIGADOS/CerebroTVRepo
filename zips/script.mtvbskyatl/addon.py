@@ -35,10 +35,10 @@ def menuoptions():
 
 
 def function1():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.livehub/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSky%20Atlantic%20Ireland%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2feabd32acc39d4bd72a4ad687090aef8f.m3u8",return)')
+    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.216.192:7071/routernew/SkyAtlantic/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5DSkyAtlantic%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F69526_skyatl1.jpg&description=SkyAtlantic+SkyAtlantic+SkyAtlantic+SkyAtlantic+SkyAtlantic")')
 
 def function2():
-    xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.livehub/?description=SkyAtlantic%20SkyAtlantic%20SkyAtlantic%20SkyAtlantic%20SkyAtlantic&iconimage=http%3a%2f%2fswiftstreamz.com%2fSwiftStream%2fimages%2fthumbs%2f69526_skyatl1.jpg&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSkyAtlantic%5b%2fCOLOR%5d%5b%2fB%5d&url=snappystreams%3ahttp%3a%2f%2f51.15.6.129%3a8081%2flarge%2fSkyAtlantic%2fplaylist.m3u8",return)')
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSky%20Atlantic%20Ireland%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2feabd32acc39d4bd72a4ad687090aef8f.m3u8")')
 
     
 menuoptions()
