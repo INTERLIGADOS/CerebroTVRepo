@@ -5,6 +5,10 @@ import xbmcgui
 import urllib2
 import webbrowser
 
+site1qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site1.png')
+site2qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site2.png')
+site3qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site3.png')
+site4qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site4.png')
 
 def menuoptions():
     dialog = xbmcgui.Dialog()
@@ -50,29 +54,41 @@ def platform():
         return 'ios'
 
 myplatform = platform()
-    
-def function1():
-    if myplatform == 'android': # Android 
-        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=1' ) )
-    else:
-        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=1')
 
-def function2():
-    if myplatform == 'android': # Android 
-        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=2' ) )
-    else:
-        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=2')
+def function1()
+	xbmc.executebuiltin('ShowPicture('+site1qr+')')
+	
+def function2()
+	xbmc.executebuiltin('ShowPicture('+site2qr+')')
+	
+def function3()
+	xbmc.executebuiltin('ShowPicture('+site3qr+')')
+	
+def function4()
+	xbmc.executebuiltin('ShowPicture('+site4qr+')')
+    
+#def function1():
+#    if myplatform == 'android': # Android 
+#        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=1' ) )
+#    else:
+#        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=1')
+#
+#def function2():
+#    if myplatform == 'android': # Android 
+#        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=2' ) )
+#    else:
+#        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=2')
         
-def function3():
-    if myplatform == 'android': # Android 
-        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=3' ) )
-    else:
-        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=3')
-        
-def function4():
-    if myplatform == 'android': # Android 
-        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=4' ) )
-    else:
-        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=4')
+#def function3():
+#    if myplatform == 'android': # Android 
+#       opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=3' ) )
+#    else:
+#        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=3')
+#        
+#def function4():
+#    if myplatform == 'android': # Android 
+#        opensite = xbmc.executebuiltin( 'StartAndroidActivity(,android.intent.action.VIEW,,%s)' % ( 'http://mtvb.co.uk/p/?site=4' ) )
+#    else:
+#        opensite = webbrowser . open('http://mtvb.co.uk/p/?site=4')
      
 menuoptions()
