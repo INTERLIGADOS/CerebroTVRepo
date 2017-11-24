@@ -55,16 +55,16 @@ def platform():
 
 myplatform = platform()
 
-def function1()
+def function1():
 	xbmc.executebuiltin('ShowPicture('+site1qr+')')
 	
-def function2()
+def function2():
 	xbmc.executebuiltin('ShowPicture('+site2qr+')')
 	
-def function3()
+def function3():
 	xbmc.executebuiltin('ShowPicture('+site3qr+')')
 	
-def function4()
+def function4():
 	xbmc.executebuiltin('ShowPicture('+site4qr+')')
     
 #def function1():
