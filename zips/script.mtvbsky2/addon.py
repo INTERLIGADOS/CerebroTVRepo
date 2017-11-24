@@ -8,14 +8,13 @@ def menuoptions():
     dialog = xbmcgui.Dialog()
     funcs = (
         function1,
-        function2,
-        function3       
+        function2       
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Sky 2 Links[/COLOR][/B]', [
     '[B][COLOR=white]      Sky 2 Link 1[/COLOR][/B]' ,
-    '[B][COLOR=white]      Sky 2 Link 2[/COLOR][/B]' ,
-    '[B][COLOR=white]      Sky 2 Link 3[/COLOR][/B]'])
+    '[B][COLOR=white]      Sky 2 Link 2[/COLOR][/B]'
+	])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -24,7 +23,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-3]
+        func = funcs[call-2]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -42,9 +41,7 @@ def function1():
     xbmc.executebuiltin('PlayMedia("plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSky%20Two%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f838d5a3429b075f8b9ab00c083d93989.m3u8")')
  
 def function2():
-    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.217.33:7071/routernew/SKYTWO/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5Dsky+two%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F52368_sky222.jpg&description=sky+two+sky+two+sky+two+sky+two+sky+two+sky+two")')
+    xbmc.executebuiltin('PlayMedia("plugin://script.module.streamhublive/?url=swift:http://185.21.216.192:7071/routernew/SKYTWO/playlist.m3u8&mode=10&name=%5BB%5D%5BCOLOR+white%5Dsky+two%5B%2FCOLOR%5D%5B%2FB%5D&iconimage=http%3A%2F%2Fswiftstreamz.com%2FSwiftStream%2Fimages%2Fthumbs%2F52368_sky222.jpg&description=sky+two+sky+two+sky+two+sky+two+sky+two+sky+two")')
     
-def function3():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.mangTV/?url=plugin%3A%2F%2Fplugin.video.f4mTester%2F%3Furl%3Dhttp%3A%2F%2Fclient-proiptv.com%3A8080%2Flive%2FAmersfoort%2FAmersfoort%2F415.ts%26streamtype%3DTSDOWNLOADER%26name%3DSky+Two-+Sky+Two&mode=12")')
-     
+    
 menuoptions()
