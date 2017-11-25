@@ -3083,7 +3083,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.cerebro.pairwith"
   name="CerebroTV Pair With"
-  version="1.7"
+  version="1.8"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

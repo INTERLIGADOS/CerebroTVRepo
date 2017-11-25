@@ -9,6 +9,7 @@ site1qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site
 site2qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site2.png')
 site3qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site3.png')
 site4qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site4.png')
+site5qr = xbmc.translatePath('special://home/addons/script.cerebro.pairwith/site5.png')
 
 def menuoptions():
     dialog = xbmcgui.Dialog()
@@ -16,14 +17,16 @@ def menuoptions():
         function1,
         function2,
         function3,
-        function4
+        function4,
+		function5
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Pair-ing System[/COLOR][/B]', [
     '[B][COLOR=white]      Open Load[/COLOR][/B]', 
     '[B][COLOR=white]      The Video Me[/COLOR][/B]',
     '[B][COLOR=white]      Vid Up Me[/COLOR][/B]',
-    '[B][COLOR=white]      VShare[/COLOR][/B]'])
+    '[B][COLOR=white]      VShare[/COLOR][/B]',
+	'[B][COLOR=white]      FlashX[/COLOR][/B]'])
     # dialog.selectreturns
     #   0 -> escape pressed
     #   1 -> first item
@@ -32,7 +35,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-4]
+        func = funcs[call-5]
         return func()
     else:
         func = funcs[call]
@@ -66,6 +69,9 @@ def function3():
 	
 def function4():
 	xbmc.executebuiltin('ShowPicture('+site4qr+')')
+	
+def function5():
+	xbmc.executebuiltin('ShowPicture('+site5qr+')')
     
 #def function1():
 #    if myplatform == 'android': # Android 
