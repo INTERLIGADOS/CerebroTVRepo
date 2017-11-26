@@ -225,3 +225,10 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/1/The_Godfather-281.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>Pet Sematary</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Pet%20Sematary%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fPet_Sematary&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Pet_Sematary-12922.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
