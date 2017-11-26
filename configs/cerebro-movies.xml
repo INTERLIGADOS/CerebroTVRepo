@@ -93,3 +93,86 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>Bruce Almighty</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Bruce%20Almighty&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fBruce_Almighty&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Bruce_Almighty-1920.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Flightplan</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Flightplan&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fFlightplan&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Flightplan-15724.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Indiana Jones and the Temple of Doom</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Indiana%20Jones%20and%20the%20Temple%20of%20Doom&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fIndiana_Jones_and_the_Temple_of_Doom&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Indiana_Jones_and_the_Temple_of_Doom-15195.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Thor</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Thor&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThor&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/2/Thor-22942.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Super 8</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Super%208&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fSuper_8&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/2/Super_8-23203.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Hocus Pocus</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Hocus%20Pocus&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fHocus_Pocus&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Hocus_Pocus-14044.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>True Romance</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=True%20Romance&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fTrue_Romance&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/True_Romance-6341.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Snatch.</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Snatch.&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fSnatch&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Snatch_-1499.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Usual Suspects</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=The%20Usual%20Suspects&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThe_Usual_Suspects&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/The_Usual_Suspects-2391.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Fifth Element</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=The%20Fifth%20Element&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThe_Fifth_Element&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/The_Fifth_Element-73.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>300</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=300&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2f300&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/300-312.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Contact</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Contact%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fContact&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Contact-23266.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
