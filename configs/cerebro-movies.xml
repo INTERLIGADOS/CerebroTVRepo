@@ -37,3 +37,59 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>Titanic</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Titanic&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fTitanic&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Titanic-12758.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Desert Flower</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Desert%20Flower&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fDesert_Flower&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Desert_Flower-2727.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Gremlins</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Gremlins&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fGremlins&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Gremlins-15495.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>I Am Number Four</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=I%20Am%20Number%20Four&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fI_Am_Number_Four&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/2/I_Am_Number_Four-20286.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>John Carter</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=John%20Carter&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fJohn_Carter&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/3/John_Carter-44030.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Conan the Barbarian</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Conan%20the%20Barbarian&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fConan_the_Barbarian_(2011)&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/2/Conan_the_Barbarian-39493.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Conan the Barbarian</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Conan%20the%20Barbarian&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fConan_the_Barbarian_(2011)&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/2/Conan_the_Barbarian-39493.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Panic Room</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=Panic%20Room&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fPanic_Room&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/90/1/Panic_Room-15930.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
