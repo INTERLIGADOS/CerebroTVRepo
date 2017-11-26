@@ -30,3 +30,10 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>Close Encounters of the Third Kind</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Close%20Encounters%20of%20the%20Third%20Kind%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fClose_Encounters_of_the_Third_Kind&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Close_Encounters_of_the_Third_Kind-11459.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
