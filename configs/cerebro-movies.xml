@@ -232,3 +232,17 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Pet_Sematary-12922.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>The Langoliers</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Langoliers%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThe_Langoliers&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_Langoliers-16353.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Triangle (TV Movie)</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Triangle%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fthe_triangle&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/The_Triangle-33261.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
