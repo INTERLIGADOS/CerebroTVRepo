@@ -73,7 +73,7 @@
 </plugin>
 
 <plugin>
-<title>Conan the Barbarian</title>
+<title>Conan the Barbarian (2011)</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=Conan%20the%20Barbarian&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fConan_the_Barbarian_(2011)&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/90/2/Conan_the_Barbarian-39493.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -81,8 +81,8 @@
 
 <plugin>
 <title>Conan the Barbarian</title>
-<link>plugin://plugin.video.Showbox/?mode=4&name=Conan%20the%20Barbarian&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fConan_the_Barbarian_(2011)&vidtype=movie</link>
-<thumbnail>https://vidics.unblocked.pl//static/90/2/Conan_the_Barbarian-39493.JPEG</thumbnail>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Conan%20the%20Barbarian%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fConan_the_Barbarian&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Conan_the_Barbarian-16328.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
@@ -174,5 +174,12 @@
 <title>Contact</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Contact%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fContact&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/2/Contact-23266.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Pacific Rim</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Pacific%20Rim%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fPacific_Rim&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/28/Pacific_Rim-550231.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
