@@ -87,6 +87,13 @@
 </plugin>
 
 <plugin>
+<title>Red Sonja</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Red%20Sonja%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fRed_Sonja&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Red_Sonja-10647.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>Panic Room</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=Panic%20Room&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fPanic_Room&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/90/1/Panic_Room-15930.JPEG</thumbnail>
