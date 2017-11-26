@@ -302,3 +302,10 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Ferris_Bueller_s_Day_Off-10944.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>Jeepers Creepers</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Jeepers%20Creepers%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fJeepers_Creepers&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Jeepers_Creepers-16000.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
