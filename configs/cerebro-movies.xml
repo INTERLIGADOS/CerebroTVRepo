@@ -3,13 +3,6 @@
 </dir>
 
 <plugin>
-<title>Kingsman: The Golden Circle (2017)</title>
-<link>plugin://plugin.video.bob.unleashed/?mode=get_sources&url=%3Citem%3E%0D%0A%09%3Ctitle%3EKingsman%3A+The+Golden+Circle+%282017%29%3C%2Ftitle%3E%0D%0A%09%3Cmeta%3E%0D%0A%09%09%3Ccontent%3Emovie%3C%2Fcontent%3E%0D%0A%09%09%3Cimdb%3Ett4649466%3C%2Fimdb%3E%0D%0A%09%09%3Ctitle%3EKingsman%3A+The+Golden+Circle%3C%2Ftitle%3E%0D%0A%09%09%3Cyear%3E2017%3C%2Fyear%3E%0D%0A%09%3C%2Fmeta%3E%0D%0A%09%3Clink%3E%0D%0A%09%09%3Csublink%3Esearch%3C%2Fsublink%3E%0D%0A%09%09%3Csublink%3Esearchsd%3C%2Fsublink%3E%0D%0A%09%3C%2Flink%3E%0D%0A%09%3Cthumbnail%3Ehttp%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2FpKESfn2Pdy0b7drvZHQb7UzgqoY.jpg%3C%2Fthumbnail%3E%0D%0A%09%3Cfanart%3Ehttp%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FuExPmkOHJySrbJyJDJylHDqaT58.jpg%3C%2Ffanart%3E%0D%0A%3C%2Fitem%3E&name=Kingsman%3A+The+Golden+Circle+%282017%29&iconimage=http%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2FpKESfn2Pdy0b7drvZHQb7UzgqoY.jpg&fanart=http%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FuExPmkOHJySrbJyJDJylHDqaT58.jpg&description=No+information+available</link>
-<thumbnail>http://image.tmdb.org/t/p/w500/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>Screamers</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Screamers%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fScreamers_(1995)&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Screamers-16203.JPEG</thumbnail>
@@ -195,5 +188,19 @@
 <title>Pacific Rim</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Pacific%20Rim%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fPacific_Rim&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/28/Pacific_Rim-550231.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Lawnmower Man</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Lawnmower%20Man%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThe_Lawnmower_Man&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_Lawnmower_Man-14187.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Sometimes They Come Back</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Sometimes%20They%20Come%20Back%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fSometimes_They_Come_Back&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Sometimes_They_Come_Back-2915.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
