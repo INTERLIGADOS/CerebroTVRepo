@@ -4808,7 +4808,7 @@ level.</description>
 
 <addon id="script.mtvbskyatl"
   name="CerebroTV Sky Atlantic"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -4826,7 +4826,7 @@ level.</description>
 
 <addon id="script.mtvbskyliv"
   name="CerebroTV Sky Living"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
