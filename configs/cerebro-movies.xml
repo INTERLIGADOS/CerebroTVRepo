@@ -211,3 +211,10 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Taxi_Driver-282.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>Tootsie</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Tootsie%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fTootsie&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/Tootsie-23905.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
