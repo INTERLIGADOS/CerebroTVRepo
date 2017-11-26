@@ -204,3 +204,10 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Sometimes_They_Come_Back-2915.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>Taxi Driver</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Taxi%20Driver%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fTaxi_Driver&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Taxi_Driver-282.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
