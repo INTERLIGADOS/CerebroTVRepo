@@ -288,3 +288,17 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Philadelphia_Experiment_II-5238.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>WarGames</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20WarGames%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fWarGames&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/WarGames-7051.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Ferris Bueller's Day Off</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Ferris%20Bueller%27s%20Day%20Off%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fFerris_Bueller_s_Day_Off&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Ferris_Bueller_s_Day_Off-10944.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
