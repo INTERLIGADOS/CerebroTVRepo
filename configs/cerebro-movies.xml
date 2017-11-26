@@ -246,3 +246,17 @@
 <thumbnail>https://vidics.unblocked.pl//static/150/2/The_Triangle-33261.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>War of the Worlds</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20War%20of%20the%20Worlds%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fWar_of_the_Worlds_(2005)&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/War_of_the_Worlds-2308.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The War of the Worlds</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20War%20of%20the%20Worlds%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThe_War_of_the_Worlds&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/The_War_of_the_Worlds-10911.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
