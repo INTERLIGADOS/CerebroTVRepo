@@ -1,0 +1,32 @@
+<dir>
+<title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Movies on Demand[/COLOR]</title>
+</dir>
+
+<plugin>
+<title>Screamers</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Screamers%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fScreamers_(1995)&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Screamers-16203.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Mimic</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Mimic%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fMimic&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Mimic-13729.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Wild Things</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Wild%20Things%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fWild_Things&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Wild_Things-16173.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Faculty</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Faculty%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fThe_Faculty&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/2/The_Faculty-23295.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
