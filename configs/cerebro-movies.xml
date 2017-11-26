@@ -101,6 +101,13 @@
 </plugin>
 
 <plugin>
+<title>Evan Almighty</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Evan%20Almighty%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fEvan_Almighty&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.pl//static/150/1/Evan_Almighty-12630.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>Flightplan</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=Flightplan&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fFlightplan&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/90/1/Flightplan-15724.JPEG</thumbnail>
