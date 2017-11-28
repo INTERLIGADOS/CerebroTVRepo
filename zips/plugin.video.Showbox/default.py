@@ -33,7 +33,7 @@ __icon__ = __addon__.getAddonInfo('icon')
 
 
 __settings__ = xbmcaddon.Addon(id='plugin.video.Showbox')
-xbmc.executebuiltin("Container.SetViewMode(516)")
+xbmc.executebuiltin("Container.SetViewMode(522)")
 home = __settings__.getAddonInfo('path')
 #addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
@@ -1252,6 +1252,7 @@ def SearchChannelresults(url,searchtext):
 
 def Episodes(url,name):
     #try:
+        xbmc.executebuiltin("Container.SetViewMode(522)")
         link = GetContent(url)
         metaname=url.split('Serie/', 1)[1]
         metaname = metaname.replace("-","%20")
@@ -1260,9 +1261,9 @@ def Episodes(url,name):
         #xbmc.log("Show Name?? "+metaname,2)
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
-        ctitle = metaname.replace(" ","%20")
+        #ctitle = metaname
         try:
-            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname)).read()
             #getid=response.split('<seriesid>', 1)[1]
             #getid=getid.split('</seriesid>', 1)[0]
             getmeta=response.split('<Overview>', 1)[1]
@@ -1271,7 +1272,7 @@ def Episodes(url,name):
             #getdate=getdate.split('</FirstAired>', 1)[0]
             getimg=response.split('<banner>', 1)[1]
             getimg=getimg.split('</banner>', 1)[0]
-            #xbmc.log("TITLE?? "+ctitle,2)
+            xbmc.log("TITLE?? "+getmeta,2)
             #getimg=getimg.split('graphical/', 1)[1]
             #response2 = urllib2.urlopen('http://thetvdb.com/api/GetEpisodeByAirDate.php?apikey=D8EFCAEC3807E882&seriesid='+getid+'&airdate='+getdate.read())
             #xbmc.log("http://www.thetvdb.com/banners/_cache/"+getimg,2)
@@ -1280,7 +1281,7 @@ def Episodes(url,name):
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
         vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-        addDir('[COLOR gold]'+metaname.replace("%20"," ")+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
+        addDir('[COLOR gold]'+metaname+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
@@ -1298,12 +1299,13 @@ def Episodes(url,name):
     #except: pass
     
 def Seasons(url):
+        xbmc.executebuiltin("Container.SetViewMode(522)")
         metaname=url.split('Serie/', 1)[1]
         name = metaname.replace("-"," ")
         ctitle = metaname.replace(" ","%20")
-        ctitle = metaname.replace("-","%20")
-        ctitle = metaname.replace("_","%20").title()
-        if ctitle=="X%20Files": ctitle = "X-Files"
+        ctitle = ctitle.replace("-","%20")
+        ctitle = ctitle.replace("_","%20").title()
+        if ctitle=="X%20Files": ctitle = "The%20X-Files"
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
@@ -1314,7 +1316,7 @@ def Seasons(url):
             getimg=getimg.split('</banner>', 1)[0]
             #getimg=getimg.split('</banner>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-            xbmc.log("Show Image "+vimg,2)
+            xbmc.log("Show Image "+ctitle,2)
         except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]        
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
@@ -1326,7 +1328,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
         ctitle = ctitle.replace("%20"," ")
         #ctitle = ctitle.replace("+"," ")
         ctitle = ctitle.replace("%25","+")
-        xbmc.executebuiltin("Container.SetViewMode(516)")
+        xbmc.executebuiltin("Container.SetViewMode(522)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
@@ -1361,7 +1363,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
                     
 def INDEXList(url,modenum,curmode,vidtype):
     #try:
-        xbmc.executebuiltin("Container.SetViewMode(516)")
+        xbmc.executebuiltin("Container.SetViewMode(522)")
         link = GetContent(url)
         try:
             link =link.encode("UTF-8")
@@ -2262,6 +2264,8 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
             try: 
                 ctitle = name.replace(" ","%20")
                 ctitle = name.replace("-","%20")
+                ctitle = name.replace("_","%20").title()
+                if ctitle=="X%20Files": ctitle = "The%20X-Files"
                 #xbmc.log("Show Icon? "+ctitle,2)
                 if ("www.vidics.to" not in ctitle) or ("Cerebro" not in ctitle):
                     response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
@@ -2321,6 +2325,9 @@ def addDir(name,url,mode,iconimage,plot=""):
         except: metaname = "DONT SHOW"
         metaname=metaname.replace("-"," ")
         metaname=str(metaname).split(' Season', 1)[0]
+        metaname=metaname.replace("_","%20").title()
+        if metaname=="X%20Files": metaname = "The%20X-Files"
+        metaname=metaname.replace("%20"," ")
         if "Cerebro" in url:
             #xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
@@ -2470,5 +2477,5 @@ elif mode==28:
         SearchResult(url,name)
 elif mode==9898:
         xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')
-xbmc.executebuiltin("Container.SetViewMode(516)")
+xbmc.executebuiltin("Container.SetViewMode(522)")
 xbmcplugin.endOfDirectory(int(sysarg))
