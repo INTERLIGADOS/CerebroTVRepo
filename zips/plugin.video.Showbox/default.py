@@ -1264,25 +1264,25 @@ def Episodes(url,name):
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
         #ctitle = metaname
-        #try:
-        #    response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(metaname)).read()
-            #getid=response.split('<Tv%20Showsid>', 1)[1]
-            #getid=getid.split('</Tv%20Showsid>', 1)[0]
-        #    getmeta=response.split('<Overview>', 1)[1]
-        #    getmeta=getmeta.split('</Overview>', 1)[0]
-            #getdate=response.split('<FirstAired>', 1)[1]
-            #getdate=getdate.split('</FirstAired>', 1)[0]
-        #    getimg=response.split('<banner>', 1)[1]
-        #    getimg=getimg.split('</banner>', 1)[0]
-            #xbmc.log("TITLE?? "+getmeta,2)
-            #getimg=getimg.split('graphical/', 1)[1]
-            #response2 = urllib2.urlopen('http://thetvdb.com/api/GetEpisodeByAirDate.php?apikey=D8EFCAEC3807E882&Tv%20Showsid='+getid+'&airdate='+getdate.read())
-            #xbmc.log("http://www.thetvdb.com/banners/_cache/"+getimg,2)
-        #except : getimg=""
+        try:
+            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname)).read()
+            sid=response.split('<seriesid>', 1)[1]
+            sid=response.split('</seriesid>', 1)[0]
+            sid=sid.split('<seriesid>', 1)[1]
+            getimg=response.split('<banner>', 1)[1]
+            getimg=getimg.split('</banner>', 1)[0]
+            #getimg=getimg.split('</banner>', 1)[0]
+            response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
+            gpost = response.split('posters', 1)[1]
+            gpost = gpost.split('</BannerPath>', 1)[0]
+            #gpost = gpost.split('<BannerPath>', 1)[0]
+            vimg = "http://www.thetvdb.com/banners/posters"+gpost
+            xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+        except : 
+            vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
+            vimg = "https://www.vidics.to"+vimg
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
-        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
-        vimg = "https://www.vidics.to"+vimg
         #vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
         addDir('[COLOR gold]'+metaname.replace("%20"," ")+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
@@ -1309,6 +1309,7 @@ def Seasons(url):
         ctitle = metaname.replace(" ","%20")
         ctitle = ctitle.replace("-","%20")
         ctitle = ctitle.replace("_","%20").title()
+        ctitle = ctitle.replace("%201","")
         if ctitle=="X%20Files": ctitle = "The%20X-Files"
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
@@ -1317,14 +1318,21 @@ def Seasons(url):
         vimg = "https://www.vidics.to"+vimg
         #xbmc.log("Get Image "+ctitle,2)
         #xbmc.log("Show Image "+vimg,2)
-        #try:
-        #    response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(ctitle)).read()
-        #    getimg=response.split('<banner>', 1)[1]
-        #    getimg=getimg.split('</banner>', 1)[0]
-        #    getimg=getimg.split('</banner>', 1)[0]
-        #    vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-        #    xbmc.log("Show Image "+ctitle,2)
-        #except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+        try:
+            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+            sid=response.split('<seriesid>', 1)[1]
+            sid=response.split('</seriesid>', 1)[0]
+            sid=sid.split('<seriesid>', 1)[1]
+            getimg=response.split('<banner>', 1)[1]
+            getimg=getimg.split('</banner>', 1)[0]
+            #getimg=getimg.split('</banner>', 1)[0]
+            response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
+            gpost = response.split('posters', 1)[1]
+            gpost = gpost.split('</BannerPath>', 1)[0]
+            #gpost = gpost.split('<BannerPath>', 1)[0]
+            vimg = "http://www.thetvdb.com/banners/posters"+gpost
+            xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+        except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]        
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
@@ -2276,7 +2284,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
                 if ctitle=="X%20Files": ctitle = "The%20X-Files"
                 #xbmc.log("Show Icon? "+ctitle,2)
                 if ("www.vidics.to" not in ctitle) or ("Cerebro" not in ctitle):
-                    response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(ctitle)).read()
+                    response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
                     response=response.split('<Overview>', 1)[1]
                     response=response.split('</Overview>', 1)[0]
             except: response="Unable to Get Any Data!!!!"
@@ -2349,7 +2357,7 @@ def addDir(name,url,mode,iconimage,plot=""):
             metaname2 = metaname+" "+name
             try:
                 
-                response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(metaname.replace(" ","%20"))).read()
+                response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname.replace(" ","%20"))).read()
                 response=response.split('<Overview>', 1)[1]
                 response=response.split('</Overview>', 1)[0]
                 response=" | "+response
