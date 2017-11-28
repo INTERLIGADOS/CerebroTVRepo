@@ -309,3 +309,122 @@
 <thumbnail>https://www.vidics.to/static/150/1/Jeepers_Creepers-16000.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>Some Kind of Wonderful</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Some%20Kind%20of%20Wonderful%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fSome_Kind_of_Wonderful&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Some_Kind_of_Wonderful-16219.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Book of Eli</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Book%20of%20Eli%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Book_of_Eli&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/The_Book_of_Eli-2598.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Alien</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Alien%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fAlien&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Alien-283.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Aliens</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Aliens%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fAliens&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Aliens-286.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Alien³</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Alien%c2%b3%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fAlien_(1992)&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Alien_-9513.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Alien: Resurrection</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Alien%3a%20Resurrection%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fAlien%3a_Resurrection&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Alien_Resurrection-306.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Prometheus</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Prometheus%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fPrometheus&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/3/Prometheus-44054.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Terminator</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Terminator%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Terminator&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/The_Terminator-243.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Terminator 2: Judgment Day</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Terminator%202%3a%20Judgment%20Day%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTerminator_2%3a_Judgment_Day&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Terminator_2_Judgment_Day-1691.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Terminator 3: Rise of the Machines</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Terminator%203%3a%20Rise%20of%20the%20Machines%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTerminator_3%3a_Rise_of_the_Machines&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Terminator_3_Rise_of_the_Machines-271.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Terminator Salvation</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Men%20of%20Honor%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMen_of_Honor&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Men_of_Honor-15907.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Saving Private Ryan</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Saving%20Private%20Ryan%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fSaving_Private_Ryan&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Saving_Private_Ryan-241.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Rise of the Footsoldier Part 1</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Rise%20of%20the%20Footsoldier%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fRise_of_the_Footsoldier&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Rise_of_the_Footsoldier-397.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Tremors</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Tremors%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTremors&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Tremors-9032.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Tremors II: Aftershocks</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Tremors%20II%3a%20Aftershocks%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTremors_II%3a_Aftershocks&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Tremors_II_Aftershocks-3281.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Tremors 3: Back to Perfection</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Tremors%203%3a%20Back%20to%20Perfection%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTremors_3%3a_Back_to_Perfection&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Tremors_3_Back_to_Perfection-80.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Tremors 4: The Legend Begins</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Tremors%204%3a%20The%20Legend%20Begins%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTremors_4%3a_The_Legend_Begins&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Tremors_4_The_Legend_Begins-5934.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
