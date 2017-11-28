@@ -1255,6 +1255,7 @@ def Episodes(url,name):
         link = GetContent(url)
         metaname=url.split('Serie/', 1)[1]
         metaname = metaname.replace("-","%20")
+        metaname = metaname.replace("_","%20").title()
         #xbmc.log("Show Name?? "+metaname,2)
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
@@ -1300,6 +1301,8 @@ def Seasons(url):
         name = metaname.replace("-"," ")
         ctitle = metaname.replace(" ","%20")
         ctitle = metaname.replace("-","%20")
+        ctitle = metaname.replace("_","%20").title()
+        if ctitle=="X%20Files": ctitle = "X-Files"
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
@@ -1308,10 +1311,10 @@ def Seasons(url):
             response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
             getimg=response.split('<banner>', 1)[1]
             getimg=getimg.split('</banner>', 1)[0]
-            getimg=getimg.split('</banner>', 1)[0]
+            #getimg=getimg.split('</banner>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-            #xbmc.log("Show Image "+vimg,2)
-        except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]        
+            xbmc.log("Show Image "+vimg,2)
+        except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]        
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
