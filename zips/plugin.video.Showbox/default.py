@@ -1256,6 +1256,7 @@ def Episodes(url,name):
         metaname=url.split('Serie/', 1)[1]
         metaname = metaname.replace("-","%20")
         metaname = metaname.replace("_","%20").title()
+        if metaname=="X%20Files": metaname = "X-Files"
         #xbmc.log("Show Name?? "+metaname,2)
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
