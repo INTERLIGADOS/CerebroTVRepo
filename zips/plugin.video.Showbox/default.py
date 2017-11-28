@@ -38,7 +38,7 @@ home = __settings__.getAddonInfo('path')
 #addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
-strdomain ="http://vidics.unblocked.pl"
+strdomain ="http://www.vidics.to"
 AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
 playablehost=[
 'daclips',
@@ -258,20 +258,20 @@ def HOME():
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'','')
         #addDir('Search Actors','search',15,'')
-        addDir('Recently Added Movies','http://vidics.unblocked.pl/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('Recently Added TV Shows','http://vidics.unblocked.pl/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('Recently Added Movies','http://www.vidics.to/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('Recently Added TV Shows','http://www.vidics.to/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
         #addDir('Favorites','Category-Movies',24,'')
         addDir('Movies A-Z','Category-Movies',16,'')
         addDir('TV Shows A-Z','Category-TvShows',17,'')
         addDir('Movies Genres','Category-Movies',18,'')
         addDir('TV Shows Genres','Category-TvShows',19,'')
         addDir('7 Day TV Schedule','TV Schedule',20,'')
-        addDir('Top Movies','http://vidics.unblocked.pl/top/films.html',5,'')
-        addDir('Top TV Shows','http://vidics.unblocked.pl/top/tvshows.html',6,'')
-        addDir('Movies 2010-2017','http://vidics.unblocked.pl/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('Movies 2000-2010','http://vidics.unblocked.pl/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('TV Shows 2010-2017','http://vidics.unblocked.pl/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,'')
-        addDir('TV Shows 2000-2010','http://vidics.unblocked.pl/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('Top Movies','http://www.vidics.to/top/films.html',5,'')
+        addDir('Top TV Shows','http://www.vidics.to/top/tvshows.html',6,'')
+        addDir('Movies 2010-2017','http://www.vidics.to/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('Movies 2000-2010','http://www.vidics.to/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('TV Shows 2010-2017','http://www.vidics.to/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('TV Shows 2000-2010','http://www.vidics.to/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,'')
 def LangOption():
         addDir('Show Top Languages','Top',10,'')
         addDir('Show All Languages','All',10,'')
@@ -287,7 +287,7 @@ def CheckRedirect(url):
        d.ok(url,"Can't Connect to site",'Try again in a moment')
 
 def getSchedule(sched_date): 
-        url="http://vidics.unblocked.pl/calendar/"+sched_date+ ".html"
+        url="http://www.vidics.to/calendar/"+sched_date+ ".html"
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="indexClanedarDay left" id="date_'+sched_date+'">(.+?)</div>').findall(newlink)
@@ -348,7 +348,7 @@ def Mirrors(url,name):
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "vidup":
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
-                addLink("[COLOR white]"+name+"[/COLOR] [COLOR gold]"+vname+"[/COLOR] ",strdomain+vurl,3,"http://vidics.unblocked.pl"+vimg,name)
+                addLink("[COLOR white]"+name+"[/COLOR] [COLOR gold]"+vname+"[/COLOR] ",strdomain+vurl,3,"http://www.vidics.to"+vimg,name)
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
 def add_contextsearchmenu(title, video_type):
@@ -769,7 +769,7 @@ def ParseVideoLink(url,name,movieinfo):
                 fname = re.compile('<input type="hidden" name="fname" value="(.+?)">').findall(link)[0]
                 mfree = re.compile('<input type="submit" name="method_free"  value="(.+?)">').findall(link)[0]
                 posdata=urllib.urlencode({"op":op,"usr_login":"","id":idkey,"fname":fname,"referer":url,"method_free":mfree})
-                pcontent=postContent(redirlink,posdata,"http://vidics.unblocked.pl/watch/120351/This-Is-40-2012.html")
+                pcontent=postContent(redirlink,posdata,"http://www.vidics.to/watch/120351/This-Is-40-2012.html")
                 pcontent=''.join(pcontent.splitlines()).replace('\'','"')
                 capchacon =re.compile('<b>Enter code below:</b>(.+?)</table>').findall(pcontent)
                 capchar=re.compile('<span style="position:absolute;padding-left:(.+?);[^>]*>(.+?)</span>').findall(capchacon[0])
@@ -1085,7 +1085,7 @@ def ParseVideoLink(url,name,movieinfo):
                
 def ListAZ(catname,mode):
         for character in AZ_DIRECTORIES:
-                addDir(character,"http://vidics.unblocked.pl/"+catname+"/Genre-Any/Letter-"+character+"/ByPopularity/1.htm",mode,"")
+                addDir(character,"http://www.vidics.to/"+catname+"/Genre-Any/Letter-"+character+"/ByPopularity/1.htm",mode,"")
 
 def getVideotype(url):
         link = GetContent(url)
@@ -1163,11 +1163,11 @@ def SEARCHactor():
 def SearchResult(searchType,Searchtext):
     Searchtext=urllib.quote_plus(Searchtext)
     if searchType=="movie":
-            INDEX("https://vidics.unblocked.pl/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
+            INDEX("https://www.vidics.to/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
     elif searchType=="actor":
-            INDEX("https://vidics.unblocked.pl/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
+            INDEX("https://www.vidics.to/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
     else:
-            INDEX("https://vidics.unblocked.pl/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
+            INDEX("https://www.vidics.to/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
     
             
 def getstatic():
@@ -1196,7 +1196,7 @@ def postContent(url,data,referr):
     return response
     
 def GenreList(catname,mode):
-        url="https://vidics.unblocked.pl/"+catname+"/Genre-Any/Letter-Any/LatestFirst/1.htm"
+        url="https://www.vidics.to/"+catname+"/Genre-Any/Letter-Any/LatestFirst/1.htm"
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<span class="dir">Genre</span>(.+?)</ul>').findall(newlink)
@@ -1242,7 +1242,7 @@ def SearchChannelresults(url,searchtext):
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
-            addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://vidics.unblocked.pl/"+vimg)
+            addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://www.vidics.to/"+vimg)
         pagelist=re.compile('<div class="pagination">(.+?)</li>').findall(link)
         if(len(pagelist) > 0):
                 navlist=re.compile('<a[^>]* href="(.+?)">(.+?)</a>').findall(pagelist[0])
@@ -1345,9 +1345,9 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             #vpot ="plot??"
             vpot=urllib.unquote_plus(vpot)
             if(vidtype==""):
-                 addDir(vtitle,strdomain+vurl,modenum,"https://vidics.unblocked.pl/"+vimg,vpot)
+                 addDir(vtitle,strdomain+vurl,modenum,"https://www.vidics.to/"+vimg,vpot)
             else:
-                 addDirContext(vtitle,strdomain+vurl,modenum,"https://vidics.unblocked.pl/"+vimg,vpot,vidtype)
+                 addDirContext(vtitle,strdomain+vurl,modenum,"https://www.vidics.to/"+vimg,vpot,vidtype)
         paginacontent=re.compile('<table class="pagination" ?[^>]*>(.+?)</table>').findall(newlink)
         
         if(len(paginacontent)>0):
@@ -1379,9 +1379,9 @@ def INDEXList(url,modenum,curmode,vidtype):
             vtitle=RemoveHTML(vtitle)
             if(vidtype==""):
                  
-                 addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://vidics.unblocked.pl/"+vimg,vpot)
+                 addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://www.vidics.to/"+vimg,vpot)
             else:
-                 addDirContext(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://vidics.unblocked.pl/"+vimg,vpot,vidtype)
+                 addDirContext(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://www.vidics.to/"+vimg,vpot,vidtype)
         paginacontent=re.compile('<table class="pagination" ?[^>]*>(.+?)</table>').findall(newlink)
         
         if(len(paginacontent)>0):
@@ -2259,7 +2259,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
                 ctitle = name.replace(" ","%20")
                 ctitle = name.replace("-","%20")
                 #xbmc.log("Show Icon? "+ctitle,2)
-                if ("vidics.unblocked.pl" not in ctitle) or ("Cerebro" not in ctitle):
+                if ("www.vidics.to" not in ctitle) or ("Cerebro" not in ctitle):
                     response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
                     response=response.split('<Overview>', 1)[1]
                     response=response.split('</Overview>', 1)[0]
