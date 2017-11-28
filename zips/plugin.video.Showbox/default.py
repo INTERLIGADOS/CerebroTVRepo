@@ -42,7 +42,7 @@ strdomain ="http://www.vidics.to"
 AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
 playablehost=[
 'daclips',
-'watchseries',
+'watchTv%20Shows',
 'movpod',
 'novamov',
 'watchepisodes',
@@ -292,7 +292,7 @@ def getSchedule(sched_date):
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="indexClanedarDay left" id="date_'+sched_date+'">(.+?)</div>').findall(newlink)
         if(len(listcontent)>0):
-                latestepi=re.compile('<h3 itemscope itemtype="http://schema.org/TVSeries" class="CalTvshow" title="(.+?)">(.+?)</h3>').findall(listcontent[0])
+                latestepi=re.compile('<h3 itemscope itemtype="http://schema.org/TVTv%20Shows" class="CalTvshow" title="(.+?)">(.+?)</h3>').findall(listcontent[0])
                 for vtmp,vcontent in latestepi:
                         (sUrl,stmp,sName)=re.compile('<a itemprop="url" class="CalTVshowName pukeGreen" href="(.+?)" title="(.+?)">(.+?)</a>').findall(vcontent)[0]
                         (eUrl,eName)=re.compile('<a itemprop="url" class="CalTVshowEpisode blue" href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(vcontent)[0]
@@ -1254,7 +1254,9 @@ def Episodes(url,name):
     #try:
         xbmc.executebuiltin("Container.SetViewMode(522)")
         link = GetContent(url)
-        metaname=url.split('Serie/', 1)[1]
+        try: metaname=url.split('Show/', 1)[1]
+        except: metaname=url.split('Serie/', 1)[1]
+        metaname = metaname.replace("%201","")
         metaname = metaname.replace("-","%20")
         metaname = metaname.replace("_","%20").title()
         if metaname=="X%20Files": metaname = "X-Files"
@@ -1262,26 +1264,27 @@ def Episodes(url,name):
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
         #ctitle = metaname
-        try:
-            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname)).read()
-            #getid=response.split('<seriesid>', 1)[1]
-            #getid=getid.split('</seriesid>', 1)[0]
-            getmeta=response.split('<Overview>', 1)[1]
-            getmeta=getmeta.split('</Overview>', 1)[0]
+        #try:
+        #    response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(metaname)).read()
+            #getid=response.split('<Tv%20Showsid>', 1)[1]
+            #getid=getid.split('</Tv%20Showsid>', 1)[0]
+        #    getmeta=response.split('<Overview>', 1)[1]
+        #    getmeta=getmeta.split('</Overview>', 1)[0]
             #getdate=response.split('<FirstAired>', 1)[1]
             #getdate=getdate.split('</FirstAired>', 1)[0]
-            getimg=response.split('<banner>', 1)[1]
-            getimg=getimg.split('</banner>', 1)[0]
-            xbmc.log("TITLE?? "+getmeta,2)
+        #    getimg=response.split('<banner>', 1)[1]
+        #    getimg=getimg.split('</banner>', 1)[0]
+            #xbmc.log("TITLE?? "+getmeta,2)
             #getimg=getimg.split('graphical/', 1)[1]
-            #response2 = urllib2.urlopen('http://thetvdb.com/api/GetEpisodeByAirDate.php?apikey=D8EFCAEC3807E882&seriesid='+getid+'&airdate='+getdate.read())
+            #response2 = urllib2.urlopen('http://thetvdb.com/api/GetEpisodeByAirDate.php?apikey=D8EFCAEC3807E882&Tv%20Showsid='+getid+'&airdate='+getdate.read())
             #xbmc.log("http://www.thetvdb.com/banners/_cache/"+getimg,2)
-        except :pass
+        #except : getimg=""
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
-        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
-        vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-        addDir('[COLOR gold]'+metaname+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
+        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
+        vimg = "https://www.vidics.to"+vimg
+        #vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
+        addDir('[COLOR gold]'+metaname.replace("%20"," ")+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
@@ -1300,7 +1303,8 @@ def Episodes(url,name):
     
 def Seasons(url):
         xbmc.executebuiltin("Container.SetViewMode(522)")
-        metaname=url.split('Serie/', 1)[1]
+        try: metaname=url.split('Show/', 1)[1]
+        except: metaname=url.split('Serie/', 1)[1]
         name = metaname.replace("-"," ")
         ctitle = metaname.replace(" ","%20")
         ctitle = ctitle.replace("-","%20")
@@ -1309,15 +1313,19 @@ def Seasons(url):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
-        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        try:
-            response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
-            getimg=response.split('<banner>', 1)[1]
-            getimg=getimg.split('</banner>', 1)[0]
-            #getimg=getimg.split('</banner>', 1)[0]
-            vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-            xbmc.log("Show Image "+ctitle,2)
-        except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]        
+        vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+        vimg = "https://www.vidics.to"+vimg
+        #xbmc.log("Get Image "+ctitle,2)
+        #xbmc.log("Show Image "+vimg,2)
+        #try:
+        #    response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(ctitle)).read()
+        #    getimg=response.split('<banner>', 1)[1]
+        #    getimg=getimg.split('</banner>', 1)[0]
+        #    getimg=getimg.split('</banner>', 1)[0]
+        #    vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
+        #    xbmc.log("Show Image "+ctitle,2)
+        #except : vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]        
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
@@ -2268,7 +2276,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
                 if ctitle=="X%20Files": ctitle = "The%20X-Files"
                 #xbmc.log("Show Icon? "+ctitle,2)
                 if ("www.vidics.to" not in ctitle) or ("Cerebro" not in ctitle):
-                    response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+                    response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(ctitle)).read()
                     response=response.split('<Overview>', 1)[1]
                     response=response.split('</Overview>', 1)[0]
             except: response="Unable to Get Any Data!!!!"
@@ -2290,7 +2298,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
 def addLink(name,url,mode,iconimage,movieinfo=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
         ok=True
-        #TheTvDb().search_series("The20%Punisher")
+        #TheTvDb().search_Tv%20Shows("The20%Punisher")
         plot = str(name)
         #xbmc.log("Show Icon? "+iconimage,2)
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
@@ -2314,14 +2322,14 @@ def addDir(name,url,mode,iconimage,plot=""):
         response="empty"
         #metaname2="empty"
         if url == "search":
-            url ="Cerebro/Serie/Cerebro"
+            url ="Cerebro/Show/Cerebro"
         if url == "Cerebro":
-            url ="Cerebro/Serie/Cerebro"
+            url ="Cerebro/Show/Cerebro"
         if  url == " ":
-            url ="Cerebro/Serie/Cerebro"
+            url ="Cerebro/Show/Cerebro"
         #plot="Pair now for best results!!"
         try:
-            metaname=str(url).split('Serie/', 1)[1]
+            metaname=str(url).split('Show/', 1)[1]
         except: metaname = "DONT SHOW"
         metaname=metaname.replace("-"," ")
         metaname=str(metaname).split(' Season', 1)[0]
@@ -2341,7 +2349,7 @@ def addDir(name,url,mode,iconimage,plot=""):
             metaname2 = metaname+" "+name
             try:
                 
-                response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname.replace(" ","%20"))).read()
+                response = urllib2.urlopen('http://thetvdb.com/api/GetTv%20Shows.php?Tv%20Showsname='+str(metaname.replace(" ","%20"))).read()
                 response=response.split('<Overview>', 1)[1]
                 response=response.split('</Overview>', 1)[0]
                 response=" | "+response
