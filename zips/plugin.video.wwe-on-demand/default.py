@@ -21,24 +21,19 @@ sd_path         = xbmc.translatePath(os.path.join('special://home/addons/', 'plu
 dp                  = xbmcgui.DialogProgress()
 REDDIT_FILE         = xbmc.translatePath(os.path.join(DATA_FOLDER, 'reddit.xml'))
 PLEXUS_PATH         = xbmc.translatePath('special://home/addons/program.plexus')
-baseurl         = 'http://wod.pbear.seedr.io/base.xml'
+baseurl         = 'http://lookingglass.rocks/jay77/wod/base.xml'
 ytpl            = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId='
 ytpl2           = '&maxResults=50&key=AIzaSyAd-YEOqZz9nXVzGtn3KWzYLbLaajhqIDA'
 ytplpg1         = 'https://www.googleapis.com/youtube/v3/playlistItems?pageToken='
 ytplpg2         = '&part=snippet&playlistId='
 ytplpg3         = '&maxResults=50&key=AIzaSyAd-YEOqZz9nXVzGtn3KWzYLbLaajhqIDA'
-search_show     = selfAddon.getSetting('search')
 adultpass       = selfAddon.getSetting('password')
 metaset         = selfAddon.getSetting('enable_meta')
-news     = 'http://wod.pbear.seedr.io/news.txt'
-news2     = 'http://wod.pbear.seedr.io/news2.txt'
-messagetext     = 'http://wod.pbear.seedr.io/info.xml'
-startinfo       = 'http://wod.pbear.seedr.io/startinfo.xml'
-wweschedule      = 'http://wod.pbear.seedr.io/schedule.xml'
-requests    = 'http://wod.pbear.seedr.io/requests.xml'
-SEARCH_LIST      = 'http://wod.pbear.seedr.io/search.xml'
-list = urllib2.urlopen(news).read().splitlines()
-results = urllib2.urlopen(news2).read()
+messagetext     = 'http://lookingglass.rocks/jay77/wod/info.xml'
+startinfo       = 'http://lookingglass.rocks/jay77/wod/startinfo.xml'
+wweschedule      = 'http://lookingglass.rocks/jay77/wod/schedule.xml'
+requests    = 'http://lookingglass.rocks/jay77/wod/requests.xml'
+SEARCH_LIST      = 'http://lookingglass.rocks/jay77/wod/search.xml'
 dialog          = xbmcgui.Dialog()
                                                                
 def GetMenu():
@@ -46,9 +41,9 @@ def GetMenu():
     xbmc.executebuiltin('Container.SetViewMode(55)')
     url = baseurl
     addDir('[B][COLORsnow] --- Whats New --- [/COLOR][/B]',url,10,newicon,fanarts)
-    addDir('[B][COLORsnow] --- Requests & Issues --- [/COLOR][/B]',url,17,icon,fanarts)    
-    addDir('[B][COLORsnow] --- PPV Schedule --- [/COLOR][/B]',url,11,schedule,fanarts)
-    addDir('[B][COLORsnow] --- Search ---[/COLOR][/B]',url,5,searchicon,fanarts)        
+   # addDir('[B][COLORsnow] --- Requests & Issues --- [/COLOR][/B]',url,17,icon,fanarts)    
+#    addDir('[B][COLORsnow] --- PPV Schedule --- [/COLOR][/B]',url,11,schedule,fanarts)
+   # addDir('[B][COLORsnow] --- Search ---[/COLOR][/B]',url,5,searchicon,fanarts)        
     addItem('[B][COLORsnow]'+' --- URLResolver Settings ---'+'[/COLOR]''[/B]','url',16,realdebrid,fanarts)
     addLink('[B][COLOR gold] ------ WELCOME TO WRESTLING ON DEMAND ------ [/COLOR][/B]',url,999,icon,fanarts)
     link=open_url(baseurl)
@@ -139,7 +134,7 @@ def GetMenu():
                                     addLink(name,url2,3,iconimage,fanart)
         except:pass
         view(link)
-    addLink('[B][COLOR mediumseagreen] ----------------     Version 5.00     ---------------- [/COLOR][/B]',url,999,icon,fanarts)      
+    addLink('[B][COLOR mediumseagreen] ----------------     Version 5.05     ---------------- [/COLOR][/B]',url,999,icon,fanarts)      
         
     #view(link)
 def CLEANUP(text):
@@ -456,7 +451,7 @@ def REDDIT_ADD():
 
 def REDDIT_SUGGESTED():
 
-    r = open_url('http://wod.pbear.seedr.io/suggested.xml')
+    r = open_url('http://lookingglass.rocks/jay77/wod/suggested.xml')
     
     r = re.compile('<link>(.+?)</link>').findall(r)
 
@@ -585,7 +580,7 @@ def REDDIT_REMOVE(name,url):
         
 def EVENT_REDDIT():
 
-    r = open_url('http://wod.pbear.seedr.io/redditevent.xml')
+    r = open_url('http://lookingglass.rocks/jay77/wod/redditevent.xml')
     r = re.compile('<link>(.+?)</link>').findall(r)
     
     checks = ['acestream','href']
@@ -984,9 +979,6 @@ def addLinkMeta(name,url,mode,iconimage,itemcount,isFolder=False):
 	else: liz.setProperty('fanart_image', fanart)
 	ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isFolder,totalItems=itemcount)
 	return ok
-
-
-
 	
 def addDir(name,url,mode,iconimage,fanart,description=''):
     u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&description="+str(description)+"&fanart="+urllib.quote_plus(fanart)
@@ -1150,12 +1142,7 @@ except: pass
 try: fanart=urllib.unquote_plus(params["fanart"])
 except: pass
  
-if mode==None or url==None or len(url)<1:	
-    if not search_show == '' and search_show in list: 
-        GetMenu()			
-    else:
-        dialog.ok('WRESTLING ON DEMAND', results, '')
-
+if mode==None or url==None or len(url)<1: GetMenu()
 elif mode==1:GetContent(name,url,iconimage,fanart)
 elif mode==2:PLAYLINK(name,url,iconimage)
 elif mode==3:GETMULTI(name,url,iconimage)
