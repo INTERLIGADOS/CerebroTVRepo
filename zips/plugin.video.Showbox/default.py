@@ -327,7 +327,9 @@ def Mirrors(url,name):
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
   except: pass
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
+  #vimg = vimg.encode("utf8")  
   except: pass
+  #xbmc.log("Name?? "+vimg,2)
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
   addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
@@ -348,7 +350,9 @@ def Mirrors(url,name):
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "vidup":
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
-                addLink("[COLOR white]"+name+"[/COLOR] [COLOR gold]"+vname+"[/COLOR] ",strdomain+vurl,3,"http://www.vidics.to"+vimg,name)
+                xbmc.log("Name?? "+vname,2)
+                addLink("[COLOR white]"+str(name)+"[/COLOR] [COLOR gold]"+str(vname)+"[/COLOR] ",str(strdomain)+str(vurl),3,"http://www.vidics.to"+str(vimg),str(name))
+                #except: pass
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
   
 def add_contextsearchmenu(title, video_type):
@@ -1264,6 +1268,7 @@ def Episodes(url,name):
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
         #ctitle = metaname
+        newlink = ''.join(link.splitlines()).replace('\t','')
         try:
             response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname)).read()
             sid=response.split('<seriesid>', 1)[1]
@@ -1281,7 +1286,7 @@ def Episodes(url,name):
         except : 
             vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
             vimg = "https://www.vidics.to"+vimg
-        newlink = ''.join(link.splitlines()).replace('\t','')
+
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         #vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
         addDir('[COLOR gold]'+metaname.replace("%20"," ")+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
