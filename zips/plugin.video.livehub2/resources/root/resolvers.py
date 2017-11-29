@@ -146,11 +146,12 @@ def mobdroresolve(url):
     to_hash = "{0}{1}/hls/{2}".format(token,time_stamp,url)
     out_hash = b64encode(md5.new(to_hash).digest()).replace("+", "-").replace("/", "_").replace("=", "")
     #servers = ['185.152.64.236','185.102.219.72','185.102.219.67','185.102.218.56','185.59.222.232']
-    servers = ['185.102.219.67','185.102.218.56','185.59.222.232']
+    servers = ['185.102.218.56','185.59.222.232']
     server  = random.choice(servers)
+    #server  = "185.152.64.236"
     xbmc.log("Mod Server: "+server,2)
     
-    url = "http://{0}/p2p/{1}?st={2}&e={3}".format(server,url,out_hash,time_stamp)
+    url = "http://{0}/p2p/{1}?st={2}&e={3}".format(servers,url,out_hash,time_stamp)
     return '{url}|User-Agent={user_agent}&referer={referer}'.format(url=url,user_agent=user_agent,referer='6d6f6264726f2e6d65'.decode('hex'))
 
 

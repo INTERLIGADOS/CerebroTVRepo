@@ -1,6 +1,6 @@
 import xbmc,os
 
-addon_id   = 'plugin.video.livehub'
+addon_id   = 'plugin.video.livehub2'
 
 icon       = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 fanart     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
@@ -190,7 +190,7 @@ def OPEN_URL(url):
 	link = link.encode('ascii', 'ignore')
 	return link
 	
-logfile    = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.livehub', 'log.txt'))
+logfile    = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.livehub2', 'log.txt'))
 
 def log(text):
 	file = open(logfile,"w+")

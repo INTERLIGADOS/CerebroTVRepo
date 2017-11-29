@@ -2,9 +2,9 @@ import os,xbmc
 
 addon_id   = 'plugin.video.livehub2'
 
-icon       = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
-fanart     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
-logfile    = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'log.txt'))
+icon       = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, '/icon.png'))
+fanart     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, '/fanart.jpg'))
+logfile    = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, '/log.txt'))
 
 
 from resources.root import android
@@ -14,6 +14,28 @@ def home():
     #addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
     addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
     addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',2000,icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('','','',icon,fanart,'')
+    addDir('VoD Add-ons','','',icon,fanart,'')
     addDir('[COLOR white][B]Elysium Movies[/COLOR][/B]','url',3000,icon,fanart,'')
     addDir('[COLOR white][B]Elysium TV[/COLOR][/B]','url',4000,icon,fanart,'')
     addDir('[COLOR white][B]Covenant Movies[/COLOR][/B]','url',5000,icon,fanart,'')
