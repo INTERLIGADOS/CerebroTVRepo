@@ -1,3 +1,4 @@
+CAT=Sports
 Arena 1:mpd://06601e3489890afdb3bdcaf46e87747e.m3u8
 Arena 2:mpd://9fc113e3cb65d67185903645c5a7d77b.m3u8
 Arena 3:mpd://205a864931b005cb983e67e717acc544.m3u8
@@ -63,6 +64,8 @@ TSN 3:mpd://418e4380e1577624622d91b6a1997e5b.m3u8
 TSN 4:mpd://217ba763c8f90807fe76de76e36be045.m3u8
 TSN 5:mpd://feca97a90c0adc74a57a8a3c1e93a4df.m3u8
 WWE TV:mpd://cd61f0ea3b560a665ea813dab2505a2f.m3u8
+--------------------------------------------------
+CAT=Entertainment
 3e:mpd://8aee1f7493a36660dd398cc005777f37.m3u8
 A&E:mpd://ce425ca32dea0f37b22717ae989bcffb.m3u8
 A&E (Spain):mpd://bd0e73b1b69bbea4f49961cfba9b4d9f.m3u8
@@ -245,6 +248,8 @@ USA Network:mpd://6e41f30f946d9327c3322a05250735a7.m3u8
 USA Network:mpd://0e367435d4bc1a89ea7506cf0eadb3a7.m3u8
 VOX:mpd://ccda5ae0852a58ca19ec280be9db8ee5.m3u8
 WWOR-TV:mpd://f55025e27be5231454658cc200a5565e.m3u8
+--------------------------------------------------
+CAT=News
 Bloomberg:mpd://208421fcbc090a62f099f85472ded9ba.m3u8
 CNBC:mpd://0fa1864db527d3de89020cb06a050b35.m3u8
 CNBC:mpd://aa11677d237b2c2b435fd7decac0d7ad.m3u8
@@ -258,6 +263,8 @@ N24:mpd://e24244c926110424f94896c030fc0500.m3u8
 NBC:mpd://3baf7db0d8f1d400816fb6166b297f46.m3u8
 NBC:mpd://89b7abacbe0cefbadf6ad5c5ccb4ae15.m3u8
 Sky News:mpd://3b7dd11b6654dd5f35745285ededdbd9.m3u8
+------------------------------------------------------
+CAT=247 Shows
 Adult Swim 24/7:mpd://539125fdf85ba9fc38e2550c3c838e4d.m3u8
 Adventure Time:mpd://7d0db380a5b95a8ba1da0bca241abda1.m3u8
 Amercian Horror Story:mpd://9473408d814743efc7c203eb79782f8b.m3u8
@@ -322,6 +329,8 @@ Trailer Park Boys:mpd://d12d2c37e8c211f096ea78fd159643ba.m3u8
 Vampire Diaries:mpd://52b8a5f24dc760714094959c4b5edb0f.m3u8
 Whose Line Is It Anyway?:mpd://9185defbf5f091cd98fe4751b66f91b8.m3u8
 Workaholics:mpd://742523daef59db4b718409f46de05d0c.m3u8
+-----------------------------------------------------------------
+CAT=247 Movies
 Action Movies 24/7:mpd://90ce2364e02379b96643fe4d0f2d7c25.m3u8
 Animation Movies 24/7:mpd://7e18e745bf13ed4e73c5e612599b4cf5.m3u8
 Christmas Movies 24/7:mpd://17d6b59f16d493db84234ade495c6ce6.m3u8
@@ -335,6 +344,8 @@ Mystery movies 24/7:mpd://cd0f46533a7ff32277171001db8ea982.m3u8
 Romance Movies 24/7:mpd://3248e60a5820cec655cb031cc2662925.m3u8
 Star Trek vs Star Wars:mpd://9a045dead94fad2ceb3c5c808dd964b6.m3u8
 Studio Ghibli Movies 24/7:mpd://57f1a338fcf6edaa3378c10cd5beefd6.m3u8
+---------------------------------------------------------------------
+CAT=Music
 40TV:mpd://e05e081ee05882d68e7f2683a5f950af.m3u8
 Box Hits:mpd://a118a64979f4dcf9e0970bb59ed129d6.m3u8
 Box Upfront:mpd://54646e56785ba2e2568ceaacaa307979.m3u8

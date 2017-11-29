@@ -12,8 +12,8 @@ from resources.root import android
 def home():
     #addDir('','url',0,icon,fanart,'')
     #addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
-    addDir('[COLOR white][B]UK Geo Locked[/COLOR][/B]','url',1000,icon,fanart,'')
-    addDir('[COLOR white][B]IPTV[/COLOR][/B]','url',2000,icon,fanart,'')
+    addDir('[B][COLOR gold]Cerebro: [/COLOR][COLOR white]IPTV[/COLOR][/B] (Mobdro & Pak India)','url',2000,icon,fanart,'')
+    addDir('[B][COLOR gold]Cerebro: [/COLOR][COLOR white]IPTV UK Geo Locked[/COLOR][/B] (BBCi & ITV Hub','url',1000,icon,fanart,'')
     addDir('','','',icon,fanart,'')
     addDir('','','',icon,fanart,'')
     addDir('','','',icon,fanart,'')

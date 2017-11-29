@@ -8,8 +8,8 @@ fanart     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id
 def cat():
 	addDir('[COLOR white][B]BBC iPlayer[/COLOR][/B]','iplayer',1,'https://pbs.twimg.com/profile_images/851480480700669952/5ttz9hg1.jpg',fanart,'')
 	addDir('[COLOR white][B]ITV Player[/COLOR][/B]','itv',1,'http://blog.careco.co.uk/wp-content/uploads/2015/08/x__i0KC0.png',fanart,'')
-	addDir('[COLOR white][B]Tv Catchup[/COLOR][/B]','tvcatchup',1,'http://www.tvcatchup.com/tvcatchup-sm.jpg',fanart,'')
-	addDir('[COLOR white][B]Tv Player[/COLOR][/B]','tvplayer',1,'http://www.broadbandtvnews.com/wp-content/uploads/2017/04/TVPlayer.png',fanart,'')
+	#addDir('[COLOR white][B]Tv Catchup[/COLOR][/B]','tvcatchup',1,'http://www.tvcatchup.com/tvcatchup-sm.jpg',fanart,'')
+	#addDir('[COLOR white][B]Tv Player[/COLOR][/B]','tvplayer',1,'http://www.broadbandtvnews.com/wp-content/uploads/2017/04/TVPlayer.png',fanart,'')
 
 def get(url):
 	if url == 'tvplayer':
