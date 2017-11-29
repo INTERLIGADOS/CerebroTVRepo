@@ -4548,7 +4548,7 @@ level.</description>
 
 <addon id="script.mtvbbts1"
   name="CerebroTV BT Sports 1"
-  version="2.0"
+  version="2.1"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -4566,7 +4566,7 @@ level.</description>
 
 <addon id="script.mtvbbts2"
   name="CerebroTV BT Sports 2"
-  version="2.2"
+  version="2.3"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
