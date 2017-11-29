@@ -3594,7 +3594,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.module.addon.signals"
 	name="Addon Signals"
-	version="0.0.1"
+	version="0.0.3"
 	provider-name="Rick Phillips (ruuk)">
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
@@ -4086,6 +4086,27 @@ level.</description>
                 <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
                 <website>http://noobsandnerds.com</website>
         </extension>
+</addon>
+
+<addon id="script.module.pyrollbar"
+       name="pyrollbar"
+       version="0.13.17"
+       provider-name="rollbar">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.3.0" optional="false"/>
+    <import addon="script.module.six" version="1.9.0" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Error tracking and logging from Python to Rollbar</summary>
+    <description>Python notifier for reporting exceptions, errors, and log messages to Rollbar.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/rollbar/pyrollbar</source>
+    <website>https://rollbar.com/docs/notifier/pyrollbar</website>
+  </extension>
 </addon>
 
 <addon id="script.module.python.koding.aio"
