@@ -29,7 +29,7 @@ ytplpg2         = '&part=snippet&playlistId='
 ytplpg3         = '&maxResults=50&key=AIzaSyAd-YEOqZz9nXVzGtn3KWzYLbLaajhqIDA'
 adultpass       = selfAddon.getSetting('password')
 metaset         = selfAddon.getSetting('enable_meta')
-messagetext     = 'http://www.lookingglass.rocks/detectivekodi/mma/info.xml'
+messagetext     = 'http://www.lookingglass.rocks/detectivekodi/mma/startinfo.xml'
 startinfo       = 'http://www.lookingglass.rocks/detectivekodi/mma/startinfo.xml'
 SEARCH_LIST      = 'http://www.lookingglass.rocks/detectivekodi/mma/search.xml'
 dialog          = xbmcgui.Dialog()
@@ -38,7 +38,7 @@ def GetMenu():
     popup()
     xbmc.executebuiltin('Container.SetViewMode(500)')
     url = baseurl
-    addDir('[B][COLOR white]Whats[/COLOR][/B] [B][COLOR red]New[/COLOR][/B]',url,10,newicon,fanarts)
+    addDir('[B][COLOR red]I[/COLOR][/B][B][COLOR white]nformation[/COLOR][/B]',url,10,newicon,fanarts)
     addDir('[B][COLOR red]S[/COLOR][/B][B][COLOR white]earch[/COLOR][/B]',url,5,searchicon,fanarts)        
     addItem('[B][COLOR white]'+'Real Debrid Login'+'[/COLOR]''[/B]','url',16,realdebrid,fanarts)
     link=open_url(baseurl)
