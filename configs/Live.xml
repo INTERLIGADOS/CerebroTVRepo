@@ -45,6 +45,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Cerebro Pak India Streams[/COLOR] (UK TV + UK/USA/Indian Sports)</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fwww.madhyamam.com%2fen%2fsites%2fdefault%2ffiles%2findia-pak.jpg&mode=4&name=%5bCOLOR%20white%5d%5bB%5dPak%20India%20Sports%5b%2fCOLOR%5d%5b%2fB%5d&url=pakindiasport</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Supremacy Live TV[/COLOR]</title>
 <link>plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&mode=1&name=%5bCOLOR%20aqua%5dLive%20Tv%5b%2fCOLOR%5d&url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fLiveTV%2flive.m3u</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
@@ -74,7 +81,7 @@
 
 <plugin>
 <title>[COLOR pink]BBCi Player[/COLOR]</title>
-<link>plugin://plugin.video.bbciplayer/?IPID&description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.bbciplayer%5cimg%5ciplay.jpg&mode=15&name=By%20Channel&url=http%3a%2f%2fwww.bbc.co.uk%2fiplayer</link>
+<link>plugin://plugin.video.livehub2/?description&iconimage=https%3a%2f%2fpbs.twimg.com%2fprofile_images%2f851480480700669952%2f5ttz9hg1.jpg&mode=1&name=%5bCOLOR%20white%5d%5bB%5dBBC%20iPlayer%5b%2fCOLOR%5d%5b%2fB%5d&url=iplayer</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -87,8 +94,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]ITV Player[/COLOR] (AKA ITV HUB)</title>
-<link>plugin://plugin.video.itv/</link>
+<title>[COLOR pink]ITV Player[/COLOR]</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fblog.careco.co.uk%2fwp-content%2fuploads%2f2015%2f08%2fx__i0KC0.png&mode=1&name=%5bCOLOR%20white%5d%5bB%5dITV%20Player%5b%2fCOLOR%5d%5b%2fB%5d&url=itv</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>

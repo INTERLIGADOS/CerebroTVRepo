@@ -39,7 +39,14 @@
 
 <plugin>
 <title>[COLOR pink]Modbro Sports[/COLOR]</title>
-<link>plugin://plugin.video.mobdina/?action=index&query=category%2fsports</link>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Cerebro Pak India Streams[/COLOR] (UK TV + UK/USA/Indian Sports)</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fwww.madhyamam.com%2fen%2fsites%2fdefault%2ffiles%2findia-pak.jpg&mode=4&name=%5bCOLOR%20white%5d%5bB%5dPak%20India%20Sports%5b%2fCOLOR%5d%5b%2fB%5d&url=pakindiasport</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
