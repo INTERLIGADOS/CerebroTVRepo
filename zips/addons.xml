@@ -2526,6 +2526,36 @@ Skin and code for skin by Demonstratorz</description>
 	</extension>
 </addon>
 
+<addon id="repository.lookingglass" name="[COLOR cyan]L[/COLOR][COLOR magenta]ooking[/COLOR] [COLOR cyan]G[/COLOR][COLOR magenta]lass[/COLOR]" version="0.0.3" provider-name="Looking Glass Team">
+	<extension point="xbmc.addon.repository" name="lookingglass">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/gracie242/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/gracie242/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/gracie242/zips/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Etree100/eccentrictree/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Etree100/eccentrictree/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Etree100/eccentrictree/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">http://www.projectdaddon.com/plugins/addons.xml</info>
+		    <checksum>http://www.projectdaddon.com/plugins/addons.xml.md5</checksum>
+		    <datadir zip="true">http://www.projectdaddon.com/plugins/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en">The Official Repo for the Looking Glass Team</description>
+		<genre>movies,usa</genre>
+	</extension>
+</addon>
+
 <addon id="repository.maverickrepo" name="[COLOR lime]MaverickTV Repo[/COLOR]" version="1.7" provider-name="Maverick TV">
 <extension point="xbmc.addon.repository" name="[COLOR lime]MaverickTV Repo[/COLOR]">
 	<dir>
@@ -2859,7 +2889,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.xunitytalk" name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk Repository" version="1.1.6" provider-name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+<addon id="repository.xunitytalk" name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk Repository" version="2.0.0" provider-name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
 	<extension point="xbmc.addon.repository" name="Mikey1234 Addon Repository">
 		<info compressed="false">http://xtyrepo.me/xunitytalk/addons/addons.xml</info>
 		<checksum>http://xtyrepo.me/xunitytalk/addons/addons.xml.md5</checksum>

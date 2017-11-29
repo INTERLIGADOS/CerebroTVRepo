@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.lookingglass" name="[COLOR cyan]L[/COLOR][COLOR magenta]ooking[/COLOR] [COLOR cyan]G[/COLOR][COLOR magenta]lass[/COLOR]" version="0.0.3" provider-name="Looking Glass Team">
+	<extension point="xbmc.addon.repository" name="lookingglass">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/gracie242/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/gracie242/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/gracie242/zips/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Etree100/eccentrictree/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Etree100/eccentrictree/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Etree100/eccentrictree/master/zips/</datadir>		
+		</dir>
+		<dir>
+			<info compressed="false">http://www.projectdaddon.com/plugins/addons.xml</info>
+		    <checksum>http://www.projectdaddon.com/plugins/addons.xml.md5</checksum>
+		    <datadir zip="true">http://www.projectdaddon.com/plugins/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en">The Official Repo for the Looking Glass Team</description>
+		<genre>movies,usa</genre>
+	</extension>
+</addon>
