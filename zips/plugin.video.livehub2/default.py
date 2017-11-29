@@ -13,7 +13,7 @@ def home():
     #addDir('','url',0,icon,fanart,'')
     #addDir('[COLOR white][B][/COLOR][/B]','url',0,icon,fanart,'')
     addDir('[B][COLOR gold]Cerebro: [/COLOR][COLOR white]IPTV[/COLOR][/B] (Mobdro & Pak India)','url',2000,icon,fanart,'')
-    addDir('[B][COLOR gold]Cerebro: [/COLOR][COLOR white]IPTV UK Geo Locked[/COLOR][/B] (BBCi & ITV Hub','url',1000,icon,fanart,'')
+    addDir('[B][COLOR gold]Cerebro: [/COLOR][COLOR white]IPTV UK Geo Locked[/COLOR][/B] (BBCi & ITV Players)','url',1000,icon,fanart,'')
     addDir('','','',icon,fanart,'')
     addDir('','','',icon,fanart,'')
     addDir('','','',icon,fanart,'')
