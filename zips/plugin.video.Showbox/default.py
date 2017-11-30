@@ -1299,7 +1299,9 @@ def Episodes(url,name):
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         scount=-1
         #vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-        addDir('[COLOR gold]'+metaname.replace("%20"," ")+'[/COLOR] : [COLOR lightblue]'+name+'[/COLOR]','Cerebro',9898,vimg)
+        metaname2 = metaname.replace("%20"," ")
+        metaname2 = metaname2.replace("_"," ")
+        addDir('[COLOR gold]'+metaname2+'[/COLOR] : [COLOR lightblue]'+name+'[/COLOR]','Cerebro',9898,vimg)
         seasoncount = name.replace("Season ","")
         #xbmc.log(seasoncount,2)
         if int(seasoncount) > 1: 
@@ -1408,8 +1410,10 @@ def Seasons(url):
             #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
             #xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]     
-        addDir('[COLOR gold]'+metaname.replace("-"," ").title()+'[/COLOR]','Cerebro',9898,__icon__)     
+        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]  
+        metaname2 = metaname.replace("-"," ")
+        metaname2 = metaname.replace("_"," ")		
+        addDir('[COLOR gold]'+metaname2.title()+'[/COLOR]','Cerebro',9898,__icon__)     
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
