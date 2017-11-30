@@ -332,7 +332,7 @@ def Mirrors(url,name):
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
   #vimg = vimg.encode("utf8")  
   except: pass
-  xbmc.log("Image?? "+vimg,2)
+  #xbmc.log("Image?? "+vimg,2)
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
   addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
@@ -1301,6 +1301,7 @@ def Episodes(url,name):
         #vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
         metaname2 = metaname.replace("%20"," ")
         metaname2 = metaname2.replace("_"," ")
+        metaname2 = metaname2.replace("-"," ")
         addDir('[COLOR gold]'+metaname2+'[/COLOR] : [COLOR lightblue]'+name+'[/COLOR]','Cerebro',9898,vimg)
         seasoncount = name.replace("Season ","")
         #xbmc.log(seasoncount,2)
@@ -1382,7 +1383,8 @@ def Seasons(url):
         ctitle = metaname.replace(" ","%20")
         ctitle = ctitle.replace("-","%20")
         ctitle = ctitle.replace("_","%20").title()
-        ctitle = ctitle.replace("%201","")
+        ctitle = ctitle.replace("&macr;"," ")
+        ctitle = ctitle.replace("-","%20")
         if ctitle=="X%20Files": ctitle = "The%20X-Files"
         if "Supergirl" in metaname: 
             metaname = "Supergirl"
@@ -1412,7 +1414,8 @@ def Seasons(url):
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]  
         metaname2 = metaname.replace("-"," ")
-        metaname2 = metaname.replace("_"," ")		
+        metaname2 = metaname.replace("_"," ")	
+        metaname2 = metaname.replace("&macr;"," ")		
         addDir('[COLOR gold]'+metaname2.title()+'[/COLOR]','Cerebro',9898,__icon__)     
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
