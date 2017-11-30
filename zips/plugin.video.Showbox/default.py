@@ -74,7 +74,9 @@ playablehost=[
 'streamcloud',
 'nowvideo',
 'putstream',
-'vidlox'
+'vidlox',
+'netu',
+'thevideobee'
 ]
 
 def d():
@@ -324,12 +326,12 @@ def List4Days():
 def Mirrors(url,name):
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
-  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-  except: pass
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
+  except: pass
+  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
   #vimg = vimg.encode("utf8")  
   except: pass
-  #xbmc.log("Name?? "+vimg,2)
+  xbmc.log("Image?? "+vimg,2)
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
   addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
@@ -350,7 +352,7 @@ def Mirrors(url,name):
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "vidup":
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
-                xbmc.log("Name?? "+vname,2)
+                #xbmc.log("Name?? "+vname,2)
                 addLink("[COLOR white]"+str(name)+"[/COLOR] [COLOR gold]"+str(vname)+"[/COLOR] ",str(strdomain)+str(vurl),3,"http://www.vidics.to"+str(vimg),str(name))
                 #except: pass
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
@@ -1282,7 +1284,7 @@ def Episodes(url,name):
             gpost = gpost.split('</BannerPath>', 1)[0]
             #gpost = gpost.split('<BannerPath>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
-            xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+            #xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
         except : 
             vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
             vimg = "https://www.vidics.to"+vimg
@@ -1336,10 +1338,10 @@ def Seasons(url):
             gpost = gpost.split('</BannerPath>', 1)[0]
             #gpost = gpost.split('<BannerPath>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
-            xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+            #xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]     
-        addDir('[COLOR gold]'+metaname.replace("-"," ").title()+'[/COLOR]','Cerebro',9898,__icon__)		
+        addDir('[COLOR gold]'+metaname.replace("-"," ").title()+'[/COLOR]','Cerebro',9898,__icon__)     
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
@@ -2344,7 +2346,9 @@ def addDir(name,url,mode,iconimage,plot=""):
         #plot="Pair now for best results!!"
         try:
             metaname=str(url).split('Show/', 1)[1]
-        except: metaname=str(url).split('Serie/', 1)[1] #metaname = "DONT SHOW"
+        except: 
+            try: metaname=str(url).split('Serie/', 1)[1] #metaname = "DONT SHOW"
+            except: "MOVIE"
         metaname=metaname.replace("-"," ")
         metaname=str(metaname).split(' Season', 1)[0]
         metaname=metaname.replace("_","%20").title()
