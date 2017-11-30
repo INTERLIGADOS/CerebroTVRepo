@@ -1338,7 +1338,8 @@ def Seasons(url):
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
             xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]        
+        #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]     
+        addDir('[COLOR gold]'+metaname.replace("-"," ").title()+'[/COLOR]','Cerebro',9898,__icon__)		
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
@@ -2343,7 +2344,7 @@ def addDir(name,url,mode,iconimage,plot=""):
         #plot="Pair now for best results!!"
         try:
             metaname=str(url).split('Show/', 1)[1]
-        except: metaname = "DONT SHOW"
+        except: metaname=str(url).split('Serie/', 1)[1] #metaname = "DONT SHOW"
         metaname=metaname.replace("-"," ")
         metaname=str(metaname).split(' Season', 1)[0]
         metaname=metaname.replace("_","%20").title()
