@@ -25,8 +25,8 @@ import xbmc
 #tvdb = TheTvDb(tvdb_key.decode('base64'))
 
 
-
-
+addon_handle = int(sys.argv[1])
+xbmcplugin.setContent(addon_handle, 'movies')
 __addon__ = xbmcaddon.Addon()
 __addonname__ = __addon__.getAddonInfo('name')
 __icon__ = __addon__.getAddonInfo('icon')
@@ -324,11 +324,12 @@ def List4Days():
         addDir(date_name+"'s("+sched_date+") TV Schedule",sched_date,21,"episode")
         
 def Mirrors(url,name):
+  xbmcplugin.setContent(addon_handle, 'movies')
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
-  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
-  except: pass
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
+  except: pass
+  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
   #vimg = vimg.encode("utf8")  
   except: pass
   xbmc.log("Image?? "+vimg,2)
@@ -360,41 +361,42 @@ def Mirrors(url,name):
 def add_contextsearchmenu(title, video_type):
     title=urllib.quote(title)
     contextmenuitems = []
-    if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.1channel'):
-        contextmenuitems.append(('Search 1channel',
-                                 'XBMC.Container.Update(%s?mode=%s&section=%s&query=%s)' % (
-                                     'plugin://plugin.video.1channel/', '7000',video_type, title)))
-    if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.icefilms'):
-        contextmenuitems.append(('Search Icefilms',
-                                 'XBMC.Container.Update(%s?mode=555&url=%s&search=%s&nextPage=%s)' % (
-                                     'plugin://plugin.video.icefilms/', 'http://icefilms.unblocked.pro/', title, '1')))
-    if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.movie25'):
-        contextmenuitems.append(('Search Mash Up',
-                                 'XBMC.Container.Update(%s?mode=%s&url=%s)' % (
-                                     'plugin://plugin.video.movie25/', '4', title)))
-    if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.tubeplus'):
-        if video_type == 'tv':
-            section = 'None'
-            serurl='http://www.tubeplus.me/search/tv-shows/%s/'%(title)
-        else:
-            serurl='http://www.tubeplus.me/search/movies/"%s"/'%(title)
-            section = 'movie'
-       
-        contextmenuitems.append(('Search tubeplus', 'XBMC.Container.Update(%s?mode=150&types=%s&url=%s&linkback=latesttv)' % (
-            'plugin://plugin.video.tubeplus/', section, serurl)))
-    if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.tvlinks'):
-        if video_type == 'tv':
-            contextmenuitems.append(('Search tvlinks', 'XBMC.Container.Update(%s?mode=Search&query=%s)' % (
-                'plugin://plugin.video.tvlinks/', title)))
-    if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.solarmovie'):
-        if video_type == 'tv':
-            section = 'tv-shows'
-        else:
-            section = 'movies'
-        contextmenuitems.append(('Search solarmovie', 'XBMC.Container.Update(%s?mode=Search&section=%s&query=%s)' % (
-            'plugin://plugin.video.solarmovie/', section, title)))
+    #if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.1channel'):
+    #    contextmenuitems.append(('Search 1channel',
+    #                             'XBMC.Container.Update(%s?mode=%s&section=%s&query=%s)' % (
+    #                                 'plugin://plugin.video.1channel/', '7000',video_type, title)))
+    #if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.icefilms'):
+    #    contextmenuitems.append(('Search Icefilms',
+    #                             'XBMC.Container.Update(%s?mode=555&url=%s&search=%s&nextPage=%s)' % (
+    #                                 'plugin://plugin.video.icefilms/', 'http://icefilms.unblocked.pro/', title, '1')))
+    #if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.movie25'):
+    #    contextmenuitems.append(('Search Mash Up',
+    #                             'XBMC.Container.Update(%s?mode=%s&url=%s)' % (
+    #                                 'plugin://plugin.video.movie25/', '4', title)))
+    #if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.tubeplus'):
+    #    if video_type == 'tv':
+    #        section = 'None'
+    #        serurl='http://www.tubeplus.me/search/tv-shows/%s/'%(title)
+     #   else:
+    #        serurl='http://www.tubeplus.me/search/movies/"%s"/'%(title)
+    #        section = 'movie'
+    #   
+    #    contextmenuitems.append(('Search tubeplus', 'XBMC.Container.Update(%s?mode=150&types=%s&url=%s&linkback=latesttv)' % (
+    #        'plugin://plugin.video.tubeplus/', section, serurl)))
+    #if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.tvlinks'):
+    #    if video_type == 'tv':
+    #        contextmenuitems.append(('Search tvlinks', 'XBMC.Container.Update(%s?mode=Search&query=%s)' % (
+    #            'plugin://plugin.video.tvlinks/', title)))
+    #if os.path.exists(xbmc.translatePath("special://home/addons/") + 'plugin.video.solarmovie'):
+    #    if video_type == 'tv':
+    #        section = 'tv-shows'
+    #    else:
+    #        section = 'movies'
+    #    contextmenuitems.append(('Search solarmovie', 'XBMC.Container.Update(%s?mode=Search&section=%s&query=%s)' % (
+    #        'plugin://plugin.video.solarmovie/', section, title)))
 
     #contextmenuitems.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
+    xbmcplugin.setContent(addon_handle, 'movies')
     return contextmenuitems
 
 
@@ -1259,6 +1261,7 @@ def SearchChannelresults(url,searchtext):
 def Episodes(url,name):
     #try:
         xbmc.executebuiltin("Container.SetViewMode(522)")
+        xbmcplugin.setContent(addon_handle, content="episodes")
         link = GetContent(url)
         try: metaname=url.split('Show/', 1)[1]
         except: metaname=url.split('Serie/', 1)[1]
@@ -1266,6 +1269,7 @@ def Episodes(url,name):
         metaname = metaname.replace("-","%20")
         metaname = metaname.replace("_","%20").title()
         if metaname=="X%20Files": metaname = "X-Files"
+        if "Supergirl" in metaname: metaname = "Supergirl"
         #xbmc.log("Show Name?? "+metaname,2)
         #xbmc.log("Show Season?? "+name,2)
         epcunter=1
@@ -1284,32 +1288,92 @@ def Episodes(url,name):
             gpost = gpost.split('</BannerPath>', 1)[0]
             #gpost = gpost.split('<BannerPath>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
+            response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
             #xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+            #xbmc.log(response,2)
+            #epdata = response.split('posters', 1)[1]
         except : 
             vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
             vimg = "https://www.vidics.to"+vimg
 
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
+        scount=-1
         #vimg = "http://www.thetvdb.com/banners/_cache/"+getimg
-        addDir('[COLOR gold]'+metaname.replace("%20"," ")+' : '+name+'[/COLOR]','Cerebro',9898,vimg)
+        addDir('[COLOR gold]'+metaname.replace("%20"," ")+'[/COLOR] : [COLOR lightblue]'+name+'[/COLOR]','Cerebro',9898,vimg)
+        seasoncount = name.replace("Season ","")
+        #xbmc.log(seasoncount,2)
+        if int(seasoncount) > 1: 
+        #    epcunter=int(seasoncount)-1
+            epcunter=1
+        #if int(seasoncount) == 2: 
+        #    epcunter=int(seasoncount)-2
+        #    epcunter=1
+        else: epcunter=1
         addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
                 episodelist=re.compile('<a class="episode" [^s][^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(listcontent2)
                 for (vurl,vname) in episodelist:
+                     if epcunter >= scount:
+                        scount = epcunter
+                     #else:
+                        #scount = epcunter+1
                      #xbmc.log("Episode?? "+str(epcunter),2)
-                     epcunter = epcunter+1
+                     try: epname = response.split('<Combined_season>'+str(seasoncount)+"", 1)[1]
+                     except: epname = response.split('<Combined_season>'+str(seasoncount)+"", 1)[0]
+                     try: epname = epname.split('<Combined_episodenumber>'+str(epcunter), 1)[1]
+                     except: epname = epname.split('<Combined_episodenumber>'+str(epcunter), 1)[0]
+                     #xbmc.log(epname,2)
+                     #exit()
+                     try: epname2 = epname.split('<EpisodeNumber>'+str(scount), 1)[1]
+                     except: epname2 = epname.split('<EpisodeNumber>'+str(scount)+"", 1)[0]
+                     epname2 = epname.split('<Combined_season>'+str(seasoncount)+"", 1)[0]
+                     epname2 = epname.split('<Combined_season>'+str(int(scount-epcunter))+"", 1)[0]
+                     #xbmc.log(epname,2)
+                     try:
+                        epname = epname2.split('<EpisodeName>', 1)[1]
+                        epname = epname.split('</EpisodeName>', 1)[0]
+                     except: epname = "NOTHING"
+                     #epdata = epname.split('<Combined_episodenumber>'+str(scount), 1)[0]
+                     #xbmc.log(epname2,2)
+                     try:
+                        epdata = epname.split('<Overview>', 1)[1]
+                        epdata = epdata.split('</Overview>', 1)[0]
+                     except: epdata="HMMMM"
+                     #xbmc.log(vname,2)
+
                      html_re = re.compile(r'<[^>]+>')
                      vname=html_re.sub('', vname) 
-                     vname = vname.replace("unknown","[I][COLOR grey]No Show Info[/COLOR][/I]")
-                     addDir(vname,strdomain+vurl,4,str(vimg),"TEST")
-                break 
-        
+                     #vname = vname.replace("unknown",epname)
+                     vname=epname
+                     iconimage = vimg
+                     plot = epdata
+                     #xbmc.log(plot,2)
+                     #ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+                     addDir("S"+str(seasoncount)+"E"+str(epcunter)+": "+vname,strdomain+vurl,4,str(vimg),"")
+                     #u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str("8")+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
+                     #liz=xbmcgui.ListItem(vname, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
+                     #liz.setInfo( type="Video", infoLabels={ "Title":vname, "Plot":plot})
+                     #xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)    
+                     #liz.setProperty('IsPlayable', 'true')                  
+                     #xbmc.executebuiltin('Container.Refresh')
+                     #xbmc.log("ep counter"+str(epcunter),2)
+                     #xbmc.log("seas counter"+str(scount),2)
+                     epcunter = epcunter+1
+                     #seasoncount = int(seasoncount)+1
+                     #scount = scount+1
+                     
+                break
+
+            #liz.setProperty('IsPlayable', 'true');         
+            #xbmc.executebuiltin('Container.Refresh')
+            #xbmcplugin.setContent(addon_handle, 'tvshows')    
     #except: pass
     
 def Seasons(url):
         xbmc.executebuiltin("Container.SetViewMode(522)")
+        xbmcplugin.setContent(addon_handle, 'tvshows')
         try: metaname=url.split('Show/', 1)[1]
         except: metaname=url.split('Serie/', 1)[1]
         name = metaname.replace("-"," ")
@@ -1318,6 +1382,9 @@ def Seasons(url):
         ctitle = ctitle.replace("_","%20").title()
         ctitle = ctitle.replace("%201","")
         if ctitle=="X%20Files": ctitle = "The%20X-Files"
+        if "Supergirl" in metaname: 
+            metaname = "Supergirl"
+            ctitle = "Supergirl"
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
@@ -1338,6 +1405,7 @@ def Seasons(url):
             gpost = gpost.split('</BannerPath>', 1)[0]
             #gpost = gpost.split('<BannerPath>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
+            #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
             #xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]     
@@ -2303,12 +2371,15 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
-        if(len(cm)==0):
-                contextMenuItems = AddFavContext(vidtype, url, name, iconimage)
-        else:
-                contextMenuItems=cm
-        liz.addContextMenuItems(contextMenuItems, replaceItems=False)
+        #if(len(cm)==0):
+        #        contextMenuItems = AddFavContext(vidtype, url, name, iconimage)
+        #else:
+        #contextMenuItems=cm
+        #liz.addContextMenuItems(contextMenuItems, replaceItems=False)
+        liz.setProperty('IsPlayable', 'true')
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        #liz.setProperty('IsPlayable', 'true');
+        #xbmcplugin.setContent(addon_handle, 'movies')
         return ok
         
 def addLink(name,url,mode,iconimage,movieinfo=""):
@@ -2319,8 +2390,9 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
         #xbmc.log("Show Icon? "+iconimage,2)
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
-        contextMenuItems = []
-        liz.addContextMenuItems(contextMenuItems, replaceItems=True)
+        #contextMenuItems = []
+        #liz.addContextMenuItems(contextMenuItems, replaceItems=True)
+        #liz.setProperty('IsPlayable', 'true');
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
         return ok
         
@@ -2353,6 +2425,7 @@ def addDir(name,url,mode,iconimage,plot=""):
         metaname=str(metaname).split(' Season', 1)[0]
         metaname=metaname.replace("_","%20").title()
         if metaname=="X%20Files": metaname = "The%20X-Files"
+        if metaname=="Supergirl 1": metaname = "Supergirl"
         metaname=metaname.replace("%20"," ")
         if "Cerebro" in url:
             #xbmc.log("URL "+url,2)
@@ -2378,7 +2451,8 @@ def addDir(name,url,mode,iconimage,plot=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
-        liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname2+"[/COLOR]"+response} )
+        liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname+"[/COLOR] [COLOR green]"+name+"[/COLOR]"+response} )
+        liz.setProperty('IsPlayable', 'true')
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
 

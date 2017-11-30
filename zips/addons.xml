@@ -1709,7 +1709,7 @@ Initial release.
 
 <addon
   id="plugin.video.Showbox"
-  version="6.5"
+  version="6.6"
   name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]CerebroTV Vidics Player[/B][/COLOR]"
   provider-name="Biglad">
   <requires>
