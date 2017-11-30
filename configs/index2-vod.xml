@@ -52,6 +52,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]South Park[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20South%20Park%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fsouth_park&vidtype=tv</link>
+<thumbnail>https://www.vidics.to//static/150/1/South_Park-19477.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]The Punisher[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Punisher%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fThe-Punisher&vidtype=tv</link>
 <thumbnail>http://www.thetvdb.com/banners/posters/331980-3.jpg</thumbnail>
