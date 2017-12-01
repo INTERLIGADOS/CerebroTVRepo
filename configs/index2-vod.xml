@@ -17,6 +17,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]The Orville[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Orville%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fThe-Orville&vidtype=tv</link>
+<thumbnail>http://www.thetvdb.com/banners/posters/328487-2.jpg</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Young Sheldon[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Young%20Sheldon%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fYoung-Sheldon&vidtype=tv</link>
 <thumbnail>https://www.thetvdb.com/banners/posters/328724-2.jpg</thumbnail>
@@ -181,13 +188,6 @@
 <title>[COLOR pink]The Walking Dead Webisodes[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Walking%20Dead%20Webisodes%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fthe_walking_dead_webisodes&vidtype=tv</link>
 <thumbnail>https://www.vidics.to/static/150/3/The_Walking_Dead_Webisodes-41751.PNG</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]The Orville[/COLOR]</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Orville%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fThe-Orville&vidtype=tv</link>
-<thumbnail>http://www.thetvdb.com/banners/posters/328487-2.jpg</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
