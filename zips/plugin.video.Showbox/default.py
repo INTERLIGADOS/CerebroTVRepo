@@ -1186,7 +1186,7 @@ def SEARCHTV():
         SearchResult("tv",searchText)
         dialog.update(100)
         dialog.close()
-		
+        
 def SEARCHTV2(getmovie):
         getmovie=getmovie.replace("+"," ")
         getmovie=getmovie.replace("%27","'")
@@ -1526,10 +1526,37 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             vpot=re.compile('"description":"(.+?)"').findall(moveieinfo)[0] 
             #vpot ="plot??"
             vpot=urllib.unquote_plus(vpot)
+            getimg = vpot
+            if "No_Poster" in vimg: 
+                #xbmc.log(vtitle+" Change For",2)
+                if vidtype == "tv":
+                    try:
+                        response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
+                        #xbmc.log(response,2)
+                        sid=response.split('<seriesid>', 1)[1]
+                        sid=response.split('</seriesid>', 1)[0]
+                        sid=sid.split('<seriesid>', 1)[1]
+                        getimg=response.split('<Overview>', 1)[1]
+                        getimg=getimg.split('</Overview>', 1)[0]
+                        #getimg=getimg.split('</banner>', 1)[0]
+                        response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
+                        #xbmc.log(response,2)
+                        gpost = response.split('<ThumbnailPath>', 1)[1]
+                        gpost = gpost.split('</ThumbnailPath>', 1)[0]
+                        #gpost = gpost.split('<BannerPath>', 1)[0]
+                        vimg = "http://www.thetvdb.com/banners/"+gpost
+                        #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
+                        #xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+                    except: vimg = "http://www.vidics.to/"+vimg
+                else: vimg = "http://www.vidics.to/"+vimg
+            if "http" not in vimg: vimg = "http://www.vidics.to/"+vimg
+            xbmc.log(vimg,2)
+            vpot=getimg
+            #xbmc.log(vpot+" PLOT??",2)
             if(vidtype==""):
-                 addDir(vtitle,strdomain+vurl,modenum,"https://www.vidics.to/"+vimg,vpot)
+                 addDir(vtitle,strdomain+vurl,modenum,vimg,vpot)
             else:
-                 addDirContext(vtitle,strdomain+vurl,modenum,"https://www.vidics.to/"+vimg,vpot,vidtype)
+                 addDirContext(vtitle,strdomain+vurl,modenum,vimg,vpot,vidtype)
         paginacontent=re.compile('<table class="pagination" ?[^>]*>(.+?)</table>').findall(newlink)
         
         if(len(paginacontent)>0):
@@ -2444,8 +2471,8 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         else:
             try: 
                 ctitle = name.replace(" ","%20")
-                ctitle = name.replace("-","%20")
-                ctitle = name.replace("_","%20").title()
+                ctitle = ctitle.replace("-","%20")
+                ctitle = ctitle.replace("_","%20").title()
                 if ctitle=="X%20Files": ctitle = "The%20X-Files"
                 #xbmc.log("Show Icon? "+ctitle,2)
                 if ("www.vidics.to" not in ctitle) or ("Cerebro" not in ctitle):
@@ -2455,7 +2482,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
             except: response="Unable to Get Any Data!!!!"
 
 
-        plot = str(response)
+        plot = "[COLOR gold]"+name+"[/COLOR] : "+str(response)
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&vidtype="+vidtype
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
