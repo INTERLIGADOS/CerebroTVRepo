@@ -1138,7 +1138,29 @@ def SEARCHMOV():
             exit()
         dialog = xbmcgui.DialogProgress()
         dialog.create('CerebroTV Vidics Searcher','Searching For Movie: ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
-        dialog.update(0)
+        dialog.update(1)
+        xbmc.sleep(1000)
+        dialog.update(50)
+        searchText.replace(" ","%20")
+        SearchResult("movie",searchText)
+        dialog.update(100)
+        dialog.close()
+        
+def SEARCHMOV2(getmovie):
+        getmovie=getmovie.replace("+"," ")
+        getmovie=getmovie.replace("%27","'")
+        keyb = xbmc.Keyboard(getmovie, 'Enter search text')
+        keyb.doModal()
+        searchText = ''
+        if (keyb.isConfirmed()):
+                searchText = keyb.getText()
+        
+        searchText = string.capwords(searchText)
+        if searchText == "":
+            exit()
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('CerebroTV Vidics Searcher','Searching For Movie: ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.update(1)
         xbmc.sleep(1000)
         dialog.update(50)
         searchText.replace(" ","%20")
@@ -1158,6 +1180,28 @@ def SEARCHTV():
         dialog = xbmcgui.DialogProgress()
         dialog.create('CerebroTV Vidics Searcher','Searching For TV Show: ','[COLOR red]'+str(searchText)+'[/COLOR]')       
         dialog.update(0)
+        xbmc.sleep(1000)
+        dialog.update(50)
+        searchText.replace(" ","%20")
+        SearchResult("tv",searchText)
+        dialog.update(100)
+        dialog.close()
+		
+def SEARCHTV2(getmovie):
+        getmovie=getmovie.replace("+"," ")
+        getmovie=getmovie.replace("%27","'")
+        keyb = xbmc.Keyboard(getmovie, 'Enter search text')
+        keyb.doModal()
+        searchText = ''
+        if (keyb.isConfirmed()):
+                searchText = keyb.getText()
+        
+        searchText = string.capwords(searchText)
+        if searchText == "":
+            exit()
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('CerebroTV Vidics Searcher','Searching For Movie: ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.update(1)
         xbmc.sleep(1000)
         dialog.update(50)
         searchText.replace(" ","%20")
@@ -1465,9 +1509,14 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
         #if not vcontent[0]:
         if len(vcontent) == 0:
             #xbmc.notification("CerebroTV,Link not playable try another",2000)
-            builtin = 'XBMC.Notification(No Answer From Vidics,Or No Results Found. Try Again,5000,'+__icon__+')'
+            builtin = "XBMC.Notification(No Answer From Vidics,Or No Results Found. Trying Again! [COLOR red]Check For Typo's[/COLOR] You Searched for: [COLOR green]"+ctitle.replace("+"," ")+"[/COLOR],4000,"+__icon__+")"
             xbmc.executebuiltin(builtin)
-            exit()
+            #xbmc.log(vidtype,2)
+            if vidtype == "movie":
+                SEARCHMOV2(ctitle)
+            else: 
+                SEARCHTV2(ctitle)
+            return 
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
         addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
