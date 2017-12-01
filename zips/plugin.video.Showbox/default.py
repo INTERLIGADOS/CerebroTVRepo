@@ -346,7 +346,7 @@ def Mirrors(url,name,image=""):
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
   #vimg = vimg.encode("utf8")  
   except: pass
-  xbmc.log("Image?? "+vimg,2)
+  #xbmc.log("Image?? "+vimg,2)
   if "arrow.png" in vimg:
     vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
   soup = BeautifulSoup(link)
@@ -2423,12 +2423,38 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         return ok
         
 def addLink(name,url,mode,iconimage,movieinfo=""):
+        #xbmc.log("MODE: "+str(name),2)
+        #if "Pair For Best" in name:
+        #    name = "WOOHOO"
+        try:
+            ctitle = name.split('hite] ', 1)[1]
+            ctitle = ctitle.split(' [/COLOR]', 1)[0]                
+            #ctitle = name.replace(" ","+")
+            #xbmc.log(ctitle,2)
+            response = urllib2.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(ctitle)).read()
+            response=response.split('"overview":"', 1)[1]
+            response=response.split('","release_date"', 1)[0]
+            #response = urllib.quote_plus(response)
+            response=response.decode('string_escape')
+        except: 
+            name2 = name.split('[COLOR gold]', 1)[0]
+            #xbmc.log(name2,2)
+            try: 
+                name2 = name2.split(': ', 1)[1]
+                name2 = name2.split('[/COLOR]', 1)[0]
+            except: pass
+            
+            response="Select a host to watch: [COLOR green]"+name2+"[/COLOR]. Hosts that need pairing are best quality and less buffering | Cerebro VoD"
+        #else:
         wname = iconimage.replace('/', '--')
         wname = wname.replace(':', '__')
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo="+iconimage
         ok=True
         #TheTvDb().search_Tv%20Shows("The20%Punisher")
-        plot = str(name)
+        if "Pair For Best" in name:
+            plot = "[COLOR green]For best results pair now, more HD content, less buffering. Brought to you by Cerebro TV[/COLOR]"
+        else:
+            plot = str(response)
         #xbmc.log("Show Icon? "+iconimage,2)
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
