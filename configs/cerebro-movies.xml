@@ -3,6 +3,13 @@
 </dir>
 
 <plugin>
+<title>Mission to Mars</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Mission%20to%20Mars%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMission_to_Mars&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Mission_to_Mars-15877.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>Screamers</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Screamers%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fScreamers_(1995)&vidtype=movie</link>
 <thumbnail>https://www.vidics.to/static/150/1/Screamers-16203.JPEG</thumbnail>
@@ -132,6 +139,48 @@
 <title>Thor</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=Thor&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThor&vidtype=movie</link>
 <thumbnail>https://www.vidics.to/static/90/2/Thor-22942.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Thor: The Dark World</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Thor%3a%20The%20Dark%20World%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThor%3a_The_Dark_World&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/29/Thor_The_Dark_World-575889.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Avengers</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Avengers%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Avengers_(2012)&amp;vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/2/The_Avengers-38351.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Iron Man</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Ironman%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fIronman&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Ironman-416.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Iron Man 2</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Iron%20Man%202%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fIron_Man_2&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Iron_Man_2-2664.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Iron Man 3</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Iron%20Man%20Three%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fIron_Man_3&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/27/Iron_Man_3-532127.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Green Lantern</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Green%20Lantern%c2%a0%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fGreen_Lantern&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/2/Green_Lantern-34150.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
@@ -447,5 +496,47 @@
 <title>Starship Troopers 3: Marauder</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Starship%20Troopers%203%3a%20Marauder%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStarship_Troopers_3%3a_Marauder&vidtype=movie</link>
 <thumbnail>https://www.vidics.to//static/150/1/Starship_Troopers_3_Marauder-396.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Last Airbender</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Last%20Airbender%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Last_Airbender&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/The_Last_Airbender-2689.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Gremlins</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Gremlins%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fGremlins&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Gremlins-15495.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Gremlins 2: The New Batch</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Gremlins%202%3a%20The%20New%20Batch%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fGremlins_2%3a_The_New_Batch&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Gremlins_2_The_New_Batch-6626.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Meet Dave</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Meet%20Dave%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMeet_Dave&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Meet_Dave-1890.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Wayne's World</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Wayne%27s%20World%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fWayne_s_World&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/2/Wayne_s_World-23278.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Wayne's World 2</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Wayne%27s%20World%202%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fWayne_s_World_2&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Wayne_s_World_2-8210.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
