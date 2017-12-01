@@ -17,7 +17,7 @@ from t0mm0.common.addon import Addon
 import commands
 import jsunpack
 import xbmc
-
+#import html
 
 #from thetvdb import TheTvDb
 #self.tvdb_key.decode('base64')
@@ -86,6 +86,20 @@ def d():
     except:
         pass
 #d() 
+
+import re,os
+
+ADDON_PATH = xbmc.translatePath('special://home/addons/plugin.video.Showbox/') #   * = plugins name
+USERDATA_PATH = xbmc.translatePath('special://home/userdata/addon_data')     #  path to addon_data folder
+ADDON_DATA = USERDATA_PATH + '/plugin.video.Showbox/'                                     #  * = whatever you want to call folder
+if not os.path.exists(ADDON_DATA):                                           # check if folder doesnt exist
+    os.makedirs(ADDON_DATA)                                                  # create if it doesnt 
+watched = ADDON_DATA + 'watched.txt'                                         # define watched as the path to txt file to store data 
+if not os.path.exists(watched):                                              # check if it doesnt exist
+    open(watched,'w+')                                                       # create if it doesnt
+watched_read = open(watched).read()            # define watched_read as a way to open and read the file later on
+
+
 
 net = Net()
 class InputWindow(xbmcgui.WindowDialog):# Cheers to Bastardsmkr code already done in Putlocker PRO resolver.
@@ -256,7 +270,7 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'','')
         #addDir('Search Actors','search',15,'')
@@ -323,19 +337,21 @@ def List4Days():
         date_name=time.strftime("%A", time.strptime(sched_date, "%Y-%m-%d"))
         addDir(date_name+"'s("+sched_date+") TV Schedule",sched_date,21,"episode")
         
-def Mirrors(url,name):
+def Mirrors(url,name,image=""):
   xbmcplugin.setContent(addon_handle, 'movies')
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
-  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-  except: pass
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
+  except: pass
+  try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
   #vimg = vimg.encode("utf8")  
   except: pass
-  #xbmc.log("Image?? "+vimg,2)
+  xbmc.log("Image?? "+vimg,2)
+  if "arrow.png" in vimg:
+    vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
-  addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+  addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
   #listcontent.sort() 
   for item in listcontent:
             vname=item.contents[0]
@@ -1247,7 +1263,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://www.vidics.to/"+vimg)
@@ -1312,7 +1328,7 @@ def Episodes(url,name):
         #    epcunter=int(seasoncount)-2
         #    epcunter=1
         else: epcunter=1
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
@@ -1341,20 +1357,29 @@ def Episodes(url,name):
                      #epdata = epname.split('<Combined_episodenumber>'+str(scount), 1)[0]
                      #xbmc.log(epname2,2)
                      try:
-                        epdata = epname.split('<Overview>', 1)[1]
+                        epdata = epname2.split('<Overview>', 1)[1]
                         epdata = epdata.split('</Overview>', 1)[0]
                      except: epdata="HMMMM"
                      #xbmc.log(vname,2)
 
                      html_re = re.compile(r'<[^>]+>')
-                     vname=html_re.sub('', vname) 
+                     vname2=html_re.sub('', vname) 
                      #vname = vname.replace("unknown",epname)
                      vname=epname
                      iconimage = vimg
                      plot = epdata
                      #xbmc.log(plot,2)
                      #ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-                     addDir("S"+str(seasoncount)+"E"+str(epcunter)+": "+vname,strdomain+vurl,4,str(vimg),"")
+                     Watched = re.compile('url="(.+?)"\n').findall(str(watched_read))   # regex the file
+                     #xbmc.log(str(Watched),2)
+                     #xbmc.log(str(vimg),2)
+                     for item in Watched:              # get url results
+                         if item == vimg:               # check if the item matches the url you are pulling through(must be defined before somehow)
+                             #xbmc.log("URL"+str(url),2)
+                             vname = '[COLORred]Watched - [/COLOR]'+(vname).replace('[COLORred]Watched - [/COLOR]','')                 # changes 'name' to add Watched in red before it
+                             #adddir(name,etc,etc,etc)     # whatever your menu display code is here, aligned with for so itll pull others but run through and get new name if it gets a match
+                             addDir2("S"+str(seasoncount)+"E"+str(epcunter)+": "+vname,strdomain+vurl,4,str(vimg)," | "+epdata)
+                     addDir2("S"+str(seasoncount)+"E"+str(epcunter)+": "+vname,strdomain+vurl,4,str(vimg)," | "+epdata)
                      #u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str("8")+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
                      #liz=xbmcgui.ListItem(vname, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
                      #liz.setInfo( type="Video", infoLabels={ "Title":vname, "Plot":plot})
@@ -1367,7 +1392,10 @@ def Episodes(url,name):
                      #seasoncount = int(seasoncount)+1
                      #scount = scount+1
                      
+
+                     
                 break
+
 
             #liz.setProperty('IsPlayable', 'true');         
             #xbmc.executebuiltin('Container.Refresh')
@@ -1414,10 +1442,10 @@ def Seasons(url):
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]  
         metaname2 = metaname.replace("-"," ")
-        metaname2 = metaname.replace("_"," ")	
-        metaname2 = metaname.replace("&macr;"," ")		
+        metaname2 = metaname.replace("_"," ")   
+        metaname2 = metaname.replace("&macr;"," ")      
         addDir('[COLOR gold]'+metaname2.title()+'[/COLOR]','Cerebro',9898,__icon__)     
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1]+"",url,8,str(vimg))
@@ -1442,7 +1470,7 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             exit()
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
         vpot=""
-        addDir('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)
@@ -2329,10 +2357,15 @@ def playVideo(url,name,movieinfo):
         #url=url.replace(":","&")
         #url=url.replace("https&","https:")
         #url=url.replace("http&","http:")
-        try: vidurl=ParseVideoLink(url,name,movieinfo)
+        try: 
+            vidurl=ParseVideoLink(url,name,movieinfo)                                # closes file 
         except: xbmc.executebuiltin(builtin)
         xbmcPlayer = xbmc.Player()
-        try: xbmcPlayer.play(vidurl)
+        try: 
+            xbmcPlayer.play(vidurl)
+            print_text_file = open(watched,"a")                      # sets it to append to watched.txt
+            print_text_file.write('url="'+movieinfo+'"\n')                 # writes the url in a form easy to regex above
+            print_text_file.close                                    # closes file 
         except:
             #xbmc.executebuiltin("SendClick(SkipNext)")
             #xbmc.executebuiltin('xbmc.ActivateWindow(10025)')
@@ -2390,7 +2423,9 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         return ok
         
 def addLink(name,url,mode,iconimage,movieinfo=""):
-        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo=test"
+        wname = iconimage.replace('/', '--')
+        wname = wname.replace(':', '__')
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo="+iconimage
         ok=True
         #TheTvDb().search_Tv%20Shows("The20%Punisher")
         plot = str(name)
@@ -2461,6 +2496,60 @@ def addDir(name,url,mode,iconimage,plot=""):
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname+"[/COLOR] [COLOR green]"+name+"[/COLOR]"+response} )
         liz.setProperty('IsPlayable', 'true')
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        return ok
+        
+def addDir2(name,url,mode,iconimage,plot):
+        #xbmc.log("Show Icon? "+url,2)
+        metaname="empty"
+        response="empty"
+        #metaname2="empty"
+        if url == "search":
+            url ="Cerebro/Show/Cerebro"
+        if url == "Cerebro":
+            url ="Cerebro/Show/Cerebro"
+        if  url == " ":
+            url ="Cerebro/Show/Cerebro"
+        #plot="Pair now for best results!!"
+        try:
+            metaname=str(url).split('Show/', 1)[1]
+        except: 
+            try: metaname=str(url).split('Serie/', 1)[1] #metaname = "DONT SHOW"
+            except: "MOVIE"
+        metaname=metaname.replace("-"," ")
+        metaname=str(metaname).split(' Season', 1)[0]
+        metaname=metaname.replace("_","%20").title()
+        if metaname=="X%20Files": metaname = "The%20X-Files"
+        if metaname=="Supergirl 1": metaname = "Supergirl"
+        metaname=metaname.replace("%20"," ")
+        if "Cerebro" in url:
+            #xbmc.log("URL "+url,2)
+            metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
+            response=""
+        elif "DONT SHOW" in metaname:
+            #xbmc.log("URL "+url,2)
+            metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
+            response=""
+        else:
+            
+            metaname2 = metaname+" "+name
+            try:
+                
+                response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname.replace(" ","%20"))).read()
+                response=response.split('<Overview>', 1)[1]
+                response=response.split('</Overview>', 1)[0]
+                response=" | "+response
+            except: 
+                pass
+        #xbmc.log("NEW DATA THIS ONE "+metaname2,2)
+
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname+"[/COLOR] [COLOR green]"+name+"[/COLOR]"+plot} )
+
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        #ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
+        #liz.setProperty('IsPlayable', 'true')
         return ok
 
 def get_params():
@@ -2533,7 +2622,7 @@ elif mode==2:
 elif mode==3:
         playVideo(url,name,movieinfo)
 elif mode==4:
-        Mirrors(url,name) 
+        Mirrors(url,name,"IMAGE") 
 elif mode==5:
         INDEXList(url,4,5,"movie")
 elif mode==6:
