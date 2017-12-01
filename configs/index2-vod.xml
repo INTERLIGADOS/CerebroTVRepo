@@ -659,3 +659,10 @@
 <thumbnail>https://www.vidics.to/static/150/1/The_Flash-19720.PNG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>[COLOR pink]Space: Above and Beyond[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Space%3a%20Above%20and%20Beyond%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fspace%3a_above_and_beyond&vidtype=tv</link>
+<thumbnail>https://www.vidics.to//static/150/1/Space_Above_and_Beyond-18821.PNG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>

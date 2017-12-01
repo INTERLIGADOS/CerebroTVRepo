@@ -428,3 +428,24 @@
 <thumbnail>https://www.vidics.to//static/150/1/Tremors_4_The_Legend_Begins-5934.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
+
+<plugin>
+<title>Starship Troopers</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Starship%20Troopers%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStarship_Troopers&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Starship_Troopers-10765.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Starship Troopers 2: Hero of the Federation </title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Starship%20Troopers%202%3a%20Hero%20of%20the%20Federation%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStarship_Troopers_2%3a_Hero_of_the_Federation&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/2/Starship_Troopers_2_Hero_of_the_Federation-23252.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Starship Troopers 3: Marauder</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Starship%20Troopers%203%3a%20Marauder%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStarship_Troopers_3%3a_Marauder&vidtype=movie</link>
+<thumbnail>https://www.vidics.to//static/150/1/Starship_Troopers_3_Marauder-396.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
