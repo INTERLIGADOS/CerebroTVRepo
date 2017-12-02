@@ -543,7 +543,7 @@
 
 <plugin>
 <title>The Animatrix (Matrix 1.5)</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Animatrix%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fThe-Animatrix&vidtype=tv</link>
+<link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0328832&tvdb=80468&tvshowtitle=The%20Animatrix&year=2003</link>
 <thumbnail>http://www.vidics.to//static/150/1/The_Animatrix-121.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>

@@ -37,6 +37,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]Ruff ruff tweet and Dave[/COLOR]</title>
+<link>plugin://plugin.video.youtube/kodion/search/query/?q=Ruff%20ruff%20tweet%20and%20Dave</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]She-Ra: Princess of Power[/COLOR]</title>
 <link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126171&tvdb=73015&tvshowtitle=She-Ra%3a%20Princess%20of%20Power&year=1985</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
