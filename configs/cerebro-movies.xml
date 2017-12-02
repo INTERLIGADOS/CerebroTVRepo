@@ -59,13 +59,6 @@
 </plugin>
 
 <plugin>
-<title>Gremlins</title>
-<link>plugin://plugin.video.Showbox/?mode=4&name=Gremlins&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fGremlins&vidtype=movie</link>
-<thumbnail>https://www.vidics.to/static/90/1/Gremlins-15495.JPEG</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>I Am Number Four</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=I%20Am%20Number%20Four&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fI_Am_Number_Four&vidtype=movie</link>
 <thumbnail>https://www.vidics.to/static/90/2/I_Am_Number_Four-20286.JPEG</thumbnail>
@@ -151,7 +144,7 @@
 
 <plugin>
 <title>The Avengers</title>
-<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Avengers%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Avengers_(2012)&amp;vidtype=movie</link>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Avengers%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Avengers_(2012)&vidtype=movie</link>
 <thumbnail>https://www.vidics.to//static/150/2/The_Avengers-38351.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -538,5 +531,54 @@
 <title>Wayne's World 2</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Wayne%27s%20World%202%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fWayne_s_World_2&vidtype=movie</link>
 <thumbnail>https://www.vidics.to//static/150/1/Wayne_s_World_2-8210.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Matrix</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Matrix%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Matrix&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Matrix-4900.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Animatrix (Matrix 1.5)</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Animatrix%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Animatrix&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Animatrix-121.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Matrix Reloaded (2)</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Matrix%20Reloaded%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Matrix_Reloaded&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Matrix_Reloaded-1715.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Matrix Revolutions (3)</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Matrix%20Revolutions%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Matrix_Revolutions&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Matrix_Revolutions-4920.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Transformers</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Transformers%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTransformers_(2007)&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Transformers-2829.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Transformers: Dark of the Moon</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Transformers%3a%20Dark%20of%20the%20Moon%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTransformers%3a_Dark_of_the_Moon&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/2/Transformers_Dark_of_the_Moon-35888.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Transformers: Revenge of the Fallen</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Transformers%3a%20Revenge%20of%20the%20Fallen%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTransformers%3a_Revenge_of_the_Fallen&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Transformers_Revenge_of_the_Fallen-229.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
