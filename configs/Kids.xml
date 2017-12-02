@@ -44,6 +44,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Monsters vs. Aliens[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Monsters%20vs.%20Aliens%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fMonsters_vs_Aliens_(2013)&vidtype=tv</link>
+<thumbnail>http://www.vidics.to//static/150/30/Monsters_vs_Aliens-583422.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/30/Monsters_vs_Aliens-583422.JPEG</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]She-Ra: Princess of Power[/COLOR]</title>
 <link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126171&tvdb=73015&tvshowtitle=She-Ra%3a%20Princess%20of%20Power&year=1985</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>

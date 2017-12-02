@@ -340,6 +340,9 @@ def List4Days():
         addDir(date_name+"'s("+sched_date+") TV Schedule",sched_date,21,"episode")
         
 def Mirrors(url,name,image=""):
+  #xbmc.PlayList(1).clear()
+  #pl=xbmc.PlayList(1)
+  #pl.clear()
   xbmcplugin.setContent(addon_handle, 'movies')
   link = GetContent(url)
   link=''.join(link.splitlines()).replace('\'','"')
@@ -400,9 +403,17 @@ def Mirrors(url,name,image=""):
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 ##xbmc.log("Movie Image "+vimg,2)
                 if "http" not in vimg: vimg = strdomain+vimg
-                addLink("[COLOR white]"+str(name)+"[/COLOR] [COLOR gold]"+str(vname)+"[/COLOR] ",str(strdomain)+str(vurl),3,str(vimg),str(name))
+                #addLink(" [COLOR gold]"+str(vname)+"[/COLOR] - [COLOR white]"+str(name)+"[/COLOR]",str(strdomain)+str(vurl),3,str(vimg),str(name))
+                addLink(str(vname),str(strdomain)+str(vurl),3,str(vimg),str(name))
+                #listitem = xbmcgui.ListItem(str(vname),thumbnailImage=str(vimg))
+                #try: 
+                #    resurl = ParseVideoLink(str(strdomain)+str(vurl),str(name),"TEST")
+                #    xbmc.PlayList(1).add(resurl, listitem)
+                #except: pass
+                #xbmc.Player().play(pl)
                 #except: pass
   #listcontent.insert(0,"addDir('[COLOR green][B]Pair For More HD Content[/B][/COLOR]','Link',9898,'')")
+  #xbmc.Player().play(pl)  #playVideo(url,name,movieinfo)
   
 def add_contextsearchmenu(title, video_type):
     title=urllib.quote(title)
@@ -1521,8 +1532,8 @@ def Seasons(url):
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]  
         metaname2 = metaname.replace("-"," ")
-        metaname2 = metaname.replace("_"," ")   
-        metaname2 = metaname.replace("&macr;"," ")      
+        metaname2 = metaname2.replace("_"," ")   
+        metaname2 = metaname2.replace("&macr;"," ")      
         addDir('[COLOR gold]'+metaname2.title()+'[/COLOR]','Cerebro',9898,__icon__)     
         addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for seas in ssoninfo:
@@ -2463,6 +2474,7 @@ if os.path.isfile(db_dir)==False:
      initDatabase()
      
 def playVideo(url,name,movieinfo):
+        #pl=xbmc.PlayList(1)
         builtin = 'XBMC.Notification(CerebroTV,Link not playable try another,2000,'+__icon__+')' 
         #url=url.replace("openload.co","oload.stream")  
         #url=url.replace(":","&")
@@ -2474,6 +2486,7 @@ def playVideo(url,name,movieinfo):
         xbmcPlayer = xbmc.Player()
         try: 
             xbmcPlayer.play(vidurl)
+            #xbmc.Player().play(pl)
             print_text_file = open(watched,"a")                      # sets it to append to watched.txt
             print_text_file.write('url="'+movieinfo+'"\n')                 # writes the url in a form easy to regex above
             print_text_file.close                                    # closes file 
@@ -2535,6 +2548,8 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         return ok
         
 def addLink(name,url,mode,iconimage,movieinfo=""):
+        #pl=xbmc.PlayList(1)
+        #pl.clear()
         ##xbmc.log("MODE: "+str(name),2)
         #if "Pair For Best" in name:
         #    name = "WOOHOO"
@@ -2556,7 +2571,7 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
                 name2 = name2.split('[/COLOR]', 1)[0]
             except: pass
             
-            response="Select a host to watch: [COLOR green]"+name2+"[/COLOR]. Hosts that need pairing are best quality and less buffering | Cerebro VoD"
+            response="Select a host to start watching . Hosts that need pairing are best quality and less buffering | Cerebro TV VoD | Find Us On Facebook!"
         #else:
         wname = iconimage.replace('/', '--')
         wname = wname.replace(':', '__')
@@ -2574,9 +2589,17 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
         #contextMenuItems = []
         #liz.addContextMenuItems(contextMenuItems, replaceItems=True)
+        #listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage)
+        #try: 
+        #    resurl = ParseVideoLink(str(strdomain)+str(vurl),str(name),"TEST")
+        #    xbmc.PlayList(1).add(resurl, listitem)
+        #except: pass
+        #xbmc.Player().play(pl)
+		#except: pass
         liz.setProperty('IsPlayable', 'true')
         liz.setProperty('fanart_image', iconimage)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
+        #xbmc.Player().play(pl)
         return ok
         
 def addNext(formvar,url,mode,iconimage):
@@ -2762,8 +2785,10 @@ elif mode==2:
 
         ListGenres(url,name) 
 elif mode==3:
+        #d()
         playVideo(url,name,movieinfo)
 elif mode==4:
+        d()
         Mirrors(url,name,"IMAGE") 
 elif mode==5:
         INDEXList(url,4,5,"movie")

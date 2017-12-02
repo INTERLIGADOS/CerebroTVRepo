@@ -402,6 +402,20 @@
 </plugin>
 
 <plugin>
+<title>AVP: Alien vs. Predator</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20AVP%3a%20Alien%20vs.%20Predator%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fAVP%3a_Alien_vs_Predator&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/AVP_Alien_vs_Predator-66.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/AVP_Alien_vs_Predator-66.JPEG</fanart>
+</plugin>
+
+<plugin>
+<title>AVPR: Aliens vs Predator - Requiem</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20AVPR%3a%20Aliens%20vs%20Predator%20-%20Requiem%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fAVPR%3a_Aliens_vs_Predator_-_Requiem&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/AVPR_Aliens_vs_Predator_Requiem-11710.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/AVPR_Aliens_vs_Predator_Requiem-11710.JPEG</fanart>
+</plugin>
+
+<plugin>
 <title>The Terminator</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Terminator%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Terminator&vidtype=movie</link>
 <thumbnail>https://www.vidics.to//static/150/1/The_Terminator-243.JPEG</thumbnail>
