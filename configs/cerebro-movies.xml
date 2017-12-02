@@ -6,7 +6,7 @@
 <title>Mission to Mars</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Mission%20to%20Mars%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMission_to_Mars&vidtype=movie</link>
 <thumbnail>http://www.vidics.to//static/150/1/Mission_to_Mars-15877.JPEG</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<fanart>http://www.vidics.to//static/150/1/Mission_to_Mars-15877.JPEG</fanart>
 </plugin>
 
 <plugin>
@@ -594,5 +594,138 @@
 <title>D.A.R.Y.L.</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20D.A.R.Y.L.%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fD_A_R_Y_L&vidtype=movie</link>
 <thumbnail>http://www.vidics.to//static/150/1/D_A_R_Y_L_-7005.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>White Christmas</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20White%20Christmas%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fWhite_Christmas&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/White_Christmas-1253.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>A Snow White Christmas</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20A%20Snow%20White%20Christmas%c2%a0%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fA-Snow-White-Christmas-&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/83/A_Snow_White_Christmas_-1659049.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Wizard of Oz</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Wizard%20of%20Oz%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Wizard_of_Oz&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Wizard_of_Oz-470.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Bad Santa</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Bad%20Santa%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fBad_Santa&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Bad_Santa-15785.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Home Alone</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Home%20Alone%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fHome_Alone&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Home_Alone-13040.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Home Alone 2: Lost in New York</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Home%20Alone%202%3a%20Lost%20in%20New%20York%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fHome_Alone_2%3a_Lost_in_New_York&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Home_Alone_2_Lost_in_New_York-2523.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>A Christmas Carol</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20A%20Christmas%20Carol%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fA_Christmas_Carol&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/A_Christmas_Carol-2330.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Elf</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Elf%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fElf&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Elf-1717.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Die Hard</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Die%20Hard%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fDie_Hard&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Die_Hard-200.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Die Hard 2</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Die%20Hard%202%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fDie_Hard_2&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Die_Hard_2-1529.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Die Hard: With a Vengeance</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Die%20Hard%3a%20With%20a%20Vengeance%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fDie_Hard%3a_With_a_Vengeance&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Die_Hard_With_a_Vengeance-199.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>A Good Day to Die Hard</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20A%20Good%20Day%20to%20Die%20Hard%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fA_Good_Day_to_Die_Hard&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/27/A_Good_Day_to_Die_Hard-529206.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>The Snowman</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Snowman%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Snowman&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Snowman-10875.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>How the Grinch Stole Christmas</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20How%20the%20Grinch%20Stole%20Christmas%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fHow_the_Grinch_Stole_Christmas&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/How_the_Grinch_Stole_Christmas-1704.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Miracle on 34th Street</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Miracle%20on%2034th%20Street%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMiracle_on_34th_Street_(1994)&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Miracle_on_34th_Street-7179.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>It's a Wonderful Life</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20It%27s%20a%20Wonderful%20Life%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fIt_s_a_Wonderful_Life&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/It_s_a_Wonderful_Life-9431.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Planes, Trains & Automobiles</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Planes%2c%20Trains%20%26%20Automobiles%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fPlanes_Trains_Automobiles&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Planes_Trains_Automobiles-16243.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Scrooged</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Scrooged%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fScrooged&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/2/Scrooged-23405.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>A Charlie Brown Christmas</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20A%20Charlie%20Brown%20Christmas%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fA_Charlie_Brown_Christmas&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/A_Charlie_Brown_Christmas-1684.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
