@@ -543,7 +543,7 @@
 
 <plugin>
 <title>The Animatrix (Matrix 1.5)</title>
-<link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0328832&tvdb=80468&tvshowtitle=The%20Animatrix&year=2003</link>
+<link>plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=http%3a%2f%2fcdn.123movies.net%2fdsSZfCv.jpg&mode=27&name=%5bCOLOR%20aqua%5d%5bB%5dThe%20Animatrix%5b%2fB%5d%5b%2fCOLOR%5d&url=http%3a%2f%2f123movies.net%2fwatch%2frVdPjnxL-the-animatrix.html</link>
 <thumbnail>http://www.vidics.to//static/150/1/The_Animatrix-121.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
@@ -580,5 +580,19 @@
 <title>Transformers: Revenge of the Fallen</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=%20Transformers%3a%20Revenge%20of%20the%20Fallen%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fTransformers%3a_Revenge_of_the_Fallen&vidtype=movie</link>
 <thumbnail>http://www.vidics.to//static/150/1/Transformers_Revenge_of_the_Fallen-229.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>Flight of the Navigator</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Flight%20of%20the%20Navigator%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fFlight_of_the_Navigator&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/5/Flight_of_the_Navigator-92843.JPEG</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>D.A.R.Y.L.</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20D.A.R.Y.L.%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fD_A_R_Y_L&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/D_A_R_Y_L_-7005.JPEG</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
