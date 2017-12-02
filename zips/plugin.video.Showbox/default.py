@@ -76,8 +76,7 @@ playablehost=[
 'putstream',
 'vidlox',
 'netu',
-'thevideobee',
-'firedrive'
+'thevideobee'
 ]
 
 def d():
