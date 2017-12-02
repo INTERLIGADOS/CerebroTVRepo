@@ -2519,7 +2519,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         plot = "[COLOR gold]"+name+"[/COLOR] : "+str(response)
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&vidtype="+vidtype
         ok=True
-        liz=xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage, fanart_image=iconimage)
+        liz=xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage)
         #liz.setProperty('fanart_image',iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
         #if(len(cm)==0):
