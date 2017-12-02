@@ -76,7 +76,8 @@ playablehost=[
 'putstream',
 'vidlox',
 'netu',
-'thevideobee'
+'thevideobee',
+'firedrive'
 ]
 
 def d():
@@ -1505,6 +1506,11 @@ def Seasons(url):
             getimg=getimg.split('</banner>', 1)[0]
             #getimg=getimg.split('</banner>', 1)[0]
             response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
+            #xbmc.log(response,2)
+            fansrtimg = response.split('<BannerPath>fanart', 1)[1]
+            fansrtimg = fansrtimg.split('</BannerPath>', 1)[0]
+            fansrtimg = "https://www.thetvdb.com/banners/fanart"+fansrtimg
+            #xbmc.log(fansrtimg,2)
             gpost = response.split('posters', 1)[1]
             gpost = gpost.split('</BannerPath>', 1)[0]
             #gpost = gpost.split('<BannerPath>', 1)[0]
@@ -2513,14 +2519,15 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         plot = "[COLOR gold]"+name+"[/COLOR] : "+str(response)
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&vidtype="+vidtype
         ok=True
-        liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
+        liz=xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage, fanart_image=iconimage)
+        #liz.setProperty('fanart_image',iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
         #if(len(cm)==0):
         #        contextMenuItems = AddFavContext(vidtype, url, name, iconimage)
         #else:
         #contextMenuItems=cm
         #liz.addContextMenuItems(contextMenuItems, replaceItems=False)
-        liz.setProperty('IsPlayable', 'true')
+        #liz.setProperty('fanart_image',iconimage)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         #liz.setProperty('IsPlayable', 'true');
         #xbmcplugin.setContent(addon_handle, 'movies')
@@ -2560,11 +2567,14 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
         else:
             plot = str(response)
         ##xbmc.log("Show Icon? "+iconimage,2)
+        #fanart ="https://www.thetvdb.com/banners/fanart/original/328487-5.jpg"
+        #iconimage="https://www.thetvdb.com/banners/fanart/original/328487-5.jpg"
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": plot} )
         #contextMenuItems = []
         #liz.addContextMenuItems(contextMenuItems, replaceItems=True)
-        #liz.setProperty('IsPlayable', 'true');
+        liz.setProperty('IsPlayable', 'true')
+        liz.setProperty('fanart_image', iconimage)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
         return ok
         
@@ -2624,6 +2634,7 @@ def addDir(name,url,mode,iconimage,plot=""):
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname+"[/COLOR] [COLOR green]"+name+"[/COLOR]"+response} )
+        liz.setProperty('fanart_image', iconimage)
         liz.setProperty('IsPlayable', 'true')
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
@@ -2676,7 +2687,7 @@ def addDir2(name,url,mode,iconimage,plot):
         ok=True
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name,"Plot": "[COLOR gold]"+metaname+"[/COLOR] [COLOR green]"+name+"[/COLOR]"+plot} )
-
+        liz.setProperty('fanart_image', iconimage)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         #ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
         #liz.setProperty('IsPlayable', 'true')
