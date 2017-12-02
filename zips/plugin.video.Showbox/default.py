@@ -77,7 +77,8 @@ playablehost=[
 'vidlox',
 'netu',
 'thevideobee',
-'gorillavid'
+'gorillavid',
+'vidoza'
 ]
 
 def d():
