@@ -44,24 +44,31 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Monsters vs. Aliens[/COLOR]</title>
+<title>[COLOR pink]Monsters vs. Aliens[/COLOR] TV Show</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20Monsters%20vs.%20Aliens%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fMonsters_vs_Aliens_(2013)&vidtype=tv</link>
 <thumbnail>http://www.vidics.to//static/150/30/Monsters_vs_Aliens-583422.JPEG</thumbnail>
 <fanart>http://www.vidics.to//static/150/30/Monsters_vs_Aliens-583422.JPEG</fanart>
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Monsters vs. Aliens[/COLOR] The Movie</title>
+<link>plugin://plugin.video.Showbox/?mode=4&amp;name=%20Monsters%20vs%20Aliens%20&amp;url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMonsters_vs_Aliens&amp;vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Monsters_vs_Aliens-885.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/Monsters_vs_Aliens-885.JPEG</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]She-Ra: Princess of Power[/COLOR]</title>
 <link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126171&tvdb=73015&tvshowtitle=She-Ra%3a%20Princess%20of%20Power&year=1985</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.vidics.to//static/150/1/She_Ra_Princess_of_Power-18702.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/She_Ra_Princess_of_Power-18702.JPEG</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]He-Man and the Masters of the Universe[/COLOR]</title>
 <link>plugin://plugin.video.streamhub/?action=seasons&imdb=tt0126158&tvdb=73014&tvshowtitle=He-Man%20and%20the%20Masters%20of%20the%20Universe&year=1983</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.vidics.to//static/150/6/He_Man_and_the_Masters_of_the_Universe-100828.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/6/He_Man_and_the_Masters_of_the_Universe-100828.JPEG</fanart>
 </plugin>
 
 <plugin>
@@ -74,58 +81,57 @@
 <plugin>
 <title>[COLOR pink]Classic Looney Tunes 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dClassic%20Looney%20Tunes%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2fd91af6958918af87d6a057c1cdf5b225.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.vidics.to//static/150/2/The_Looney_Tunes_Show-33310.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/2/The_Looney_Tunes_Show-33310.JPEG</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]SpongeBob SquarePants 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dSpongeBob%20SquarePants%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f2f2c4b3c9681d732d678ae4094241250.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.vidics.to//static/150/1/SpongeBob_SquarePants-19608.PNG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/SpongeBob_SquarePants-19608.PNG</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Adventure Time 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dAdventure%20Time%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f7d0db380a5b95a8ba1da0bca241abda1.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.vidics.to//static/150/2/Adventure_Time-23205.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/2/Adventure_Time-23205.JPEG</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Regular Show 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dThe%20Regular%20Show%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2faf37d08ae228a87dc6b265fd1019c97d.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.thetvdb.com/banners/posters/188401-8.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/188401-8.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Marvelous Misadventures of Flapjack 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dThe%20Marvelous%20Misadventures%20of%20Flapjack%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f3be041f44c2035c41eea8268f238e741.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.thetvdb.com/banners/posters/82207-2.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/82207-2.jpg</fanart>
 </plugin>
 
-
 <plugin>
-<title>[COLOR pink]Dragoon Ball 24/7[/COLOR]</title>
+<title>[COLOR pink]Dragon Ball 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dDragoon%20Ball%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f0de7b6a61a70688b26e6eeb3113531a3.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.thetvdb.com/banners/posters/81472-21.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/81472-21.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Ren and Stimpy 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dRen%20%26%20Stimpy%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f3a2d7564baee79182ebc7b65084aabd1.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.thetvdb.com/banners/posters/76088-3.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/76088-3.jpg</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]The Simpsons 24/7[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fgeekpeaksoftware.com%2fwp-content%2fuploads%2f2016%2f10%2fmobdro.png&mode=10&name=%5bB%5d%5bCOLOR%20white%5dThe%20Simpsons%5b%2fCOLOR%5d%5b%2fB%5d&url=mpd%3a%2f%2f3691308f2a4c2f6983f2880d32e29c84.m3u8</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<thumbnail>http://www.thetvdb.com/banners/posters/71663-15.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/71663-15.jpg</fanart>
 </plugin>
 
 
