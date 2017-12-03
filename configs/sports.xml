@@ -38,8 +38,8 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]MamaHD UK Sports[/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?item=title%3dMamaHD.com%26url%3dtv%252Fmamahd.com.cfg%26definedIn%3dtv.cfg%26director%3dmamahd.com%26genre%3dTV%26type%3drss%26icon%3dC%253A%255CUsers%255Cbigla%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Cmamahd.png&mode=1</link>
+<title>[COLOR pink]MamaHD UK Sports[/COLOR] (Go Live Sports -> MAMA HD)</title>
+<link>plugin://plugin.video.SportsDevil/</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
