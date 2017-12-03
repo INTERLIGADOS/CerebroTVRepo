@@ -7,25 +7,20 @@
 </dir>
 
 <plugin>
-<title>The Foreigner 2017 720p</title>
-<link>plugin://plugin.video.link__tester/?link=https%3A%2F%2Festream.to%2Fvjpnjbhlz63s.html&mode=play_link</link>
+<title>Update Latest Movies in HD Menu</title>
+<link>RunAddon(script.program.menurefresh)</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>Kingsman The  Golden  Circle 1080p</title>
-<link>plugin://plugin.video.link__tester/?link=https%3A%2F%2Fopenload.co%2Fembed%2FhmLfFHUS0V8%2Fkingsman.the.golden.circle.2017&mode=play_link</link>
+<title>Open Latest Movies in HD Only Menu</title>
+<link>plugin://plugin.video.link__tester/?mode=open_dir&path=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5cuserdata%5caddon_data%5cplugin.video.link__tester%5clinks%5cTEST</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
-<plugin>
-<title>Star Trek (2009) 720p</title>
-<link>plugin://plugin.video.link__tester/?link=http%3A%2F%2Fthevideo.me%2Fehztttz4w0a6&mode=play_link</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
+
 
 
 
