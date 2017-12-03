@@ -25,7 +25,7 @@
 
 <dir>
 <name>[COLOR pink]Latest Movies in HD[/COLOR]</title>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/sublinkbackup.xml</link>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/NewMovies.xml</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <dir>
