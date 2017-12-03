@@ -7,14 +7,14 @@
 </dir>
 
 <plugin>
-<title>Update Latest Movies in HD Menu</title>
+<title>[COLOR green]Update Latest Movies in HD Menu[/COLOR]</title>
 <link>RunAddon(script.program.menurefresh)</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
-<title>Open Latest Movies in HD Only Menu</title>
+<title>[COLOR gold]Open Latest Movies in HD Only Menu[/COLOR]</title>
 <link>plugin://plugin.video.link__tester/?mode=open_dir&path=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5cuserdata%5caddon_data%5cplugin.video.link__tester%5clinks%5cTEST</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
