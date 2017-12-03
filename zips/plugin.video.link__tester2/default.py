@@ -60,9 +60,9 @@ def main_menu():
 
 @url_dispatcher.register(MODES.OPEN_DIR, ['path'])
 def open_dir(path):
-    #kodi.create_item({'mode': MODES.CREATE_DIR, 'path': path}, 'Create Directory ', is_folder=False, is_playable=False)
-    #kodi.create_item({'mode': MODES.ADD_LINK, 'path': path}, 'Add Link', is_folder=False, is_playable=False)
-    #kodi.create_item({'mode': MODES.SETTINGS}, 'URLResolver Settings', is_folder=False, is_playable=False)
+    kodi.create_item({'mode': MODES.CREATE_DIR, 'path': path}, 'Create Directory ', is_folder=False, is_playable=False)
+    kodi.create_item({'mode': MODES.ADD_LINK, 'path': path}, 'Add Link', is_folder=False, is_playable=False)
+    kodi.create_item({'mode': MODES.SETTINGS}, 'URLResolver Settings', is_folder=False, is_playable=False)
     path, dirs, files = get_directory(path)
     for dir_name in sorted(dirs):
         make_directory(path, dir_name)
