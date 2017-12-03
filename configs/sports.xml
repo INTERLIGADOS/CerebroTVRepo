@@ -38,6 +38,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]MamaHD UK Sports[/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?item=title%3dMamaHD.com%26url%3dtv%252Fmamahd.com.cfg%26definedIn%3dtv.cfg%26director%3dmamahd.com%26genre%3dTV%26type%3drss%26icon%3dC%253A%255CUsers%255Cbigla%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Cmamahd.png&mode=1</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Modbro Sports[/COLOR]</title>
 <link>plugin://plugin.video.livehub2/?description&iconimage=http%3a%2f%2fapk.co%2fimages%2fmobdro-2014-freemium.png&mode=4&name=%5bCOLOR%20white%5d%5bB%5dMobdro%5b%2fCOLOR%5d%5b%2fB%5d&url=mobdro</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
