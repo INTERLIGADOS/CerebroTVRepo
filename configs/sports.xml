@@ -38,8 +38,36 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]MamaHD UK Sports[/COLOR] (Go Sports TV -> MAMA HD) (VPN Needed Sometimes)</title>
+<title>[COLOR pink]MamaHD UK Sports[/COLOR] (Go Sports TV -> MAMA HD) (VPN Needed Sometimes)[/COLOR]</title>
 <link>plugin://plugin.video.SportsDevil/</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]BT Sports[/COLOR]</title>
+<link>plugin://plugin.video.DELIVERANCE/?fanart=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2fbackgrounds%2fworldsport.jpg&iconimage=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2ficons%2fBT.png&mode=1&name=%5bCOLORgreen%5dONLINE%3a%5b%2fCOLOR%5dBT%20SPORTS%20(%20UK%20)&url=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2fBT.txt</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Sky Sports[/COLOR]</title>
+<link>plugin://plugin.video.DELIVERANCE/?fanart=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2fbackgrounds%2fworldsport.jpg&iconimage=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2ficons%2fSKYSPORT.png&mode=1&name=%5bCOLORgreen%5dONLINE%3a%5b%2fCOLOR%5dSKY%20SPORTS%20(%20UK%20)&url=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2fskysport.txt</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Totday's Football[/COLOR]</title>
+<link>plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=4&name=%5bCOLOR%20yellow%5dF%5bCOLOR%20aqua%5dootball%5b%2fCOLOR%5d&url=https%3a%2f%2fwww.reddit.com%2fr%2fsoccerstreams</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Pi sports[/COLOR]</title>
+<link>plugin://plugin.video.ZemTV-shani/?mode=71&name=Pi%20sports&url=sss</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
