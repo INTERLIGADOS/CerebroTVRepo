@@ -59,6 +59,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Latest Movies in HD[/COLOR] (Bucky)</title>
+<link>plugin://plugin.video.Bucky/?fanart=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fg2kzpozf21nlwn3%2faddonfanart.jpg%3fdl%3d0&mode=1&name=%5bB%5d%5bCOLOR%20gold%5dBUCKYS%20NEW%20RELEASES%5b%2fCOLOR%5d%5b%2fB%5d&url=https%3a%2f%2fdl.dropboxusercontent.com%2fs%2fwwt6et60wqpa8ai%2fbuckynew.txt</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Latest Movies in HD[/COLOR] (BoB)</title>
 <link>plugin://plugin.video.bob.unleashed/?description=No%20information%20available&fanart=http%3a%2f%2f178.32.217.111%2freloaded%2fthemes%2fmovies%2fmovies6.jpg&iconimage=http%3a%2f%2f178.32.217.111%2freloaded%2ficons%2fMain%2fMain-New-Releases.png&mode=get_list&name=New%20Releases&url=https%3a%2f%2fpastebin.com%2fraw%2fxa8hFS9Z</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
