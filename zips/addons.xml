@@ -5002,7 +5002,7 @@ level.</description>
 
 <addon id="script.mtvbspfootball"
   name="CerebroTV Sky Sports Football"
-  version="1.5"
+  version="1.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
