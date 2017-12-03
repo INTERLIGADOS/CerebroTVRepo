@@ -57,12 +57,14 @@ url_dispatcher = URL_Dispatcher()
 @url_dispatcher.register(MODES.MAIN)
 def main_menu():
     open_dir(LINK_PATH)
+	
 
 @url_dispatcher.register(MODES.OPEN_DIR, ['path'])
 def open_dir(path):
     #kodi.create_item({'mode': MODES.CREATE_DIR, 'path': path}, 'Create Directory ', is_folder=False, is_playable=False)
     #kodi.create_item({'mode': MODES.ADD_LINK, 'path': path}, 'Add Link', is_folder=False, is_playable=False)
-    #kodi.create_item({'mode': MODES.SETTINGS}, 'URLResolver Settings', is_folder=False, is_playable=False)
+    #addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+    kodi.create_item({'mode': MODES.SETTINGS}, '[COLOR green]Pair For Best Results[/COLOR]', is_folder=False, is_playable=False)
     path, dirs, files = get_directory(path)
     for dir_name in sorted(dirs):
         make_directory(path, dir_name)
@@ -144,10 +146,13 @@ def add_link(link=None, name=None, refresh=True, path=None):
         
         if refresh:
             kodi.refresh_container()
+			
+
 
 @url_dispatcher.register(MODES.SETTINGS)
 def urlresolver_settings():
-    urlresolver.display_settings()
+    #urlresolver.display_settings()
+    xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')
     
 @url_dispatcher.register(MODES.DELETE_LINK, ['index', 'path'])
 def delete_link(index, path):
