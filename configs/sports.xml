@@ -59,7 +59,7 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]BEIN Sports[/COLOR]</title>
+<title>[COLOR pink]BEIN Sports[/COLOR] (After Click stream links wait 30 secs)</title>
 <link>plugin://plugin.video.DELIVERANCE/?fanart=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2fbackgrounds%2fworldsport.jpg&iconimage=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2ficons%2fBEIN.jpg&mode=1&name=%5bCOLORgreen%5dONLINE%3a%5b%2fCOLOR%5dBEIN%20SPORTS%20(%20ARABIC%20)&url=http%3a%2f%2fsport-xplosion.com%2fDELIVERANCE%2520TXT%2520FILES%2fSportsChannels%2fbein.txt</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
