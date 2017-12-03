@@ -39,7 +39,7 @@ item_info_convert=encodeBase64
 item_info_build=%s
 
 item_info_name=url
-item_info_from=file+'|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML,%20like%20Gecko)%20Chrome%2F61.0.3163.100%20Safari%2F537.36&Referer=http://bro.adca.st/stream.php'
-#item_info_from=http://127.1.2.3:45678/livestreamer/'+url2+'
+#item_info_from=file+'|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML,%20like%20Gecko)%20Chrome%2F61.0.3163.100%20Safari%2F537.36&Referer=http://bro.adca.st/stream.php'
+item_info_from=http://127.1.2.3:45678/livestreamer/'+url2+'
 item_info_build=%s
 

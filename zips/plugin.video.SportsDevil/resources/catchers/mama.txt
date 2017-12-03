@@ -21,10 +21,12 @@ item_info_name=pUrl
 item_info_from=u+j+'.php?id='+f+'&name='+n
 item_info_build=%s
 
+
 item_info_name=phpUrl
 item_info_from=pUrl
 item_info_convert=replace('%s','hdcast.org','mamahd.in')
 item_info_build=%s
+
 
 item_info_name=hlsUrl_
 item_info_from=phpUrl
