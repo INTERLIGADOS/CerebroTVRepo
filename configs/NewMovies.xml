@@ -8,7 +8,7 @@
 
 <plugin>
 <title>[COLOR green]Update Latest Movies in HD Menu[/COLOR]</title>
-<link>RunAddon(script.program.menurefresh)</link>
+<link>plugin://script.program.menurefresh</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
