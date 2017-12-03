@@ -43,6 +43,7 @@ AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P
 playablehost=[
 'daclips',
 'watchTv%20Shows',
+'watchTv Shows',
 'movpod',
 'novamov',
 'watchepisodes',
@@ -78,7 +79,9 @@ playablehost=[
 'netu',
 'thevideobee',
 'gorillavid',
-'vidoza'
+'vidoza',
+'cloudtime',
+'netu'
 ]
 
 def d():
