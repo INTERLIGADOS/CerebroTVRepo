@@ -136,7 +136,16 @@ def set_content(content):
     xbmcplugin.setContent(int(sys.argv[1]), content)
     
 def create_item(queries, label, thumb='', fanart='', is_folder=None, is_playable=None, total_items=0, menu_items=None, replace_menu=False):
-    if not thumb: thumb = os.path.join(get_path(), 'icon.png')
+    metaname=label.split(' (20', 1)[0]
+    response = urllib.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(metaname).replace(" ","%20")).read()
+    xbmc.log("MODE: "+str(metaname),2)
+    try:
+        response=response.split('"poster_path":"', 1)[1]
+        response=response.split('",', 1)[0]
+        images = 'http://image.tmdb.org/t/p/w185'+response
+    except: images = "https://www.vidics.to/static/150/1/No_Poster-1.JPEG"
+    if not thumb: thumb = images
+    if not fanart: fanart = images
     list_item = xbmcgui.ListItem(label, iconImage=thumb, thumbnailImage=thumb)
     add_item(queries, list_item, fanart, is_folder, is_playable, total_items, menu_items, replace_menu)
 
