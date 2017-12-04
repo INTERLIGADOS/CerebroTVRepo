@@ -143,7 +143,7 @@ def create_item(queries, label, thumb='', fanart='', is_folder=None, is_playable
         response=response.split('"poster_path":"', 1)[1]
         response=response.split('",', 1)[0]
         images = 'http://image.tmdb.org/t/p/w185'+response
-    except: images = "https://www.vidics.to/static/150/1/No_Poster-1.JPEG"
+    except: images = "http://mtvb.co.uk/fanart.jpg"
     if not thumb: thumb = images
     if not fanart: fanart = images
     list_item = xbmcgui.ListItem(label, iconImage=thumb, thumbnailImage=thumb)

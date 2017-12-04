@@ -3836,7 +3836,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.echo" name="Echo Libraries" version="1.00.004" provider-name="Biglad,Echo Coder">
+<addon id="script.module.echo" name="Echo Libraries" version="1.00.005" provider-name="Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" />
