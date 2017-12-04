@@ -17,6 +17,7 @@ from t0mm0.common.addon import Addon
 import commands
 import jsunpack
 import xbmc
+import random
 #import html
 
 #from thetvdb import TheTvDb
@@ -38,7 +39,11 @@ home = __settings__.getAddonInfo('path')
 #addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
-strdomain ="https://vidics.unblocked.pl"
+vidicshost = ["https://vidics.unblocked.pl","https://vidics.to","https://vidics.ch"]
+#strdomain ="https://vidics.unblocked.pl"
+#strdomain ="https://vidics.to"
+#strdomain ="https://vidics.ch"
+strdomain = random.choice(vidicshost)
 AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
 playablehost=[
 'daclips',
@@ -279,20 +284,20 @@ def HOME():
         addDir('Search Movies','search',9,'')
         addDir('Search TV Shows','search',10,'','')
         #addDir('Search Actors','search',15,'')
-        addDir('Recently Added Movies','https://vidics.unblocked.pl/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('Recently Added TV Shows','https://vidics.unblocked.pl/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('Recently Added Movies',strdomain+'/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('Recently Added TV Shows',strdomain+'/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
         #addDir('Favorites','Category-Movies',24,'')
         addDir('Movies A-Z','Category-Movies',16,'')
         addDir('TV Shows A-Z','Category-TvShows',17,'')
         addDir('Movies Genres','Category-Movies',18,'')
         addDir('TV Shows Genres','Category-TvShows',19,'')
         addDir('7 Day TV Schedule','TV Schedule',20,'')
-        addDir('Top Movies','https://vidics.unblocked.pl/top/films.html',5,'')
-        addDir('Top TV Shows','https://vidics.unblocked.pl/top/tvshows.html',6,'')
-        addDir('Movies 2010-2017','https://vidics.unblocked.pl/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('Movies 2000-2010','https://vidics.unblocked.pl/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('TV Shows 2010-2017','https://vidics.unblocked.pl/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,'')
-        addDir('TV Shows 2000-2010','https://vidics.unblocked.pl/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('Top Movies',strdomain+'/top/films.html',5,'')
+        addDir('Top TV Shows',strdomain+'/top/tvshows.html',6,'')
+        addDir('Movies 2010-2017',strdomain+'/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('Movies 2000-2010',strdomain+'/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,'')
+        addDir('TV Shows 2010-2017',strdomain+'/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('TV Shows 2000-2010',strdomain+'/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,'')
 def LangOption():
         addDir('Show Top Languages','Top',10,'')
         addDir('Show All Languages','All',10,'')
@@ -308,7 +313,7 @@ def CheckRedirect(url):
        d.ok(url,"Can't Connect to site",'Try again in a moment')
 
 def getSchedule(sched_date): 
-        url="https://vidics.unblocked.pl/calendar/"+sched_date+ ".html"
+        url=strdomain+"/calendar/"+sched_date+ ".html"
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<div class="indexClanedarDay left" id="date_'+sched_date+'">(.+?)</div>').findall(newlink)
@@ -837,7 +842,7 @@ def ParseVideoLink(url,name,movieinfo):
                 fname = re.compile('<input type="hidden" name="fname" value="(.+?)">').findall(link)[0]
                 mfree = re.compile('<input type="submit" name="method_free"  value="(.+?)">').findall(link)[0]
                 posdata=urllib.urlencode({"op":op,"usr_login":"","id":idkey,"fname":fname,"referer":url,"method_free":mfree})
-                pcontent=postContent(redirlink,posdata,"https://vidics.unblocked.pl/watch/120351/This-Is-40-2012.html")
+                pcontent=postContent(redirlink,posdata,strdomain+"/watch/120351/This-Is-40-2012.html")
                 pcontent=''.join(pcontent.splitlines()).replace('\'','"')
                 capchacon =re.compile('<b>Enter code below:</b>(.+?)</table>').findall(pcontent)
                 capchar=re.compile('<span style="position:absolute;padding-left:(.+?);[^>]*>(.+?)</span>').findall(capchacon[0])
@@ -1153,7 +1158,7 @@ def ParseVideoLink(url,name,movieinfo):
                
 def ListAZ(catname,mode):
         for character in AZ_DIRECTORIES:
-                addDir(character,"https://vidics.unblocked.pl/"+catname+"/Genre-Any/Letter-"+character+"/ByPopularity/1.htm",mode,"")
+                addDir(character,strdomain+"/"+catname+"/Genre-Any/Letter-"+character+"/ByPopularity/1.htm",mode,"")
 
 def getVideotype(url):
         link = GetContent(url)
@@ -1600,9 +1605,9 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
                         vimg = "http://www.thetvdb.com/banners/"+gpost
                         #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
                         ###xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
-                    except: vimg = "https://vidics.unblocked.pl/"+vimg
-                else: vimg = "https://vidics.unblocked.pl/"+vimg
-            if "http" not in vimg: vimg = "https://vidics.unblocked.pl/"+vimg
+                    except: vimg = strdomain+vimg
+                else: vimg = strdomain+vimg
+            if "http" not in vimg: vimg = strdomain+vimg
             ###xbmc.log(vimg,2)
             vpot=getimg
             ###xbmc.log(vpot+" PLOT??",2)
