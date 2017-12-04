@@ -49,4 +49,5 @@ def function2():
     xbmc.executebuiltin('ActivateWindow(10025,"plugin://program.apollo/?action=channels",return)')
      
 #menuoptions()
-xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.link__tester/?mode=open_dir&path=special:\\userdata\addon_data\plugin.video.link__tester\links\TEST\",return)')
+HOME    = xbmc.translatePath('special://userdata/addon_data/plugin.video.link__tester/links/TEST/')
+xbmc.executebuiltin('ActivateWindow(10025,"plugin://plugin.video.link__tester/?mode=open_dir&path=http://mtvb.co.uk/test)')

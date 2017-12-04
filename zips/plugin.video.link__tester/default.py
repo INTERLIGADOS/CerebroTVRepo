@@ -39,8 +39,8 @@ logger = log_utils.Logger.get_logger()
 def __enum(**enums):
     return type('Enum', (), enums)
 
-DATA_PATH = kodi.translate_path(kodi.get_profile())
-LINK_PATH = os.path.join(DATA_PATH, 'links')
+DATA_PATH = kodi.translate_path('special://userdata/addon_data/plugin.video.link__tester/')
+LINK_PATH = os.path.join(DATA_PATH, 'links/TEST')
 LINK_FILE = 'links.txt'
 if not os.path.exists(DATA_PATH):
     os.mkdir(DATA_PATH)
@@ -65,8 +65,10 @@ def open_dir(path):
     #kodi.create_item({'mode': MODES.ADD_LINK, 'path': path}, 'Add Link', is_folder=False, is_playable=False)
     #addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
     kodi.create_item({'mode': MODES.SETTINGS}, '[COLOR green]Pair For Best Results[/COLOR]', is_folder=False, is_playable=False)
+    #path = 'C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5cuserdata%5caddon_data%5cplugin.video.link__tester%5clinks%5cTEST'
     path, dirs, files = get_directory(path)
     for dir_name in sorted(dirs):
+        if "links" in dirs: continue
         make_directory(path, dir_name)
     
     if LINK_FILE in files:
