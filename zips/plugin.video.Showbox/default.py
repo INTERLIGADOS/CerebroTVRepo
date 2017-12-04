@@ -1374,6 +1374,7 @@ def Episodes(url,name):
         metaname = metaname.replace("_","%20").title()
         if metaname=="X%20Files": metaname = "X-Files"
         if "Supergirl" in metaname: metaname = "Supergirl"
+        if metaname=="Monsters%20Vs%20Aliens%20(2013)": metaname = "Monsters%20Vs%20Aliens"
         ###xbmc.log("Show Name?? "+metaname,2)
         ###xbmc.log("Show Season?? "+name,2)
         epcunter=1
