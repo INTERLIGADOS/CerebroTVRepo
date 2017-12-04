@@ -15,7 +15,7 @@
 
 <plugin>
 <title>[COLOR gold]Open Latest Movies in HD Only Menu[/COLOR]</title>
-<link>plugin://plugin.video.link__tester/?mode=open_dir&path%3Dspecial%3A%2F%2Fuserdata%2Faddon_data%5Cplugin.video.link__tester%5Clinks%5CTEST</link>
+<link>plugin://plugin.video.link__tester/?mode=open_dir&path=special://userdata/addon_data\plugin.video.link__tester\links\TEST</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
