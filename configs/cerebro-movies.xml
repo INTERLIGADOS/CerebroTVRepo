@@ -178,6 +178,27 @@
 </plugin>
 
 <plugin>
+<title>Captain America: The First Avenger</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Captain%20America%3a%20The%20First%20Avenger%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fCaptain_America%3a_The_First_Avenger&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/2/Captain_America_The_First_Avenger-38357.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/2/Captain_America_The_First_Avenger-38357.JPEG</fanart>
+</plugin>
+
+<plugin>
+<title>The Incredible Hulk</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Incredible%20Hulk%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fThe_Incredible_Hulk_(2008)&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/The_Incredible_Hulk-408.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/The_Incredible_Hulk-408.JPEG</fanart>
+</plugin>
+
+<plugin>
+<title>Hulk</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Hulk%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fHulk&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Hulk-131.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/Hulk-131.JPEG</fanart>
+</plugin>
+
+<plugin>
 <title>Super 8</title>
 <link>plugin://plugin.video.Showbox/?mode=4&name=Super%208&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fSuper_8&vidtype=movie</link>
 <thumbnail>https://www.vidics.to/static/90/2/Super_8-23203.JPEG</thumbnail>
@@ -834,4 +855,27 @@
 <thumbnail>http://www.vidics.to//static/150/1/The_Holiday-15711.JPEG</thumbnail>
 <fanart>http://www.vidics.to//static/150/1/The_Holiday-15711.JPEG</fanart>
 </plugin>
+
+<plugin>
+<title>Stargate</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Stargate%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStargate&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/2/Stargate-23819.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/2/Stargate-23819.JPEG</fanart>
+</plugin>
+
+<plugin>
+<title>Stargate: The Ark of Truth</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Stargate%3a%20The%20Ark%20of%20Truth%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStargate%3a_The_Ark_of_Truth&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Stargate_The_Ark_of_Truth-510.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/Stargate_The_Ark_of_Truth-510.JPEG</fanart>
+</plugin>
+
+<plugin>
+<title>Stargate: Continuum</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Stargate%3a%20Continuum%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fStargate%3a_Continuum&vidtype=movie</link>
+<thumbnail>http://www.vidics.to//static/150/1/Stargate_Continuum-10447.JPEG</thumbnail>
+<fanart>http://www.vidics.to//static/150/1/Stargate_Continuum-10447.JPEG</fanart>
+</plugin>
+
+
 
