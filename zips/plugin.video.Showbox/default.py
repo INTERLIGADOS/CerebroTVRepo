@@ -39,11 +39,11 @@ home = __settings__.getAddonInfo('path')
 #addon = Addon('plugin.video.1channel', sys.argv)
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
-vidicshost = ["https://vidics.unblocked.pl","https://vidics.to","https://vidics.ch"]
-#strdomain ="https://vidics.unblocked.pl"
+#vidicshost = ["https://vidics.unblocked.pl","https://vidics.to","https://vidics.ch"]
+strdomain ="https://vidics.unblocked.pl"
 #strdomain ="https://vidics.to"
 #strdomain ="https://vidics.ch"
-strdomain = random.choice(vidicshost)
+#strdomain = random.choice(vidicshost)
 AZ_DIRECTORIES = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y', 'Z']
 playablehost=[
 'daclips',
