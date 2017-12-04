@@ -12,13 +12,13 @@
 <dir>
 <name>[COLOR pink]CerebroTV: [/COLOR][COLOR red]Movies On Demand[/COLOR] (can request movies)</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/cerebro-movies.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>http://www.manolith.com/wp-content/uploads//2011/02/MoviesOnDemand1.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <plugin>
 <title>[COLOR pink]Search Vidics for a Movie[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://lh4.ggpht.com/k0nNhRUSzyQN7OpTH_o5DrcbrHIC-8D5h2DNGeEpKijMZCmJE9HWWDuMBICMZJWBYHHW=w300</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.Showbox/?mode=9&name=Search%20Movies&url=search</link>
 </plugin>
@@ -26,7 +26,7 @@
 <dir>
 <name>[COLOR pink]Latest Movies in HD[/COLOR] [COLOR gold]Cerbero ONLY![/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/NewMovies.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Full_hd_logo.svg/2000px-Full_hd_logo.svg.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
