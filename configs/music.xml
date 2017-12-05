@@ -2,13 +2,6 @@
 <title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section Audio[/COLOR]</title>
 </dir>
 
-<dir>
-<name>[COLOR pink]Music For Party's[/COLOR]</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/partymode.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
-
 <plugin>
 <title>[COLOR pink]MP3 Streams[/COLOR]</title>
 <link>plugin://plugin.audio.mp3streams</link>
@@ -25,6 +18,13 @@
 
 <dir>
 <title>[COLOR gold]CerebroTV: [/COLOR][COLOR red]Music Section TV[/COLOR]</title>
+</dir>
+
+<dir>
+<name>[COLOR pink]Music For Party's[/COLOR]</name>
+<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/partymode.xml</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
 <plugin>
