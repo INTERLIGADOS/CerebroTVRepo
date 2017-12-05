@@ -25,6 +25,9 @@ from url_dispatcher import URL_Dispatcher
 import log_utils
 import kodi
 
+addon_handle = int(sys.argv[1])
+xbmcplugin.setContent(addon_handle, 'movies')
+
 def d():
 	import requests,base64
 	try:
