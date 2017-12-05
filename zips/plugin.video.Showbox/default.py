@@ -1289,11 +1289,11 @@ def SEARCHactor():
 def SearchResult(searchType,Searchtext):
     Searchtext=urllib.quote_plus(Searchtext)
     if searchType=="movie":
-            INDEX("https://www.vidics.to/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
+            INDEX(strdomain+"/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
     elif searchType=="actor":
-            INDEX("https://www.vidics.to/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
+            INDEX(strdomain+"Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
     else:
-            INDEX("https://www.vidics.to/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
+            INDEX(strdomain+"Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
     
             
 def getstatic():
@@ -1322,7 +1322,7 @@ def postContent(url,data,referr):
     return response
     
 def GenreList(catname,mode):
-        url="https://www.vidics.to/"+catname+"/Genre-Any/Letter-Any/LatestFirst/1.htm"
+        url=strdomain+""+catname+"/Genre-Any/Letter-Any/LatestFirst/1.htm"
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<span class="dir">Genre</span>(.+?)</ul>').findall(newlink)
@@ -1368,7 +1368,7 @@ def SearchChannelresults(url,searchtext):
         addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
-            addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,"https://www.vidics.to/"+vimg)
+            addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,strdomain+""+vimg)
         pagelist=re.compile('<div class="pagination">(.+?)</li>').findall(link)
         if(len(pagelist) > 0):
                 navlist=re.compile('<a[^>]* href="(.+?)">(.+?)</a>').findall(pagelist[0])
@@ -1413,7 +1413,7 @@ def Episodes(url,name):
             #epdata = response.split('posters', 1)[1]
         except : 
             vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
-            vimg = "https://www.vidics.to"+vimg
+            vimg = strdomain+""+vimg
 
         listcontent=re.compile('<div class="season season_[0-9]">(.+?)<br clear="all"\s*/>').findall(newlink)
         scount=-1
@@ -1525,7 +1525,7 @@ def Seasons(url):
         link = ''.join(link.splitlines()).replace('\'','"')
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
-        vimg = "https://www.vidics.to"+vimg
+        vimg = strdomain+""+vimg
         ##xbmc.log("Get Image "+ctitle,2)
         ###xbmc.log("Show Image "+vimg,2)
         try:
@@ -1655,9 +1655,9 @@ def INDEXList(url,modenum,curmode,vidtype):
             vtitle=RemoveHTML(vtitle)
             if(vidtype==""):
                  
-                 addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://www.vidics.to/"+vimg,vpot)
+                 addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,strdomain+""+vimg,vpot)
             else:
-                 addDirContext(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,"https://www.vidics.to/"+vimg,vpot,vidtype)
+                 addDirContext(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,strdomain+""+vimg,vpot,vidtype)
         paginacontent=re.compile('<table class="pagination" ?[^>]*>(.+?)</table>').findall(newlink)
         
         if(len(paginacontent)>0):
@@ -2544,7 +2544,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
                 ctitle = ctitle.replace("_","%20").title()
                 if ctitle=="X%20Files": ctitle = "The%20X-Files"
                 ###xbmc.log("Show Icon? "+ctitle,2)
-                if ("www.vidics.to" not in ctitle) or ("Cerebro" not in ctitle):
+                if ("vidics" not in ctitle) or ("Cerebro" not in ctitle):
                     if ctitle=="Monsters%20Vs%20Aliens%20(2013)": ctitle = "Monsters%20Vs%20Aliens"
                     response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
                     response=response.split('<Overview>', 1)[1]
