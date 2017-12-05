@@ -37,10 +37,17 @@
 </dir>
 
 <plugin>
-<title>[COLOR pink]DanTDM[/COLOR]</title>
+<title>[COLOR pink]DanTDM[/COLOR] (Youtuber)</title>
 <link>plugin://plugin.video.youtube/kodion/search/query/?q=dantdm</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Ninjago: Masters of Spinjitzu[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Ninjago%3a%20Masters%20of%20Spinjitzu%20&url=https%3a%2f%2fvidics.unblocked.pl%2f%2fSerie%2flego_ninjago%3a_masters_of_spinjitzu&vidtype=tv</link>
+<thumbnail>http://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/253323-4.jpg</fanart>
 </plugin>
 
 <plugin>
