@@ -24,7 +24,7 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Latest Movies in HD[/COLOR] [COLOR gold]Cerbero ONLY![/COLOR]</title>
+<title>[COLOR pink]Latest Movies in HD[/COLOR] [COLOR gold]Cerebero ONLY![/COLOR]</title>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Full_hd_logo.svg/2000px-Full_hd_logo.svg.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.cerebroHDmovies</link>
