@@ -612,8 +612,8 @@ provider-name="Crucialminds">
 </addon>
 
 <addon id="plugin.video.cerebroHDmovies"
-  name="[COLOR black].[/COLOR][B]Cerebro On Click HD Movies[/B]"
-  version="1.8"
+  name=" [COLOR black].[/COLOR][B]Cerebro On Click HD Movies[/B]"
+  version="1.9"
   provider-name="biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
