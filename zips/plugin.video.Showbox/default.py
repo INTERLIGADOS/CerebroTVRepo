@@ -2663,11 +2663,17 @@ def addDir(name,url,mode,iconimage,plot=""):
             ###xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
+        elif "Empty" in metaname:
+            ###xbmc.log("URL "+url,2)
+            metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
+            metaname="CerebroTV"
+            response=""
         else:
-            
+            if "name" == "empty": name =""
             metaname2 = metaname+" "+name
             try:
-                if metaname=="Monsters Vs Aliens (2013)": metaname = "Monsters Vs Aliens"                    
+                if metaname=="Monsters Vs Aliens (2013)": metaname = "Monsters Vs Aliens"
+                #if "Empty" in metaname: continue			
                 response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname.replace(" ","%20"))).read()
                 response=response.split('<Overview>', 1)[1]
                 response=response.split('</Overview>', 1)[0]
@@ -2716,11 +2722,16 @@ def addDir2(name,url,mode,iconimage,plot):
             ###xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
+        elif "Empty" in metaname:
+            ###xbmc.log("URL "+url,2)
+            metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
+            metaname="CerebroTV"
+            response=""
         else:
-            
+            if "name" == "empty": name =""
             metaname2 = metaname+" "+name
             try:
-                
+                #if "Empty" in metaname: continue	
                 response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(metaname.replace(" ","%20"))).read()
                 response=response.split('<Overview>', 1)[1]
                 response=response.split('</Overview>', 1)[0]
