@@ -23,12 +23,12 @@
 <link>plugin://plugin.video.Showbox/?mode=9&name=Search%20Movies&url=search</link>
 </plugin>
 
-<dir>
-<name>[COLOR pink]Latest Movies in HD[/COLOR] [COLOR gold]Cerbero ONLY![/COLOR]</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/NewMovies.xml</link>
+<plugin>
+<title>[COLOR pink]Latest Movies in HD[/COLOR] [COLOR gold]Cerbero ONLY![/COLOR]</title>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Full_hd_logo.svg/2000px-Full_hd_logo.svg.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</dir>
+<link>plugin://plugin.video.cerebroHDmovies</link>
+</plugin>
 
 <plugin>
 <title>[COLOR pink]Vidics Movies Genres[/COLOR]</title>
