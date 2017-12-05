@@ -34,7 +34,7 @@
 <title>[COLOR pink]Vidics New TV Shows[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=27&name=Recently%20Added%20TV%20Shows&url=http%3a%2f%2fwww.vidics.to%2fCategory-TvShows%2fGenre-Any%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+<link>plugin://plugin.video.Showbox/?mode=27&name=Recently%20Added%20TV%20Shows&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-TvShows%2fGenre-Any%2fLetter-Any%2fLatestFirst%2f1.htm</link>
 </plugin>
 
 <plugin>
@@ -48,21 +48,21 @@
 <title>[COLOR pink]Vidics Top TV Shows[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=6&name=Top%20TV%20Shows&url=http%3a%2f%2fwww.vidics.to%2ftop%2ftvshows.html</link>
+<link>plugin://plugin.video.Showbox/?mode=6&name=Top%20TV%20Shows&url=http%3a%2f%2fvidics.unblocked.pl%2ftop%2ftvshows.html</link>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Vidics TV Shows 2010-2017[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=27&name=TV%20Shows%202010-2017&url=http%3a%2f%2fwww.vidics.to%2fCategory-TvShows%2fGenre-Any%2f2010-2017%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+<link>plugin://plugin.video.Showbox/?mode=27&name=TV%20Shows%202010-2017&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-TvShows%2fGenre-Any%2f2010-2017%2fLetter-Any%2fLatestFirst%2f1.htm</link>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Vidics TV Shows 2000-2010[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=27&name=TV%20Shows%202000-2010&url=http%3a%2f%2fwww.vidics.to%2fCategory-TvShows%2fGenre-Any%2f2000-2010%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+<link>plugin://plugin.video.Showbox/?mode=27&name=TV%20Shows%202000-2010&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-TvShows%2fGenre-Any%2f2000-2010%2fLetter-Any%2fLatestFirst%2f1.htm</link>
 </plugin>
 
 <plugin>

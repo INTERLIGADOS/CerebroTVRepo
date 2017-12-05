@@ -52,14 +52,14 @@
 
 <plugin>
 <title>[COLOR pink]Monsters vs. Aliens[/COLOR] TV Show</title>
-<link>plugin://plugin.video.Showbox/?mode=7&name=%20Monsters%20vs.%20Aliens%20&url=http%3a%2f%2fwww.vidics.to%2fSerie%2fMonsters_vs_Aliens_(2013)&vidtype=tv</link>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20Monsters%20vs.%20Aliens%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fMonsters_vs_Aliens_(2013)&vidtype=tv</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/30/Monsters_vs_Aliens-583422.JPEG</thumbnail>
 <fanart>https://vidics.unblocked.pl//static/150/30/Monsters_vs_Aliens-583422.JPEG</fanart>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Monsters vs. Aliens[/COLOR] The Movie</title>
-<link>plugin://plugin.video.Showbox/?mode=4&name=%20Monsters%20vs%20Aliens%20&url=http%3a%2f%2fwww.vidics.to%2fFilm%2fMonsters_vs_Aliens&vidtype=movie</link>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20Monsters%20vs%20Aliens%20&url=http%3a%2f%2fvidics.unblocked.pl%2fFilm%2fMonsters_vs_Aliens&vidtype=movie</link>
 <thumbnail>https://vidics.unblocked.pl//static/150/1/Monsters_vs_Aliens-885.JPEG</thumbnail>
 <fanart>https://vidics.unblocked.pl//static/150/1/Monsters_vs_Aliens-885.JPEG</fanart>
 </plugin>

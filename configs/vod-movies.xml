@@ -41,21 +41,21 @@
 <title>[COLOR pink]Vidics New Movies[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=5&name=Top%20Movies&url=http%3a%2f%2fwww.vidics.to%2ftop%2ffilms.html</link>
+<link>plugin://plugin.video.Showbox/?mode=5&name=Top%20Movies&url=http%3a%2f%2fvidics.unblocked.pl%2ftop%2ffilms.html</link>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Vidics Movies 2010-2017[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=26&name=Movies%202010-2017&url=http%3a%2f%2fwww.vidics.to%2fCategory-Movies%2fGenre-Any%2f2010-2017%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+<link>plugin://plugin.video.Showbox/?mode=26&name=Movies%202010-2017&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-Movies%2fGenre-Any%2f2010-2017%2fLetter-Any%2fLatestFirst%2f1.htm</link>
 </plugin>
 
 <plugin>
 <title>[COLOR pink]Vidics Movies 2000-2010[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.Showbox/?mode=26&name=Movies%202000-2010&url=http%3a%2f%2fwww.vidics.to%2fCategory-Movies%2fGenre-Any%2f2000-2010%2fLetter-Any%2fLatestFirst%2f1.htm</link>
+<link>plugin://plugin.video.Showbox/?mode=26&name=Movies%202000-2010&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-Movies%2fGenre-Any%2f2000-2010%2fLetter-Any%2fLatestFirst%2f1.htm</link>
 </plugin>
 
 <plugin>
