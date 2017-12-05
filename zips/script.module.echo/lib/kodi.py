@@ -138,7 +138,7 @@ def set_content(content):
 def create_item(queries, label, thumb='', fanart='', is_folder=None, is_playable=None, total_items=0, menu_items=None, replace_menu=False):
     metaname=label.split(' (20', 1)[0]
     response = urllib.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(metaname).replace(" ","%20")).read()
-    xbmc.log("MODE: "+str(metaname),2)
+    #xbmc.log("MODE: "+str(metaname),2)
     try:
         response=response.split('"poster_path":"', 1)[1]
         response=response.split('",', 1)[0]
