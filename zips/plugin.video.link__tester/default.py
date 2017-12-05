@@ -278,6 +278,6 @@ def main(argv=None):
     mode = queries.get('mode', None)
     url_dispatcher.dispatch(mode, queries)
 
-xbmc.executebuiltin("Container.SetViewMode(522)")	
+#xbmc.executebuiltin("Container.SetViewMode(522)")	
 if __name__ == '__main__':
     sys.exit(main())
