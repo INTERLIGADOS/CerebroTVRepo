@@ -49,7 +49,7 @@ home = __settings__.getAddonInfo('path')
 datapath = xbmc.translatePath(os.path.join(home, 'resources', ''))
 #langfile = xbmc.translatePath(os.path.join(home, 'resources', 'lang.txt'))
 #vidicshost = ["https://vidics.unblocked.pl","https://vidics.to","https://vidics.ch"]
-strdomain ="https://vidics.unblocked.pl"
+strdomain ="https://vidics.unblocked.pl/"
 #strdomain ="https://vidics.to"
 #strdomain ="https://vidics.ch"
 #strdomain = random.choice(vidicshost)
@@ -1291,9 +1291,9 @@ def SearchResult(searchType,Searchtext):
     if searchType=="movie":
             INDEX(strdomain+"/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
     elif searchType=="actor":
-            INDEX(strdomain+"Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
+            INDEX(strdomain+"/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
     else:
-            INDEX(strdomain+"Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
+            INDEX(strdomain+"/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
     
             
 def getstatic():
