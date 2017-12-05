@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.cerebroHDmovies"
+  name="[COLOR black].[/COLOR][B]Cerebro On Click HD Movies[/B]"
+  version="1.7" 
+  provider-name="biglad">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.video.link__tester" />
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+	<disclaimer></disclaimer>
+  </extension>
+</addon>
