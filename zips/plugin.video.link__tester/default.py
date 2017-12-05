@@ -74,7 +74,10 @@ def open_dir(path):
     for dir_name in sorted(dirs):
         if "links" in dirs: continue
         make_directory(path, dir_name)
-    
+    dp = xbmcgui.DialogProgress()
+    dp.create("[COLOR tomato]CerebroTV Meta Data Grabber[/COLOR]","Getting Movie Info","Please Wait, This will take a few seconds.")
+    updateval = 0
+    dp.update(updateval)	
     if LINK_FILE in files:
         link_file = os.path.join(path, LINK_FILE)
         with open(link_file) as f:
@@ -84,10 +87,14 @@ def open_dir(path):
                 if not link: continue
                 try: label = item[1]
                 except: label = item[0]
+                dp.update(updateval+3)
+                updateval= updateval+3
+                if updateval > 99: updateval=1
                 make_link(i, link, label, path)
     
-    kodi.set_content('files')
+    kodi.set_content('movies')
     kodi.end_of_directory(cache_to_disc=False)
+    dp.close()
     
 @url_dispatcher.register(MODES.CREATE_DIR, ['path'], ['dir_name'])
 def create_dir(path, dir_name=None):

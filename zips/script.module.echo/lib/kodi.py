@@ -140,18 +140,26 @@ def set_content(content):
 def create_item(queries, label, thumb='', fanart='', is_folder=None, is_playable=None, total_items=0, menu_items=None, replace_menu=False):
     metaname=label.split(' (20', 1)[0]
     response = urllib.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(metaname).replace(" ","%20")).read()
-    #xbmc.log("MODE: "+str(metaname),2)
+    xbmc.log("MODE: "+str(response),2)
     try:
-        response=response.split('"poster_path":"', 1)[1]
-        response=response.split('",', 1)[0]
-        images = 'http://image.tmdb.org/t/p/w185'+response
+        response2=response.split('"poster_path":"', 1)[1]
+        response2=response2.split('",', 1)[0]
+        images = 'http://image.tmdb.org/t/p/w185'+response2
     except: images = "http://mtvb.co.uk/fanart.jpg"
+    try:
+        plot = response.split('"overview":"', 1)[1]
+        plot = plot.split('",', 1)[0]
+    except: plot = "NO DATA!!!!!!"
     if not thumb: thumb = images
     if not fanart: fanart = images
     list_item = xbmcgui.ListItem(label, iconImage=thumb, thumbnailImage=thumb)
-    add_item(queries, list_item, fanart, is_folder, is_playable, total_items, menu_items, replace_menu)
+    add_item(queries, list_item, fanart, is_folder, is_playable, total_items, menu_items, replace_menu, plot)
+    xbmcplugin.setContent(addon_handle, 'movies')
 
-def add_item(queries, list_item, fanart='', is_folder=None, is_playable=None, total_items=0, menu_items=None, replace_menu=False):
+def add_item(queries, list_item, fanart='', is_folder=None, is_playable=None, total_items=0, menu_items=None, replace_menu=False, plot=''):
+    xbmcplugin.setContent(addon_handle, 'tvshows')
+    xbmc.executebuiltin("Container.SetViewMode(510)")
+    metaname=list_item.getLabel().split(' (20', 1)[0]
     if not fanart: fanart = os.path.join(get_path(), 'fanart.jpg')
     if menu_items is None: menu_items = []
     if is_folder is None:
@@ -161,13 +169,17 @@ def add_item(queries, list_item, fanart='', is_folder=None, is_playable=None, to
         playable = 'false' if is_folder else 'true'
     else:
         playable = 'true' if is_playable else 'false'
+        
 
     liz_url = queries if isinstance(queries, basestring) else get_plugin_url(queries)
     if not list_item.getProperty('fanart_image'): list_item.setProperty('fanart_image', fanart)
-    list_item.setInfo('video', {'title': list_item.getLabel()})
+    list_item.setInfo('video', {'title': list_item.getLabel(), 'plot': plot})
     list_item.setProperty('isPlayable', playable)
     list_item.addContextMenuItems(menu_items, replaceItems=replace_menu)
+
     xbmcplugin.addDirectoryItem(int(sys.argv[1]), liz_url, list_item, isFolder=is_folder, totalItems=total_items)
+    #xbmc.executebuiltin("XBMC.Container.Refresh")
+    #xbmc.executebuiltin("Container.SetViewMode(522)")
 
 def parse_query(query):
     q = {'mode': 'main'}
@@ -244,7 +256,7 @@ def set_view(content, set_view=False, set_sort=False):
 def refresh_container():
     xbmc.executebuiltin("XBMC.Container.Refresh")
     xbmcplugin.setContent(addon_handle, 'movies')
-	            
+                
     
 def update_container(url):
     xbmc.executebuiltin('Container.Update(%s)' % (url))
