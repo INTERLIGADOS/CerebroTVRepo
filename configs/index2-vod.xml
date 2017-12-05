@@ -17,6 +17,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]The Voice[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Voice%20&url=https%3a%2f%2fvidics.unblocked.pl%2f%2fTV-Show%2fthe_voice&vidtype=tv</link>
+<thumbnail>http://www.thetvdb.com/banners/posters/247824-11.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/posters/247824-11.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]The Orville[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Orville%20&url=http%3a%2f%2fvidics.unblocked.pl%2fSerie%2fThe-Orville&vidtype=tv</link>
 <thumbnail>http://www.thetvdb.com/banners/posters/328487-2.jpg</thumbnail>
