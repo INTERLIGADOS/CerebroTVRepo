@@ -1451,7 +1451,7 @@ Initial release.
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.link__tester" version="1.0.9" name="Cerebro HD Movies Core" provider-name="Biglad,Echo Coder">
+<addon id="plugin.video.link__tester" version="1.0.10" name="Cerebro HD Movies Core" provider-name="Biglad,Echo Coder">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -1461,7 +1461,7 @@ Initial release.
 		<import addon="script.cerebro.pairwith.laucnher" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
+        <provides>image</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>URLResolver Link Tester Addon - Forked from TK Norris</summary>
