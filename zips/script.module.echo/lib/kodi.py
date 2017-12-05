@@ -44,6 +44,8 @@ addonfolder = xbmc.translatePath(os.path.join('special://home/addons/', addon.ge
 addonicon = xbmc.translatePath(os.path.join(addonfolder, 'icon.png'))
 addonfanart = xbmc.translatePath(os.path.join(addonfolder, 'fanart.jpg'))
 handle = int(sys.argv[1])
+addon_handle = int(sys.argv[1])
+xbmcplugin.setContent(addon_handle, 'movies')
 execute = xbmc.executebuiltin
 
 def busy():
@@ -227,6 +229,7 @@ def set_view(content, set_view=False, set_sort=False):
         if view and view != '0':
             _log('Setting View to %s (%s)' % (view, content), xbmc.LOGDEBUG)
             xbmc.executebuiltin('Container.SetViewMode(%s)' % (view))
+            xbmcplugin.setContent(addon_handle, 'movies')
 
     # set sort methods - probably we don't need all of them
     if set_sort:
@@ -240,6 +243,8 @@ def set_view(content, set_view=False, set_sort=False):
 
 def refresh_container():
     xbmc.executebuiltin("XBMC.Container.Refresh")
+    xbmcplugin.setContent(addon_handle, 'movies')
+	            
     
 def update_container(url):
     xbmc.executebuiltin('Container.Update(%s)' % (url))

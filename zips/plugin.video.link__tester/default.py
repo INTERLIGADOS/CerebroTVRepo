@@ -65,6 +65,7 @@ def main_menu():
 @url_dispatcher.register(MODES.OPEN_DIR, ['path'])
 def open_dir(path):
     #kodi.create_item({'mode': MODES.CREATE_DIR, 'path': path}, 'Create Directory ', is_folder=False, is_playable=False)
+    xbmcplugin.setContent(addon_handle, 'movies')
     #kodi.create_item({'mode': MODES.ADD_LINK, 'path': path}, 'Add Link', is_folder=False, is_playable=False)
     #addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
     kodi.create_item({'mode': MODES.SETTINGS}, '[COLOR green]Pair For Best Results[/COLOR]', is_folder=False, is_playable=False)
@@ -251,6 +252,7 @@ def make_directory(path, dir_name):
 
 def make_link(index, link, label, path):
     menu_items = []
+    xbmcplugin.setContent(addon_handle, 'movies')
     queries = {'mode': MODES.DELETE_LINK, 'index': index, 'path': path}
     menu_items.append(('Delete Link', 'RunPlugin(%s)' % (kodi.get_plugin_url(queries))),)
     queries = {'mode': MODES.EDIT_LINK, 'index': index, 'path': path}
@@ -262,6 +264,7 @@ def get_directory(path):
     except: return (path, [], [])
 
 def main(argv=None):
+    xbmcplugin.setContent(addon_handle, 'movies')
     if sys.argv: argv = sys.argv
     queries = kodi.parse_query(sys.argv[2])
     logger.log('Version: |%s| Queries: |%s|' % (kodi.get_version(), queries))

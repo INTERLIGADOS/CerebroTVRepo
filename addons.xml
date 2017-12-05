@@ -613,7 +613,7 @@ provider-name="Crucialminds">
 
 <addon id="plugin.video.cerebroHDmovies"
   name="[COLOR black].[/COLOR][B]Cerebro On Click HD Movies[/B]"
-  version="1.7"
+  version="1.8"
   provider-name="biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1451,7 +1451,7 @@ Initial release.
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.link__tester" version="1.0.5" name="Cerebro HD Movies" provider-name="Biglad,Echo Coder">
+<addon id="plugin.video.link__tester" version="1.0.6" name="Cerebro HD Movies" provider-name="Biglad,Echo Coder">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -1461,7 +1461,7 @@ Initial release.
 		<import addon="script.cerebro.pairwith.laucnher" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+        <provides>image</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>URLResolver Link Tester Addon - Forked from TK Norris</summary>
@@ -3857,7 +3857,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.echo" name="CerebroTV Libraries" version="1.00.007" provider-name="Biglad, Echo Coder">
+<addon id="script.module.echo" name="CerebroTV Libraries" version="1.00.008" provider-name="Biglad, Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" />
