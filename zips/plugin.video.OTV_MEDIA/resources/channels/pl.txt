@@ -1,0 +1,18 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="lech_tv.png",[COLOR orange]Lech TV[/COLOR]
+http://wtk.live-ext.e96-jw.insyscd.net/lechtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="asta.png",[COLOR orangered]TV Asta[/COLOR]
+http://xeon.asta-net.pl/trans.isml/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="trwam.png",[COLOR orange]TV TRWAM[/COLOR]
+http://trwamtv.live.e96-jw.insyscd.net/trwamtv.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="amazing.png",[COLOR orange]Amazing[/COLOR]
+http://redir.atmcdn.pl/hls/mm/multimedia/live/amazing/live.livx/playlist.m3u8?sessionId=ABA74CBC0702307FF0B559F938FC9B21.node1&stream=2
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="twoja.png",[COLOR orange]Twoja TV[/COLOR]
+http://94.246.169.19/ttv_hls/live_270p/index.m3u8
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="wtk.png",[COLOR orange]WTK[/COLOR]
+http://wtk.live-ext.e96-jw.insyscd.net/wtk.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="4fun.png",[COLOR orange]4fun TV[/COLOR]
+rtmp://edge4.popler.tv:1935/publishlive?play=123452/4funtv live=1 swfUrl=http://images.popler.tv/player/flowplayer.commercial.swf pageUrl=http://www.popler.tv/live/4funtv
+#EXTINF:-1 tvg-id="" group-title="Polish" tvg-logo="czworka.png",[COLOR orange]Czworka Polskie Radio[/COLOR]
+rtmp://stream85.polskieradio.pl/video/czworka.sdp
+#EXT-X-ENDLIST

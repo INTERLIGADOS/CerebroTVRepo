@@ -1,0 +1,71 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="telem.png",[COLOR orange]TeleM Iasi[/COLOR]  
+http://webmobile.xdev.ro:81/tv16/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="telem.png",[COLOR orange]TeleM Botosani[/COLOR]  
+http://webmobile.xdev.ro:81/tv11/playlist.m3u8 
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="telemoldova.png",[COLOR orange]TeleMoldovaPlus[/COLOR]  
+http://webmobile.xdev.ro:81/tv5/playlist.m3u8 
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="actualitatea.png",[COLOR orange]Actualitatea TV[/COLOR]  
+http://188.210.224.6:81/tv4/playlist.m3u8  
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="buzau.png",[COLOR orange]TV Buzau[/COLOR]  
+http://95.77.16.72:81/tv20/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="nsat.png",[COLOR orange]n-sat TV[/COLOR] 
+http://188.173.24.5:8081/emisie.flv?time=20140309181333&ahv=9c4747b2ecf0be09d3f0ff2f83985f69&cv=2644a09fb238556136bbc2d213731a67&ref=http://www.nortel-sat.ro/live/
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="salejeanul.png",[COLOR orange]Salajeanul TV[/COLOR] 
+http://94.52.213.67:8084/stream.flv
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="speranta.png",[COLOR orange]Speranta TV[/COLOR] 
+rtmp://amsix3.streamkit.tv:80/edge/_definst_/sperantatv_500
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="tvse.png",[COLOR orange]Tv Sud Est[/COLOR]  
+http://iptv.tvsatrm.ro/livestream/tvse.m3u8
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="moldova1.png",[COLOR orangered]Moldova 1[/COLOR] 
+rtmp://tv.simpalsmedia.com/playmd/9494fd16-36d1-4344-a0b3-699abe0b3601
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="realitatea.png",[COLOR orangered]Realitatea TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/f5725931-ab75-4a5a-9cda-5e0f82433c27
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="pro_tv.png",[COLOR orangered]Pro TV[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3142.ts
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="accent_tv.png",[COLOR orangered]Accent TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/e5b78eab-ac78-4ec1-89a1-566d640d6726
+#EXTINF:-1 tvg-id="" group-title="Romanian" tvg-logo="busuioc.png",[COLOR orangered]Busuioc tv[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/5446ae03-1576-4819-95a4-a3cacf5f5da7
+#EXTINF:-1 tvg-logo="digi_24.png",[COLOR orange]Digi World[/COLOR]
+http://ORBIT-IPTV.COM:2500/live/imtiaz/imtiaz/2726.ts
+#EXTINF:-1 tvg-logo="digi_24.png",[COLOR orange]Digi Sport 1[/COLOR]
+http://ORBIT-IPTV.COM:2500/live/imtiaz/imtiaz/2722.ts
+#EXTINF:-1 tvg-logo="digi_24.png",[COLOR orange]Digi Sport 2[/COLOR]
+http://ORBIT-IPTV.COM:2500/live/imtiaz/imtiaz/2723.ts
+#EXTINF:-1 tvg-logo="digi_24.png",[COLOR orange]Digi Sport 3[/COLOR]
+http://ORBIT-IPTV.COM:2500/live/imtiaz/imtiaz/2724.ts
+#EXTINF:-1 tvg-logo="digi_24.png",[COLOR orange]Digi Sport 4[/COLOR]
+http://ORBIT-IPTV.COM:2500/live/imtiaz/imtiaz/2725.ts
+#EXTINF:-1,[COLOR orange]HBO Romania[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3120.ts
+#EXTINF:-1,[COLOR orange]Cinemax Ro[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3115.ts
+#EXTINF:-1,[COLOR orange]Cinemax 2[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3116.ts
+#EXTINF:-1,[COLOR orange]ProCinema[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3143.ts
+#EXTINF:-1,[COLOR orange]Antena 3[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3138.ts
+#EXTINF:-1,[COLOR orange]Antena 1[/COLOR]
+http://orbit-iptv.com:2500/live/imtiaz/imtiaz/3139.ts
+#EXTINF:-1,[COLOR orange]Alt TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/dcbc9c77-d2e8-45db-aa4c-af7710cfd5de
+#EXTINF:-1,[COLOR orange]Euro TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/14570b4e-c0ce-11e1-ae5c-0025902b2f0c
+#EXTINF:-1,[COLOR orange]Gurinel TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/4f5c14c0-de40-46b1-838a-f6289d2a3800
+#EXTINF:-1,[COLOR orange]Jurnal TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/25eafb96-d2bb-4ce6-9bd2-307b28f869a0
+#EXTINF:-1,[COLOR orange]Noroc TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/574678f2-7b17-4744-8145-ee719ccb38c2
+#EXTINF:-1,[COLOR orange]NTV Moldova[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/e0995b8f-75a6-4ef3-aba8-12a713729b37
+#EXTINF:-1,[COLOR orange]Ru TV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/70994446-de92-402b-ad45-ee25a188b9d6
+#EXTINF:-1,[COLOR orange]SorTV[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/221e783e-8f4f-4126-b8ce-03c84e8c0ade
+#EXTINF:-1,[COLOR orange]TVC21[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/bd7d8751-152d-4cc9-b3b1-c214c81ffc72
+#EXTINF:-1,[COLOR orange]Zona M[/COLOR]
+rtmp://tv.simpalsmedia.com/playmd/d2dae479-149c-4762-8e8b-056872f441f6

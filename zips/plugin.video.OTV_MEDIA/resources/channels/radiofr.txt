@@ -1,0 +1,129 @@
+#EXTM3U tvg-shift=0 
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]France Inter[/COLOR]
+http://audio.scdn.arkena.com/11008/franceinter-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]France Info[/COLOR]
+http://audio.scdn.arkena.com/11006/franceinfo-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]France Musique[/COLOR]
+http://audio.scdn.arkena.com/11012/francemusique-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]France Culture[/COLOR]
+http://audio.scdn.arkena.com/11010/franceculture-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RTL[/COLOR]
+http://ais.rtl.fr:80/rtl-1-44-128
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RTL 2[/COLOR]
+http://ais.rtl.fr:80/rtl2-1-44-128
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ[/COLOR]
+http://adwzg3.tdf-cdn.com/8470/nrj_165631.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Clubbin[/COLOR]
+http://adwzg3.tdf-cdn.com/8515/nrj_163357.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Hits[/COLOR]
+http://adwzg3.tdf-cdn.com/8484/nrj_169447.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Extravadance[/COLOR]
+http://adwzg3.tdf-cdn.com/8538/nrj_177788.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Lounge[/COLOR]
+http://adwzg3.tdf-cdn.com/8506/nrj_164590.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Pop[/COLOR]
+http://adwzg3.tdf-cdn.com/8492/nrj_172830.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ RnB[/COLOR]
+http://adwzg3.tdf-cdn.com/8487/nrj_171401.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Rock[/COLOR]
+http://adwzg3.tdf-cdn.com/8528/nrj_176245.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Dance[/COLOR]
+http://adwzg3.tdf-cdn.com/8496/nrj_172504.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ French[/COLOR]
+http://adwzg3.tdf-cdn.com/8520/nrj_170116.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NRJ Nouveautés[/COLOR]
+http://adwzg3.tdf-cdn.com/8521/nrj_166841.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Panik[/COLOR]
+http://streaming.domainepublic.net:8000/radiopanik.ogg
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Grenouille[/COLOR]
+http://live.radiogrenouille.com/live
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Cherie FM[/COLOR]
+http://www.listenlive.eu/cheriefm_mp3.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FIP[/COLOR]
+http://audio.scdn.arkena.com/11016/fip-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FIP Nantes[/COLOR]
+http://audio.scdn.arkena.com/11344/fipnantes-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FIP Bordeaux[/COLOR]
+http://audio.scdn.arkena.com/11343/fipbordeaux-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FIP Strasbourg[/COLOR]
+http://audio.scdn.arkena.com/11345/fipstrasbourg-midfi128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Sweet FM[/COLOR]
+http://dedibox-linux.sweetfm.fr:8000/alc
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Swing FM[/COLOR]
+http://ice3.infomaniak.ch:80/swingfm-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rire et Chansons[/COLOR]
+http://adwzg3.tdf-cdn.com/8474/nrj_177978.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rire et Chansons Sketches[/COLOR]
+http://adwzg3.tdf-cdn.com/8572/nrj_175797.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rire et Chansons Live[/COLOR]
+http://adwzg3.tdf-cdn.com/8575/nrj_176026.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio[/COLOR]
+http://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Classic Jazz[/COLOR]
+http://ice7.infomaniak.ch:80/jazz-wr01-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Manouche[/COLOR]
+http://ice19.infomaniak.ch:80/jazz-wr02-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio New Orleans[/COLOR]
+http://ice7.infomaniak.ch:80/jazz-wr03-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Electro Swing[/COLOR]
+http://ice7.infomaniak.ch:80/jazz-wr04-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Contemporary[/COLOR]
+http://ice6.infomaniak.ch:80/jazz-wr05-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Funk[/COLOR]
+http://ice6.infomaniak.ch:80/jazz-wr06-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Gospel[/COLOR]
+http://ice14.infomaniak.ch:80/jazz-wr07-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Groove[/COLOR]
+http://ice14.infomaniak.ch:80/jazz-wr08-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Latin[/COLOR]
+http://ice37.infomaniak.ch:8000/jazz-wr09-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Soul[/COLOR]
+http://ice14.infomaniak.ch:80/jazz-wr10-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz Soul Food[/COLOR]
+http://ice7.infomaniak.ch:80/jazz-wr12-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Black Music[/COLOR]
+http://ice7.infomaniak.ch:80/jazzblackmusic-high.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Blues[/COLOR]
+http://ice7.infomaniak.ch:80/jazzblues-high.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Ladies & Crooners[/COLOR]
+http://ice5.infomaniak.ch:80/jazzladiescrooners-high.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Lounge[/COLOR]
+http://ice5.infomaniak.ch:80/jazzlounge-high.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Stax & Motown[/COLOR]
+http://ice30.infomaniak.ch:8000/jazz-wr15-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazzy French[/COLOR]
+http://ice33.infomaniak.ch:8000/jazz-wr18-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Reprises[/COLOR]
+http://ice35.infomaniak.ch:8000/reprises-high.mp3  
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Beatles Jazz[/COLOR]
+http://ice39.infomaniak.ch:8000/jazz-wr16-128.mp3  
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Jazz & Classique[/COLOR]
+http://ice33.infomaniak.ch:8000/jazz-wr17-128.mp3  
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Soul Food Radio[/COLOR]
+http://ice36.infomaniak.ch:8000/jazz-wr12-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Happy Hour Radio[/COLOR]
+http://ice38.infomaniak.ch:8000/jazz-wr14-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jazz Radio Groov’up Radio[/COLOR]
+http://ice30.infomaniak.ch:8000/jazz-wr13-128.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Jet FM[/COLOR]
+http://80.82.229.202:8000/jetfm.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Atomic[/COLOR]
+http://188.165.196.212:8038
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Capsule[/COLOR]
+http://stream.radiocapsule.com:15000/radio192.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Mouv’[/COLOR]
+http://www.listenlive.eu/lemouv128.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Mouv’ Extra[/COLOR]
+http://www.listenlive.eu/mouvxtra.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Frequence Plus[/COLOR]
+http://freqplus.ice.infomaniak.ch:80/freqplus-high
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FG Deep Dance Radio[/COLOR]
+http://radiofg.impek.com/fgd.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FG DJ Radio[/COLOR]
+http://www.radiofg.com/streams/fg.pls
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FG Underground Radio[/COLOR]
+http://www.radiofg.com/streams/fgu.pls
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FG Chic Radio[/COLOR]
+http://radiofg.impek.com/fgc.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FG Club FG Radio[/COLOR]
+http://radiofg.impek.com/fg6.m3u

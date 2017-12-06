@@ -1,0 +1,44 @@
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]1 Первый канал[/COLOR]
+http://cdn3.1internet.tv/hds-live11/livepkgr/_definst_/1tv-hd.f4m
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]РТР Планета[/COLOR]
+http://testlivestream.rfn.ru/live/smil:rtrp.smil/playlist.m3u8?auth=vh&cast_id=4941
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]Канал Одесса[/COLOR]
+http://85.238.112.10:8810/hls/7ch/7ch.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]ТВ Дитинец Чернигов[/COLOR]
+http://webtv.net.ua:8080/stream.flv
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]РЖД ТВ[/COLOR]
+rtmp://tva.cdnvideo.ru/tva/tva.sdp
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]ID Fashion HD[/COLOR]
+http://95.67.8.22/hls/idfashion/index.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]Hello TV HD[/COLOR]
+http://live.tvhello.ru/live/Stream1/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]Luxury World[/COLOR]
+http://nano.teleservice.su:8080/hls/luxury.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]Мир 24[/COLOR]
+http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]AnyDay 3D[/COLOR]
+http://streamer1.cdn.3dsmart.tv/hls/anyday.tv.3d/stream.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]AnyDay HD[/COLOR]
+http://streamer1.cdn.3dsmart.tv/hls/anyday.tv.hd/stream.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]HD Media 3D HD[/COLOR]
+http://62.76.26.81:8081/hdmedia/hdmedia_3d/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]Mute HD[/COLOR]
+http://streamer1.cdn.3dsmart.tv/hls/mutetv.tv.3d/stream.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]Mute 3D[/COLOR]
+http://streamer1.cdn.3dsmart.tv/hls/mutetv.tv.hd/stream.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]112 Украина HD[/COLOR]
+rtmp://app.live.112.events/live/112hd_mid
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orangered]5+ ДТС[/COLOR]
+http://78.140.209.14:1935/unost/5/chunklist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]26 Регион[/COLOR]
+rtmp://26region.vintera.tv:1935/26region/26region1
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]4TV[/COLOR]
+http://tv4.te.ua:8081/nimble_live/tv4/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]100% News[/COLOR]
+http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]15 канал[/COLOR]
+http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]HB 24[/COLOR]
+http://5.158.126.24/hls-live/livepkgr/_definst_/liveevent/nv24_1.m3u8
+#EXTINF:-1 tvg-id="" group-title="Russian/Ukrainian" tvg-logo="tv.png",[COLOR orange]Детское ТВ[/COLOR]
+http://46.182.25.34:1935/tv/1425/playlist.m3u8

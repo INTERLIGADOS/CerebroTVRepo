@@ -1,0 +1,36 @@
+#EXTINF:-1 tvg-id="BBC1.uk" group-title="English" tvg-logo="0402.png",[COLOR FFFF00FF]BBC1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bbc_1_hd
+#EXTINF:-1 tvg-id="BBC2.uk" group-title="English" tvg-logo="0404.png",[COLOR FFFF00FF]BBC2 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bbc_2_hd
+#EXTINF:-1 tvg-id="BBC3.uk" group-title="English" tvg-logo="0406.png",[COLOR FFFF00FF]BBC3 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bbc_3
+#EXTINF:-1 tvg-id="ITV1London.uk" group-title="English" tvg-logo="0410.png",[COLOR FFFF00FF]ITV1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=itv_1_hd
+#EXTINF:-1 tvg-id="ITV2.uk" group-title="English" tvg-logo="0411.png",[COLOR FFDC54D3]ITV2[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=itv_2
+#EXTINF:-1 tvg-id="ITV3.uk" group-title="English" tvg-logo="0412.png",[COLOR FFDC54D3]ITV3[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=itv_3
+#EXTINF:-1 tvg-id="More4.uk" group-title="English" tvg-logo="0417.png",[COLOR FFDC54D3]More 4[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=more_4
+#EXTINF:-1 tvg-id="Channel4.uk" group-title="English" tvg-logo="0414.png",[COLOR FFFF00FF]Channel 4 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=channel_4_hd
+#EXTINF:-1 tvg-id="Channel5.uk" group-title="English" tvg-logo="0416.png",[COLOR FFDC54D3]Channel 5[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=channel_5
+#EXTINF:-1 tvg-id="E4.uk" group-title="English" tvg-logo="0418.png",[COLOR FFDC54D3]E4[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=e4
+#EXTINF:-1 tvg-id="Film4.uk" group-title="English" tvg-logo="0415.png",[COLOR FFDC54D3]Film 4[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=film_4
+#EXTINF:-1 tvg-id="CNN.nws" group-title="English" tvg-logo="0423.png",[COLOR FFDC54D3]CNN[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=cnn
+#EXTINF:-1 tvg-id="BBCWorldNews.nws" group-title="English" tvg-logo="0422.png",[COLOR FFDC54D3]BBC World News[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bbc_world_news
+#EXTINF:-1 tvg-id="BBCNews.nws" group-title="English" tvg-logo="0422.png",[COLOR FFDC54D3]BBC News[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bbc_news_hd
+#EXTINF:-1 tvg-id="CCTV.uk" group-title="English" tvg-logo="0424.png",[COLOR FFDC54D3]CCTV[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=cctv_news
+#EXTINF:-1 tvg-id="AlJazeera.uk" group-title="English" tvg-logo="0425.png",[COLOR FFDC54D3]Al Jazeera[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=ai_jazeera_en
+#EXTINF:-1 tvg-id="Bloomberg.uk" group-title="English" tvg-logo="0426.png",[COLOR FFDC54D3]Bloomberg[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bloomberg_tv
+#EXTINF:-1 tvg-id="CNBC.uk" group-title="English" tvg-logo="0427.png",[COLOR FFDC54D3]CNBC[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=cnbc

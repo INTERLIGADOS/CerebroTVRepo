@@ -1,0 +1,28 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="RTP1.pt" group-title="Portuguese" tvg-logo="rtp.png",[COLOR orange]RTP 1[/COLOR]
+http://88.157.194.246/live/ramdisk/zrtp1/HLS/zrtp1.m3u8
+#EXTINF:-1 tvg-id="RTP2.pt" group-title="Portuguese" tvg-logo="rtp.png",[COLOR orange]RTP 2[/COLOR]
+http://88.157.194.246/live/ramdisk/zrtp2/HLS/zrtp2.m3u8
+#EXTINF:-1 tvg-id="Etv.pt" group-title="Portuguese" tvg-logo="sic.png",[COLOR orange]E TV[/COLOR]
+http://213.13.26.41:1935/live/etv_direto/playlist.m3u8
+#EXTINF:-1 tvg-id="Sic.pt" group-title="Portuguese" tvg-logo="sic.png",[COLOR orange]SIC[/COLOR]
+http://88.157.194.246/live/ramdisk/zsic/HLS/zsic.m3u8
+#EXTINF:-1 tvg-id="TVI.pt" group-title="Portuguese" tvg-logo="tvi.png",[COLOR orangered]TVI HD[/COLOR]
+http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/chunklist_w1041706823_b814000.m3u8
+#EXTINF:-1 tvg-id="TVI+.pt" group-title="Portuguese" tvg-logo="tvi.png",[COLOR orangered]TVI +[/COLOR]
+http://video-live.iol.pt:1935/live_tvi+/smil:LIVE_TVI+/chunklist_w1755706733_b814000.m3u8
+#EXTINF:-1 tvg-id="TVI24.pt" group-title="Portuguese" tvg-logo="tvi_24.png",[COLOR orangered]TVI 24[/COLOR]
+http://video-live.iol.pt:1935/live_tvi24/smil:LIVE_TVI24/playlist.m3u8
+#EXTINF:-1 tvg-id="TVcultura.br" group-title="Portuguese" tvg-logo="tv_brasil.png",[COLOR orange]TV Brasil[/COLOR]
+http://ebcremuxlive-live.hls.adaptive.level3.net/manifests/ebcremuxlive-ebctvbrasil/live.m3u8
+#EXTINF:-1 tvg-id="TVcultura.br" group-title="Portuguese" tvg-logo="0035.png",[COLOR orange]Euronews pt[/COLOR]
+rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp
+#EXTINF:-1 tvg-id="TPA.pt" group-title="Portuguese" tvg-logo="impd.png",[COLOR orange]IMPD[/COLOR]
+http://impd.crossdigital.com.br:1935/impd/impd/live.m3u8
+#EXTINF:-1 tvg-id="Novotempo.br" group-title="Portuguese" tvg-logo="tv.png",[COLOR orange]TV Novo Tempo[/COLOR]
+http://stream.novotempo.com:1935/tv/smil:tvnovotempo.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="tvcom.br" group-title="Portuguese" tvg-logo="tv.png",[COLOR orange]Tvcom[/COLOR]
+rtmp://322747t.lp.azioncdn.net:1935/2747t/a/mp4:access_options/rtmp-live/tvcom-sc.sdp
+#EXTINF:-1 tvg-id="Bastacrer.pt" group-title="Portuguese" tvg-logo="tv.png",[COLOR orange]Basta Crer TV[/COLOR]
+rtmp://streamspub.manasat.com/live/bastacrer
+#EXT-X-ENDLIST

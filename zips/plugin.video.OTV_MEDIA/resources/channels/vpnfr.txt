@@ -1,0 +1,12 @@
+#EXTINF:-1 tvg-logo="0204.png",[COLOR orangered]France 2 HD[/COLOR] 
+http://live.francetv.fr/simulcast/France_2/hls_v1/index.m3u8
+#EXTINF:-1 tvg-logo="0205.png",[COLOR orangered]France 3 HD[/COLOR]
+http://live.francetv.fr/simulcast/France_3/hls_v1/index.m3u8
+#EXTINF:-1 tvg-logo="0221.png",[COLOR orangered]France 4 HD[/COLOR]
+http://live.francetv.fr/simulcast/France_4/hls_v1/index.m3u8
+#EXTINF:-1 tvg-logo="0237.png",[COLOR orangered]France 5 HD[/COLOR]
+http://live.francetv.fr/simulcast/France_5/hls_v1/index.m3u8
+#EXTINF:-1 tvg-logo="0226.png",[COLOR orangered]France O[/COLOR]
+http://live.francetv.fr/simulcast/France_O/hls_v1/index.m3u8
+#EXTINF:-1 tvg-logo="0215.png",[COLOR orangered]Arte HD[/COLOR]
+http://artelive-lh.akamaihd.net/i/artelive_fr@344805/index_5_av-p.m3u8?sd=10&rebase=on

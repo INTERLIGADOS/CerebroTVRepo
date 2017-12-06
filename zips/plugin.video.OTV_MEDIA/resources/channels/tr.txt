@@ -1,0 +1,84 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="Trt1.tr" group-title="Turkish" tvg-logo="trt.png",[COLOR orangered]TRT1 HD[/COLOR]
+http://www.iptvsaga.com/play/tv3/0030.m3u8
+#EXTINF:-1 tvg-id="Atv.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orangered]ATV[/COLOR]
+http://yayin8.canlitv.com:1935/live/atv/chunklist_w134719622.m3u8?hash=9983e5807ebf1ccf8028d364344833fe
+#EXTINF:-1 tvg-id="Trtkurdi.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orange]TRT KURDI[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRT6_1@181944/master.m3u8
+#EXTINF:-1 tvg-id="Trthaber.tr" group-title="Turkish" tvg-logo="0803.png",[COLOR orangered]TRT HABER HD[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTHABERHD_1@181942/master.m3u8
+#EXTINF:-1 tvg-id="Trtspor.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orangered]TRT SPOR HD[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTSPOR1_1@182042/master.m3u8
+#EXTINF:-1 tvg-id="Trtspor.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orange]TRT SPOR HD[/COLOR]
+http://sol.trtcdn.com/tv/trtspor/smil:trtspor.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Trtworld.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orangered]TRT World[/COLOR]
+http://www.iptvsaga.com/play/tv3/0031.m3u8
+#EXTINF:-1 tvg-id="Trtuuzic.tr" group-title="Turkish" tvg-logo="0809.png",[COLOR orange]TRT MÜZIK[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTMUZIK_1@181845/master.m3u8
+#EXTINF:-1 tvg-id="Trtbelgesel.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orangered]TRT BELGESEL HD[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTBELGESEL_1@182145/index_1500_av-b.m3u8?sd=10&rebase=on&hdntl=
+#EXTINF:-1 tvg-id="Kanalturk.tr" group-title="Turkish" tvg-logo="kanalturk.png",[COLOR orangered]KANAL TÜRK[/COLOR]
+http://www.dailymotion.com/cdn/manifest/video/x3b23ao.m3u8
+#EXTINF:-1 tvg-id="Trtavaz.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orange]TRT Avaz[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTAVAZ_1@182244/master.m3u8
+#EXTINF:-1 tvg-id="Trtcocu.tr" group-title="Turkish" tvg-logo="0810.png",[COLOR orange]TRT Çocuk[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTCOCUK_1@181844/master.m3u8
+#EXTINF:-1 tvg-id="Trtarapca.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orange]TRT ARAPÇA[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTARAPCA_1@181945/index_500_av-b.m3u8?sd=10&rebase=on&hdntl=
+#EXTINF:-1 tvg-id="Trtokul.tr" group-title="Turkish" tvg-logo="0804.png",[COLOR orangered]TRT OKUL[/COLOR]
+http://www.iptvsaga.com/play/tv3/0034.m3u8
+#EXTINF:-1 tvg-id="CNNTurk.tr" group-title="Turkish" tvg-logo="0816.png",[COLOR orange]CNN Türk[/COLOR]
+http://www.iptvsaga.com/play/tv3/0051.m3u8
+#EXTINF:-1 tvg-id="Istanbul1.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orangered]Istanbul 1[/COLOR]
+rtmp://wowza.istweb.tv/webtv/webtv_wowza1
+#EXTINF:-1 tvg-id="Istanbul1.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]Istanbul 1[/COLOR]
+rtmp://wowza.istweb.tv:1935/webtv/webtv_wowza2
+#EXTINF:-1 tvg-id="Show.tr" group-title="Turkish" tvg-logo="show.png",[COLOR orange]SHOW TV[/COLOR]
+http://mn-l.mncdn.com/showtv/showtv2/playlist.m3u8
+#EXTINF:-1 tvg-id="Kanal7.tr" group-title="Turkish" tvg-logo="kanal_7.png",[COLOR orange]KANAL 7[/COLOR]
+http://livetr.gostream.nl/kanal7hq/kanal7hq/chunklist_w2029317818.m3u8
+#EXTINF:-1 tvg-id="TV2.tr" group-title="Turkish" tvg-logo="tv_2.png",[COLOR orange]TV 2[/COLOR]
+http://media.netd.com.tr/S2/HLS_LIVE/tv2/playlist.m3u8
+#EXTINF:-1 tvg-id="Haberturk.tr" group-title="Turkish" tvg-logo="haber_turk.png",[COLOR orange]HABER TÜRK[/COLOR]
+http://mn-l.mncdn.com/haberturk/haberturk2/index.m3u8
+#EXTINF:-1 tvg-id="Kanald.tr" group-title="Turkish" tvg-logo="kanal_d.png",[COLOR orange]Kanal D[/COLOR]
+http://212.224.108.80/S1/HLS_LIVE/kanald/1000/prog_index.m3u8
+#EXTINF:-1 tvg-id="Diyanet.tr" group-title="Turkish" tvg-logo="diyanet.png",[COLOR orangered]DIYANET HD[/COLOR]
+http://trtcanlitv-lh.akamaihd.net/i/TRTDIYANET_1@182344/index_1200_av-p.m3u8?sd=10&rebase=on&hdntl=
+#EXTINF:-1 tvg-id="Dreamtv.tr" group-title="Turkish" tvg-logo="dream.png",[COLOR orange]Dream TV[/COLOR]
+http://www.iptvsaga.com/play/tv3/0069.m3u8
+#EXTINF:-1 tvg-id="Dreamturk.tr" group-title="Turkish" tvg-logo="dream_turk.png",[COLOR orange]Dreamtürk TV[/COLOR]
+http://www.iptvsaga.com/play/tv3/0060.m3u8
+#EXTINF:-1 tvg-id="Powerturk.tr" group-title="Turkish" tvg-logo="power_turk.png",[COLOR orangered]Powertürk HD[/COLOR]
+http://www.iptvsaga.com/play/tv3/0070.m3u8
+#EXTINF:-1 tvg-id="Nr1.tr" group-title="Turkish" tvg-logo="number_one.png",[COLOR orange]Number One[/COLOR]
+http://mn-l.mncdn.com/birnumaramedya_live/nr1tv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Tbmm.tr" group-title="Turkish" tvg-logo="tbmm.png",[COLOR orange]TBMM[/COLOR]
+http://mecliscanlitv-lh.akamaihd.net/i/MECLISTV_1@127503/index_1200_av-p.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-id="Brt1.tr" group-title="Turkish" tvg-logo="brt1.png",[COLOR orange]BRT 1[/COLOR]
+http://wms.brtk.net/live/brt1/playlist.m3u8
+#EXTINF:-1 tvg-id="BrtHD.tr" group-title="Turkish" tvg-logo="brthd.png",[COLOR orange]BRT HD[/COLOR]
+http://wms.brtk.net/live/BRTHD/playlist.m3u8
+#EXTINF:-1 tvg-id="Egeuniversitesi.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orangered]EGE ÜNIVERSITESI TV[/COLOR]
+http://stream.ege.edu.tr/canli.m3u8
+#EXTINF:-1 tvg-id="Bloomberg.tr" group-title="Turkish" tvg-logo="bloomberg.png",[COLOR orange]Bloomberg[/COLOR]
+http://mn-l.mncdn.com/bloomberght/bloomberght2/index.m3u8
+#EXTINF:-1 tvg-id="Sportstv.tr" group-title="Turkish" tvg-logo="sport_tv.png",[COLOR orange]Sports TV[/COLOR]
+rtmp://stream.sportstv.com.tr/sportstv/SportsTV3
+#EXTINF:-1 tvg-id="Adatv.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]Ada TV[/COLOR]
+rtmp://sponsored.ncbtv.com:1835/live/42e_adatv
+#EXTINF:-1 tvg-id="Marmaris.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]Marmaris TV[/COLOR]
+http://yayin3.canlitv.com:1935/live/marmaristv/ratus42.m3u8
+#EXTINF:-1 tvg-id="Abanttv.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]Abant TV[/COLOR]
+http://yayin3.canlitv.com:1935/live/abanttv/playlist.m3u8
+#EXTINF:-1 tvg-id="24tv.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]24 TV[/COLOR]
+http://mn-l.mncdn.com/kanal24/kanal243/HasBahCa.m3u8
+#EXTINF:-1 tvg-id="Bengu.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]BENGÜ TÜRK[/COLOR]
+http://yayin8.canliyayin.org:1935/benguturk/benguturk/playlist.m3u8?wowzasessionid=1640816579
+#EXTINF:-1 tvg-id="Beyaz.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]Beyaz[/COLOR]
+http://37.77.2.236:1935/beyaz/beyaz.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ulke.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]ÜLKE TV[/COLOR]
+http://livetr.gostream.nl/ulketvhq/ulketvhq/HasBahCa.m3u8
+#EXTINF:-1 tvg-id="on4.tr" group-title="Turkish" tvg-logo="tv.png",[COLOR orange]on4[/COLOR]
+rtmp://yayin.netradyom.com/live/on4
+#EXT-X-ENDLIST

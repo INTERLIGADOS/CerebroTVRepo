@@ -1,0 +1,30 @@
+#EXTINF:-1 tvg-id="BBC1.uk" group-title="English" tvg-logo="0402.png",[COLOR orangered]BBC1 HD[/COLOR] 
+http://vs-hls-uk-live.edgesuite.net/pool_30/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBC2.uk" group-title="English" tvg-logo="0404.png",[COLOR orangered]BBC2 HD[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_31/live/bbc_two_hd/bbc_two_hd.isml/bbc_two_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBC4.uk" group-title="English" tvg-logo="0408.png",[COLOR orangered]BBC4 HD[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_33/live/bbc_four_hd/bbc_four_hd.isml/bbc_four_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="CBBC.uk" group-title="English" tvg-logo="tv.png",[COLOR orangered]CBBC HD[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_1/live/cbbc_hd/cbbc_hd.isml/cbbc_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="CBeebies.uk" group-title="English" tvg-logo="tv.png",[COLOR orangered]CBeebies HD[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_2/live/cbeebies_hd/cbeebies_hd.isml/cbeebies_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBCNews.nws" group-title="English" tvg-logo="0421.png",[COLOR orangered]BBC News Channel HD[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_34/live/bbc_news_channel_hd/bbc_news_channel_hd.isml/bbc_news_channel_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBCParliament.uk" group-title="English" tvg-logo="tv.png",[COLOR orange]BBC Parliament[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_1/live/bbc_parliament/bbc_parliament.isml/bbc_parliament-pa3%3d96000-video%3d1604000.norewind.m3u8
+#EXTINF:-1 tvg-id="S4c.uk" group-title="English" tvg-logo="tv.png",[COLOR orange]S4C[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_1/live/bbc_alba/bbc_alba.isml/bbc_alba-pa3%3d96000-video%3d1604000.norewind.m3u8
+#EXTINF:-1 tvg-id="BBC1London.uk" group-title="English" tvg-logo="0401.png",[COLOR orange]BBC1 London[/COLOR] 
+http://vs-hls-uk-live.edgesuite.net/pool_32/live/bbc_one_london/bbc_one_london.isml/bbc_one_london-pa3%3d96000-video%3d1604000.norewind.m3u8
+#EXTINF:-1 tvg-id="BBC1Scotland.uk" group-title="English" tvg-logo="0402.png",[COLOR orangered]BBC1 Scotland HD[/COLOR] 
+http://vs-hls-uk-live.edgesuite.net/pool_5/live/bbc_one_scotland_hd/bbc_one_scotland_hd.isml/bbc_one_scotland_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBC1NorthernIreland.uk" group-title="English" tvg-logo="0402.png",[COLOR orangered]BBC1 Northern Ireland HD[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_4/live/bbc_one_northern_ireland_hd/bbc_one_northern_ireland_hd.isml/bbc_one_northern_ireland_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBC1Wales.uk" group-title="English" tvg-logo="0402.png",[COLOR orangered]BBC1 Wales HD[/COLOR] 
+http://vs-hls-uk-live.edgesuite.net/pool_3/live/bbc_one_wales_hd/bbc_one_wales_hd.isml/bbc_one_wales_hd-pa4%3d128000-video%3d5070000.m3u8
+#EXTINF:-1 tvg-id="BBC2Scotland.uk" group-title="English" tvg-logo="0403.png",[COLOR orange]BBC2 Scotland[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_5/live/bbc_two_scotland/bbc_two_scotland.isml/bbc_two_scotland-pa3%3d96000-video%3d1604000.norewind.m3u8
+#EXTINF:-1 tvg-id="BBC2NorthernIreland.uk" group-title="English" tvg-logo="0403.png",[COLOR orange]BBC2 Northern Ireland[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_5/live/bbc_two_northern_ireland_digital/bbc_two_northern_ireland_digital.isml/bbc_two_northern_ireland_digital-pa3%3d96000-video%3d1604000.norewind.m3u8
+#EXTINF:-1 tvg-id="BBC2Wales.uk" group-title="English" tvg-logo="0403.png",[COLOR orange]BBC2 Wales[/COLOR]
+http://vs-hls-uk-live.edgesuite.net/pool_5/live/bbc_two_wales_digital/bbc_two_wales_digital.isml/bbc_two_wales_digital-pa3%3d96000-video%3d1604000.norewind.m3u8

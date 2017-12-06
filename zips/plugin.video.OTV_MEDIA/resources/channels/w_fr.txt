@@ -1,0 +1,64 @@
+#EXTINF:-1 tvg-id="TF1.fr" group-title="French" tvg-logo="0202.png",[COLOR FFFF00FF]TF1HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tf_1_hd
+#EXTINF:-1 tvg-id="France2.fr" group-title="French" tvg-logo="0204.png",[COLOR FFFF00FF]France 2 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=france_2_hd
+#EXTINF:-1 tvg-id="France3.fr" group-title="French" tvg-logo="0205.png",[COLOR FFDC54D3]France 3[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=france_3
+#EXTINF:-1 tvg-id="France4.fr" group-title="French" tvg-logo="0221.png",[COLOR FFDC54D3]France 4[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=france_4
+#EXTINF:-1 tvg-id="France5.fr" group-title="French" tvg-logo="0237.png",[COLOR FFDC54D3]France 5[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=france_5
+#EXTINF:-1 tvg-id="France24fr.fr" group-title="French" tvg-logo="0236.png",[COLOR FFDC54D3]France 24[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=france_24
+#EXTINF:-1 tvg-id="FranceO.fr" group-title="French" tvg-logo="0226.png",[COLOR FFDC54D3]France Ô[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=france_o
+#EXTINF:-1 tvg-id="ARTE.fr" group-title="French" tvg-logo="0215.png",[COLOR FFFF00FF]Arte HD FR[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=arte_fr_hd
+#EXTINF:-1 tvg-id="D8.fr" group-title="French" tvg-logo="0216.png",[COLOR FFDC54D3]D8[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=direct_8
+#EXTINF:-1 tvg-id="Gulli.fr" group-title="French" tvg-logo="0225.png",[COLOR FFDC54D3]Gulli[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=gulli
+#EXTINF:-1 tvg-id="lemanbleu.fr" group-title="French" tvg-logo="0245.png",[COLOR FFDC54D3]léman bleu[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=leman_bleu
+#EXTINF:-1 tvg-id="M6.fr" group-title="French" tvg-logo="0209.png",[COLOR FFFF00FF]M6 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=m_6_hd
+#EXTINF:-1 tvg-id="Cartoonnetwork.fr" group-title="French" tvg-logo="0239.png",[COLOR FFDC54D3]Cartoon Network[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=cartoon_network
+#EXTINF:-1 tvg-id="TSR1.ch" group-title="French" tvg-logo="0211.png",[COLOR FFFF00FF]RTS 1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rts_un_hd
+#EXTINF:-1 tvg-id="TSR2.ch" group-title="French" tvg-logo="0213.png",[COLOR FFFF00FF]RTS 2 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rts_deux_hd
+#EXTINF:-1 tvg-id="TV5Monde.fr" group-title="French" tvg-logo="tv5.png",[COLOR FFDC54D3]TV5 Monde[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tv_5_monde
+#EXTINF:-1 tvg-id="W9.fr" group-title="French" tvg-logo="0217.png",[COLOR FFDC54D3]W9[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=w_9
+#EXTINF:-1 tvg-id="RMCDecouverte.fr" group-title="French" tvg-logo="0231.png",[COLOR FFFF00FF]RMC Decouverte HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rmc_decouverte
+#EXTINF:-1 tvg-id="RougeTV.fr" group-title="French" tvg-logo="0241.png",[COLOR FFDC54D3]Rouge TV[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rouge_tv
+#EXTINF:-1 tvg-id="Tmc.fr" group-title="French" tvg-logo="0218.png",[COLOR FFDC54D3]TMC[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tmc
+#EXTINF:-1 tvg-id="Nt1.fr" group-title="French" tvg-logo="0219.png",[COLOR FFDC54D3]NT1[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=nt_1
+#EXTINF:-1 tvg-id="Hd1.fr" group-title="French" tvg-logo="0227.png",[COLOR FFFF00FF]HD1[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=hd_1
+#EXTINF:-1 tvg-id="equipe21.fr" group-title="French" tvg-logo="0228.png",[COLOR FFFF00FF]L'equipe 21[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=equipe_tv
+#EXTINF:-1 tvg-id="Sixter.fr" group-title="French" tvg-logo="0229.png",[COLOR FFFF00FF]6TER[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=6_ter
+#EXTINF:-1 tvg-id="Cherie.fr" group-title="French" tvg-logo="0232.png",[COLOR FFFF00FF]Chérie HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=cherie_hd
+#EXTINF:-1 tvg-id="n23.fr" group-title="French" tvg-logo="0230.png",[COLOR FFFF00FF]N23[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=numero_23
+#EXTINF:-1 tvg-id="Bfm.fr" group-title="French" tvg-logo="0222.png",[COLOR FFDC54D3]BFM[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=bfm_tv
+#EXTINF:-1 tvg-id="TVm3.fr" group-title="French" tvg-logo="0240.png",[COLOR FFDC54D3]TVM 3[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tvm_3
+#EXTINF:-1 tvg-id="canalalphaneuchatel.ch" group-title="French" tvg-logo="0246.png",[COLOR FFDC54D3]Canal Alpha Neuchâtel[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=canal_alpha_ne_hd
+#EXTINF:-1 tvg-id="Njr12tv.fr" group-title="French" tvg-logo="0220.png",[COLOR FFDC54D3]NRJ 12 TV[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=nrj_12
+#EXTINF:-1 tvg-id="Euronews.nws" group-title="French" tvg-logo="0035.png",[COLOR FFDC54D3]EuroNews French[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=euronews
+#EXTINF:-1 tvg-id="8MontBlanc" group-title="French" tvg-logo="8-MontBlanc.png",[COLOR FFDC54D3]8 Mont-Blanc[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=8_mont_blanc

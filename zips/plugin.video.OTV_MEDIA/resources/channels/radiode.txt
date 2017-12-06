@@ -1,0 +1,89 @@
+#EXTM3U tvg-shift=0 
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RTL[/COLOR]
+http://stream.104.6rtl.com/rtl-live/mp3-128/surfmusikDE/
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Antenne Bayern[/COLOR]
+http://www.antenne.de/webradio/antenne.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Antenne Bayern Top 40[/COLOR]
+http://www.antenne.de/webradio/channels/top-40.m3u
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NDR 90.3[/COLOR]
+http://83.217.226.183/7/956/273760/v1/gnl.akacast.akamaistream.net/ndr_ndr903_mp3?akacasthops=1
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NDR 1 Niedersachsen[/COLOR]
+http://edge13229.icecast.akadns.net/7/807/273766/v1/gnl.akacast.akamaistream.net/ndr_ndr1_han_mp3?akacasthops=3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NDR 1 Radio MV[/COLOR]
+http://ndr-ndrradiomv-sn-mp3.akacast.akamaistream.net/7/992/273771/v1/gnl.akacast.akamaistream.net/ndr_ndrradiomv_sn_mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NDR 2[/COLOR]
+http://ndr-ndr2-nds-mp3.akacast.akamaistream.net/7/400/252763/v1/gnl.akacast.akamaistream.net/ndr_ndr2_nds_mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NDR Info[/COLOR]
+http://ndr-ndrinfo-nds-mp3.akacast.akamaistream.net/7/250/273753/v1/gnl.akacast.akamaistream.net/ndr_ndrinfo_nds_mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]NDR Kultur[/COLOR]
+http://ndr-ndrkultur-mp3.akacast.akamaistream.net/7/527/273758/v1/gnl.akacast.akamaistream.net/ndr_ndrkultur_mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Essen[/COLOR]
+http://edge.live.mp3.mdn.newmedia.nacamar.net:80/ps-radioessen/livestream.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Galaxy[/COLOR]
+http://rs21.stream24.net:80/stream
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Hit Radio FFH[/COLOR]
+http://mp3.ffh.de/radioffh/hqlivestream.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]FFH Digital Deutsch Pur[/COLOR]
+http://mp3.ffh.de/ffhchannels/hqdeutsch.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Hit Radio N1[/COLOR]
+http://46.232.185.98:8000/hitradion1
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]hr 1[/COLOR]
+http://hr-mp3-m-h1.akacast.akamaistream.net/7/783/142131/v1/gnl.akacast.akamaistream.net/hr-mp3-m-h1
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]hr 2[/COLOR]
+http://hr-mp3-m-h2.akacast.akamaistream.net/7/786/142132/v1/gnl.akacast.akamaistream.net/hr-mp3-m-h2
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]hr 3[/COLOR]
+http://hr-mp3-m-h3.akacast.akamaistream.net/7/785/142133/v1/gnl.akacast.akamaistream.net/hr-mp3-m-h3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]hr 4[/COLOR]
+http://hr-mp3-m-h4.akacast.akamaistream.net/7/780/142134/v1/gnl.akacast.akamaistream.net/hr-mp3-m-h4
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]hr Info[/COLOR]
+http://www.metafilegenerator.de/HR/hrinfo/mp3/gffstream_mv_mp3_w108b.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]You FM[/COLOR]
+http://hr-mp3-m-youfm.akacast.akamaistream.net/7/246/142136/v1/gnl.akacast.akamaistream.net/hr-mp3-m-youfm
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]You FM Club[/COLOR]
+http://hr-mp3-m-youfm-club.akacast.akamaistream.net/7/910/142137/v1/gnl.akacast.akamaistream.net/hr-mp3-m-youfm_club
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Gong 97.1[/COLOR]
+http://46.232.185.99:8000/gong971
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Hannover[/COLOR]
+http://xapp2154659840c40000.f.l.i.lb.core-cdn.net/40000mb/live/app2154659840/w2153906178/live_de_192.mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Leipzig 91.3[/COLOR]
+http://streaming.radioleipzig.de/radio-leipzig_simulcast_128k_mp3
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Radio Zusa[/COLOR]
+http://stream.radio-zusa.net:8000/zusa-hifi.ogg
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RBB Antenne Brandenburg[/COLOR]
+http://rbb-mp3-antenneb-m.akacast.akamaistream.net/7/516/292092/v1/gnl.akacast.akamaistream.net/rbb_mp3_antenneb_m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RBB Fritz[/COLOR]
+http://rbb-mp3-fritz-m.akacast.akamaistream.net/7/799/292093/v1/gnl.akacast.akamaistream.net/rbb_mp3_fritz_m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RBB Radio Eins[/COLOR]
+http://rbb-mp3-radioeins-m.akacast.akamaistream.net/7/854/292097/v1/gnl.akacast.akamaistream.net/rbb_mp3_radioeins_m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RBB InfoRadio[/COLOR]
+http://rbb-mp3-inforadio-m.akacast.akamaistream.net/7/134/292094/v1/gnl.akacast.akamaistream.net/rbb_mp3_inforadio_m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RBB Kulturradio[/COLOR]
+http://rbb-mp3-kulturradio-m.akacast.akamaistream.net/7/935/292095/v1/gnl.akacast.akamaistream.net/rbb_mp3_kulturradio_m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]RBB radio BERLIN 88.8[/COLOR]
+http://rbb-mp3-radioberlin-m.akacast.akamaistream.net/7/70/292096/v1/gnl.akacast.akamaistream.net/rbb_mp3_radioberlin_m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rock Antenne[/COLOR]
+http://mp3channels.webradio.antenne.de:80/rockantenne
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rock Antenne Alternative[/COLOR]
+http://mp3channels.webradio.rockantenne.de/alternative
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rock Antenne Heavy Metal[/COLOR]
+http://mp3channels.webradio.rockantenne.de/heavy-metal
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]Rock Antenne Classic Perlen[/COLOR]
+http://mp3channels.webradio.rockantenne.de/classic-perlen
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]SR 1 Longe[/COLOR]
+http://sr1c2.akacast.akamaistream.net/7/458/142688/v1/gnl.akacast.akamaistream.net/sr1c2
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]SR 2[/COLOR]
+http://sr2m.akacast.akamaistream.net/7/375/142686/v1/gnl.akacast.akamaistream.net/sr2m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]SR 2 - Off-Beat[/COLOR]
+http://sr2c1.akacast.akamaistream.net/7/108/142688/v1/gnl.akacast.akamaistream.net/sr2c1
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]SR 3[/COLOR]
+http://sr3m.akacast.akamaistream.net/7/722/142687/v1/gnl.akacast.akamaistream.net/sr3m
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]WDR 1[/COLOR]
+http://1live.akacast.akamaistream.net/7/706/119434/v1/gnl.akacast.akamaistream.net/1live
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]WDR 2[/COLOR]
+http://wdr-mp3-m-wdr2-koeln.akacast.akamaistream.net/7/812/119456/v1/gnl.akacast.akamaistream.net/wdr-mp3-m-wdr2-koeln
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]WDR 3[/COLOR]
+http://wdr-3-320.akacast.akamaistream.net/7/827/119437/v1/gnl.akacast.akamaistream.net/wdr-3-320
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]WDR 4[/COLOR]
+http://wdr-4.akacast.akamaistream.net/7/42/119438/v1/gnl.akacast.akamaistream.net/wdr-4
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]WDR 5[/COLOR]
+http://wdr-5.akacast.akamaistream.net/7/41/119439/v1/gnl.akacast.akamaistream.net/wdr-5

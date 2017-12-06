@@ -1,0 +1,12 @@
+#EXTINF:-1 tvg-id="ORF1.at" group-title="Deutsch" tvg-logo="0070.png",[COLOR orange]ORF1[/COLOR]
+http://apasfiisl.apa.at/ipad/orf1_q6a/orf.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ORF2.at" group-title="Deutsch" tvg-logo="0072.png",[COLOR orange]ORF2[/COLOR]
+http://apasfiisl.apa.at/ipad/orf2_q4a/orf.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ORFIII.at" group-title="Deutsch" tvg-logo="0130.png",[COLOR orange]ORF III (HQ)[/COLOR]
+http://apasfiisl.apa.at/ipad/orf3_q6a/orf.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ORFIII.at" group-title="Deutsch" tvg-logo="0130.png",[COLOR orange]ORF III[/COLOR]
+http://hls.tv.iptv.ink/orf3at@510154.m3u8|X-Forwarded-For=93.82.18.55
+#EXTINF:-1 tvg-id="ORFSportplus.at" group-title="Deutsch" tvg-logo="0132.png",[COLOR orange]ORF Sport+ (HQ)[/COLOR]
+http://apasfiisl.apa.at/ipad/orfs_q6a/orf.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ORFSportplus.at" group-title="Deutsch" tvg-logo="0132.png",[COLOR orange]ORF Sport+[/COLOR]
+http://hls.tv.iptv.ink/orfsportplusat@722628.m3u8|X-Forwarded-For=93.82.18.55 

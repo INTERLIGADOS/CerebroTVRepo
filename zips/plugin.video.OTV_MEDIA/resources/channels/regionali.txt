@@ -1,0 +1,364 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="PUGLIA",Teleradioerre
+http://www.teleradioerre.com:1935/live/teleradioerre/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Rete TV Italia
+rtsp://live.cdn2.streamago.tv/streamago/64061/56332/?idcanale=56332
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Tele 9
+rtmp://212.43.117.218:1935/live/tele9
+#EXTINF:-1,RTC Tele Calabia
+http://fl1.mediastreaming.it:1935/calabriachannel/livestream/playlist.m3u8
+#EXTINF:-1, Sport Television
+http://pull.appmedia.it:1935/sportelevision_live/smil:51ec9704-65b9-4531-8f30-c610fee12c20.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Rete 8 News 24
+rtsp://live.cdn2.streamago.tv/streamago/39648/33591/?idcanale=33591
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Rete 8 Sport
+rtsp://live.cdn2.streamago.tv/streamago/39648/36567/?idcanale=36567
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Tele Ponte
+rtmp://media.streamingpulse.biz:1935/8024/8024
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Tv Sei
+http://iphone-streaming.ustream.tv/ustreamVideo/18220940/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",AB channel
+rtmp://swtv24.tuttositiweb.com:1935/abchannel/livestream
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Rete8
+rtsp://live.cdn2.streamago.tv/streamago/39648/36568/?idcanale=36568
+#EXTINF:-1 tvg-id="" group-title="ABRUZZO" tvg-logo="",Telesirio
+http://iphone-streaming.ustream.tv/ustreamVideo/13161433/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="BASILICATA" tvg-logo="",Lucania TV
+rtmp://wms.shared.streamshow.it:80/lucaniatv/lucaniatv
+#EXTINF:-1 tvg-id="TRMh24.it" group-title="BASILICATA" tvg-logo="",Trm H24
+http://flash.streamingmedia.it:1935/TRM/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="BASILICATA" tvg-logo="",La Nuova Tv
+http://162.244.81.145:1962/live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CALABRIA" tvg-logo="",Esperia TV
+http://wms.shared.streamshow.it/esperiatv/esperiatv/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CALABRIA" tvg-logo="",Castrovillari TV
+rtmp://msh0062.stream.seeweb.it:1935/live/stream00.sdp
+#EXTINF:-1 tvg-id="" group-title="CALABRIA" tvg-logo="",8 Video Calabria
+rtmp://wms.shared.streamshow.it:80/videocalabria/videocalabria
+#EXTINF:-1 tvg-id="" group-title="CALABRIA" tvg-logo="",Tele Diogene
+http://wms.shared.streamshow.it:1935/telediogene/telediogene/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Canale 9
+rtmp://151.0.201.134:1935/live/livestream
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Telelaser
+rtmp://flash2.bsnewline.com:1935/telelaser/telelaser
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Tv Campane
+http://xtvcampanex.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Canale 8
+rtmp://wms.shared.streamshow.it:80/canale8/canale8
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Telecolore
+http://xtcstelecoloresalernox.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Tv Luna
+http://live.streamcaster.net:1935/test_live/teleluna/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Televomero
+rtmp://94.198.100.100:1935/televomero/channel1_televomero
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Julie Italia
+rtmp://fml.17F5E.taucdn.net:1935/2017F5E playpath=live1021 swfUrl=http://julienews.viblix.com/vbx_player.swf pageUrl=http://julienews.viblix.com/?livedirectadv live=1
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Teleischia
+rtmp://live.streamcaster.net/test_live/teleischia
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Telenuova 2
+rtmp://54.228.254.95:1935/live/myStream
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Telenuova
+http://31.7.144.144:1935/telenuova/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="CAMPANIA" tvg-logo="",Tv7 Benevento
+rtmp://52.10.37.231:1949/itstream65/_definst_/itstream65
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Radio Italia Vision
+rtsp://live.cdn2.streamago.tv/streamago/65293/56564/?idcanale=56564
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleducato Piacenza
+rtmp://wms.shared.streamshow.it:80/teleducatopc/teleducatopc
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleducato Parma
+rtmp://wms.shared.streamshow.it:80/teleducatopr/teleducatopr
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Nuova rete
+rtsp://live.cdn2.streamago.tv/streamago/52675/44412/?idcanale=44412
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Tele Argento
+rtmp://wms.shared.streamshow.it:1935/teleargento/teleargento
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Nettuno TV
+http://msh0209.stream.seeweb.it:1935/live/stream02.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Rete 8 VGA Telerimini
+rtsp://live.cdn2.streamago.tv/streamago/52675/44413/?idcanale=44413
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Radio Bruno TV
+rtmp://37.48.83.34:80/radiobrunotv/radiobrunotv
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleromagna
+rtsp://live.cdn2.streamago.tv/streamago/65293/54608/?idcanale=54608
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleromagna News
+rtsp://live.cdn2.streamago.tv/streamago/65293/56561/?idcanale=56561
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleromagna Sport
+rtsp://live.cdn2.streamago.tv/streamago/65293/56562/?idcanale=56562
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleromagna Mia
+rtsp://live.cdn2.streamago.tv/streamago/65293/56563/?idcanale=56563
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teleromagna Lifestyle
+rtsp://live.cdn2.streamago.tv/streamago/65293/56564/?idcanale=56564
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",ETV Rete 7
+http://video2.kronopress.com:1935/etv_live/rete7/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",ETV Antenna 1
+http://video2.kronopress.com:1935/etv_live/antenna1/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Teletricolore
+http://video2.kronopress.com:1935/etv_live/teletricolore/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",TRC Modena
+rtmp://o1.senape.tv:1935/webtv_live/VC3TCRHI9LNP
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",TeleStudio Modena
+rtmp://wms.shared.streamshow.it:80/telestudiomo/telestudiomo
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Videoregione
+http://iphone-streaming.ustream.tv/ustreamVideo/13268884/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="EMILIA ROMAGNA" tvg-logo="",Icaro Tv
+http://cdn.live.mp.streamamg.com/livestream/3000380/smil:0_qjac1kqg.smil/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="" group-title="FRIULI VENEZIA GIULIA" tvg-logo="",Telefriuli
+http://wowzamobile.top-ix.org/telefriuli/streaming/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="FRIULI VENEZIA GIULIA" tvg-logo="",Company TV
+rtmp://wma10.fluidstream.net/CompanyTV/_definst_/mp4:livestream_720p
+#EXTINF:-1 tvg-id="" group-title="FRIULI VENEZIA GIULIA-VENETO" tvg-logo="",Antenna 3
+rtsp://live.cdn2.streamago.tv/streamago/34674/28723/?idcanale=28723
+#EXTINF:-1 tvg-id="" group-title="FRIULI VENEZIA GIULIA" tvg-logo="",Telepordenone
+rtmp://213.187.12.18/telepn/telepn
+#EXTINF:-1 tvg-id="" group-title="FRIULI VENEZIA GIULIA" tvg-logo="",Sportelevision
+http://37.59.17.33:1935/sportelevision_live/smil:channel.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="FRIULI VENEZIA GIULIA" tvg-logo="",Telequattro
+http://streaming.telequattro.it/T4Apple.isml/QualityLevels(664000)/manifest(format=m3u8-aapl)
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Liri TV
+rtmp://wz1.newradio.it:80/augusto538/augusto538
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Teleitalia 41
+rtmp://live.flv.xuniplay.fdnames.com:1935/live/centroserena
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Tuscia Sabina 2000
+rtmp://stream.ts2000tv.it:1935/oflaDemo/TusciaSabina2
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Rietinews
+rtmp://52.10.37.231:1994/itstream1133/_definst_/itstream1133
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Tele Radio Stereo
+http://xteleradiostereox.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Rete Oro
+rtmp://149.202.200.72/ReteOro/LiveIst/ReteOro
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Teleuniverso
+rtmp://52.10.37.231:1973/itstream3225/_definst_/itstream3225_live
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Canale 10
+rtmp://37.187.142.147:1935/ch10live/low.stream 
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Retesole
+rtmp://flash2.bsnewline.com:1935/retesolelazio/retesolelazio
+#EXTINF:-1 tvg-id="" group-title="LAZIO-TOSCANA" tvg-logo="",TRG
+http://46.37.22.126:8134/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8
+#EXTINF:-1 tvg-id="RomaUno.it" group-title="VARI" tvg-logo="",Roma Uno
+rtmp://94.23.65.44:1935/romauno/livestream
+#EXTINF:-1 tvg-id="" group-title="LAZIO" tvg-logo="",Napoli Canale 21
+http://live.kronopress.com:1935/canale21_live/stream8/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LIGURIA" tvg-logo="",Imperia TV
+http://ximperia-tvx.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LIGURIA" tvg-logo="",Primocanale
+rtmp://msh0203.stream.seeweb.it/live/stream1.sdp
+#EXTINF:-1 tvg-id="" group-title="LIGURIA" tvg-logo="",Teleliguria Sud
+rtmp://misty.infoporto.it:1935/play/tls
+#EXTINF:-1 tvg-id="" group-title="LIGURIA" tvg-logo="",Telenord
+http://streamer.oodlz.it/hls/livestream.m3u8
+#EXTINF:-1 tvg-id="" group-title="PIEMONTE-LOMBARDIA" tvg-logo="",Telesettelaghi
+rtmp://81.29.223.44:1935/live/t7l1
+#EXTINF:-1 tvg-id="" group-title="PIEMONTE" tvg-logo="",Vco Azzurra Tv
+rtmp://azzurranews.moveinweb.com:1935/azzurranews/live.sdp
+#EXTINF:-1 tvg-id="" group-title="PIEMONTE" tvg-logo="",QuartaRete
+rtmp://wowza1.top-ix.org:1935/quartaretetv/quartareteweb
+#EXTINF:-1 tvg-id="" group-title="PIEMONTE" tvg-logo="",Retebiella TV
+rtmpt://194.116.73.53/megawebtv/streaming
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Saronno TV
+http://msh0193.stream.seeweb.it/live/stream00.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TSN Livigno
+http://wms.shared.streamshow.it/tsn2/tsn2/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TSN Tele Sondrio News
+http://wms.shared.streamshow.it/tsn/tsn_mobile/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Rete 55
+http://live.youiptv.ch:1935/Rete55/R55.stream_source/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Rete 55 Sport
+rtmp://live.youiptv.ch:1935/Rete55Sport/R55S_source
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Video Brescia
+http://wms.shared.streamshow.it/videobrescia/videobrescia/hasbahca.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Primarete Lombardia
+http://telecolor.econcept.it/live/primarete.isml/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Telecolor Lombardia
+http://telecolor.econcept.it/live/telecolor.isml/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Cremona 1
+http://cremona1.econcept.it/live/cremona1_high.isml/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Radio Number One TV
+http://wma02.fluidstream.net/RN1TV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TelePavia
+http://wms.shared.streamshow.it:1935/telepavia/telepavia/hasbahca.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Telemonteve
+http://wms.shared.streamshow.it/telemonteneve/telemonteneve/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Telemonteve 3
+http://wms.shared.streamshow.it/telemonteneve3/telemonteneve3/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Teleunica Lecco
+http://flash3.ipercast.net/teleunica.tv-live/livestream1/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Teleunica Sondrio
+http://flash3.ipercast.net/teleunica.tv-live/livestream2/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TCI
+rtmp://tvcn3sz3vud.rtmphost.com:443/FMEWebViewer/livestream
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Super Tv
+rtmp://wms.shared.streamshow.it:443/supertv/supertv
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TeleBoario
+rtmp://flash7.streaming.xdevel.com:80/teleboario playpath=teleboario swfUrl=http://share.xdevel.com/api/lib/js/jwplayer5/player.swf pageUrl=http://share.xdevel.com/api/?platform=streamsolution&get=player&key=bdf8d1f1f4ae8b1534d6b59b86931927
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Studio 1
+rtmp://91.121.222.160:1935/studiouno/studiouno.sdp 
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",La 6
+http://live.youiptv.ch:1935/La6/LA6.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Espansione TV
+http://espansione.meway.tv:80/live/espansione/hasbahca.m3u8
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",Brescia Punto Tv
+http://
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TeleMantova
+rtmp://wma07.fluidstream.net:1935/TeleMantova/livestream
+#EXTINF:-1 tvg-id="" group-title="LOMBARDIA" tvg-logo="",TeleMilano Piu' Blu
+rtmp://ondemand.superstreaming.it:1935/piublu/piublu.sdp
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Teleblu
+rtmp://webtv.teleblu.tv:1935/live/teleblu
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Punto Tv
+rtsp://live.cdn2.streamago.tv/streamago/53828/45290/?idcanale=45290
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Tele Galatina
+rtmp://52.10.37.231:1972/itstream888/_definst_/itstream888 
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Canale 8 Puglia
+http://xcanaleottoleccex.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",TeleBari
+rtmp://fl1.mediastreaming.it:1935/telebari/livestream
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Telerama
+http://iphone-streaming.ustream.tv/ustreamVideo/20845752/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Antichita' Chiossone
+rtmp://tzvr73.live.cloud.influxis.com:1935/tzvr73/_definst_/acLive
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Studio 100
+rtmp://wms.shared.streamshow.it:1935/studio100ta/studio100ta
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Teleonda
+rtmp://wms.shared.streamshow.it:443/teleonda/teleonda
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",TgNorba 24
+rtmp://85.17.80.132:80/tgnorba_24/tgnorba_24_source.stream
+#EXTINF:-1 tvg-id="" group-title="PUGLIA" tvg-logo="",Canale 7
+rtmp://wms.shared.streamshow.it:80/canale7/canale7
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",Canale 48 Sardegna
+http://iphone-streaming.ustream.tv/ustreamVideo/11938489/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",Super TV Oristano
+rtmp://flash2.bsnewline.com:1935/supertvoristano2/supertvoristano2
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",Radio Iglesias TV
+http://wms.shared.streamshow.it/visualradio/visualradio_mobile/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",Telegi
+rtsp://live.cdn2.streamago.tv/streamago/31314/25470/?idcanale=25470
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",Sassari Tv
+rtsp://live.cdn2.streamago.tv/streamago/22615/18731/?idcanale=18731
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",VideoLina
+http://178.33.229.111/live/Videolina/master.m3u8
+#EXTINF:-1 tvg-id="" group-title="SARDEGNA" tvg-logo="",Sardegna 1
+rtmp://streamer.fss.tiscali.com:1935/sardegna1/live1.stream
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Bella TV
+rtmp://server.bellaradio.it:1935/livepkgr?adbe-live-event=diretta/bellatv
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Studio90 Italia
+rtmp://188.165.224.142:1935/studio90italia/studio90italia
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Sestarete
+rtmp://flash2.streaming.xdevel.com:80/sestarete/sestarete
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Tele90
+rtmp://live.streamcaster.net:1935/tele90_live/tele90
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Video 2
+rtmp://video2.kronopress.com:1935/ctp_live/stream5 
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Canale 33
+rtmp://video2.kronopress.com:1935/ctp_live/stream6 
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",FM Italia TV
+rtmp://flash5.streaming.xdevel.com:80/fmitalia/fmitalia
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Radio Tivù Azzurra
+rtmp://188.165.224.142:1935/radiotivuazzurralive/radiotivuazzurralive
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Radio Universal TV
+rtmp://flash2.streaming.xdevel.com:80/radiouniversaltv/radiouniversaltv
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",SiracusaLive TV
+http://iphone-streaming.ustream.tv/ustreamVideo/17255847/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Radio Taormina TV
+http://flash5.streaming.xdevel.com:80/taorminatv/taorminatv/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Telecolor
+rtmp://live.lasiciliaweb.it:1935/tg/tc
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Antenna1 News
+rtmp://flash2.streaming.xdevel.com:80/antennauno/antennauno
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Teleuno Tris
+http://iphone-streaming.ustream.tv/ustreamVideo/181151/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Tele Radio Sciacca
+rtmp://streamtv.level7.it:1935/teleradiosciacca-tv/teleradiosciacca-tv/teleradiosciacca-tv
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Video Mediterraneo
+rtmp://video2.kronopress.com:1935/videomediterraneo_live/vm
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Tcf TV
+rtmp://video2.kronopress.com:1935/test_live/telecineforum
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Video Star TV
+rtmp://live1.kronopress.com:1935/videostar_live/videostar
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Rtp TV
+rtmp://wms.shared.streamshow.it:80/rtp/rtp
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Tele8
+rtmp://vs2.streamcaster.net:1935/tele8_live/tele8
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Tirreno Sat
+http://xtirrenosatx.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Canale 46
+http://vs2.streamcaster.net:1935/test_live/canale46/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",C.T.S TV
+rtmp://vod1.kronopress.com:1935/cts_live/cts
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Tele Sicilia
+rtmp://vs2.streamcaster.net:1935/cts_live/telesicilia
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Canale 8 Avola
+rtmp://flash7.streaming.xdevel.com:80/canale8live/canale8live
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Teleacras
+rtmp://streamtv.level7.it/teleacras-tv/teleacras-tv 
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Onda tv
+rtmp://live.streamcaster.net:1935/ondatv_live/ondatv 
+#EXTINF:-1 tvg-id="" group-title="SICILIA" tvg-logo="",Antenna Sicilia
+rtmp://live.lasiciliaweb.it:1935/tg/as 
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",Tele Idea
+rtsp://live.cdn2.streamago.tv/streamago/59072/49106/?idcanale=49106
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",Tele Argento
+rtmp://wms.shared.streamshow.it:1935/teleargento/teleargento
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",TV9 Telemaremma
+rtsp://live.cdn2.streamago.tv/streamago/49216/42252/?idcanale=42252
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",Di Lucca
+http://xdiluccax.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",Tele Iride
+http://xteleiridetvx.api.channel.livestream.com/3.0/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",Siena TV
+rtmp://fl1.mediastreaming.it:1935/sienatv/livestream 
+#EXTINF:-1 tvg-id="" group-title="TOSCANA" tvg-logo="",Televaldarno RTV38
+http://splive-lh.akamaihd.net/i/livertv38_1@396529/master.m3u8
+#EXTINF:-1 tvg-id="" group-title="UMBRIA-MARCHE" tvg-logo="",Vera TV
+http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="UMBRIA" tvg-logo="",Umbria TV
+rtmp://eventi.ictvalleumbra.it:1935/live/umbriatv.sdp
+#EXTINF:-1 tvg-id="" group-title="UMBRIA" tvg-logo="",Retesole
+rtmp://flash2.bsnewline.com:1935/retesolelazio/retesolelazio
+#EXTINF:-1 tvg-id="" group-title="MOLISE" tvg-logo="",TLT Molise
+http://iphone-streaming.ustream.tv/ustreamVideo/17820540/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="MOLISE" tvg-logo="",Molise TV
+http://iphone-streaming.ustream.tv/ustreamVideo/11333015/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="MOLISE" tvg-logo="",TeleRegione Molise
+http://iphone-streaming.ustream.tv/ustreamVideo/18556093/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="MOLISE" tvg-logo="",Telemolise
+http://iphone-streaming.ustream.tv/ustreamVideo/9426995/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",TelePadova
+rtmp://stream.telepadova.com/TELEPDplaylist/playlist
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Telecittà Musicissima
+rtmp://stream.telepadova.com/live4/live4
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Rtc Quarta Rete
+rtmp://msh0232.stream.seeweb.it:1935/live/stream011.sdp
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Company Tv
+rtmp://wma10.fluidstream.net/CompanyTV/_definst_/mp4:livestream_720p
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Televenezia
+rtmp://flash2.streaming.xdevel.com:80/televenezia/televenezia
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",TeleVeneto
+rtmp://94.198.100.100:1935/televeneto/channel1_televeneto
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",TeleChiara
+rtmp://fms.tvavicenza.it:1935/telechiara/diretta
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",VicenzaPiu TV
+rtmp://fms.vicenzapiu.tv:1935/vicenzapiutv/live
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Cafe TV 24
+rtmp://cafe.meway.tv:1942/cafe_live/cafe
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Tva Vicenza
+rtmp://fms.tvavicenza.it:1935/live/diretta_1
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Rete Veneta
+http://streaming.reteveneta.it/RVApple.isml/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",TV7 Triveneta
+http://iphone-streaming.ustream.tv/uhls/19072488/streams/live/iphone/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="VENETO" tvg-logo="",Telecittà
+rtmp://stream.telepadova.com/live/tv1
+#EXTINF:-1 tvg-id="" group-title="Trentino Alto Adige" tvg-logo="",RTTR
+rtmp://wma07.fluidstream.net:1935/RTTRlive/livestream
+#EXTINF:-1 tvg-id="" group-title="Trentino Alto Adige" tvg-logo="",Info Trentino
+http://77.72.196.214:8554/live/TrentinoSAT/hasbahca.m3u8
+#EXTINF:-1 tvg-id="" group-title="Trentino Alto Adige" tvg-logo="",A3 News
+rtsp://live.cdn2.streamago.tv/streamago/34674/28723/?idcanale=28723
+#EXTINF:-1 tvg-id="" group-title="Trentino Alto Adige" tvg-logo="",Video 33
+http://livestream.goinfo.it/V33Live/v33ros/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="MARCHE" tvg-logo="",TVRS
+http://wms.shared.streamshow.it/tvrs/tvrs/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="MARCHE" tvg-logo="",ETV Marche
+http://vs2.streamcaster.net:1935/etvmarche_live/etvmarche/hasbahca.m3u8
+#EXTINF:-1 tvg-id="" group-title="MARCHE" tvg-logo="",Fano Tv
+http://live.kronopress.com:1935/live/fanotv/playlist.m3u8
+#EXT-X-ENDLIST

@@ -1,0 +1,109 @@
+#EXTM3U tvg-shift=0 
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC - Radio 1[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC - Radio 2[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC - Radio 3[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC - Radio 4[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC 4 Extra[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4extra_mf_q
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC 5 Live[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC 5 live sports extra[/COLOR]
+http://open.live.bbc.co.uk/mediaselector/5/redir/version/2.0/mediaset/http-icy-mp3-a-stream/proto/http/vpid/bbc_radio_five_live_sports_extra
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC 6 Music[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Asian Network[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Coventry & Warwickshire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwmcandw_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Essex[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lressex_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Hereford & Worcester[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrhandw_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Newcastle[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnewc_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Berkshire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrberk_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Bristol[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrbris_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Cambridgeshire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcambs_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Cornwall[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcorn_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Cumbria[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrcumbria_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Cymru[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_cymru_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Derby[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrderby_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Devon[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrdevon_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Foyle[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_foyle_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Gloucestershire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrgloucs_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Guernsey[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrguern_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Humberside[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrhumber_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Jersey[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrjersey_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Kent[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrkent_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Lancashire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrlancs_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC London 94.9[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrldn_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Manchester[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrmanc_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Merseyside[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrmersey_mf_q
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio nan Gaidheal[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_nangaidheal_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Norfolk[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnorfolk_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Northampton[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnthhnts_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Nottingham[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrnotts_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Oxford[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lroxford_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Scotland (FM)[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_scotlandfm_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Scotland (MW)[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_scotlandmw_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Sheffield[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsheff_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Shropshire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrshrops_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Solent[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsolent_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Stoke[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrstoke_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Suffolk[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsuffolk_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Ulster[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_ulster_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio Wales[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_walesmw_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Radio York[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lryork_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Somerset[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsomer_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Surrey[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsurrey_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Sussex[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrsussex_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Tees[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrtees_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Three Counties Radio[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lr3cr_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC Wiltshire[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwilts_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC WM[/COLOR]
+http://bbcmedia.ic.llnwd.net/stream/bbcmedia_lrwm_mf_p
+#EXTINF:-1 tvg-logo="gr.png",[COLOR pink]BBC World Service Online[/COLOR]
+http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk

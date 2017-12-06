@@ -1,0 +1,128 @@
+#EXTINF:-1 tvg-id="ARD.de" group-title="Deutsch" tvg-logo="0002.png",[COLOR FFFF00FF]ARD HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=ard_hd
+#EXTINF:-1 tvg-id="ARD.de" group-title="Deutsch" tvg-logo="0031.png",[COLOR FFFF00FF]ARD Alpha[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=ard_alpha
+#EXTINF:-1 tvg-id="ZDF.de" group-title="Deutsch" tvg-logo="0004.png",[COLOR FFFF00FF]ZDF HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=zdf_hd
+#EXTINF:-1 tvg-id="ZDFneo.de" group-title="Deutsch" tvg-logo="0054.png",[COLOR FFFF00FF]ZDFneo HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=zdf_neo_hd
+#EXTINF:-1 tvg-id="ZDFkultur.de" group-title="Deutsch" tvg-logo="0056.png",[COLOR FFFF00FF]ZDFkultur HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=zdf_kultur_hd
+#EXTINF:-1 tvg-id="ZDFinfo.de" group-title="Deutsch" tvg-logo="0058.png",[COLOR FFFF00FF]ZDFinfo HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=zdf_info_hd
+#EXTINF:-1 tvg-id="3sat.de" group-title="Deutsch" tvg-logo="0014.png",[COLOR FFFF00FF]3sat HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=3_sat_hd
+#EXTINF:-1 tvg-id="3plus.ch" group-title="Deutsch" tvg-logo="0080.png",[COLOR FFDC54D3]3+[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=3_plus_hd
+#EXTINF:-1 tvg-id="ARTE.de" group-title="Deutsch" tvg-logo="0012.png",[COLOR FFFF00FF]Arte HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=arte_de_hd
+#EXTINF:-1 tvg-id="disneychannel.de" group-title="Deutsch" tvg-logo="0036.png",[COLOR FFDC54D3]Disney Channel[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=disney_channel_de
+#EXTINF:-1 tvg-id="Kika.de" group-title="Deutsch" tvg-logo="0047.png",[COLOR FFFF00FF]KiKa HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=kika_hd
+#EXTINF:-1 tvg-id="SRF1.ch" group-title="Deutsch" tvg-logo="0076.png",[COLOR FFFF00FF]SRF 1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sf_1_hd
+#EXTINF:-1 tvg-id="SRF2.ch" group-title="Deutsch" tvg-logo="0078.png",[COLOR FFFF00FF]SRF zwei HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sf_2_hd
+#EXTINF:-1 tvg-id="SRFinfo.ch" group-title="Deutsch" tvg-logo="0079.png",[COLOR FFFF00FF]SRF info HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sf_info_hd
+#EXTINF:-1 tvg-id="ORF1.at" group-title="Deutsch" tvg-logo="0071.png",[COLOR FFFF00FF]ORF1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=orf_1_hd
+#EXTINF:-1 tvg-id="ORF2.at" group-title="Deutsch" tvg-logo="0073.png",[COLOR FFFF00FF]ORF2 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=orf_2_hd
+#EXTINF:-1 tvg-id="RTL.ch" group-title="Deutsch" tvg-logo="0005.png",[COLOR FFFF00FF]RTL CH HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rtl_ch_hd
+#EXTINF:-1 tvg-id="RTL2.de" group-title="Deutsch" tvg-logo="0009.png",[COLOR FFFF00FF]RTL 2 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rtl_2_hd
+#EXTINF:-1 tvg-id="RTLNitro.de" group-title="Deutsch" tvg-logo="0040.png",[COLOR FFFF00FF]RTL Nitro HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=rtl_nitro_hd
+#EXTINF:-1 tvg-id="SRTL.de" group-title="Deutsch" tvg-logo="0045.png",[COLOR FFFF00FF]Super RTL HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=super_rtl_hd
+#EXTINF:-1 tvg-id="phoenix.de" group-title="Deutsch" tvg-logo="0030.png",[COLOR FFFF00FF]PHOENIX HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=phoenix_hd
+#EXTINF:-1 tvg-id="Vox.ch" group-title="Deutsch" tvg-logo="0010.png",[COLOR FFFF00FF]VOX HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=vox_hd
+#EXTINF:-1 tvg-id="Kabel.de" group-title="Deutsch" tvg-logo="0008.png",[COLOR FFFF00FF]Kabel 1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=kabel_1_hd
+#EXTINF:-1 tvg-id="DMax.de" group-title="Deutsch" tvg-logo="0052.png",[COLOR FFDC54D3]DMAX[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=dmax
+#EXTINF:-1 tvg-id="Sixx.de" group-title="Deutsch" tvg-logo="0037.png",[COLOR FFFF00FF]Sixx HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sixx_hd
+#EXTINF:-1 tvg-id="Eurosport.de" group-title="Deutsch" tvg-logo="0049.png",[COLOR FFDC54D3]EuroSport[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=eurosport
+#EXTINF:-1 tvg-id="WDR.de" group-title="Deutsch" tvg-logo="0018.png",[COLOR FFFF00FF]WDR HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=wdr_hd
+#EXTINF:-1 tvg-id="Sat1.de" group-title="Deutsch" tvg-logo="0006.png",[COLOR FFFF00FF]Sat.1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sat_1_hd
+#EXTINF:-1 tvg-id="ntv.de" group-title="Deutsch" tvg-logo="0034.png",[COLOR FFFF00FF]n-tv HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=n_tv_hd
+#EXTINF:-1 tvg-id="Telezueri.ch" group-title="Deutsch" tvg-logo="0083.png",[COLOR FFFF00FF]Tele Züri HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_zuri_hd
+#EXTINF:-1 tvg-id="Tele5.de" group-title="Deutsch" tvg-logo="0041.png",[COLOR FFDC54D3]Tele 5[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_5
+#EXTINF:-1 tvg-id="Tv24.ch" group-title="Deutsch" tvg-logo="0082.png",[COLOR FFFF00FF]TV24 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tv24_hd
+#EXTINF:-1 tvg-id="AnixeHD.de" group-title="Deutsch" tvg-logo="0066.png",[COLOR FFFF00FF]Anixe HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=anixe_hd
+#EXTINF:-1 tvg-id="Pro7.de" group-title="Deutsch" tvg-logo="0007.png",[COLOR FFFF00FF]Pro7 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=pro7_ch_hd
+#EXTINF:-1 tvg-logo="0051.png",[COLOR FFFF00FF]Pro7Maxx HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=pro7_maxx_hd
+#EXTINF:-1 tvg-logo="oacht_plus.png",[COLOR FFFF00FF]Puls 8 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=puls_8
+#EXTINF:-1 tvg-logo="0050.png",[COLOR FFDC54D3]Sport1[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sport_1
+#EXTINF:-1 tvg-logo="0035.png",[COLOR FFDC54D3]EuroNews Deutsch[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=euronews_de
+#EXTINF:-1 tvg-logo="0081.png",[COLOR FFFF00FF]S1 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=s1tv_hd
+#EXTINF:-1 tvg-logo="0091.png",[COLOR FFDC54D3]Tele Top[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_top_zh
+#EXTINF:-1 tvg-logo="tv.png",[COLOR FFDC54D3]Tele Bärn[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=telebaern
+EXTINF:-1 tvg-logo="0086.png",[COLOR FFDC54D3]Tele Basel[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=telebasel
+#EXTINF:-1 tvg-logo="0123.png",[COLOR FFFF00FF]Servus TV HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=servus_tv_hd
+#EXTINF:-1 tvg-logo="0032.png",[COLOR FFFF00FF]N24 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=n24_hd
+#EXTINF:-1 tvg-logo="0024.png",[COLOR FFFF00FF]SWR HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=swr_hd
+#EXTINF:-1 tvg-logo="0022.png",[COLOR FFFF00FF]BR HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=br_hd
+#EXTINF:-1 tvg-logo="0087.png",[COLOR FFDC54D3]Tele Bielingue[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_biel
+#EXTINF:-1 tvg-logo="0107.png",[COLOR FFFF00FF]NDR HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=ndr_hd
+#EXTINF:-1 tvg-logo="TLC.png", [COLOR FFFF00FF]TLC Germany[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tlc_de
+#EXTINF:-1 tvg-logo="star_tv.png",[COLOR FFDC54D3]Star TV[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=star_tv
+#EXTINF:-1 tvg-logo="sat1gold.png",[COLOR FFDC54D3]Sat.1 Gold[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=sat_1_gold
+#EXTINF:-1 tvg-logo="0242.png",[COLOR FFDC54D3]Kanal 9[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=kanal_9
+#EXTINF:-1 tvg-logo="0136.png",[COLOR FFFF00FF]4+ HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=4_plus_hd
+#EXTINF:-1 tvg-logo="0137.png",[COLOR FFFF00FF]5+ HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=5_plus_hd
+#EXTINF:-1 tvg-logo="tv25.png",[COLOR FFFF00FF]TV25 HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tv_25_hd
+#EXTINF:-1 tvg-logo="0090.png",[COLOR FFDC54D3]Tele 1[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_1_hd
+#EXTINF:-1 tvg-logo="0094.png",[COLOR FFDC54D3]Tele M1[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_m1_hd
+#EXTINF:-1 tvg-logo="0020.png",[COLOR FFDC54D3]MDR[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=mdr
+#EXTINF:-1 tvg-logo="0146.png",[COLOR FFFF00FF]CH TV HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=chtv_hd
+#EXTINF:-1 tvg-logo="0043.png",[COLOR FFFF00FF]Nickelodeon HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=nick_cc_hd
+#EXTINF:-1 tvg-logo="0089.png",[COLOR FFFF00FF]Tele Ostschweiz HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tele_ostschweiz_hd
+#EXTINF:-1 tvg-logo="0088.png",[COLOR FFFF00FF]Tele Südostschweiz HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=tso_hd
+#EXTINF:-1 tvg-logo="0044.png",[COLOR FFFF00FF]Viva HD[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=viva_hd
+#EXTINF:-1 tvg-logo="0048.png",[COLOR FFDC54D3]Ric[/COLOR]
+https://streams.wilmaa.com/m3u8/get?channelId=ric
