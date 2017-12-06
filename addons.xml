@@ -2354,6 +2354,39 @@ Skin and code for skin by Demonstratorz</description>
 	</extension>
 </addon>
 
+<addon id="plugin.video.ZemTV-shani"
+       name="Zem"
+       version="6.7.0"
+       provider-name="shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+       	<import addon="script.module.elementtree" version="1.2.8"/>
+
+
+    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Zem Addon for sports and desi contents. Visit TVADDONS.ag for support</summary>
+    <description>Watch Sports and Desi contents on your XBMC. This plugin fetches the video sources from various platforms and locations</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with any of the content provider.</disclaimer>
+    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
+    <email>@shani_08_kodi</email>
+    <platform>all</platform>
+
+
+  </extension>
+</addon>
+
 <addon id="program.apollo" version="3.2.5" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR]" provider-name="Exodus, Apollo Group, Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -3046,6 +3079,18 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <description lang="en">GUI sounds from the Android TV Launcer.</description>
     <platform>all</platform>
     <license>Apache License, Version 2.0</license>
+  </extension>
+</addon>
+
+<addon id="resource.uisounds.kodi" version="100.0.01" name="Titan UI Sounds (Modern)" provider-name="marcelveldt,mgonzales">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Titan UI Sounds (Modern)</summary>
+    <description lang="en">Titan UI Sounds (Modern)</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
