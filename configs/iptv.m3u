@@ -1,558 +1,895 @@
 ﻿
 
-#EXTM3U
-#EXTINF:-1,Sport Klub 1 HD
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/87.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport Klub 2 HD
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/88.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport Klub 3 HD
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/89.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport TV1 Portugal
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/7.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport TV2 Portugal
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/8.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport TV3 Portugal
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/9.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport TV1 Portugal Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/723.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport TV2 Portugal Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/724.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sport TV3 Portugal Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/725.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Arena Sports 1 HD  Croatian
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/18.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Arena Sports 2 HD Croatian
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/19.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Arena Sports 3 HD Croatian
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/20.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Arena Sports 4 HD Croatian
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/21.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,NAM: SportsNetWorld
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/467.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Box Nation Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/780.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,NBCSN
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/17.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Premier Sports
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/56.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/115.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/150.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 1 Hindi
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/240.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 1 Tamil
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/149.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 1 Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/435.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 2 Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/436.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 1 Tamil Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/438.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Star Sports 1 Hindi Backup
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/437.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,WWE Network
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/146.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,MUTV
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/145.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Chelsea TV
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/148.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sport 1 HD Italy
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/92.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sport 2 HD Italy
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/93.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sport 3 HD Italy
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/10.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sport 24 HD Italy
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/11.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Setanta Sports
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/57.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sport 1 HD Deutch Germany
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/58.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sport 2 HD Deutch Germany
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/59.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Bundesliga HD1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/60.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,NFL Network
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/82.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Fox Sports 1 HD NL
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/5.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Fox Sports 2 HD NL
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/4.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Fox Sports 3 HD NL
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/3.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Fox Sports 4 HD NL
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Fox Sports 5 HD NL
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/1.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,British Eurosport 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/50.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,British Eurosport 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/51.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,ESPN USA
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/48.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,ESPN 2 USA
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/49.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Box Nation
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/44.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Sport TV1 Portugal
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/324.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Sport TV2 Portugal
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/325.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Sport TV3 Portugal
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/326.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Star Sports 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/133.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Star Sports 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/134.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Star Sports 1 Hindi
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/241.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Star Sports 1 Tamil
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/338.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2g-Ten 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/138.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2g-Ten 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/137.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2g-WWE Network
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/286.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Arena Sports 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/320.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Arena Sports 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/321.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Arena Sports 3
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/322.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Arena Sports 4
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/323.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Premier Sports
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/763.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Box Nation
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/816.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Movies 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/387.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Movies 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/388.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Movies 3
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/389.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Movies 4
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/390.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Sky Sports F1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/310.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Sky Sports News
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/309.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Sky Sports F1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/822.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Sky Sports News
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/823.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
+#EXTINF:-1,BBC 1 FHD
+http://1.365247.tk:80/live/gg/gg/17393.ts
+#EXTINF:-1,BBC 1 NORTHERN IRELAND FHD
+http://1.365247.tk:80/live/gg/gg/17396.ts
+#EXTINF:-1,BBC 2 FHD
+http://1.365247.tk:80/live/gg/gg/17395.ts
+#EXTINF:-1,CHANNEL 4 FHD
+http://1.365247.tk:80/live/gg/gg/17392.ts
+#EXTINF:-1,CHANNEL 5 FHD
+http://1.365247.tk:80/live/gg/gg/17391.ts
+#EXTINF:-1,ITV 1 FHD
+http://1.365247.tk:80/live/gg/gg/17388.ts
+#EXTINF:-1,ITV 2 FHD
+http://1.365247.tk:80/live/gg/gg/17387.ts
+#EXTINF:-1,ITV 3 FHD
+http://1.365247.tk:80/live/gg/gg/17386.ts
+#EXTINF:-1,ITV 4 FHD
+http://1.365247.tk:80/live/gg/gg/17385.ts
+#EXTINF:-1,SP:MIO Stadium 107 HD
+http://1.365247.tk:80/live/gg/gg/10107.ts
+#EXTINF:-1,Sky Action
+http://1.365247.tk:80/live/gg/gg/8817.ts
+#EXTINF:-1,Sky Comedy
+http://1.365247.tk:80/live/gg/gg/8841.ts
+#EXTINF:-1,Sky Crime Thriller
+http://1.365247.tk:80/live/gg/gg/8838.ts
+#EXTINF:-1,Sky Disney hd
+http://1.365247.tk:80/live/gg/gg/13951.ts
+#EXTINF:-1,Sky Premiere
+http://1.365247.tk:80/live/gg/gg/13920.ts
+#EXTINF:-1,Sky Family HD
+http://1.365247.tk:80/live/gg/gg/8642.ts
+#EXTINF:-1,Alibi
+http://1.365247.tk:80/live/gg/gg/13984.ts
+#EXTINF:-1,BBC 1 SD
+http://1.365247.tk:80/live/gg/gg/8646.ts
+#EXTINF:-1,BBC 4 HD
+http://1.365247.tk:80/live/gg/gg/13936.ts
+#EXTINF:-1,BBC News HD
+http://1.365247.tk:80/live/gg/gg/15365.ts
+#EXTINF:-1,BBC One HD
+http://1.365247.tk:80/live/gg/gg/13908.ts
+#EXTINF:-1,BBC One Lon
+http://1.365247.tk:80/live/gg/gg/8831.ts
+#EXTINF:-1,BBC Two Eng
+http://1.365247.tk:80/live/gg/gg/8855.ts
+#EXTINF:-1,BBC Two HD
+http://1.365247.tk:80/live/gg/gg/13909.ts
+#EXTINF:-1,Boomerang
+http://1.365247.tk:80/live/gg/gg/13932.ts
+#EXTINF:-1,Box Nation SD
+http://1.365247.tk:80/live/gg/gg/8759.ts
+#EXTINF:-1,CBBC
+http://1.365247.tk:80/live/gg/gg/13880.ts
+#EXTINF:-1,CBBC HD
+http://1.365247.tk:80/live/gg/gg/13876.ts
+#EXTINF:-1,CBS Action
+http://1.365247.tk:80/live/gg/gg/13982.ts
+#EXTINF:-1,CBS Drama
+http://1.365247.tk:80/live/gg/gg/8843.ts
+#EXTINF:-1,CITV
+http://1.365247.tk:80/live/gg/gg/13970.ts
+#EXTINF:-1,CW USA
+http://1.365247.tk:80/live/gg/gg/8692.ts
+#EXTINF:-1,Cartoonito
+http://1.365247.tk:80/live/gg/gg/13945.ts
+#EXTINF:-1,Challenge
+http://1.365247.tk:80/live/gg/gg/13944.ts
+#EXTINF:-1,Channel 4
+http://1.365247.tk:80/live/gg/gg/8828.ts
+#EXTINF:-1,Channel 5
+http://1.365247.tk:80/live/gg/gg/13878.ts
+#EXTINF:-1,Channel 5 HD
+http://1.365247.tk:80/live/gg/gg/13889.ts
+#EXTINF:-1,Comedy Central
+http://1.365247.tk:80/live/gg/gg/8826.ts
+#EXTINF:-1,Comedy Xtra
+http://1.365247.tk:80/live/gg/gg/13967.ts
+#EXTINF:-1,Crime & Investigation
+http://1.365247.tk:80/live/gg/gg/8659.ts
+#EXTINF:-1,DMAX
+http://1.365247.tk:80/live/gg/gg/13939.ts
+#EXTINF:-1,Dave
+http://1.365247.tk:80/live/gg/gg/13952.ts
+#EXTINF:-1,Disc History
+http://1.365247.tk:80/live/gg/gg/13993.ts
+#EXTINF:-1,Discovery
+http://1.365247.tk:80/live/gg/gg/8862.ts
+#EXTINF:-1,Disney Junior
+http://1.365247.tk:80/live/gg/gg/13929.ts
+#EXTINF:-1,Drama
+http://1.365247.tk:80/live/gg/gg/8844.ts
+#EXTINF:-1,E!
+http://1.365247.tk:80/live/gg/gg/13904.ts
+#EXTINF:-1,E4
+http://1.365247.tk:80/live/gg/gg/13953.ts
+#EXTINF:-1,Eden
+http://1.365247.tk:80/live/gg/gg/8649.ts
+#EXTINF:-1,Film4
+http://1.365247.tk:80/live/gg/gg/13922.ts
+#EXTINF:-1,Food Network
+http://1.365247.tk:80/live/gg/gg/13935.ts
+#EXTINF:-1,Food Network US
+http://1.365247.tk:80/live/gg/gg/8695.ts
+#EXTINF:-1,GOLD
+http://1.365247.tk:80/live/gg/gg/13949.ts
+#EXTINF:-1,H2 HD
+http://1.365247.tk:80/live/gg/gg/8733.ts
+#EXTINF:-1,History
+http://1.365247.tk:80/live/gg/gg/8822.ts
+#EXTINF:-1,Home
+http://1.365247.tk:80/live/gg/gg/8577.ts
+#EXTINF:-1,Home Health
+http://1.365247.tk:80/live/gg/gg/13924.ts
+#EXTINF:-1,Horror Channel
+http://1.365247.tk:80/live/gg/gg/8861.ts
+#EXTINF:-1,I.D. US
+http://1.365247.tk:80/live/gg/gg/8676.ts
+#EXTINF:-1,ID
+http://1.365247.tk:80/live/gg/gg/8869.ts
+#EXTINF:-1,IR:TG4
+http://1.365247.tk:80/live/gg/gg/8857.ts
+#EXTINF:-1,IR:TV3
+http://1.365247.tk:80/live/gg/gg/13882.ts
+#EXTINF:-1,ITV
+http://1.365247.tk:80/live/gg/gg/13885.ts
+#EXTINF:-1,ITV 2 HD
+http://1.365247.tk:80/live/gg/gg/13977.ts
+#EXTINF:-1,ITV Encore
+http://1.365247.tk:80/live/gg/gg/13961.ts
+#EXTINF:-1,ITV2
+http://1.365247.tk:80/live/gg/gg/8837.ts
+#EXTINF:-1,ITV3
+http://1.365247.tk:80/live/gg/gg/8867.ts
+#EXTINF:-1,ITV4
+http://1.365247.tk:80/live/gg/gg/8829.ts
+#EXTINF:-1,Itv HD
+http://1.365247.tk:80/live/gg/gg/13911.ts
+#EXTINF:-1,LFC TV
+http://1.365247.tk:80/live/gg/gg/13946.ts
+#EXTINF:-1,Lifetime
+http://1.365247.tk:80/live/gg/gg/8834.ts
+#EXTINF:-1,London Live
+http://1.365247.tk:80/live/gg/gg/8811.ts
+#EXTINF:-1,MTV HITS
+http://1.365247.tk:80/live/gg/gg/8847.ts
+#EXTINF:-1,MUTV sd
+http://1.365247.tk:80/live/gg/gg/8830.ts
+#EXTINF:-1,MUTV HD
+http://1.365247.tk:80/live/gg/gg/13900.ts
+#EXTINF:-1,NBC USA
+http://1.365247.tk:80/live/gg/gg/8697.ts
+#EXTINF:-1,Nat Geo
+http://1.365247.tk:80/live/gg/gg/13937.ts
+#EXTINF:-1,Nick Jnr Too
+http://1.365247.tk:80/live/gg/gg/8655.ts
+#EXTINF:-1,Nick Jr
+http://1.365247.tk:80/live/gg/gg/8853.ts
+#EXTINF:-1,Nickelodeon
+http://1.365247.tk:80/live/gg/gg/13914.ts
+#EXTINF:-1,PBS America
+http://1.365247.tk:80/live/gg/gg/8832.ts
+#EXTINF:-1,QUEST
+http://1.365247.tk:80/live/gg/gg/13928.ts
+#EXTINF:-1,RT News Now
+http://1.365247.tk:80/live/gg/gg/8864.ts
+#EXTINF:-1,Sky 1
+http://1.365247.tk:80/live/gg/gg/13892.ts
+#EXTINF:-1,Sky 2
+http://1.365247.tk:80/live/gg/gg/13975.ts
+#EXTINF:-1,Sky Arts
+http://1.365247.tk:80/live/gg/gg/13919.ts
+#EXTINF:-1,Sky Living
+http://1.365247.tk:80/live/gg/gg/8842.ts
+#EXTINF:-1,Spike
+http://1.365247.tk:80/live/gg/gg/13910.ts
+#EXTINF:-1,Starz TV
+http://1.365247.tk:80/live/gg/gg/8856.ts
+#EXTINF:-1,SyFy HD
+http://1.365247.tk:80/live/gg/gg/8731.ts
+#EXTINF:-1,Syfy
+http://1.365247.tk:80/live/gg/gg/8816.ts
+#EXTINF:-1,TBS USA
+http://1.365247.tk:80/live/gg/gg/8698.ts
+#EXTINF:-1,TLC
+http://1.365247.tk:80/live/gg/gg/8871.ts
+#EXTINF:-1,The Vault
+http://1.365247.tk:80/live/gg/gg/13926.ts
+#EXTINF:-1,Tiny Pop
+http://1.365247.tk:80/live/gg/gg/8807.ts
+#EXTINF:-1,Travel Channel
+http://1.365247.tk:80/live/gg/gg/8812.ts
+#EXTINF:-1,True Crime
+http://1.365247.tk:80/live/gg/gg/8863.ts
+#EXTINF:-1,Universal Channel
+http://1.365247.tk:80/live/gg/gg/8760.ts
+#EXTINF:-1,VH 1
+http://1.365247.tk:80/live/gg/gg/13891.ts
+#EXTINF:-1,Yesterday
+http://1.365247.tk:80/live/gg/gg/8664.ts
+#EXTINF:-1,movies4men
+http://1.365247.tk:80/live/gg/gg/13988.ts
+#EXTINF:-1,3E
+http://1.365247.tk:80/live/gg/gg/13989.ts
+#EXTINF:-1,5Star
+http://1.365247.tk:80/live/gg/gg/8860.ts
+#EXTINF:-1,Animal Planet
+http://1.365247.tk:80/live/gg/gg/13958.ts
+#EXTINF:-1,BBC3
+http://1.365247.tk:80/live/gg/gg/13594.ts
+#EXTINF:-1,RED FC TV
+http://1.365247.tk:80/live/gg/gg/10120.ts
+#EXTINF:-1,Sky Sports F1 HD
+http://1.365247.tk:80/live/gg/gg/10117.ts
+#EXTINF:-1,Sky Sports Mix HD
+http://1.365247.tk:80/live/gg/gg/10116.ts
+#EXTINF:-1,TCM HD
+http://1.365247.tk:80/live/gg/gg/10101.ts
+#EXTINF:-1,5usa
+http://1.365247.tk:80/live/gg/gg/16070.ts
+#EXTINF:-1,Challenge
+http://1.365247.tk:80/live/gg/gg/16042.ts
+#EXTINF:-1,Crime Investigation
+http://1.365247.tk:80/live/gg/gg/16026.ts
+#EXTINF:-1,Discovery History
+http://1.365247.tk:80/live/gg/gg/16022.ts
+#EXTINF:-1,Discovery Science
+http://1.365247.tk:80/live/gg/gg/16021.ts
+#EXTINF:-1,Discovery Shed
+http://1.365247.tk:80/live/gg/gg/16020.ts
+#EXTINF:-1,Discovery Turbo
+http://1.365247.tk:80/live/gg/gg/16019.ts
+#EXTINF:-1,Drama
+http://1.365247.tk:80/live/gg/gg/16014.ts
+#EXTINF:-1,E!
+http://1.365247.tk:80/live/gg/gg/16013.ts
+#EXTINF:-1,FOX News
+http://1.365247.tk:80/live/gg/gg/16004.ts
+#EXTINF:-1,MTV
+http://1.365247.tk:80/live/gg/gg/15980.ts
+#EXTINF:-1,MTV BASE
+http://1.365247.tk:80/live/gg/gg/15979.ts
+#EXTINF:-1,MTV ROCKS
+http://1.365247.tk:80/live/gg/gg/15975.ts
+#EXTINF:-1,Nat Geo
+http://1.365247.tk:80/live/gg/gg/15972.ts
+#EXTINF:-1,Nicktoons
+http://1.365247.tk:80/live/gg/gg/15968.ts
+#EXTINF:-1,PBS America
+http://1.365247.tk:80/live/gg/gg/15965.ts
+#EXTINF:-1,Pick
+http://1.365247.tk:80/live/gg/gg/15964.ts
+#EXTINF:-1,POP
+http://1.365247.tk:80/live/gg/gg/15963.ts
+#EXTINF:-1,QUEST
+http://1.365247.tk:80/live/gg/gg/15960.ts
+#EXTINF:-1,Sky Atlantic
+http://1.365247.tk:80/live/gg/gg/15945.ts
+#EXTINF:-1,Sky Sports Action
+http://1.365247.tk:80/live/gg/gg/15932.ts
+#EXTINF:-1,Sky Sports Golf
+http://1.365247.tk:80/live/gg/gg/15931.ts
+#EXTINF:-1,Watch
+http://1.365247.tk:80/live/gg/gg/15903.ts
+#EXTINF:-1,Sky Atlantic HD
+http://1.365247.tk:80/live/gg/gg/8703.ts
+#EXTINF:-1,Star Life
+http://1.365247.tk:80/live/gg/gg/8565.ts
+#EXTINF:-1,SKY 1 HD UK
+http://1.365247.tk:80/live/gg/gg/22872.ts
+#EXTINF:-1,SKY 2 HD UK
+http://1.365247.tk:80/live/gg/gg/22873.ts
+#EXTINF:-1,NatGeo Wild HD
+http://1.365247.tk:80/live/gg/gg/22874.ts
+#EXTINF:-1,UK: Aaj Tak
+http://1.365247.tk:80/live/gg/gg/22900.ts
+#EXTINF:-1,UK: ABP News
+http://1.365247.tk:80/live/gg/gg/22899.ts
+#EXTINF:-1,UK: And TV
+http://1.365247.tk:80/live/gg/gg/22898.ts
+#EXTINF:-1,Animal Planet HD
+http://1.365247.tk:80/live/gg/gg/22876.ts
+#EXTINF:-1,UK: B4U Movies
+http://1.365247.tk:80/live/gg/gg/22895.ts
+#EXTINF:-1,UK: Colors
+http://1.365247.tk:80/live/gg/gg/22891.ts
+#EXTINF:-1,UK: Life OK
+http://1.365247.tk:80/live/gg/gg/22889.ts
+#EXTINF:-1,National Geographic HD
+http://1.365247.tk:80/live/gg/gg/22875.ts
+#EXTINF:-1,UK: Rishtey
+http://1.365247.tk:80/live/gg/gg/22888.ts
+#EXTINF:-1,UK: Sab TV (SET)
+http://1.365247.tk:80/live/gg/gg/22887.ts
+#EXTINF:-1,UK: SET Max
+http://1.365247.tk:80/live/gg/gg/22886.ts
+#EXTINF:-1,UK: Sony Entertainment (SET)
+http://1.365247.tk:80/live/gg/gg/22885.ts
+#EXTINF:-1,UK: Star Gold
+http://1.365247.tk:80/live/gg/gg/22884.ts
+#EXTINF:-1,UK: Star Jalsha
+http://1.365247.tk:80/live/gg/gg/22883.ts
+#EXTINF:-1,UK: Star Plus
+http://1.365247.tk:80/live/gg/gg/22882.ts
+#EXTINF:-1,UK: Zee Cinema
+http://1.365247.tk:80/live/gg/gg/22880.ts
+#EXTINF:-1,UK: Zee Punjabi
+http://1.365247.tk:80/live/gg/gg/22879.ts
+#EXTINF:-1,UK: Zee TV
+http://1.365247.tk:80/live/gg/gg/22878.ts
+#EXTINF:-1,UK: Zing
+http://1.365247.tk:80/live/gg/gg/22877.ts
+#EXTINF:-1,Sky Sports Main Event HD
+http://1.365247.tk:80/live/gg/gg/22901.ts
+#EXTINF:-1,Sky Sports Cricket HDS
+http://1.365247.tk:80/live/gg/gg/22902.ts
+#EXTINF:-1,Sky Sports Action HDS
+http://1.365247.tk:80/live/gg/gg/22903.ts
+#EXTINF:-1,Sky Sports Golf HDS
+http://1.365247.tk:80/live/gg/gg/22904.ts
+#EXTINF:-1,Sky Sports Premier League HDS
+http://1.365247.tk:80/live/gg/gg/22905.ts
+#EXTINF:-1,SKY SPORTS F1 FHD
+http://1.365247.tk:80/live/gg/gg/23330.ts
+#EXTINF:-1,Sky Sports Mix FHD
+http://1.365247.tk:80/live/gg/gg/23328.ts
+#EXTINF:-1,SKY SPORTS NEWS FHD
+http://1.365247.tk:80/live/gg/gg/23329.ts
+#EXTINF:-1,(Holland) Sport EXTRA 1 HD
+http://1.365247.tk:80/live/gg/gg/24487.ts
+#EXTINF:-1,(Holland) Sport EXTRA 2 HD
+http://1.365247.tk:80/live/gg/gg/24486.ts
+#EXTINF:-1,*******Sports_Guide*******
+http://1.365247.tk:80/live/gg/gg/21786.ts
+#EXTINF:-1,*CA : SPORTS NET WEST HD***
+http://1.365247.tk:80/live/gg/gg/10186.ts
+#EXTINF:-1,*CA : SPORTS NET WORLD HD
+http://1.365247.tk:80/live/gg/gg/10185.ts
+#EXTINF:-1,*Cricket_1...
+http://1.365247.tk:80/live/gg/gg/21756.ts
+#EXTINF:-1,*Cricket_3
+http://1.365247.tk:80/live/gg/gg/21755.ts
+#EXTINF:-1,*Golf_2
+http://1.365247.tk:80/live/gg/gg/21754.ts
+#EXTINF:-1,*RED FC TV ( LIVE ON MATCHES )
+http://1.365247.tk:80/live/gg/gg/10176.ts
+#EXTINF:-1,*RED FC TV**--
+http://1.365247.tk:80/live/gg/gg/16903.ts
+#EXTINF:-1,*USA: NBC EXTRA TIME 2 HD
+http://1.365247.tk:80/live/gg/gg/10171.ts
+#EXTINF:-1,*USA: NBC EXTRA TIME 3 HD
+http://1.365247.tk:80/live/gg/gg/10170.ts
+#EXTINF:-1,*USA: NBC EXTRA TIME 4 HD
+http://1.365247.tk:80/live/gg/gg/10169.ts
+#EXTINF:-1,*USA: NBC EXTRA TIME 5 HD
+http://1.365247.tk:80/live/gg/gg/10168.ts
+#EXTINF:-1,*USA: NBC EXTRA TIME 6 HD
+http://1.365247.tk:80/live/gg/gg/10167.ts
+#EXTINF:-1,*USA: NBC EXTRA TIME 7 HD
+http://1.365247.tk:80/live/gg/gg/10166.ts
+#EXTINF:-1,*USA: NBCSN HD
+http://1.365247.tk:80/live/gg/gg/10165.ts
+#EXTINF:-1,*USA:NBCSN HD
+http://1.365247.tk:80/live/gg/gg/10313.ts
+#EXTINF:-1,AFRICA: Adom TV
+http://1.365247.tk:80/live/gg/gg/24383.ts
+#EXTINF:-1,AFRICA: Congo TV
+http://1.365247.tk:80/live/gg/gg/24384.ts
+#EXTINF:-1,AFRICA: DABANGA SUDAN
+http://1.365247.tk:80/live/gg/gg/24385.ts
+#EXTINF:-1,AFRICA: EBC ETHIOPIA
+http://1.365247.tk:80/live/gg/gg/24386.ts
+#EXTINF:-1,AFRICA: GTV
+http://1.365247.tk:80/live/gg/gg/24387.ts
+#EXTINF:-1,AFRICA: KALSAN TV
+http://1.365247.tk:80/live/gg/gg/24388.ts
+#EXTINF:-1,AFRICA: NollyWood TV
+http://1.365247.tk:80/live/gg/gg/24389.ts
+#EXTINF:-1,AFRICA: Ortb TV
+http://1.365247.tk:80/live/gg/gg/24390.ts
+#EXTINF:-1,AFRICA: ORTM TV
+http://1.365247.tk:80/live/gg/gg/24391.ts
+#EXTINF:-1,AFRICA: Rave TV (Nigeria)
+http://1.365247.tk:80/live/gg/gg/24392.ts
+#EXTINF:-1,AFRICA: Rtb
+http://1.365247.tk:80/live/gg/gg/24393.ts
+#EXTINF:-1,AFRICA: RTI LA PREMIERE
+http://1.365247.tk:80/live/gg/gg/24394.ts
+#EXTINF:-1,AFRICA: RTI1 TV Cote D'ivoir
+http://1.365247.tk:80/live/gg/gg/24395.ts
+#EXTINF:-1,AFRICA: RTI2 TV Cote D'ivoir
+http://1.365247.tk:80/live/gg/gg/24396.ts
+#EXTINF:-1,AFRICA: RTS1 Senegal
+http://1.365247.tk:80/live/gg/gg/24397.ts
+#EXTINF:-1,AFRICA: RTS2 (SN2) (Senegal)
+http://1.365247.tk:80/live/gg/gg/24398.ts
+#EXTINF:-1,AFRICA: SNTV
+http://1.365247.tk:80/live/gg/gg/24399.ts
+#EXTINF:-1,AFRICA: SOMALI CABLE
+http://1.365247.tk:80/live/gg/gg/24400.ts
+#EXTINF:-1,AFRICA: TFM (Senegal)
+http://1.365247.tk:80/live/gg/gg/24401.ts
+#EXTINF:-1,AFRICA: Tm2 TV
+http://1.365247.tk:80/live/gg/gg/24402.ts
+#EXTINF:-1,AFRICA: TV Continental Nigeria
+http://1.365247.tk:80/live/gg/gg/24403.ts
+#EXTINF:-1,AFRICA: UNIVERSEL SOMALI TV
+http://1.365247.tk:80/live/gg/gg/24404.ts
+#EXTINF:-1,AFRICA: Vox AFRICArica
+http://1.365247.tk:80/live/gg/gg/24405.ts
+#EXTINF:-1,AFRICA: Walf TV
+http://1.365247.tk:80/live/gg/gg/24406.ts
+#EXTINF:-1,Al Jazeera HD
+http://1.365247.tk:80/live/gg/gg/16069.ts
+#EXTINF:-1,ALB:Super_Sport_1HD
+http://1.365247.tk:80/live/gg/gg/24476.ts
+#EXTINF:-1,ALB:Super_Sport_2HD
+http://1.365247.tk:80/live/gg/gg/24475.ts
+#EXTINF:-1,ALB:Super_Sport_3HD
+http://1.365247.tk:80/live/gg/gg/24474.ts
+#EXTINF:-1,US: ESPN HD
+http://1.365247.tk:80/live/gg/gg/9692.ts
+#EXTINF:-1,US: TSN 1 HD
+http://1.365247.tk:80/live/gg/gg/9688.ts
+#EXTINF:-1,US: TSN 2 HD
+http://1.365247.tk:80/live/gg/gg/9687.ts
+#EXTINF:-1,US: TSN 3 HD
+http://1.365247.tk:80/live/gg/gg/9686.ts
+#EXTINF:-1,US: TSN 4 HD
+http://1.365247.tk:80/live/gg/gg/9685.ts
+#EXTINF:-1,US: TSN 5 HD
+http://1.365247.tk:80/live/gg/gg/9684.ts
+#EXTINF:-1,US: WWE
+http://1.365247.tk:80/live/gg/gg/9683.ts
+#EXTINF:-1,USA: |VIP| Bein Sports USA HD
+http://1.365247.tk:80/live/gg/gg/24430.ts
+#EXTINF:-1,USA: |VIP| WWE HD
+http://1.365247.tk:80/live/gg/gg/24431.ts
+#EXTINF:-1,USA: C-Span 1
+http://1.365247.tk:80/live/gg/gg/17420.ts
+#EXTINF:-1,USA: C-Span 2
+http://1.365247.tk:80/live/gg/gg/17419.ts
+#EXTINF:-1,USA: C-Span 3
+http://1.365247.tk:80/live/gg/gg/17418.ts
+#EXTINF:-1,USA: E TV
+http://1.365247.tk:80/live/gg/gg/24408.ts
+#EXTINF:-1,USA: FOX Soccer Plus HD
+http://1.365247.tk:80/live/gg/gg/10318.ts
+#EXTINF:-1,USA: FOX Soccer Plus HD
+http://1.365247.tk:80/live/gg/gg/10098.ts
+#EXTINF:-1,USA: fox1
+http://1.365247.tk:80/live/gg/gg/24409.ts
+#EXTINF:-1,USA: fox2
+http://1.365247.tk:80/live/gg/gg/24410.ts
+#EXTINF:-1,USA: FX HD
+http://1.365247.tk:80/live/gg/gg/24411.ts
+#EXTINF:-1,USA: HBO ESAT
+http://1.365247.tk:80/live/gg/gg/24413.ts
+#EXTINF:-1,USA: HSN HD
+http://1.365247.tk:80/live/gg/gg/24414.ts
+#EXTINF:-1,USA: NBA
+http://1.365247.tk:80/live/gg/gg/24426.ts
+#EXTINF:-1,USA: NBC EXTRA TIME 1 HD
+http://1.365247.tk:80/live/gg/gg/10172.ts
+#EXTINF:-1,USA: NBC GOLF HD
+http://1.365247.tk:80/live/gg/gg/24415.ts
+#EXTINF:-1,USA: NFL Network
+http://1.365247.tk:80/live/gg/gg/24416.ts
+#EXTINF:-1,USA: PAC Mountain
+http://1.365247.tk:80/live/gg/gg/24417.ts
+#EXTINF:-1,USA: PAC-12 Net Los Angeles
+http://1.365247.tk:80/live/gg/gg/24418.ts
+#EXTINF:-1,USA: PAC-12 Net Oregon
+http://1.365247.tk:80/live/gg/gg/24419.ts
+#EXTINF:-1,USA: SyFy
+http://1.365247.tk:80/live/gg/gg/24427.ts
+#EXTINF:-1,USA: TBS 64
+http://1.365247.tk:80/live/gg/gg/24423.ts
+#EXTINF:-1,USA:ABCHD
+http://1.365247.tk:80/live/gg/gg/8622.ts
+#EXTINF:-1,USA:AFNMovie
+http://1.365247.tk:80/live/gg/gg/8620.ts
+#EXTINF:-1,USA:AFNNews
+http://1.365247.tk:80/live/gg/gg/8618.ts
+#EXTINF:-1,USA:AFNPrimeAtlantic
+http://1.365247.tk:80/live/gg/gg/8619.ts
+#EXTINF:-1,USA:AFNPrimePacific
+http://1.365247.tk:80/live/gg/gg/8621.ts
+#EXTINF:-1,USA:AFNSports2
+http://1.365247.tk:80/live/gg/gg/8625.ts
+#EXTINF:-1,USA:AFNSportsHD
+http://1.365247.tk:80/live/gg/gg/8626.ts
+#EXTINF:-1,USA:CBCHD
+http://1.365247.tk:80/live/gg/gg/8623.ts
+#EXTINF:-1,USA:CNBC HD
+http://1.365247.tk:80/live/gg/gg/10316.ts
+#EXTINF:-1,USA:CNBC HD
+http://1.365247.tk:80/live/gg/gg/10096.ts
+#EXTINF:-1,USA:ESPN 2 HD
+http://1.365247.tk:80/live/gg/gg/16913.ts
+#EXTINF:-1,USA:ESPN 2 HD
+http://1.365247.tk:80/live/gg/gg/9705.ts
+#EXTINF:-1,USA:ESPN 2 HD
+http://1.365247.tk:80/live/gg/gg/8732.ts
+#EXTINF:-1,USA:ESPN HD
+http://1.365247.tk:80/live/gg/gg/16912.ts
+#EXTINF:-1,USA:ESPN HD
+http://1.365247.tk:80/live/gg/gg/9704.ts
+#EXTINF:-1,USA:ESPN HD
+http://1.365247.tk:80/live/gg/gg/8730.ts
+#EXTINF:-1,USA:FamPulse
+http://1.365247.tk:80/live/gg/gg/8624.ts
+#EXTINF:-1,USA:Fox5HD
+http://1.365247.tk:80/live/gg/gg/8617.ts
+#EXTINF:-1,USA:NBA TV
+http://1.365247.tk:80/live/gg/gg/9701.ts
+#EXTINF:-1,USA:NBC Golf
+http://1.365247.tk:80/live/gg/gg/9700.ts
+#EXTINF:-1,USA:NBC XTRA 1 HD
+http://1.365247.tk:80/live/gg/gg/9699.ts
+#EXTINF:-1,USA:NBC XTRA 1 HD
+http://1.365247.tk:80/live/gg/gg/8717.ts
+#EXTINF:-1,USA:NBC XTRA 2 HD
+http://1.365247.tk:80/live/gg/gg/9698.ts
+#EXTINF:-1,USA:NBC XTRA 2 HD
+http://1.365247.tk:80/live/gg/gg/8716.ts
+#EXTINF:-1,USA:NBC XTRA 3 HD
+http://1.365247.tk:80/live/gg/gg/9697.ts
+#EXTINF:-1,USA:NBC XTRA 3 HD
+http://1.365247.tk:80/live/gg/gg/8715.ts
+#EXTINF:-1,USA:NBC XTRA 4 HD
+http://1.365247.tk:80/live/gg/gg/9696.ts
+#EXTINF:-1,USA:NBC XTRA 4 HD
+http://1.365247.tk:80/live/gg/gg/8714.ts
+#EXTINF:-1,USA:NBC XTRA 5 HD
+http://1.365247.tk:80/live/gg/gg/9695.ts
+#EXTINF:-1,USA:NBC XTRA 5 HD
+http://1.365247.tk:80/live/gg/gg/8713.ts
+#EXTINF:-1,USA:NBCSN HD
+http://1.365247.tk:80/live/gg/gg/10093.ts
+#EXTINF:-1,USA:NFLHD
+http://1.365247.tk:80/live/gg/gg/8627.ts
+#EXTINF:-1,USA:USA HD
+http://1.365247.tk:80/live/gg/gg/8615.ts
+#EXTINF:-1,USA:WWEHD
+http://1.365247.tk:80/live/gg/gg/8616.ts
+#EXTINF:-1,USA1:FOX Sports 1 HD
+http://1.365247.tk:80/live/gg/gg/17480.ts
+#EXTINF:-1,USA1:FOX Sports 2 HD
+http://1.365247.tk:80/live/gg/gg/17479.ts
+#EXTINF:-1,USA1:NBA TV
+http://1.365247.tk:80/live/gg/gg/17478.ts
+#EXTINF:-1,USA1:NBC Golf
+http://1.365247.tk:80/live/gg/gg/17477.ts
+#EXTINF:-1,USA1:NBC XTRA 1 HD
+http://1.365247.tk:80/live/gg/gg/17476.ts
+#EXTINF:-1,USA1:NBC XTRA 2 HD
+http://1.365247.tk:80/live/gg/gg/17475.ts
+#EXTINF:-1,USA1:NBC XTRA 3 HD
+http://1.365247.tk:80/live/gg/gg/17474.ts
+#EXTINF:-1,USA1:NBC XTRA 4 HD
+http://1.365247.tk:80/live/gg/gg/17473.ts
+#EXTINF:-1,USA1:NBC XTRA 5 HD
+http://1.365247.tk:80/live/gg/gg/17472.ts
+#EXTINF:-1,USA1:USA:ESPN HD
+http://1.365247.tk:80/live/gg/gg/17481.ts
+#EXTINF:-1,USA3:AFNSports2
+http://1.365247.tk:80/live/gg/gg/9682.ts
+#EXTINF:-1,USA3:AFNSportsHD
+http://1.365247.tk:80/live/gg/gg/9681.ts
+#EXTINF:-1,USA3:NFLHD
+http://1.365247.tk:80/live/gg/gg/9680.ts
+#EXTINF:-1,MTV Base HD
+http://1.365247.tk:80/live/gg/gg/24466.ts
+#EXTINF:-1,MTV Dance HD
+http://1.365247.tk:80/live/gg/gg/24465.ts
+#EXTINF:-1,MTV Hits HD
+http://1.365247.tk:80/live/gg/gg/24464.ts
+#EXTINF:-1,MTV MUSIC
+http://1.365247.tk:80/live/gg/gg/24471.ts
+#EXTINF:-1,MTV Rocks HD
+http://1.365247.tk:80/live/gg/gg/24463.ts
+#EXTINF:-1,MTVHits
+http://1.365247.tk:80/live/gg/gg/24470.ts
+#EXTINF:-1,MUTV FHD
+http://1.365247.tk:80/live/gg/gg/17384.ts
+#EXTINF:-1,NAT GEO WILD (PL)
+http://1.365247.tk:80/live/gg/gg/25488.ts
+#EXTINF:-1,NBA (USA)
+http://1.365247.tk:80/live/gg/gg/17423.ts
+#EXTINF:-1,NBC USA
+http://1.365247.tk:80/live/gg/gg/9709.ts
+#EXTINF:-1,Neo_Prime
+http://1.365247.tk:80/live/gg/gg/25221.ts
+#EXTINF:-1,Neo_Sports
+http://1.365247.tk:80/live/gg/gg/25220.ts
+#EXTINF:-1,NFL (USA)
+http://1.365247.tk:80/live/gg/gg/17422.ts
+#EXTINF:-1,Sky Box Office (Only Live On Event)
+http://1.365247.tk:80/live/gg/gg/16918.ts
+#EXTINF:-1,Sky Cinema Action HD
+http://1.365247.tk:80/live/gg/gg/17256.ts
+#EXTINF:-1,Sky Cinema Comedy HD
+http://1.365247.tk:80/live/gg/gg/17563.ts
+#EXTINF:-1,Sky Cinema Crime & Thriller HD
+http://1.365247.tk:80/live/gg/gg/17564.ts
+#EXTINF:-1,SKY CINEMA DRAMA AND ROMANCE HD
+http://1.365247.tk:80/live/gg/gg/23542.ts
+#EXTINF:-1,Sky Cinema Hits HD
+http://1.365247.tk:80/live/gg/gg/17566.ts
+#EXTINF:-1,Sky Cinema Premiere HD
+http://1.365247.tk:80/live/gg/gg/17254.ts
+#EXTINF:-1,Sky Cinema Sci Fi Hor HD
+http://1.365247.tk:80/live/gg/gg/17253.ts
+#EXTINF:-1,Sky Cinema Select HD
+http://1.365247.tk:80/live/gg/gg/17252.ts
+#EXTINF:-1,Discovery Channel HD
+http://1.365247.tk:80/live/gg/gg/21792.ts
+#EXTINF:-1,Sky Movies Action
+http://1.365247.tk:80/live/gg/gg/8570.ts
+#EXTINF:-1,Sky Movies Drama
+http://1.365247.tk:80/live/gg/gg/10119.ts
+#EXTINF:-1,Sky Movies Modern Greats HD
+http://1.365247.tk:80/live/gg/gg/10118.ts
+#EXTINF:-1,Sky Movies SciFi & Horror HD
+http://1.365247.tk:80/live/gg/gg/8765.ts
+#EXTINF:-1,Sky Movies Showcase
+http://1.365247.tk:80/live/gg/gg/8764.ts
+#EXTINF:-1,Sky News UK
+http://1.365247.tk:80/live/gg/gg/23543.ts
+#EXTINF:-1,Sky Sp News HQ
+http://1.365247.tk:80/live/gg/gg/13950.ts
+#EXTINF:-1,Sky Sports Action HD
+http://1.365247.tk:80/live/gg/gg/9378.ts
+#EXTINF:-1,SKY SPORTS ARENA HD
+http://1.365247.tk:80/live/gg/gg/24954.ts
+#EXTINF:-1,SKY SPORTS ARENA SD
+http://1.365247.tk:80/live/gg/gg/24953.ts
+#EXTINF:-1,Sky Sports Cricket
+http://1.365247.tk:80/live/gg/gg/15933.ts
+#EXTINF:-1,Sky Sports Cricket HD
+http://1.365247.tk:80/live/gg/gg/9377.ts
 #EXTINF:-1,Sky Sports F1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/80.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports F1 HQ
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/119.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports News
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/81.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports News HQ
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/118.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-BT Sports ESPN
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/792.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,TR : Turkish Bein Sports 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2127.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,IT: Sky Sport1 HD
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/1686.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,IT: Sky Sport2 HD
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/1687.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,IT: Sky Sport3 HD
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/1688.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 1 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2142.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 10 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2151.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 11 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2152.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 12 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2153.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 2 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2143.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 3 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2144.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 4 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2145.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 5 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2146.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 6 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2147.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 7 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2148.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 8 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2149.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Bein Sports AR 9 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2150.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,BT Sports 2 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2139.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,BT Sports 3 (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2140.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,BT Sports ESPN (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2141.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Action (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2133.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Arena (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2136.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Cricket (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2132.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Football (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2137.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Golf (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2134.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Main Event (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2131.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Sky Sports Premier League (576p)
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/2135.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 1
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/830.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 10
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/839.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 11
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/840.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 12
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/841.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 2
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/831.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 3
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/832.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 4
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/833.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 5
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/834.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 6
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/835.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 7
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/836.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 8
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/837.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,Foot: Bein Sports 9
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/838.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 1 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/289.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 10 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/298.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 11 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/299.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 12 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/300.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 2 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/290.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 3 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/291.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 4 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/292.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 5 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/293.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 6 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/294.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 7 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/295.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 8 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/296.ts
-#EXTVLCOPT:http-user-agent=wsswskjl LibVLC/3.0.0-git
-#EXTINF:-1,2G-Bein Sports 9 AR
-http://live1.livetvindia.co.in:8000/live/WSS20/support@ghostwebhost.com4Premium/297.ts
-
-
-#EXTINF:-1,UK :&nbsp; Chelsea TV
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2225.ts
-
-#EXTINF:-1,UK :&nbsp; Comedy Central
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2224.ts
-
-#EXTINF:-1,UK :&nbsp; Crime Investigation
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2223.ts
-
-#EXTINF:-1,UK :&nbsp; Discovery Home&amp;Health
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2222.ts
-
-#EXTINF:-1,UK :&nbsp; Discovery Shed
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2221.ts
-
-#EXTINF:-1,UK :&nbsp; Discovery Turbo
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2220.ts
-
-#EXTINF:-1,UK :&nbsp; Disney XD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2219.ts
-
-#EXTINF:-1,UK :&nbsp; DisneyChnl
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2218.ts
-
-#EXTINF:-1,UK :&nbsp; DisneyJunior
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2217.ts
-
-#EXTINF:-1,UK :&nbsp; MUTV
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2216.ts
-
-#EXTINF:-1,UK :&nbsp; MUTV HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2215.ts
-
-#EXTINF:-1,UK :&nbsp; Nat Geo Wild
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2214.ts
-
-#EXTINF:-1,UK :&nbsp; National Geographic
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2213.ts
-
-#EXTINF:-1,UK :&nbsp; Nick Jr Too
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2212.ts
-
-#EXTINF:-1,UK :&nbsp; Nick Junior
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2211.ts
-
-#EXTINF:-1,UK :&nbsp; Nick UK
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2210.ts
-
-#EXTINF:-1,UK :&nbsp; NickToons
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2209.ts
-
-#EXTINF:-1,UK :&nbsp; Pick
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2208.ts
-
-#EXTINF:-1,UK : BT Sport 1 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2206.ts
-
-#EXTINF:-1,UK : BT Sport 2 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2205.ts
-
-#EXTINF:-1,UK : BT Sport 3 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2204.ts
-
-#EXTINF:-1,UK : BT Sport | ESPN HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2207.ts
-
-#EXTINF:-1,UK : Channel 4 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2203.ts
-
-#EXTINF:-1,UK : Channel 5 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2202.ts
-
-#EXTINF:-1,UK : ITV
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2201.ts
-
-#EXTINF:-1,UK : ITV 2
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2200.ts
-
-#EXTINF:-1,UK : ITV 3
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2199.ts
-
-#EXTINF:-1,UK : ITV 4
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2198.ts
-
-#EXTINF:-1,UK : ITV Be
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2197.ts
-
-#EXTINF:-1,UK : ITV Encore
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2196.ts
-
-#EXTINF:-1,UK : Sky 1
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2195.ts
-
-#EXTINF:-1,UK : Sky 2
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2194.ts
-
-#EXTINF:-1,UK : Sky Action Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2193.ts
-
-#EXTINF:-1,UK : Sky Arts
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2192.ts
-
-#EXTINF:-1,UK : Sky Atlantic
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2191.ts
-
-#EXTINF:-1,UK : Sky Comedy Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2190.ts
-
-#EXTINF:-1,UK : Sky Family Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2189.ts
-
-#EXTINF:-1,UK : Sky Greats Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2188.ts
-
-#EXTINF:-1,UK : Sky Living UK
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2187.ts
-
-#EXTINF:-1,UK : Sky Movies Disney
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2186.ts
-
-#EXTINF:-1,UK : Sky Movies Drama &amp; Romance
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2185.ts
-
-#EXTINF:-1,UK : Sky News
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2184.ts
-
-#EXTINF:-1,UK : Sky Premiere Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2183.ts
-
-#EXTINF:-1,UK : Sky ScFiHorror Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2182.ts
-
-#EXTINF:-1,UK : Sky Select Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2181.ts
-
-#EXTINF:-1,UK : Sky Sp News HQ
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2180.ts
-
-#EXTINF:-1,UK : Sky Sports 1
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2179.ts
-
-#EXTINF:-1,UK : Sky Sports 1 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2178.ts
-
-#EXTINF:-1,UK : Sky Sports 2
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2177.ts
-
-#EXTINF:-1,UK : Sky Sports 2 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2176.ts
-
-#EXTINF:-1,UK : Sky Sports 3
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2175.ts
-
-#EXTINF:-1,UK : Sky Sports 3 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2174.ts
-
-#EXTINF:-1,UK : Sky Sports 4
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2173.ts
-
-#EXTINF:-1,UK : Sky Sports 4 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2172.ts
-
-#EXTINF:-1,UK : Sky Sports 5
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2171.ts
-
-#EXTINF:-1,UK : Sky Sports 5 HD
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2170.ts
-
-#EXTINF:-1,UK : Sky Sports F1
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2169.ts
-
-#EXTINF:-1,UK : Sky Sports Mix
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2168.ts
-
-#EXTINF:-1,UK : Sky Thriller Movies
-http://visual.dyndns.tv:8100/live/carvalho/carvalho/2167.ts
+http://1.365247.tk:80/live/gg/gg/8848.ts
+#EXTINF:-1,SKY SPORTS FHD ARENA
+http://1.365247.tk:80/live/gg/gg/24955.ts
+#EXTINF:-1,SKY SPORTS FOOTBALL FHD
+http://1.365247.tk:80/live/gg/gg/24958.ts
+#EXTINF:-1,SKY SPORTS FOOTBALL HD
+http://1.365247.tk:80/live/gg/gg/24957.ts
+#EXTINF:-1,SKY SPORTS FOOTBALL SD
+http://1.365247.tk:80/live/gg/gg/24956.ts
+#EXTINF:-1,Sky Sports Golf HD
+http://1.365247.tk:80/live/gg/gg/9379.ts
+#EXTINF:-1,Sky Sports Main Event
+http://1.365247.tk:80/live/gg/gg/13875.ts
+#EXTINF:-1,Sky Sports Main Event HDS
+http://1.365247.tk:80/live/gg/gg/9376.ts
+#EXTINF:-1,Sky Sports Mix
+http://1.365247.tk:80/live/gg/gg/23977.ts
+#EXTINF:-1,SKY SPORTS NEWS HD
+http://1.365247.tk:80/live/gg/gg/9388.ts
+#EXTINF:-1,SKY SPORTS NEWS HD ..
+http://1.365247.tk:80/live/gg/gg/23811.ts
+#EXTINF:-1,Sky Sports Premier League
+http://1.365247.tk:80/live/gg/gg/15930.ts
+#EXTINF:-1,Sky Sports Premier League HD
+http://1.365247.tk:80/live/gg/gg/9380.ts
+#EXTINF:-1,SkySelectHD1
+http://1.365247.tk:80/live/gg/gg/24508.ts
+#EXTINF:-1,UK:   CBBC_HD
+http://1.365247.tk:80/live/gg/gg/24985.ts
+#EXTINF:-1,UK:   CHELSEA_TV
+http://1.365247.tk:80/live/gg/gg/24983.ts
+#EXTINF:-1,UK:   NATGEO_HD
+http://1.365247.tk:80/live/gg/gg/24980.ts
+#EXTINF:-1,UK:   NATGEO_WILD_HD
+http://1.365247.tk:80/live/gg/gg/24979.ts
+#EXTINF:-1,UK:   SKY_ARTS_HD
+http://1.365247.tk:80/live/gg/gg/24977.ts
+#EXTINF:-1,UK:   SKY_SPORTS_Action _HD
+http://1.365247.tk:80/live/gg/gg/24966.ts
+#EXTINF:-1,UK:   SKY_SPORTS_Arena_HD
+http://1.365247.tk:80/live/gg/gg/24965.ts
+#EXTINF:-1,UK:   SKY_SPORTS_Cricket _HD
+http://1.365247.tk:80/live/gg/gg/24964.ts
+#EXTINF:-1,UK:   SKY_SPORTS_F1_HD
+http://1.365247.tk:80/live/gg/gg/24963.ts
+#EXTINF:-1,UK:   SKY_SPORTS_Football_HD
+http://1.365247.tk:80/live/gg/gg/24962.ts
+#EXTINF:-1,UK:   SKY_SPORTS_Main_Event_HD
+http://1.365247.tk:80/live/gg/gg/24961.ts
+#EXTINF:-1,UK:   SKY_SPORTS_Premier_League_HD
+http://1.365247.tk:80/live/gg/gg/24960.ts
+#EXTINF:-1,UK:   SKY_SPORTS_The_Open _HD
+http://1.365247.tk:80/live/gg/gg/24959.ts
+#EXTINF:-1,USA: A&E HD
+http://1.365247.tk:80/live/gg/gg/25693.ts
+#EXTINF:-1,USA: ABC FAMILY/SPARK
+http://1.365247.tk:80/live/gg/gg/25692.ts
+#EXTINF:-1,USA: ABC HD
+http://1.365247.tk:80/live/gg/gg/25691.ts
+#EXTINF:-1,USA: ABC News HD
+http://1.365247.tk:80/live/gg/gg/25690.ts
+#EXTINF:-1,USA: AFM FAM PULSE
+http://1.365247.tk:80/live/gg/gg/25689.ts
+#EXTINF:-1,USA: AFN NEWS
+http://1.365247.tk:80/live/gg/gg/25688.ts
+#EXTINF:-1,USA: AFN Sports 1
+http://1.365247.tk:80/live/gg/gg/25687.ts
+#EXTINF:-1,USA: AMC HD
+http://1.365247.tk:80/live/gg/gg/25686.ts
+#EXTINF:-1,USA: ANIMAL PLANET HD
+http://1.365247.tk:80/live/gg/gg/25685.ts
+#EXTINF:-1,USA: ASTRO SUPERSPORT 01
+http://1.365247.tk:80/live/gg/gg/25679.ts
+#EXTINF:-1,USA: ASTRO SUPERSPORT 02
+http://1.365247.tk:80/live/gg/gg/25678.ts
+#EXTINF:-1,USA: ASTRO SUPERSPORT 03
+http://1.365247.tk:80/live/gg/gg/25677.ts
+#EXTINF:-1,USA: Bein Sports US HD
+http://1.365247.tk:80/live/gg/gg/25674.ts
+#EXTINF:-1,USA: BLOOMBERG
+http://1.365247.tk:80/live/gg/gg/25676.ts
+#EXTINF:-1,USA: BRAVO HD
+http://1.365247.tk:80/live/gg/gg/25675.ts
+#EXTINF:-1,USA: CARTOON NETWORK
+http://1.365247.tk:80/live/gg/gg/25673.ts
+#EXTINF:-1,USA: CBS HD
+http://1.365247.tk:80/live/gg/gg/25672.ts
+#EXTINF:-1,USA: CBS NEWS HD
+http://1.365247.tk:80/live/gg/gg/25671.ts
+#EXTINF:-1,USA: CBS SPORTS NETWORK HD
+http://1.365247.tk:80/live/gg/gg/25670.ts
+#EXTINF:-1,USA: CINEMAX ACTOIN MAX EAST
+http://1.365247.tk:80/live/gg/gg/25669.ts
+#EXTINF:-1,USA: CINEMAX EAST
+http://1.365247.tk:80/live/gg/gg/25668.ts
+#EXTINF:-1,USA: CINEMAX HD
+http://1.365247.tk:80/live/gg/gg/25667.ts
+#EXTINF:-1,USA: CINEMAX MOREMAX HD
+http://1.365247.tk:80/live/gg/gg/25666.ts
+#EXTINF:-1,USA: CNN HD
+http://1.365247.tk:80/live/gg/gg/25665.ts
+#EXTINF:-1,USA: Comedy CENTRAL HD
+http://1.365247.tk:80/live/gg/gg/25664.ts
+#EXTINF:-1,USA: DISCOVERY CHANNEL HD
+http://1.365247.tk:80/live/gg/gg/25663.ts
+#EXTINF:-1,USA: DISCOVERY SCIENCE HD
+http://1.365247.tk:80/live/gg/gg/25662.ts
+#EXTINF:-1,USA: E!
+http://1.365247.tk:80/live/gg/gg/25661.ts
+#EXTINF:-1,USA: ESPN 2
+http://1.365247.tk:80/live/gg/gg/25660.ts
+#EXTINF:-1,USA: ESPN HD ( USA )
+http://1.365247.tk:80/live/gg/gg/25659.ts
+#EXTINF:-1,USA: ESPN NEWS HD
+http://1.365247.tk:80/live/gg/gg/25658.ts
+#EXTINF:-1,USA: ESPN U HD
+http://1.365247.tk:80/live/gg/gg/25657.ts
+#EXTINF:-1,USA: ESPN USA HD
+http://1.365247.tk:80/live/gg/gg/25656.ts
+#EXTINF:-1,USA: EUROSPORT
+http://1.365247.tk:80/live/gg/gg/25655.ts
+#EXTINF:-1,USA: FIGHT NETWORK
+http://1.365247.tk:80/live/gg/gg/25654.ts
+#EXTINF:-1,USA: FOOD NETWORK
+http://1.365247.tk:80/live/gg/gg/25653.ts
+#EXTINF:-1,USA: FOX HD
+http://1.365247.tk:80/live/gg/gg/25652.ts
+#EXTINF:-1,USA: Fox Life HD
+http://1.365247.tk:80/live/gg/gg/25650.ts
+#EXTINF:-1,USA: Fox News HD
+http://1.365247.tk:80/live/gg/gg/25649.ts
+#EXTINF:-1,USA: Fox Sports 1 HD
+http://1.365247.tk:80/live/gg/gg/25648.ts
+#EXTINF:-1,USA: Fox Sports 2 HD
+http://1.365247.tk:80/live/gg/gg/25647.ts
+#EXTINF:-1,USA: GLOBAL TV HALIFAX
+http://1.365247.tk:80/live/gg/gg/25646.ts
+#EXTINF:-1,USA: GRIT TV MOVIES
+http://1.365247.tk:80/live/gg/gg/25645.ts
+#EXTINF:-1,USA: HALLMARK HD
+http://1.365247.tk:80/live/gg/gg/25644.ts
+#EXTINF:-1,USA: HBO
+http://1.365247.tk:80/live/gg/gg/25643.ts
+#EXTINF:-1,USA: HBO COMEDY HD
+http://1.365247.tk:80/live/gg/gg/25642.ts
+#EXTINF:-1,USA: HBO SIGNATURE
+http://1.365247.tk:80/live/gg/gg/25641.ts
+#EXTINF:-1,USA: HBO US
+http://1.365247.tk:80/live/gg/gg/25640.ts
+#EXTINF:-1,USA: HBO ZONE HD
+http://1.365247.tk:80/live/gg/gg/25639.ts
+#EXTINF:-1,USA: HGTV
+http://1.365247.tk:80/live/gg/gg/25638.ts
+#EXTINF:-1,USA: HISTORY HD
+http://1.365247.tk:80/live/gg/gg/25637.ts
+#EXTINF:-1,USA: HSN 1
+http://1.365247.tk:80/live/gg/gg/25636.ts
+#EXTINF:-1,USA: INVESTIGATION DISCOVERY
+http://1.365247.tk:80/live/gg/gg/25635.ts
+#EXTINF:-1,USA: ION TELEVISION
+http://1.365247.tk:80/live/gg/gg/25634.ts
+#EXTINF:-1,USA: Lifetime HD
+http://1.365247.tk:80/live/gg/gg/25632.ts
+#EXTINF:-1,USA: LMN
+http://1.365247.tk:80/live/gg/gg/25633.ts
+#EXTINF:-1,USA: MAX EAST MOVIES
+http://1.365247.tk:80/live/gg/gg/25631.ts
+#EXTINF:-1,USA: MAX WEST MOVIES
+http://1.365247.tk:80/live/gg/gg/25630.ts
+#EXTINF:-1,USA: MLB NETWORK HD
+http://1.365247.tk:80/live/gg/gg/25629.ts
+#EXTINF:-1,USA: MOREMAX HD
+http://1.365247.tk:80/live/gg/gg/25628.ts
+#EXTINF:-1,USA: MOVIETIME
+http://1.365247.tk:80/live/gg/gg/25627.ts
+#EXTINF:-1,USA: National Geographic HD
+http://1.365247.tk:80/live/gg/gg/25620.ts
+#EXTINF:-1,USA: NBA NETWORK
+http://1.365247.tk:80/live/gg/gg/25626.ts
+#EXTINF:-1,USA: NBC SPORT
+http://1.365247.tk:80/live/gg/gg/25625.ts
+#EXTINF:-1,USA: NFL CHANNEL HD
+http://1.365247.tk:80/live/gg/gg/25624.ts
+#EXTINF:-1,USA: NFL Network HD
+http://1.365247.tk:80/live/gg/gg/25623.ts
+#EXTINF:-1,USA: NHL NETWORK HD
+http://1.365247.tk:80/live/gg/gg/25622.ts
+#EXTINF:-1,USA: NICKELODEON HD
+http://1.365247.tk:80/live/gg/gg/25621.ts
+#EXTINF:-1,USA: PAC 12 ARIZONA HD
+http://1.365247.tk:80/live/gg/gg/25619.ts
+#EXTINF:-1,USA: PAC 12 MOUNTAIN HD
+http://1.365247.tk:80/live/gg/gg/25618.ts
+#EXTINF:-1,USA: PBS HD
+http://1.365247.tk:80/live/gg/gg/25617.ts
+#EXTINF:-1,USA: SHOWTIME 2
+http://1.365247.tk:80/live/gg/gg/25616.ts
+#EXTINF:-1,USA: SHOWTIME EXTREME
+http://1.365247.tk:80/live/gg/gg/25615.ts
+#EXTINF:-1,USA: SHOWTIME SHOWCASE
+http://1.365247.tk:80/live/gg/gg/25614.ts
+#EXTINF:-1,USA: SKY NET SPORTS 1
+http://1.365247.tk:80/live/gg/gg/25613.ts
+#EXTINF:-1,USA: Spike HD ( USA )
+http://1.365247.tk:80/live/gg/gg/25602.ts
+#EXTINF:-1,USA: SPORTS NET 360 HD
+http://1.365247.tk:80/live/gg/gg/25612.ts
+#EXTINF:-1,USA: SPORTS NET ONE HD
+http://1.365247.tk:80/live/gg/gg/25611.ts
+#EXTINF:-1,USA: Sports Net Ontario HD
+http://1.365247.tk:80/live/gg/gg/25601.ts
+#EXTINF:-1,USA: SPORTS NET WEST HD
+http://1.365247.tk:80/live/gg/gg/25610.ts
+#EXTINF:-1,USA: STARZ CINEMA HD
+http://1.365247.tk:80/live/gg/gg/25609.ts
+#EXTINF:-1,USA: STARZ EAST
+http://1.365247.tk:80/live/gg/gg/25608.ts
+#EXTINF:-1,USA: STARZ EDGE HD
+http://1.365247.tk:80/live/gg/gg/25607.ts
+#EXTINF:-1,USA: STARZ ENCORE HD
+http://1.365247.tk:80/live/gg/gg/25606.ts
+#EXTINF:-1,USA: STARZ HD
+http://1.365247.tk:80/live/gg/gg/25605.ts
+#EXTINF:-1,USA: STARZ WEST
+http://1.365247.tk:80/live/gg/gg/25604.ts
+#EXTINF:-1,USA: SYFY HD
+http://1.365247.tk:80/live/gg/gg/25603.ts
+#EXTINF:-1,USA: TBS HD
+http://1.365247.tk:80/live/gg/gg/25600.ts
+#EXTINF:-1,USA: TENNIS CHANNEL HD
+http://1.365247.tk:80/live/gg/gg/25599.ts
+#EXTINF:-1,USA: TLC HD
+http://1.365247.tk:80/live/gg/gg/25598.ts
+#EXTINF:-1,USA: TNT HD
+http://1.365247.tk:80/live/gg/gg/25597.ts
+#EXTINF:-1,USA: Travel Channel HD
+http://1.365247.tk:80/live/gg/gg/25593.ts
+#EXTINF:-1,USA: TVO KIDS
+http://1.365247.tk:80/live/gg/gg/25594.ts
+#EXTINF:-1,USA: UC TV
+http://1.365247.tk:80/live/gg/gg/25592.ts
+#EXTINF:-1,USA: USA Network HD
+http://1.365247.tk:80/live/gg/gg/25591.ts
+#EXTINF:-1,USA: WGN HD
+http://1.365247.tk:80/live/gg/gg/25590.ts
+#EXTINF:-1,USA: Willow Cricket HD
+http://1.365247.tk:80/live/gg/gg/25588.ts
+#EXTINF:-1,USA: WWE Raw Network HD
+http://1.365247.tk:80/live/gg/gg/25589.ts
+ 
