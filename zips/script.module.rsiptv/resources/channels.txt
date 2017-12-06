@@ -1,0 +1,175 @@
+3e:mpd://8aee1f7493a36660dd398cc005777f37.m3u8
+A&E:mpd://ce425ca32dea0f37b22717ae989bcffb.m3u8
+A&E (Spain):mpd://bd0e73b1b69bbea4f49961cfba9b4d9f.m3u8
+abc:mpd://ba354149f3c117ceb69529a1542b6281.m3u8
+ABC 7 NY:mpd://598d34aff61b9e13ca903a10b5221114.m3u8
+Alibi:mpd://e4281447a8f4f03aabfb0e0dfad9af20.m3u8
+AMC:mpd://7c52ed5b8820b7dfd90b5a784bac64b3.m3u8
+AMC:mpd://b06316b29b6c788ecf95287567cb2a3a.m3u8
+Animal Planet:mpd://a0f8ddb8c8251a68f136648b32c0f62d.m3u8
+Animal Planet UK:mpd://b39899a4d7a8537a3fb9a4b36a364642.m3u8
+Antena.Nova:mpd://4519750045b4dd39c8ed5eeed4d0fe04.m3u8
+Antena 3 (Spain):mpd://a84813c2e00d5192844e855b98fb90bd.m3u8
+ARTE Deutsch:mpd://27aefa295a0bf58102b7f7c373d950bc.m3u8
+ARTE Francais:mpd://296c263cb739ddf316c97962e85f0d50.m3u8
+AXN (version in Spanish):mpd://6f6aebf94a17416f5ca9751648ab7b16.m3u8
+AXN White España:mpd://675c30cb9a8994f09f93f4535b9e39c9.m3u8
+BBC Entertainment:mpd://eb1271730cce8fb8bebdabb75eb2b9f6.m3u8
+BBC Four:mpd://242b381a075fd20a0a73060c277e54a2.m3u8
+BBC One:mpd://a8f14a834d2d09054715803924e798b2.m3u8
+BBC Three:mpd://b0cb790c33fec1d8babed26ff68ee629.m3u8
+BBC Two:mpd://d6b64a19b548bf941f57cdd4c5d71904.m3u8
+Boomerang (German):mpd://facdc047f757d4426e1a0c6795e6e8f9.m3u8
+Bravo TV:mpd://582b19f3ef5459a2f139ec69ee2053d0.m3u8
+Bravo TV:mpd://afa880d42b94c19e5f644bdf24e76651.m3u8
+calle 13:mpd://b7c111833059227685fb74887fe07c8a.m3u8
+Canal+:mpd://e5a548ab48a04c3e9975a1329f1141bc.m3u8
+CANAL+ CINEMA:mpd://96486b9ebb7be3dc9939a3268966aee4.m3u8
+Canal+ Family:mpd://0e6ce9ab0e29686bfd74fe793ad97c4a.m3u8
+Canal+ Series (Version in French):mpd://17095702ee9f412f7f00f7bbb6eb0664.m3u8
+Canal Cocina:mpd://9a522b7591d1db002d373cfa246aa271.m3u8
+Canal de Historia:mpd://0d18cbfa36f577fec263df066421d154.m3u8
+canal hollywood (Spain):mpd://fe7e0b66b38dbc02ae1b847087115a84.m3u8
+Cartoon Network:mpd://720933e62452d65671c676a065c18192.m3u8
+Cartoon Network:mpd://8be5e3f6156a6b2108a2d8b9cc5d5d7c.m3u8
+Cartoon Network UK:mpd://afafc38ed5abfaf4372734cea19f409a.m3u8
+Caza y Pesca:mpd://8c6f6adb4817a92285531a4f3dc5c0e8.m3u8
+CBS:mpd://250c51527f347066847969f002be67a2.m3u8
+CBS:mpd://4d0fadca2686a2cdd4a4a6623212449c.m3u8
+CBS Action:mpd://af742351710d35069d31eb91f646cf56.m3u8
+CBS Drama:mpd://b0f8f6e8535e082a1d0e8b9c7366e95f.m3u8
+Channel 4:mpd://e77d2afa4363dad35c713745802d7bee.m3u8
+Channel 5:mpd://5c2e49e212275e83ce788e1a6da3c438.m3u8
+Ciné+ Classic:mpd://90349e14e91b6e4fc68c719466c515aa.m3u8
+Ciné+ Emotion:mpd://bc65d4efb166b9d6d30cb02b52496378.m3u8
+Ciné+ Frisson:mpd://10c7c075548ed5681b990e5b3180c63a.m3u8
+Ciné+ Premier:mpd://5b036d592aceacb0e56c2dee5d63f131.m3u8
+Comedy Central:mpd://1ed9b2bf325e5bba7f3c577c3a86d0ef.m3u8
+Comedy Central UK:mpd://b9b55864b6779b7e83321ab0b74ed727.m3u8
+Comédie+:mpd://339609ed5699baf0d788c57edfde7271.m3u8
+Cosmopolitan TV (Spain):mpd://f54f832e01f6b26ece4283d67134aa71.m3u8
+Cuatro:mpd://ae006bceab7f8834fb2928cc96004d29.m3u8
+Discovery Channel:mpd://075d66993151c178df1ed9840202d983.m3u8
+Discovery Channel (version in Spanish):mpd://40347bb95c4af37d6fd3a3a757115aeb.m3u8
+Discovery Channel UK:mpd://c283a671e1189d568500d494ff8cd77d.m3u8
+Discovery History (UK):mpd://1e28a146727a9169053fe4759def0e47.m3u8
+Discovery Science (version in English):mpd://344fa3289867fdacd0f60047a790601b.m3u8
+Discovery Shed:mpd://5143132d4f880ee96e11f59f169f7770.m3u8
+Discovery Turbo UK:mpd://0f61fdde073409d41b534b38184fb9c9.m3u8
+Disney Channel España:mpd://b0b03107107b12286b6ac31531184618.m3u8
+Disney Channel Germany:mpd://8e0671ea88041d9410d86a9f45e9e461.m3u8
+Disney Channel UK:mpd://14b7d3edf41bba55aebd39254e3a0100.m3u8
+Disney Junior UK:mpd://e6e17fbb85e77c0eabc0ed20d6b8799e.m3u8
+Disney XD:mpd://c8c584218a3b3036c001e7e440b63c28.m3u8
+DMax UK:mpd://8371f16a5529228ac3dda62ea9ffb0e4.m3u8
+Drama Channel:mpd://24bdca7ce85d02fddf5992944b4960d1.m3u8
+E! Entertainment:mpd://c73381d6543700790e949ee08157120f.m3u8
+E4:mpd://2157d56d6aff208ae90c869526290656.m3u8
+Film 4:mpd://0f2c179db3d0e356f8615dde513bc4aa.m3u8
+Food Network UK:mpd://ceebc66a0265f56db9fe5b2fd17b6115.m3u8
+FOX (Spain):mpd://0e7028a591302250c4d0239ce6840181.m3u8
+FOX 5 NY:mpd://938230615eafe3e2adf33332d1be3940.m3u8
+FOX Life (Spain):mpd://81236d59196dc2c28bee042f88d6d005.m3u8
+Fox UK:mpd://c37f98026cb0acb60766071a6e45c01b.m3u8
+France 2:mpd://98763cd461b40c4bc3e60028c94adbc7.m3u8
+France 3:mpd://7b8eeb443198422a9b374abc758c97b5.m3u8
+France 4:mpd://ddae356b4954cd7f3315da60cab75041.m3u8
+France 5:mpd://19893d10d640f333a42110ea6c7f0b7b.m3u8
+FX:mpd://d4c503dbcdd0aaa79724dd4b79b5c8c6.m3u8
+GOLD:mpd://2c0898822ab3baf7f93bea86648adb26.m3u8
+Gulli:mpd://08051ef3b903332bffa361d4b948bd7f.m3u8
+HD1 (France):mpd://56b413603a4d5325109de63072c81c72.m3u8
+History Channel:mpd://d722293bb9bbf20cc112924ef000a225.m3u8
+House & Garden Television:mpd://7d9000c0967cc4919f07ecbe2736c95a.m3u8
+Investigation Discovery UK:mpd://cf723f822ded11e60e6bb78f16c327c8.m3u8
+ITV1:mpd://cc0b763f7c5ce91a396c0ef4fa529df9.m3u8
+ITV2:mpd://28d16f04d9b55d2ea2f826735ddffb85.m3u8
+ITV3:mpd://ef4aa10e04cfa8191ff3253dc8184bc2.m3u8
+ITV4:mpd://2a2714a7d955d8810a21bb3f195cc0d9.m3u8
+ITV Encore:mpd://7b8ca0ab87affed7fe2b2935892ee5bc.m3u8
+Kabel Eins:mpd://c6c1577fa8aab8655ab13b8db1ef8cfb.m3u8
+KIKA:mpd://7814b33686d5348d4511c75d331b3b45.m3u8
+Lifetime:mpd://171879baa092ef14d5ec8f401aeaffcd.m3u8
+Lifetime UK:mpd://f31ff373857e6b6e0bc44ae55da2e208.m3u8
+M6:mpd://fc1df6307a9c4971569997963dcc8b08.m3u8
+Movies4men:mpd://5f6d29a277a909797e7eb360f3cc6e1b.m3u8
+Movistar #0:mpd://212a29ce2029ffd50432397afbf8c644.m3u8
+Movistar Acción:mpd://e703eb4059072386834636acc7381598.m3u8
+Movistar Comedia:mpd://759a22b2133efddd3da9ef33733c09e9.m3u8
+Movistar DCine:mpd://c902872f26671fc970904ff070485fb1.m3u8
+Movistar Series xtra:mpd://176751d69d5f7b461d3e575157e3889d.m3u8
+Nat Geo Wild (version in English):mpd://acf9249594df8395d62a4fee0dd484cb.m3u8
+Nat Geo Wild (Version in Spanish):mpd://14b883544fcd5ead09b42a29c6969025.m3u8
+National Geographic:mpd://be2fa358e4f1c9a0ee833aa15f829f81.m3u8
+National Geographic Channel Europe (Version in Spanish):mpd://c2a657575fdd40a765b1dac33e5dbf83.m3u8
+National Geographic UK:mpd://f3f75dee3b4ed4497dfa412079c3a6f9.m3u8
+Nickelodeon:mpd://a55d7c24a00915235cdc6a6ddaaaf67b.m3u8
+Nickelodeon UK:mpd://79a7da99288ea0c498d3a9de03235bb5.m3u8
+Nick Junior UK:mpd://85fa8712793a2a6b1feda57b2395adbf.m3u8
+Nicktoons TV:mpd://a5c568b3ed1bce30903f6092519ef949.m3u8
+ORF 1:mpd://757ee53b00d9d571902b1d8d2351bb01.m3u8
+PBS:mpd://fe22365235b496368609515523bfb971.m3u8
+Planète+:mpd://14ebac392de77b37b38b81863829e8f0.m3u8
+Planète+ CI (Crime & Investigation):mpd://f9cc32f4e5d665f59355da62d4bca4f7.m3u8
+ProSieben:mpd://f5b7e9d4afca2d7198ab069c6b814454.m3u8
+ProSieben Maxx:mpd://af2a8d2597dd52013e2a9fffa4434508.m3u8
+Quest:mpd://07bf513a88c3df282a30cb374f8a933d.m3u8
+Rai 1:mpd://d9f1f6380a8ce8a94be3e57a2ea447cd.m3u8
+Rai 2:mpd://6ad178ba29f947df477add82b578dec6.m3u8
+Rai 3:mpd://2d036b0407bcdfcecdfa4c79829cefe0.m3u8
+Rai 4:mpd://35057fd023042712dc106a085f0c66bf.m3u8
+Rai 5:mpd://ec0bd256a6a95a0f216a6efbad9d923d.m3u8
+RTE 1:mpd://2c3bc07df7606365a0c449d3193cefe8.m3u8
+RTE 2:mpd://36fc922224816d18332eb55b897746ba.m3u8
+RTL:mpd://efe01da942ed68b700b911f5a1b131a7.m3u8
+RTL Nitro:mpd://63c32568297d3d493b484a35b9022951.m3u8
+Sat 1:mpd://a7af4c42c5a684ca822c2a79af0e5a90.m3u8
+SIXX TV:mpd://298b488cf4205e03edc17afc8de9527b.m3u8
+Sky Action:mpd://e5c20351b28ad001056a35ab8879e3ef.m3u8
+Sky Arts 2:mpd://19720b905499b5bc8ff1c34eeb6c6e91.m3u8
+Sky Atlantic Ireland:mpd://eabd32acc39d4bd72a4ad687090aef8f.m3u8
+Sky Cinema (Deutschland):mpd://921a17733860f7f08fc434085cc18421.m3u8
+Sky Emotion:mpd://c12dd56f3aff023c9d60697b45c8867c.m3u8
+Sky Living:mpd://26cb04f6748172109489d18b64feca2e.m3u8
+Sky Movies (Modern Greats):mpd://a2d025900c268045e4e2da567a8c3f9b.m3u8
+Sky Movies Action & Adventure:mpd://3c909c9218961b2ecfdd5f44a89a90b8.m3u8
+Sky Movies Comedy:mpd://c168262cf8b9775300da0b79b2199ee6.m3u8
+Sky Movies Crime & Thriller:mpd://a84271250d9dc93c1edc84874552d6c7.m3u8
+Sky Movies Disney:mpd://fb2cde6e0410cf537a19800bd19261f0.m3u8
+Sky Movies Drama & Romance:mpd://5081d68d4054bc9209ec2bb1c5ff5eef.m3u8
+Sky Movies Family:mpd://3caed59e3b7e405b3a802cc480a14e32.m3u8
+Sky Movies Premiere:mpd://3265682a41f442e5a4164e9b26393634.m3u8
+Sky Movies Sci-fi Horror:mpd://20abccafd4a26b6fce57df892e5040be.m3u8
+Sky Movies Select:mpd://760670eeaaa3e62adc1989fee2e8b259.m3u8
+Sky Movies Showcase:mpd://b6f08ad1b0976d993e116cbb72aef8bd.m3u8
+Sky One:mpd://ebcd8ef93fa99c4834d0cc3275f3dcd7.m3u8
+Sony Film Channel:mpd://cd5e2f21c8b8f7b42c054dcf4edc0b69.m3u8
+Spike TV:mpd://a01d4a2d79052d6b1c2c63bf2d284202.m3u8
+Spike TV:mpd://744a2e6d638ef5996394717e9e871717.m3u8
+Spike UK:mpd://3036779a6ef01d9c0da3b7e139a6445d.m3u8
+Super RTL:mpd://5375a143da899f4c318aa7518fc43278.m3u8
+SyFy:mpd://15bb1e6a7ebf945b85b834b2c84cf9f1.m3u8
+SyFy:mpd://d8320fedb4a90fb06c9f7bff96a7e619.m3u8
+Syfy (Germany):mpd://646bfd6945f63f6d1fdc0b4e6b446b1a.m3u8
+Syfy (Spain):mpd://8a52bd424550ef18d048e89d63be3ed9.m3u8
+TBS:mpd://d377ff63e9e229343418ba065acb643f.m3u8
+TBS:mpd://c370dca571a8e9eeb48104236808fe8d.m3u8
+TCM UK:mpd://1debc5c648b7d2fa58d76d8e90f314a9.m3u8
+Telecinco:mpd://ab71f380322e796b814765a382cb82b4.m3u8
+TG4:mpd://cd7247622a163a95d54994da83ee69fd.m3u8
+The CW:mpd://296e56c668bc8bd6b0044d3e4f034153.m3u8
+TLC:mpd://e12a8b6e18ee3d67dc8153f4f4713a40.m3u8
+TLC UK:mpd://d7aa295db6f5a09cc47f862d7042dd64.m3u8
+TNT (Spain):mpd://a351e9b9de9e6729b76115fb8e8cd9a8.m3u8
+TNT USA:mpd://b5e39fb359975ce6a68be8a6935d4d7e.m3u8
+TNT USA:mpd://e00dd9ccbf6cba8e47ca458993f307c1.m3u8
+Travel Channel UK:mpd://614452655bc157322106de2e209a2853.m3u8
+True Movies:mpd://d2c73be17b950368083f5c7ca9445cb9.m3u8
+True Movies 2:mpd://f24ec9b08bbf156e4b0d1e0065ed204b.m3u8
+TV3 (Ireland):mpd://01823533507c24960b87a6f8e0049c5c.m3u8
+TVE La 2:mpd://5f2ef715f5b709f65b146342fb3a5bc2.m3u8
+TVE La Primera:mpd://5bff4eaacfb2c2b61cf1e01ed6b75917.m3u8
+USA Network:mpd://0e367435d4bc1a89ea7506cf0eadb3a7.m3u8
+USA Network:mpd://6e41f30f946d9327c3322a05250735a7.m3u8
+VOX:mpd://ccda5ae0852a58ca19ec280be9db8ee5.m3u8
+WWOR-TV:mpd://f55025e27be5231454658cc200a5565e.m3u8

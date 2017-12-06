@@ -1,0 +1,14 @@
+
+BBC News 24:mpd://b08264f362f74f9a2b44c209f40dbdee.m3u8
+Bloomberg:mpd://208421fcbc090a62f099f85472ded9ba.m3u8
+CNBC:mpd://0fa1864db527d3de89020cb06a050b35.m3u8
+CNBC:mpd://aa11677d237b2c2b435fd7decac0d7ad.m3u8
+CNN International:mpd://81584236b35ba70e2e9a12f5fb338ff0.m3u8
+CNN International:mpd://fb655e03035550c14fc2bcc65d40cff8.m3u8
+Fox 43 WMPT:mpd://12435593255e0696ec0a09071b96f97e.m3u8
+Fox News Channel:mpd://877e1fd192b3a58577e4387971c215a7.m3u8
+n-tv:mpd://901910dbcbc321c46ae35096a3a65968.m3u8
+N24:mpd://e24244c926110424f94896c030fc0500.m3u8
+NBC:mpd://89b7abacbe0cefbadf6ad5c5ccb4ae15.m3u8
+NBC:mpd://3baf7db0d8f1d400816fb6166b297f46.m3u8
+Sky News:mpd://3b7dd11b6654dd5f35745285ededdbd9.m3u8

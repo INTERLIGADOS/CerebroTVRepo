@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.rsiptv" name="[COLOR blue]RS[/COLOR]IPTV SCRIPT" version="1.0.8" provider-name="RSIPTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.video.F4mProxy" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR blue]RS[/COLOR]IPTV SCRIPT  #####Credits to sClarke's Addon's #####</summary>
+    <description lang="en">[COLOR blue]RS[/COLOR]IPTV SCRIPT  #####Credits to sClarke's Addon's #####</description>
+	    <platform>all</platform>
+  </extension>
+</addon>

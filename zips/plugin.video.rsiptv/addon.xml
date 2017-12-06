@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.rsiptv"
+       name="[COLOR blue]RS[/COLOR]IPTV"
+       version="0.0.7"
+       provider-name="RSIPTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="false"/>
+    <import addon="plugin.video.youtube" optional="false" />
+    <import addon="script.module.urlresolver" optional="false"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+ 
+	 
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  
+   <extension point="xbmc.addon.repository" name="repository.rsiptv">
+		<info compressed="false">http://rsiptv.amerikanotuga.tech/addon/addons.xml</info>
+		<checksum>http://rsiptv.amerikanotuga.tech/addon/addons.xml.md5</checksum>
+		<datadir zip="true">http://rsiptv.amerikanotuga.tech/addon/zip/</datadir>
+	</extension>
+	
+	
+  <extension point="xbmc.addon.metadata">
+    <summary>RSIPTV</summary>
+    <description>Todos os links disponibilizados no Addon estao disponiveis 
+em procura livre na internet.</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.gif</fanart>
+        </assets>
+  </extension>
+</addon>
+

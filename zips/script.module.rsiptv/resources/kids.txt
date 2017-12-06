@@ -1,0 +1,10 @@
+
+Animation Movies :mpd://7e18e745bf13ed4e73c5e612599b4cf5.m3u8
+Classic Looney Tunes :mpd://d91af6958918af87d6a057c1cdf5b225.m3u8
+SpongeBob SquarePants :mpd://2f2c4b3c9681d732d678ae4094241250.m3u8
+Adventure Time :mpd://7d0db380a5b95a8ba1da0bca241abda1.m3u8
+The Regular Show :mpd://af37d08ae228a87dc6b265fd1019c97d.m3u8
+The Marvelous Misadventures of Flapjack :mpd://3be041f44c2035c41eea8268f238e741.m3u8
+Dragoon Ball :mpd://0de7b6a61a70688b26e6eeb3113531a3.m3u8
+Ren and Stimpy :mpd://3a2d7564baee79182ebc7b65084aabd1.m3u8
+The Simpsons :mpd://3691308f2a4c2f6983f2880d32e29c84.m3u8

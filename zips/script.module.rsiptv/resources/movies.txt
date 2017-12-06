@@ -1,0 +1,9 @@
+
+Action Movies 24/7:mpd://90ce2364e02379b96643fe4d0f2d7c25.m3u8
+Animation Movies 24/7:mpd://7e18e745bf13ed4e73c5e612599b4cf5.m3u8
+Comedy Movies 24/7:mpd://6fd04bc5b53697040f6f43a3c96d7658.m3u8
+Documentary Movies 24/7:mpd://993ce9ee723cef89c679b7a55e42472a.m3u8
+Harry Potter vs Lord Of The Rings:mpd://cba19b64326f3f317a6af74844d32d17.m3u8
+Horror Movies 24/7:mpd://377feb82d0b63676a18f18f152f6c721.m3u8
+Movies 24/7:mpd://94d035945b3d82182669c4d3f6daa104.m3u8
+Star Trek vs Star Wars:mpd://9a045dead94fad2ceb3c5c808dd964b6.m3u8
