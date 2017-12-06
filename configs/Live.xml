@@ -142,6 +142,20 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]UK IPTV[/COLOR] (MiC)</title>
+<link>plugin://plugin.video.mic/?fanart=http%3a%2f%2fwallpapercave.com%2fwp%2fPaxa7aH.jpg&amp;mode=1&amp;name=UK%20TV%20LIST&amp;url=http%3a%2f%2fpastebin.com%2fraw%2fKVwvg6h4%24%24LSProEncKey%3dxY4naH0lS58wJGl7%24%24</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]US IPTV[/COLOR] (MiC)</title>
+<link>plugin://plugin.video.mic/?fanart=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2016%2f05%2fAmerica-Flag-PNG-Picture.png&amp;mode=1&amp;name=%5bCOLOR%20red%5dU%5b%2fCOLOR%5d%20%5bCOLOR%20white%5dS%5b%2fCOLOR%5d%20%5bCOLOR%20blue%5dA%5b%2fCOLOR%5d%20LIST&amp;url=http%3a%2f%2fpastebin.com%2fraw%2fR3ZQDpm5%24%24LSProEncKey%3do41Yvy2r7zDEc9q0%24%24</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
 <dir>
 <name>[COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247menu.xml</link>
