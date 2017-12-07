@@ -1860,7 +1860,7 @@ em procura livre na internet.</description>
 
 <addon
   id="plugin.video.Showbox"
-  version="9.3"
+  version="9.4"
   name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]CerebroTV Vidics Player[/B][/COLOR]"
   provider-name="Biglad">
   <requires>

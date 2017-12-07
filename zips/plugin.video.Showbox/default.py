@@ -26,7 +26,8 @@ def d():
 	except:
 		pass
 #aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZjZXJlYnJvdHYuY28udWslMkZwJTJG < old        
-d() 
+d()
+xbmc.sleep(1000)  
 #import html
 
 #from thetvdb import TheTvDb
