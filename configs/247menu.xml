@@ -23,6 +23,29 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </dir>
 
+<plugin>
+<title>[COLOR pink]24-7 TV Shows[/COLOR] (Live) (Backup)</title>
+<link>plugin://plugin.video.ccloudtv/?iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cresources%2ficons%2f%2ftwentyfourseven.png&mode=60&name=%5bCOLOR%20white%5d24%2f7%20Channels%5b%2fCOLOR%5d&url=24</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]24-7 TV Shows[/COLOR] (Live) (Backup)</title>
+<link>plugin://plugin.video.ccloudtv/?iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cresources%2ficons%2f%2ftwentyfourseven.png&mode=60&name=%5bCOLOR%20white%5d24%2f7%20Channels%5b%2fCOLOR%5d&url=24</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]24-7 TV Show Searcher[/COLOR]</title>
+<link>plugin://plugin.video.quantum/?description&extra&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.quantum%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.quantum%5cicon.png&mode=818&name=24%2f7%20Search%20Cartoon&url</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+
+
 
 
 
