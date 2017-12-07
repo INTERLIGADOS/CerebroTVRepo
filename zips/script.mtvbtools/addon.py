@@ -60,7 +60,7 @@ def menuoptions():
     '[B][COLOR=green]Test My Connection Speed[/COLOR][/B]', 
     '[B][COLOR=lightblue]Re-Download the last update[/COLOR][/B]', 
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
-    '[B][COLOR=cyan]Change My System Sounds[/COLOR][/B]',
+    '[B][COLOR=cyan]CerebroTV WebCam[/COLOR][/B]',
     '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)',
 	'[B][COLOR=gold]Change GUI Sounds[/COLOR][/B]'])
     # dialog.selectreturns
@@ -114,7 +114,7 @@ def function6():
     xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
         
 def function7():
-    xbmc.executebuiltin('ActivateWindow(10040,"addons://repository.xbmc.org/kodi.resource.uisounds",return)')  
+    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.surveillanceroom/?action=single_camera&camera_number=1")')  
 
 def function8():
     xbmc.executebuiltin('ActivateWindow(10040,"addons://outdated/",return)')
