@@ -38,6 +38,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Sky Cinema on Demand[/COLOR]</title>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+<link>plugin://plugin.video.rebirth/?action=channels</link>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Vidics New Movies[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
