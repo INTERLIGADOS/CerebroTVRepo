@@ -21,7 +21,8 @@ class Movie321(Scraper):
         try:
             start_url = self.base_link + '/episodes/' + title.replace(' ','-') + '-' + season + 'x' + episode
             #print 'GW> '+start_url
-            html = requests.get(start_url).content
+            headers={'User-Agent':User_Agent}
+            html = requests.get(start_url,headers=headers,timeout=5).content
             #print 'PAGE > '+html
             match = re.compile('class="metaframe rptss" src="(.+?)"').findall(html)
             for link in match: 
@@ -45,7 +46,7 @@ class Movie321(Scraper):
             start_url = self.base_link + '/?s=' + search_id.replace(' ','+')
             #print 'GW> '+start_url
             headers={'User-Agent':User_Agent}
-            html = requests.get(start_url,headers=headers,timeout=10).content
+            html = requests.get(start_url,headers=headers,timeout=5).content
             match = re.compile('class="thumbnail.+?href="(.+?)">.+?alt="(.+?)".+?class="year">(.+?)</span>',re.DOTALL).findall(html)
             for url,name,date in match:
                 print 'CHK>>'+name
@@ -64,7 +65,7 @@ class Movie321(Scraper):
             
             #print 'FILM_URL= '+url
             headers={'User-Agent':User_Agent}
-            OPEN = requests.get(url,headers=headers,timeout=10).content
+            OPEN = requests.get(url,headers=headers,timeout=5).content
             Regex = re.compile('</iframe>.+?class="metaframe rptss" src="(.+?)"',re.DOTALL).findall(OPEN)
             for link in Regex: 
                 host = link.split('//')[1].replace('www.','')

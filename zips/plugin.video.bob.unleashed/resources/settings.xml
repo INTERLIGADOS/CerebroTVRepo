@@ -10,14 +10,12 @@
                values="system|bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh"
                id="language_id" default="system"/>
       <setting label="32507" type="lsep"/>
-      <setting label="30717" type="bool" id="metadata" default="true"/>
+      <setting label="30717" type="bool" id="metadata" default="false"/>
       <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="false"/>
       <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="Trakt"/>
       <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="Trakt"/>
       <setting label="32510" type="lsep"/>
       <setting label="32511" type="select" values="BOTH|SD|HD" id="default_link" default="BOTH"/>
-      <setting label="32512" type="lsep"/>
-      <setting label="32513" type="select" values="DEFAULT|CARS|COLOURFUL|KIDS|MOVIES|SPACE|GIF LIFE|GIF NATURE|USER" id="theme" default="DEFAULT"/>
       <setting label="32514" type="lsep"/>
       <setting label="32515" type="bool" id="enable_gifs" default="false" />
     </category>
@@ -31,7 +29,7 @@
       <!-- scraper settings -->
       <setting label="30734" type="action" option="close"
                action="RunPlugin(plugin://plugin.video.bob.unleashed/?mode=ScraperSettings)"/>
-      <setting id="use_link_dialog" label="30744" type="bool" default="false" />
+      <setting id="use_link_dialog" label="30744" type="bool" default="true" />
       <setting id="link_fallthrough" label="30745" type="bool"	default="true" visible="eq(-1,true)"/>
       <setting label="30741" type="lsep"/>
       <setting label="30742" type="action" option="close"
@@ -47,9 +45,6 @@
       <setting id="enable_offensive" label="30761" type="bool" default="false" enable="eq(-1,false)"/>
       <setting label="queueing Options" type="lsep"/>
       <setting id="include_watched_queue" label="Include Watched In Collection Queueing" type="bool" default="false"/>
-      <setting id="background_list_queue" label="Enable Background Queueing For Collection Types (Experimental)"
-               type="bool" default="false"/>
-      <setting id="disable_service" label="Disable Background Queue Service (NEEDS A RESTART TO REENABLE AFTER TOGGLING)" type="bool" default="true"/>
       <setting id="autostart_queue" label="Auto start queue if empty" type="bool" default="true"/>
     </category>
 
@@ -66,8 +61,11 @@
     <category label="30770">
       <!-- debugging and developer options -->
       <setting id="debug" type="bool" label="30758" default="false" visible="true"/>
-      <setting id="first_run" label="first run" type="bool" default="true" visible="false"/>
+      <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
       <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.bob.unleashed/"/>
+      <setting id="TRAKT_ACCES_TOKEN" label="" type="text" visible="false"/>
+      <setting id="TRAKT_EXPIRES_AT" label="" type="text" visible="false"/>
+      <setting id="TRAKT_REFRESH_TOKEN" label="" type="text" visible="false"/>
     </category>
 
 

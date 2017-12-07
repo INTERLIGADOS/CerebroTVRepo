@@ -18,7 +18,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import os
-import __builtin__
 import urllib
 import sys
 import urllib2
@@ -29,9 +28,9 @@ import xbmc
 import xbmcaddon
 import xbmcvfs
 import koding
-import shutil
 import requests
-
+from resources.lib.plugin import run_hook
+from language import get_string as _
 
 def __replace_gif(url):
     """ put gifs in local cache
@@ -70,7 +69,7 @@ def __replace_gif(url):
                     koding.dolog("size: " + repr(os.path.getsize(dest)))
             else:
                 koding.Text_Box(xbmcaddon.Addon().getAddonInfo('name'),
-                                "gif not found: " + url)
+                                _("gif not found: ") + url)
                 return None
         xbmc.log("gif done: " + repr(dest))
         return dest
@@ -78,31 +77,15 @@ def __replace_gif(url):
 
 def replace_url(url, replace_gif=True):
     """ replace url with correct one
-    replace url to point to correct bob server
+    replace url to point to correct jen server
     Keyword Arguments:
     url         -- url to replace
     replace_gif -- whether to place gifs into cache to enable motion
                    (default True)
     """
-    try:
-        if __builtin__.BOB_BASE_DOMAIN == "\"|w=":
-            __builtin__.BOB_BASE_DOMAIN = "norestrictions.club/norestrictions.club"
-    except:
-        __builtin__.BOB_BASE_DOMAIN = "norestrictions.club/norestrictions.club"
-    if 'norestrictions.noobsandnerds.com' in url and 'norestrictions.club/norestrictions.club' not in url:
-        url = url.replace('norestrictions.noobsandnerds.com',
-                          __builtin__.BOB_BASE_DOMAIN)
-    elif 'www.norestrictions.club' in url and 'www.norestrictions.club/norestrictions.club' not in url and 'norestrictions.club/norestrictions.club' not in url:
-        url = url.replace('www.norestrictions.club',
-                          __builtin__.BOB_BASE_DOMAIN)
-    elif 'www.norestrictions.club/norestrictions.club' in url:
-        url = url.replace(
-            'www.norestrictions.club/norestrictions.club', __builtin__.BOB_BASE_DOMAIN)
-    elif 'norestrictions.club' in url and 'norestrictions.club/norestrictions.club' not in url:
-        url = url.replace('norestrictions.club', __builtin__.BOB_BASE_DOMAIN)
-    elif 'norestrictions.club/norestrictions.club' in url:
-        url = url.replace(
-            'norestrictions.club/norestrictions.club', __builtin__.BOB_BASE_DOMAIN)
+    result = run_hook("replace_url", url)
+    if result:
+        url = result
     enable_gifs = xbmcaddon.Addon().getSetting('enable_gifs') == "true"
     if enable_gifs and replace_gif:
         return __replace_gif(url)

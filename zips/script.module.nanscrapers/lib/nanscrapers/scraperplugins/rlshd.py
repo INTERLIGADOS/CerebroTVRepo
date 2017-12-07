@@ -32,8 +32,8 @@ class Rlshd(Scraper):
     name = "rlshd"
 
     def __init__(self):
-        self.domains = ['rlshd..net']
-        self.base_link = 'rlshd..net'
+        self.domains = ['rlshd.net']
+        self.base_link = 'rlshd.net'
         self.search_link = 'http://www.rlshd.net/?s='
 
     def scrape_movie(self, title, year, imdb, debrid=False):

@@ -2,6 +2,7 @@
 
 import urllib2, urllib, xbmcgui, xbmcplugin, xbmc, re, sys, os, xbmcaddon, json, time, process, requests
 from threading import Thread
+from lib import net
 
 ADDON_PATH = xbmc.translatePath('special://home/addons/plugin.video.weetv/')
 ICON = ADDON_PATH + 'icon.png'
@@ -25,30 +26,7 @@ us_fan = base_icons + 'usflag.jpg'
 sport_fan = base_icons + 'sport.jpg'
 cbc = 'http://www.geetee.site/wizchannels/images/cbc.png'
 
-def ukonnow():
-    open = OPEN_URL('http://tvcatchup.com')
-    all  = regex_get_all(open,'<div class="channelsHolder','</div>')
-    for a in all:
-        name = re.compile('img src.+?alt="(.+?)"').findall(a)[0]        
-        name = (name).replace('Watch','')
-        icon = re.compile('src="(.+?)"').findall(a)[0]
-        url  = re.compile('href="(.+?)"').findall(a)[0]
-        epg  = re.compile('title="(.+?)"').findall(a)[0]
-        epg  = (epg).replace('&#039;','')
-        addDir('%s - %s'%(name,epg),'http://tvcatchup.com'+url,9999,icon,uk_fan,'') 
-                      
-def ukonnext():
-    open = OPEN_URL('http://tvcatchup.com/next')
-    all  = regex_get_all(open,'<div class="channelsHolder','</div>')
-    #for a in sorted(all):
-    for a in all:   
-        name = re.compile('src.+?alt="(.+?)"').findall(a)[0]        
-        name = (name).replace('Watch','')
-        icon = re.compile('src="(.+?)"').findall(a)[0]
-        url  = re.compile('href="(.+?)"').findall(a)[0]
-        epg  = re.compile('title="(.+?)"').findall(a)[0]
-        epg  = (epg).replace('&#039;','')
-        addDir('%s - %s'%(name,epg),'http://tvcatchup.com'+url,9999,icon,uk_fan,'')         
+
         
 def aiptvuk():
     open = OPEN_URL('http://autoiptv.net/playlist.php')

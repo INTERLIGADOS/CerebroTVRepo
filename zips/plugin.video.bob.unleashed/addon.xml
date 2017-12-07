@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.bob.unleashed" name="BoB Unleashed" version="1.0.11" provider-name="midraal">
+<addon id="plugin.video.bob.unleashed" name="BoB Unleashed" version="1.0.12" provider-name="midraal">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.nanscrapers" version="0.5.5" />
@@ -16,12 +16,10 @@
     </extension>
     <extension point="xbmc.service" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Unleash Your Inner Bob</summary>
-        <description lang="en">Unleash Your Inner Bob</description>
+        <summary lang="en">Bob's little sister</summary>
+        <description lang="en">Bob's little sister</description>
         <platform>all</platform>
-        <forum>http://www.noobsandnerds.com/support/forumdisplay.php?fid=253</forum>
         <website>www.noobsandnerds.com</website>
-        <video_guide>y0w8zIH4lOY</video_guide>
-        <video_preview>WdKIzajiBBI</video_preview>
+        <video_guide>xtOqLY5PJDY</video_guide>
     </extension>
 </addon>

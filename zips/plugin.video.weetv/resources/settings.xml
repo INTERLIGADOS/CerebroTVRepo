@@ -11,10 +11,19 @@
         <setting id="gvid" type="bool" label="Gvideo" default="true" />
         <setting id="direct" type="bool" label="Direct" default="true" />
     </category>	
-	<category label="Maintenance">
-        <setting label="NaN Scraper Settings(not working yet)" type="action" option="close"
-                 action="RunPlugin(plugin://script.module.nanscrapers/?action=openSettings)"/>
-					 
+	<category label="Tools">
+		<setting label="Wee Scraper Settings" type="action" option="close"action="RunPlugin(plugin://plugin.video.weetv/?mode=31)"/>				 
+		<setting label="Clear Wee Scraper Cache" type="action" action="RunPlugin(plugin://plugin.video.weetv/?mode=32)"/>	
+		<setting label="Clear weeTV Cache" type="action" action="RunPlugin(plugin://plugin.video.weetv/?mode=33)"/>	
+		<setting label="Clear Watched List" type="action" action="RunPlugin(plugin://plugin.video.weetv/?mode=34)"/>	
 	<setting id="debug" type="bool" label="Debugging" default="false"/>	
-    </category>		
+    </category>	
+
+	<category label="Test settings">
+		<setting id="allow_debrid" value="false" />
+		<setting id="allow_openload" value="false" />
+		<setting id="allow_the_video_me" value="true" />
+		<setting id="allow_vidup_me" value="true" />
+	</category>
+	
 </settings>

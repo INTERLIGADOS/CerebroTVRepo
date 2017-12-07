@@ -25,14 +25,17 @@ import time
 import requests
 import resources.lib.external.tmdbsimple as tmdbsimple
 import resources.lib.external.tvdb_api as tvdb_api
+from resources.lib.plugin import run_hook
 from koding import route
 import koding
 import pickle
+import __builtin__
+from language import get_string as _
 
 ADDON = xbmcaddon.Addon()
 TRAKT_API_ENDPOINT = "https://api.trakt.tv"
-TRAKT_CLIENT_ID = "948c4e2514db4f2cca33e737f5e73ae213e537d344b9916983e53e3cc2a1b21c"
-TRAKT_CLIENT_SECRET = "140369c2c981732a7b183db2e9300065629b8b7417a149a0c4e098ebee8f692e"
+TRAKT_CLIENT_ID = __builtin__.trakt_client_id
+TRAKT_CLIENT_SECRET = __builtin__.trakt_client_secret
 TTL = 1440 * 31
 
 if ADDON.getSetting("language_id") == "system":
@@ -42,7 +45,7 @@ else:
     LANG = ADDON.getSetting("language_id")
 
 tvdb = tvdb_api.Tvdb(
-    "0629B785CE550C8D",
+    __builtin__.tvdb_api_key,
     language=LANG,
     cache=xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")))
 
@@ -289,7 +292,8 @@ def _convert_trakt_tvshow_metadata(show, genres_dict=None):
     return info
 
 
-def _convert_tvdb_tvshow_metadata(tvdb_show, imdb_id, banners=True, language="en"):
+def _convert_tvdb_tvshow_metadata(tvdb_show, imdb_id, banners=True,
+                                  language="en"):
     """
     converts tvdb tv show metadata to format suited for kodiswift
     Args:
@@ -432,7 +436,8 @@ def _convert_tvdb_season_metadata(show_metadata,
     return info
 
 
-def _convert_tvdb_episode_metadata(imdb_id , season_metadata, episode, banners=True):
+def _convert_tvdb_episode_metadata(imdb_id , season_metadata, episode,
+                                   banners=True):
     """
     converts tvdb episode metadata to format suited for kodiswift
     Args:
@@ -811,7 +816,10 @@ def parse_year(text):
 
 
 def get_info(items, dialog=None):
-    from resources.lib.util.xml import BobItem
+    from resources.lib.util.xml import JenItem
+    result = run_hook("get_info", items, dialog)
+    if result:
+        return result
     koding.reset_db()
     info = []
     num_items = len(items)
@@ -821,12 +829,12 @@ def get_info(items, dialog=None):
                 dialog.close()
                 break
             percent = ((index + 1) * 100) / num_items
-            dialog.update(percent, "processing metadata",
+            dialog.update(percent, _("processing metadata"),
                           "%s of %s" % (index + 1, num_items))
         if type(item_xml) == dict:
             item = item_xml
         else:
-            item = BobItem(item_xml)
+            item = JenItem(item_xml)
         item_info = {}
         content = item.get("content", "")
         try:

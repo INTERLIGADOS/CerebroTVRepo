@@ -42,7 +42,8 @@ def test_Main_Menu(url):
     process.Menu('weeTV Shows','http://www.imdb.com/list/ls025776108/',16,'','','','')                                          
     #process.Menu('IMDB Top 100 Programs','http://www.imdb.com/chart/tvmeter?ref_=m_nv_ch_tvm',301,ICON,FANART,'','')
     #process.Menu('IMDB Top Rated Shows','http://www.imdb.com/chart/toptv?pf_rd_m',301,ICON,FANART,'','')    
-    #process.Menu('####################','','','','','','')          
+    process.Menu('tvcatchup','','313','','','','')  
+    process.Menu('tvcatchup next','','314','','','','') 	
     process.Menu('My Watched Shows','',18,'','','','')
     #process.Menu('Latest Episodes','',19,'','','','')
     process.Menu('Watched Shows item','',21,'','','','')   
@@ -50,7 +51,10 @@ def test_Main_Menu(url):
     process.Menu('Search','',308,ICON,FANART,'','')
     
     xbmcplugin.endOfDirectory(int(sys.argv[1])) 
+####################	
+
 	
+#########################	
 def aiptvuk():
     open = OPEN_URL('http://autoiptv.net/playlist.php')
     regex = re.compile('#EXTINF:.+?DOM",(.+?)\n(.+?)\n', re.MULTILINE|re.DOTALL).findall(open)

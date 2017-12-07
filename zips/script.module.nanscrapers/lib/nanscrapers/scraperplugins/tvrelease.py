@@ -4,8 +4,8 @@ import xbmc
 import urllib
 from ..common import get_rd_domains
 from ..scraper import Scraper
+from nanscrapers.modules import cfscrape
 
-s = requests.session()
 User_Agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
 
 class tvrelease(Scraper):
@@ -15,6 +15,7 @@ class tvrelease(Scraper):
 
     def __init__(self):
         self.base_link = 'http://tv-release.pw/'
+        self.scraper = cfscrape.create_scraper()
         self.sources = []
 
     def scrape_movie(self, title, year, imdb, debrid=False):
@@ -24,7 +25,7 @@ class tvrelease(Scraper):
             start_url = "%s?s=%s+%s&cat=Movies-XviD,Movies-720p,Movies-480p,Movies-Foreign,Movies-DVDR,"%(self.base_link,title.replace(' ','+').lower(),year)
             #SEND2LOG(start_url)
             headers = {'User_Agent':User_Agent}
-            OPEN = requests.get(start_url,headers=headers,verify=False).content
+            OPEN = self.scraper.get(start_url,headers=headers,verify=False).content
             
             content = re.compile("href='http://tv-release.pw/(\d*\/.+?)'",re.DOTALL).findall(OPEN)
             for url in content:
@@ -50,8 +51,8 @@ class tvrelease(Scraper):
                                                           '%20', season_url, episode_url)
             #SEND2LOG(start_url)
             headers = {'User_Agent':User_Agent}
-            OPEN = requests.get(start_url,headers=headers,verify=False).content
-            
+            OPEN = self.scraper.get(start_url,headers=headers,verify=False).content
+
             content = re.compile("href='http://tv-release.pw/(\d*\/.+?)'",re.DOTALL).findall(OPEN)
             for url in content:
                 result = '%s%s'%(self.base_link,url)
@@ -69,7 +70,7 @@ class tvrelease(Scraper):
         try:    
             res_check=url
             headers = {'User_Agent':User_Agent}
-            links = requests.get(url,headers=headers,verify=False).content   
+            links = self.scraper.get(url,headers=headers,verify=False).content   
             link = re.compile("class=\"td_cols\".+?href='(.+?)'").findall(links)  
             for url in link:
                 if '720' in res_check.lower():

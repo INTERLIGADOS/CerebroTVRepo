@@ -19,7 +19,7 @@ class Watchcartoons(Scraper):
     def scrape_episode(self, title, show_year, year, season, episode, imdb, tvdb, debrid = False):
         try:
             cleaned_title = title.replace(' ', '').replace('amp;', '').replace('\'','').lower()
-            for link in [self.base_link_cartoons]:
+            for link in [self.base_link_cartoons,self.dubbed_link_cartoons]:
                 html = requests.get(link).text
                 match = re.compile('<a href="(.+?)" title=".+?">(.+?)</a>').findall(html)
                 for url, name in match:

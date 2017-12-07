@@ -20,21 +20,27 @@ addon_id = 'plugin.video.weetv'
 ADDON = xbmcaddon.Addon(id=addon_id)
 PATH = 'weetv'
 VERSION = '0.0.1'
+
 favourites = ADDON_DATA + 'favourites'
 if os.path.exists(favourites) == True:
     FAV = open(favourites).read()
 else:
     FAV = []
+	
 watched = ADDON_DATA + 'watched'
 if os.path.exists(watched) == True:
     WATCHED = open(watched).read()
+    xbmc.log('WATCHED 1',xbmc.LOGNOTICE)		
 else:
     WATCHED = []
+    xbmc.log('WATCHED 2',xbmc.LOGNOTICE)		
+	
 imdbFile = ADDON_DATA + 'imdb'
 if os.path.exists(imdbFile) == True:
     IMDB = open(imdbFile).read()
 else:
     IMDB = []
+	
 dp = xbmcgui.DialogProgress()
 addon_handle = int(sys.argv[1])
 List = []
@@ -63,14 +69,18 @@ def Menu(name, url, mode, iconimage, fanart, description, extra, showcontext=Tru
                 imdb_log(name,url,iconimage)
     if showcontext:
         contextMenu = []
-        if showcontext == 'fav':
+        '''if showcontext == 'fav':
             contextMenu.append(('Remove from weetv Favorites', 'XBMC.RunPlugin(%s?mode=12&name=%s)'
+            #contextMenu.append(('Remove from weetv Favorites', 'XBMC.RunPlugin(plugin://plugin.video.weetv/?mode=12&name=wee)'			
+					
                                 % (sys.argv[0], urllib.quote_plus(name))))
         if not name in FAV:
             contextMenu.append(('Add to weetv Favorites',
                                 'XBMC.RunPlugin(%s?mode=11&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
+							
                                 % (sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url),
                                    urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
+		'''						   
         if showcontext == 'watched':
             contextMenu.append(('Remove from weetv Watched List', 'XBMC.RunPlugin(%s?mode=17&name=%s)'
                                 % (sys.argv[0], urllib.quote_plus(name))))
@@ -92,7 +102,7 @@ def PLAY(name, url, mode, iconimage, fanart, description, extra, showcontext=Tru
     liz.setProperty("Fanart_Image", fanart)
     if showcontext:
         contextMenu = []
-        if showcontext == 'fav':
+        '''if showcontext == 'fav':
             contextMenu.append(('Remove from weetv Favorites', 'XBMC.RunPlugin(%s?mode=17&name=%s)'
                                 % (sys.argv[0], urllib.quote_plus(name))))
         if not name in FAV:
@@ -100,6 +110,7 @@ def PLAY(name, url, mode, iconimage, fanart, description, extra, showcontext=Tru
                                 'XBMC.RunPlugin(%s?mode=11&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
                                 % (sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url),
                                    urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
+		'''						   
         if showcontext == 'watched':
             contextMenu.append(('Remove from weetv Watched List', 'XBMC.RunPlugin(%s?mode=12&name=%s)'
                                 % (sys.argv[0], urllib.quote_plus(name))))
@@ -126,7 +137,6 @@ def queueItem():
 def imdb_log(name,url,iconimage):
     imdbList = []
     try:
-        # seems that after
         name = name.encode('utf-8', 'ignore')
     except:
         pass
@@ -142,28 +152,27 @@ def imdb_log(name,url,iconimage):
         b = open(imdbFile, "w")
         b.write(json.dumps(data))
         b.close()
-
+	
 def watched_shows(name,show_year,year,season,episode,imdb_url):
-#def watched_shows(name,'','','',episode,imdb_url):
     if episode[0] == '0':
         episode = episode[1:]
     if season[0] == '0':
         season = season[1:]
     watchedList = []
     run = False
-
+    xbmc.log('WATCHED 3',xbmc.LOGNOTICE)	
     try:
-        # seems that after
         name = name.encode('utf-8', 'ignore')
     except:
         pass
     if os.path.exists(watched) == False:
-        watchedList.append((name,show_year,year,season,episode,imdb_url))
-        #watchedList.append((name,'','','',episode,imdb_url))		
+        watchedList.append((name,show_year,year,season,episode,imdb_url))		
         a = open(watched, "w")
         a.write(json.dumps(watchedList))
         a.close()
     file_open = json.loads(open(watched).read())
+    xbmc.log('WATCHED 4',xbmc.LOGNOTICE)		
+		
     for item in file_open:
         item_season = item[3]
         item_episode = item[4]
@@ -191,7 +200,8 @@ def watched_shows(name,show_year,year,season,episode,imdb_url):
         b = open(watched, "w")
         b.write(json.dumps(data))
         b.close()
-
+    xbmc.log('WATCHED 5',xbmc.LOGNOTICE)
+	
 def rmWatched(name):
     data = json.loads(open(watched).read())
     for index in range(len(data)):
@@ -201,14 +211,18 @@ def rmWatched(name):
             b.write(json.dumps(data))
             b.close()
             break
+    xbmc.log('WATCHED 6',xbmc.LOGNOTICE)				
     xbmc.executebuiltin("XBMC.Container.Refresh")
 
+	
+	
 # ===============================Favourites-----------Not sure whos code this is but credit due to them-------------------------------
 
 def addon_log(string):
     if debug == 'true':
-        xbmc.log("[plugin.video.weetv-%s]: %s" % (addon_version, string))
-
+        #xbmc.log("[plugin.video.weetv-%s]: %s" % (addon_version, string))
+        xbmc.log('FAV1',xbmc.LOGNOTICE)
+	
 def addFavorite(name, url, mode, iconimage, fanart, desc, extra):
     favList = []
     try:

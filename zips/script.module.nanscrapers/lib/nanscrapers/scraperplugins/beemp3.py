@@ -40,7 +40,7 @@ class BeeMP3(Scraper):
                 if result:
                     return result
         except Exception as e:
-            xbmc.log("e:" + repr(e), xbmc.LOGNOTICE)
+            xbmc.log("e:" + repr(e))
             pass
         return []
 
@@ -48,23 +48,30 @@ class BeeMP3(Scraper):
         sources = []
         result = html.find("div", "result")
         for item in result.findAll("div", "item"):
-            title_block = item.find("div", "title")
-            link = title_block.find("a")
-            link_href = link["href"]
-            spans = link.findAll("span")
-            link_artist = spans[0].text
-            link_title = replaceHTMLCodes(spans[1].text)
-            if not clean_title(link_title) == clean_title(title):
+            try:
+                title_block = item.find("div", "title")
+                link = title_block.find("a")
+                link_href = link["href"]
+                spans = link.findAll("span")
+                link_artist = spans[0].text
+                link_artist = link_artist.replace("&#039;", "'")
+                link_title = replaceHTMLCodes(spans[1].text)
+                if not clean_title(link_title) == clean_title(title):
+                    if clean_title(title) not in clean_title(link_title):
+                        continue
+                if not clean_title(artist) == clean_title(link_artist):
+                    if clean_title(artist) not in clean_title(link_artist):
+                        continue
+                headers2 = headers
+                headers2["referer"] = referer
+                html = BS(session.get(link_href, headers=headers2).content)
+                tab_content = html.find("div", "tab-content")
+                music_links = tab_content.findAll("a", "red-link")
+                link_label = '%s - %s' % (link_artist, link_title)
+                for music_link in music_links:
+                    sources.append(
+                        {'source': link_label, 'quality': 'HD', 'scraper':
+                         self.name, 'url': music_link["href"], 'direct': True})
+                return sources
+            except AttributeError:
                 continue
-            if not clean_title(artist) == clean_title(link_artist):
-                continue
-            headers2 = headers
-            headers2["referer"] = referer
-            html = BS(session.get(link_href, headers=headers2).content)
-            tab_content = html.find("div", "tab-content")
-            music_links = tab_content.findAll("a", "red-link")
-            for music_link in music_links:
-                sources.append(
-                    {'source': 'mp3', 'quality': 'HD', 'scraper':
-                     self.name, 'url': music_link["href"], 'direct': True})
-            return sources

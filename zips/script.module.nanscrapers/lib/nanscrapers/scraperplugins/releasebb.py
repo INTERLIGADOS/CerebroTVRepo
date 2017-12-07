@@ -75,7 +75,7 @@ class Releasebb(Scraper):
             query = urlparse.urljoin(self.search_base_link, query)
             headers = self.search_header_link
             headers["referer"] = query
-            r = requests.get(query, headers=headers).content
+            r = requests.get(query, headers=headers, timeout=10).content
             posts = []
             dupes = []
             print ("RELEASEBB QUERY", r)
@@ -139,7 +139,7 @@ class Releasebb(Scraper):
             query = urlparse.urljoin(self.search_base_link, query)
             headers = self.search_header_link
             headers["referer"] = query
-            r = requests.get(query, headers=headers).content
+            r = requests.get(query, headers=headers, timeout=10).content
             posts = []
             dupes = []
             print ("RELEASEBB QUERY", r)

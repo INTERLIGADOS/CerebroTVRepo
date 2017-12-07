@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-    seach.py --- functions dealing with searching bob
+    seach.py --- functions dealing with searching jen
     Copyright (C) 2017, Midraal
 
     This program is free software: you can redistribute it and/or modify
@@ -18,18 +18,20 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import requests
-
+import __builtin__
 import koding
 import xbmc
 import xbmcaddon
 from koding import route
 from resources.lib.util.info import get_info
 from resources.lib.util.url import get_addon_url, replace_url
-from resources.lib.util.xml import BobList, display_list
+from resources.lib.util.xml import JenList, display_list
+from resources.lib.plugin import run_hook
+from language import get_string as _
 
 theme = xbmcaddon.Addon().getSetting('theme')
 if theme and theme != 'DEFAULT' and theme != 'none':
-    fanart = BobList.set_theme(theme)
+    fanart = JenList.set_theme(theme)
 else:
     fanart = xbmcaddon.Addon().getAddonInfo('fanart')
 
@@ -57,19 +59,20 @@ def search():
     koding.Create_Table("search", search_spec)
     terms = koding.Get_All_From_Table("search")
     if terms:
-        koding.Add_Dir(name="Clear Search", mode="clear_search", folder=True,
+        koding.Add_Dir(name=_("Clear Search"), mode="clear_search",
+                       folder=True,
                        icon=icon, fanart=fanart)
     for term in terms:
         label = term["term"]
         context_menu = [
-            ("Remove Search",
+            (_("Remove Search"),
              "RunPlugin({0})".format(get_addon_url(mode="remove_search",
                                                    url=label)))
         ]
         koding.Add_Dir(name=label, url=label, mode="do_search", folder=True,
                        icon=icon, fanart=fanart, context_items=context_menu)
 
-    koding.Add_Dir(name="Add Search", mode="add_search", folder=True,
+    koding.Add_Dir(name=_("Add Search"), mode="add_search", folder=True,
                    icon=icon, fanart=fanart)
 
 
@@ -84,13 +87,18 @@ def do_search(term=None):
     import shutil
 
     search_term = term.lower()
-    boblist = BobList("")
-    boblist.list_image = xbmcaddon.Addon().getAddonInfo('icon')
+
+    result = run_hook("do_search", search_term)
+    if result:
+        display_list(result, "videos")
+        return
+    jenlist = JenList("")
+    jenlist.list_image = xbmcaddon.Addon().getAddonInfo('icon')
     theme = xbmcaddon.Addon().getSetting('theme')
     if theme and theme != 'DEFAULT' and theme != 'none':
-        boblist.list_fanart = boblist.set_theme(theme)
+        jenlist.list_fanart = jenlist.set_theme(theme)
     else:
-        boblist.list_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
+        jenlist.list_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
     result_list = []
     exact_result_list = []
     item_xml_result_list = []
@@ -98,7 +106,7 @@ def do_search(term=None):
     dest_file = os.path.join(xbmc.translatePath(
         xbmcaddon.Addon().getSetting("cache_folder")), "search.db")
 
-    url = "http://arbbuilds.org/bu/search.db"
+    url = __builtin__.search_db_location
     request = urllib2.Request(url)
     response = urllib2.urlopen(request)
     try:
@@ -108,12 +116,9 @@ def do_search(term=None):
         if not os.path.exists(dest_file) or \
            int(os.path.getmtime(dest_file)) < epoch_changed:
             dp = xbmcgui.DialogProgress()
-            dp.create('Loading database file', 'Please Wait')
+            dp.create(_('Loading database file'), _('Please Wait'))
             if response.getcode() == 200:
                 with open(dest_file, 'wb') as out_file:
-                    #data = response.read()
-                    #response.close()
-                    #out_file.write(data)
                     shutil.copyfileobj(response, out_file)
                 if os.path.getsize(dest_file) == 0:
                     koding.dolog("0 size db: " + repr(dest_file))
@@ -123,13 +128,13 @@ def do_search(term=None):
         if not os.path.exists(dest_file):
             import xbmcgui
             addon_name = xbmcaddon.Addon().getAddonInfo('name')
-            xbmcgui.Dialog().ok(addon_name, "no local file found, and server seems down")
+            xbmcgui.Dialog().ok(addon_name, _("no local file found, and server seems down"))
             dp.close()
     response.close()
 
     results = koding.DB_Query(dest_file, 'SELECT * from search where item like "%%%s%%"' % search_term)
     for result in results:
-        item = boblist.process_item(result["item"])
+        item = jenlist.process_item(result["item"])
         playlister = result["poster"]
         title = item["label"].lower()
         if search_term in title:
@@ -170,7 +175,7 @@ def do_search(term=None):
 
 @route(mode="add_search")
 def add_search():
-    term = str(koding.Keyboard("Enter search term"))
+    term = str(koding.Keyboard(_("Enter search term")))
     if not term:
         return
     koding.Add_To_Table("search", {"term": term})

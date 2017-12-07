@@ -26,12 +26,20 @@ class Mp3Clan(Scraper):
             query = self.search_link % (artist.replace(" ", "_"),
                                         title.replace(" ", "_"))
             query = urlparse.urljoin(self.base_link, query)
-            html = BS(session.get(query, headers=headers).content)
+            try:
+                html = BS(session.get(query, headers=headers,
+                                      timeout=5).content)
+            except:
+                query = query.replace('https://mp3clan.unblocked.bid',
+                                      "http://mp3clan.com")
+                html = BS(session.get(query, headers=headers,
+                                      timeout=5).content)
+
             result = self.process_results_page(html, title, artist, query)
             if result:
                 return result
         except Exception as e:
-            xbmc.log("e:" + repr(e), xbmc.LOGNOTICE)
+            xbmc.log("e:" + repr(e))
             pass
         return []
 
@@ -51,7 +59,8 @@ class Mp3Clan(Scraper):
                 continue
             if not clean_title(artist) == clean_title(link_artist):
                 continue
+            label = "%s - %s" % (link_artist, link_title)
             sources.append(
-                    {'source': 'mp3', 'quality': 'HD', 'scraper':
+                    {'source': label, 'quality': 'HD', 'scraper':
                      self.name, 'url': playlink, 'direct': True})
         return sources

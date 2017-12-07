@@ -1,10 +1,17 @@
-import os
-import re
-import sys
-import xbmc
-import xbmcgui
-import xbmcplugin
+import xbmcgui, xbmcplugin, xbmc, re, sys, os, xbmcaddon
+
 playlist = ['.mp4','.mkv','.m3u8','=m22','=m18','=m37']
+ADDON_PATH = xbmc.translatePath('special://home/addons/plugin.video.weetv/')
+ADDON = xbmcaddon.Addon(id='plugin.video.weetv')
+ICON = ADDON_PATH + 'icon.png'
+FANART = ADDON_PATH + 'fanart.jpg'
+USERDATA_PATH = xbmc.translatePath('special://home/userdata/addon_data')
+ADDON_DATA = os.path.join(USERDATA_PATH,'plugin.video.weetv')
+favourites = os.path.join(ADDON_DATA,'favourites')
+watched = os.path.join(ADDON_DATA,'watched')
+imdb = os.path.join(ADDON_DATA,'imdb')
+Dialog = xbmcgui.Dialog()
+debug = ADDON.getSetting('debug')
 
 def weeresolver(name,url):
 	try:
@@ -14,8 +21,8 @@ def weeresolver(name,url):
 			url = 'http:'+url
 		if '.mp4' in url or '.mkv' in url or 'm3u8' in url or '=m22' in url or '=m18' in url or '=m37' in url:
 			if 'openload' in url:
-				resolve(name,url)
-			elif 'embed' in url:
+				resolve(name,url)				
+			if 'embed' in url:
 				resolve(name,url)
 			elif '.html' in url:
 				resolve(name,url)
@@ -35,10 +42,8 @@ def weeresolver(name,url):
 			
 	except Exception as e:
 		xbmc.log(repr(e),xbmc.LOGNOTICE)
-		xbmcgui.Dialog().notification("Wee Resolver", "Can\'t find that link, Try another")
-		
-		
-	
+		xbmcgui.Dialog().notification("Wee Resolver", "Can\'t find link1, Try another")
+			
 def resolve(name,url):
 	run = False
 	Dialog = xbmcgui.Dialog()
@@ -52,7 +57,7 @@ def resolve(name,url):
 				domain_list = re.findall("domain.+?\[(.+?)\]",str(info))[0]
 				domains = re.findall("'(.+?)'",str(domain_list))
 				for domain in domains:
-					xbmcgui.Dialog().notification("Wee Resolvers", str(domain))
+					xbmcgui.Dialog().notification("starting Wee Resolvers1", str(domain))
 					if domain in url:
 						file_to_run = f
 						run = True
@@ -60,7 +65,7 @@ def resolve(name,url):
 		directory = s
 		module_name = file_to_run
 		module_name = os.path.splitext(module_name)[0]
-		xbmcgui.Dialog().notification("Wee Resolvers", str(module_name))
+		xbmcgui.Dialog().notification("starting Wee Resolvers2", str(module_name))
 		path = list(sys.path)
 		sys.path.insert(0, directory)
 		try:
@@ -68,13 +73,13 @@ def resolve(name,url):
 		finally:
 			sys.path[:] = path # restore
 		if sources == None:
-			xbmcgui.Dialog().notification("Wee Resolvers", "Can\'t find link1, Try another")
+			xbmcgui.Dialog().notification("Wee Resolvers", "No source found, Try another")
 			sys.exit()
 		elif len(sources)==1:
 			for link in sources:
 				xbmc.Player().play(link["url"], xbmcgui.ListItem(name))
 		elif len(sources)==0:
-			xbmcgui.Dialog().notification("Wee Resolvers", "Can\'t find link2, Try another")
+			xbmcgui.Dialog().notification("Wee Resolvers", "No source found h, Try another")
 			sys.exit()
 		else:
 			choice = Dialog.select('Select Playlink',[link["quality"] for link in sources])
@@ -83,5 +88,5 @@ def resolve(name,url):
 				isFolder=False
 				xbmc.Player().play(playlink, xbmcgui.ListItem(name))
 	else:
-		xbmcgui.Dialog().notification("Wee Resolvers", "Can\'t find link3, Try another")
-	
+		xbmcgui.Dialog().notification("Wee Resolvers", "Can\'t find link2, Try another")
+		

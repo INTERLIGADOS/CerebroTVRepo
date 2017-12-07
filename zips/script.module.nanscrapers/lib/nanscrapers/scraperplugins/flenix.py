@@ -3,7 +3,7 @@ import requests
 import xbmc
 import urllib
 from ..scraper import Scraper
-from ..common import clean_title
+from ..common import clean_title, random_agent, clean_search
 requests.packages.urllib3.disable_warnings()
 
 session = requests.Session()
@@ -16,24 +16,30 @@ class flenix(Scraper):
 
     def __init__(self):
         self.base_link = 'https://flenix.net/'
+        self.goog = 'https://www.google.co.uk'
         self.sources = []
 
     def scrape_movie(self, title, year, imdb, debrid=False):
         try:
-            search_id = title.lower()
-            headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0','Referer':'https://flenix.net/'}
-            response = session.get('https://flenix.net/',headers=headers)
-            url2 = 'https://flenix.net/engine/ajax/search.php'
-            form_data = {'query':search_id}
-            html = requests.post(url2,data=form_data,headers=headers).content
-            #print '::::::::::::::::::::::::::::::::'+html
-            results = re.compile('href="(.+?)".+?class="searchheading">(.+?)</span><span class="syear">(.+?)</span>',re.DOTALL).findall(html)
-            for url,link_title,date in results:
-                if clean_title(link_title).lower() == clean_title(title).lower():
-                    if date in year:
+        
+            scrape = clean_search(title.lower()).replace(' ','+')
+
+            start_url = '%s/search?q=flenix.net+%s+%s' %(self.goog,scrape,year)
+
+            headers = {'User-Agent':random_agent()}
+
+            html = requests.get(start_url,headers=headers).content
+
+            results = re.compile('href="(.+?)"',re.DOTALL).findall(html)
+            for url in results:
+
+                if self.base_link in url:
+
+                    if scrape.replace('+','-') in url:
+
                         ID = url.split('movies/')[1].split('-')[0]
-                        #print ':::::::::::::'+ID
-                        headers = {'User-Agent': User_Agent}
+                        print ':::::::::::::'+ID
+                        headers = {'User-Agent': random_agent()}
                         page_url= 'https://flenix.net/movies/%s/watch/'%ID
                         page = session.get(page_url,headers=headers)
                         req_url = 'https://flenix.net/?do=player_ajax&id=%s&xfn=player2' %ID

@@ -23,6 +23,7 @@ import xbmcgui
 import xbmcaddon
 import koding
 from koding import route
+from language import get_string as _
 
 view_spec = {
     "columns": {
@@ -63,7 +64,7 @@ def save_view_mode(content):
     })
     icon = xbmcaddon.Addon().getAddonInfo('icon')
     xbmcgui.Dialog().notification(xbmcaddon.Addon().getAddonInfo('name'),
-                                  "View set for %s" % content,
+                                  _("View set for %s") % content,
                                   icon)
 
 

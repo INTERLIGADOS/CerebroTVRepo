@@ -5,7 +5,7 @@ from ..scraper import Scraper
 from ..common import clean_title
 
 class dlfpro(Scraper):
-    domains = ['http://dl.dlfile.pro']
+    domains = ['http://dl.dlfile.pro/1/']
     name = "dlfpro"
     sources = []
 

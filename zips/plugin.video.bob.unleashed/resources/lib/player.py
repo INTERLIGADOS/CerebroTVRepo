@@ -5,7 +5,7 @@ import sys
 import xbmcplugin
 
 
-class BoBPlayer(xbmc.Player):
+class JenPlayer(xbmc.Player):
     tablespec = {
         "columns": {
             "identifier": "TEXT",

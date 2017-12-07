@@ -59,11 +59,14 @@ def get_raw(url, headers=None, data=None):
 
 def get_proxy_url():
     return random.choice([
+        'http://www.englandproxy.co.uk/%s',
         'http://buka.link/browse.php?u=%s&b=2',
-        'http://protectproxy.com/browse.php?u=%s&b=20',
         'http://proxite.net/browse.php?u=%s&b=20',
-        'http://unblockthatsite.net/browse.php?u=%s&b=0&f=norefer',
-        #'http://dontfilter.us/browse.php?b=20&u=%s',
+        'http://www.justproxy.co.uk/index.php?q=%s',
+        'http://dontfilter.us/browse.php?b=20&u=%s',
+        
+        #'http://unblockthatsite.net/browse.php?u=%s&b=0&f=norefer',
+        #'http://protectproxy.com/browse.php?u=%s&b=20',
         #'http://free-proxyserver.com/browse.php?b=20&u=%s',
         #'http://www.freeopenproxy.com/browse.php?b=20&u=%s',
         #'http://www.justproxy.co.uk/index.php?hl=2e5&q=%s',

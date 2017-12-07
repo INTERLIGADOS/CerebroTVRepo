@@ -24,20 +24,21 @@ import xbmcaddon
 import xbmcvfs
 
 from koding import route
-from resources.lib.util.xml import BobList
+from resources.lib.util.xml import JenList
 from resources.lib.util.xml import display_list
+
 
 @route(mode="Testings", args=["file_name"])
 def testings(file_name="testings.xml"):
     """
-parses local xml file as a bob list
+parses local xml file as a jen list
     :param str file_name: local file name to parse
-    :return: list of bob items
+    :return: list of jen items
     :rtype: list[dict[str,str]]
     """
     profile_path = xbmc.translatePath(xbmcaddon.Addon().getAddonInfo('profile')).decode('utf-8')
     test_file = xbmcvfs.File(os.path.join(profile_path, file_name))
     xml = test_file.read()
     test_file.close()
-    boblist = BobList(xml)
-    display_list(boblist.get_list(), boblist.get_content_type())
+    jenlist = JenList(xml)
+    display_list(jenlist.get_list(), jenlist.get_content_type())

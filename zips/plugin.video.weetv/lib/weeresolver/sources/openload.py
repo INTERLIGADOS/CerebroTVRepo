@@ -36,8 +36,8 @@ def resolve(url,count=None):
             msg = re.findall("'msg'.+?'(.+?)'",str(html))[0]
             pair_url = re.findall("http(.+?)',",str(html))[0]
             pair_url = 'http'+pair_url
-            line4 = "Would you like to open the pairing url: [B][COLOR blue]"+pair_url+"[/COLOR][/B], Or Select No then choose another link"		
-            choice = xbmcgui.Dialog().yesno('You need to pair to use this link',msg,'NEVER enter credit card details for this process!!',line4,nolabel='[COLOR red]No[/COLOR]',yeslabel='[COLOR cyan]Yes[/COLOR]')
+            line4 = "Would you like to open the pairing url: [B][COLOR blue]"+pair_url+"[/COLOR][/B], Or Select No and then choose another link"		
+            choice = xbmcgui.Dialog().yesno('You need to pair to use this link',msg,line4,nolabel='[COLOR red]No[/COLOR]',yeslabel='[COLOR cyan]Yes[/COLOR]')
             if choice == 1:
                 if xbmc.getCondVisibility('system.platform.android'):
                     try: xbmc.executebuiltin('StartAndroidActivity("","android.intent.action.VIEW","","'+pair_url+'")')

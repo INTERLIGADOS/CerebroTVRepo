@@ -28,10 +28,12 @@ from koding import route
 import sys
 import xbmcplugin
 
-from resources.lib.util.xml import BobItem, BobList
+from resources.lib.util.xml import JenItem, JenList
 from resources.lib.util.messages import get_link_message, get_searching_message
 from resources.lib.util.info import get_info
-from resources.lib.player import BoBPlayer
+from resources.lib.player import JenPlayer
+from resources.lib.plugin import run_hook
+from language import get_string as _
 
 ADDON = xbmcaddon.Addon()
 DIALOG = xbmcgui.Dialog()
@@ -149,7 +151,7 @@ class Sources(object):
                         pass
                     try:
                         played = output_function(
-                            url,
+                            link["url"],
                             showbusy=False,
                             ignore_dp=True,
                             item=listitem,
@@ -320,53 +322,53 @@ class Sources(object):
                 extended=True)
             if type(link) == dict and "path" in link:
                 link = link["path"]
-                if link is None:
-                    return False
-                url = link['url']
-                if ADDON.getSetting('link_fallthrough') == 'true':
-                    played = False
-                    index = 0
-                    links = []
-                    for item in rest:
-                        if type(item) == dict and "path" in item:
-                            links.extend(item["path"][1])
-                        else:
-                            links.extend(item[1])
-                    index = links.index(link)
-                    links = links[index + 1:]
-                    num_results = len(rest) + 1
-                    while not played:
-                        try:
-                            if dialog is not None and dialog.iscanceled():
-                                return
-                            if dialog is not None:
-                                index = index + 1
-                                percent = int((index * 100) / num_results)
-                                line = "%s - %s (%s)" % (link['scraper'],
-                                                         link['source'],
-                                                         link['quality'])
-                                dialog.update(percent, line)
-                        except:
-                            pass
-                        try:
-                            played = output_function(
-                                url,
-                                showbusy=False,
-                                ignore_dp=True,
-                                item=listitem,
-                                player=player)
-                            link = links[0]
-                            links = links[1:]
-                        except:
-                            return False
-                    return played
-                else:
-                    return output_function(
-                        url,
-                        showbusy=False,
-                        ignore_dp=True,
-                        item=listitem,
-                        player=player)
+            if link is None:
+                return False
+            url = link['url']
+            if ADDON.getSetting('link_fallthrough') == 'true':
+                played = False
+                index = 0
+                links = []
+                for item in rest:
+                    if type(item) == dict and "path" in item:
+                        links.extend(item["path"][1])
+                    else:
+                        links.extend(item[1])
+                index = links.index(link)
+                links = links[index + 1:]
+                num_results = len(rest) + 1
+                while not played:
+                    try:
+                        if dialog is not None and dialog.iscanceled():
+                            return
+                        if dialog is not None:
+                            index = index + 1
+                            percent = int((index * 100) / num_results)
+                            line = "%s - %s (%s)" % (link['scraper'],
+                                                     link['source'],
+                                                     link['quality'])
+                            dialog.update(percent, line)
+                    except:
+                        pass
+                    try:
+                        played = output_function(
+                            url,
+                            showbusy=False,
+                            ignore_dp=True,
+                            item=listitem,
+                            player=player)
+                        link = links[0]
+                        links = links[1:]
+                    except:
+                        return False
+                return played
+            else:
+                return output_function(
+                    url,
+                    showbusy=False,
+                    ignore_dp=True,
+                    item=listitem,
+                    player=player)
         links_scraper = nanscrapers.scrape_song(
             title,
             artist,
@@ -462,7 +464,35 @@ class Sources(object):
         else:
             quality = item[1][0]["path"]["quality"]
 
-        if quality.startswith("1080"):
+        if "path" in item[1][0]:
+            if 'debridonly' in item[1][0]["path"]:
+                q = "A"
+        elif 'debridonly' in item[1][0]:
+            q = "A"
+        else:
+            q = "B"
+
+        if q == "A":
+            if quality.startswith("1080"):
+                quality = "Aa"
+            elif quality.startswith("720"):
+                quality = "Ab"
+            elif quality.startswith("560"):
+                quality = "Ac"
+            elif quality == "DVD":
+                quality = "Ad"
+            elif quality == "HD":
+                quality = "Ae"
+            elif quality.startswith("480"):
+                quality = "Ba"
+            elif quality.startswith("360"):
+                quality = "Bb"
+            elif quality.startswith("SD"):
+                quality = "Bc"
+            else:
+                quality = "CZ"
+
+        elif quality.startswith("1080"):
             quality = "HDa"
         elif quality.startswith("720"):
             quality = "HDb"
@@ -515,7 +545,7 @@ def choose_quality(link, name=None, selected_link=None):
     choose quality for scraping
 
     Keyword Arguments:
-    link -- Bobitem link with sublinks
+    link -- Jenitem link with sublinks
     name -- Name to display in dialog (default None)
     """
     import re
@@ -524,10 +554,10 @@ def choose_quality(link, name=None, selected_link=None):
     if link.startswith("http") or link.startswith("plugin"):
         sublinks = [link]
     else:
-        bob_link = BobItem(link)
-        sublinks = bob_link.getAll("sublink")
+        jen_link = JenItem(link)
+        sublinks = jen_link.getAll("sublink")
         if not sublinks:
-            sublinks = [bob_link]
+            sublinks = [jen_link]
     links = []
     message = get_link_message()
     if selected_link is None:
@@ -582,12 +612,15 @@ def get_sources(item):
     """
     get video_link and try to play it
     Keyword Arguments:
-    item -- BobItem to try playing
+    item -- JenItem to try playing
     """
+    result = run_hook("get_sources", item)
+    if result:
+        return
     if item.startswith("<plugin>"):
         # link to plugin
-        link = BobItem(item)["link"]
-        sublinks = BobItem(link).getAll("sublink")
+        link = JenItem(item)["link"]
+        sublinks = JenItem(link).getAll("sublink")
         if sublinks:
             if len(sublinks) > 1:
                 link = choose_quality(link)
@@ -596,12 +629,12 @@ def get_sources(item):
         link = link.replace("&amp;", "&")
         xbmc.executebuiltin('Container.update(' + link + ')')
         return
-    item = BobItem(item)
+    item = JenItem(item)
 
     link = item["link"]
     if not link or link.replace("\t", "") == "":
         return
-    meta = BobItem(item["meta"])
+    meta = JenItem(item["meta"])
     title = meta["title"]
     year = meta.get("year", '').split("-")[0].strip()
     imdb = meta.get("imdb", "")
@@ -623,7 +656,7 @@ def get_sources(item):
     dialog = xbmcgui.Dialog()
     icon = ADDON.getAddonInfo('icon')
 
-    bobplayer = BoBPlayer(resume=False)
+    jenplayer = JenPlayer(resume=False)
     try:
         spec = {
             "identifier": imdb,
@@ -635,17 +668,17 @@ def get_sources(item):
             match = match[0]
             if match["currentTime"] and not match["currentTime"] == "0":
                 if dialog.yesno(ADDON.getAddonInfo("name"),
-                                "Previous playback detected",
-                                yeslabel="Resume",
-                                nolabel="Restart"):
-                    bobplayer = BoBPlayer(resume=True)
+                                _("Previous playback detected"),
+                                yeslabel=_("Resume"),
+                                nolabel=_("Restart")):
+                    jenplayer = JenPlayer(resume=True)
     except:
         pass
 
-    bobplayer.setItem(item)
+    jenplayer.setItem(item)
 
     busy_dialog.create(xbmcaddon.Addon().getAddonInfo('name'),
-                       "Processing Link")
+                       _("Processing Link"))
     preset = choose_quality(link)
     message = get_searching_message(preset)
     played = False
@@ -694,7 +727,7 @@ def get_sources(item):
                                                    dialog=busy_dialog,
                                                    exclude=exclude_scrapers,
                                                    listitem=listitem,
-                                                   player=bobplayer)
+                                                   player=jenplayer)
             else:
                 played = Sources.get_sources(
                     title,
@@ -709,7 +742,7 @@ def get_sources(item):
                     dialog=busy_dialog,
                     listitem=listitem,
                     exclude=exclude_scrapers,
-                    player=bobplayer)
+                    player=jenplayer)
         elif preset.startswith("http") or preset.startswith("plugin"):
             # direct link
             if "/playlist" in preset and "youtube" in preset:
@@ -729,7 +762,7 @@ def get_sources(item):
                     showbusy=False,
                     ignore_dp=True,
                     item=listitem,
-                    player=bobplayer)
+                    player=jenplayer)
         else:
             # who knows
             busy_dialog.close()
@@ -737,7 +770,7 @@ def get_sources(item):
             raise Exception()
     busy_dialog.close()
     if played:
-        bobplayer.keep_alive()
+        jenplayer.keep_alive()
 
 
 @route(mode="queue", args=["url"])
@@ -745,21 +778,12 @@ def queue_source(item, depth=0):
     """
     queue item
     Keyword Arguments:
-    item -- BobItem to try playing
+    item -- JenItem to try playing
     """
     from resources.lib.util.url import get_addon_url
-    bob_item = BobItem(item)
+    jen_item = JenItem(item)
     playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-    if xbmcaddon.Addon().getSetting("background_list_queue") == "true":
-        item = xbmc.getInfoLabel('Window(10008).Property(Bob_Queue)')
-        if item:
-            xbmcgui.Dialog().ok(
-                "still queueing last one, please try again later")
-            return
-        import service
-        service.background_queue.put(bob_item)
-        return
-    if "<item>" in str(bob_item):
+    if "<item>" in str(jen_item):
         play = False
         if xbmcaddon.Addon().getSetting("autostart_queue") == "true":
             if playlist.size() == 0:
@@ -767,17 +791,17 @@ def queue_source(item, depth=0):
         playlist.add(
             get_addon_url("get_sources", str(item)),
             xbmcgui.ListItem(
-                bob_item["title"], iconImage=bob_item.get("thumbnail", "")))
+                jen_item["title"], iconImage=jen_item.get("thumbnail", "")))
         if play:
             play_queue()
     else:
-        link = bob_item.get("url", bob_item.get("link", ""))
-        boblist = BobList(link).get_raw_list()
-        for list_item in boblist:
+        link = jen_item.get("url", jen_item.get("link", ""))
+        jenlist = JenList(link).get_raw_list()
+        for list_item in jenlist:
             queue_source(str(list_item), depth + 1)
     if depth == 0:
         xbmcgui.Dialog().notification(
-            ADDON.getAddonInfo("name"), "Finished Queueing".encode('utf-8'),
+            ADDON.getAddonInfo("name"), _("Finished Queueing").encode('utf-8'),
             ADDON.getAddonInfo("icon"))
         xbmc.executebuiltin("Container.Refresh")
 
@@ -786,7 +810,7 @@ def queue_source(item, depth=0):
 def clear_queue():
     xbmc.PlayList(xbmc.PLAYLIST_VIDEO).clear()
     xbmcgui.Dialog().notification(
-        ADDON.getAddonInfo("name"), "Queue cleared".encode('utf-8'),
+        ADDON.getAddonInfo("name"), _("Queue cleared").encode('utf-8'),
         ADDON.getAddonInfo("icon"))
     xbmc.executebuiltin('Container.Refresh')
 
@@ -800,7 +824,7 @@ def play_queue():
         xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, item)
     else:
         xbmcgui.Dialog().notification(
-            ADDON.getAddonInfo("name"), "Queue is empty".encode('utf-8'),
+            ADDON.getAddonInfo("name"), _("Queue is empty").encode('utf-8'),
             ADDON.getAddonInfo("icon"))
 
 

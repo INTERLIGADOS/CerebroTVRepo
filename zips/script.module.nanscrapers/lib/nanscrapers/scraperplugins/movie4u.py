@@ -25,7 +25,7 @@ class movie4u(Scraper):
             print 'GW> '+start_url
             headers={'User-Agent':User_Agent}
             html = requests.get(start_url,headers=headers,timeout=5).content
-            match = re.compile('<div class="title">.+?<a href="(.+?)">(.+?)</a>.+?<span class="year">(.+?)</span>',re.DOTALL).findall(html)
+            match = re.compile('<div class="title">.+?href="(.+?)">(.+?)</a>.+?class="year">(.+?)</span>',re.DOTALL).findall(html)
             for url,name,date in match:
                 print name
                 if clean_title(title).lower() in clean_title(name).lower():
@@ -48,14 +48,10 @@ class movie4u(Scraper):
                 if 'streamango.com' in link:
                     print link
                     holder = requests.get(link).content
-                    vid = re.compile('type:"video/mp4",src.+?"(.+?)".+?height:(.+?),',re.DOTALL).findall(holder)
-                    for url,qual in vid:
-                        if not '#' in url:
-                            self.sources.append({'source': host, 'quality': qual, 'scraper': self.name, 'url': url,'direct': True})            
-                    vid = re.compile('type:"video/mp4",src.+?\'(.+?)\'.+?height:(.+?),',re.DOTALL).findall(holder)
-                    for url,qual in vid:
-                        if not '#' in url:
-                            self.sources.append({'source': host, 'quality': qual, 'scraper': self.name, 'url': url,'direct': True})            
+                    vid = re.compile('type:"video/mp4".+?height:(.+?),',re.DOTALL).findall(holder)
+                    for qual in vid:
+                        self.sources.append({'source': host, 'quality': qual, 'scraper': self.name, 'url': url,'direct': False})            
+                              
                 else:
                     self.sources.append({'source': host, 'quality': '720', 'scraper': self.name, 'url': link,'direct': False})           
         except:
