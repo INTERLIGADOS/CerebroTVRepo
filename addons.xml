@@ -2063,7 +2063,7 @@ em procura livre na internet.</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.tvmix" name="TV Mix" version="1.0.8" provider-name="MetalKettle, Biglad">
+<addon id="plugin.video.tvmix" name="TV Mix" version="1.0.9" provider-name="MetalKettle, Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.urlresolver"  version="2.1.2"/>

@@ -5,6 +5,8 @@ fanart = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , '
 icon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 art = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id + '/resources/art/', ''))
 
+addon_handle = int(sys.argv[1])
+xbmcplugin.setContent(addon_handle, 'movies')
 
 def d():
     import requests,base64
@@ -14,8 +16,10 @@ def d():
         pass
 d() 
 
+tempplotinfo = "Meta Data Coming soon!!"
+
 def CATEGORIES():
-        addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+        addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
         addDir('New Latest Episodes','http://watchepisodeseries.unblockall.org/',1,art+'latest.png',fanart)
         #addDir('New Series','http://watchepisodeseries.unblockall.org/home/new-series',3,art+'new.png',fanart)
         #addDir('Popular Series','http://watchepisodeseries.unblockall.org/home/popular-series',3,art+'popular.png',fanart)
@@ -25,19 +29,19 @@ def CATEGORIES():
 
 
 def GETGENRES(url):
-        addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+        addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
         link=open_url(url)
         match=re.compile('<input data-genrename="(.+?)"').findall(link)   
         for genre in match:
                 name=genre.capitalize()
                 url='http://watchepisodeseries.unblockall.org/home/series?genres='+genre
                 iconimage=art+name+'.png'
-                addDir(name,url,8,iconimage,fanart)
+                addDir(name,url,8,iconimage,fanart,tempplotinfo)
         xbmc.executebuiltin('Container.SetViewMode(500)')
 
                 
 def GENRESERIES(url):
-        addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+        addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
         link=open_url(url)
         link=link.replace("'",'"')
         match=re.compile('<a href="(.+?)" class="wsb-image" style="background-image: url\("(.+?)"\)"></a>').findall(link)
@@ -45,7 +49,7 @@ def GENRESERIES(url):
                 name=url.split('/')[-1].replace('-',' ').title()
                 addDir(name,url,4,iconimage,fanart)
         np=re.compile('<a href="(.+?)" class="paginator-next">Next</a>').findall(link)[0].split('<a href="')[-1]
-        addDir('next',np,8,iconimage,fanart)
+        addDir('next',np,8,iconimage,fanart,tempplotinfo)
 
 def SEARCH():
         search_entered =''
@@ -64,10 +68,10 @@ def SEARCH():
                         url='http://watchepisodeseries.unblockall.org/'+movurl
                         iconimage='http://watchepisodeseries.unblockall.org/series_images/'+movurl+'.jpg'
                         xbmc.log(iconimage,2)
-                        addDir(name,url,4,iconimage,fanart)
+                        addDir(name,url,4,iconimage,fanart,tempplotinfo)
       
 def NEW_POPSERIES(url):
-        addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+        addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
         link=open_url(url)
         link=link.replace("'",'"')
         link=link.replace('\n','').replace('  ','').replace("('",'"').replace("')",'')
@@ -80,16 +84,19 @@ def GETMAINMENUITEMS(name,url):
         link=open_url(url)
         link=link.replace('\n','').replace('  ','').replace("('",'"').replace("')",'')
         match=re.compile('<div class="featured-ep-box "(.+?)<div class="fel-grid">').findall(link)
-        addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+        addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
+        #xbmc.log(link,2)
+        #tempplotinfo = re.compile('<p class="scc-details"(.+?)</p>').findall(link)[0]
         for item in match:
                 name=re.compile('title="(.+?)">').findall(item)[0]
                 iconimage=re.compile('style="background-image: url"(.+?)">').findall(item)[0]
                 iconimage = iconimage
+                
                 url=re.compile('<a href="(.+?)">').findall(item)[1]                
-
+                tempplotinfo=name
 
                 name=name.replace('&amp;','&')
-                addDir(name,url,2,iconimage,fanart)
+                addDir(name,url,2,iconimage,fanart,tempplotinfo)
 
 def CHOICE(name,url,iconimage):
                 dialog = xbmcgui.Dialog()
@@ -102,7 +109,7 @@ def CHOICE(name,url,iconimage):
                         GETSEASONS(name,url,"http:"+iconimage)
 
 def GETSOURCES(name,url,iconimage):
-		addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+		addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
 		sec=name
 		link=open_url(url)
 		link=link.replace('\n','').replace('\r','').replace('\t','').replace('  ','')
@@ -112,10 +119,10 @@ def GETSOURCES(name,url,iconimage):
 		else:
 				for url,host,domain in match:
 						host=host+'.'+domain
-						addLink(host,url,100,iconimage,fanart,description=sec)
+						addLink(host,url,100,iconimage,fanart,tempplotinfo)
 
 def GETSEASONS(name,url,iconimage):
-        addLink('[COLOR green][B]Pair For More Content[/B][/COLOR]','Link',9898,'','')
+        addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
         link=open_url(url)
         match=re.compile('href="(.+?)">.+?<div class="season">(.+?)</div>.+?<div class="episode">(.+?)</div>.+?<div class="name">(.+?)</div>.+?<div class="date">(.+?)</div>',re.DOTALL).findall(link)[1:]
         for url,season,episode,title,dte in match:
@@ -131,7 +138,7 @@ def GETSEASONS(name,url,iconimage):
                 except: pass
                 name=season+' '+episode+'  -  '+title+' '+dte
                 if not '</div>' in name:
-                        addDir(name,url,6,iconimage,fanart,'')
+                        addDir(name,url,6,iconimage,fanart,tempplotinfo)
 
 def PLAY(name,url,iconimage,description):
         #url = "http:"+url
@@ -183,6 +190,7 @@ def addDir(name,url,mode,iconimage,fanart,description=''):
         if addon_id not in iconimage: iconimage = "http:"+iconimage
         liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
         liz.setProperty('fanart_image', fanart)
+        liz.setProperty('plot', description)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         return ok
 
@@ -193,6 +201,7 @@ def addLink(name,url,mode,iconimage,fanart,description=''):
         liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
         liz.setProperty('fanart_image', fanart)
         liz.setProperty("IsPlayable","true")
+        liz.setProperty('plot', description)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
         return ok
         
