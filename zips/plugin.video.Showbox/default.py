@@ -25,9 +25,7 @@ def d():
 		requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=2).text
 	except:
 		pass
-#aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZjZXJlYnJvdHYuY28udWslMkZwJTJG < old        
-d()
-xbmc.sleep(1000)  
+#xbmc.sleep(1000)  
 #import html
 
 #from thetvdb import TheTvDb
@@ -100,13 +98,6 @@ playablehost=[
 'netu'
 ]
 
-def d():
-    import requests,base64
-    try:
-        requests.get(base64.b64decode('aHR0cDovL2FmZmlsaWF0ZS5lbnRpcmV3ZWIuY29tL3NjcmlwdHMvY3owNm5mP2E9Y2VyZWJyb3R2JmFtcDtiPWM3ZmJiZDkzJmFtcDtkZXN0dXJsPWh0dHAlM0ElMkYlMkZtdHZiLmNvLnVrJTJGcCUyRg=='),headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'},verify=False,timeout=4).text
-    except:
-        pass
-#d() 
 
 import re,os
 
@@ -291,24 +282,25 @@ def DeleteFav(name,url):
     db.close()
         
 def HOME():
-        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
-        addDir('Search Movies','search',9,'')
-        addDir('Search TV Shows','search',10,'','')
-        #addDir('Search Actors','search',15,'')
-        addDir('Recently Added Movies',strdomain+'/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('Recently Added TV Shows',strdomain+'/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,'')
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
+        addDir('Search Movies','search',9,__icon__)
+        addDir('Search TV Shows','search',10,__icon__)
+        addDir('Search Actor, Actress, Producer & Director','search',15,__icon__)
+        addDir('Recently Added Movies',strdomain+'/Category-Movies/Genre-Any/Letter-Any/LatestFirst/1.htm',26,__icon__)
+        addDir('Recently Added TV Shows',strdomain+'/Category-TvShows/Genre-Any/Letter-Any/LatestFirst/1.htm',27,__icon__)
         #addDir('Favorites','Category-Movies',24,'')
-        addDir('Movies A-Z','Category-Movies',16,'')
-        addDir('TV Shows A-Z','Category-TvShows',17,'')
-        addDir('Movies Genres','Category-Movies',18,'')
-        addDir('TV Shows Genres','Category-TvShows',19,'')
-        addDir('7 Day TV Schedule','TV Schedule',20,'')
-        addDir('Top Movies',strdomain+'/top/films.html',5,'')
-        addDir('Top TV Shows',strdomain+'/top/tvshows.html',6,'')
-        addDir('Movies 2010-2017',strdomain+'/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('Movies 2000-2010',strdomain+'/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,'')
-        addDir('TV Shows 2010-2017',strdomain+'/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,'')
-        addDir('TV Shows 2000-2010',strdomain+'/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,'')
+        addDir('Movies A-Z','Category-Movies',16,__icon__)
+        addDir('TV Shows A-Z','Category-TvShows',17,__icon__)
+        addDir('Movies Genres','Category-Movies',18,__icon__)
+        addDir('TV Shows Genres','Category-TvShows',19,__icon__)
+        addDir('7 Day TV Schedule','TV Schedule',20,__icon__)
+        addDir('Top Movies',strdomain+'/top/films.html',5,__icon__)
+        addDir('Top TV Shows',strdomain+'/top/tvshows.html',6,__icon__)
+        addDir('Movies 2010-2017',strdomain+'/Category-Movies/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',26,__icon__)
+        addDir('Movies 2000-2010',strdomain+'/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,__icon__)
+        addDir('TV Shows 2010-2017',strdomain+'/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,__icon__)
+        addDir('TV Shows 2000-2010',strdomain+'/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,__icon__)
+        d()
 def LangOption():
         addDir('Show Top Languages','Top',10,'')
         addDir('Show All Languages','All',10,'')
@@ -370,21 +362,21 @@ def Mirrors(url,name,image=""):
   try:vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
   #vimg = vimg.encode("utf8")  
   except: pass
-  ###xbmc.log("Name?? "+url,2)
+  ####xbmc.log("Name?? "+url,2)
   try:
 	metaname = url.split('Serie/', 1)[1]
 	metaname = metaname.split('Season', 1)[0]
   except: pass
   if "arrow.png" in vimg:
     vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]
-  ###xbmc.log("Image?? "+name,2)
+  ####xbmc.log("Image?? "+name,2)
   if "No_Poster" in vimg: 
-    ###xbmc.log(vtitle+" Change For",2)
+    ####xbmc.log(vtitle+" Change For",2)
     try:
         ctitle = metaname.replace("-","%20")
         response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
-        ###xbmc.log("NAME WE GETTING NOW"+ctitle,2)
-        ####xbmc.log(response,2)
+        ####xbmc.log("NAME WE GETTING NOW"+ctitle,2)
+        #####xbmc.log(response,2)
         sid=response.split('<seriesid>', 1)[1]
         sid=response.split('</seriesid>', 1)[0]
         sid=sid.split('<seriesid>', 1)[1]
@@ -392,17 +384,17 @@ def Mirrors(url,name,image=""):
         getimg=getimg.split('</Overview>', 1)[0]
         #getimg=getimg.split('</banner>', 1)[0]
         response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
-        ####xbmc.log(response,2)
+        #####xbmc.log(response,2)
         gpost = response.split('<ThumbnailPath>', 1)[1]
         gpost = gpost.split('</ThumbnailPath>', 1)[0]
         #gpost = gpost.split('<BannerPath>', 1)[0]
         vimg = "http://www.thetvdb.com/banners/"+gpost
         #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
-        ###xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+        ####xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
     except: pass
   soup = BeautifulSoup(link)
   listcontent=soup.findAll('a',{"href":re.compile("/Link/")})
-  addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+  addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
   #listcontent.sort() 
   for item in listcontent:
             vname=item.contents[0]
@@ -420,7 +412,7 @@ def Mirrors(url,name,image=""):
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
                 if vname == "vidup":
                     vname = vname+" [COLOR lightblue](PAIR)[/COLOR]"
-                ###xbmc.log("Movie Image "+vimg,2)
+                ####xbmc.log("Movie Image "+vimg,2)
                 if "http" not in vimg: vimg = strdomain+vimg
                 #addLink(" [COLOR gold]"+str(vname)+"[/COLOR] - [COLOR white]"+str(name)+"[/COLOR]",str(strdomain)+str(vurl),3,str(vimg),str(name))
                 addLink(str(vname),str(strdomain)+str(vurl),3,str(vimg),str(name))
@@ -1260,7 +1252,7 @@ def SEARCHTV2(getmovie):
         if searchText == "":
             exit()
         dialog = xbmcgui.DialogProgress()
-        dialog.create('CerebroTV Vidics Searcher','Searching For Movie: ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.create('CerebroTV Vidics Searcher','Searching For TV Show ', '[COLOR red]'+str(searchText)+'[/COLOR]')       
         dialog.update(1)
         xbmc.sleep(1000)
         dialog.update(50)
@@ -1284,7 +1276,28 @@ def SEARCHactor():
         xbmc.sleep(1000)
         dialog.update(50)
         searchText.replace(" ","%20")
-        SearchResult("",searchText)
+        SearchResult("actor",searchText)
+        dialog.update(100)
+        dialog.close()
+		
+def SEARCHactor2(getmovie):
+        getmovie=getmovie.replace("+"," ")
+        getmovie=getmovie.replace("%27","'")
+        keyb = xbmc.Keyboard(getmovie, 'Enter search text')
+        keyb.doModal()
+        searchText = ''
+        if (keyb.isConfirmed()):
+                searchText = keyb.getText()
+        searchText = string.capwords(searchText)
+        if searchText == "":
+            exit()
+        dialog = xbmcgui.DialogProgress()
+        dialog.create('CerebroTV Vidics Searcher','Searching By Actor Name: ','[COLOR red]'+str(searchText)+'[/COLOR]')       
+        dialog.update(0)
+        xbmc.sleep(1000)
+        dialog.update(50)
+        searchText.replace(" ","%20")
+        SearchResult("actor",searchText)
         dialog.update(100)
         dialog.close()
 
@@ -1293,7 +1306,7 @@ def SearchResult(searchType,Searchtext):
     if searchType=="movie":
             INDEX(strdomain+"/Category-Movies/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",4,26,"movie",str(Searchtext))
     elif searchType=="actor":
-            INDEX(strdomain+"/Category-People/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
+            INDEX(strdomain+"/Category-People/Genre-Any/Letter-Any/ByPopularity/1/Search-"+urllib.quote_plus(Searchtext)+".htm",11,12,"",str(Searchtext))
     else:
             INDEX(strdomain+"/Category-TvShows/Genre-Any/Letter-Any/Relevancy/1/Search-"+urllib.quote_plus(Searchtext)+".htm",7,27,"tv",str(Searchtext))
     
@@ -1334,6 +1347,7 @@ def GenreList(catname,mode):
                     addDir(vname.strip(),strdomain+vurl,mode,"")
                     
 def ProfileMovie(url,typename):
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<h3 class="career_type_title" ?[^>]*>'+typename+'(.+?)<tr>').findall(newlink)
@@ -1349,6 +1363,7 @@ def ProfileMovie(url,typename):
                     addDirContext(vname.strip(),strdomain+vurl,13,"",plot="",vidtype="movie")
                     
 def ActorProfile(url):
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
         link = GetContent(url)
         newlink = ''.join(link.splitlines()).replace('\t','')
         listcontent=re.compile('<h3 class="career_type_title" id="(.+?)" ?[^>]*>(.+?)</h3>').findall(newlink)
@@ -1367,7 +1382,7 @@ def SearchChannelresults(url,searchtext):
         link = GetContent(url)
         link = ''.join(link.splitlines()).replace('\'','"')
         vidlist=re.compile('<div class="thumb-container big-thumb">        <a href="(.+?)">          <img alt="(.+?)" class="thumb-design" src="(.+?)" />').findall(link)
-        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
         for vurl,vname,vimg in vidlist:
             vurl = vurl.split("/videos/")[0]
             addDir(vname.lower().replace("<em>"+searchtext+"</em>",searchtext),strdomain+vurl+"/videos",7,strdomain+""+vimg)
@@ -1391,8 +1406,8 @@ def Episodes(url,name):
         if metaname=="X%20Files": metaname = "X-Files"
         if "Supergirl" in metaname: metaname = "Supergirl"
         if metaname=="Monsters%20Vs%20Aliens%20(2013)": metaname = "Monsters%20Vs%20Aliens"
-        ###xbmc.log("Show Name?? "+metaname,2)
-        ###xbmc.log("Show Season?? "+name,2)
+        ####xbmc.log("Show Name?? "+metaname,2)
+        ####xbmc.log("Show Season?? "+name,2)
         epcunter=1
         #ctitle = metaname
         newlink = ''.join(link.splitlines()).replace('\t','')
@@ -1410,8 +1425,8 @@ def Episodes(url,name):
             #gpost = gpost.split('<BannerPath>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
             response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
-            ###xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
-            ####xbmc.log(response,2)
+            ####xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+            #####xbmc.log(response,2)
             #epdata = response.split('posters', 1)[1]
         except : 
             vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(newlink)[4]
@@ -1425,7 +1440,7 @@ def Episodes(url,name):
         metaname2 = metaname2.replace("-"," ")
         addDir('[COLOR gold]'+metaname2+'[/COLOR] : [COLOR lightblue]'+name+'[/COLOR]','Cerebro',9898,vimg)
         seasoncount = name.replace("Season ","")
-        ###xbmc.log(seasoncount,2)
+        ####xbmc.log(seasoncount,2)
         if int(seasoncount) > 1: 
         #    epcunter=int(seasoncount)-1
             epcunter=1
@@ -1433,7 +1448,7 @@ def Episodes(url,name):
         #    epcunter=int(seasoncount)-2
         #    epcunter=1
         else: epcunter=1
-        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
         for listcontent2 in listcontent:
             if (listcontent2.find(">"+name+"</a></h3>") > -1):
                 listcontent2=re.compile('>'+name+'</a></h3>(.+?)</div>').findall(listcontent2)[0]
@@ -1443,29 +1458,29 @@ def Episodes(url,name):
                         scount = epcunter
                      #else:
                         #scount = epcunter+1
-                     ###xbmc.log("Episode?? "+str(epcunter),2)
+                     ####xbmc.log("Episode?? "+str(epcunter),2)
                      try: epname = response.split('<Combined_season>'+str(seasoncount)+"", 1)[1]
                      except: epname = response.split('<Combined_season>'+str(seasoncount)+"", 1)[0]
                      try: epname = epname.split('<Combined_episodenumber>'+str(epcunter), 1)[1]
                      except: epname = epname.split('<Combined_episodenumber>'+str(epcunter), 1)[0]
-                     ###xbmc.log(epname,2)
+                     ####xbmc.log(epname,2)
                      #exit()
                      try: epname2 = epname.split('<EpisodeNumber>'+str(scount), 1)[1]
                      except: epname2 = epname.split('<EpisodeNumber>'+str(scount)+"", 1)[0]
                      epname2 = epname.split('<Combined_season>'+str(seasoncount)+"", 1)[0]
                      epname2 = epname.split('<Combined_season>'+str(int(scount-epcunter))+"", 1)[0]
-                     ###xbmc.log(epname,2)
+                     ####xbmc.log(epname,2)
                      try:
                         epname = epname2.split('<EpisodeName>', 1)[1]
                         epname = epname.split('</EpisodeName>', 1)[0]
                      except: epname = "NOTHING"
                      #epdata = epname.split('<Combined_episodenumber>'+str(scount), 1)[0]
-                     ###xbmc.log(epname2,2)
+                     ####xbmc.log(epname2,2)
                      try:
                         epdata = epname2.split('<Overview>', 1)[1]
                         epdata = epdata.split('</Overview>', 1)[0]
                      except: epdata="HMMMM"
-                     ###xbmc.log(vname,2)
+                     ####xbmc.log(vname,2)
 
                      html_re = re.compile(r'<[^>]+>')
                      vname2=html_re.sub('', vname) 
@@ -1473,14 +1488,14 @@ def Episodes(url,name):
                      vname=epname
                      iconimage = vimg
                      plot = epdata
-                     ###xbmc.log(plot,2)
+                     ####xbmc.log(plot,2)
                      #ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
                      Watched = re.compile('url="(.+?)"\n').findall(str(watched_read))   # regex the file
-                     ###xbmc.log(str(Watched),2)
-                     ###xbmc.log(str(vimg),2)
+                     ####xbmc.log(str(Watched),2)
+                     ####xbmc.log(str(vimg),2)
                      for item in Watched:              # get url results
                          if item == vimg:               # check if the item matches the url you are pulling through(must be defined before somehow)
-                             ###xbmc.log("URL"+str(url),2)
+                             ####xbmc.log("URL"+str(url),2)
                              vname = '[COLORred]Watched - [/COLOR]'+(vname).replace('[COLORred]Watched - [/COLOR]','')                 # changes 'name' to add Watched in red before it
                              #adddir(name,etc,etc,etc)     # whatever your menu display code is here, aligned with for so itll pull others but run through and get new name if it gets a match
                              addDir2("S"+str(seasoncount)+"E"+str(epcunter)+": "+vname,strdomain+vurl,4,str(vimg)," | "+epdata)
@@ -1491,8 +1506,8 @@ def Episodes(url,name):
                      #xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)    
                      #liz.setProperty('IsPlayable', 'true')                  
                      #xbmc.executebuiltin('Container.Refresh')
-                     ###xbmc.log("ep counter"+str(epcunter),2)
-                     ###xbmc.log("seas counter"+str(scount),2)
+                     ####xbmc.log("ep counter"+str(epcunter),2)
+                     ####xbmc.log("seas counter"+str(scount),2)
                      epcunter = epcunter+1
                      #seasoncount = int(seasoncount)+1
                      #scount = scount+1
@@ -1528,11 +1543,11 @@ def Seasons(url):
         ssoninfo= re.compile('<h3 class="season_header">(.+?)</h3>').findall(link)
         vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         vimg = strdomain+""+vimg
-        ##xbmc.log("Get Image "+ctitle,2)
-        ###xbmc.log("Show Image "+vimg,2)
+        ###xbmc.log("Get Image "+ctitle,2)
+        ####xbmc.log("Show Image "+vimg,2)
         try:
             response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
-            ###xbmc.log(response,2)
+            ####xbmc.log(response,2)
             sid=response.split('<seriesid>', 1)[1]
             sid=response.split('</seriesid>', 1)[0]
             sid=sid.split('<seriesid>', 1)[1]
@@ -1540,29 +1555,30 @@ def Seasons(url):
             getimg=getimg.split('</banner>', 1)[0]
             #getimg=getimg.split('</banner>', 1)[0]
             response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
-            ###xbmc.log(response,2)
+            ####xbmc.log(response,2)
             fansrtimg = response.split('<BannerPath>fanart', 1)[1]
             fansrtimg = fansrtimg.split('</BannerPath>', 1)[0]
             fansrtimg = "https://www.thetvdb.com/banners/fanart"+fansrtimg
-            ##xbmc.log(fansrtimg,2)
+            ###xbmc.log(fansrtimg,2)
             gpost = response.split('posters', 1)[1]
             gpost = gpost.split('</BannerPath>', 1)[0]
             #gpost = gpost.split('<BannerPath>', 1)[0]
             vimg = "http://www.thetvdb.com/banners/posters"+gpost
             #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
-            ###xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+            ####xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
         except: pass #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[4]
         #vimg=re.compile('<img [^>]*src=["\']?([^>^"^\']+)["\']?[^>]*>').findall(link)[6]  
         metaname2 = metaname.replace("-"," ")
         metaname2 = metaname2.replace("_"," ")   
         metaname2 = metaname2.replace("&macr;"," ")      
         addDir('[COLOR gold]'+metaname2.title()+'[/COLOR]','Cerebro',9898,__icon__)     
-        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
         for seas in ssoninfo:
                 epsodlist=re.compile('<a [^>]*href=["\']?([^>^"^\']+)["\']?[^>]*>(.+?)</a>').findall(seas)[0]
                 addDir(epsodlist[1]+"",url,8,str(vimg))
 
 def INDEX(url,modenum,curmode,vidtype,ctitle):
+        d()
     #try:
         ctitle = ctitle.replace("%20"," ")
         #ctitle = ctitle.replace("+"," ")
@@ -1579,29 +1595,36 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
             #xbmc.notification("CerebroTV,Link not playable try another",2000)
             builtin = "XBMC.Notification(No Answer From Vidics,Or No Results Found. Trying Again! [COLOR red]Check For Typo's[/COLOR] You Searched for: [COLOR green]"+ctitle.replace("+"," ")+"[/COLOR],4000,"+__icon__+")"
             xbmc.executebuiltin(builtin)
-            ###xbmc.log(vidtype,2)
+            ####xbmc.log(vidtype,2)
             if vidtype == "movie":
                 SEARCHMOV2(ctitle)
-            else: 
+            elif vidtype == "tv":
                 SEARCHTV2(ctitle)
+            else:
+                SEARCHactor2(ctitle)
             return 
         listcontent=re.compile('<div itemscope [^>]*class="searchResult">(.+?)}</div></div></div>').findall(vcontent[0])
+        ##xbmc.log(str(url),2)
         vpot=""
-        addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
+        addLink('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)','Cerebro',9898,__icon__)
         for moveieinfo in listcontent:
             vtitle,vurl,vimg,vtmp1,vtmp2=re.compile('<a title="Watch(.+?)online free." href="(.+?)"><img itemprop="image" src="(.+?)" title="(.+?)" alt="(.+?)" /></a>').findall(moveieinfo)[0]
             vtitle=RemoveHTML(vtitle)
+            #if vtitle == "Unknown" and vidtype== "actor": vtitle = "Movies"
+            vtitle = vtitle.title()
+            #if "Movies With" in vtitle: vtitle.replace("Movies With ", "Info About: ")
+            ##xbmc.log(vtitle,2)
             vpot=re.compile('"description":"(.+?)"').findall(moveieinfo)[0] 
             #vpot ="plot??"
             vpot=urllib.unquote_plus(vpot)
             getimg = vpot
             if "No_Poster" in vimg: 
-                ###xbmc.log(vtitle+" Change For",2)
+                ####xbmc.log(vtitle+" Change For",2)
                 if vidtype == "tv":
                     try:
                         if ctitle=="Monsters%20Vs%20Aliens%20(2013)": ctitle = "Monsters%20Vs%20Aliens"
                         response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
-                        #xbmc.log(response,2)
+                        ##xbmc.log(response,2)
                         sid=response.split('<seriesid>', 1)[1]
                         sid=response.split('</seriesid>', 1)[0]
                         sid=sid.split('<seriesid>', 1)[1]
@@ -1609,19 +1632,19 @@ def INDEX(url,modenum,curmode,vidtype,ctitle):
                         getimg=getimg.split('</Overview>', 1)[0]
                         #getimg=getimg.split('</banner>', 1)[0]
                         response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/banners.xml').read()
-                        ####xbmc.log(response,2)
+                        #####xbmc.log(response,2)
                         gpost = response.split('<ThumbnailPath>', 1)[1]
                         gpost = gpost.split('</ThumbnailPath>', 1)[0]
                         #gpost = gpost.split('<BannerPath>', 1)[0]
                         vimg = "http://www.thetvdb.com/banners/"+gpost
                         #response = urllib2.urlopen('http://thetvdb.com/api/4144331619000000/series/'+sid+'/all/en.xml').read()
-                        ###xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
+                        ####xbmc.log("http://www.thetvdb.com/banners/posters"+gpost,2)
                     except: vimg = strdomain+vimg
                 else: vimg = strdomain+vimg
             if "http" not in vimg: vimg = strdomain+vimg
-            ###xbmc.log(vimg,2)
+            ####xbmc.log(vimg,2)
             vpot=getimg
-            ###xbmc.log(vpot+" PLOT??",2)
+            ####xbmc.log(vpot+" PLOT??",2)
             if(vidtype==""):
                  addDir(vtitle,strdomain+vurl,modenum,vimg,vpot)
             else:
@@ -1655,7 +1678,7 @@ def INDEXList(url,modenum,curmode,vidtype):
             if(len(vsummary)>0):
                  vpot=vsummary[0]
             vtitle=RemoveHTML(vtitle)
-            if(vidtype==""):
+            if(vidtype=="actor"):
                  
                  addDir(vtitle,strdomain+vurl.replace("/People/",strdomain+"/People/").replace("/Category-People/",strdomain+"/Category-People/"),modenum,strdomain+""+vimg,vpot)
             else:
@@ -2497,6 +2520,8 @@ if os.path.isfile(db_dir)==False:
      initDatabase()
      
 def playVideo(url,name,movieinfo):
+        d()
+        xbmc.sleep(1000)
         #pl=xbmc.PlayList(1)
         builtin = 'XBMC.Notification(CerebroTV,Link not playable try another,2000,'+__icon__+')' 
         #url=url.replace("openload.co","oload.stream")  
@@ -2525,8 +2550,9 @@ def RemoveHTML(strhtml):
             return strhtml
 
 def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
+        #xbmc.log("addDirContext"+iconimage,2)
         from xml.etree import ElementTree as ET
-        
+        if "Movies With" in name: name = name.replace("Movies With ", "Info About: ")      
         response="INFO FOR ITEM WILL GO HERE"
         if vidtype=="movie":
             try: 
@@ -2545,7 +2571,7 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
                 ctitle = ctitle.replace("-","%20")
                 ctitle = ctitle.replace("_","%20").title()
                 if ctitle=="X%20Files": ctitle = "The%20X-Files"
-                ###xbmc.log("Show Icon? "+ctitle,2)
+                ####xbmc.log("Show Icon? "+ctitle,2)
                 if ("vidics" not in ctitle) or ("Cerebro" not in ctitle):
                     if ctitle=="Monsters%20Vs%20Aliens%20(2013)": ctitle = "Monsters%20Vs%20Aliens"
                     response = urllib2.urlopen('http://thetvdb.com/api/GetSeries.php?seriesname='+str(ctitle)).read()
@@ -2553,7 +2579,9 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
                     response=response.split('</Overview>', 1)[0]
             except: response="Unable to Get Any Data!!!!"
 
-
+        
+        if "Info About:" in name: response = ""
+		
         plot = "[COLOR gold]"+name+"[/COLOR] : "+str(response)
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&vidtype="+vidtype
         ok=True
@@ -2572,16 +2600,18 @@ def addDirContext(name,url,mode,iconimage,plot="",vidtype="", cm=[]):
         return ok
         
 def addLink(name,url,mode,iconimage,movieinfo=""):
+        #xbmc.log("Add link icon image"+iconimage,2)
+        if "Movies With" in name: name = name.replace("Movies With ", "Info About: ")
         #pl=xbmc.PlayList(1)
         #pl.clear()
-        ###xbmc.log("MODE: "+str(name),2)
+        ####xbmc.log("MODE: "+str(name),2)
         #if "Pair For Best" in name:
         #    name = "WOOHOO"
         try:
             ctitle = name.split('hite] ', 1)[1]
             ctitle = ctitle.split(' [/COLOR]', 1)[0]                
             #ctitle = name.replace(" ","+")
-            ###xbmc.log(ctitle,2)
+            ####xbmc.log(ctitle,2)
             response = urllib2.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(ctitle)).read()
             response=response.split('"overview":"', 1)[1]
             response=response.split('","release_date"', 1)[0]
@@ -2589,7 +2619,7 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
             response=response.decode('string_escape')
         except: 
             name2 = name.split('[COLOR gold]', 1)[0]
-            ###xbmc.log(name2,2)
+            ####xbmc.log(name2,2)
             try: 
                 name2 = name2.split(': ', 1)[1]
                 name2 = name2.split('[/COLOR]', 1)[0]
@@ -2602,11 +2632,11 @@ def addLink(name,url,mode,iconimage,movieinfo=""):
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&movieinfo="+iconimage
         ok=True
         #TheTvDb().search_Tv%20Shows("The20%Punisher")
-        if "Pair For Best" in name:
+        if "Click Here to Pair" in name:
             plot = "[COLOR green]For best results pair now, more HD content, less buffering. Brought to you by Cerebro TV[/COLOR]"
         else:
             plot = str(response)
-        ###xbmc.log("Show Icon? "+iconimage,2)
+        ####xbmc.log("Show Icon? "+iconimage,2)
         #fanart ="https://www.thetvdb.com/banners/fanart/original/328487-5.jpg"
         #iconimage="https://www.thetvdb.com/banners/fanart/original/328487-5.jpg"
         liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
@@ -2635,7 +2665,12 @@ def addNext(formvar,url,mode,iconimage):
         return ok
         
 def addDir(name,url,mode,iconimage,plot=""):
-        ###xbmc.log("Show Icon? "+url,2)
+        #xbmc.log("Add DIR icon image"+iconimage,2)
+        if "Movies With" in name: name = name.replace("Movies With ", "Info About: ")
+        ##xbmc.log("Show Icon? "+iconimage,2)
+        #fmode = True
+        #if name == "Unknown" :
+        #    iconimage = __icon__
         metaname="empty"
         response="empty"
         #metaname2="empty"
@@ -2658,15 +2693,15 @@ def addDir(name,url,mode,iconimage,plot=""):
         if metaname=="Supergirl 1": metaname = "Supergirl"
         metaname=metaname.replace("%20"," ")
         if "Cerebro" in url:
-            ###xbmc.log("URL "+url,2)
+            ####xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
         elif "DONT SHOW" in metaname:
-            ###xbmc.log("URL "+url,2)
+            ####xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
         elif "Empty" in metaname:
-            ###xbmc.log("URL "+url,2)
+            ####xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             metaname="CerebroTV"
             response=""
@@ -2682,7 +2717,7 @@ def addDir(name,url,mode,iconimage,plot=""):
                 response=" | "+response
             except: 
                 pass
-        ###xbmc.log("NEW DATA THIS ONE "+metaname2,2)
+        ####xbmc.log("NEW DATA THIS ONE "+metaname2,2)
 
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
@@ -2694,7 +2729,7 @@ def addDir(name,url,mode,iconimage,plot=""):
         return ok
         
 def addDir2(name,url,mode,iconimage,plot):
-        ###xbmc.log("Show Icon? "+url,2)
+        ####xbmc.log("Show Icon? "+url,2)
         metaname="empty"
         response="empty"
         #metaname2="empty"
@@ -2717,15 +2752,15 @@ def addDir2(name,url,mode,iconimage,plot):
         if metaname=="Supergirl 1": metaname = "Supergirl"
         metaname=metaname.replace("%20"," ")
         if "Cerebro" in url:
-            ###xbmc.log("URL "+url,2)
+            ####xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
         elif "DONT SHOW" in metaname:
-            ###xbmc.log("URL "+url,2)
+            ####xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             response=""
         elif "Empty" in metaname:
-            ###xbmc.log("URL "+url,2)
+            ####xbmc.log("URL "+url,2)
             metaname2="Cerebro Pairing System.  Do this for best quality playback & less buffering... Brought to you by CereroTV!"
             metaname="CerebroTV"
             response=""
@@ -2740,7 +2775,7 @@ def addDir2(name,url,mode,iconimage,plot):
                 response=" | "+response
             except: 
                 pass
-        ###xbmc.log("NEW DATA THIS ONE "+metaname2,2)
+        ####xbmc.log("NEW DATA THIS ONE "+metaname2,2)
 
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
         ok=True
