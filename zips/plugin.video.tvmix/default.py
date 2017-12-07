@@ -21,10 +21,11 @@ tempplotinfo = "Meta Data Coming soon!!"
 def CATEGORIES():
         addLink('[COLOR green][B]Click Here To Pair (Do This Every 4 Hours)[/B][/COLOR]','Link',9898,'','')
         addDir('New Latest Episodes','http://watchepisodeseries.unblockall.org/',1,art+'latest.png',fanart)
-        #addDir('New Series','http://watchepisodeseries.unblockall.org/home/new-series',3,art+'new.png',fanart)
-        #addDir('Popular Series','http://watchepisodeseries.unblockall.org/home/popular-series',3,art+'popular.png',fanart)
-        addDir('Genres','http://watchepisodeseries.unblockall.org/home/series',7,art+'genres.png',fanart)
+        addDir('New TV Shows','http://watchepisodeseries.unblockall.org/home/new-series',3,art+'new.png',fanart)
+        addDir('Popular TV Shows','http://watchepisodeseries.unblockall.org/home/popular-series',3,art+'popular.png',fanart)
+        addDir('TV Show Genres','http://watchepisodeseries.unblockall.org/home/series',7,art+'genres.png',fanart)
         addDir('Search For A Show','url',5,art+'search.png',fanart)
+        addDir('[COLOR gold][B]Vidics Site Scarper[/B][/COLOR]','Link',9899,'','')
         xbmc.executebuiltin('Container.SetViewMode(50)')
 
 
@@ -75,7 +76,7 @@ def NEW_POPSERIES(url):
         link=open_url(url)
         link=link.replace("'",'"')
         link=link.replace('\n','').replace('  ','').replace("('",'"').replace("')",'')
-        match=re.compile('<div class="cb-image"style="background-image: url\("(.+?)"\)"></div><a href="(.+?)"class="cb-details"><div class="cb-name">(.+?)</div>').findall(link)
+        match=re.compile('<div class="cb-image" style="background-image: url\("(.+?)"\)"></div><a href="(.+?)" class="cb-details"><div class="cb-name">(.+?)</div>').findall(link)
         for iconimage,url,name in match:
                 addDir(name,url,4,iconimage,fanart)
                        
@@ -241,6 +242,7 @@ elif mode==7: GETGENRES(url)
 elif mode==8: GENRESERIES(url)
 elif mode==100: PLAY(name,url,iconimage,description)
 elif mode==9898: xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')
+elif mode==9899: xbmc.executebuiltin('RunAddon(plugin.video.Showbox)')
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
