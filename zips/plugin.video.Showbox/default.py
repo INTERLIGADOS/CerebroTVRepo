@@ -2521,7 +2521,7 @@ if os.path.isfile(db_dir)==False:
      
 def playVideo(url,name,movieinfo):
         d()
-        xbmc.sleep(1000)
+        xbmc.sleep(2000)
         #pl=xbmc.PlayList(1)
         builtin = 'XBMC.Notification(CerebroTV,Link not playable try another,2000,'+__icon__+')' 
         #url=url.replace("openload.co","oload.stream")  
