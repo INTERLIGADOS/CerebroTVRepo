@@ -156,6 +156,34 @@
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
+<plugin>
+<title>[COLOR pink]UK IPTV[/COLOR] (Nemesis)</title>
+<link>plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=49&name=%5bCOLOR%20skyblue%5dUK%20Channels%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.sdw-net.me%2fcategories%2fUK-Channels%2f</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]US IPTV[/COLOR] (Nemesis)</title>
+<link>plugin://plugin.video.nemesis/?description&fanart=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cfanart.jpg&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.nemesis%5cicon.png&mode=49&name=%5bCOLOR%20skyblue%5dUSA%20Channels%5b%2fCOLOR%5d&url=http%3a%2f%2fwww.sdw-net.me%2fcategories%2fUSA-Channels%2f</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Daily IPTV Lists[/COLOR]</title>
+<link>plugin://plugin.video.Planetiptv/?mode=17&regexs=%7bu%27makelist%27%3a%20%7b%27cookiejar%27%3a%20%27%27%2c%20%27name%27%3a%20u%27makelist%27%2c%20%27listrepeat%27%3a%20u%27%5cr%5cn%20%20%20%20%3ctitle%3e%20%20%20%20%20%20%5bCOLOR%20blue%5d%5cx95%20Planet%20Iptv%20%5cx95%20%5b%2fCOLOR%5d%20%20%20%20(%20%5bmakelist.param1%5d%20)%20%20%3c%2ftitle%3e%5cr%5cn%20%20%20%20%3clink%3eNA%3c%2flink%3e%5cr%5cn%3cthumbnail%3ehttp%3a%2f%2fi64.tinypic.com%2fopp8qp.jpg%3c%2fthumbnail%3e%5cr%5cn%3cfanart%3ehttp%3a%2f%2fi64.tinypic.com%2fopp8qp.jpg%3c%2ffanart%3e%5cr%5cn%20%20%20%20%3cexternallink%3e%5bmakelist.param1%5d%5bDE%5d%24%24TSDOWNLOADER%24%24%3c%2fexternallink%3e%5cr%5cn%27%2c%20%27expres%27%3a%20u%27(http%3a%5c%5c%2f%5c%5c%2f(.%2a%3f)%5c%5c%2f.%2a%3fget.php.%2a%3f)%3c%27%2c%20%27referer%27%3a%20None%2c%20%27page%27%3a%20u%27http%3a%2f%2fwww.m3uliste.pw%2f%27%7d%7d&url=%24doregex%5bmakelist%5d</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[COLOR pink]Daily IPTV Lists + Search[/COLOR]</title>
+<link>plugin://plugin.video.bonanza</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
 <dir>
 <name>[COLOR gold]CerebroTV: [/COLOR][COLOR red]24/7 TV[/COLOR]</name>
 <link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/247menu.xml</link>
