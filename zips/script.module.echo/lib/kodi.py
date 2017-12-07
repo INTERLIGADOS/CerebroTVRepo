@@ -149,6 +149,8 @@ def create_item(queries, label, thumb='', fanart='', is_folder=None, is_playable
     try:
         plot = response.split('"overview":"', 1)[1]
         plot = plot.split('",', 1)[0]
+        plot = plot.replace('\\"',"'")	
+        #xbmc.log(plot,2)		
     except: plot = "NO DATA!!!!!!"
     if not thumb: thumb = images
     if not fanart: fanart = images

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.echo" name="CerebroTV Libraries" version="1.00.009" provider-name="Biglad, Echo Coder">
+<addon id="script.module.echo" name="CerebroTV Libraries" version="1.00.010" provider-name="Biglad, Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" />
