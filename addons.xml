@@ -4880,7 +4880,7 @@ level.</description>
 
 <addon id="script.mtvbc4"
   name="CerebroTV Channel4"
-  version="1.3"
+  version="1.4"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
