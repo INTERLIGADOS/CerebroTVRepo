@@ -1449,7 +1449,7 @@ Initial release.
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.link__tester" version="1.0.12" name="Cerebro HD Movies Core" provider-name="Biglad,Echo Coder">
+<addon id="plugin.video.link__tester" version="1.0.13" name="Cerebro HD Movies Core" provider-name="Biglad,Echo Coder">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -1457,6 +1457,7 @@ Initial release.
 		<import addon="script.module.requests" />
 		<import addon="script.cerebro.pairwith" />
 		<import addon="script.cerebro.pairwith.laucnher" />
+		<import addon="script.cerebro.backend" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>image</provides>
@@ -1919,7 +1920,7 @@ em procura livre na internet.</description>
 
 <addon
   id="plugin.video.Showbox"
-  version="9.6"
+  version="9.7"
   name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]CerebroTV Vidics Player[/B][/COLOR]"
   provider-name="Biglad">
   <requires>
@@ -1936,6 +1937,7 @@ em procura livre na internet.</description>
         <import addon="plugin.video.1channel" optional="true"/>
         <import addon="script.xbmc.unpausejumpback" />
 		<import addon="script.module.thetvdb" version="0.0.1" />
+		<import addon="script.cerebro.backend" />
 
   </requires>
   <extension point="xbmc.python.pluginsource"
@@ -2143,13 +2145,14 @@ em procura livre na internet.</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.tvmix" name="TV Mix" version="1.0.11" provider-name="MetalKettle, Biglad">
+<addon id="plugin.video.tvmix" name="TV Mix" version="1.0.12" provider-name="MetalKettle, Biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.urlresolver"  version="2.1.2"/>
 		<import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.module.requests" />
+		<import addon="script.cerebro.backend" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
