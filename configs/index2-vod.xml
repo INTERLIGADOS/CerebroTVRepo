@@ -17,6 +17,13 @@
 </dir>
 
 <plugin>
+<title>[COLOR pink]The Crown[/COLOR]</title>
+<link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Crown%c2%a0%20&url=https%3a%2f%2fvidics.unblocked.vc%2f%2fSerie%2fThe-Crown-&vidtype=tv</link>
+<thumbnail>https://vidics.unblocked.vc//static/150/83/The_Crown_-1645933.JPEG</thumbnail>
+<fanart>https://vidics.unblocked.vc//static/150/83/The_Crown_-1645933.JPEG</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]The Voice[/COLOR]</title>
 <link>plugin://plugin.video.Showbox/?mode=7&name=%20The%20Voice%20&url=https%3a%2f%2fvidics.unblocked.pl%2f%2fTV-Show%2fthe_voice&vidtype=tv</link>
 <thumbnail>http://www.thetvdb.com/banners/posters/247824-11.jpg</thumbnail>
