@@ -960,3 +960,17 @@
 <thumbnail>https://vidics.unblocked.vc//static/150/1/Big-15100.JPEG</thumbnail>
 <fanart>https://vidics.unblocked.vc//static/150/1/Big-15100.JPEG</fanart>
 </plugin>
+
+<plugin>
+<title>2001: A Space Odyssey</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%202001%3a%20A%20Space%20Odyssey%20&url=https%3a%2f%2fvidics.unblocked.vc%2f%2fFilm%2f2001%3a_A_Space_Odyssey&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.vc//static/150/1/2001_A_Space_Odyssey-9994.JPEG</thumbnail>
+<fanart>https://vidics.unblocked.vc//static/150/1/2001_A_Space_Odyssey-9994.JPEG</fanart>
+</plugin>
+
+<plugin>
+<title>The Black Hole</title>
+<link>plugin://plugin.video.Showbox/?mode=4&name=%20The%20Black%20Hole%20&url=https%3a%2f%2fvidics.unblocked.vc%2f%2fFilm%2fThe_Black_Hole_(1979)&vidtype=movie</link>
+<thumbnail>https://vidics.unblocked.vc//static/150/1/The_Black_Hole-8616.JPEG</thumbnail>
+<fanart>https://vidics.unblocked.vc//static/150/1/The_Black_Hole-8616.JPEG</fanart>
+</plugin>
