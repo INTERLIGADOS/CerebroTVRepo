@@ -1449,7 +1449,7 @@ Initial release.
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.link__tester" version="1.0.11" name="Cerebro HD Movies Core" provider-name="Biglad,Echo Coder">
+<addon id="plugin.video.link__tester" version="1.0.12" name="Cerebro HD Movies Core" provider-name="Biglad,Echo Coder">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -1784,6 +1784,29 @@ provider-name="Planetiptv">
 	<email></email>
 	<disclaimer>Questo addon contiene link di contenuti in streaming di terze parti non affiliati e/o associati in alcun modo a Planetiptv.</disclaimer>
 	<language>it</language>
+  </extension>
+</addon>
+
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="repository.xbmc-avigdork" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader</summary>
+    <summary lang="he">Playlist Loader</summary>
+    <description lang="en">Playlist Loader</description>
+    <description lang="he">Playlist Loader</description>
+    <platform>all</platform>
+	<news>
+1.2.0
+- (fix) support strings.xml (old Kodi versions).
+1.1.9
+- Added an option to show groups in channels lists.
+	</news>
   </extension>
 </addon>
 
@@ -4366,7 +4389,7 @@ level.</description>
     </extension>
 </addon>
 
-<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.42" provider-name="Team NaN">
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.43" provider-name="Team NaN">
         <requires>
                 <import addon="xbmc.python" version="2.1.0"/>
                 <import addon="script.module.beautifulsoup" version="3.2.1"/>

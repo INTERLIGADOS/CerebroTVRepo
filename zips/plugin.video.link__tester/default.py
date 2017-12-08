@@ -68,7 +68,7 @@ def open_dir(path):
     xbmcplugin.setContent(addon_handle, 'movies')
     #kodi.create_item({'mode': MODES.ADD_LINK, 'path': path}, 'Add Link', is_folder=False, is_playable=False)
     #addLink('[COLOR green]Pair For Best Results[/COLOR]','Cerebro',9898,__icon__)
-    kodi.create_item({'mode': MODES.SETTINGS}, '[COLOR green]Pair For Best Results[/COLOR]', is_folder=False, is_playable=False)
+    kodi.create_item({'mode': MODES.SETTINGS}, '[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)[/COLOR]', is_folder=False, is_playable=False)
     #path = 'C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5cuserdata%5caddon_data%5cplugin.video.link__tester%5clinks%5cTEST'
     path, dirs, files = get_directory(path)
     for dir_name in sorted(dirs):

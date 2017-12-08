@@ -38,8 +38,18 @@ class flenix(Scraper):
                     if scrape.replace('+','-') in url:
 
                         ID = url.split('movies/')[1].split('-')[0]
-                        print ':::::::::::::'+ID
+                        #print ':::::::::::::'+ID
                         headers = {'User-Agent': random_agent()}
+                        page = requests.get(url,headers=headers,allow_redirects=False)
+                        c = page.cookies
+                        i = c.items()
+                        for grab,value in i:
+                            #print (grab,value)
+                            if 'PHP' in grab:
+                                cookie = 'PHPSESSID=%s; path=/; HttpOnly' %grab
+                        
+                        
+                        headers = {'User-Agent': random_agent(),'cookie':cookie,'referer':url}
                         page_url= 'https://flenix.net/movies/%s/watch/'%ID
                         page = session.get(page_url,headers=headers)
                         req_url = 'https://flenix.net/?do=player_ajax&id=%s&xfn=player2' %ID

@@ -1,3 +1,6 @@
+v0.5.43
+- fixed hubmovie
+- fixed Flenix
 v0.5.42
 - added hdpopcorn
 - added BobMovies
