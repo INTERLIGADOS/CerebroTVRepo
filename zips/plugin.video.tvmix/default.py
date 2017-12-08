@@ -144,7 +144,7 @@ def GETSEASONS(name,url,iconimage):
                         addDir(name,url,6,iconimage,fanart,tempplotinfo)
 
 def PLAY(name,url,iconimage,description):
-        #url = "http:"+url
+        url = "http:"+url
         link=open_url(url)
         url=re.compile('<a rel="nofollow" target="_blank" href="(.+?)"').findall(link)
         #url = "http:"+url
