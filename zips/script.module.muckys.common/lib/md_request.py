@@ -21,7 +21,7 @@ import base64,cfscrape,re
 from incapsula import crack
 
 
-User_Agent = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2'
+User_Agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
 scraper = cfscrape.CloudflareScraper()
 
 

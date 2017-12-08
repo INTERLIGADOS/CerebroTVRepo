@@ -444,7 +444,7 @@ class md:
 
 
 	def User_Agent(self):
-		return 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36'
+		return 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
 
 
 
@@ -805,23 +805,6 @@ class md:
 
 
 	def check_source(self):
-		if os.path.exists(xbmc.translatePath('special://home/userdata/sources.xml')):
-			with open(xbmc.translatePath('special://home/userdata/sources.xml'), 'r+') as f:
-				my_file = f.read()
-				if re.search(r'http://muckys.mediaportal4kodi.ml', my_file):
-					self.addon.log('Muckys Source Found in sources.xml, Not Deleting.')
-				else:
-					line1 = "you have Installed The MDrepo From An"
-					line2 = "Unofficial Source And Will Now Delete Please"
-					line3 = "Install From [COLOR red]http://muckys.mediaportal4kodi.ml[/COLOR]"
-					line4 = "Removed Repo And Addon"
-					line5 = "successfully"
-					self.addon.show_ok_dialog([line1, line2, line3], self.addon_name)
-					delete_addon = self.addon.get_path()
-					delete_repo = xbmc.translatePath('special://home/addons/repository.mdrepo')
-					shutil.rmtree(delete_addon, ignore_errors=True)
-					shutil.rmtree(delete_repo, ignore_errors=True)
-					self.addon.log('===DELETING===ADDON===+===REPO===')
-					self.addon.show_ok_dialog([line4, line5], self.addon_name)
+		return
 	
 		
