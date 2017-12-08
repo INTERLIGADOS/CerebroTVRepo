@@ -142,9 +142,12 @@ def create_item(queries, label, thumb='', fanart='', is_folder=None, is_playable
     response = urllib.urlopen('https://api.themoviedb.org/3/search/movie?api_key=51ad578391a6d2d799d8ee521dad9fca&query='+str(metaname).replace(" ","%20")).read()
     xbmc.log("MODE: "+str(response),2)
     try:
-        response2=response.split('"poster_path":"', 1)[1]
-        response2=response2.split('",', 1)[0]
-        images = 'http://image.tmdb.org/t/p/w185'+response2
+        if metaname == "9-11":
+            images = "https://i.imgur.com/pooAALh.jpg"
+        else:
+            response2=response.split('"poster_path":"', 1)[1]
+            response2=response2.split('",', 1)[0]
+            images = 'http://image.tmdb.org/t/p/w185'+response2
     except: images = "http://mtvb.co.uk/fanart.jpg"
     try:
         plot = response.split('"overview":"', 1)[1]
