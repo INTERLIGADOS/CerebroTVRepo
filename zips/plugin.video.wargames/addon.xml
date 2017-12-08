@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.wargames" name="[COLOR black]XxX[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR][COLOR black]XxX[/COLOR]" version="100.1.68" provider-name="Biglad, Phoenix">
+<addon id="plugin.video.wargames" name="[COLOR black]XxX[/COLOR][COLOR ghostwhite][B]Cerebro Media[/B][/COLOR][COLOR black]XxX[/COLOR]" version="100.1.69" provider-name="Biglad, Phoenix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -11,15 +11,15 @@
 		<import addon="script.module.liveresolver" version="0.1.24"/>
 		<import addon="script.video.F4mProxy" version="2.2.3"/>
         <import addon="plugin.video.f4mTester" />
-		<import addon="plugin.video.livehub2"/>
-		<import addon="plugin.video.kratosfucksducky"/>
+		<!--<import addon="plugin.video.livehub2"/>-->
+		<!--<import addon="plugin.video.kratosfucksducky"/>-->
         <import addon="plugin.video.Showbox"/>
         <import addon="script.module.streamhub" />
         <import addon="script.module.streamhublive" />
         <import addon="script.module.requests" />
         <import addon="script.cerebro.pairwith" />
-        <import addon="script.exodus.artwork" version="1.0.4" />
-		<import addon="script.exodus.metadata" version="1.0.0" />
+        <import addon="script.exodus.artwork" version="1.0.4" />-->
+		<import addon="script.exodus.metadata" version="1.0.0" />-->
         <!--<import addon="plugin.video.itv" />
         <import addon="plugin.video.bbciplayer" />
         <import addon="plugin.video.tvplayer" />
@@ -35,14 +35,14 @@
         <import addon="script.cerebro.pairwith.laucnher" />
         <import addon="script.tvguide.cerebrotv.uk.2017" />
         <import addon="script.program.menurefresh" />
-		<import addon="plugin.video.Showbox" />
+		<import addon="plugin.video.Showbox" />-->
 		<!--<import addon="script.tvguide.cerebrotv.usa" />-->
         <!--<import addon="plugin.video.ProjectCypher" />-->
         <import addon="script.mtvbxxx" />
         <!--<import addon="script.covloader" />-->
         <import addon="script.xbmc.unpausejumpback" />
-        <import addon="script.covtvsearch" />
-        <import addon="script.covtvsearch2" />
+        <!--<import addon="script.covtvsearch" />-->
+        <!--<import addon="script.covtvsearch2" />-->
         <!--<import addon="program.apollo" />-->
         <import addon="script.cerebro.backend" />
         <import addon="script.module.muckys.common" />
