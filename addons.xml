@@ -2008,6 +2008,26 @@ em procura livre na internet.</description>
 	</extension>
 </addon>
 
+<addon id="plugin.video.showboxarize2" version="100.0.0" name="Cerebro ShowBox" provider-name="biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.showboxarize2" />
+		<import addon="script.showboxarize2.artwork" version="1.0.0" />
+		<import addon="script.showboxarize2.metadata" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.cerebro.backend" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="showboxarize.py">
+		<provides>video</provides>
+	</extension>
+	<summary>Cerebro ShowBox Addon</summary>
+	<description>Based of showboxarize.</description>
+	<extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.sportie"
          name="Sportie"
          version="2.00.008"
@@ -4523,6 +4543,18 @@ level.</description>
 	</extension>
 </addon>
 
+<addon id="script.module.showboxarize2" name="Cerebro ShowBox Data" version="1.00.000" provider-name="biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Data ForCerebro ShowBox Addon</summary>
+		<description>...</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.module.simple.downloader" name="Simple Downloader for xbmc plugins" provider-name="TheCollective" version="1.9.5">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -5880,6 +5912,30 @@ level.</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>Metadata for the Showboxarize Addon</summary>
 		<description>Metadata for Showboxarize are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.showboxarize2.artwork" version="1.0.7" name="Cerebro ShowBox Artwork" provider-name="biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Cerebro ShowBox Addon</summary>
+		<description>Themes for Cerebro ShowBox are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.showboxarize2.metadata" version="1.0.0" name="Cerebro ShowBox Metadata" provider-name="biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Cerebro ShowBox Addon</summary>
+		<description>Metadata for Cerebro ShowBox are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
 </addon>

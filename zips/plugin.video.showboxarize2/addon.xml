@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.showboxarize2" version="100.0.0" name="Cerebro ShowBox" provider-name="biglad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.showboxarize2" />
+		<import addon="script.showboxarize2.artwork" version="1.0.0" />
+		<import addon="script.showboxarize2.metadata" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.cerebro.backend" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="showboxarize.py">
+		<provides>video</provides>
+	</extension>
+	<summary>Cerebro ShowBox Addon</summary>
+	<description>Based of showboxarize.</description>
+	<extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	</extension>
+</addon>
