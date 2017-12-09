@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -53,8 +53,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['solarmoviez.to']
-        self.base_link = 'https://solarmoviez.to'
+        self.domains = ['solarmoviez.to','solarmovie.unblocked.vc']
+        self.base_link = 'https://solarmovie.unblocked.vc'
         self.search_link = '/movie/search/%s.html'
         self.info_link = '/ajax/movie_info/%s.html?is_login=false'
         self.server_link = '/ajax/v4_movie_episodes/%s'

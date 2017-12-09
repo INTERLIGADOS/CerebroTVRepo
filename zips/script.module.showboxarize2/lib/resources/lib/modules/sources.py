@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1151,9 +1151,9 @@ class sources:
         return title
 
     def getConstants(self):
-        self.itemProperty = 'plugin.video.exodus.container.items'
+        self.itemProperty = 'plugin.video.covenant.container.items'
 
-        self.metaProperty = 'plugin.video.exodus.container.meta'
+        self.metaProperty = 'plugin.video.covenant.container.meta'
 
         from resources.lib.sources import sources
 

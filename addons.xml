@@ -4543,7 +4543,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.module.showboxarize2" name="Cerebro ShowBox Data" version="1.00.000" provider-name="biglad">
+<addon id="script.module.showboxarize2" name="Cerebro ShowBox Data" version="1.00.001" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>

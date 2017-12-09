@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,8 +30,8 @@ class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['watch-series.co','watch-series.ru']
-        self.base_link = 'https://watch-series.co'
+        self.domains = ['watch-series.co','watch-series.ru','watchseries.unblocked.vc']
+        self.base_link = 'https://watchseries.unblocked.vc'
         self.search_link = 'search.html?keyword=%s'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):

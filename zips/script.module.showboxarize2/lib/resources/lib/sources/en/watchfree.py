@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['watchfree.to','watchfree.unblockall.org']
-        self.base_link = 'http://watchfree.unblockall.org'
+        self.domains = ['watchfree.to','watchfree.unblocked.vc']
+        self.base_link = 'http://watchfree.unblocked.vc'
         self.moviesearch_link = '/?keyword=%s&search_section=1'
         self.tvsearch_link = '/?keyword=%s&search_section=2'
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,8 +30,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['pubfilmonline.net','getmypopcornnow.xyz']
-        self.base_link = 'http://getmypopcornnow.xyz'
+        self.domains = ['pubfilmonline.net','getmypopcornnow.xyz','popcorntime.unblocked.vc']
+        self.base_link = 'http://popcorntime.unblocked.vc'
         self.post_link = '/wp-admin/admin-ajax.php'
         self.search_link = '/?s=%s'
         self.scraper = cfscrape.create_scraper()

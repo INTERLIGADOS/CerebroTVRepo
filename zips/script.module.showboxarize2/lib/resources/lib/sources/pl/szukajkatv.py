@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
     Copyright (C) 2017 homik
 
     This program is free software: you can redistribute it and/or modify

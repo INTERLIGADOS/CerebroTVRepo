@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['hdpopcorns.com']
-        self.base_link = 'http://hdpopcorns.com'
+        self.domains = ['hdpopcorns.com','popcorntime.unblocked.vc']
+        self.base_link = 'http://popcorntime.unblocked.vc'
         self.search_link = '/wp-admin/admin-ajax.php?action=mts_search&q=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
