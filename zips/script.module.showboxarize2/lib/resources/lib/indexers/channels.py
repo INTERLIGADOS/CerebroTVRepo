@@ -25,6 +25,11 @@ from resources.lib.modules import metacache
 from resources.lib.modules import workers
 from resources.lib.modules import trakt
 
+import xbmcaddon,xbmcplugin,xbmcgui,xbmc
+
+addon_handle = int(sys.argv[1])
+xbmcplugin.setContent(addon_handle, 'movies')
+
 import sys,re,json,urllib,urlparse,datetime
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?',''))) if len(sys.argv) > 1 else dict()

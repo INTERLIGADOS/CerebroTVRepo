@@ -29,6 +29,9 @@ from resources.lib.modules import playcount
 from resources.lib.modules import workers
 from resources.lib.modules import views
 from resources.lib.modules import utils
+import xbmcaddon,xbmcplugin,xbmcgui,xbmc,sys
+addon_handle = int(sys.argv[1])
+xbmcplugin.setContent(addon_handle, 'movies')
 
 import os,sys,re,json,urllib,urlparse,datetime
 
@@ -1156,7 +1159,7 @@ class tvshows:
         except:
             pass
 
-        control.content(syshandle, 'tvshows')
+        control.content(syshandle, 'movies')
         control.directory(syshandle, cacheToDisc=True)
         views.setView('tvshows', {'skin.estuary': 55, 'skin.confluence': 500})
 
@@ -1209,7 +1212,7 @@ class tvshows:
             except:
                 pass
 
-        control.content(syshandle, 'addons')
+        control.content(syshandle, 'movies')
         control.directory(syshandle, cacheToDisc=True)
 
 
