@@ -33,7 +33,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['pubfilm.to']
-        self.base_link = 'http://pubfilm.to'
+        self.base_link = 'http://www.pubfilm.to/'
 
         self.tvsearch_link = '?c=movie&m=quickSearch&keyword=%s'
         self.tvsearch_link_2 = '?c=movie&m=filter&keyword=%s'

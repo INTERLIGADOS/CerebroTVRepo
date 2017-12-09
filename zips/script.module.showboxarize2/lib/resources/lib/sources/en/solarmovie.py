@@ -53,8 +53,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['solarmoviez.to','solarmovie.unblocked.vc']
-        self.base_link = 'https://solarmovie.unblocked.vc'
+        self.domains = ['solarmoviez.to','solarmovie.unblocked.vc','solarmoviez.ru']
+        self.base_link = 'https://solarmoviez.ru'
         self.search_link = '/movie/search/%s.html'
         self.info_link = '/ajax/movie_info/%s.html?is_login=false'
         self.server_link = '/ajax/v4_movie_episodes/%s'

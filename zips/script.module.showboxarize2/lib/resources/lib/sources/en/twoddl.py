@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['iiddl.com/']
-        self.base_link = 'http://iiddl.com'
+        self.domains = ['iiddl.com','iiddl.net']
+        self.base_link = 'http://iiddl.net'
         self.search_link = '/search/%s/feed/rss2/'
 
 

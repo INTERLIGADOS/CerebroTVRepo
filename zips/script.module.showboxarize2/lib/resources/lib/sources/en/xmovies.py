@@ -32,9 +32,9 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['xmovies8.tv', 'xmovies8.ru']
-        self.base_link = 'https://xmovies8.es'
-        self.search_base = 'https://search.xmovies8.es'
-        self.search_link = '/?q=%s'
+        self.base_link = 'http://xmovies8.fm/'
+        self.search_base = 'http://xmovies8.fm/search-movies'
+        self.search_link = '/%s.html'
         self.scraper = cfscrape.create_scraper()
 
     def matchAlias(self, title, aliases):

@@ -323,7 +323,7 @@ class navigator:
 
 
     def endDirectory(self):
-        control.content(syshandle, 'movies')
+        control.content(syshandle, 'seasons')
         control.directory(syshandle, cacheToDisc=True)
 
 

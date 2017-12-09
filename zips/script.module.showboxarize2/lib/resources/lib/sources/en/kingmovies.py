@@ -33,7 +33,7 @@ class source:
         self.language = ['en']
         self.domains = ['kingmovies.to']
         self.base_link = 'https://kingmovies.is'
-        self.search_link = '/search?q=%s'
+        self.search_link = 'search?q=%s'
         self.source_link = 'https://api.streamdor.co/sources'
 
     def matchAlias(self, title, aliases):

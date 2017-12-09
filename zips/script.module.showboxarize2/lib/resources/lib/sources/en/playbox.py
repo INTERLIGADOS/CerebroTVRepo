@@ -31,8 +31,8 @@ class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['playboxhd.com']
-        self.base_link = 'http://playboxhd.com'
+        self.domains = ['playboxhd.com','playboxhd.net']
+        self.base_link = 'http://playboxhd.net'
         self.search_link = '/api/box?type=search&os=Android&v=291.0&k=0&keyword=%s'
         self.sources_link = '/api/box?type=detail&id=%s&os=Android&v=291.0&k=0&al=key'
         self.stream_link = '/api/box?type=stream&id=%s&os=Android&v=291.0'

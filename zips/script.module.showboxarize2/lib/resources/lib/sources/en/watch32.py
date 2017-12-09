@@ -32,8 +32,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['watch32hd.co']
-        self.base_link = 'https://watch32hd.co'
-        self.search_link = '/watch?v=%s_%s'
+        self.base_link = 'https://watch32hd.co/'
+        self.search_link = '%s/watch?v=%s_%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):

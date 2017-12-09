@@ -301,7 +301,7 @@ class channels:
             except:
                 pass
 
-        control.content(syshandle, 'files')
+        control.content(syshandle, 'movies')
         control.directory(syshandle, cacheToDisc=True)
 
 

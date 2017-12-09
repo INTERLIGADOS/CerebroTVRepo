@@ -31,7 +31,7 @@ from resources.lib.modules import views
 from resources.lib.modules import utils
 import xbmcaddon,xbmcplugin,xbmcgui,xbmc,sys
 addon_handle = int(sys.argv[1])
-xbmcplugin.setContent(addon_handle, 'movies')
+#xbmcplugin.setContent(addon_handle, 'movies')
 
 import os,sys,re,json,urllib,urlparse,datetime
 

@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['hdpopcorns.com','popcorntime.unblocked.vc']
-        self.base_link = 'http://popcorntime.unblocked.vc'
+        self.domains = ['hdpopcorns.com','popcorntime.unblocked.vc','hdpopcorns.in']
+        self.base_link = 'http://hdpopcorns.in'
         self.search_link = '/wp-admin/admin-ajax.php?action=mts_search&q=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
