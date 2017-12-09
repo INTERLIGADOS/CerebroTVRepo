@@ -1939,7 +1939,7 @@ em procura livre na internet.</description>
 
 <addon
   id="plugin.video.Showbox"
-  version="9.8"
+  version="9.9"
   name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]CerebroTV Vidics Player[/B][/COLOR]"
   provider-name="Biglad">
   <requires>

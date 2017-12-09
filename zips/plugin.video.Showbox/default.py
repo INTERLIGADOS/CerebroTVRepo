@@ -300,6 +300,7 @@ def HOME():
         addDir('Movies 2000-2010',strdomain+'/Category-Movies/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',26,__icon__)
         addDir('TV Shows 2010-2017',strdomain+'/Category-TvShows/Genre-Any/2010-2017/Letter-Any/LatestFirst/1.htm',27,__icon__)
         addDir('TV Shows 2000-2010',strdomain+'/Category-TvShows/Genre-Any/2000-2010/Letter-Any/LatestFirst/1.htm',27,__icon__)
+        addDir('TV Shows (Comedy) 1980-1990',strdomain+'/Category-TvShows/Genre-comedy/1980-1990/Letter-Any/LatestFirst/1.htm',27,__icon__)
         d()
 def LangOption():
         addDir('Show Top Languages','Top',10,'')
