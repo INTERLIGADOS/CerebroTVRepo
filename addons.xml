@@ -2008,7 +2008,7 @@ em procura livre na internet.</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.showboxarize2" version="100.0.2" name="Cerebro ShowBox" provider-name="biglad">
+<addon id="plugin.video.showboxarize2" version="100.0.3" name="Cerebro ShowBox" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.showboxarize2" />
@@ -2017,6 +2017,8 @@ em procura livre na internet.</description>
 		<import addon="script.module.urlresolver" version="3.0.0" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<import addon="script.cerebro.backend" />
+		<import addon="script.cerebro.pairwith" />
+        <import addon="script.cerebro.pairwith.laucnher" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="showboxarize.py">
 		<provides>video</provides>
