@@ -31,6 +31,13 @@
 </plugin>
 
 <plugin>
+<title>[COLOR pink]Cererbro ShowBox TV Shows[/COLOR] (VERY GOOD)</title>
+<link>plugin://plugin.video.livehub2/?description&iconimage=%2ficon.png&mode=5008&name=%5bCOLOR%20white%5d%5bB%5dShowBox%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
+<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
+<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
 <title>[COLOR pink]Vidics New TV Shows[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
@@ -63,13 +70,6 @@
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.Showbox/?mode=27&name=TV%20Shows%202000-2010&url=http%3a%2f%2fvidics.unblocked.pl%2fCategory-TvShows%2fGenre-Any%2f2000-2010%2fLetter-Any%2fLatestFirst%2f1.htm</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]ShowBox TV Shows[/COLOR] (Pair First!!!!)</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5008&name=%5bCOLOR%20white%5d%5bB%5dShowBox%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
