@@ -27,8 +27,8 @@ from resources.lib.modules import trakt
 
 import xbmcaddon,xbmcplugin,xbmcgui,xbmc
 
-addon_handle = int(sys.argv[1])
-xbmcplugin.setContent(addon_handle, 'movies')
+#addon_handle = int(sys.argv[1])
+#xbmcplugin.setContent(addon_handle, 'movies')
 
 import sys,re,json,urllib,urlparse,datetime
 

@@ -1015,6 +1015,7 @@ class tvshows:
 
 
     def tvshowDirectory(self, items):
+
         if items == None or len(items) == 0: control.idle() ; sys.exit()
 
         sysaddon = sys.argv[0]

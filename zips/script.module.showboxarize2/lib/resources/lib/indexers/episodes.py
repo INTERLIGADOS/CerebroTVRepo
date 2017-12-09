@@ -30,13 +30,15 @@ from resources.lib.modules import views
 from resources.lib.modules import utils
 
 import os,sys,re,json,zipfile,StringIO,urllib,urllib2,urlparse,datetime
-
+import xbmcaddon
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?',''))) if len(sys.argv) > 1 else dict()
 
 action = params.get('action')
 
 control.moderator()
-
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
 
 class seasons:
     def __init__(self):
@@ -1351,7 +1353,6 @@ class episodes:
 
     def episodeDirectory(self, items):
         if items == None or len(items) == 0: control.idle() ; sys.exit()
-
         sysaddon = sys.argv[0]
 
         syshandle = int(sys.argv[1])
@@ -1392,7 +1393,7 @@ class episodes:
         tvshowBrowserMenu = control.lang(32071).encode('utf-8')
 
         addToLibrary = control.lang(32551).encode('utf-8')
-
+        #control.addItem(handle=syshandle, url=url, isFolder=False)
         for i in items:
             try:
                 if not 'label' in i: i['label'] = i['title']
@@ -1520,7 +1521,7 @@ class episodes:
 
     def addDirectory(self, items, queue=False):
         if items == None or len(items) == 0: control.idle() ; sys.exit()
-
+        #self.addDirectoryItem('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)', 'pair', __icon__, 'DefaultFolder.png')
         sysaddon = sys.argv[0]
 
         syshandle = int(sys.argv[1])
@@ -1528,7 +1529,6 @@ class episodes:
         addonFanart, addonThumb, artPath = control.addonFanart(), control.addonThumb(), control.artPath()
 
         queueMenu = control.lang(32065).encode('utf-8')
-
         for i in items:
             try:
                 name = i['name']

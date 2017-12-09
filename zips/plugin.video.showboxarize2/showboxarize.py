@@ -448,3 +448,6 @@ elif action == 'service':
     from resources.lib.modules import libtools
     libtools.libepisodes().service()
     xbmcplugin.setContent(addon_handle, 'movies')
+	
+elif action == 'pair':
+    xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')

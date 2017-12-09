@@ -96,7 +96,7 @@ class sources:
 
     def addItem(self, title):
         control.playlist.clear()
-
+        #self.addDirectoryItem('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)', 'pair', __icon__, 'DefaultFolder.png')
         items = control.window.getProperty(self.itemProperty)
         items = json.loads(items)
 
@@ -175,7 +175,7 @@ class sources:
             except:
                 pass
 
-        control.content(syshandle, 'files')
+        control.content(syshandle, 'movies')
         control.directory(syshandle, cacheToDisc=True)
 
 
