@@ -220,23 +220,23 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr ""
 
 msgctxt "#32048"
-msgid "[B]COVENANT[/B] : Downloads"
+msgid "[B]SETTINGS[/B] : Downloads"
 msgstr ""
 
 msgctxt "#32049"
-msgid "[B]COVENANT[/B] : Viewtypes"
+msgid "[B]SETTINGS[/B] : Viewtypes"
 msgstr ""
 
 msgctxt "#32050"
-msgid "[B]COVENANT[/B] : Clear providers..."
+msgid "[B]SETTINGS[/B] : Clear providers..."
 msgstr ""
 
 msgctxt "#32051"
-msgid "[B]COVENANT[/B] : Clear metadata..."
+msgid "[B]SETTINGS[/B] : Clear metadata..."
 msgstr ""
 
 msgctxt "#32052"
-msgid "[B]COVENANT[/B] : Clear cache..."
+msgid "[B]SETTINGS[/B] : Clear cache..."
 msgstr ""
 
 msgctxt "#32053"

@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['alluc.ee']
-        self.base_link = 'https://www.alluc.ee'
+        self.domains = ['alluc.ee','alluc.unblckd.bz']
+        self.base_link = 'http://alluc.unblckd.bz/'
         self.search_link = '/api/search/%s/?apikey=%s&getmeta=0&query=%s&count=%d&from=%d'
         self.types = ['stream']
         self.streamLimit = control.setting('alluc.limit')

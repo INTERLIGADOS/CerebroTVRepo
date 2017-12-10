@@ -3,8 +3,6 @@ import xbmcgui
 import resources.lib.utils as utils
 from resources.lib.backup import XbmcBackup
 
-exit()
-
 def get_params():
     param = {}
     
