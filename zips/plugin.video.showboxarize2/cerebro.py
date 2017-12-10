@@ -451,3 +451,23 @@ elif action == 'service':
 	
 elif action == 'pair':
     xbmc.executebuiltin('RunAddon(script.cerebro.pairwith.laucnher)')
+	
+elif action == 'movieSearchnew':
+    from resources.lib.indexers import movies
+    movies.movies().search_new()
+	
+elif action == 'movieSearchterm':
+    from resources.lib.indexers import movies
+    movies.movies().search_term(name)
+	
+elif action == 'tvSearchnew':
+    from resources.lib.indexers import tvshows
+    tvshows.tvshows().search_new()
+
+elif action == 'tvSearchterm':
+    from resources.lib.indexers import tvshows
+    tvshows.tvshows().search_term(name)
+	
+elif action == 'clearCacheSearch':
+    from resources.lib.indexers import navigator
+    navigator.navigator().clearCacheSearch()

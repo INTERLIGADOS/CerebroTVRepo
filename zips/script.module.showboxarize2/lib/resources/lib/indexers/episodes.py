@@ -1354,7 +1354,7 @@ class episodes:
     def episodeDirectory(self, items):
         if items == None or len(items) == 0: control.idle() ; sys.exit()
         sysaddon = sys.argv[0]
-
+        #self.addDirectoryItem('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)', 'pair', __icon__, 'DefaultFolder.png')
         syshandle = int(sys.argv[1])
 
         addonPoster, addonBanner = control.addonPoster(), control.addonBanner()

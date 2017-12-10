@@ -19,9 +19,9 @@
 
 
 import os,sys,urlparse
-import xbmcaddon
 from resources.lib.modules import control
 from resources.lib.modules import trakt
+import xbmcaddon
 __addon__ = xbmcaddon.Addon()
 __icon__ = __addon__.getAddonInfo('icon')
 sysaddon = sys.argv[0] ; syshandle = int(sys.argv[1]) ; control.moderator()
@@ -41,8 +41,9 @@ class navigator:
     def root(self):
         self.addDirectoryItem('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)', 'pair', __icon__, 'DefaultFolder.png')
         self.addDirectoryItem('[COLOR gold]Cerebro ShowBox[/COLOR] - Main Menu', 'ShowChangelog', __icon__, 'DefaultFolder.png')
-        self.addDirectoryItem(32001, 'movieNavigator', 'movies.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('Search Movies / TV Shows', 'searchNavigator', 'search.png', 'DefaultFolder.png')
+        self.addDirectoryItem('Movies Menu', 'movieNavigator', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem('TV Shows Menu', 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
 
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
@@ -50,17 +51,17 @@ class navigator:
 
         self.addDirectoryItem('Sky Cinema on Demand', 'channels', 'channels.png', 'DefaultMovies.png')
         if (traktIndicators == True and not control.setting('tv.widget.alt') == '0') or (traktIndicators == False and not control.setting('tv.widget') == '0'):
-            self.addDirectoryItem(32006, 'tvWidget', 'latest-episodes.png', 'DefaultRecentlyAddedEpisodes.png')
+            self.addDirectoryItem('Latest TV Episodes', 'tvWidget', 'latest-episodes.png', 'DefaultRecentlyAddedEpisodes.png')
         if not control.setting('movie.widget') == '0':
-            self.addDirectoryItem(32005, 'movieWidget', 'latest-movies.png', 'DefaultRecentlyAddedMovies.png')
+            self.addDirectoryItem('Latest Movies', 'movieWidget', 'latest-movies.png', 'DefaultRecentlyAddedMovies.png')
 
-        self.addDirectoryItem(32008, 'toolNavigator', 'tools.png', 'DefaultAddonProgram.png')
+        self.addDirectoryItem('Tools (Clear Providers, API Keys, etc.)', 'toolNavigator', 'tools.png', 'DefaultAddonProgram.png')
 
         downloads = True if control.setting('downloads') == 'true' and (len(control.listDir(control.setting('movie.download.path'))[0]) > 0 or len(control.listDir(control.setting('tv.download.path'))[0]) > 0) else False
         if downloads == True:
             self.addDirectoryItem(32009, 'downloadNavigator', 'downloads.png', 'DefaultFolder.png')
 
-        self.addDirectoryItem(32010, 'searchNavigator', 'search.png', 'DefaultFolder.png')
+        #self.addDirectoryItem(32010, 'searchNavigator', 'search.png', 'DefaultFolder.png')
         
         #self.addDirectoryItem('Join The Private Facebook Group Called - Jesus Box Media Support & Kodi', 'ShowChangelog', 'icon.png', 'DefaultFolder.png')
 
@@ -71,6 +72,7 @@ class navigator:
         self.addDirectoryItem('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)', 'pair', __icon__, 'DefaultFolder.png')
         self.addDirectoryItem('[COLOR gold]Cerebro ShowBox[/COLOR] - Movies Menu', 'ShowChangelog', __icon__, 'DefaultFolder.png')
         self.addDirectoryItem('Sky Cinema on Demand', 'channels', 'channels.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Search For a Movie', 'movieSearch', 'search.png', 'DefaultMovies.png')
         if not control.setting('movie.widget') == '0':
             self.addDirectoryItem(32005, 'movieWidget', 'latest-movies.png', 'DefaultRecentlyAddedMovies.png')
         self.addDirectoryItem(32011, 'movieGenres', 'genres.png', 'DefaultMovies.png')
@@ -90,8 +92,8 @@ class navigator:
             if not control.setting('lists.widget') == '0':
                 self.addDirectoryItem(32003, 'mymovieliteNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
 
-            #self.addDirectoryItem(32028, 'moviePerson', 'people-search.png', 'DefaultMovies.png')
-            self.addDirectoryItem(32010, 'movieSearch', 'search.png', 'DefaultMovies.png')
+            self.addDirectoryItem(32028, 'moviePerson', 'people-search.png', 'DefaultMovies.png')
+            #self.addDirectoryItem(32010, 'movieSearch', 'search.png', 'DefaultMovies.png')
 
         self.endDirectory()
 
@@ -134,6 +136,7 @@ class navigator:
     def tvshows(self, lite=False):
         self.addDirectoryItem('[COLOR green]Click Here to Pair[/COLOR] - (Do this once every 4 hours)', 'pair', __icon__, 'DefaultFolder.png')
         self.addDirectoryItem('[COLOR gold]Cerebro ShowBox[/COLOR] - TV Menu', 'ShowChangelog', __icon__, 'DefaultFolder.png')
+        self.addDirectoryItem('Search For a Show', 'tvSearch', 'search.png', 'DefaultTVShows.png')
         if (traktIndicators == True and not control.setting('tv.widget.alt') == '0') or (traktIndicators == False and not control.setting('tv.widget') == '0'):
             self.addDirectoryItem(32006, 'tvWidget', 'latest-episodes.png', 'DefaultRecentlyAddedEpisodes.png')
         self.addDirectoryItem(32011, 'tvGenres', 'genres.png', 'DefaultTVShows.png')
@@ -155,7 +158,7 @@ class navigator:
                 self.addDirectoryItem(32004, 'mytvliteNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
 
             self.addDirectoryItem(32028, 'tvPerson', 'people-search.png', 'DefaultTVShows.png')
-            self.addDirectoryItem(32010, 'tvSearch', 'search.png', 'DefaultTVShows.png')
+            #self.addDirectoryItem(32010, 'tvSearch', 'search.png', 'DefaultTVShows.png')
 
         self.endDirectory()
 
@@ -306,6 +309,13 @@ class navigator:
         cache.cache_clear()
         control.infoDialog(control.lang(32057).encode('utf-8'), sound=True, icon='INFO')
 
+    def clearCacheSearch(self):
+        control.idle()
+        yes = control.yesnoDialog(control.lang(32056).encode('utf-8'), '', '')
+        if not yes: return
+        from resources.lib.modules import cache
+        cache.cache_clear_search()
+        control.infoDialog(control.lang(32057).encode('utf-8'), sound=True, icon='INFO')
 
     def addDirectoryItem(self, name, query, thumb, icon, context=None, queue=False, isAction=True, isFolder=True):
         try: name = control.lang(name).encode('utf-8')

@@ -1949,7 +1949,7 @@ em procura livre na internet.</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.showboxarize2" version="100.0.6" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro ShowBox[/B][/COLOR]" provider-name="biglad">
+<addon id="plugin.video.showboxarize2" version="100.0.7" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro ShowBox[/B][/COLOR]" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.showboxarize2" />
@@ -1961,7 +1961,7 @@ em procura livre na internet.</description>
 		<import addon="script.cerebro.pairwith" />
         <import addon="script.cerebro.pairwith.laucnher" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="showboxarize.py">
+	<extension point="xbmc.python.pluginsource" library="cerebro.py">
 		<provides>video</provides>
 	</extension>
 	<summary>Cerebro ShowBox Addon</summary>
@@ -4451,7 +4451,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.module.showboxarize2" name="Cerebro ShowBox Data" version="1.00.007" provider-name="biglad">
+<addon id="script.module.showboxarize2" name="Cerebro ShowBox Data" version="1.00.008" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
