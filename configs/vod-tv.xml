@@ -73,31 +73,10 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Covenant TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5001&name=%5bCOLOR%20white%5d%5bB%5dCovenant%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]Cerebro's 7 Day TV Schedule[/COLOR]</title>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 <link>plugin://plugin.video.Showbox/?mode=20&name=7%20Day%20TV%20Schedule&url=TV%20Schedule</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]StreamHub TV Shows[/COLOR]</title>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<link>plugin://plugin.video.streamhub/?action=tvNavigator</link>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Fantastic TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.fantastic/?action=tvNavigator</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
 
 <plugin>
@@ -108,55 +87,11 @@
 </plugin>
 
 <plugin>
-<title>[COLOR pink]Elysium TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=4000&name=%5bCOLOR%20white%5d%5bB%5dElysium%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Bonecrusher TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.bonecrusher/?action=tvNavigator</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]Exodus TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.livehub2/?description&iconimage=C%3a%5cUsers%5cbigla%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.livehub2%5cicon.png&mode=5005&name=%5bCOLOR%20white%5d%5bB%5dExodus%20TV%5b%2fCOLOR%5d%5b%2fB%5d&url=url</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]1channel TV Shows[/COLOR]</title>
-<link>plugin://plugin.video.1channel/?mode=BrowseListMenu&section=tv</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-<title>[COLOR pink]S.A.L.T.S TV Shows[/COLOR] </title>
-<link>plugin://plugin.video.salts/?mode=browse&section=TV</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
 <title>[COLOR pink]Cerebro Vidics Add-On[/COLOR]</title>
 <link>plugin://plugin.video.Showbox</link>
 <thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
 <fanart>http://mtvb.co.uk/fanart.jpg</fanart>
 </plugin>
-
-<dir>
-<name>[COLOR pink]My Trakt[/COLOR]</name>
-<link>https://raw.githubusercontent.com/biglad/CerebroTVRepo/master/configs/trackt.xml</link>
-<thumbnail>http://mtvb.co.uk/icon.png</thumbnail>
-<fanart>http://mtvb.co.uk/fanart.jpg</fanart>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</dir>
 
 <plugin>
 <title>[COLOR pink]BBC Catch Up[/COLOR]</title>
