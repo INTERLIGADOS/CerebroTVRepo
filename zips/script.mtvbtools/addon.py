@@ -49,8 +49,7 @@ def menuoptions():
         function5,
         function6,
         function7,
-        function8,
-		function9
+        function8
         )
         
     call = dialog.select('[B][COLOR=yellow]CerebroTV[/COLOR][COLOR=red] Tools Menu[/COLOR][/B]', [
@@ -60,7 +59,6 @@ def menuoptions():
     '[B][COLOR=green]Test My Connection Speed[/COLOR][/B]', 
     '[B][COLOR=lightblue]Re-Download the last update[/COLOR][/B]', 
     '[B][COLOR=lightblue]Open Main Box Settings[/COLOR][/B]', 
-    '[B][COLOR=cyan]CerebroTV WebCam[/COLOR][/B]',
     '[B][COLOR=gold]Update Addons & Repos[/COLOR][/B] (make sure your upto date)',
 	'[B][COLOR=gold]Change GUI Sounds[/COLOR][/B]'])
     # dialog.selectreturns
@@ -71,7 +69,7 @@ def menuoptions():
         # esc is not pressed
         if call < 0:
             return
-        func = funcs[call-9]
+        func = funcs[call-8]
         #dp = xbmcgui.DialogProgress()
         #dp.create("[COLOR tomato]CerebroTV[/COLOR]",""+str(func)+" -3","PLEASE EXIT KODI OR PULL THE POWER LEAD")
         #xbmc.sleep(1000)
@@ -114,9 +112,6 @@ def function6():
     xbmc.executebuiltin('StartAndroidActivity("com.mbox.settings")')
         
 def function7():
-    xbmc.executebuiltin('PlayMedia("plugin://plugin.video.surveillanceroom/?action=single_camera&camera_number=1")')  
-
-def function8():
     xbmc.executebuiltin('ActivateWindow(10040,"addons://outdated/",return)')
     xbmc.sleep(2000)
     dp = xbmcgui.DialogProgress()
@@ -131,7 +126,7 @@ def function8():
     
     dp.close()
     
-def function9():
+def function8():
     xbmc.executebuiltin('ActivateWindow(10040,"addons://user/kodi.resource.uisounds",return)')  
     
   
