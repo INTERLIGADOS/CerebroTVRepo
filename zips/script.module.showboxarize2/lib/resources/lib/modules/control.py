@@ -132,6 +132,12 @@ key = "RgUkXp2s5v8x/A?D(G+KbPeShVmYq3t6"
 
 iv = "p2s5v8y/B?E(H+Mb"
 
+if not os.path.exists(searchFile):
+    if not os.path.exists(dataPath):
+        os.mkdir(dataPath)
+    #xbmc.log(searchFile,2)
+    open(searchFile,'a')
+
 def addonIcon():
     theme = appearance() ; art = artPath()
     if not (art == None and theme in ['-', '']): return os.path.join(art, 'icon.png')
