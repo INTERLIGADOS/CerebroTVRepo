@@ -32,7 +32,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['kingmovies.to']
-        self.base_link = 'https://kingmovies.is'
+        self.base_link = 'https://kingmovies.pro/'
         self.search_link = 'search?q=%s'
         self.source_link = 'https://api.streamdor.co/sources'
 

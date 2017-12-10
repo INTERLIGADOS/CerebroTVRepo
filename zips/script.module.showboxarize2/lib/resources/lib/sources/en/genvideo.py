@@ -31,7 +31,7 @@ class source:
         self.language = ['en']
         self.domains = ['genvideos.org', 'genvideos.com']
         self.base_link = 'http://genvideos.com'
-        self.search_link = '/watch_%s_%s.html'
+        self.search_link = '/results?q=%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):

@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['project-free-tv.ch','project-free-tv.ag','myprojectfreetv.net']
-        self.base_link = 'https://myprojectfreetv.net'
+        self.domains = ['project-free-tv.ch','project-free-tv.ag','myprojectfreetv.net','projectfreetv.ag']
+        self.base_link = 'http://projectfreetv.ag'
         self.search_link = '/movies/%s-%s/'
         self.search_link_2 = '/movies/search-form/?free=%s'
 
