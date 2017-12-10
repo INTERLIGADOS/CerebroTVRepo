@@ -6361,7 +6361,7 @@ level.</description>
 
 <addon id="script.tvguidemegatvbox"
   name="CerebroTV TV Live TV"
-  version="3.5"
+  version="3.6"
   provider-name="Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
