@@ -31,7 +31,7 @@ class source:
         self.language = ['en']
         self.domains = ['wrzcraft.net']
         self.base_link = 'http://wrzcraft.net'
-        self.search_link = '/search/%s/feed/rss2/'
+        self.search_link = '/?s=%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):

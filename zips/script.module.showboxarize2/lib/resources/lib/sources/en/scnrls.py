@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['scene-rls.com']
-        self.base_link = 'http://scene-rls.com'
+        self.domains = ['scene-rls.com','scene-rls.net']
+        self.base_link = 'http://scene-rls.net/'
         self.search_link = '/search/%s/feed/rss2/'
         self.search_link_2 = '/search/%s/'
 

@@ -29,8 +29,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['myddl.pw','xtremeli.pw']
-        self.base_link = 'http://xtremeli.pw'
+        self.domains = ['myddl.pw','xtremeli.pw','xtremeli.me']
+        self.base_link = 'http://xtremeli.me'
         self.search_link = '/search/%s/feed/rss2/'
 
 

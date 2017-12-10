@@ -37,7 +37,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['1movies.tv','1movies.to']
-        self.base_link = 'http://1movies.tv'
+        self.base_link = 'https://1movies.to'
         self.search_link = '/search_all/%s'
         self.player_link = '/ajax/movie/load_player_v3'
 
