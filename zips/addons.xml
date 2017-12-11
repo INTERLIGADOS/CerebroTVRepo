@@ -765,41 +765,6 @@ provider-name="Cerebro">
     </extension>
 </addon>
 
-<addon id="plugin.video.fantastic" version="1.1.30" name="Fantastic" provider-name="Firestickplusman">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.fantastic" />
-		<import addon="script.fantastic.artwork" version="1.0.0" />
-		<import addon="script.fantastic.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="3.0.0" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="fantastic.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">fantastic</summary>
-		<description lang="en">[COLOR dodgerblue]A New Fantastic Movies and TV. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels. The author does not host any of the content in this addon and takes no responsibility for content found[/COLOR].</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadržaj koji je pronađen i nije povezan sa bilo kojim izvorom sadržaja. Ovaj dodatak samo pretražuje sadržaj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
-		<disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-
 <addon id="plugin.video.freeview" name="Freeview" version="3.1.2" provider-name="rayw1986">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1712,42 +1677,6 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.Planetiptv"
-name="[COLOR cyan][B] PlanetIptv [/COLOR][/B]"
-version="1.0.0"
-provider-name="Planetiptv">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-     <summary>Planetiptv</summary>
-        <description>Addon italiano con tantissimi contenuti multimediali</description>
-        <news>v1.0.0
-- [COLOR blue][B] Prima Realese[/B][/COLOR]
-
-</news>
-    <platform>all</platform>
-	<license>Attribuzione - Non commerciale </license>
-	<website></website>
-	<email></email>
-	<disclaimer>Questo addon contiene link di contenuti in streaming di terze parti non affiliati e/o associati in alcun modo a Planetiptv.</disclaimer>
-	<language>it</language>
-  </extension>
-</addon>
-
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1769,39 +1698,6 @@ provider-name="Planetiptv">
 - Added an option to show groups in channels lists.
 	</news>
   </extension>
-</addon>
-
-<addon id="plugin.video.rebirth" version="1.0.2" name="Rebirth" provider-name="Cypher">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.rebirth.artwork" version="1.0.0" />
-		<import addon="script.rebirth.metadata" version="1.0.0" />
-                <import addon="script.module.urlresolver"/>
-                <import addon="script.module.metahandler"/>
-                <import addon="script.module.requests"/>
-                <import addon="script.module.beautifulsoup"/>
-                <import addon="script.module.schism.common"/>
-                <import addon="script.module.futures"/>
-                <import addon="script.module.nanscrapers" version="0.5.5" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="Rebirth.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Rebirth</summary>
-		<description lang="en">The Ultimate Movie, TV Show, and Playlist Add-on</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<platform>all</platform>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news></news>
-	</extension>
 </addon>
 
 <addon id="plugin.video.rsiptv"
@@ -1931,48 +1827,6 @@ em procura livre na internet.</description>
 	<extension point="xbmc.addon.metadata">
 	<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="plugin.video.sportie"
-         name="Sportie"
-         version="2.00.008"
-         provider-name="Echo Coder">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="repository.colossus" />
-	<import addon="script.module.httplib2" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.liveresolver" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.echo" />
-    <import addon="script.video.F4mProxy" />
-    <import addon="plugin.video.f4mTester" />
-    <import addon="plugin.video.SportsDevil" />
-    <import addon="program.plexus" version="0.1.4" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en"></summary>
-    <description lang="en">Sportie is a multi scraping/playlist sports addon that scrapes numerous websites to bring you the most up to date streams every time!
-
--Soccer Streams Support
--Reddit Support
--Plus Much More!</description>
-    <disclaimer lang="en">Sportie does not host any of the streams provided within the addon.</disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>resources/art/screenshots/screenshot-01.jpg</screenshot>
-        <screenshot>resources/art/screenshots/screenshot-02.jpg</screenshot>
-        <screenshot>resources/art/screenshots/screenshot-03.jpg</screenshot>
-    </assets>
-  </extension>
 </addon>
 
 <addon
