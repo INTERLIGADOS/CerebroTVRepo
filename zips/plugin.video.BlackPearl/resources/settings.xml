@@ -1,6 +1,0 @@
-<settings>
-<category label="General">
-     <setting id="Username" type="text" label="Username" default="spock"/>
-     <setting id="Password" type="text" label="Password" default="spock"/>
-</category>
-</settings>
