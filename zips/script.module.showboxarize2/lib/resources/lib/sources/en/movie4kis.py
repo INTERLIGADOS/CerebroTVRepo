@@ -33,7 +33,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['movie4k.unblocked.vc','movie4k.is','movie4k.org']
-        self.base_link = 'https://movie4k.is'
+        self.base_link = 'http://movie4k.org'
         self.search_link = '/movies.php?list=search&search=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
