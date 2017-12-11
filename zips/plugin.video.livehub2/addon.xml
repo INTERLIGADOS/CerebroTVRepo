@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.livehub2" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro IPTV+[/B][/COLOR]" version="10.36" provider-name="sClarke and Biglad">
+<addon id="plugin.video.livehub2" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro IPTV+[/B][/COLOR]" version="10.37" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
 	<import addon="script.video.F4mProxy" />
+	<import addon="script.module.f4mproxy" />
     <!--<import addon="plugin.video.wargames" />-->
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">

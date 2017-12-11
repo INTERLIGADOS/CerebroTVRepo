@@ -40,8 +40,8 @@
 </addon>
 
 <addon id="plugin.video.echoini"
-version="1.0.4"
-name="Cerebro INI Creator"
+version="1.0.5"
+name="Cerebro INI Creator (makes addon ini file for free epg)"
 provider-name="Cerebro">
 <requires>
   <import addon="xbmc.python" version="2.20.0"/>
@@ -94,11 +94,12 @@ provider-name="Cerebro">
 	</extension>
 </addon>
 
-<addon id="plugin.video.livehub2" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro IPTV+[/B][/COLOR]" version="10.36" provider-name="sClarke and Biglad">
+<addon id="plugin.video.livehub2" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro IPTV+[/B][/COLOR]" version="10.37" provider-name="sClarke and Biglad">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
 	<import addon="script.video.F4mProxy" />
+	<import addon="script.module.f4mproxy" />
     <!--<import addon="plugin.video.wargames" />-->
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -608,7 +609,7 @@ provider-name="Cerebro">
 	</extension>
 </addon>
 
-<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide UK" version="100.4" provider-name="Biglad-FREE VERSION">
+<addon id="script.tvguide.cerebrotv.uk.2017" name="Cerebro TV Guide FREE (EPG)" version="100.5" provider-name="Biglad-FREE VERSION">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
