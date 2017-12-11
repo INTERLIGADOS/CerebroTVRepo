@@ -492,34 +492,6 @@ provider-name="Crucialminds">
   </extension>
 </addon>
 
-<addon id="plugin.video.cerebro.vod" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro VOD+ Player[/B][/COLOR]" version="2018.4" provider-name="Biglad">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.kratosfucksducky.artwork" version="1.0.0"/>
-		<import addon="script.kratosfucksducky.metadata" version="1.0.0"/>
-		<import addon="script.module.metahandler" version="1.0.0" />
-        <import addon="script.module.requests" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en"></summary>
-		<description lang="en"></description>
-		<disclaimer lang="en">The author does not host or distribute any content. Appreciation to SClarke for collaborating, troubleshooting, and learning with me.</disclaimer>
-		<platform>all</platform>
-		<forum></forum>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-
 <addon id="plugin.video.cerebroHDmovies"
   name=" [COLOR black].[/COLOR][B]Cerebro One Click HD Movies[/B]"
   version="2.0"
@@ -1169,35 +1141,6 @@ Initial release.
     <description>ITV Player Front End</description>
     <news>Fixed regex so video links are now being picked up correctly</news>
   </extension>
-</addon>
-
-<addon id="plugin.video.kratosfucksducky" name="kratos" version="2018.5" provider-name="Biglad">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.kratosfucksducky.artwork" version="1.0.0"/>
-		<import addon="script.kratosfucksducky.metadata" version="1.0.0"/>
-		<import addon="script.module.metahandler" version="1.0.0" />
-        <import addon="script.module.requests" />
-		<import addon="script.cerebro.backend" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en"></summary>
-		<description lang="en"></description>
-		<disclaimer lang="en">The author does not host or distribute any content. Appreciation to SClarke for collaborating, troubleshooting, and learning with me.</disclaimer>
-		<platform>all</platform>
-		<forum></forum>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-
-		</assets>
-		<news></news>
-	</extension>
 </addon>
 
 <!--suppress ALL -->
