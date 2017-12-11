@@ -30,7 +30,7 @@ class source:
         self.priority = 0
         self.language = ['en']
         self.domains = ['icefilms.is','icefilms.unblocked.vc']
-        self.base_link = 'https://icefilms.unblocked.vc'
+        self.base_link = 'https://www6-icefilms6-info.unblocked.lol'
         self.search_link_movie = '/newmov.php?menu=search&query=%s'
         self.search_link_show = 'show/%s'
 
