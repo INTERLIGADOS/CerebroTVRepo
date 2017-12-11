@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.cerebrobuildonly" name=".CrebroTVRepo-BUILD REPO ONLY" version="1.6" provider-name="Biglad">
+<addon id="repository.cerebrobuildonly" name=".CerebroTVRepo-BUILD REPO ONLY" version="1.7" provider-name="Biglad">
 	<extension point="xbmc.addon.repository" name=".CrebroTVRepo">
 		<info compressed="false">https://raw.githubusercontent.com/biglad/BUILDONLY/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/biglad/BUILDONLY/master/addons.xml.md5</checksum>
