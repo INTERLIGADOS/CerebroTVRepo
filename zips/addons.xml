@@ -234,12 +234,12 @@
 </addon>
 
 <addon id="script.cerebrotv"
-    name=".[COLOR=red]Cerebro BUILD INSTALLER (PREMIUM)[/COLOR]" version="1.0.0" provider-name="CerebroTV">
+    name=".[COLOR=red]Cerebro BUILD INSTALLER (PREMIUM)[/COLOR] NEED A PIN CODE TO INSTALL!!!" version="1.0.0" provider-name="CerebroTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-     <provides>executable</provides>
+     <provides>executable video</provides>
   </extension>
   <extension point="xbmc.service" library="addon.py" start="startup" />
   <extension point="xbmc.addon.metadata">

@@ -175,7 +175,7 @@ def killxbmc():
             
             
 if DoStart ==0:            
-    dialog.ok("[COLOR=red][B]CerebroTV Auth System[/COLOR][/B]", "You will now be asked for your [COLOR=red]Authentication Code[/COLOR]", "If you dont have one please visit","www.facebook.com/cerebrotv/")
+    dialog.ok("[COLOR=red][B]CerebroTV Auth System[/COLOR][/B]", "You will now be asked for your [COLOR=red]Authentication Code[/COLOR]", "If you dont have one please visit","www.facebook.com/cerebrotvuk/")
     userid=Search('[B][COLOR=white]Please enter your Authentication code[/COLOR][/B]')
     if userid =="":
         dp.create("[COLOR=yellow][B]CODE NOT RIGHT[/COLOR][/B]",".","PLEASE TRY AGAIN")
@@ -191,7 +191,7 @@ if DoStart ==0:
     
     
 if DoStart ==0:
-    dialog.ok("[COLOR=red][B]CerebroTV Auth System[/COLOR][/B]", "Code Not Found", "Please Try Again","www.facebook.com/cerebrotv/")
+    dialog.ok("[COLOR=red][B]CerebroTV Auth System[/COLOR][/B]", "Code Not Found", "Please Try Again","www.facebook.com/cerebrotvuk/")
     #xbmc.executebuiltin('RunAddon(script.cerebrotv)')
     exit()
     
