@@ -565,24 +565,6 @@
 	</extension>
 </addon>
 
-<addon id="script.program.tvguiderefresh3"
-  name="Cerebro House Keeper"
-  version="1.1"
-  provider-name="Biglad">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Cerebro House Keeper</summary>
-    <description lang="en">Cerebro House Keeper</description>
-	<disclaimer>Cerebro House Keeper.</disclaimer>
-  </extension>
-</addon>
-
 <addon id="script.showboxarize2.artwork" version="1.0.7" name="Cerebro ShowBox Artwork" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
