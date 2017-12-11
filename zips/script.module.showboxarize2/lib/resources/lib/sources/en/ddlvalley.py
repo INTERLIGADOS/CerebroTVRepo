@@ -30,7 +30,7 @@ class source:
         self.priority = 0
         self.language = ['en']
         self.domains = ['ddlvalley.me','ddlvalley.unblocked.vc']
-        self.base_link = 'https://ddlvalley.unblocked.vc/'
+        self.base_link = 'http://www.ddlvalley.me/'
         self.search_link = 'search/%s/'
 
 
