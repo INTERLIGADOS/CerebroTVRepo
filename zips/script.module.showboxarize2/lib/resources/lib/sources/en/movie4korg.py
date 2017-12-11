@@ -32,8 +32,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['http://movie4k.unblocked.vc']
-        self._base_link = None
+        self.domains = ['movie4k.unblocked.vc','movie4k.is','movie4k.org']
+        self._base_link = 'https://movie4k.unblocked.vc'
         self.search_link = '/movies.php?list=search&search=%s'
 
     @property

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.showboxarize2" version="100.0.7" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro ShowBox[/B][/COLOR]" provider-name="biglad">
+<addon id="plugin.video.showboxarize2" version="100.0.8" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro ShowBox[/B][/COLOR]" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.showboxarize2" />

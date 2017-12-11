@@ -113,7 +113,7 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
-<addon id="plugin.video.showboxarize2" version="100.0.7" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro ShowBox[/B][/COLOR]" provider-name="biglad">
+<addon id="plugin.video.showboxarize2" version="100.0.8" name=" [COLOR black].[/COLOR][COLOR ghostwhite][B]Cerebro ShowBox[/B][/COLOR]" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.showboxarize2" />
@@ -553,7 +553,7 @@ provider-name="Cerebro">
   </extension>
 </addon>
 
-<addon id="script.module.showboxarize2" name="Cerebro ShowBox Scarpers" version="1.00.011" provider-name="biglad">
+<addon id="script.module.showboxarize2" name="Cerebro ShowBox Scarpers" version="1.00.012" provider-name="biglad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>

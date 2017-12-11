@@ -32,7 +32,7 @@ class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['watchseriesfree.to','seriesfree.to']
+        self.domains = ['watchseriesfree.to','seriesfree.to','onwatchseries.to','mywatchseries.to','watchseries.unblocked.vc','itswatchseries.to','watchtvseries.unblckd.bz']
         self.base_link = 'https://seriesfree.to'
         self.search_link = 'https://seriesfree.to/search/%s'
 

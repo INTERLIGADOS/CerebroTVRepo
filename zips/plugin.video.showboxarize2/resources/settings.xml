@@ -3,7 +3,7 @@
     <category label="32310">
         <setting id="appearance.alt" type="action" label="32311" default="-" option="close" action="RunPlugin(plugin://plugin.video.showboxarize2/?action=artwork)" visible="!System.HasAddon(script.showboxarize2.artwork)" />
 		<setting id="appearance.1" type="select" label="32311" values="-|Exuary|Exodus|Genesis" default="Exuary" visible="System.HasAddon(script.showboxarize2.artwork)" />
-        <setting id="scrapers.timeout.1" type="slider" label="32312" default="20" range="10,60" option="int" />
+        <setting id="scrapers.timeout.1" type="slider" label="32312" default="30" range="10,60" option="int" />
         <setting id="trakt.user" type="text" default="" visible="false" />
         <setting id="indicators.alt" type="enum" label="32313" lvalues="32314|32315" default="1" visible="!eq(-1,)" />
         <setting id="indicators" type="enum" label="32313" lvalues="32314" default="0" visible="eq(-2,)" />
@@ -190,7 +190,7 @@
         <setting id="fanart.tv.user" type="text" label="32309" default="" />
         <setting type="sep" />
         <setting type="lsep" label="TMDb" />
-        <setting id="tm.user" type="text" label="32309" default="" />
+        <setting id="tm.user" type="text" label="32309" default="51ad578391a6d2d799d8ee521dad9fca" />
         <setting type="sep" />
         <setting type="lsep" label="Trakt" />
         <setting id="trakt.user" type="action" label="32306" option="close" action="RunPlugin(plugin://plugin.video.showboxarize2/?action=authTrakt)" />
@@ -226,7 +226,7 @@
         <setting type="sep" />
         <setting type="lsep" label="ALLUC" />
         <setting id="alluc.api" type="text" label="32309" default="" />
-        <setting id="alluc.limit" type="labelenum" label="32581" default="100" values="10|20|30|40|50|60|70|80|90|100|150|200" />
+        <setting id="alluc.limit" type="labelenum" label="32581" default="10" values="10|20|30|40|50|60|70|80|90|100|150|200" />
         <setting id="alluc.download" type="bool" label="32009" default="false" />        
     </category>
     <category label="32541">
